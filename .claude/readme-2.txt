@@ -38,40 +38,54 @@ bundle exec jekyll serve
 central-texas-legal/
 ├── .github/
 │   └── workflows/
-│       └── jekyll.yml              # GitHub Actions workflow
+│       ├── jekyll.yml              # Standard workflow (recommended)
+│       ├── jekyll-gh-pages.yml     # Simple workflow (no Gemfile needed)
+│       └── jekyll-advanced.yml     # Advanced with PR checks
 ├── _layouts/
 │   └── default.html                # Main page layout
 ├── _includes/
 │   ├── ads-defense.html            # Defense attorney sidebar ads
 │   ├── ads-injury.html             # Personal injury sidebar ads
 │   └── ads-general.html            # Homepage sidebar ads
-├── _pages/
-│   ├── frontpage.md                # Homepage
-│   ├── texas-law.md                # Texas Law information
-│   ├── bell-county.md              # Bell County specific info
-│   ├── defense.md                  # Criminal defense section
-│   ├── personal-injury.md          # Personal injury section
-│   └── resources.md                # Legal resources
 ├── assets/
 │   ├── css/
 │   │   └── style.css               # Main stylesheet
 │   └── js/
 │       └── main.js                 # JavaScript functionality
+├── index.md                        # Homepage
+├── texas-law.md                    # Texas Law information
+├── bell-county.md                  # Bell County specific info
+├── defense.md                      # Criminal defense section
+├── personal-injury.md              # Personal injury section
+├── resources.md                    # Legal resources
 ├── _config.yml                     # Jekyll configuration
 ├── Gemfile                         # Ruby dependencies
-├── .ruby-version                   # Ruby version specification
 └── README.md                       # This file
 ```
 
 ---
 
-## ⚙️ GitHub Actions Workflow
+## ⚙️ GitHub Actions Workflows
 
-This project uses GitHub Actions for automated deployment. The workflow:
+This project includes three workflow options. **Choose ONE** and place it in `.github/workflows/`:
 
-- Builds on pushes to the `main` branch
-- Uses Ruby 3.3 with bundler caching
-- Deploys to GitHub Pages automatically
+### 1. `jekyll.yml` - Standard Workflow (Recommended)
+
+The official GitHub starter workflow. Uses your `Gemfile` to install exact gem versions.
+
+**Best for:** Sites with custom plugins or specific gem requirements.
+
+### 2. `jekyll-gh-pages.yml` - Simple Workflow
+
+Uses GitHub's pre-installed Jekyll dependencies. No `Gemfile` required.
+
+**Best for:** Simple sites using only default GitHub Pages plugins.
+
+### 3. `jekyll-advanced.yml` - Advanced Workflow
+
+Includes PR build verification, HTML validation, and detailed deployment summaries.
+
+**Best for:** Team projects requiring code review before deployment.
 
 ---
 
@@ -83,12 +97,12 @@ Edit `_config.yml`:
 
 ```yaml
 # For GitHub Pages project site:
-baseurl: "http://sweeden-ttu.github.io/legal-luminary"
-url: "https://sweeden-ttu.github.io/legal-luminary"
+baseurl: "/your-repo-name"
+url: "https://yourusername.github.io"
 
 # For custom domain:
-baseurl: "https://www.luminarylegal.com/"
-url: "https://luminarylegal.com"
+baseurl: ""
+url: "https://yourdomain.com"
 ```
 
 > **Note:** When using GitHub Actions, the `baseurl` is automatically set by the workflow.
@@ -174,7 +188,7 @@ The site includes standard disclaimers:
 
 1. Check the **Actions** tab for error logs
 2. Ensure `Gemfile.lock` is committed
-3. Verify Ruby version compatibility (3.3+ recommended)
+3. Verify Ruby version compatibility (3.1+ recommended)
 
 ### Local Development Issues
 

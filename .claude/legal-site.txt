@@ -1,0 +1,38 @@
+# Site settings
+title: "Central Texas Legal Resource"
+description: "Your trusted guide to Texas and Bell County law - Defense & Personal Injury information"
+baseurl: "" # subpath of your site, e.g. /blog
+url: "" # base hostname for GitHub Pages
+
+# Build settings
+markdown: kramdown
+theme: null
+plugins:
+  - jekyll-seo-tag
+
+# Site navigation
+navigation:
+  - title: Home
+    url: /
+  - title: Texas Law
+    url: /texas-law/
+  - title: Bell County Law
+    url: /bell-county/
+  - title: Defense Attorneys
+    url: /defense/
+  - title: Personal Injury
+    url: /personal-injury/
+  - title: Resources
+    url: /resources/
+
+# Contact info
+contact:
+  phone: "(254) 555-0100"
+  email: "info@centraltexaslegal.com"
+  address: "Bell County, Texas"
+
+# Exclude from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

@@ -103,7 +103,6 @@ exclude:
   - .gitignore
   - .ruby-version
   - .bundle
-  - .claude
   - Gemfile
   - Gemfile.lock
   - README.md
@@ -112,12 +111,9 @@ exclude:
   - vendor
   - "*.gemspec"
   - CNAME.example
-  - docker-compose.yml
-  - Dockerfile
 
-# Include files that should be processed
+# Include dotfiles that should be processed
 include:
-  - _pages
   - .nojekyll
 
 # Defaults for pages

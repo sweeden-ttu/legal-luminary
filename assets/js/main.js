@@ -1,0 +1,79 @@
+// Central Texas Legal Resource - Main JavaScript
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Mobile navigation toggle
+  const navToggle = document.querySelector('.nav-toggle');
+  const navMenu = document.querySelector('.nav-menu');
+  
+  if (navToggle && navMenu) {
+    navToggle.addEventListener('click', function() {
+      navMenu.classList.toggle('active');
+      const expanded = navMenu.classList.contains('active');
+      navToggle.setAttribute('aria-expanded', expanded);
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', function(e) {
+      if (!navToggle.contains(e.target) && !navMenu.contains(e.target)) {
+        navMenu.classList.remove('active');
+        navToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    // Close menu on escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && navMenu.classList.contains('active')) {
+        navMenu.classList.remove('active');
+        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.focus();
+      }
+    });
+  }
+
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const href = this.getAttribute('href');
+      if (href !== '#') {
+        e.preventDefault();
+        const target = document.querySelector(href);
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+    });
+  });
+
+  // Add external link indicators
+  document.querySelectorAll('a[target="_blank"]').forEach(link => {
+    if (!link.querySelector('.external-icon')) {
+      link.setAttribute('rel', 'noopener noreferrer');
+    }
+  });
+
+  // Track phone number clicks (for analytics integration)
+  document.querySelectorAll('a[href^="tel:"]').forEach(phone => {
+    phone.addEventListener('click', function() {
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'click', {
+          'event_category': 'Contact',
+          'event_label': 'Phone Call',
+          'value': this.href
+        });
+      }
+    });
+  });
+
+  // Track email clicks
+  document.querySelectorAll('a[href^="mailto:"]').forEach(email => {
+    email.addEventListener('click', function() {
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'click', {
+          'event_category': 'Contact',
+          'event_label': 'Email',
+          'value': this.href
+        });
+      }
+    });
+  });
+});

@@ -1,16 +1,17 @@
 source "https://rubygems.org"
 
-# GitHub Pages compatibility
-gem "github-pages", "~> 228", group: :jekyll_plugins
+# Jekyll version - use latest 4.x for GitHub Actions deployment
+gem "jekyll", "~> 4.3"
+
+# Plugins
+group :jekyll_plugins do
+  gem "jekyll-seo-tag", "~> 2.8"      # SEO meta tags
+  gem "jekyll-sitemap", "~> 1.4"      # Auto-generate sitemap.xml
+  gem "jekyll-feed", "~> 0.17"        # RSS feed generation
+end
 
 # Required for local development server
 gem "webrick", "~> 1.8"
-
-# Required for Ruby 3.4+ compatibility with Jekyll 3.9.3
-gem "csv"
-gem "logger"
-gem "base64"
-gem "bigdecimal"
 
 # Windows and JRuby does not include zoneinfo files
 platforms :mingw, :x64_mingw, :mswin, :jruby do

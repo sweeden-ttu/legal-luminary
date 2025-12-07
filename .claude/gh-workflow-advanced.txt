@@ -1,0 +1,110 @@
+# Advanced Jekyll Workflow with PR Build Checks and Production Deployment
+# 
+# Features:
+# - Builds on PRs to verify changes before merge (no deployment)
+# - Deploys to GitHub Pages only on merge to main
+# - Includes HTML validation and link checking
+# - Caches gems for faster builds
+
+name: Build and Deploy Jekyll Site
+
+on:
+  push:
+    branches: ["main"]
+    paths-ignore:
+      - 'README.md'
+      - 'LICENSE'
+      - '.gitignore'
+  pull_request:
+    branches: ["main"]
+    paths-ignore:
+      - 'README.md'
+      - 'LICENSE'
+      - '.gitignore'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages-${{ github.ref }}"
+  cancel-in-progress: true
+
+env:
+  JEKYLL_ENV: production
+
+jobs:
+  # ===========================================
+  # BUILD JOB - Runs on both PRs and main
+  # ===========================================
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Full history for last modified dates
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+          cache-version: 1
+
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Build Jekyll site
+        run: |
+          bundle exec jekyll build \
+            --baseurl "${{ steps.pages.outputs.base_path }}" \
+            --profile \
+            --trace
+
+      - name: Check HTML output
+        uses: chabad360/htmlproofer@master
+        with:
+          directory: ./_site
+          arguments: |
+            --ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/localhost/,/^https:\/\/fonts.googleapis.com/"
+            --ignore-status-codes "403,429,999"
+            --allow-missing-href
+            --no-enforce-https
+        continue-on-error: true  # Don't fail build on external link issues
+
+      - name: Upload build artifact
+        uses: actions/upload-pages-artifact@v3
+        if: github.ref == 'refs/heads/main'
+
+      - name: Upload PR artifact for review
+        uses: actions/upload-artifact@v4
+        if: github.event_name == 'pull_request'
+        with:
+          name: jekyll-site-pr-${{ github.event.pull_request.number }}
+          path: ./_site
+          retention-days: 7
+
+  # ===========================================
+  # DEPLOY JOB - Only runs on main branch
+  # ===========================================
+  deploy:
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Output deployment URL
+        run: |
+          echo "### 🚀 Deployment Successful!" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Site deployed to: ${{ steps.deployment.outputs.page_url }}" >> $GITHUB_STEP_SUMMARY
