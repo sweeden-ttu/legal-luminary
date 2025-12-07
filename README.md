@@ -83,12 +83,12 @@ Edit `_config.yml`:
 
 ```yaml
 # For GitHub Pages project site:
-baseurl: "http://sweeden-ttu.github.io/legal-luminary"
-url: "https://sweeden-ttu.github.io/legal-luminary"
+baseurl: "/legal-luminary"
+url: "https://sweeden-ttu.github.io"
 
 # For custom domain:
-baseurl: "https://www.luminarylegal.com/"
-url: "https://luminarylegal.com"
+baseurl: ""
+url: "https://www.legalluminary.com"
 ```
 
 > **Note:** When using GitHub Actions, the `baseurl` is automatically set by the workflow.
@@ -101,7 +101,7 @@ url: "https://luminarylegal.com"
    ```
 2. Configure DNS with your registrar:
    - **A records** pointing to GitHub's IPs
-   - **CNAME record** pointing to `yourusername.github.io`
+   - **CNAME record** pointing to `sweeden-ttu.github.io`
 3. Enable HTTPS in repository Settings → Pages
 
 ---
