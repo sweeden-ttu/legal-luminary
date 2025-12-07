@@ -12,6 +12,10 @@ description: "Legal information resource for Bell County and Central Texas. Find
 Whether you're facing criminal charges or have been injured due to someone else's negligence, understanding your legal rights is the first step toward justice. Central Texas Legal Resource provides comprehensive information about Texas and Bell County law, connecting you with experienced attorneys ready to fight for you.
 </p>
 
+<div style="text-align: center; margin: 2rem 0;">
+<img src="/assets/imgs/central-texas-attorney-team.jpeg" alt="Central Texas Attorney Team" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+</div>
+
 ## Serving Bell County & Central Texas
 
 Our mission is to help residents of Killeen, Temple, Belton, Harker Heights, Copperas Cove, and surrounding communities navigate the legal system with confidence. We provide educational resources and connect you with qualified attorneys who specialize in your specific legal needs.
