@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Home
-permalink: /
 hero: true
 hero_title: "Central Texas Legal Resource"
 hero_subtitle: "Your trusted guide to understanding Texas law and finding qualified legal representation in Bell County"
