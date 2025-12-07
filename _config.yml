@@ -19,8 +19,8 @@ lang: en-US
 # For custom domain or user site (username.github.io):
 #   baseurl: ""
 #   url: "https://yourdomain.com"
-baseurl: ""
-url: "https://legalluminary.com"
+baseurl: "/legal-luminary"
+url: "https://sweeden-ttu.github.io"
 
 # Build Settings
 markdown: kramdown
