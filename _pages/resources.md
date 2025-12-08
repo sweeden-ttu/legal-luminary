@@ -45,6 +45,7 @@ Main Phone: (254) 933-5100<br>
 - Killeen Municipal Court online services: <a href="https://www.killeentexas.gov/325/Municipal-Court" target="_blank" rel="noopener">killeentexas.gov/325/Municipal-Court</a>
 - Temple Municipal Court payments & forms: <a href="https://www.templetx.gov/151/Municipal-Court" target="_blank" rel="noopener">templetx.gov/151/Municipal-Court</a>
 - Belton Municipal Court docket & payments: <a href="https://www.beltontexas.gov/235/Municipal-Court" target="_blank" rel="noopener">beltontexas.gov/235/Municipal-Court</a>
+- Bell County Attorney’s Office (misdemeanor prosecution): <a href="https://www.bellcountytx.com/departments/county_attorney/index.php" target="_blank" rel="noopener">bellcountytx.com/departments/county_attorney</a> — Courthouse Annex, 550 East 2nd Avenue, Belton, TX 76513 — Main line via County Clerk: (254) 933-5161
 - Application for Return of Cash Bail (U.S. District Court — Western District of Texas): <a href="https://www.txwd.uscourts.gov/main-forms/cash-bail/" target="_blank" rel="noopener">txwd.uscourts.gov/main-forms/cash-bail/</a>
 
 ## Texas State Resources
