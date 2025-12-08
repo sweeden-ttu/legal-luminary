@@ -5,12 +5,12 @@ permalink: /defense/
 sidebar_ads: defense
 hero: true
 hero_title: "Criminal Defense Information"
-hero_subtitle: "Understanding your rights and finding aggressive representation in Bell County"
+hero_subtitle: "Understanding rights and finding aggressive representation in Bell County"
 description: "Criminal defense information for Bell County. Learn about assault, domestic violence, and other charges. Find experienced defense attorneys."
 ---
 
 <p class="intro-text">
-If you're facing criminal charges in Bell County, the stakes couldn't be higher. Your freedom, your reputation, and your future are on the line. Understanding the charges against you and your legal options is the first step toward mounting an effective defense.
+If individuals are facing criminal charges in Bell County, the stakes couldn't be higher. Their freedom, reputation, and future are on the line. Understanding the charges against them and their legal options is the first step toward mounting an effective defense.
 </p>
 
 ## Common Criminal Charges in Bell County
@@ -48,17 +48,17 @@ Family violence charges carry enhanced consequences beyond standard assault:
 
 ### Other Common Charges
 
-*This section will be expanded with additional charges common in Bell County. Defense attorneys featured on this site can provide guidance on the specific charges you face.*
+*This section will be expanded with additional charges common in Bell County. Defense attorneys featured on this site can provide guidance on specific charges individuals face.*
 
 <div class="legal-notice">
-<strong>Every Case is Different:</strong> Criminal charges depend heavily on specific facts and circumstances. What might be a misdemeanor in one situation could be a felony in another. Only a qualified attorney reviewing your specific case can advise you on potential outcomes and defense strategies.
+<strong>Every Case is Different:</strong> Criminal charges depend heavily on specific facts and circumstances. What might be a misdemeanor in one situation could be a felony in another. Only a qualified attorney reviewing a specific case can advise on potential outcomes and defense strategies.
 </div>
 
-## Why You Need a Defense Attorney
+## Why Individuals Need a Defense Attorney
 
-### The System is Not on Your Side
+### The System is Not on Their Side
 
-Prosecutors have substantial resources and experience. They handle hundreds of cases and know how to secure convictions. Without equally skilled representation, you face these professionals alone.
+Prosecutors have substantial resources and experience. They handle hundreds of cases and know how to secure convictions. Without equally skilled representation, individuals face these professionals alone.
 
 ### Consequences Extend Beyond Sentencing
 
@@ -76,11 +76,11 @@ A criminal conviction affects:
 
 ### What a Defense Attorney Does
 
-**Investigate Your Case** — Review evidence, interview witnesses, identify weaknesses in the prosecution's case.
+**Investigate Cases** — Review evidence, interview witnesses, identify weaknesses in the prosecution's case.
 
-**Protect Your Rights** — Ensure proper procedures were followed, challenge improper evidence or searches.
+**Protect Rights** — Ensure proper procedures were followed, challenge improper evidence or searches.
 
-**Negotiate on Your Behalf** — Work with prosecutors for reduced charges or alternative sentencing where appropriate.
+**Negotiate on Behalf of Clients** — Work with prosecutors for reduced charges or alternative sentencing where appropriate.
 
 **Prepare for Trial** — If necessary, build the strongest possible defense for presentation to a jury.
 
@@ -88,22 +88,22 @@ A criminal conviction affects:
 
 <div class="info-box">
 <h4>Questions to Ask</h4>
-<p>When consulting with a defense attorney, ask about their experience with your specific charges, their familiarity with Bell County courts, their approach to cases like yours, and their communication practices.</p>
+<p>When consulting with a defense attorney, individuals should ask about the attorney's experience with their specific charges, familiarity with Bell County courts, approach to similar cases, and communication practices.</p>
 </div>
 
 ### What to Look For
 
-**Local Experience** — An attorney who knows Bell County courts, prosecutors, and judges has valuable insight into how your case will proceed.
+**Local Experience** — An attorney who knows Bell County courts, prosecutors, and judges has valuable insight into how cases will proceed.
 
 **Relevant Practice Focus** — Look for attorneys who focus on criminal defense rather than general practice.
 
-**Clear Communication** — You should understand your options and what to expect at each stage.
+**Clear Communication** — Individuals should understand their options and what to expect at each stage.
 
 **Realistic Assessment** — Be wary of guarantees; ethical attorneys provide honest assessments.
 
 ## Take Action Now
 
-Time matters in criminal cases. Evidence can disappear. Witnesses' memories fade. Court dates approach quickly. Early involvement by an attorney provides the best opportunity to protect your rights and build a strong defense.
+Time matters in criminal cases. Evidence can disappear. Witnesses' memories fade. Court dates approach quickly. Early involvement by an attorney provides the best opportunity to protect rights and build a strong defense.
 
 <div style="background: var(--navy-dark); color: white; padding: 2rem; border-radius: 4px; margin-top: 2rem;">
 <p style="font-size: 0.75rem; margin: 0 0 0.5rem 0; opacity: 0.8; text-transform: uppercase; letter-spacing: 1px;">ADVERTISEMENT</p>

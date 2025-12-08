@@ -192,6 +192,83 @@ The site includes standard disclaimers:
 
 ---
 
+## 📝 Content Guidelines: Third-Person Wording
+
+### Why Third-Person is Required
+
+**This website must use third-person impersonal wording throughout all content.** This is a critical requirement for several important reasons:
+
+#### 1. AI Tool, Not Legal Advice Provider
+
+This website is an **AI-enhanced legal information tool** that assists attorneys and their clients. It does **not** replace attorneys or provide direct legal advice. Using third-person wording (e.g., "individuals," "clients," "those who") rather than second-person ("you," "your") clearly establishes that:
+
+- The content is informational and educational, not personalized legal advice
+- The site serves as a resource tool, not a direct service provider
+- Users should consult with licensed attorneys for advice specific to their situations
+
+#### 2. Professional Distance and Objectivity
+
+Third-person wording maintains appropriate professional distance and objectivity, which is essential for:
+
+- **Attorneys using the site** as a resource for their clients
+- **Clients reviewing information** before or after attorney consultations
+- **Maintaining clear boundaries** between informational content and legal representation
+
+#### 3. Compliance and Liability Protection
+
+Using third-person impersonal language helps protect against:
+
+- Unintended formation of attorney-client relationships
+- Misinterpretation of general information as specific legal advice
+- Claims that the website provides direct legal services
+
+#### 4. Target Audience Clarity
+
+The primary audience includes both:
+- **Attorneys** who may reference this site when discussing cases with clients
+- **Clients** who are researching legal topics before or during attorney consultations
+
+Third-person wording accommodates both audiences without creating confusion about who is being addressed.
+
+### Implementation Guidelines
+
+When creating or editing content:
+
+✅ **DO use:**
+- "Individuals," "clients," "residents," "those who"
+- "Their," "they," "them"
+- "One's" (when appropriate)
+- Impersonal constructions: "When facing charges..." instead of "When you face charges..."
+
+❌ **DON'T use:**
+- "You," "your," "you're"
+- Direct address: "You should consult..." → "Individuals should consult..."
+- Personal commands: "Contact an attorney" → "Individuals should contact an attorney"
+
+### Examples
+
+**Before (Second-Person):**
+> "If you're facing criminal charges, you should understand your rights. You have the right to an attorney, and if you cannot afford one, one will be appointed."
+
+**After (Third-Person):**
+> "If individuals are facing criminal charges, they should understand their rights. They have the right to an attorney, and if they cannot afford one, one will be appointed."
+
+**Before (Second-Person):**
+> "When you've been injured due to someone else's negligence, you shouldn't have to bear the financial burden alone."
+
+**After (Third-Person):**
+> "When individuals have been injured due to someone else's negligence, they shouldn't have to bear the financial burden alone."
+
+### Files Requiring Third-Person Wording
+
+All content files must maintain third-person wording:
+- `_pages/*.md` - All page content
+- `_layouts/*.html` - Layout templates with content
+- `_includes/*.html` - Include files with content
+- Any new content files added to the site
+
+---
+
 ## 🛠 Troubleshooting
 
 ### Build Failures
