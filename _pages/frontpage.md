@@ -51,7 +51,7 @@ Our mission is to help residents of Killeen, Temple, Belton, Harker Heights, Cop
 </ul>
 
 <div class="legal-notice">
-<strong>Important Notice:</strong> The information provided on this website is for general educational purposes only and does not constitute legal advice. Every legal situation is unique. For advice specific to your circumstances, please consult with a licensed Texas attorney. The attorneys advertised on this site are independent practitioners and are responsible for their own services.
+<strong>Important Notice:</strong> The information provided on this website is for general educational purposes only and does not constitute legal advice. No attorney-client relationship is formed by use of this site. Every legal situation is unique. For advice specific to your circumstances, please consult with a licensed Texas attorney. The attorneys advertised on this site are independent practitioners licensed in Texas and are solely responsible for their own services. Prior results do not guarantee a similar outcome.
 </div>
 
 ## Areas We Cover

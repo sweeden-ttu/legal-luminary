@@ -59,7 +59,7 @@
         </article>
         <aside class="sidebar">
           <div class="ad-section">
-            <span class="ad-label">Featured Legal Services</span>
+            <span class="ad-label">ADVERTISEMENT</span>
             {% if page.sidebar_ads == "defense" %}
             {% include ads-defense.html %}
             {% elsif page.sidebar_ads == "injury" %}
@@ -84,7 +84,7 @@
         <div class="footer-about">
           <h4>Central Texas Legal Resource</h4>
           <p>Providing legal information and connecting Central Texas residents with qualified attorneys for defense and personal injury matters.</p>
-          <p class="disclaimer"><strong>Disclaimer:</strong> This website provides general legal information only. It does not constitute legal advice. Consult with a licensed attorney for advice specific to your situation.</p>
+          <p class="disclaimer"><strong>Disclaimer:</strong> This website provides general legal information only and does not constitute legal advice. No attorney-client relationship is formed by use of this site. The information on this website is not a substitute for, and does not replace, the advice of a qualified attorney. Every legal matter is different, and you should consult with a licensed Texas attorney for advice specific to your situation.</p>
         </div>
         <div class="footer-links">
           <h4>Quick Links</h4>
@@ -97,11 +97,15 @@
         <div class="footer-contact">
           <h4>Service Area</h4>
           <p>Bell County, Texas<br>Including Killeen, Temple, Belton, Harker Heights, Copperas Cove</p>
+          <p style="margin-top: 1rem; font-size: 0.85rem;"><strong>Responsible Attorney:</strong><br>
+          Robert Lewis<br>
+          Killeen, TX 76541<br>
+          (254) 702-4767</p>
         </div>
       </div>
       <div class="footer-bottom">
         <p>&copy; {{ 'now' | date: "%Y" }} Central Texas Legal Resource. All rights reserved.</p>
-        <p class="attorney-advertising">Attorney Advertising. Prior results do not guarantee similar outcomes.</p>
+        <p class="attorney-advertising"><strong>ADVERTISEMENT</strong> — This website contains attorney advertising. Prior results do not guarantee a similar outcome. The outcome of any case depends on numerous factors unique to that case.</p>
       </div>
     </div>
   </footer>
