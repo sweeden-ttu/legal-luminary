@@ -39,6 +39,20 @@ The Texas Penal Code classifies criminal offenses into categories based on sever
 
 **Class C Misdemeanor** — Fine only, up to $500. No jail time, but still creates a criminal record.
 
+## Expunction & Dismissal Timelines
+
+As of January 2025, Chapter 55 of the Texas Code of Criminal Procedure has been renumbered to **Chapter 55A**, which governs expunctions (erasing eligible arrest records).
+
+- **Waiting periods (no filed charges):** 180 days for Class C misdemeanors, 1 year for Class A/B misdemeanors, and 3 years for felonies when no indictment or information is presented arising from the arrest.
+- **Eligibility highlights:** Cases that end in dismissal, acquittal, pardon, or no-bill by a grand jury may qualify; consult the statute for exclusions and procedural steps.
+- **Effect of expunction:** Approved petitions require agencies to delete or return records related to the expunged arrest.
+
+**Article 32.01 — Speedy Filing Requirement**
+
+- **Released on bail:** If no indictment or information is filed within 180 days of arrest, a defendant can move to dismiss under Article 32.01.
+- **Jailed defendants:** When a defendant remains in custody, the state must bring formal charges and supporting evidence within 90 days.
+- These deadlines aim to prevent defendants from being left in limbo; consult an attorney to evaluate whether a motion is available in your case.
+
 ## Texas Personal Injury Law
 
 Texas follows a "modified comparative fault" system for personal injury claims. Understanding this system is crucial for anyone pursuing compensation for injuries.
