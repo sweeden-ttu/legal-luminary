@@ -27,6 +27,10 @@ Gemfile.lock.bak
 # Node (if using any build tools)
 node_modules/
 
+# LaTeX / pdflatex intermediate files
+*.aux
+*.out
+
 # Temporary files
 tmp/
 temp/

@@ -150,6 +150,14 @@ a:hover { color: var(--gold-dark); }
 }
 .ad-card .ad-cta:hover { background: var(--gold-light); }
 
+.ad-card .ad-disclaimer {
+  font-size: 0.7rem;
+  color: var(--gray);
+  margin: 0.75rem 0 0 0;
+  line-height: 1.5;
+  font-style: italic;
+}
+
 .sidebar-info {
   background: var(--navy-dark);
   color: var(--white);

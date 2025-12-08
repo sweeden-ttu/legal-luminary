@@ -106,9 +106,11 @@ A criminal conviction affects:
 Time matters in criminal cases. Evidence can disappear. Witnesses' memories fade. Court dates approach quickly. Early involvement by an attorney provides the best opportunity to protect your rights and build a strong defense.
 
 <div style="background: var(--navy-dark); color: white; padding: 2rem; border-radius: 4px; margin-top: 2rem;">
+<p style="font-size: 0.75rem; margin: 0 0 0.5rem 0; opacity: 0.8; text-transform: uppercase; letter-spacing: 1px;">ADVERTISEMENT</p>
 <h3 style="color: var(--gold-light); margin-top: 0;">Featured Defense Attorney</h3>
 <p style="font-size: 1.125rem; margin-bottom: 0.5rem;"><strong>Robert Lewis, Attorney at Law</strong></p>
 <p>Experienced criminal defense representation in Killeen and Bell County. Aggressive defense for assault, domestic violence, and felony charges.</p>
-<p style="font-size: 1.25rem; margin-bottom: 0;"><strong>📞 <a href="tel:+12547024767" style="color: var(--gold-light);">(254) 702-4767</a></strong></p>
-<p style="font-size: 0.9rem; margin-bottom: 0; opacity: 0.9;">Killeen, Texas — Free Consultation Available</p>
+<p style="font-size: 1.25rem; margin-bottom: 0.5rem;"><strong>📞 <a href="tel:+12547024767" style="color: var(--gold-light);">(254) 702-4767</a></strong></p>
+<p style="font-size: 0.9rem; margin-bottom: 0.5rem; opacity: 0.9;">📍 Killeen, TX 76541 — Free Consultation Available</p>
+<p style="font-size: 0.75rem; margin-bottom: 0; opacity: 0.7;">Licensed in Texas. Prior results do not guarantee a similar outcome.</p>
 </div>

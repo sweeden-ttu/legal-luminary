@@ -97,9 +97,12 @@ Insurance adjusters contact you quickly after an accident. Their goal is to sett
 Most personal injury attorneys offer free consultations and work on contingency — meaning you pay no attorney fees unless you recover compensation. There's no financial risk in learning about your options.
 
 <div style="background: var(--navy-dark); color: white; padding: 2rem; border-radius: 4px; margin-top: 2rem;">
+<p style="font-size: 0.75rem; margin: 0 0 0.5rem 0; opacity: 0.8; text-transform: uppercase; letter-spacing: 1px;">ADVERTISEMENT</p>
 <h3 style="color: var(--gold-light); margin-top: 0;">Featured Personal Injury Firm</h3>
 <p style="font-size: 1.125rem; margin-bottom: 0.5rem;"><strong>MBA Attorneys</strong></p>
-<p>Dedicated personal injury representation. Car accidents, workplace injuries, premises liability. No fee unless we win your case.</p>
+<p>Dedicated personal injury representation. Car accidents, workplace injuries, premises liability.</p>
+<p style="margin-bottom: 0.5rem;">📞 <a href="tel:+12547659552" style="color: var(--gold-light);">(254) 765-9552</a></p>
 <p style="margin-bottom: 0.5rem;">🌐 <a href="https://mbaattorneys.com" target="_blank" rel="noopener" style="color: var(--gold-light);">mbaattorneys.com</a></p>
-<p style="margin-bottom: 0;">✉️ <a href="mailto:malcozer@mbaattorneys.com" style="color: var(--gold-light);">malcozer@mbaattorneys.com</a></p>
+<p style="margin-bottom: 0.5rem;">✉️ <a href="mailto:malcozer@mbaattorneys.com" style="color: var(--gold-light);">malcozer@mbaattorneys.com</a></p>
+<p style="font-size: 0.75rem; margin-bottom: 0; opacity: 0.7;">Licensed in Texas. Contingency fee basis available — no attorney fee unless recovery is obtained. Client may be responsible for costs and expenses regardless of outcome. Prior results do not guarantee a similar outcome.</p>
 </div>
