@@ -64,6 +64,30 @@ central-texas-legal/
 ```
 
 ---
+## 💡 Site Branding, Color Theme, and Font
+
+Whenever creating new pages, blog posts or UI functionality, developers and engineers should follow the style and branding guidelines below.
+
+### Visual Elements
+
+- Scales of Justice with embedded AI nodes (glowing blue circles) symbolizing the fusion of legal tradition and AI technology
+- Texas Lone Star prominently displayed in gold, reinforcing the Central Texas identity
+- Deep navy blue background with subtle circuit patterns conveying technological sophistication
+- Golden accents providing a classic, prestigious legal aesthetic
+
+### Typography
+
+Title headings should be elegant serif font with gold gradient
+Sections and subsections should be a modern sans-serif with tech-blue glow
+Metadata and footers should have a supporting tagline for Texas attorneys
+
+### Color Palette
+
+The main colors of the site are below, however, pages and UI elements are not limited to only these colors:
+
+- Navy/midnight blue (#0a1628 to #1a2744) Representing professionalism and trust
+- Gold (#d4af37 to #f4d03f)  Representing prestige and legal tradition
+- Cyan blue (#4da6ff) Representing AI and technology
 
 ## ⚙️ GitHub Actions Workflow
 
