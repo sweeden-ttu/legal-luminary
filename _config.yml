@@ -9,8 +9,12 @@ title: "Central Texas Legal Resource"
 description: "Your trusted guide to Texas and Bell County law - Defense & Personal Injury information"
 tagline: "Information • Guidance • Justice"
 author: "Central Texas Legal Resource"
-email: ""
+email: "sweeden@ttu.edu"
 lang: en-US
+
+# Google Tag Manager
+# Replace GTM-XXXXXXX with your actual GTM container ID after setup
+gtm_container_id: "GTM-XXXXXXX"
 
 # URL Configuration
 # For GitHub Pages project site (username.github.io/repo-name):
