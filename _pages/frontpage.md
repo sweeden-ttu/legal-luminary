@@ -4,12 +4,12 @@ title: Home
 permalink: /
 hero: true
 hero_title: "Central Texas Legal Resource"
-hero_subtitle: "Your trusted guide to understanding Texas law and finding qualified legal representation in Bell County"
+hero_subtitle: "A trusted guide to understanding Texas law and finding qualified legal representation in Bell County"
 description: "Legal information resource for Bell County and Central Texas. Find qualified defense attorneys and personal injury lawyers."
 ---
 
 <p class="intro-text">
-Whether you're facing criminal charges or have been injured due to someone else's negligence, understanding your legal rights is the first step toward justice. Central Texas Legal Resource provides comprehensive information about Texas and Bell County law, connecting you with experienced attorneys ready to fight for you.
+Whether individuals are facing criminal charges or have been injured due to someone else's negligence, understanding their legal rights is the first step toward justice. Central Texas Legal Resource provides comprehensive information about Texas and Bell County law, connecting individuals with experienced attorneys ready to advocate on their behalf.
 </p>
 
 <div style="text-align: center; margin: 3rem 0; padding: 1rem 0;">
@@ -22,18 +22,18 @@ Whether you're facing criminal charges or have been injured due to someone else'
 
 ## Serving Bell County & Central Texas
 
-Our mission is to help residents of Killeen, Temple, Belton, Harker Heights, Copperas Cove, and surrounding communities navigate the legal system with confidence. We provide educational resources and connect you with qualified attorneys who specialize in your specific legal needs.
+Our mission is to help residents of Killeen, Temple, Belton, Harker Heights, Copperas Cove, and surrounding communities navigate the legal system with confidence. We provide educational resources and connect individuals with qualified attorneys who specialize in their specific legal needs.
 
 <div class="cards-grid">
 <div class="card">
 <h3>⚔️ Criminal Defense</h3>
-<p>Facing assault charges, domestic violence allegations, or other criminal accusations? Learn about your rights under Texas law and find aggressive defense representation.</p>
+<p>Facing assault charges, domestic violence allegations, or other criminal accusations? Learn about rights under Texas law and find aggressive defense representation.</p>
 <a href="/defense/" class="btn btn-primary">Defense Information</a>
 </div>
 
 <div class="card">
 <h3>🏥 Personal Injury</h3>
-<p>Injured in a car accident, workplace incident, or due to property negligence? Understand your options for compensation and connect with experienced injury attorneys.</p>
+<p>Injured in a car accident, workplace incident, or due to property negligence? Understand options for compensation and connect with experienced injury attorneys.</p>
 <a href="/personal-injury/" class="btn btn-primary">Injury Information</a>
 </div>
 </div>
@@ -41,8 +41,8 @@ Our mission is to help residents of Killeen, Temple, Belton, Harker Heights, Cop
 ## Why Legal Representation Matters
 
 <div class="info-box">
-<h4>Protect Your Rights</h4>
-<p>The Texas legal system can be complex and unforgiving. Whether you're defending against charges or seeking compensation for injuries, having qualified legal representation significantly improves your chances of a favorable outcome. The attorneys featured on this site have experience in Bell County courts and understand local procedures.</p>
+<h4>Protecting Rights</h4>
+<p>The Texas legal system can be complex and unforgiving. Whether individuals are defending against charges or seeking compensation for injuries, having qualified legal representation significantly improves their chances of a favorable outcome. The attorneys featured on this site have experience in Bell County courts and understand local procedures.</p>
 </div>
 
 ## Legal Information Resources
@@ -51,11 +51,11 @@ Our mission is to help residents of Killeen, Temple, Belton, Harker Heights, Cop
 <li><strong>Texas Law Overview</strong> — Understanding state statutes, penalties, and procedures</li>
 <li><strong>Bell County Specifics</strong> — Local court information, procedures, and resources</li>
 <li><strong>Defense Attorney Guide</strong> — What to look for and what to expect</li>
-<li><strong>Personal Injury Basics</strong> — Your rights when you've been injured</li>
+<li><strong>Personal Injury Basics</strong> — Rights when individuals have been injured</li>
 </ul>
 
 <div class="legal-notice">
-<strong>Important Notice:</strong> The information provided on this website is for general educational purposes only and does not constitute legal advice. No attorney-client relationship is formed by use of this site. Every legal situation is unique. For advice specific to your circumstances, please consult with a licensed Texas attorney. The attorneys advertised on this site are independent practitioners licensed in Texas and are solely responsible for their own services. Prior results do not guarantee a similar outcome.
+<strong>Important Notice:</strong> The information provided on this website is for general educational purposes only and does not constitute legal advice. No attorney-client relationship is formed by use of this site. Every legal situation is unique. For advice specific to their circumstances, individuals should consult with a licensed Texas attorney. The attorneys advertised on this site are independent practitioners licensed in Texas and are solely responsible for their own services. Prior results do not guarantee a similar outcome.
 </div>
 
 ## Areas We Cover

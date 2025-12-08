@@ -9,7 +9,7 @@ description: "Legal resources for Bell County Texas. Court contacts, legal aid, 
 ---
 
 <p class="intro-text">
-The following resources provide additional information and assistance for those navigating legal matters in Bell County and Texas.
+The following resources provide additional information and assistance for individuals navigating legal matters in Bell County and Texas.
 </p>
 
 ## Court Resources
@@ -84,7 +84,7 @@ Main Phone: (254) 933-5100<br>
 
 ## Bail Information
 
-If you or a loved one has been arrested in Bell County:
+If an individual or a loved one has been arrested in Bell County:
 
 **Bell County Jail** — (254) 933-5400 — 111 W. Central Avenue, Belton, TX 76513
 
@@ -105,5 +105,5 @@ Bail bonds are available 24/7 through licensed bondsmen serving Bell County. Fea
 </div>
 
 <div class="legal-notice">
-<strong>Note:</strong> This resource list is provided for informational purposes. Inclusion does not constitute endorsement. Verify current contact information before visiting. For legal advice specific to your situation, consult with a licensed attorney.
+<strong>Note:</strong> This resource list is provided for informational purposes. Inclusion does not constitute endorsement. Verify current contact information before visiting. For legal advice specific to their situation, individuals should consult with a licensed attorney.
 </div>
