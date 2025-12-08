@@ -9,12 +9,12 @@ description: "Overview of Texas criminal law, personal injury law, and legal pro
 ---
 
 <p class="intro-text">
-Texas has a unique legal system with specific statutes, procedures, and penalties that differ from other states. Understanding these laws is essential whether you're facing criminal charges or pursuing a civil claim.
+Texas has a unique legal system with specific statutes, procedures, and penalties that differ from other states. Understanding these laws is essential whether individuals are facing criminal charges or pursuing a civil claim.
 </p>
 
 ## Texas Criminal Law Overview
 
-The Texas Penal Code classifies criminal offenses into categories based on severity. Understanding these classifications helps you understand what you may be facing and the importance of proper legal representation.
+The Texas Penal Code classifies criminal offenses into categories based on severity. Understanding these classifications helps individuals understand what they may be facing and the importance of proper legal representation.
 
 ### Felony Classifications
 
@@ -51,7 +51,7 @@ As of January 2025, Chapter 55 of the Texas Code of Criminal Procedure has been 
 
 - **Released on bail:** If no indictment or information is filed within 180 days of arrest, a defendant can move to dismiss under Article 32.01.
 - **Jailed defendants:** When a defendant remains in custody, the state must bring formal charges and supporting evidence within 90 days.
-- These deadlines aim to prevent defendants from being left in limbo; consult an attorney to evaluate whether a motion is available in your case.
+- These deadlines aim to prevent defendants from being left in limbo; individuals should consult an attorney to evaluate whether a motion is available in their case.
 
 ## Texas Personal Injury Law
 
@@ -61,14 +61,14 @@ Texas follows a "modified comparative fault" system for personal injury claims. 
 
 <ul class="check-list">
 <li><strong>Statute of Limitations</strong> — Generally 2 years from the date of injury to file a lawsuit</li>
-<li><strong>Comparative Fault</strong> — You can recover damages if you are less than 51% at fault</li>
+<li><strong>Comparative Fault</strong> — Individuals can recover damages if they are less than 51% at fault</li>
 <li><strong>Damage Caps</strong> — Certain non-economic damages may be capped in specific cases</li>
 <li><strong>Workers' Compensation</strong> — Texas has unique rules for workplace injuries</li>
 </ul>
 
 ### Types of Compensable Damages
 
-When you're injured due to another's negligence, Texas law may allow you to recover:
+When individuals are injured due to another's negligence, Texas law may allow them to recover:
 
 **Economic Damages** include medical expenses (past and future), lost wages, loss of earning capacity, and property damage.
 
@@ -76,23 +76,23 @@ When you're injured due to another's negligence, Texas law may allow you to reco
 
 **Punitive Damages** may be awarded in cases of gross negligence or intentional misconduct, though Texas caps these awards in most cases.
 
-## Your Rights Under Texas Law
+## Rights Under Texas Law
 
 <div class="info-box">
 <h4>Constitutional Protections</h4>
-<p>Both the U.S. Constitution and Texas Constitution protect your rights throughout legal proceedings. These include the right to remain silent, the right to an attorney, the right to a speedy trial, and protection against unreasonable searches and seizures.</p>
+<p>Both the U.S. Constitution and Texas Constitution protect individuals' rights throughout legal proceedings. These include the right to remain silent, the right to an attorney, the right to a speedy trial, and protection against unreasonable searches and seizures.</p>
 </div>
 
-### If You're Accused of a Crime
+### If Individuals Are Accused of a Crime
 
-You have the right to remain silent. You have the right to an attorney, and if you cannot afford one, one will be appointed. You have the right to know the charges against you and to confront witnesses. Understanding and exercising these rights is critical.
+Individuals have the right to remain silent. They have the right to an attorney, and if they cannot afford one, one will be appointed. They have the right to know the charges against them and to confront witnesses. Understanding and exercising these rights is critical.
 
-### If You've Been Injured
+### If Individuals Have Been Injured
 
-You have the right to seek compensation from those responsible for your injuries. Insurance companies may contact you quickly after an accident; you are not required to give recorded statements. Consulting with an attorney before speaking with insurance adjusters protects your interests.
+Individuals have the right to seek compensation from those responsible for their injuries. Insurance companies may contact individuals quickly after an accident; they are not required to give recorded statements. Consulting with an attorney before speaking with insurance adjusters protects their interests.
 
 <div class="legal-notice">
-<strong>Consult an Attorney:</strong> This information provides a general overview only. Texas law is complex and constantly evolving. For advice specific to your situation, consult with a licensed Texas attorney. The attorneys advertised on this site offer consultations to discuss your specific circumstances.
+<strong>Consult an Attorney:</strong> This information provides a general overview only. Texas law is complex and constantly evolving. For advice specific to their situation, individuals should consult with a licensed Texas attorney. The attorneys advertised on this site offer consultations to discuss specific circumstances.
 </div>
 
 <div style="margin-top: 2rem;">

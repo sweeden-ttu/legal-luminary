@@ -9,7 +9,7 @@ description: "Advertising opportunities for attorneys and legal service provider
 ---
 
 <p class="intro-text">
-Connect with clients who are actively seeking legal representation in Central Texas. Our site serves as a trusted resource for residents of Bell County and surrounding areas looking for defense attorneys, personal injury lawyers, and other legal services.
+Connect with clients who are actively seeking legal representation in Central Texas. This site serves as a trusted resource for residents of Bell County and surrounding areas looking for defense attorneys, personal injury lawyers, and other legal services.
 </p>
 
 ## Why Advertise Here?
@@ -24,7 +24,7 @@ Connect with clients who are actively seeking legal representation in Central Te
 
 ### Featured Attorney Listings
 
-Prominently display your practice in our attorney directories:
+Prominently display practices in attorney directories:
 
 - **Criminal Defense Attorneys** — Featured placement on our defense attorney page
 - **Personal Injury Attorneys** — Featured placement on our personal injury page

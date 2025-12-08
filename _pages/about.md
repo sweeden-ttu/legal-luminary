@@ -19,7 +19,7 @@ Central Texas Legal Resource was created to serve the residents of Bell County a
 
 ## Why We Exist
 
-Navigating the legal system can be overwhelming, especially when you're facing criminal charges or dealing with injuries from an accident. Many people don't know where to turn or what to expect. Our goal is to:
+Navigating the legal system can be overwhelming, especially when individuals are facing criminal charges or dealing with injuries from an accident. Many people don't know where to turn or what to expect. Our goal is to:
 
 <ul class="check-list">
 <li><strong>Educate</strong> — Provide clear, accessible information about Texas law and Bell County court procedures</li>
@@ -42,10 +42,10 @@ We focus on Bell County and Central Texas, including the communities of:
 
 ## For Attorneys
 
-If you are a licensed Texas attorney interested in being featured on this site, please visit our [advertising page](/advertise/) for more information.
+Licensed Texas attorneys interested in being featured on this site should visit the [advertising page](/advertise/) for more information.
 
 <div class="legal-notice">
-<strong>Important Disclaimer:</strong> Central Texas Legal Resource provides general legal information only. This website does not constitute legal advice and does not create an attorney-client relationship. The information provided is for educational purposes and should not be relied upon as a substitute for consultation with a licensed Texas attorney regarding your specific legal situation. Each legal matter is unique and requires individual analysis by a qualified professional.
+<strong>Important Disclaimer:</strong> Central Texas Legal Resource provides general legal information only. This website does not constitute legal advice and does not create an attorney-client relationship. The information provided is for educational purposes and should not be relied upon as a substitute for consultation with a licensed Texas attorney regarding specific legal situations. Each legal matter is unique and requires individual analysis by a qualified professional.
 </div>
 
 ## Contact
