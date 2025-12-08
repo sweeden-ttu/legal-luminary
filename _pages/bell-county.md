@@ -38,6 +38,11 @@ Bell County has three County Courts at Law handling:
 <li>Probate matters</li>
 </ul>
 
+### Prosecutors & Contacts
+
+- **Bell County Attorney’s Office** — Prosecutes Class A/B misdemeanors in County Courts at Law. Location: Bell County Courthouse Annex, 550 East 2nd Avenue, Belton, TX 76513. Main line: (254) 933-5161 (County Clerk main switchboard; ask for County Attorney).
+- **Bell County District Attorney (Stephanie Newell)** — Prosecutes felonies in District Courts.
+
 ### Justice of the Peace Courts
 
 Five Justice of the Peace precincts handle:
