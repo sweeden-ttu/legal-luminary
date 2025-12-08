@@ -1,0 +1,203 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" width="1280" height="640">
+  <defs>
+    <!-- Gradient backgrounds -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628"/>
+      <stop offset="50%" style="stop-color:#1a2744"/>
+      <stop offset="100%" style="stop-color:#0d1f3c"/>
+    </linearGradient>
+    
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4af37"/>
+      <stop offset="50%" style="stop-color:#f4d03f"/>
+      <stop offset="100%" style="stop-color:#c9a227"/>
+    </linearGradient>
+    
+    <linearGradient id="glowGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4da6ff;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#0066cc;stop-opacity:0.4"/>
+    </linearGradient>
+    
+    <linearGradient id="scaleGold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f4d03f"/>
+      <stop offset="100%" style="stop-color:#b8960c"/>
+    </linearGradient>
+    
+    <!-- Glow filter -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Star pattern for Texas -->
+    <polygon id="texasStar" points="0,-20 5,-6 20,-6 8,4 13,18 0,10 -13,18 -8,4 -20,-6 -5,-6" fill="url(#goldGradient)"/>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1280" height="640" fill="url(#bgGradient)"/>
+  
+  <!-- Subtle grid pattern -->
+  <g opacity="0.05">
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#4da6ff" stroke-width="0.5"/>
+    </pattern>
+    <rect width="1280" height="640" fill="url(#grid)"/>
+  </g>
+  
+  <!-- Decorative circuit lines -->
+  <g stroke="#4da6ff" stroke-width="1" opacity="0.15" fill="none">
+    <path d="M0,100 Q200,150 400,100 T800,120 T1280,80"/>
+    <path d="M0,540 Q300,500 600,540 T1280,520"/>
+    <path d="M100,0 Q150,200 100,400 T120,640"/>
+    <path d="M1180,0 Q1130,200 1180,400 T1160,640"/>
+  </g>
+  
+  <!-- Glowing orb behind scales -->
+  <ellipse cx="320" cy="300" rx="180" ry="180" fill="#4da6ff" opacity="0.08" filter="url(#softGlow)"/>
+  <ellipse cx="320" cy="300" rx="120" ry="120" fill="#4da6ff" opacity="0.1"/>
+  
+  <!-- Scales of Justice with AI elements -->
+  <g transform="translate(320, 260)">
+    <!-- Central pillar -->
+    <rect x="-8" y="20" width="16" height="130" fill="url(#scaleGold)" rx="3"/>
+    <rect x="-25" y="145" width="50" height="12" fill="url(#scaleGold)" rx="2"/>
+    <rect x="-35" y="153" width="70" height="8" fill="url(#scaleGold)" rx="2"/>
+    
+    <!-- Balance beam -->
+    <rect x="-120" y="-5" width="240" height="10" fill="url(#scaleGold)" rx="3"/>
+    
+    <!-- Fulcrum decoration -->
+    <circle cx="0" cy="0" r="18" fill="url(#goldGradient)" filter="url(#glow)"/>
+    <circle cx="0" cy="0" r="10" fill="#0a1628"/>
+    
+    <!-- AI Core symbol in center -->
+    <circle cx="0" cy="0" r="6" fill="#4da6ff" filter="url(#glow)"/>
+    
+    <!-- Left scale pan -->
+    <g transform="translate(-100, 30)">
+      <line x1="0" y1="-35" x2="0" y2="0" stroke="url(#goldGradient)" stroke-width="2"/>
+      <line x1="-30" y1="-35" x2="0" y2="-35" stroke="url(#goldGradient)" stroke-width="2"/>
+      <line x1="30" y1="-35" x2="0" y2="-35" stroke="url(#goldGradient)" stroke-width="2"/>
+      <line x1="-30" y1="-35" x2="-40" y2="20" stroke="url(#goldGradient)" stroke-width="2"/>
+      <line x1="30" y1="-35" x2="40" y2="20" stroke="url(#goldGradient)" stroke-width="2"/>
+      <ellipse cx="0" cy="25" rx="45" ry="12" fill="url(#scaleGold)"/>
+      <ellipse cx="0" cy="22" rx="40" ry="10" fill="#1a2744"/>
+      <!-- AI nodes -->
+      <circle cx="-15" cy="22" r="4" fill="#4da6ff" opacity="0.8"/>
+      <circle cx="15" cy="22" r="4" fill="#4da6ff" opacity="0.8"/>
+      <circle cx="0" cy="22" r="4" fill="#4da6ff" opacity="0.8"/>
+    </g>
+    
+    <!-- Right scale pan -->
+    <g transform="translate(100, 30)">
+      <line x1="0" y1="-35" x2="0" y2="0" stroke="url(#goldGradient)" stroke-width="2"/>
+      <line x1="-30" y1="-35" x2="0" y2="-35" stroke="url(#goldGradient)" stroke-width="2"/>
+      <line x1="30" y1="-35" x2="0" y2="-35" stroke="url(#goldGradient)" stroke-width="2"/>
+      <line x1="-30" y1="-35" x2="-40" y2="20" stroke="url(#goldGradient)" stroke-width="2"/>
+      <line x1="30" y1="-35" x2="40" y2="20" stroke="url(#goldGradient)" stroke-width="2"/>
+      <ellipse cx="0" cy="25" rx="45" ry="12" fill="url(#scaleGold)"/>
+      <ellipse cx="0" cy="22" rx="40" ry="10" fill="#1a2744"/>
+      <!-- Document icon -->
+      <rect x="-12" y="12" width="24" height="20" fill="#e8e8e8" rx="2"/>
+      <line x1="-6" y1="18" x2="6" y2="18" stroke="#1a2744" stroke-width="2"/>
+      <line x1="-6" y1="24" x2="6" y2="24" stroke="#1a2744" stroke-width="2"/>
+    </g>
+  </g>
+  
+  <!-- Texas Star accent -->
+  <use href="#texasStar" transform="translate(320, 100) scale(1.5)" filter="url(#glow)"/>
+  
+  <!-- Small decorative stars -->
+  <use href="#texasStar" transform="translate(180, 160) scale(0.4)" opacity="0.6"/>
+  <use href="#texasStar" transform="translate(460, 180) scale(0.4)" opacity="0.6"/>
+  <use href="#texasStar" transform="translate(200, 400) scale(0.3)" opacity="0.4"/>
+  <use href="#texasStar" transform="translate(440, 420) scale(0.3)" opacity="0.4"/>
+  
+  <!-- Main Title -->
+  <text x="800" y="200" font-family="Georgia, serif" font-size="72" font-weight="bold" fill="url(#goldGradient)" text-anchor="middle" filter="url(#glow)">
+    Central Texas
+  </text>
+  <text x="800" y="290" font-family="Georgia, serif" font-size="80" font-weight="bold" fill="url(#goldGradient)" text-anchor="middle" filter="url(#glow)">
+    Legal Luminary
+  </text>
+  
+  <!-- Decorative line -->
+  <line x1="580" y1="320" x2="1020" y2="320" stroke="url(#goldGradient)" stroke-width="2" opacity="0.7"/>
+  <circle cx="580" cy="320" r="4" fill="url(#goldGradient)"/>
+  <circle cx="1020" cy="320" r="4" fill="url(#goldGradient)"/>
+  
+  <!-- COMPLIANT Tagline - Changed from "Legal Assistant" to "Research Tool" -->
+  <text x="800" y="375" font-family="Arial, sans-serif" font-size="30" fill="#4da6ff" text-anchor="middle" letter-spacing="2" filter="url(#glow)">
+    AI-ENHANCED LEGAL RESEARCH TOOL
+  </text>
+  
+  <!-- Subtitle - Clearly positions as tool FOR attorneys -->
+  <text x="800" y="425" font-family="Georgia, serif" font-size="24" fill="#b8c5d6" text-anchor="middle" font-style="italic">
+    Intelligent Research &amp; Document Analysis for Licensed Texas Attorneys
+  </text>
+  
+  <!-- AI circuit decoration around text -->
+  <g stroke="#4da6ff" stroke-width="1.5" fill="none" opacity="0.4">
+    <path d="M550,160 L530,160 L530,220 L550,220"/>
+    <path d="M1050,160 L1070,160 L1070,220 L1050,220"/>
+    <path d="M550,420 L530,420 L530,360 L550,360"/>
+    <path d="M1050,420 L1070,420 L1070,360 L1050,360"/>
+    <circle cx="530" cy="190" r="3" fill="#4da6ff"/>
+    <circle cx="1070" cy="190" r="3" fill="#4da6ff"/>
+    <circle cx="530" cy="390" r="3" fill="#4da6ff"/>
+    <circle cx="1070" cy="390" r="3" fill="#4da6ff"/>
+  </g>
+  
+  <!-- REQUIRED ETHICS DISCLAIMER - Per Texas Bar Guidelines -->
+  <rect x="0" y="465" width="1280" height="70" fill="#0a1628" opacity="0.9"/>
+  <line x1="100" y1="470" x2="1180" y2="470" stroke="#4da6ff" stroke-width="1" opacity="0.3"/>
+  
+  <text x="640" y="495" font-family="Arial, sans-serif" font-size="14" fill="#8899aa" text-anchor="middle">
+    This tool assists licensed attorneys with legal research. It does not provide legal advice and is not a substitute for attorney judgment.
+  </text>
+  <text x="640" y="515" font-family="Arial, sans-serif" font-size="14" fill="#8899aa" text-anchor="middle">
+    All AI-generated content must be verified by a licensed attorney before use. Compliant with Texas Ethics Opinion 705.
+  </text>
+  
+  <!-- Bottom accent bar -->
+  <rect x="0" y="620" width="1280" height="20" fill="url(#goldGradient)" opacity="0.8"/>
+  
+  <!-- Tech dots decoration -->
+  <g fill="#4da6ff" opacity="0.3">
+    <circle cx="60" cy="580" r="3"/>
+    <circle cx="80" cy="580" r="3"/>
+    <circle cx="100" cy="580" r="3"/>
+    <circle cx="1180" cy="580" r="3"/>
+    <circle cx="1200" cy="580" r="3"/>
+    <circle cx="1220" cy="580" r="3"/>
+  </g>
+  
+  <!-- Professional tagline -->
+  <text x="640" y="560" font-family="Arial, sans-serif" font-size="18" fill="#6688aa" text-anchor="middle" letter-spacing="1">
+    EMPOWERING TEXAS LEGAL PROFESSIONALS WITH RESPONSIBLE AI
+  </text>
+  
+  <!-- Website URL -->
+  <text x="640" y="595" font-family="Arial, sans-serif" font-size="24" fill="#4da6ff" text-anchor="middle" font-weight="bold" letter-spacing="1">
+    legalluminary.com
+  </text>
+  
+  <!-- Small compliance badge -->
+  <g transform="translate(1180, 100)">
+    <circle cx="0" cy="0" r="35" fill="#1a2744" stroke="url(#goldGradient)" stroke-width="2"/>
+    <text x="0" y="-8" font-family="Arial, sans-serif" font-size="9" fill="#d4af37" text-anchor="middle" font-weight="bold">TEXAS BAR</text>
+    <text x="0" y="5" font-family="Arial, sans-serif" font-size="9" fill="#d4af37" text-anchor="middle" font-weight="bold">ETHICS</text>
+    <text x="0" y="18" font-family="Arial, sans-serif" font-size="9" fill="#d4af37" text-anchor="middle" font-weight="bold">COMPLIANT</text>
+  </g>
+</svg>
