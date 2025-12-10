@@ -167,7 +167,7 @@ Time matters when someone is in jail. The sooner individuals act, the sooner the
 <p>Fast, reliable bail bond services throughout Texas and nationwide. Payment plans available. No judgment, just professional help when needed most.</p>
 <p style="font-size: 1.25rem; margin-bottom: 0.5rem;"><strong>📞 <a href="tel:+12546342245" style="color: var(--gold-light);">Bell County: (254) 634-2245</a></strong></p>
 <p style="font-size: 1.25rem; margin-bottom: 0.5rem;"><strong>📞 <a href="tel:+13256739999" style="color: var(--gold-light);">Abilene: (325) 673-9999</a></strong></p>
-<p style="margin-bottom: 0.5rem;">🌐 <a href="https://badboyabilene.com/" target="_blank" rel="noopener" style="color: var(--gold-light);">badboyabilene.com</a></p>
+<p style="margin-bottom: 0.5rem;">🌐 <a href="https://badboystexas.com/" target="_blank" rel="noopener" style="color: var(--gold-light);">badboystexas.com</a></p>
 <p style="font-size: 0.9rem; margin-bottom: 0; opacity: 0.9;">Available 24/7, including holidays — Licensed Bondsman — Member of Professional Bondsmen of Texas</p>
 </div>
 

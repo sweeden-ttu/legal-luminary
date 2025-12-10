@@ -5,11 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }} | {{ site.title }}</title>
   <meta name="description" content="{{ page.description | default: site.description }}">
+  
+  <!-- Google Tag Manager -->
+  {% if site.gtm_container_id and site.gtm_container_id != "GTM-XXXXXXX" %}
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','{{ site.gtm_container_id }}');</script>
+  <!-- End Google Tag Manager -->
+  {% endif %}
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  {% if site.gtm_container_id and site.gtm_container_id != "GTM-XXXXXXX" %}
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.gtm_container_id }}"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  {% endif %}
+  
   <header class="site-header">
     <div class="header-top">
       <div class="container">
@@ -97,10 +115,10 @@
         <div class="footer-contact">
           <h4>Service Area</h4>
           <p>Bell County, Texas<br>Including Killeen, Temple, Belton, Harker Heights, Copperas Cove</p>
-          <p style="margin-top: 1rem; font-size: 0.85rem;"><strong>Responsible Attorney:</strong><br>
-          Robert Lewis<br>
-          Killeen, TX 76541<br>
-          (254) 702-4767</p>
+<p style="margin-top: 1rem; font-size: 0.85rem;"><strong>Hosting and Responsible Party:</strong><br>
+          Cloud Fronts Group<br>
+          Killeen, TX<br>
+          <a href="mailto:scott_weeden@fronts.cloud">scott_weeden@fronts.cloud</a></p>
         </div>
       </div>
       <div class="footer-bottom">
