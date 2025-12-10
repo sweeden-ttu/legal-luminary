@@ -58,6 +58,8 @@ navigation:
     url: /personal-injury/
   - title: Resources
     url: /resources/
+  - title: Artificial Intelligence
+    url: /artificial-intelligence/
 
 # Service Area Information
 service_area:
