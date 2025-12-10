@@ -30,6 +30,8 @@ node_modules/
 # LaTeX / pdflatex intermediate files
 *.aux
 *.out
+*.pdf
+*.tex
 
 # Temporary files
 tmp/
