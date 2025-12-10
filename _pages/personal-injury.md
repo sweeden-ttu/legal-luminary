@@ -26,6 +26,37 @@ Personal injury law covers a wide range of situations where someone's negligence
 
 Car accidents on I-35, Highway 190, and other busy Bell County roads frequently cause serious injuries. Common causes include distracted driving, speeding, failure to yield, and commercial vehicle negligence. Compensation may include medical expenses, lost wages, vehicle damage, and pain and suffering.
 
+**Types of vehicle accident cases include:**
+
+- **Car Accidents** — Collisions involving passenger vehicles, including rear-end accidents, intersection crashes, and highway incidents
+- **Truck and Commercial Vehicle Accidents** — Accidents involving 18-wheelers, delivery trucks, and other commercial vehicles often result in catastrophic injuries due to the size and weight of these vehicles
+- **Motorcycle Accidents** — Motorcyclists are particularly vulnerable and often suffer severe injuries even in minor collisions
+- **Bicycle Accidents** — Cyclists struck by motor vehicles may have claims against negligent drivers
+- **Pedestrian Accidents** — Individuals struck while walking, jogging, or crossing streets
+- **Bus Accidents** — Accidents involving public transit, school buses, or charter buses
+- **Drunk Driving Accidents** — Victims of intoxicated drivers may pursue claims against both the driver and potentially establishments that over-served alcohol (dram shop liability)
+
+### Dram Shop Liability
+
+Texas law allows victims to pursue claims against bars, restaurants, and other establishments that serve alcohol to visibly intoxicated persons or minors who then cause injuries. These cases require proving the establishment's negligence in serving alcohol contributed to the accident.
+
+### Catastrophic Injuries
+
+Some accidents result in life-altering injuries that require extensive medical treatment and long-term care:
+
+- Traumatic brain injuries
+- Spinal cord injuries and paralysis
+- Severe burns
+- Amputation or loss of limbs
+- Multiple fractures
+- Permanent disfigurement
+
+These cases often involve substantial damages to account for lifetime medical needs, loss of earning capacity, and diminished quality of life.
+
+### Wrongful Death
+
+When negligence results in the death of a loved one, surviving family members may pursue a wrongful death claim. Texas law allows spouses, children, and parents of the deceased to seek compensation for funeral expenses, lost financial support, loss of companionship, and mental anguish.
+
 ### Premises Liability
 
 Property owners have a duty to maintain safe conditions. When they fail, injuries result:
@@ -106,3 +137,13 @@ Most personal injury attorneys offer free consultations and work on contingency 
 <p style="margin-bottom: 0.5rem;">✉️ <a href="mailto:malcozer@mbaattorneys.com" style="color: var(--gold-light);">malcozer@mbaattorneys.com</a></p>
 <p style="font-size: 0.75rem; margin-bottom: 0; opacity: 0.7;">Licensed in Texas. Contingency fee basis available — no attorney fee unless recovery is obtained. Client may be responsible for costs and expenses regardless of outcome. Prior results do not guarantee a similar outcome.</p>
 </div>
+
+## Recent Articles
+
+Stay informed about personal injury, disability claims, and estate planning topics relevant to Texas residents:
+
+- [Holiday Reminder: Updating Your Will After Life Changes This Year]({% post_url 2025-12-02-holiday-reminder-updating-your-will %})
+- [Top Social Security Disability Myths Debunked]({% post_url 2025-11-02-top-social-security-disability-myths-debunked %})
+- [What Happens If You're Hurt in a Store While Holiday Shopping in Texas?]({% post_url 2025-10-01-what-happens-if-hurt-in-store-holiday-shopping %})
+- [How Long Does the Probate Process Take in Texas?]({% post_url 2025-09-03-how-long-does-probate-take-in-texas %})
+- [Common Mistakes to Avoid When Filing for Social Security Disability Benefits]({% post_url 2025-08-03-common-mistakes-filing-social-security-disability %})
