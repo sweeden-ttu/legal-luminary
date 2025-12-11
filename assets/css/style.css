@@ -302,6 +302,23 @@ ul.check-list li::before { content: "✓"; position: absolute; left: 0; color: v
   .nav-menu { display: none; flex-direction: column; width: 100%; background: var(--white); position: absolute; top: 100%; left: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
   .nav-menu.active { display: flex; }
   .nav-menu a { border-bottom: none; border-left: 3px solid transparent; }
+  .nav-item-has-children > a::after { content: " ▶"; }
+  .nav-submenu {
+    position: static;
+    display: none;
+    box-shadow: none;
+    background: var(--cream);
+    margin-left: 1rem;
+    border-left: 2px solid var(--gold);
+    padding-left: 0.5rem;
+  }
+  .nav-item-has-children.active .nav-submenu {
+    display: block;
+  }
+  .nav-submenu a {
+    padding: 0.625rem 1rem;
+    font-size: 0.875rem;
+  }
   .hero h1 { font-size: 2rem; }
   .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
   .sidebar { grid-template-columns: 1fr; }
