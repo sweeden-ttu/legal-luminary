@@ -1,15 +1,24 @@
 // Central Texas Legal Resource - Main JavaScript
 
 document.addEventListener('DOMContentLoaded', function() {
+  // Ensure non-critical images lazy load for better performance
+  document.querySelectorAll('img:not([loading])').forEach(img => {
+    if (!img.closest('.logo')) {
+      img.setAttribute('loading', 'lazy');
+    }
+  });
+
   // Mobile navigation toggle
   const navToggle = document.querySelector('.nav-toggle');
-  const navMenu = document.querySelector('.nav-menu');
+  const navMenu = document.getElementById('primary-menu') || document.querySelector('.nav-menu');
   
   if (navToggle && navMenu) {
+    navToggle.setAttribute('aria-expanded', 'false');
+
     navToggle.addEventListener('click', function() {
       navMenu.classList.toggle('active');
       const expanded = navMenu.classList.contains('active');
-      navToggle.setAttribute('aria-expanded', expanded);
+      navToggle.setAttribute('aria-expanded', expanded ? 'true' : 'false');
     });
 
     // Close menu when clicking outside
@@ -57,6 +66,9 @@ document.addEventListener('DOMContentLoaded', function() {
   // Smooth scroll for anchor links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
+      if (this.classList.contains('skip-link')) {
+        return;
+      }
       const href = this.getAttribute('href');
       if (href !== '#') {
         e.preventDefault();
