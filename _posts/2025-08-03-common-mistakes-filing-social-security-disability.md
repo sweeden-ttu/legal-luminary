@@ -2,6 +2,7 @@
 title: "Common Mistakes to Avoid When Filing for Social Security Disability Benefits"
 date: 2025-08-03
 layout: default
+description: "Filing for Social Security Disability benefits in Texas can be complex. Avoiding these seven critical errors improves the chances of approval."
 ---
 
 Filing for Social Security Disability benefits in Texas can be complex. Avoiding these seven critical errors improves the chances of approval.

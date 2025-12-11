@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://www.legalluminary.com/sitemap.xml
