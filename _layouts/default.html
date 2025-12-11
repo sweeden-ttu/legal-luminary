@@ -52,7 +52,29 @@
           <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
           <ul class="nav-menu">
             {% for item in site.navigation %}
-            <li><a href="{{ item.url | relative_url }}" {% if page.url == item.url %}class="active"{% endif %}>{{ item.title }}</a></li>
+            <li class="{% if item.children %}nav-item-has-children{% endif %}">
+              <a href="{% if item.external %}{{ item.url }}{% else %}{{ item.url | relative_url }}{% endif %}" 
+                 {% if page.url == item.url %}class="active"{% endif %}
+                 {% if item.alt %}title="{{ item.alt }}"{% endif %}
+                 {% if item.external %}target="_blank" rel="noopener noreferrer"{% endif %}>
+                {{ item.title }}
+              </a>
+              {% if item.children %}
+              <ul class="nav-submenu">
+                {% for child in item.children %}
+                <li>
+                  <a href="{% if child.external %}{{ child.url }}{% else %}{{ child.url | relative_url }}{% endif %}"
+                     {% if page.url == child.url %}class="active"{% endif %}
+                     {% if child.alt %}title="{{ child.alt }}"{% endif %}
+                     {% if child.external %}target="_blank" rel="noopener noreferrer"{% endif %}>
+                    {{ child.title }}
+                    {% if child.alt %}<span class="submenu-alt">{{ child.alt }}</span>{% endif %}
+                  </a>
+                </li>
+                {% endfor %}
+              </ul>
+              {% endif %}
+            </li>
             {% endfor %}
           </ul>
         </nav>

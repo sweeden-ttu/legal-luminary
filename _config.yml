@@ -58,8 +58,13 @@ navigation:
     url: /personal-injury/
   - title: Resources
     url: /resources/
-  - title: Artificial Intelligence
-    url: /artificial-intelligence/
+    children:
+      - title: Bell County Odyssey Portal
+        url: https://odyssey.bellcountytx.com
+        alt: Search Court Hearings and Case Records
+        external: true
+      - title: Artificial Intelligence
+        url: /artificial-intelligence/
 
 # Service Area Information
 service_area:
