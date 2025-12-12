@@ -98,9 +98,9 @@
         <aside class="sidebar">
           <div class="ad-section">
             <span class="ad-label">ADVERTISEMENT</span>
-            {% if page.sidebar_ads == "defense" %}
+            {% if page.url == '/' or page.url == '/index.html' or page.url == '/defense/' or page.url == '/defense/index.html' or page.sidebar_ads == "defense" %}
             {% include ads-defense.html %}
-            {% elsif page.sidebar_ads == "injury" %}
+            {% elsif page.url == '/personal-injury/' or page.url == '/personal-injury/index.html' or page.sidebar_ads == "injury" %}
             {% include ads-injury.html %}
             {% else %}
             {% include ads-general.html %}
