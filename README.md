@@ -299,7 +299,7 @@ bundle exec jekyll doctor
 
 ## 📄 License
 
-Content © 2024 Central Texas Legal Resource. All rights reserved.
+Content © 2024 Cloud Fronts Group, Killeen, TX. All rights reserved.
 
 ---
 
