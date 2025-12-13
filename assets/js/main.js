@@ -80,10 +80,23 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // Add external link indicators
+  // Add external link indicators and security attributes
   document.querySelectorAll('a[target="_blank"]').forEach(link => {
     if (!link.querySelector('.external-icon')) {
-      link.setAttribute('rel', 'noopener noreferrer');
+      // Preserve existing rel values (like 'sponsored') and add security attributes
+      const currentRel = link.getAttribute('rel') || '';
+      const relTokens = currentRel.split(/\s+/).filter(token => token.length > 0);
+      const requiredTokens = ['noopener', 'noreferrer'];
+      
+      // Add required tokens if not already present
+      requiredTokens.forEach(token => {
+        if (!relTokens.includes(token)) {
+          relTokens.push(token);
+        }
+      });
+      
+      // Set the updated rel attribute, preserving any existing values like 'sponsored'
+      link.setAttribute('rel', relTokens.join(' '));
     }
   });
 
