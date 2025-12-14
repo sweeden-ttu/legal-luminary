@@ -2,6 +2,7 @@
 title: "What Happens If You're Hurt in a Store While Holiday Shopping in Texas?"
 date: 2025-10-01
 layout: default
+description: "The holiday shopping season brings increased foot traffic to Texas retail establishments. Understanding premises liability rights is essential for customers who suffer injuries while shopping."
 ---
 
 The holiday shopping season brings increased foot traffic to Texas retail establishments. Understanding premises liability rights is essential for customers who suffer injuries while shopping.
