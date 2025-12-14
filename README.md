@@ -325,7 +325,7 @@ The legal profession has rapidly adopted artificial intelligence tools to enhanc
 
 Legal Luminary distinguishes itself from other AI legal tools through the following innovative features:
 
-1. **Canvas LMS Integration for Law Schools**: Legal Luminary seamlessly integrates with Instructure Canvas, the learning management system used by many law schools. This integration allows law students to access verified legal information directly within their course environment, making research and study more efficient. The integration repository is available at `/Users/sdw/Documents/gh/canvas-lms-mcp`, enabling any law school using Canvas to connect Legal Luminary to their learning platform.
+1. **Canvas LMS Integration for Law Schools**: Legal Luminary seamlessly integrates with Instructure Canvas, the learning management system used by many law schools. This integration allows law students to access verified legal information directly within their course environment, making research and study more efficient. The integration is built using the Model Context Protocol (MCP), enabling any law school using Canvas to connect Legal Luminary to their learning platform.
 
 2. **Verified Information Architecture**: Unlike general-purpose AI tools that may generate unverified content, Legal Luminary is built on a foundation of verified legal information. The platform cross-references multiple authoritative legal databases to ensure accuracy and reliability, reducing the risk of citing incorrect or outdated legal precedents.
 
@@ -339,7 +339,7 @@ Legal Luminary distinguishes itself from other AI legal tools through the follow
 
 Legal Luminary can plug into any law school using Instructure Canvas, providing students and faculty with AI-powered legal research and study assistance directly within the Canvas learning environment. The integration is built using the Model Context Protocol (MCP) and allows for seamless access to verified legal information without leaving the Canvas interface.
 
-For technical details and implementation information, see the Canvas LMS MCP repository at `/Users/sdw/Documents/gh/canvas-lms-mcp`.
+For technical details and implementation information, see the Canvas LMS MCP integration repository.
 
 ---
 
