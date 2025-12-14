@@ -60,7 +60,7 @@ navigation:
     url: /resources/
     children:
       - title: Bell County Odyssey Portal
-        url: https://odyssey.bellcountytx.com
+        url: https://justice.bellcounty.texas.gov/PublicPortal/
         alt: Search Court Hearings and Case Records
         external: true
       - title: Artificial Intelligence
