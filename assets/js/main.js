@@ -1,15 +1,24 @@
 // Central Texas Legal Resource - Main JavaScript
 
 document.addEventListener('DOMContentLoaded', function() {
+  // Ensure non-critical images lazy load for better performance
+  document.querySelectorAll('img:not([loading])').forEach(img => {
+    if (!img.closest('.logo')) {
+      img.setAttribute('loading', 'lazy');
+    }
+  });
+
   // Mobile navigation toggle
   const navToggle = document.querySelector('.nav-toggle');
-  const navMenu = document.querySelector('.nav-menu');
+  const navMenu = document.getElementById('primary-menu') || document.querySelector('.nav-menu');
   
   if (navToggle && navMenu) {
+    navToggle.setAttribute('aria-expanded', 'false');
+
     navToggle.addEventListener('click', function() {
       navMenu.classList.toggle('active');
       const expanded = navMenu.classList.contains('active');
-      navToggle.setAttribute('aria-expanded', expanded);
+      navToggle.setAttribute('aria-expanded', expanded ? 'true' : 'false');
     });
 
     // Close menu when clicking outside
@@ -57,6 +66,9 @@ document.addEventListener('DOMContentLoaded', function() {
   // Smooth scroll for anchor links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
+      if (this.classList.contains('skip-link')) {
+        return;
+      }
       const href = this.getAttribute('href');
       if (href !== '#') {
         e.preventDefault();
@@ -68,10 +80,23 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // Add external link indicators
+  // Add external link indicators and security attributes
   document.querySelectorAll('a[target="_blank"]').forEach(link => {
     if (!link.querySelector('.external-icon')) {
-      link.setAttribute('rel', 'noopener noreferrer');
+      // Preserve existing rel values (like 'sponsored') and add security attributes
+      const currentRel = link.getAttribute('rel') || '';
+      const relTokens = currentRel.split(/\s+/).filter(token => token.length > 0);
+      const requiredTokens = ['noopener', 'noreferrer'];
+      
+      // Add required tokens if not already present
+      requiredTokens.forEach(token => {
+        if (!relTokens.includes(token)) {
+          relTokens.push(token);
+        }
+      });
+      
+      // Set the updated rel attribute, preserving any existing values like 'sponsored'
+      link.setAttribute('rel', relTokens.join(' '));
     }
   });
 
