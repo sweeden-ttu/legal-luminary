@@ -2,6 +2,7 @@
 title: "How Long Does the Probate Process Take in Texas?"
 date: 2025-09-03
 layout: default
+description: "Texas probate timelines vary significantly based on estate complexity. For straightforward cases, expect 6-12 months, though contested estates can take years."
 ---
 
 Texas probate timelines vary significantly based on estate complexity. For straightforward cases, expect 6-12 months, though contested estates can take years.

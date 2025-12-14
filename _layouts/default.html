@@ -128,9 +128,10 @@
     ]
   }
   </script>
+  <link rel="icon" type="image/svg+xml" href="{{ '/assets/imgs/legal-luminary-research-tool.svg' | relative_url }}">
   
   <!-- Google Tag Manager -->
-  {% if site.gtm_container_id and site.gtm_container_id != "GTM-XXXXXXX" %}
+  {% if site.gtm_container_id and site.gtm_container_id == "GTM-KBVFD8NL" %}
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -144,12 +145,9 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
-  <a class="skip-link" href="#main-content">Skip to main content</a>
-  <!-- Google Tag Manager (noscript) -->
-  {% if site.gtm_container_id and site.gtm_container_id != "GTM-XXXXXXX" %}
+  {% if site.gtm_container_id and site.gtm_container_id == "GTM-KBVFD8NL" %}
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.gtm_container_id }}"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
   {% endif %}
   
   <header class="site-header">
@@ -252,9 +250,9 @@
         <aside class="sidebar" aria-label="Helpful resources">
           <div class="ad-section" aria-label="Sponsored legal providers">
             <span class="ad-label">ADVERTISEMENT</span>
-            {% if page.sidebar_ads == "defense" %}
+            {% if page.url == '/' or page.url == '/index.html' or page.url == '/defense/' or page.url == '/defense/index.html' or page.sidebar_ads == "defense" %}
             {% include ads-defense.html %}
-            {% elsif page.sidebar_ads == "injury" %}
+            {% elsif page.url == '/personal-injury/' or page.url == '/personal-injury/index.html' or page.sidebar_ads == "injury" %}
             {% include ads-injury.html %}
             {% else %}
             {% include ads-general.html %}
