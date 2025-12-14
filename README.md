@@ -297,6 +297,52 @@ bundle exec jekyll doctor
 
 ---
 
+## 🤖 Artificial Intelligence in Legal Practice
+
+### About Legal Luminary
+
+Legal Luminary is an AI-powered tool designed to assist law students, attorneys, and paralegals with real and verified legal information. The platform prioritizes client privacy and discretion above all else, ensuring that sensitive legal matters remain confidential while providing powerful AI assistance for legal research, case preparation, and educational support.
+
+### Common AI Tools Assisting Attorneys Today
+
+The legal profession has rapidly adopted artificial intelligence tools to enhance efficiency and accuracy. Some of the most common AI tools currently assisting attorneys include:
+
+- **Legal Research Platforms**: AI-powered research tools like Westlaw Edge and LexisNexis use natural language processing to find relevant case law, statutes, and legal precedents more quickly than traditional keyword searches.
+
+- **Document Review and E-Discovery**: Tools such as Relativity and Everlaw use machine learning to analyze thousands of documents, identify relevant information, and flag privileged communications during the discovery process.
+
+- **Contract Analysis**: AI platforms like Kira Systems and LawGeex can review contracts, identify key terms, extract clauses, and compare documents against standard templates, significantly reducing review time.
+
+- **Legal Writing Assistants**: Tools like Casetext's CoCounsel and Harvey AI help attorneys draft briefs, memos, and other legal documents by providing research-backed suggestions and citations.
+
+- **Predictive Analytics**: AI systems analyze historical case data to predict case outcomes, settlement values, and judge behavior, helping attorneys make more informed strategic decisions.
+
+- **Client Communication**: Chatbots and AI assistants handle initial client intake, answer frequently asked questions, and schedule consultations, allowing attorneys to focus on complex legal work.
+
+- **Compliance Monitoring**: AI tools continuously monitor regulatory changes and alert attorneys to updates that may affect their clients or practice areas.
+
+### Legal Luminary: Five Unique Features
+
+Legal Luminary distinguishes itself from other AI legal tools through the following innovative features:
+
+1. **Canvas LMS Integration for Law Schools**: Legal Luminary seamlessly integrates with Instructure Canvas, the learning management system used by many law schools. This integration allows law students to access verified legal information directly within their course environment, making research and study more efficient. The integration repository is available at `/Users/sdw/Documents/gh/canvas-lms-mcp`, enabling any law school using Canvas to connect Legal Luminary to their learning platform.
+
+2. **Verified Information Architecture**: Unlike general-purpose AI tools that may generate unverified content, Legal Luminary is built on a foundation of verified legal information. The platform cross-references multiple authoritative legal databases to ensure accuracy and reliability, reducing the risk of citing incorrect or outdated legal precedents.
+
+3. **Privacy-First Design**: Client privacy and discretion are paramount in Legal Luminary's architecture. The platform employs end-to-end encryption, does not store client-specific case information, and operates with strict data retention policies. Attorneys can use the tool with confidence that sensitive client matters remain confidential.
+
+4. **Educational Focus for Law Students**: While many AI legal tools target practicing attorneys, Legal Luminary includes specialized features for law students, including case brief generation, study guides, and integration with academic coursework. The Canvas integration allows students to access these features within their existing learning workflow.
+
+5. **Context-Aware Legal Research**: Legal Luminary understands the context of legal questions and provides more relevant results by considering jurisdiction, practice area, and case type. This context awareness reduces the time attorneys spend filtering through irrelevant search results and helps law students understand how legal concepts apply in different scenarios.
+
+### Canvas LMS Integration
+
+Legal Luminary can plug into any law school using Instructure Canvas, providing students and faculty with AI-powered legal research and study assistance directly within the Canvas learning environment. The integration is built using the Model Context Protocol (MCP) and allows for seamless access to verified legal information without leaving the Canvas interface.
+
+For technical details and implementation information, see the Canvas LMS MCP repository at `/Users/sdw/Documents/gh/canvas-lms-mcp`.
+
+---
+
 ## 📄 License
 
 Content © 2024 Central Texas Legal Resource. All rights reserved.
