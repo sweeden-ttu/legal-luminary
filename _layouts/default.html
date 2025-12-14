@@ -131,7 +131,7 @@
   <link rel="icon" type="image/svg+xml" href="{{ '/assets/imgs/legal-luminary-research-tool.svg' | relative_url }}">
   
   <!-- Google Tag Manager -->
-  {% if site.gtm_container_id and site.gtm_container_id == "GTM-KBVFD8NL" %}
+  {% if site.gtm_container_id and site.gtm_container_id != "GTM-XXXXXXX" %}
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -145,9 +145,11 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
-  {% if site.gtm_container_id and site.gtm_container_id == "GTM-KBVFD8NL" %}
+  <!-- Google Tag Manager (noscript) -->
+  {% if site.gtm_container_id and site.gtm_container_id != "GTM-XXXXXXX" %}
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.gtm_container_id }}"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   {% endif %}
   
   <header class="site-header">
