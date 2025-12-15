@@ -59,46 +59,6 @@
   
   <!-- Blog Posts -->
   <url>
-    <loc>https://www.legalluminary.com/2020/03/18/my-first-post/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.legalluminary.com/2020/03/22/get-code/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.legalluminary.com/2020/03/24/edit-content/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.legalluminary.com/2020/03/25/github-edit/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.legalluminary.com/2020/04/15/posts/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.legalluminary.com/2020/04/17/local-env/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.legalluminary.com/2020/04/19/links/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.legalluminary.com/2020/04/20/html/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://www.legalluminary.com/2025/08/03/common-mistakes-filing-social-security-disability/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
