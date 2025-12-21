@@ -1,0 +1,365 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]: This XML file does not appear to have any style information associated with it. The document tree is shown below.
+  - generic [ref=e4]:
+    - generic [ref=e7]:
+      - text: <urlset
+      - generic [ref=e8]: xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      - text: ">"
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e13]: <url>
+        - generic [ref=e14]:
+          - generic [ref=e15]:
+            - generic [ref=e16]: <loc>
+            - text: http://localhost:4000/about/
+            - generic [ref=e17]: </loc>
+          - generic [ref=e18]:
+            - generic [ref=e19]: <changefreq>
+            - text: monthly
+            - generic [ref=e20]: </changefreq>
+          - generic [ref=e21]:
+            - generic [ref=e22]: <priority>
+            - text: "0.6"
+            - generic [ref=e23]: </priority>
+        - generic [ref=e25]: </url>
+      - generic [ref=e26]:
+        - generic [ref=e29]: <url>
+        - generic [ref=e30]:
+          - generic [ref=e31]:
+            - generic [ref=e32]: <loc>
+            - text: http://localhost:4000/advertise/
+            - generic [ref=e33]: </loc>
+          - generic [ref=e34]:
+            - generic [ref=e35]: <changefreq>
+            - text: monthly
+            - generic [ref=e36]: </changefreq>
+          - generic [ref=e37]:
+            - generic [ref=e38]: <priority>
+            - text: "0.6"
+            - generic [ref=e39]: </priority>
+        - generic [ref=e41]: </url>
+      - generic [ref=e42]:
+        - generic [ref=e45]: <url>
+        - generic [ref=e46]:
+          - generic [ref=e47]:
+            - generic [ref=e48]: <loc>
+            - text: http://localhost:4000/archive/
+            - generic [ref=e49]: </loc>
+          - generic [ref=e50]:
+            - generic [ref=e51]: <changefreq>
+            - text: monthly
+            - generic [ref=e52]: </changefreq>
+          - generic [ref=e53]:
+            - generic [ref=e54]: <priority>
+            - text: "0.6"
+            - generic [ref=e55]: </priority>
+        - generic [ref=e57]: </url>
+      - generic [ref=e58]:
+        - generic [ref=e61]: <url>
+        - generic [ref=e62]:
+          - generic [ref=e63]:
+            - generic [ref=e64]: <loc>
+            - text: http://localhost:4000/artificial-intelligence/
+            - generic [ref=e65]: </loc>
+          - generic [ref=e66]:
+            - generic [ref=e67]: <changefreq>
+            - text: monthly
+            - generic [ref=e68]: </changefreq>
+          - generic [ref=e69]:
+            - generic [ref=e70]: <priority>
+            - text: "0.6"
+            - generic [ref=e71]: </priority>
+        - generic [ref=e73]: </url>
+      - generic [ref=e74]:
+        - generic [ref=e77]: <url>
+        - generic [ref=e78]:
+          - generic [ref=e79]:
+            - generic [ref=e80]: <loc>
+            - text: http://localhost:4000/bail-bonds/
+            - generic [ref=e81]: </loc>
+          - generic [ref=e82]:
+            - generic [ref=e83]: <changefreq>
+            - text: monthly
+            - generic [ref=e84]: </changefreq>
+          - generic [ref=e85]:
+            - generic [ref=e86]: <priority>
+            - text: "0.6"
+            - generic [ref=e87]: </priority>
+        - generic [ref=e89]: </url>
+      - generic [ref=e90]:
+        - generic [ref=e93]: <url>
+        - generic [ref=e94]:
+          - generic [ref=e95]:
+            - generic [ref=e96]: <loc>
+            - text: http://localhost:4000/bell-county/
+            - generic [ref=e97]: </loc>
+          - generic [ref=e98]:
+            - generic [ref=e99]: <changefreq>
+            - text: monthly
+            - generic [ref=e100]: </changefreq>
+          - generic [ref=e101]:
+            - generic [ref=e102]: <priority>
+            - text: "0.6"
+            - generic [ref=e103]: </priority>
+        - generic [ref=e105]: </url>
+      - generic [ref=e106]:
+        - generic [ref=e109]: <url>
+        - generic [ref=e110]:
+          - generic [ref=e111]:
+            - generic [ref=e112]: <loc>
+            - text: http://localhost:4000/defense/
+            - generic [ref=e113]: </loc>
+          - generic [ref=e114]:
+            - generic [ref=e115]: <changefreq>
+            - text: monthly
+            - generic [ref=e116]: </changefreq>
+          - generic [ref=e117]:
+            - generic [ref=e118]: <priority>
+            - text: "0.6"
+            - generic [ref=e119]: </priority>
+        - generic [ref=e121]: </url>
+      - generic [ref=e122]:
+        - generic [ref=e125]: <url>
+        - generic [ref=e126]:
+          - generic [ref=e127]:
+            - generic [ref=e128]: <loc>
+            - text: http://localhost:4000/
+            - generic [ref=e129]: </loc>
+          - generic [ref=e130]:
+            - generic [ref=e131]: <changefreq>
+            - text: monthly
+            - generic [ref=e132]: </changefreq>
+          - generic [ref=e133]:
+            - generic [ref=e134]: <priority>
+            - text: "0.6"
+            - generic [ref=e135]: </priority>
+        - generic [ref=e137]: </url>
+      - generic [ref=e138]:
+        - generic [ref=e141]: <url>
+        - generic [ref=e142]:
+          - generic [ref=e143]:
+            - generic [ref=e144]: <loc>
+            - text: http://localhost:4000/m3u8downloader/
+            - generic [ref=e145]: </loc>
+          - generic [ref=e146]:
+            - generic [ref=e147]: <changefreq>
+            - text: monthly
+            - generic [ref=e148]: </changefreq>
+          - generic [ref=e149]:
+            - generic [ref=e150]: <priority>
+            - text: "0.6"
+            - generic [ref=e151]: </priority>
+        - generic [ref=e153]: </url>
+      - generic [ref=e154]:
+        - generic [ref=e157]: <url>
+        - generic [ref=e158]:
+          - generic [ref=e159]:
+            - generic [ref=e160]: <loc>
+            - text: http://localhost:4000/news-feeds/
+            - generic [ref=e161]: </loc>
+          - generic [ref=e162]:
+            - generic [ref=e163]: <changefreq>
+            - text: monthly
+            - generic [ref=e164]: </changefreq>
+          - generic [ref=e165]:
+            - generic [ref=e166]: <priority>
+            - text: "0.6"
+            - generic [ref=e167]: </priority>
+        - generic [ref=e169]: </url>
+      - generic [ref=e170]:
+        - generic [ref=e173]: <url>
+        - generic [ref=e174]:
+          - generic [ref=e175]:
+            - generic [ref=e176]: <loc>
+            - text: http://localhost:4000/personal-injury/
+            - generic [ref=e177]: </loc>
+          - generic [ref=e178]:
+            - generic [ref=e179]: <changefreq>
+            - text: monthly
+            - generic [ref=e180]: </changefreq>
+          - generic [ref=e181]:
+            - generic [ref=e182]: <priority>
+            - text: "0.6"
+            - generic [ref=e183]: </priority>
+        - generic [ref=e185]: </url>
+      - generic [ref=e186]:
+        - generic [ref=e189]: <url>
+        - generic [ref=e190]:
+          - generic [ref=e191]:
+            - generic [ref=e192]: <loc>
+            - text: http://localhost:4000/resources/
+            - generic [ref=e193]: </loc>
+          - generic [ref=e194]:
+            - generic [ref=e195]: <changefreq>
+            - text: monthly
+            - generic [ref=e196]: </changefreq>
+          - generic [ref=e197]:
+            - generic [ref=e198]: <priority>
+            - text: "0.6"
+            - generic [ref=e199]: </priority>
+        - generic [ref=e201]: </url>
+      - generic [ref=e202]:
+        - generic [ref=e205]: <url>
+        - generic [ref=e206]:
+          - generic [ref=e207]:
+            - generic [ref=e208]: <loc>
+            - text: http://localhost:4000/texas-law/
+            - generic [ref=e209]: </loc>
+          - generic [ref=e210]:
+            - generic [ref=e211]: <changefreq>
+            - text: monthly
+            - generic [ref=e212]: </changefreq>
+          - generic [ref=e213]:
+            - generic [ref=e214]: <priority>
+            - text: "0.6"
+            - generic [ref=e215]: </priority>
+        - generic [ref=e217]: </url>
+      - generic [ref=e218]:
+        - generic [ref=e221]: <url>
+        - generic [ref=e222]:
+          - generic [ref=e223]:
+            - generic [ref=e224]: <loc>
+            - text: http://localhost:4000/assets/css/style.css
+            - generic [ref=e225]: </loc>
+          - generic [ref=e226]:
+            - generic [ref=e227]: <changefreq>
+            - text: monthly
+            - generic [ref=e228]: </changefreq>
+          - generic [ref=e229]:
+            - generic [ref=e230]: <priority>
+            - text: "0.6"
+            - generic [ref=e231]: </priority>
+        - generic [ref=e233]: </url>
+      - generic [ref=e234]:
+        - generic [ref=e237]: <url>
+        - generic [ref=e238]:
+          - generic [ref=e239]:
+            - generic [ref=e240]: <loc>
+            - text: http://localhost:4000/ES6_MODULES_GUIDE/
+            - generic [ref=e241]: </loc>
+          - generic [ref=e242]:
+            - generic [ref=e243]: <changefreq>
+            - text: monthly
+            - generic [ref=e244]: </changefreq>
+          - generic [ref=e245]:
+            - generic [ref=e246]: <priority>
+            - text: "0.6"
+            - generic [ref=e247]: </priority>
+        - generic [ref=e249]: </url>
+      - generic [ref=e250]:
+        - generic [ref=e253]: <url>
+        - generic [ref=e254]:
+          - generic [ref=e255]:
+            - generic [ref=e256]: <loc>
+            - text: http://localhost:4000/GOOGLE_SETUP_GUIDE/
+            - generic [ref=e257]: </loc>
+          - generic [ref=e258]:
+            - generic [ref=e259]: <changefreq>
+            - text: monthly
+            - generic [ref=e260]: </changefreq>
+          - generic [ref=e261]:
+            - generic [ref=e262]: <priority>
+            - text: "0.6"
+            - generic [ref=e263]: </priority>
+        - generic [ref=e265]: </url>
+      - generic [ref=e266]:
+        - generic [ref=e269]: <url>
+        - generic [ref=e270]:
+          - generic [ref=e271]:
+            - generic [ref=e272]: <loc>
+            - text: http://localhost:4000/PLAYWRIGHT_CACHE_GUIDE/
+            - generic [ref=e273]: </loc>
+          - generic [ref=e274]:
+            - generic [ref=e275]: <changefreq>
+            - text: monthly
+            - generic [ref=e276]: </changefreq>
+          - generic [ref=e277]:
+            - generic [ref=e278]: <priority>
+            - text: "0.6"
+            - generic [ref=e279]: </priority>
+        - generic [ref=e281]: </url>
+      - generic [ref=e282]:
+        - generic [ref=e285]: <url>
+        - generic [ref=e286]:
+          - generic [ref=e287]:
+            - generic [ref=e288]: <loc>
+            - text: http://localhost:4000/README_PLAYWRIGHT/
+            - generic [ref=e289]: </loc>
+          - generic [ref=e290]:
+            - generic [ref=e291]: <changefreq>
+            - text: monthly
+            - generic [ref=e292]: </changefreq>
+          - generic [ref=e293]:
+            - generic [ref=e294]: <priority>
+            - text: "0.6"
+            - generic [ref=e295]: </priority>
+        - generic [ref=e297]: </url>
+      - generic [ref=e298]:
+        - generic [ref=e301]: <url>
+        - generic [ref=e302]:
+          - generic [ref=e303]:
+            - generic [ref=e304]: <loc>
+            - text: http://localhost:4000/task_progress/
+            - generic [ref=e305]: </loc>
+          - generic [ref=e306]:
+            - generic [ref=e307]: <changefreq>
+            - text: monthly
+            - generic [ref=e308]: </changefreq>
+          - generic [ref=e309]:
+            - generic [ref=e310]: <priority>
+            - text: "0.6"
+            - generic [ref=e311]: </priority>
+        - generic [ref=e313]: </url>
+      - generic [ref=e314]:
+        - generic [ref=e317]: <url>
+        - generic [ref=e318]:
+          - generic [ref=e319]:
+            - generic [ref=e320]: <loc>
+            - text: http://localhost:4000/test-results/cache-js-files-JavaScript--81527-es-from-m3u8downloader-page/error-context/
+            - generic [ref=e321]: </loc>
+          - generic [ref=e322]:
+            - generic [ref=e323]: <changefreq>
+            - text: monthly
+            - generic [ref=e324]: </changefreq>
+          - generic [ref=e325]:
+            - generic [ref=e326]: <priority>
+            - text: "0.6"
+            - generic [ref=e327]: </priority>
+        - generic [ref=e329]: </url>
+      - generic [ref=e330]:
+        - generic [ref=e333]: <url>
+        - generic [ref=e334]:
+          - generic [ref=e335]:
+            - generic [ref=e336]: <loc>
+            - text: http://localhost:4000/test-results/cache-js-files-JavaScript--aac19-he-JS-files-per-site-origin/error-context/
+            - generic [ref=e337]: </loc>
+          - generic [ref=e338]:
+            - generic [ref=e339]: <changefreq>
+            - text: monthly
+            - generic [ref=e340]: </changefreq>
+          - generic [ref=e341]:
+            - generic [ref=e342]: <priority>
+            - text: "0.6"
+            - generic [ref=e343]: </priority>
+        - generic [ref=e345]: </url>
+      - generic [ref=e346]:
+        - generic [ref=e349]: <url>
+        - generic [ref=e350]:
+          - generic [ref=e351]:
+            - generic [ref=e352]: <loc>
+            - text: http://localhost:4000/test-results/cache-js-files-JavaScript--be248-l-JS-modules-loaded-on-page/error-context/
+            - generic [ref=e353]: </loc>
+          - generic [ref=e354]:
+            - generic [ref=e355]: <changefreq>
+            - text: monthly
+            - generic [ref=e356]: </changefreq>
+          - generic [ref=e357]:
+            - generic [ref=e358]: <priority>
+            - text: "0.6"
+            - generic [ref=e359]: </priority>
+        - generic [ref=e361]: </url>
+    - generic [ref=e363]: </urlset>
+```

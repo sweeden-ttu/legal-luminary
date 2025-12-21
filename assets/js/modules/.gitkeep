@@ -1,0 +1,9 @@
+# This directory will contain ES6 modules for the M3U8 downloader
+# Place your module files here:
+# - options.js
+# - hls.es.js
+# - iso-boxer.js
+# - saveAs.js
+# - hls-decrypter.js
+# - ffmpeg/index.js
+
