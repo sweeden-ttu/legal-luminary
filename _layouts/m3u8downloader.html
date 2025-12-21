@@ -337,6 +337,10 @@
     </div>
   </footer>
 
+  <!-- Main JavaScript Files -->
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/hls-loader.js' | relative_url }}"></script>
+
   <!-- FetchV-based JavaScript Module Loader -->
   <script type="module">
     // Define module paths based on FetchV structure
@@ -347,6 +351,10 @@
       "HLS_WORKER": "https://fetchv.net/extensions/dist/modules/web-worker.js",
       "ISO_BOXER": "{{ '/assets/js/modules/iso-boxer.js' | relative_url }}",
       "SAVEAS": "{{ '/assets/js/modules/saveAs.js' | relative_url }}",
+      "STREAMSAVER": "{{ '/assets/js/modules/streamSaver/index.js' | relative_url }}",
+      "MP4_MUXER": "{{ '/assets/js/modules/mp4-muxer.js' | relative_url }}",
+      "MP4BOX": "{{ '/assets/js/modules/mp4box.js' | relative_url }}",
+      "WEB_WORKER": "{{ '/assets/js/modules/web-worker.js' | relative_url }}",
       "FFMPEG": "{{ '/assets/js/modules/ffmpeg/index.js' | relative_url }}",
       "HLSDECRYPTER": "{{ '/assets/js/modules/hls-decrypter.js' | relative_url }}",
       "DECRYPTER_WORKER": "https://fetchv.net/extensions/dist/modules/decrypter-worker.js"
