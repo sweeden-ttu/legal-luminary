@@ -250,6 +250,7 @@
           {% endif %}
         </article>
         <aside class="sidebar" aria-label="Helpful resources">
+          {% include sidebar-feed.html %}
           <div class="ad-section" aria-label="Sponsored legal providers">
             <span class="ad-label">ADVERTISEMENT</span>
             {% if page.url == '/' or page.url == '/index.html' or page.url == '/defense/' or page.url == '/defense/index.html' or page.sidebar_ads == "defense" %}

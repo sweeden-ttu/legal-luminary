@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title | default: "M3U8 Video Downloader" }}</title>
+  <meta name="description" content="{{ page.description | default: 'Download M3U8 streaming videos with our browser extension. Fast, reliable, and easy to use.' }}">
+  <meta name="robots" content="{{ page.robots | default: 'index,follow' }}">
+  
+  <!-- Google Tag Manager - Different from main site -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+  <!-- End Google Tag Manager -->
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <style>
+    .m3u8-page {
+      min-height: 100vh;
+      background: #f5f5f5;
+    }
+    .m3u8-header {
+      background: #fff;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 1rem 0;
+    }
+    .m3u8-header .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .m3u8-logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #333;
+    }
+    .m3u8-nav {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .m3u8-nav a {
+      color: #666;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .m3u8-nav a:hover {
+      color: #333;
+    }
+    .m3u8-main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: 2rem;
+    }
+    .m3u8-content {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .m3u8-title {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: #333;
+    }
+    .m3u8-subtitle {
+      font-size: 0.875rem;
+      color: #666;
+      margin-bottom: 2rem;
+    }
+    .install-button {
+      display: inline-block;
+      background: #4285f4;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-bottom: 2rem;
+      transition: background 0.2s;
+    }
+    .install-button:hover {
+      background: #357ae8;
+    }
+    .warning-box {
+      background: #fff3cd;
+      border: 1px solid #ffc107;
+      border-radius: 4px;
+      padding: 1rem;
+      margin-bottom: 2rem;
+    }
+    .warning-box p {
+      margin: 0.5rem 0;
+      font-size: 0.875rem;
+      color: #856404;
+    }
+    .faq-section {
+      margin-top: 3rem;
+    }
+    .faq-item {
+      margin-bottom: 1.5rem;
+    }
+    .faq-item h3 {
+      font-size: 1.125rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: #333;
+    }
+    .faq-item p {
+      color: #666;
+      line-height: 1.6;
+    }
+    .m3u8-sidebar {
+      position: sticky;
+      top: 20px;
+    }
+    .m3u8-sidebar .ad-section {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      margin-bottom: 1.5rem;
+    }
+    .download-interface {
+      background: #f8f9fa;
+      border: 1px solid #e0e0e0;
+      border-radius: 4px;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+    .download-status {
+      text-align: center;
+      padding: 2rem;
+      color: #666;
+    }
+    .m3u8-footer {
+      background: #fff;
+      border-top: 1px solid #e0e0e0;
+      padding: 2rem 0;
+      margin-top: 3rem;
+    }
+    .m3u8-footer .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+    }
+    .footer-section h4 {
+      font-size: 0.875rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: #333;
+    }
+    .footer-section ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .footer-section ul li {
+      margin-bottom: 0.5rem;
+    }
+    .footer-section a {
+      color: #666;
+      text-decoration: none;
+      font-size: 0.875rem;
+    }
+    .footer-section a:hover {
+      color: #333;
+    }
+    .footer-bottom {
+      text-align: center;
+      margin-top: 2rem;
+      padding-top: 2rem;
+      border-top: 1px solid #e0e0e0;
+      color: #999;
+      font-size: 0.875rem;
+    }
+  </style>
+</head>
+<body class="m3u8-page">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  
+  <header class="m3u8-header">
+    <div class="container">
+      <div class="m3u8-logo">M3U8 Downloader</div>
+      <nav>
+        <ul class="m3u8-nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#web-store">Web Store</a></li>
+          <li><a href="#feedback">Feedback</a></li>
+          <li><a href="#blog">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="m3u8-main">
+    <div class="m3u8-content">
+      <h1 class="m3u8-title">M3U8 Video Downloader</h1>
+      <p class="m3u8-subtitle">The M3U8 downloader requires a browser extension to work. If you have already installed it, please remove the old version and update to the latest version!</p>
+      
+      <a href="#" class="install-button">Install/Update Extension</a>
+      
+      <div class="warning-box">
+        <p><strong>Important:</strong> This tab is a streaming video data processor for caching and parsing HLS video data.</p>
+        <p>Please do not close this page during the download process! If you are interested in certain content on the page, you can open it in a new tab (hold down the Ctrl key and click the link).</p>
+        <p>If you see the message "<strong>Application did not detect any data!</strong>", please check if you have both the old and new versions of the extension enabled. Disable one of them and try again.</p>
+        <p>After the download is complete, when you click the Save button, the browser may need some time to finish saving if the file is large. Please do not close this page during the process, or the save may fail!</p>
+      </div>
+
+      <div class="download-interface">
+        <div class="download-status">
+          <p><strong>No data detected by the application!</strong></p>
+          <p>HLS</p>
+          <p>File Name: --</p>
+          <p>0% | 0/0 | 0MB | 0KB/s | 00:00:00</p>
+        </div>
+      </div>
+
+      <section class="faq-section">
+        <h2>FAQ</h2>
+        
+        <div class="faq-item">
+          <h3>What are HLS and M3U8?</h3>
+          <p>HLS stands for HTTP Live Streaming, and M3U8 is an index file that contains information about the segments of a streaming video. Currently, most online videos are HLS streaming videos. This M3U8 Downloader works by downloading video segments through the M3U8 file and then merging them into an MP4 file.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Can this M3U8 Downloader download any M3U8 videos?</h3>
+          <p>No! This downloader is only suitable for M3U8 videos that use standard video playback technology. It may not work for M3U8 videos that use unconventional playback technology, encryption, or live streaming. If you encounter a situation where direct downloading is not possible, you can try using Record Mode to save the video.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Why is my download speed slow?</h3>
+          <p>In most cases, the download speed ranges from 200KB/s to 20MB/s, depending on your network condition and the target video. If you are unable to smoothly play the target video before downloading, it indicates a poor network connection between you and the target video. Additionally, try to avoid playing the target video while downloading to reduce bandwidth usage.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Why does the download task pause automatically?</h3>
+          <p>The task will automatically pause when there are more than 30 error requests. Continuous error requests are usually caused by your network being disconnected or the requests being rejected. You can wait for a moment and then click the "Continue" button to try again.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Why are the downloaded video frames corrupted?</h3>
+          <p>If the video can be played after downloading but the frames only display scrambled colors, it means that the video data cannot be parsed correctly. Please try using "Record Mode".</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Can I download multiple videos simultaneously?</h3>
+          <p>If you are downloading large videos, it is advisable to avoid doing so unless your computer has sufficient power and bandwidth. During downloading, the extension caches data in this tab, using your memory (which is released when you close the tab or save the file to disk). The larger the video you download, the more memory it occupies. If your computer's memory is insufficient, it may cause the tab to crash.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Where are the downloaded videos saved?</h3>
+          <p>When you click the "Save" button, the file is saved by default in the download directory of your browser. Normally, when saving a file, the browser will display a pop-up window for you to choose the download folder. If this window does not appear, you can find the downloaded video file in your browser's download history.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Does this application collect my video information or save copies of the videos I download?</h3>
+          <p>No! All work is done within your browser, and it will not upload your video information or video copies to anywhere. Your personal privacy will be protected, and you can use it with confidence!</p>
+        </div>
+      </section>
+
+      <div style="margin-top: 3rem; text-align: center;">
+        <p>Can this application assist you? If it is helpful, could you give us a review?</p>
+        <a href="#" class="install-button" style="margin-top: 1rem;">Give a review</a>
+      </div>
+    </div>
+
+    <aside class="m3u8-sidebar">
+      <div class="ad-section" aria-label="Sponsored legal providers">
+        <span class="ad-label">ADVERTISEMENT</span>
+        {% include ads-general.html %}
+      </div>
+      
+      <div style="background: #fff; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+        <h3 style="font-size: 1rem; margin-bottom: 1rem; color: #333;">Browser support</h3>
+        <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.875rem; color: #666;">
+          <li>• Chromium 92+</li>
+          <li>• Google Chrome 92+</li>
+          <li>• Microsoft Edge 92+</li>
+        </ul>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="m3u8-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h4>Information</h4>
+          <ul>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Feedback</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Function</h4>
+          <ul>
+            <li><a href="#">M3U8 Video Downloader</a></li>
+            <li><a href="#">MP4 Video Downloader</a></li>
+            <li><a href="#">Video Buffering Recorder</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Interactive</h4>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 M3U8 Downloader. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FetchV-based JavaScript Module Loader -->
+  <script type="module">
+    // Define module paths based on FetchV structure
+    // Using Jekyll asset paths - modules are in /assets/js/modules/
+    const MODULES = {
+      "OPTIONS": "{{ '/assets/js/modules/options.js' | relative_url }}",
+      "HLS": "{{ '/assets/js/modules/hls.es.js' | relative_url }}",
+      "HLS_WORKER": "https://fetchv.net/extensions/dist/modules/web-worker.js",
+      "ISO_BOXER": "{{ '/assets/js/modules/iso-boxer.js' | relative_url }}",
+      "SAVEAS": "{{ '/assets/js/modules/saveAs.js' | relative_url }}",
+      "FFMPEG": "{{ '/assets/js/modules/ffmpeg/index.js' | relative_url }}",
+      "HLSDECRYPTER": "{{ '/assets/js/modules/hls-decrypter.js' | relative_url }}",
+      "DECRYPTER_WORKER": "https://fetchv.net/extensions/dist/modules/decrypter-worker.js"
+    };
+
+    // Make MODULES available globally
+    window.MODULES = MODULES;
+
+    // Module loader function
+    async function loadModule(name, path) {
+      try {
+        const module = await import(path);
+        return module;
+      } catch (error) {
+        console.error(`Failed to load module ${name} from ${path}:`, error);
+        return null;
+      }
+    }
+
+    // Load all modules
+    const loadedModules = {};
+    
+    async function initializeModules() {
+      console.log('Initializing M3U8 Downloader modules...');
+      
+      for (const [name, path] of Object.entries(MODULES)) {
+        try {
+          // For worker modules, we just store the path
+          if (name.includes('WORKER')) {
+            loadedModules[name] = path;
+            console.log(`Registered worker module: ${name} -> ${path}`);
+          } else {
+            // For regular modules, attempt to load them
+            const module = await loadModule(name, path);
+            if (module) {
+              loadedModules[name] = module;
+              console.log(`Loaded module: ${name}`);
+            }
+          }
+        } catch (error) {
+          console.warn(`Module ${name} will be loaded on demand:`, error.message);
+          // Store path for lazy loading
+          loadedModules[name] = { path, loaded: false };
+        }
+      }
+
+      // Make loaded modules available globally
+      window.loadedModules = loadedModules;
+      
+      // Dispatch custom event when modules are ready
+      window.dispatchEvent(new CustomEvent('modulesReady', { detail: loadedModules }));
+      
+      console.log('Module initialization complete. Available modules:', Object.keys(loadedModules));
+    }
+
+    // Initialize modules when DOM is ready
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initializeModules);
+    } else {
+      initializeModules();
+    }
+
+    // Export for use in other scripts
+    window.loadM3U8Module = async function(moduleName) {
+      if (loadedModules[moduleName] && !loadedModules[moduleName].loaded) {
+        const module = await loadModule(moduleName, loadedModules[moduleName].path);
+        if (module) {
+          loadedModules[moduleName] = module;
+        }
+      }
+      return loadedModules[moduleName];
+    };
+
+    // Handle URL parameters that might be passed during redirect from Mediasite
+    const urlParams = new URLSearchParams(window.location.search);
+    const m3u8Url = urlParams.get('url') || urlParams.get('m3u8') || urlParams.get('source');
+    
+    if (m3u8Url) {
+      console.log('M3U8 URL detected from query parameters:', m3u8Url);
+      // Store the M3U8 URL for use by the downloader
+      window.m3u8SourceUrl = m3u8Url;
+      
+      // Dispatch event with the M3U8 URL
+      window.addEventListener('modulesReady', function() {
+        window.dispatchEvent(new CustomEvent('m3u8UrlDetected', { 
+          detail: { url: m3u8Url } 
+        }));
+      });
+    }
+
+    // Listen for messages from browser extension (if extension sends M3U8 data)
+    window.addEventListener('message', function(event) {
+      // Verify origin if needed
+      if (event.data && event.data.type === 'M3U8_DATA') {
+        console.log('Received M3U8 data from extension:', event.data);
+        window.m3u8Data = event.data;
+        window.dispatchEvent(new CustomEvent('m3u8DataReceived', { 
+          detail: event.data 
+        }));
+      }
+    });
+  </script>
+</body>
+</html>
+

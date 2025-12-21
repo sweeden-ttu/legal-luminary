@@ -1,0 +1,39 @@
+{%- comment -%}
+Sidebar Feed
+- Shows up to 5 most recent posts from the last 365 days
+- Uses excerpts (auto-generated from content if not explicitly set)
+{%- endcomment -%}
+
+{%- assign now_ts = 'now' | date: '%s' | plus: 0 -%}
+{%- assign cutoff_ts = now_ts | minus: 31536000 -%}
+
+{%- assign recent_posts = "" | split: "" -%}
+{%- for post in site.posts -%}
+  {%- assign post_ts = post.date | date: '%s' | plus: 0 -%}
+  {%- if post_ts >= cutoff_ts -%}
+    {%- assign recent_posts = recent_posts | push: post -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- assign recent_posts = recent_posts | sort: 'date' | reverse -%}
+
+<section class="sidebar-feed" aria-labelledby="sidebar-feed-title">
+  <h3 id="sidebar-feed-title">Recent Articles</h3>
+
+  {%- if recent_posts.size == 0 -%}
+    <p class="sidebar-feed-empty">No recent articles yet.</p>
+  {%- else -%}
+    <ul class="sidebar-feed-list">
+      {%- for post in recent_posts limit: 5 -%}
+        <li class="sidebar-feed-item">
+          <a class="sidebar-feed-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          <div class="sidebar-feed-meta">{{ post.date | date: "%b %-d, %Y" }}</div>
+          <p class="sidebar-feed-excerpt">
+            {{ post.excerpt | default: post.content | strip_html | strip_newlines | truncate: 140 }}
+          </p>
+        </li>
+      {%- endfor -%}
+    </ul>
+    <a class="sidebar-feed-more" href="{{ '/archive' | relative_url }}">View all recent articles</a>
+  {%- endif -%}
+</section>

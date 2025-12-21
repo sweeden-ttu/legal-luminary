@@ -1,0 +1,41 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e5]:
+  - generic [ref=e6]:
+    - img "Texas Tech University" [ref=e8]
+    - main [ref=e9]:
+      - generic [ref=e12]:
+        - generic [ref=e13]: Please sign-in with ttu\eRaider username or ttuhsc\eRaider username or your @ttu.edu email address.
+        - generic [ref=e15]:
+          - textbox "User Account" [active] [ref=e17]:
+            - /placeholder: ttu\username or ttuhsc\username or email@ttu.edu
+          - textbox "Password" [ref=e19]
+          - button "Sign in" [ref=e21] [cursor=pointer]
+        - generic [ref=e23]:
+          - table [ref=e24]:
+            - rowgroup [ref=e25]:
+              - row "Set-Up Account Change Password" [ref=e26]:
+                - cell "Set-Up Account" [ref=e27]:
+                  - link "Set-Up Account" [ref=e29] [cursor=pointer]:
+                    - /url: https://eraider.ttu.edu/acctsetup
+                - cell "Change Password" [ref=e30]:
+                  - link "Change Password" [ref=e32] [cursor=pointer]:
+                    - /url: https://eraider.ttu.edu/pwdchange
+              - row "Forgot Password? Forgot Username?" [ref=e33]:
+                - cell "Forgot Password?" [ref=e34]:
+                  - link "Forgot Password?" [ref=e36] [cursor=pointer]:
+                    - /url: https://eraider.ttu.edu/acctrecover?process=password
+                - cell "Forgot Username?" [ref=e37]:
+                  - link "Forgot Username?" [ref=e39] [cursor=pointer]:
+                    - /url: https://eraider.ttu.edu/acctrecover?process=username
+          - paragraph [ref=e40]: "Use of Texas Tech Information resources is subject to Texas Tech Operating Policies and other applicable laws. As a state higher education institution, Texas Tech is required by the State of Texas to notify you of the following: A) Unauthorized use is prohibited, B) Usage may be subject to security testing and monitoring, C) Misuse is subject to criminal prosecution, and D) No expectation of privacy except as otherwise provided by applicable privacy laws (TAC Â202.76 -Security Controls Standards Catalog AC-8)."
+  - contentinfo [ref=e42]:
+    - generic [ref=e44]:
+      - link "© Texas Tech" [ref=e45] [cursor=pointer]:
+        - /url: https://eraider.ttu.edu/signin.aspx
+      - link [ref=e46] [cursor=pointer]:
+        - /url: http://www.ttu.edu/policy
+      - link [ref=e47] [cursor=pointer]:
+        - /url: http://www.depts.ttu.edu/ithelpcentral/
+```

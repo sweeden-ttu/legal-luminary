@@ -1,0 +1,34 @@
+# Cline Ruleset: Jekyll + Playwright browsing
+
+## Goal
+When I ask to "browse pages" or "verify site" in this repo, use **Playwright against a locally running Jekyll dev server** (NOT `_site/` static file browsing).
+
+## Local server contract (Jekyll)
+- Start the site with Bundler:
+  - `bundle install` (if needed)
+  - `bundle exec jekyll serve --livereload --host 127.0.0.1 --port 4000 --baseurl "" --incremental`
+- Treat `http://127.0.0.1:4000/` as the canonical base URL for Playwright tests.
+- Before running Playwright, confirm the server is reachable (HTTP 200) and wait until it’s ready.
+- When finished, stop the server process (avoid leaving background `jekyll serve` running).
+
+## Playwright contract
+- Tests should use `@playwright/test` and a single base URL:
+  - Prefer `process.env.PLAYWRIGHT_BASE_URL || "http://127.0.0.1:4000"`
+- Prefer smoke tests that:
+  - Load the homepage
+  - Load key pages from `_pages/` (about, archive, resources, etc.)
+  - Assert no obvious broken navigation (e.g., header links exist)
+  - Assert page has non-empty `<title>` and main content region.
+
+## Recommended execution flow (what I should do)
+1. Ensure Ruby deps are installed (`bundle install`) and Node deps are installed (`npm ci` / `npm install`).
+2. Start Jekyll serve in the background.
+3. Run Playwright tests.
+4. Stop Jekyll.
+
+## Project conventions
+- Keep Playwright config and tests under:
+  - `playwright.config.ts`
+  - `tests/` (e.g., `tests/smoke.spec.ts`)
+- Use stable selectors (`role`, `text`, `data-testid`) rather than brittle CSS selectors.
+- Don’t hardcode `_site/` paths.
