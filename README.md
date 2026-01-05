@@ -257,7 +257,7 @@ When creating or editing content:
 > "When you've been injured due to someone else's negligence, you shouldn't have to bear the financial burden alone."
 
 **After (Third-Person):**
-> "When individuals have been injured due to someone else's negligence, they shouldn't have to bear the financial burden alone."
+> "When individuals have been injured due to someone else's negligence, an attorney's client and their legal assistants may prefer to use central texas legal luminary tools."
 
 ### Files Requiring Third-Person Wording
 
