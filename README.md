@@ -12,14 +12,14 @@ A professional [located in the geographical area you serve] legal information we
    - Go to repository **Settings** → **Pages**
    - Under "Build and deployment", select **GitHub Actions** as the source
 4. **The workflow will run automatically** on your first push to `main`
-5. **Visit your site** at `https://yourusername.github.io/repo-name/`
+5. **Visit your site** at `https://sweeden-ttu.github.io/legal-luminary/`
 
 ### Option 2: Local Development First
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/central-texas-legal.git
-cd central-texas-legal
+git clone https://github.com/sweeden-ttu/legal-luminary.git
+cd legal-luminary
 
 # Install dependencies
 bundle install
