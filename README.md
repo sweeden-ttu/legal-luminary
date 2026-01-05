@@ -1,6 +1,6 @@
 # Central Texas Legal Resource
 
-A professional legal information website for Bell County and Central Texas, built with Jekyll for GitHub Pages hosting using GitHub Actions.
+A professional [located in the geographical area you serve] legal information website for Bell County and Central Texas, built with Jekyll for GitHub Pages hosting using GitHub Actions.
 
 ## 🚀 Quick Start
 
