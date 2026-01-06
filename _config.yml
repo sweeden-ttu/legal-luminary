@@ -131,10 +131,17 @@ exclude:
   - docker-compose.yml
   - Dockerfile
   - docs
+  - test_cases
 
 # Include files that should be processed
 include:
   - _pages
+  - _includes
+  - _layouts
+  - _posts
+  - _site
+  - _data
+  - _sass
   - .nojekyll
 
 # Defaults for pages

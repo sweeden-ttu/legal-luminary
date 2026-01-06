@@ -90,7 +90,7 @@ The site is automatically built and deployed via GitHub Actions workflow (`.gith
 
 **File**: `playwright.config.ts`
 - **Base URL**: `http://127.0.0.1:4000` (default, configurable via `PLAYWRIGHT_BASE_URL` env var)
-- **Test Directory**: `./tests`
+- **Test Directory**: `./test_cases` (⚠️ Note: directory is `test_cases`, not `tests`)
 - **Timeout**: 30 seconds per test, 10 seconds for expectations
 
 ### Running Tests
@@ -114,10 +114,14 @@ npm run e2e
 
 ### Test Files
 
-1. **`tests/smoke.spec.ts`**: Basic smoke tests (page loads, navigation, sitemap)
-2. **`tests/ads-verification.spec.ts`**: Advertisement section verification (see below)
-3. **`tests/cache-js-files.spec.ts`**: JavaScript file caching tests
-4. **`tests/mediasite-m3u8.spec.ts`**: M3U8 downloader functionality tests
+All test files are located in `./test_cases/` directory:
+
+1. **`test_cases/smoke.spec.ts`**: Basic smoke tests (page loads, navigation, sitemap)
+2. **`test_cases/ads-verification.spec.ts`**: Advertisement section verification (see below)
+3. **`test_cases/cache-js-files.spec.ts`**: JavaScript file caching tests
+4. **`test_cases/mediasite-m3u8.spec.ts`**: M3U8 downloader functionality tests
+
+**⚠️ IMPORTANT**: When creating new tests, place them in `./test_cases/` directory with `.spec.ts` extension.
 
 ### Test Structure
 
@@ -133,6 +137,67 @@ test.describe('Test Suite Name', () => {
   });
 });
 ```
+
+## 🚨 MANDATORY WORKFLOW FOR AI AGENTS
+
+### ⚠️ CRITICAL: Test-First Development Requirement
+
+**ALL AGENTS MUST FOLLOW THIS WORKFLOW BEFORE MAKING ANY CHANGES:**
+
+1. **CREATE PLAYWRIGHT TESTS FIRST** (Test-Driven Development)
+   - Before modifying any files, create or update Playwright tests in `test_cases/` that verify the expected behavior
+   - Tests should be written to FAIL initially (they test the desired outcome)
+   - Place new test files in `./test_cases/` directory
+   - Follow existing test patterns in `test_cases/*.spec.ts` files
+
+2. **VERIFY BUILD WORKS** (Before Changes)
+   ```bash
+   bundle exec jekyll build
+   # Must complete without errors
+   ```
+
+3. **MAKE CHANGES**
+   - Only after tests are written, make the actual code/content changes
+   - Follow existing patterns and conventions
+   - Maintain third-person wording in all content
+
+4. **VERIFY BUILD AFTER CHANGES**
+   ```bash
+   bundle exec jekyll build
+   # Must complete without errors
+   ```
+
+5. **VERIFY WITH LOCAL SERVER**
+   ```bash
+   bundle exec jekyll serve
+   # Manually verify pages load correctly at http://127.0.0.1:4000
+   # Stop server when done (Ctrl+C)
+   ```
+
+6. **RUN PLAYWRIGHT TESTS**
+   ```bash
+   npm run e2e
+   # All tests should pass, including the new tests you created
+   ```
+
+7. **UPDATE CONFIGURATION IF NEEDED**
+   - Ensure `package.json` has necessary dependencies
+   - Verify `playwright.config.ts` points to `./test_cases` directory
+   - Add any new test scripts to `package.json` if needed
+
+8. **DOCUMENT REMAINING TASKS**
+   - If unable to complete changes after several attempts, document in `task_progress.md`
+   - Include specific error messages, attempted solutions, and next steps
+
+### Workflow Summary
+
+```
+1. Write Playwright test → 2. Verify build (before) → 3. Make changes → 
+4. Verify build (after) → 5. Verify with serve → 6. Run tests → 
+7. Update configs → 8. Document if incomplete
+```
+
+**VIOLATION OF THIS WORKFLOW IS NOT ACCEPTABLE.** Tests must be created BEFORE making changes.
 
 ## ✅ Verification Workflow
 
@@ -208,7 +273,7 @@ The layout (`_layouts/default.html`) checks for `page.sidebar_ads_content` and r
 
 ## 🧪 Advertisement Verification Tests
 
-### Test File: `tests/ads-verification.spec.ts`
+### Test File: `test_cases/ads-verification.spec.ts`
 
 This test suite verifies that:
 1. Advertisement sections appear on the correct pages
@@ -221,10 +286,10 @@ This test suite verifies that:
 
 ```bash
 # Run only ad verification tests
-npx playwright test tests/ads-verification.spec.ts
+npx playwright test test_cases/ads-verification.spec.ts
 
 # Run with UI mode for debugging
-npx playwright test tests/ads-verification.spec.ts --ui
+npx playwright test test_cases/ads-verification.spec.ts --ui
 ```
 
 ### Test Coverage
@@ -338,7 +403,7 @@ npm run e2e  # Starts server, runs tests, stops server
 
 ### Verify Ads
 ```bash
-npx playwright test tests/ads-verification.spec.ts
+npx playwright test test_cases/ads-verification.spec.ts
 ```
 
 ### Build for Production
