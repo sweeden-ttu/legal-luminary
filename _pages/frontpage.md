@@ -6,6 +6,39 @@ hero: true
 hero_title: "Central Texas Legal Resource"
 hero_subtitle: "A trusted guide to understanding Texas law and finding qualified legal representation in Bell County"
 description: "Legal information resource for Bell County and Central Texas. Find qualified defense attorneys and personal injury lawyers."
+sidebar_ads_content: |
+  <div class="ad-card featured">
+    <div class="ad-specialty">Process Server</div>
+    <h4>Central Texas Process Service</h4>
+    <p>Professional process serving in Bell County and Central Texas. Reliable, timely service of legal documents, subpoenas, and court filings.</p>
+    <div class="ad-contact">
+      <div class="ad-phone">
+        <a href="tel:+12547894231">📞 (254) 789-4231</a>
+      </div>
+    </div>
+    <a href="tel:+12547894231" class="ad-cta">Contact Now</a>
+  </div>
+
+  <div class="ad-card">
+    <div class="ad-specialty">Notary Public</div>
+    <h4>Sarah Martinez, Texas Notary Public</h4>
+    <p>Licensed notary public services in Bell County. Document notarization, affidavits, and official certifications. Mobile service available.</p>
+    <div class="ad-contact">
+      <div class="ad-phone">
+        <a href="tel:+12545551234">📞 (254) 555-1234</a>
+      </div>
+      <div>📱 <a href="https://facebook.com/sarahmartineznotary" target="_blank" rel="noopener noreferrer">Facebook</a> | <a href="https://instagram.com/smartineznotary" target="_blank" rel="noopener noreferrer">Instagram</a></div>
+    </div>
+    <a href="tel:+12545551234" class="ad-cta">Get in Touch</a>
+    <p class="ad-disclaimer">Licensed Notary Public in Texas, Bell County</p>
+  </div>
+
+  <div class="ad-card">
+    <div class="ad-specialty">Legal Services</div>
+    <h4>Advertise Here</h4>
+    <p>Reach clients actively seeking legal services in Bell County and Central Texas.</p>
+    <a href="/advertise/" class="ad-cta">Learn More</a>
+  </div>
 ---
 
 <p class="intro-text">
