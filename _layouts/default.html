@@ -251,12 +251,14 @@
         </article>
         <aside class="sidebar" aria-label="Helpful resources">
           {% include sidebar-feed.html %}
-          {% if page.sidebar_ads_content %}
           <div class="ad-section" aria-label="Sponsored legal providers">
             <span class="ad-label">ADVERTISEMENT</span>
+            {% if page.sidebar_ads_content %}
             {{ page.sidebar_ads_content }}
+            {% else %}
+            {% include ads-general.html %}
+            {% endif %}
           </div>
-          {% endif %}
           <div class="sidebar-info">
             <h3>Need Legal Help?</h3>
             <p>The attorneys featured on this site are ready to assist individuals with their legal matters in Bell County and throughout Texas.</p>

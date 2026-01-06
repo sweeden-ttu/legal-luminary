@@ -39,3 +39,5 @@ jobs:
         run: npm run e2e
         env:
           PLAYWRIGHT_BASE_URL: http://127.0.0.1:4000
+        # Fail the workflow if tests fail, which will block PRs
+        continue-on-error: false

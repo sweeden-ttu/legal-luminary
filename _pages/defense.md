@@ -32,7 +32,7 @@ sidebar_ads_content: |
       <div class="ad-phone">
         <a href="tel:+12546342245">📞 (254) 634-2245</a>
       </div>
-      <div>🌐 <a href="https://badboyabilene.com/" target="_blank" rel="noopener noreferrer sponsored">badboyabilene.com</a></div>
+      <div>🌐 <a href="https://badboytx.com/" target="_blank" rel="noopener noreferrer sponsored">badboytx.com</a></div>
     </div>
     <a href="tel:+12546342245" class="ad-cta">Get Help Now</a>
   </div>

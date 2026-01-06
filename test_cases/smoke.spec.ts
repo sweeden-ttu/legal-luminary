@@ -47,8 +47,8 @@ test.describe('Jekyll site smoke', () => {
     expect(xml).toContain('<urlset');
     
     // 3. Verify it has at least one post URL (assuming some recent posts exist)
-    // We look for typical Jekyll post URL patterns (YYYY/MM/DD)
-    expect(xml).toMatch(/<loc>.*\/20\d\d\/\d\d\/\d\d\/.*<\/loc>/);
+    // We look for post URL patterns - this site uses /_posts/ format
+    expect(xml).toMatch(/<loc>.*\/_posts\/20\d\d-\d\d-\d\d-.*<\/loc>/);
   });
 
   test('verify latest post loads', async ({ page }) => {
