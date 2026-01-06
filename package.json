@@ -7,7 +7,10 @@
     "test:e2e:ui": "playwright test --ui",
     "test:e2e:headed": "playwright test --headed",
     "jekyll:serve": "bundle exec jekyll serve --livereload --host 127.0.0.1 --port 4000 --baseurl '' --incremental",
-    "e2e": "start-server-and-test jekyll:serve http://127.0.0.1:4000 test:e2e"
+    "jekyll:build": "bundle exec jekyll build",
+    "e2e": "npm run jekyll:build && start-server-and-test jekyll:serve http://127.0.0.1:4000 test:e2e",
+    "verify:build": "bundle exec jekyll build",
+    "verify:test": "npm run e2e"
   },
   "devDependencies": {
     "@playwright/test": "^1.50.0",
