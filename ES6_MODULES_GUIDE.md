@@ -68,7 +68,7 @@ const MODULES = {
 };
 ```
 
-Jekyll processes the `{{ }}` Liquid tags during build, generating the correct URLs.
+Jekyll processes the {% raw %}`{{ }}`{% endraw %} Liquid tags during build, generating the correct URLs.
 
 ## Adding New Modules
 

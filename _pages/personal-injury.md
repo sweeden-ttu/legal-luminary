@@ -7,6 +7,38 @@ hero: true
 hero_title: "Personal Injury Information"
 hero_subtitle: "Understanding rights when individuals have been injured through no fault of their own"
 description: "Personal injury information for Bell County. Car accidents, workplace injuries, premises liability. Find experienced injury attorneys."
+sidebar_ads_content: |
+  <div class="ad-card featured">
+    <div class="ad-specialty">Personal Injury</div>
+    <h4>MBA Attorneys</h4>
+    <p>Dedicated personal injury representation. Car accidents, workplace injuries, premises liability.</p>
+    <div class="ad-contact">
+      <div class="ad-phone">
+        <a href="tel:+12547659552">📞 (254) 765-9552</a>
+      </div>
+      <div class="ad-email">
+        ✉️ <a href="mailto:malcozer@mbaattorneys.com">malcozer@mbaattorneys.com</a>
+      </div>
+    </div>
+    <div class="ad-contact">
+      🌐 <a href="https://mbaattorneys.com" target="_blank" rel="noopener noreferrer sponsored">mbaattorneys.com</a>
+    </div>
+    <a href="https://mbaattorneys.com" target="_blank" rel="noopener noreferrer sponsored" class="ad-cta">Free Case Review</a>
+    <p class="ad-disclaimer">Contingency fee basis available — no attorney fee unless recovery is obtained. Client may be responsible for costs and expenses regardless of outcome. Licensed in Texas.</p>
+  </div>
+
+  <div class="ad-card">
+    <div class="ad-specialty">Notary Public</div>
+    <h4>Texas Notary Public</h4>
+    <p>Scott Weeden - Professional notary services in Central Texas.</p>
+    <div class="ad-contact">
+      <div class="ad-email">
+        ✉️ <a href="mailto:notary@fronts.cloud">notary@fronts.cloud</a>
+      </div>
+    </div>
+    <a href="mailto:notary@fronts.cloud" class="ad-cta">Contact Notary</a>
+    <p class="ad-disclaimer">Licensed Notary Public in Texas</p>
+  </div>
 ---
 
 <p class="intro-text">
