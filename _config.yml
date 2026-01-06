@@ -5,7 +5,7 @@
 # See: .github/workflows/jekyll.yml
 
 # Site Settings
-title: "Central Texas Legal Resource"
+title: "Central Texas Legal Resources"
 logo: /assets/imgs/legal-luminary-research-tool.svg
 description: "Your trusted guide to Texas and Bell County law - Defense & Personal Injury information"
 tagline: "Information • Guidance • Justice"
@@ -88,10 +88,13 @@ attorneys:
     phone: "(254) 702-4767"
     location: "Killeen, Texas"
     specialty: "Criminal Defense"
+    email: "robertwaynelewislaw@gmail.com"
   injury:
-    name: "MBA Attorneys"
-    website: "https://mbaattorneys.com"
+    name: "Manuel Alcozer"
+    title: "Attorney at Law"
+    phone: "(254) 765-9552"
     email: "malcozer@mbaattorneys.com"
+    location: "Killeen, Texas"
     specialty: "Personal Injury"
 
 # Sass/SCSS Processing
@@ -119,6 +122,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+  - AGENTS.md
   - LICENSE
   - node_modules
   - vendor
