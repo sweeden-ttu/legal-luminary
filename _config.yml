@@ -126,6 +126,7 @@ exclude:
   - CNAME.example
   - docker-compose.yml
   - Dockerfile
+  - docs
 
 # Include files that should be processed
 include:
