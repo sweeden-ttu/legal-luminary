@@ -10,26 +10,26 @@ sidebar_ads_content: |
   <div class="ad-card featured">
     <div class="ad-specialty">Process Server</div>
     <h4>Central Texas Process Service</h4>
-    <p>Professional process serving in Bell County and Central Texas. Reliable, timely service of legal documents, subpoenas, and court filings.</p>
+    <p>Professional process serving in Bell County and Central Texas. Reliable, timely service of legal documents, summons, notices and court filings.</p>
     <div class="ad-contact">
       <div class="ad-phone">
-        <a href="tel:+12547894231">📞 (254) 789-4231</a>
+        <a href="tel:+12543176688">📞 (254) 317-6688</a>
       </div>
     </div>
-    <a href="tel:+12547894231" class="ad-cta">Contact Now</a>
+    <a href="tel:+2543176688" class="ad-cta">Contact Now</a>
   </div>
 
   <div class="ad-card">
     <div class="ad-specialty">Notary Public</div>
-    <h4>Sarah Martinez, Texas Notary Public</h4>
-    <p>Licensed notary public services in Bell County. Document notarization, affidavits, and official certifications. Mobile service available.</p>
+    <h4>Scott Weeden, Notary Public</h4>
+    <p>Licensed notary public services. Document notarization, affidavits, and official certifications. Mobile service available.</p>
     <div class="ad-contact">
       <div class="ad-phone">
-        <a href="tel:+12545551234">📞 (254) 555-1234</a>
+        <a href="mailto:notary@legalluminary.com">📞 notary@legalluminary.com</a>
       </div>
-      <div>📱 <a href="https://facebook.com/sarahmartineznotary" target="_blank" rel="noopener noreferrer">Facebook</a> | <a href="https://instagram.com/smartineznotary" target="_blank" rel="noopener noreferrer">Instagram</a></div>
+      <div>📱 <a href="https://facebook.com/scotdwg81" target="_blank" rel="noopener noreferrer">Facebook</a> | <a href="https://instagram.com/scotdwg81" target="_blank" rel="noopener noreferrer">Instagram</a></div>
     </div>
-    <a href="tel:+12545551234" class="ad-cta">Get in Touch</a>
+    <a href="tel:+12543176688" class="ad-cta">Get in Touch</a>
     <p class="ad-disclaimer">Licensed Notary Public in Texas, Bell County</p>
   </div>
 
@@ -46,7 +46,7 @@ Whether individuals are facing criminal charges or have been injured due to some
 </p>
 
 <div style="text-align: center; margin: 3rem 0; padding: 1rem 0;">
-<img src="{{ '/assets/imgs/legal-luminary-research-tool.svg' | relative_url }}" alt="Central Texas Legal Luminary - AI-Enhanced Legal Research Tool" style="max-width: 100%; height: auto; border-radius: 8px;">
+<img src="{{ '/assets/imgs/legal-luminary-research-tool.svg' | relative_url }}" alt="Central Texas Legal Luminary - Research Tool" style="max-width: 100%; height: auto; border-radius: 8px;">
 </div>
 
 <div style="text-align: center; margin: 2rem 0;">
