@@ -3,9 +3,11 @@
   "private": true,
   "description": "Jekyll site with Playwright smoke tests",
   "scripts": {
-    "test:e2e": "playwright test",
-    "test:e2e:ui": "playwright test --ui",
-    "test:e2e:headed": "playwright test --headed",
+    "test:e2e": "npx playwright test",
+    "test:e2e:ui": "npx playwright test --ui",
+    "test:e2e:headed": "npx playwright test --headed",
+    "test:broken-links": "npx playwright test tests/broken-links.spec.ts",
+    "test:broken-links:server": "start-server-and-test jekyll:serve http://127.0.0.1:4000 test:broken-links",
     "jekyll:serve": "bundle exec jekyll serve --livereload --host 127.0.0.1 --port 4000 --baseurl '' --incremental",
     "e2e": "start-server-and-test jekyll:serve http://127.0.0.1:4000 test:e2e"
   },
