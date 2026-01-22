@@ -16,22 +16,10 @@ sidebar_ads_content: |
         <a href="tel:+12543176688">📞 (254) 317-6688</a>
       </div>
     </div>
-    <a href="tel:+2543176688" class="ad-cta">Contact Now</a>
+    <a href="tel:+12543176688" class="ad-cta">Contact Now</a>
   </div>
 
-  <div class="ad-card">
-    <div class="ad-specialty">Notary Public</div>
-    <h4>Scott Weeden, Notary Public</h4>
-    <p>Licensed notary public services. Document notarization, affidavits, and official certifications. Mobile service available.</p>
-    <div class="ad-contact">
-      <div class="ad-phone">
-        <a href="mailto:notary@legalluminary.com">📞 notary@legalluminary.com</a>
-      </div>
-      <div>📱 <a href="https://facebook.com/scotdwg81" target="_blank" rel="noopener noreferrer">Facebook</a> | <a href="https://instagram.com/scotdwg81" target="_blank" rel="noopener noreferrer">Instagram</a></div>
-    </div>
-    <a href="tel:+12543176688" class="ad-cta">Get in Touch</a>
-    <p class="ad-disclaimer">Licensed Notary Public in Texas, Bell County</p>
-  </div>
+  {% include featured-notary.html %}
 
   <div class="ad-card">
     <div class="ad-specialty">Legal Services</div>

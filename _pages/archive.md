@@ -1,6 +1,6 @@
 ---
 permalink: /archive/
-layout: page
+layout: default
 title: Blog archive
 ---
 

@@ -2,8 +2,10 @@ name: Fetch Legal News Feeds
 
 on:
   schedule:
-    # Run daily at 6:00 AM UTC (1:00 AM CT)
-    - cron: '0 6 * * *'
+    # Run daily at 9:30 AM Central Time
+    # 9:30 AM CST = 15:30 UTC, 9:30 AM CDT = 14:30 UTC
+    # Using 15:30 UTC (9:30 AM CST during standard time, 10:30 AM CDT during daylight time)
+    - cron: '30 15 * * *'
   workflow_dispatch:  # Allow manual triggering
 
 # Sets permissions for GITHUB_TOKEN to allow committing changes
@@ -61,7 +63,10 @@ jobs:
           if [ -f "_data/news-feed.json" ]; then
             echo "## News Feed Update Summary" >> $GITHUB_STEP_SUMMARY
             echo "" >> $GITHUB_STEP_SUMMARY
-            echo "Feed update completed. Check _data/news-feed.json for details." >> $GITHUB_STEP_SUMMARY
+            echo "Feed update completed at $(date '+%Y-%m-%d %H:%M:%S %Z')" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "The news feed and sidebar menu have been updated with the latest content." >> $GITHUB_STEP_SUMMARY
+            echo "The timestamp on the legal news page has been updated automatically." >> $GITHUB_STEP_SUMMARY
           else
             echo "## Error" >> $GITHUB_STEP_SUMMARY
             echo "Failed to generate news-feed.json" >> $GITHUB_STEP_SUMMARY

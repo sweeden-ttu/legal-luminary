@@ -1,0 +1,188 @@
+[
+  {
+    "court_name": "27th Judicial District Court",
+    "court_type": "District Court",
+    "judge_name": "Debbie Garrett",
+    "court_coordinator": "Leslie Chavez",
+    "coordinator_email": "leslie.chavez@bellcounty.texas.gov",
+    "court_reporter": "Holly Wolfe",
+    "phone": "(254) 933-5261",
+    "fax": "(254) 933-5977",
+    "address": "1201 Huey RoadBelton, Texas  76513",
+    "mailing_address": "P.O. Box 324Belton, Texas  76513",
+    "url": "https://www.bellcountytx.com/county_government/district_courts/27th_district_court/index.php",
+    "election_info": {
+      "election_year": 2024,
+      "next_election": 2028,
+      "term_length_years": 4,
+      "election_notes": "Elected November 5, 2024",
+      "days_until_election": 1017
+    }
+  },
+  {
+    "court_name": "146th Judicial District Court",
+    "court_type": "District Court",
+    "judge_name": "Mike Russell",
+    "court_coordinator": "Pearl Hernandez",
+    "coordinator_email": "pearl.hernandez@bellcounty.texas.gov",
+    "court_reporter": "Jessica Jacobi",
+    "phone": "(254) 933-6737",
+    "fax": "(254) 933-5978",
+    "address": "1201 Huey RoadBelton, Texas  76513",
+    "mailing_address": "P.O. Box 324Belton, Texas  76513",
+    "url": "https://www.bellcountytx.com/county_government/district_courts/146th_district_court/index.php",
+    "election_info": {
+      "election_year": 2024,
+      "next_election": 2028,
+      "term_length_years": 4,
+      "election_notes": "Elected November 5, 2024, took office January 2, 2025",
+      "days_until_election": 1017
+    }
+  },
+  {
+    "court_name": "169th Judicial District Court",
+    "court_type": "District Court",
+    "judge_name": "Cari L. Starritt-Burnett",
+    "court_coordinator": "Candy Manibusan",
+    "coordinator_email": "Candy.Manibusan@bellcounty.texas.gov",
+    "court_reporter": "Angela Ralston",
+    "phone": "(254) 933-5265",
+    "fax": "(254) 933-5933",
+    "address": "1201 Huey RoadBelton, Texas  76513",
+    "mailing_address": "P.O. Box 324Belton, Texas  76513",
+    "url": "https://www.bellcountytx.com/county_government/district_courts/169th_district_court/index.php",
+    "election_info": {
+      "election_year": null,
+      "appointment_year": 2021,
+      "appointment_date": "August 2021",
+      "next_election": 2026,
+      "term_length_years": 4,
+      "election_notes": "Appointed by Governor Greg Abbott in August 2021. First election in 2026",
+      "days_until_election": 286
+    }
+  },
+  {
+    "court_name": "264th Judicial District Court",
+    "court_type": "District Court",
+    "judge_name": "Paul L. LePak",
+    "court_coordinator": "Jennifer Hoelscher",
+    "coordinator_email": "jennifer.hoelscher@bellcounty.texas.gov",
+    "court_reporter": "Betty Young",
+    "phone": "(254) 933-5245",
+    "fax": "(254) 933-5909",
+    "address": "1201 Huey RoadBelton, Texas  76513",
+    "mailing_address": "P.O. Box 324Belton, Texas  76513",
+    "url": "https://www.bellcountytx.com/county_government/district_courts/264th_district_court/index.php",
+    "election_info": {
+      "election_year": 2022,
+      "appointment_year": 2018,
+      "appointment_date": "June 2018",
+      "next_election": 2026,
+      "term_length_years": 4,
+      "election_notes": "Appointed by Governor Greg Abbott in June 2018. Re-elected in 2022, next election 2026",
+      "days_until_election": 286
+    }
+  },
+  {
+    "court_name": "426th Judicial District Court",
+    "court_type": "District Court",
+    "judge_name": "Steve Duskie",
+    "court_coordinator": "Velva Johnson",
+    "coordinator_email": "velva.johnson@bellcounty.texas.gov",
+    "court_reporter": "Amanda Anderson",
+    "phone": "(254) 933-5246",
+    "fax": "(254) 933-5990",
+    "address": "1201 Huey RoadBelton, Texas  76513",
+    "mailing_address": "P.O. Box 324Belton, Texas  76513",
+    "url": "https://www.bellcountytx.com/county_government/district_courts/426th_district_court/index.php",
+    "election_info": {
+      "election_year": 2024,
+      "next_election": 2028,
+      "term_length_years": 4,
+      "election_notes": "Re-elected November 5, 2024. Serving since August 17, 2020",
+      "days_until_election": 1017
+    }
+  },
+  {
+    "court_name": "478th Judicial District Court",
+    "court_type": "District Court",
+    "judge_name": "Wade Faulkner",
+    "court_coordinator": "Marina Trevino",
+    "coordinator_email": "marina.trevino@bellcounty.texas.gov",
+    "court_reporter": "Betsy Clifton",
+    "phone": "(254) 933-5706",
+    "fax": "(254) 933-5990",
+    "address": "1201 Huey RoadBelton, Texas  76513",
+    "mailing_address": "P.O. Box 324Belton, Texas  76513",
+    "url": "https://www.bellcountytx.com/county_government/district_courts/478th_judicial_district_court/index.php",
+    "election_info": {
+      "election_year": null,
+      "appointment_year": 2022,
+      "appointment_date": "August 18, 2022",
+      "next_election": 2026,
+      "term_length_years": 4,
+      "election_notes": "Appointed by Governor Greg Abbott on August 18, 2022. First election in 2026",
+      "days_until_election": 286
+    }
+  },
+  {
+    "court_name": "Court at Law 1",
+    "court_type": "County Court at Law",
+    "judge_name": "Paul A. Motz",
+    "court_coordinator": null,
+    "coordinator_email": null,
+    "court_reporter": null,
+    "phone": null,
+    "fax": "(254) 933-5705",
+    "address": "1201 Huey RoadBelton, Texas  76513",
+    "mailing_address": "P.O. Box 781Belton, Texas  76513Office Hours:  8:00 a",
+    "url": "https://www.bellcountytx.com/county_government/county_courts/court_at_law_1/index.php",
+    "election_info": {
+      "election_year": 2022,
+      "next_election": 2026,
+      "term_length_years": 4,
+      "election_notes": "Elected January 3, 2023. Next election 2026",
+      "days_until_election": 286
+    }
+  },
+  {
+    "court_name": "Court at Law 2",
+    "court_type": "County Court at Law",
+    "judge_name": "John Mischtian",
+    "court_coordinator": null,
+    "coordinator_email": null,
+    "court_reporter": null,
+    "phone": "(254) 933-5125",
+    "fax": "(254) 933-5256",
+    "address": "1201 Huey RoadBelton, Texas  76513",
+    "mailing_address": "P.O. Box 485Belton, Texas  76513Office Hours:  8:00 a",
+    "url": "https://www.bellcountytx.com/county_government/county_courts/court_at_law_2/index.php",
+    "election_info": {
+      "election_year": 2022,
+      "next_election": 2026,
+      "term_length_years": 4,
+      "election_notes": "Re-elected November 8, 2022",
+      "days_until_election": 286
+    }
+  },
+  {
+    "court_name": "Court at Law 3",
+    "court_type": "County Court at Law",
+    "judge_name": "Rebecca De",
+    "court_coordinator": null,
+    "coordinator_email": "lisa.murphy@bellcounty.texas.gov",
+    "court_reporter": null,
+    "phone": null,
+    "fax": "(254) 933-5792",
+    "address": "1201 Huey RoadBelton, Texas  76513",
+    "mailing_address": "P.O. Box 365Belton, Texas  76513Office Hours:  8:00 a",
+    "url": "https://www.bellcountytx.com/county_government/county_courts/court_at_law_3/index.php",
+    "election_info": {
+      "election_year": null,
+      "next_election": 2026,
+      "term_length_years": 4,
+      "election_notes": "Next election scheduled for November 2026",
+      "days_until_election": 286
+    }
+  }
+]

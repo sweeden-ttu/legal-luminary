@@ -1,0 +1,55 @@
+- name: Chalanc Bennett Sr
+  location: Harker Heights, TX
+  phone: 254.216.2885
+  email: null
+  website: http://molancindustries.org/
+  addresses:
+  - type: primary840 red fern drharker heights, tx 76548
+    address: Primary
+  last_updated: 12/23/2025
+  experience: Texas-commissioned
+  additional_services: Fingerprinting services;
+  24_hr_service: 'Yes'
+  does_fingerprinting: 'Yes'
+  has_laser_printer: 'Yes'
+  home_inspections: 'Yes'
+- name: Annette Donker
+  location: Copperas Cove, TX
+  phone: 254.702.6894
+  email: null
+  website: http://www.donkbuilt.com/notary.html
+  addresses:
+  - type: primary2208 e business 190 ste 1copperas cove, tx 76522
+    address: Primary
+  last_updated: 11/28/2025
+  24_hr_service: 'Yes'
+  does_fingerprinting: 'Yes'
+  has_laser_printer: 'Yes'
+- name: Geletawak Djaleta
+  location: Killeen, TX
+  phone: 737.234.0337
+  email: null
+  website: null
+  addresses:
+  - type: primary315 e ave g ste 150killeen, tx 76541
+    address: Primary
+  last_updated: 10/20/2025
+  has_laser_printer: 'Yes'
+- name: Sandra Krugman
+  location: Harker Heights, TX
+  phone: 360.292.3735
+  email: null
+  website: null
+  addresses: []
+  last_updated: 1/16/2026
+  24_hr_service: 'Yes'
+  has_laser_printer: 'Yes'
+- name: Michelle Avant
+  location: Harker heights , TX
+  phone: 254.462.1281
+  email: null
+  website: null
+  addresses:
+  - type: primary1606 liberty lnapt aharker heights , tx 76548
+    address: Primary
+  last_updated: 8/29/2025

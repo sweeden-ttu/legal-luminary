@@ -77,7 +77,7 @@ Bad Boys Bail Bonds has multiple offices in Texas. The primary locations are in 
 
 **Phone:** (254) 634-2245
 
-**Address:** 1350 Jack Rabbit Rd, Belton, TX 76513
+**Address:** 1350 Jackrabbit Rd, Belton, TX, USA
 
 **Service Area:** Killeen, Belton, Harker Heights, Temple, and throughout Bell County
 

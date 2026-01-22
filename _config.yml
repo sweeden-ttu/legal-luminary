@@ -45,6 +45,11 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
 
+# Sass/SCSS Processing
+# We keep the GitHub Pages default theme, but we do NOT want it to build its SCSS
+# (Ruby sass has encoding issues on some environments). We serve our own CSS.
+theme: null
+
 # Site Navigation
 navigation:
   - title: Home
@@ -57,6 +62,10 @@ navigation:
     url: /defense/
   - title: Personal Injury
     url: /personal-injury/
+  - title: Notaries
+    url: /notaries/
+  - title: Judges
+    url: /judges/
   - title: Resources
     url: /resources/
     children:
@@ -98,9 +107,10 @@ attorneys:
     specialty: "Personal Injury"
 
 # Sass/SCSS Processing
-sass:
-  style: compressed
-  sass_dir: _sass
+# Not using SCSS - using plain CSS (style.css) instead
+# sass:
+#   style: compressed
+#   encoding: UTF-8
 
 # Collections (if needed for future expansion)
 collections_dir: collections
@@ -132,6 +142,7 @@ exclude:
   - Dockerfile
   - docs
   - test_cases
+  - "*.scss"
 
 # Include files that should be processed
 include:
@@ -139,7 +150,6 @@ include:
   - _includes
   - _layouts
   - _posts
-  - _site
   - _data
   - _sass
   - .nojekyll
