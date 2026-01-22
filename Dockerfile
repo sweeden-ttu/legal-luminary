@@ -2,7 +2,7 @@
 # Comprehensive Dockerfile matching GitHub Actions workflow
 
 # Use official Ruby image matching .ruby-version
-FROM ruby:3.3-slim-bookworm
+FROM docker.io/library/ruby:3.3-slim-bookworm
 
 # Set labels for container metadata
 LABEL maintainer="Scott Weeden"
