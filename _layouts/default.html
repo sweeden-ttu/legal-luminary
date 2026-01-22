@@ -258,6 +258,8 @@
             <span class="ad-label">ADVERTISEMENT</span>
             {% if page.sidebar_ads_content %}
             {{ page.sidebar_ads_content }}
+            {% elsif page.url == '/' or page.url == '/index.html' or page.sidebar_ads == "home" %}
+            {% include ads-home.html %}
             {% elsif page.url == '/' or page.url == '/index.html' or page.url == '/defense/' or page.url == '/defense/index.html' or page.sidebar_ads == "defense" %}
             {% include ads-defense.html %}
             {% elsif page.url == '/personal-injury/' or page.url == '/personal-injury/index.html' or page.sidebar_ads == "injury" %}

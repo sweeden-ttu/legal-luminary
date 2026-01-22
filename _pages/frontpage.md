@@ -6,27 +6,7 @@ hero: true
 hero_title: "Central Texas Legal Resource"
 hero_subtitle: "A trusted guide to understanding Texas law and finding qualified legal representation in Bell County"
 description: "Legal information resource for Bell County and Central Texas. Find qualified defense attorneys and personal injury lawyers."
-sidebar_ads_content: |
-  <div class="ad-card featured">
-    <div class="ad-specialty">Process Server</div>
-    <h4>Central Texas Process Service</h4>
-    <p>Professional process serving in Bell County and Central Texas. Reliable, timely service of legal documents, summons, notices and court filings.</p>
-    <div class="ad-contact">
-      <div class="ad-phone">
-        <a href="tel:+12543176688">📞 (254) 317-6688</a>
-      </div>
-    </div>
-    <a href="tel:+12543176688" class="ad-cta">Contact Now</a>
-  </div>
-
-  {% include featured-notary.html %}
-
-  <div class="ad-card">
-    <div class="ad-specialty">Legal Services</div>
-    <h4>Advertise Here</h4>
-    <p>Reach clients actively seeking legal services in Bell County and Central Texas.</p>
-    <a href="/advertise/" class="ad-cta">Learn More</a>
-  </div>
+sidebar_ads: home
 ---
 
 <p class="intro-text">

@@ -1,18 +1,38 @@
----
 layout: default
 title: Notary Public Directory
 permalink: /notaries/
 description: "Directory of notary publics serving Bell County and Central Texas. Find mobile notaries, loan signing agents, and general notary services."
 ---
 
-<div class="notary-directory">
+<div class="notary-directory" id="notary-directory">
   <h1>Notary Public Directory</h1>
   <p class="intro-text">
     Find qualified notary publics serving Bell County and Central Texas. This directory includes mobile notaries, loan signing agents, and general notary services.
   </p>
 
+  <div class="notary-layout">
+    <aside class="notary-ads" aria-label="Sponsored notary advertising">
+      <span class="ad-label">ADVERTISEMENT</span>
+      {% include ads-bellcounty.html %}
+    </aside>
+
+    <section class="notary-results" aria-label="Notary listings">
+      <nav class="notary-city-jumps" aria-label="Jump to city">
+        <strong>Jump to:</strong>
+        <a href="#killeen-notaries">Killeen</a> ·
+        <a href="#temple-notaries">Temple</a> ·
+        <a href="#belton-notaries">Belton</a> ·
+        <a href="#harker-heights-notaries">Harker Heights</a> ·
+        <a href="#copperas-cove-notaries">Copperas Cove</a>
+      </nav>
+
   {% if site.data.notaries %}
     <div class="notary-list">
+      <h2 id="killeen-notaries">Killeen</h2>
+      <h2 id="temple-notaries">Temple</h2>
+      <h2 id="belton-notaries">Belton</h2>
+      <h2 id="harker-heights-notaries">Harker Heights</h2>
+      <h2 id="copperas-cove-notaries">Copperas Cove</h2>
       {% for notary in site.data.notaries %}
         <div class="notary-card">
           <div class="notary-header">
@@ -165,6 +185,8 @@ description: "Directory of notary publics serving Bell County and Central Texas.
       <p>No notary information available at this time. Please check back later.</p>
     </div>
   {% endif %}
+    </section>
+  </div>
 </div>
 
 <style>
@@ -172,6 +194,34 @@ description: "Directory of notary publics serving Bell County and Central Texas.
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem 1rem;
+}
+
+.notary-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.notary-ads {
+  position: sticky;
+  top: 1rem;
+}
+
+.notary-city-jumps {
+  background: #f5f5f5;
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+  margin: 0 0 1.5rem 0;
+}
+
+.notary-city-jumps a {
+  color: var(--navy-dark, #1a365d);
+  text-decoration: none;
+}
+
+.notary-city-jumps a:hover {
+  text-decoration: underline;
 }
 
 .notary-list {
@@ -299,6 +349,14 @@ description: "Directory of notary publics serving Bell County and Central Texas.
 }
 
 @media (max-width: 768px) {
+  .notary-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .notary-ads {
+    position: static;
+  }
+
   .notary-card {
     padding: 1.5rem;
   }
