@@ -1,0 +1,7 @@
+This is a default email template for the email sender service.
+
+You can customize this template to include dynamic content.
+Variables can be substituted during processing.
+
+Current timestamp: {{TIMESTAMP}}
+Queue item: {{QUEUE_ITEM}}

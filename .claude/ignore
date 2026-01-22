@@ -1,0 +1,9 @@
+# Sensitive files - do not include in context
+.ssh
+ssh.d
+sshd
+.env
+id_rsa
+id_rsa.pub
+*.pem
+*.key

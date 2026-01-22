@@ -1,16 +1,33 @@
-version: '3'
+version: '3.8'
 
 services:
+  # Development server with live reload
   jekyll:
     build:
       context: .
-    command: jekyll serve --watch --force_polling --incremental --port 8080 -H 0.0.0.0 --livereload --livereload-port 35729 --baseurl /gh-pages-minima-starter
+      dockerfile: Dockerfile
+    command: bundle exec jekyll serve --watch --force_polling --incremental --host 0.0.0.0 --port 4000 --livereload --livereload-port 35729 --baseurl ''
     volumes:
       - .:/srv/jekyll
+      - bundle_cache:/usr/local/bundle
     ports:
-      - '8080:8080'
+      - '4000:4000'
       - '35729:35729'
-    environment: 
+    environment:
       RUBYOPT: '-W0'
-      JEKYLL_ENV: production 
+      JEKYLL_ENV: development
 
+  # Production build (outputs to _site/)
+  build:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: bundle exec jekyll build
+    volumes:
+      - .:/srv/jekyll
+      - bundle_cache:/usr/local/bundle
+    environment:
+      JEKYLL_ENV: production
+
+volumes:
+  bundle_cache:

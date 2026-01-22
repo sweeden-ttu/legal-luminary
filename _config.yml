@@ -10,7 +10,7 @@ logo: /assets/imgs/legal-luminary-research-tool.svg
 description: "Your trusted guide to Texas and Bell County law - Defense & Personal Injury information"
 tagline: "Information • Guidance • Justice"
 author: "Central Texas Legal Resource"
-email: "sweeden@ttu.edu"
+email: "notary@legalluminary.com"
 lang: en-US
 
 # Google Tag Manager
@@ -20,10 +20,10 @@ gtm_container_id: "GTM-KBVFD8NL"
 # URL Configuration
 # For GitHub Pages project site (username.github.io/repo-name):
 #   baseurl: "/repo-name"
-#   url: "https://username.github.io"
+#   url: "https://sweeden-ttu.github.io/legal-luminary"
 # For custom domain or user site (username.github.io):
 #   baseurl: ""
-#   url: "https://yourdomain.com"
+#   url: "https://legalluminary.com"
 baseurl: ""
 url: "https://www.legalluminary.com"
 

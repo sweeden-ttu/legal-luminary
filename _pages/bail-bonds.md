@@ -162,12 +162,12 @@ If individuals have an active warrant and are looking to resolve it, Bad Boy Bai
 Time matters when someone is in jail. The sooner individuals act, the sooner they can be released. Bad Boy Bail Bonds is ready to help 24/7.
 
 <div style="background: var(--navy-dark); color: white; padding: 2rem; border-radius: 4px; margin-top: 2rem;">
-<h3 style="color: var(--gold-light); margin-top: 0;">Bad Boy Bail Bonds of Texas</h3>
+<h3 style="color: var(--gold-light); margin-top: 0;">BAD BOY BAIL BONDS - BELL COUNTY</h3>
 <p style="font-size: 1.125rem; margin-bottom: 0.5rem;"><strong>24/7 Bail Bond Services</strong></p>
 <p>Fast, reliable bail bond services throughout Texas and nationwide. Payment plans available. No judgment, just professional help when needed most.</p>
-<p style="font-size: 1.25rem; margin-bottom: 0.5rem;"><strong>📞 <a href="tel:+12546342245" style="color: var(--gold-light);">Bell County: (254) 634-2245</a></strong></p>
-<p style="font-size: 1.25rem; margin-bottom: 0.5rem;"><strong>📞 <a href="tel:+13256739999" style="color: var(--gold-light);">Abilene: (325) 673-9999</a></strong></p>
-<p style="margin-bottom: 0.5rem;">🌐 <a href="https://badboystexas.com/" target="_blank" rel="noopener" style="color: var(--gold-light);">badboystexas.com</a></p>
+<p style="margin-bottom: 0.5rem;"><strong>📍 1350 Jackrabbit Rd<br>Belton, TX, USA</strong></p>
+<p style="font-size: 1.25rem; margin-bottom: 0.5rem;"><strong>📞 <a href="tel:+12546342245" style="color: var(--gold-light);">(254) 634-2245</a></strong></p>
+<p style="margin-bottom: 0.5rem;"><strong>✉️ <a href="mailto:bellco@badboytexas.com" style="color: var(--gold-light);">bellco@badboytexas.com</a></strong></p>
 <p style="font-size: 0.9rem; margin-bottom: 0; opacity: 0.9;">Available 24/7, including holidays — Licensed Bondsman — Member of Professional Bondsmen of Texas</p>
 </div>
 

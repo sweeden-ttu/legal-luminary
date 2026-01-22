@@ -12,10 +12,18 @@ Gemfile.lock.bak
 # IDE / Editor
 .idea/
 .vscode/
+.cursor/
 *.swp
 *.swo
 *~
 .DS_Store
+
+# AI Agent configs
+.claude/
+.gemini/
+CLAUDE.md
+GEMINI.md
+AGENTS.md
 
 # Logs
 *.log

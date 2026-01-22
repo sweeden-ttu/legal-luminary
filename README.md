@@ -2,6 +2,16 @@
 
 A professional [located in the geographical area you serve] legal information website for Bell County and Central Texas, built with Jekyll for GitHub Pages hosting using GitHub Actions.
 
+
+
+todo update contact advertisement : 
+BAD BOY BAIL BONDS - BELL COUNTY
+1350 Jackrabbit Rd
+Belton, TX, USA
+(254) 634-2245
+bellco@badboytexas.com
+
+
 ## 🚀 Quick Start
 
 ### Option 1: Deploy with GitHub Actions (Recommended)
@@ -121,7 +131,7 @@ url: "https://www.legalluminary.com"
 
 1. Create a `CNAME` file in the root with your domain:
    ```
-   www.yourdomain.com
+   www.legalluminary.com
    ```
 2. Configure DNS with your registrar:
    - **A records** pointing to GitHub's IPs

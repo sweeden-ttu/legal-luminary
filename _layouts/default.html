@@ -129,7 +129,7 @@
   }
   </script>
   <link rel="icon" type="image/svg+xml" href="{{ '/assets/imgs/legal-luminary-research-tool.svg' | relative_url }}">
-  
+
   <!-- Google Tag Manager -->
   {% if site.gtm_container_id and site.gtm_container_id != "GTM-XXXXXXX" %}
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -139,7 +139,7 @@
   })(window,document,'script','dataLayer','{{ site.gtm_container_id }}');</script>
   <!-- End Google Tag Manager -->
   {% endif %}
-  
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
@@ -151,7 +151,7 @@
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
   {% endif %}
-  
+
   <header class="site-header">
     <div class="header-top">
       <div class="container">
@@ -180,7 +180,7 @@
           <ul class="nav-menu" id="primary-menu">
             {% for item in site.navigation %}
             <li class="{% if item.children %}nav-item-has-children{% endif %}">
-              <a href="{% if item.external %}{{ item.url }}{% else %}{{ item.url | relative_url }}{% endif %}" 
+              <a href="{% if item.external %}{{ item.url }}{% else %}{{ item.url | relative_url }}{% endif %}"
                  {% if page.url == item.url %}class="active" aria-current="page"{% endif %}
                  {% if item.alt %}title="{{ item.alt }}"{% endif %}
                  {% if item.external %}target="_blank" rel="noopener noreferrer"{% endif %}>
@@ -250,11 +250,20 @@
           {% endif %}
         </article>
         <aside class="sidebar" aria-label="Helpful resources">
+<<<<<<< HEAD
           {% include sidebar-feed.html %}
           <div class="ad-section" aria-label="Sponsored legal providers">
             <span class="ad-label">ADVERTISEMENT</span>
             {% if page.sidebar_ads_content %}
             {{ page.sidebar_ads_content }}
+=======
+          <div class="ad-section" aria-label="Sponsored legal providers">
+            <span class="ad-label">ADVERTISEMENT</span>
+            {% if page.url == '/' or page.url == '/index.html' or page.url == '/defense/' or page.url == '/defense/index.html' or page.sidebar_ads == "defense" %}
+            {% include ads-defense.html %}
+            {% elsif page.url == '/personal-injury/' or page.url == '/personal-injury/index.html' or page.sidebar_ads == "injury" %}
+            {% include ads-injury.html %}
+>>>>>>> origin/master
             {% else %}
             {% include ads-general.html %}
             {% endif %}
@@ -295,7 +304,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; {{ 'now' | date: "%Y" }} Cloud Fronts Group, a Central Texas Company. All rights reserved.</p>
+        <p>&copy; {{ 'now' | date: "%Y" }} Central Texas Legal Resource. All rights reserved.</p>
         <p class="attorney-advertising"><strong>ADVERTISEMENT</strong> — This website contains attorney advertising. Prior results do not guarantee a similar outcome. The outcome of any case depends on numerous factors unique to that case.</p>
       </div>
     </div>
