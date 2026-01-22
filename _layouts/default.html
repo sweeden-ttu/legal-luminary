@@ -251,9 +251,10 @@
         </article>
         <aside class="sidebar" aria-label="Helpful resources">
           {% include sidebar-feed.html %}
-          {% if page.url == '/' or page.url == '/index.html' or page.url == '/bell-county/' or page.url == '/bell-county/index.html' %}
-          {% include sidebar-news-feed.html %}
-          {% endif %}
+          {%- comment -%}
+          sidebar-feed.html now renders the RSS-based legal news widget site-wide.
+          sidebar-news-feed.html is deprecated to avoid duplicate widgets.
+          {%- endcomment -%}
           <div class="ad-section" aria-label="Sponsored legal providers">
             <span class="ad-label">ADVERTISEMENT</span>
             {% if page.sidebar_ads_content %}

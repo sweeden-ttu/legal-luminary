@@ -1,0 +1,29 @@
+# RSS feed sources for Temple-area legal/news updates
+feeds:
+  - name: "Temple Daily Telegram — News"
+    url: "https://www.tdtnews.com/search/?f=rss&t=article&c=news&l=50&s=start_time&sd=desc"
+    category: "local"
+    type: "news"
+    max_items: 20
+    enabled: true
+
+  - name: "FOX 44 — Temple tag"
+    url: "https://www.fox44news.com/tag/temple/feed/"
+    category: "local"
+    type: "news"
+    max_items: 20
+    enabled: true
+
+  - name: "KXXV (Central Texas)"
+    url: "https://www.kxxv.com/index.rss"
+    category: "regional"
+    type: "news"
+    max_items: 20
+    enabled: true
+
+config:
+  max_age_days: 30
+  timeout_seconds: 12
+  retry_attempts: 2
+  delay_between_feeds: 1
+

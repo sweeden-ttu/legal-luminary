@@ -6,6 +6,7 @@ hero: true
 hero_title: "Bell County Legal Information"
 hero_subtitle: "Local courts, procedures, and resources for Central Texas residents"
 description: "Bell County court information, local legal procedures, and resources for Killeen, Temple, and Belton area residents."
+news_city: bell-county-news
 ---
 
 <p class="intro-text">
@@ -128,4 +129,234 @@ When selecting an attorney in Bell County:
 <p>Connect with injury attorneys who handle Bell County cases.</p>
 <a href="/personal-injury/" class="btn btn-primary">Injury Attorneys</a>
 </div>
+</div>
+
+<hr>
+
+<div class="judges-directory">
+  <h2>Bell County Judges Directory</h2>
+  <p class="intro-text">
+    Directory of judges serving Bell County District Courts and County Courts at Law. This directory includes contact information, court details, and election information for all Bell County judges.
+  </p>
+
+  {% if site.data.judges %}
+    {% assign district_judges = site.data.judges | where: "court_type", "District Court" %}
+    {% assign county_judges = site.data.judges | where: "court_type", "County Court at Law" %}
+    
+    {% if district_judges.size > 0 %}
+      <section class="judges-section">
+        <h3>District Court Judges</h3>
+        <p class="section-description">
+          District Court judges handle felony criminal cases and civil cases over $200,000. Judges serve 4-year terms and are elected in partisan elections.
+        </p>
+        
+        <div class="judges-list">
+          {% for judge in district_judges %}
+            <div class="judge-card">
+              <div class="judge-header">
+                <h4>{{ judge.court_name }}</h4>
+                {% if judge.judge_name %}
+                  <p class="judge-name">{{ judge.judge_name }}, Judge</p>
+                {% else %}
+                  <p class="judge-name">Judge information not available</p>
+                {% endif %}
+              </div>
+
+              <div class="judge-contact">
+                <h5>Contact Information</h5>
+                <div class="contact-details">
+                  {% if judge.phone %}
+                    <div class="contact-item">
+                      <strong>Phone:</strong>
+                      <a href="tel:{{ judge.phone | replace: ' ', '' | replace: '(', '' | replace: ')', '' | replace: '-', '' }}">{{ judge.phone }}</a>
+                    </div>
+                  {% endif %}
+                  
+                  {% if judge.fax %}
+                    <div class="contact-item">
+                      <strong>Fax:</strong> {{ judge.fax }}
+                    </div>
+                  {% endif %}
+                  
+                  {% if judge.court_coordinator %}
+                    <div class="contact-item">
+                      <strong>Court Coordinator:</strong>
+                      {% if judge.coordinator_email %}
+                        <a href="mailto:{{ judge.coordinator_email }}">{{ judge.court_coordinator }}</a>
+                      {% else %}
+                        {{ judge.court_coordinator }}
+                      {% endif %}
+                    </div>
+                  {% endif %}
+                  
+                  {% if judge.court_reporter %}
+                    <div class="contact-item">
+                      <strong>Court Reporter:</strong> {{ judge.court_reporter }}
+                    </div>
+                  {% endif %}
+                </div>
+              </div>
+
+              {% if judge.address %}
+                <div class="judge-section">
+                  <h5>Location</h5>
+                  <p>{{ judge.address }}</p>
+                  {% if judge.mailing_address %}
+                    <p class="mailing-address"><strong>Mailing:</strong> {{ judge.mailing_address | replace: "Office Hours:", "<br>Office Hours:" }}</p>
+                  {% endif %}
+                </div>
+              {% endif %}
+
+              {% if judge.election_info %}
+                <div class="judge-section election-info">
+                  <h5>Election Information</h5>
+                  <div class="election-details">
+                    {% if judge.election_info.election_year %}
+                      <p><strong>Elected:</strong> {{ judge.election_info.election_year }}</p>
+                    {% elsif judge.election_info.appointment_year %}
+                      <p><strong>Appointed:</strong> {{ judge.election_info.appointment_date | default: judge.election_info.appointment_year }}</p>
+                      {% if judge.election_info.appointment_year %}
+                        <p class="appointment-note">Appointed by Governor Greg Abbott in {{ judge.election_info.appointment_year }}</p>
+                      {% endif %}
+                    {% endif %}
+                    
+                    {% if judge.election_info.next_election %}
+                      <p class="next-election">
+                        <strong>Next Election:</strong>
+                        <span class="election-year">{{ judge.election_info.next_election }}</span>
+                      </p>
+                    {% endif %}
+                    
+                    <p><strong>Term Length:</strong> {{ judge.election_info.term_length_years }} years</p>
+                    
+                    {% if judge.election_info.election_notes %}
+                      <p class="election-notes">{{ judge.election_info.election_notes }}</p>
+                    {% endif %}
+                  </div>
+                </div>
+              {% endif %}
+
+              {% if judge.url %}
+                <div class="judge-section">
+                  <p class="court-link">
+                    <a href="{{ judge.url }}" target="_blank" rel="noopener noreferrer">View Court Website →</a>
+                  </p>
+                </div>
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+      </section>
+    {% endif %}
+
+    {% if county_judges.size > 0 %}
+      <section class="judges-section">
+        <h3>County Court at Law Judges</h3>
+        <p class="section-description">
+          County Court at Law judges handle misdemeanor cases, probate matters, and smaller civil cases. Judges serve 4-year terms and are elected in partisan elections.
+        </p>
+        
+        <div class="judges-list">
+          {% for judge in county_judges %}
+            <div class="judge-card">
+              <div class="judge-header">
+                <h4>{{ judge.court_name }}</h4>
+                {% if judge.judge_name %}
+                  <p class="judge-name">{{ judge.judge_name }}, Judge</p>
+                {% else %}
+                  <p class="judge-name">Judge information not available</p>
+                {% endif %}
+              </div>
+
+              <div class="judge-contact">
+                <h5>Contact Information</h5>
+                <div class="contact-details">
+                  {% if judge.phone %}
+                    <div class="contact-item">
+                      <strong>Phone:</strong>
+                      <a href="tel:{{ judge.phone | replace: ' ', '' | replace: '(', '' | replace: ')', '' | replace: '-', '' }}">{{ judge.phone }}</a>
+                    </div>
+                  {% endif %}
+                  
+                  {% if judge.fax %}
+                    <div class="contact-item">
+                      <strong>Fax:</strong> {{ judge.fax }}
+                    </div>
+                  {% endif %}
+                  
+                  {% if judge.court_coordinator %}
+                    <div class="contact-item">
+                      <strong>Court Coordinator:</strong>
+                      {% if judge.coordinator_email %}
+                        <a href="mailto:{{ judge.coordinator_email }}">{{ judge.court_coordinator }}</a>
+                      {% else %}
+                        {{ judge.court_coordinator }}
+                      {% endif %}
+                    </div>
+                  {% endif %}
+                  
+                  {% if judge.court_reporter %}
+                    <div class="contact-item">
+                      <strong>Court Reporter:</strong> {{ judge.court_reporter }}
+                    </div>
+                  {% endif %}
+                </div>
+              </div>
+
+              {% if judge.address %}
+                <div class="judge-section">
+                  <h5>Location</h5>
+                  <p>{{ judge.address }}</p>
+                  {% if judge.mailing_address %}
+                    <p class="mailing-address"><strong>Mailing:</strong> {{ judge.mailing_address | replace: "Office Hours:", "<br>Office Hours:" }}</p>
+                  {% endif %}
+                </div>
+              {% endif %}
+
+              {% if judge.election_info %}
+                <div class="judge-section election-info">
+                  <h5>Election Information</h5>
+                  <div class="election-details">
+                    {% if judge.election_info.election_year %}
+                      <p><strong>Elected:</strong> {{ judge.election_info.election_year }}</p>
+                    {% elsif judge.election_info.appointment_year %}
+                      <p><strong>Appointed:</strong> {{ judge.election_info.appointment_date | default: judge.election_info.appointment_year }}</p>
+                      {% if judge.election_info.appointment_year %}
+                        <p class="appointment-note">Appointed by Governor Greg Abbott in {{ judge.election_info.appointment_year }}</p>
+                      {% endif %}
+                    {% endif %}
+                    
+                    {% if judge.election_info.next_election %}
+                      <p class="next-election">
+                        <strong>Next Election:</strong>
+                        <span class="election-year">{{ judge.election_info.next_election }}</span>
+                      </p>
+                    {% endif %}
+                    
+                    <p><strong>Term Length:</strong> {{ judge.election_info.term_length_years }} years</p>
+                    
+                    {% if judge.election_info.election_notes %}
+                      <p class="election-notes">{{ judge.election_info.election_notes }}</p>
+                    {% endif %}
+                  </div>
+                </div>
+              {% endif %}
+
+              {% if judge.url %}
+                <div class="judge-section">
+                  <p class="court-link">
+                    <a href="{{ judge.url }}" target="_blank" rel="noopener noreferrer">View Court Website →</a>
+                  </p>
+                </div>
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+      </section>
+    {% endif %}
+  {% else %}
+    <div class="no-judges">
+      <p>Judge information is not yet available. The judge directory is being compiled and will be populated automatically.</p>
+    </div>
+  {% endif %}
 </div>

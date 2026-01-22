@@ -11,28 +11,129 @@ require 'faraday'
 require 'time'
 require 'logger'
 
+# ---
+# Content filtering
+# ---
+# Goal: keep only items that are legal / crime / justice / law enforcement / court related.
+# We do this at fetch-time so the generated _data/news-feed.json is already curated.
+
+LEGAL_KEYWORDS = [
+  # courts / process
+  'court', 'courts', 'judge', 'judges', 'jury', 'trial', 'hearing', 'sentencing',
+  'appeal', 'appeals', 'lawsuit', 'lawsuits', 'litigation', 'indict', 'indicted',
+  'indictment', 'arraignment', 'plea', 'pleads', 'pleaded', 'convict', 'convicted',
+  'conviction', 'acquitted', 'bail', 'bond', 'probation', 'parole', 'warrant',
+  'warrants', 'subpoena', 'subpoenas',
+
+  # crime
+  'crime', 'criminal', 'murder', 'homicide', 'shooting', 'robbery', 'burglary',
+  'theft', 'stolen', 'assault', 'battery', 'kidnapping', 'rape', 'sexual assault',
+  'fraud', 'scam', 'arson', 'manslaughter', 'felony', 'misdemeanor',
+  'dwi', 'dui',
+
+  # law enforcement
+  'police', 'sheriff',
+  # "deputy" is too ambiguous (e.g., deputy superintendent).
+  'constable', 'trooper',
+  # "investigation" is too broad; many non-legal stories use it.
+  'investigates', 'investigating',
+  'arrest', 'arrests', 'arrested', 'charged',
+  'charges', 'booking', 'booked', 'suspect', 'victim',
+
+  # legal system / institutions
+  'district attorney',
+  # "da" by itself is too ambiguous (matches words like "update"), so we don't
+  # include it as a standalone keyword.
+  'prosecutor', 'prosecution', 'public defender',
+  'attorney', 'lawyer', 'legal',
+  # note: "justice" is too broad and causes false positives (social justice, etc.)
+  # note: "immigration" is too broad; keep the more specific "ice" keyword
+  'department of justice',
+  # Keep immigration-enforcement stories but avoid false positives like "practice".
+  # We match with word boundaries in looks_legal_related?
+  'ice',
+
+  # corrections
+  'jail', 'prison', 'inmate', 'incarcerated'
+].freeze
+
+def looks_legal_related?(title, excerpt)
+  haystack = [title, excerpt].compact.join(' ').downcase
+  return false if haystack.strip.empty?
+
+  # Extra guardrails to reduce false positives from generic words like "investigates".
+  # These are intentionally conservative.
+  return false if haystack.match?(/\bnaval drills?\b/)
+
+  LEGAL_KEYWORDS.any? do |kw|
+    if kw.match?(/\A[a-z0-9\s\-']+\z/)
+      # word-boundary-ish match for short tokens; allow spaces for phrases.
+      if kw.include?(' ')
+        haystack.include?(kw)
+      else
+        !!haystack.match(/\b#{Regexp.escape(kw)}\b/)
+      end
+    else
+      haystack.include?(kw)
+    end
+  end
+end
+
 # Set up logging
 logger = Logger.new(STDERR)
 logger.level = Logger::INFO
 
 # Configuration
 DATA_DIR = File.join(__dir__, '..', '_data')
-FEEDS_CONFIG = File.join(DATA_DIR, 'rss-feeds.yml')
+
+# The site now keeps *city-specific* feed lists in _data/*.yml.
+# This script aggregates them and generates a single _data/news-feed.json
+# so Jekyll (and GitHub Pages) can render headlines without runtime fetching.
+CITY_FEED_FILES = [
+  File.join(DATA_DIR, 'bell-county-news.yml'),
+  File.join(DATA_DIR, 'killeen-news.yml'),
+  File.join(DATA_DIR, 'temple-news.yml'),
+  File.join(DATA_DIR, 'copperas-cove-news.yml')
+].freeze
+
 OUTPUT_FILE = File.join(DATA_DIR, 'news-feed.json')
 
-# Load configuration
+# Load and merge city feed configs
 def load_config
   log = Logger.new(STDERR)
   log.level = Logger::INFO
-  
-  unless File.exist?(FEEDS_CONFIG)
-    log.error "Configuration file not found: #{FEEDS_CONFIG}"
+
+  merged = {
+    'feeds' => [],
+    'config' => {}
+  }
+
+  CITY_FEED_FILES.each do |path|
+    next unless File.exist?(path)
+
+    city_cfg = YAML.load_file(path) || {}
+    feeds = city_cfg['feeds'] || []
+    # Add the city identifier so templates can filter later
+    city_key = File.basename(path, '.yml')
+
+    feeds.each do |f|
+      next unless f.is_a?(Hash)
+      f = f.dup
+      f['city'] ||= city_key
+      merged['feeds'] << f
+    end
+
+    # Merge config with last-one-wins. (They are currently identical anyway.)
+    merged['config'] = merged['config'].merge(city_cfg['config'] || {})
+  end
+
+  if merged['feeds'].empty?
+    log.error "No feed configuration files found / no feeds enabled. Expected one of: #{CITY_FEED_FILES.join(', ')}"
     exit 1
   end
-  
-  config = YAML.load_file(FEEDS_CONFIG)
-  log.info "Loaded configuration with #{config['feeds'].size} feeds"
-  config
+
+  log.info "Loaded #{merged['feeds'].size} feeds from city configs"
+  merged
 end
 
 # Fetch RSS feed with error handling
@@ -161,6 +262,7 @@ def main
     
     source_name = feed_config['name']
     url = feed_config['url']
+    city = feed_config['city']
     max_items = feed_config['max_items'] || 10
     
     log.info "Processing feed: #{source_name}"
@@ -181,9 +283,16 @@ def main
     
     # Convert feed items
     items = feed.entries.map { |entry| item_to_hash(entry, source_name) }
+    # attach city to each item for city-page filtering
+    items.each { |it| it['city'] = city if city }
     
     # Filter by date
     items = filter_by_date(items, max_age_days: max_age_days)
+
+    # Filter by topic (legal / crime / justice / law enforcement / court)
+    before_legal_filter = items.size
+    items = items.select { |it| looks_legal_related?(it['title'], it['excerpt']) }
+    log.info "Topic filter removed #{before_legal_filter - items.size} non-legal items from #{source_name}" if before_legal_filter != items.size
     
     # Limit items
     items = items.first(max_items)
@@ -192,6 +301,7 @@ def main
     feed_results << {
       'source' => source_name,
       'url' => url,
+      'city' => city,
       'items' => items,
       'item_count' => items.size
     }

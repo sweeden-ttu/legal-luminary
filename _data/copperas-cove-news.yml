@@ -1,0 +1,9 @@
+# RSS feed sources for Copperas Cove-area legal/news updates
+feeds: []
+
+config:
+  max_age_days: 30
+  timeout_seconds: 12
+  retry_attempts: 2
+  delay_between_feeds: 1
+

@@ -4,11 +4,14 @@
 feeds:
   # Local Bell County Sources
   - name: "City of Killeen"
-    url: "https://www.killeentexas.gov/rss.aspx"
+    # NOTE: Killeen's /rss.aspx is an HTML landing page, not RSS XML.
+    # The actual RSS endpoints are not reliably accessible (404) from this environment.
+    # Leave this disabled until a working XML URL is confirmed.
+    url: "https://www.killeentexas.gov/RSSFeed.aspx?ModID=76&CID=All-0"
     category: "local"
     type: "government"
     max_items: 10
-    enabled: true
+    enabled: false
     
   - name: "Killeen Daily Herald"
     url: "https://kdhnews.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory"
@@ -19,28 +22,28 @@ feeds:
     
   # Texas State Government Sources
   - name: "Texas Legislature - Today's Bills Filed"
-    url: "https://capitol.texas.gov/MyTLO/RSS/RSSFeeds.aspx?FeedType=TodayBillsFiledHouse"
+    url: "https://capitol.texas.gov/MyTLO/RSS/RSS.aspx?Type=todaysfiledhouse"
     category: "state"
     type: "legislature"
     max_items: 10
     enabled: true
     
   - name: "Texas Legislature - Today's Passed Bills"
-    url: "https://capitol.texas.gov/MyTLO/RSS/RSSFeeds.aspx?FeedType=TodayPassedBills"
+    url: "https://capitol.texas.gov/MyTLO/RSS/RSS.aspx?Type=todaysbillspassed"
     category: "state"
     type: "legislature"
     max_items: 10
     enabled: true
     
   - name: "Texas Legislature - Upcoming House Committee Meetings"
-    url: "https://capitol.texas.gov/MyTLO/RSS/RSSFeeds.aspx?FeedType=UpcomingHouseCommitteeMeetings"
+    url: "https://capitol.texas.gov/MyTLO/RSS/RSS.aspx?Type=upcomingmeetingshouse"
     category: "state"
     type: "legislature"
     max_items: 10
     enabled: true
     
   - name: "Texas Legislature - Upcoming Senate Committee Meetings"
-    url: "https://capitol.texas.gov/MyTLO/RSS/RSSFeeds.aspx?FeedType=UpcomingSenateCommitteeMeetings"
+    url: "https://capitol.texas.gov/MyTLO/RSS/RSS.aspx?Type=upcomingmeetingssenate"
     category: "state"
     type: "legislature"
     max_items: 10

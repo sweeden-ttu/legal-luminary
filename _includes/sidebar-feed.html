@@ -1,39 +1,116 @@
 {%- comment -%}
-Sidebar Feed
-- Shows up to 5 most recent posts from the last 365 days
-- Uses excerpts (auto-generated from content if not explicitly set)
+Sidebar Feed (RSS Legal News)
+
+This site uses a pre-build script to fetch RSS feeds and write `_data/news-feed.json`.
+We render that aggregated feed everywhere `.sidebar-feed` appears.
+
+Source:
+- scripts/fetch-rss-feeds.rb -> _data/news-feed.json
 {%- endcomment -%}
 
-{%- assign now_ts = 'now' | date: '%s' | plus: 0 -%}
-{%- assign cutoff_ts = now_ts | minus: 31536000 -%}
+{%- assign news_data = site.data.news-feed -%}
 
-{%- assign recent_posts = "" | split: "" -%}
-{%- for post in site.posts -%}
-  {%- assign post_ts = post.date | date: '%s' | plus: 0 -%}
-  {%- if post_ts >= cutoff_ts -%}
-    {%- assign recent_posts = recent_posts | push: post -%}
-  {%- endif -%}
-{%- endfor -%}
+{%- comment -%}
+Homepage needs a tighter filter: show only top 3 items that:
+- mention one of: temple, killeen, copperas cove, belton
+- and look "legal" (very lightweight keyword filter)
 
-{%- assign recent_posts = recent_posts | sort: 'date' | reverse -%}
+Note: This is a presentational filter only. The underlying aggregated feed is unchanged.
+{%- endcomment -%}
+
+{%- comment -%}
+Per-page filtering
+
+The fetch script tags every item with a `city` key derived from the YAML file:
+  - killeen-news
+  - temple-news
+  - copperas-cove-news
+  - bell-county-news
+
+Pages can opt into a specific feed by setting front matter:
+  news_city: killeen-news
+
+If not set, we fall back to "all" (site-wide aggregated).
+{%- endcomment -%}
+
+{%- assign page_city = page.news_city | default: 'all' -%}
+
+{%- assign is_home = false -%}
+{%- if page.url == '/' or page.url == '/index.html' -%}
+  {%- assign is_home = true -%}
+{%- endif -%}
+
+{%- assign city_terms = "temple|killeen|copperas cove|copperas\u00A0cove|belton" -%}
+{%- assign legal_terms = "court|arrest|police|sheriff|da|district attorney|county attorney|judge|charges|indict|trial|lawsuit|attorney|legal|dwi|dui|felony|misdemeanor|probation|warrant" -%}
 
 <section class="sidebar-feed" aria-labelledby="sidebar-feed-title">
-  <h3 id="sidebar-feed-title">Recent Articles</h3>
+  <h3 id="sidebar-feed-title">Legal News</h3>
 
-  {%- if recent_posts.size == 0 -%}
-    <p class="sidebar-feed-empty">No recent articles yet.</p>
-  {%- else -%}
+  {%- if news_data and news_data.all_items and news_data.all_items.size > 0 -%}
+    {%- assign recent_news = news_data.all_items -%}
+
+    {%- if page_city != 'all' -%}
+      {%- assign recent_news = recent_news | where: 'city', page_city -%}
+    {%- endif -%}
+    {%- if is_home -%}
+      {%- assign filtered = "" | split: "" -%}
+      {%- for item in recent_news -%}
+        {%- if filtered.size >= 3 -%}
+          {%- break -%}
+        {%- endif -%}
+
+        {%- assign t = item.title | default: "" | downcase -%}
+        {%- assign e = item.excerpt | default: "" | downcase -%}
+
+        {%- assign city_hit = false -%}
+        {%- if t contains "temple" or t contains "killeen" or t contains "belton" or t contains "copperas cove" or t contains "copperas" -%}
+          {%- assign city_hit = true -%}
+        {%- endif -%}
+
+        {%- assign legal_hit = false -%}
+        {%- if t contains "court" or t contains "arrest" or t contains "police" or t contains "sheriff" or t contains "district attorney" or t contains "county attorney" or t contains "judge" or t contains "charges" or t contains "trial" or t contains "lawsuit" or t contains "attorney" or t contains "legal" or t contains "dwi" or t contains "dui" or t contains "felony" or t contains "misdemeanor" or t contains "warrant" -%}
+          {%- assign legal_hit = true -%}
+        {%- elsif e contains "court" or e contains "arrest" or e contains "police" or e contains "sheriff" or e contains "district attorney" or e contains "county attorney" or e contains "judge" or e contains "charges" or e contains "trial" or e contains "lawsuit" or e contains "attorney" or e contains "legal" or e contains "dwi" or e contains "dui" or e contains "felony" or e contains "misdemeanor" or e contains "warrant" -%}
+          {%- assign legal_hit = true -%}
+        {%- endif -%}
+
+        {%- if city_hit and legal_hit -%}
+          {%- assign filtered = filtered | push: item -%}
+        {%- endif -%}
+      {%- endfor -%}
+
+      {%- assign recent_news = filtered -%}
+    {%- else -%}
+      {%- assign recent_news = recent_news | limit: 5 -%}
+    {%- endif -%}
+
+    {%- if recent_news.size == 0 -%}
+      <p class="sidebar-feed-empty">No local legal news items available yet.</p>
+    {%- else -%}
     <ul class="sidebar-feed-list">
-      {%- for post in recent_posts limit: 5 -%}
+      {%- for item in recent_news -%}
         <li class="sidebar-feed-item">
-          <a class="sidebar-feed-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-          <div class="sidebar-feed-meta">{{ post.date | date: "%b %-d, %Y" }}</div>
-          <p class="sidebar-feed-excerpt">
-            {{ post.excerpt | default: post.content | strip_html | strip_newlines | truncate: 140 }}
-          </p>
+          <a class="sidebar-feed-title" href="{{ item.link }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a>
+          <div class="sidebar-feed-meta">
+            <span class="news-source">{{ item.source }}</span>
+            <span class="news-date">{{ item.date | date: "%b %-d, %Y" }}</span>
+          </div>
+          {%- if item.excerpt and item.excerpt != "" -%}
+            <p class="sidebar-feed-excerpt">{{ item.excerpt | strip_html | truncate: 140 }}</p>
+          {%- endif -%}
         </li>
       {%- endfor -%}
     </ul>
-    <a class="sidebar-feed-more" href="{{ '/archive' | relative_url }}">View all recent articles</a>
+
+    <a class="sidebar-feed-more" href="{{ '/legal-news/' | relative_url }}">View all legal news</a>
+
+    {%- if news_data.last_updated -%}
+      <div class="sidebar-news-updated">
+        <small>Last updated: {{ news_data.last_updated | date: "%b %-d, %Y at %-I:%M %p" }}</small>
+      </div>
+    {%- endif -%}
+    {%- endif -%}
+  {%- else -%}
+    <p class="sidebar-feed-empty">No news items available yet.</p>
   {%- endif -%}
 </section>

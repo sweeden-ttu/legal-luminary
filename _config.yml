@@ -62,10 +62,6 @@ navigation:
     url: /defense/
   - title: Personal Injury
     url: /personal-injury/
-  - title: Notaries
-    url: /notaries/
-  - title: Judges
-    url: /judges/
   - title: Resources
     url: /resources/
     children:

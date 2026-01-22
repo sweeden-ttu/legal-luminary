@@ -67,7 +67,7 @@ test.describe('Newsfeed Validation', () => {
       await page.goto('/', { waitUntil: 'domcontentloaded' });
       
       // Check if newsfeed section exists
-      const newsfeedSection = page.locator('.sidebar-news-feed');
+      const newsfeedSection = page.locator('.sidebar-feed');
       const newsfeedCount = await newsfeedSection.count();
       
       // Newsfeed may not appear if there are no items, so we check for either:
@@ -84,12 +84,12 @@ test.describe('Newsfeed Validation', () => {
     test('newsfeed has correct structure when items are available', async ({ page }) => {
       await page.goto('/', { waitUntil: 'domcontentloaded' });
       
-      const newsfeedSection = page.locator('.sidebar-news-feed');
+      const newsfeedSection = page.locator('.sidebar-feed');
       const newsfeedCount = await newsfeedSection.count();
       
       if (newsfeedCount > 0) {
         // Verify title
-        const title = newsfeedSection.locator('h3#sidebar-news-feed-title');
+        const title = newsfeedSection.locator('h3#sidebar-feed-title');
         await expect(title).toBeVisible();
         await expect(title).toHaveText('Legal News');
         
@@ -143,7 +143,7 @@ test.describe('Newsfeed Validation', () => {
     test('newsfeed links are functional', async ({ page }) => {
       await page.goto('/', { waitUntil: 'domcontentloaded' });
       
-      const newsfeedSection = page.locator('.sidebar-news-feed');
+      const newsfeedSection = page.locator('.sidebar-feed');
       const newsfeedCount = await newsfeedSection.count();
       
       if (newsfeedCount > 0) {
@@ -175,7 +175,7 @@ test.describe('Newsfeed Validation', () => {
     test('newsfeed section appears on bell-county page', async ({ page }) => {
       await page.goto('/bell-county/', { waitUntil: 'domcontentloaded' });
       
-      const newsfeedSection = page.locator('.sidebar-news-feed');
+      const newsfeedSection = page.locator('.sidebar-feed');
       const newsfeedCount = await newsfeedSection.count();
       
       if (newsfeedCount > 0) {
@@ -188,21 +188,30 @@ test.describe('Newsfeed Validation', () => {
     test('newsfeed has correct structure on bell-county page when items are available', async ({ page }) => {
       await page.goto('/bell-county/', { waitUntil: 'domcontentloaded' });
       
-      const newsfeedSection = page.locator('.sidebar-news-feed');
+      const newsfeedSection = page.locator('.sidebar-feed');
       const newsfeedCount = await newsfeedSection.count();
       
       if (newsfeedCount > 0) {
-        const title = newsfeedSection.locator('h3#sidebar-news-feed-title');
+        const title = newsfeedSection.locator('h3#sidebar-feed-title');
         await expect(title).toBeVisible();
         await expect(title).toHaveText('Legal News');
-        
+
+        // If there are matching items for this page, we'll get a list.
+        // If not, we'll get an empty-state message.
         const feedList = newsfeedSection.locator('.sidebar-feed-list');
-        await expect(feedList).toBeVisible();
-        
-        const feedItems = feedList.locator('.sidebar-feed-item');
-        const itemCount = await feedItems.count();
-        expect(itemCount).toBeGreaterThan(0);
-        expect(itemCount).toBeLessThanOrEqual(5);
+        const emptyState = newsfeedSection.locator('.sidebar-feed-empty');
+
+        const hasList = (await feedList.count()) > 0;
+        const hasEmpty = (await emptyState.count()) > 0;
+
+        expect(hasList || hasEmpty).toBeTruthy();
+
+        if (hasList) {
+          const feedItems = feedList.locator('.sidebar-feed-item');
+          const itemCount = await feedItems.count();
+          expect(itemCount).toBeGreaterThan(0);
+          expect(itemCount).toBeLessThanOrEqual(5);
+        }
       } else {
         test.info().annotations.push({ type: 'skip', description: 'No newsfeed items available to test' });
       }
@@ -213,19 +222,21 @@ test.describe('Newsfeed Validation', () => {
     test('newsfeed does not appear on defense page', async ({ page }) => {
       await page.goto('/defense/', { waitUntil: 'domcontentloaded' });
       
-      const newsfeedSection = page.locator('.sidebar-news-feed');
+      const newsfeedSection = page.locator('.sidebar-feed');
       const newsfeedCount = await newsfeedSection.count();
       
-      expect(newsfeedCount).toBe(0);
+      // Sidebar feed is now site-wide; defense page should still have it.
+      expect(newsfeedCount).toBeGreaterThan(0);
     });
 
     test('newsfeed does not appear on personal-injury page', async ({ page }) => {
       await page.goto('/personal-injury/', { waitUntil: 'domcontentloaded' });
       
-      const newsfeedSection = page.locator('.sidebar-news-feed');
+      const newsfeedSection = page.locator('.sidebar-feed');
       const newsfeedCount = await newsfeedSection.count();
       
-      expect(newsfeedCount).toBe(0);
+      // Sidebar feed is now site-wide; personal-injury page should still have it.
+      expect(newsfeedCount).toBeGreaterThan(0);
     });
   });
 
@@ -243,7 +254,7 @@ test.describe('Newsfeed Validation', () => {
       
       await page.goto('/', { waitUntil: 'domcontentloaded' });
       
-      const newsfeedSection = page.locator('.sidebar-news-feed');
+      const newsfeedSection = page.locator('.sidebar-feed');
       const newsfeedCount = await newsfeedSection.count();
       
       if (newsfeedCount > 0 && newsData.all_items && newsData.all_items.length > 0) {
@@ -254,10 +265,11 @@ test.describe('Newsfeed Validation', () => {
         // Check that we're showing at most 5 items
         expect(itemCount).toBeLessThanOrEqual(5);
         
-        // Verify first item title matches JSON data
-        const firstItemTitle = await feedItems.first().locator('.sidebar-feed-title').textContent();
-        const firstJsonItem = newsData.all_items[0];
-        expect(firstItemTitle).toContain(firstJsonItem.title);
+        // Verify first item title is present in JSON data
+        // (Ordering can differ due to homepage-specific filtering.)
+        const firstItemTitle = (await feedItems.first().locator('.sidebar-feed-title').textContent()) || '';
+        const allTitles = (newsData.all_items || []).map((it: any) => it.title);
+        expect(allTitles).toContain(firstItemTitle.trim());
       } else if (newsData.all_items && newsData.all_items.length === 0) {
         // If JSON has no items, newsfeed should not be visible
         expect(newsfeedCount).toBe(0);
@@ -276,7 +288,7 @@ test.describe('Newsfeed Validation', () => {
       
       await page.goto('/', { waitUntil: 'domcontentloaded' });
       
-      const newsfeedSection = page.locator('.sidebar-news-feed');
+      const newsfeedSection = page.locator('.sidebar-feed');
       const newsfeedCount = await newsfeedSection.count();
       
       if (newsfeedCount > 0 && newsData.last_updated) {
@@ -296,23 +308,23 @@ test.describe('Newsfeed Validation', () => {
     test('newsfeed has proper ARIA labels', async ({ page }) => {
       await page.goto('/', { waitUntil: 'domcontentloaded' });
       
-      const newsfeedSection = page.locator('.sidebar-news-feed');
+      const newsfeedSection = page.locator('.sidebar-feed');
       const newsfeedCount = await newsfeedSection.count();
       
       if (newsfeedCount > 0) {
-        const title = newsfeedSection.locator('h3#sidebar-news-feed-title');
+        const title = newsfeedSection.locator('h3#sidebar-feed-title');
         const titleId = await title.getAttribute('id');
-        expect(titleId).toBe('sidebar-news-feed-title');
+        expect(titleId).toBe('sidebar-feed-title');
         
         const sectionAriaLabel = await newsfeedSection.getAttribute('aria-labelledby');
-        expect(sectionAriaLabel).toBe('sidebar-news-feed-title');
+        expect(sectionAriaLabel).toBe('sidebar-feed-title');
       }
     });
 
     test('newsfeed links have proper accessibility attributes', async ({ page }) => {
       await page.goto('/', { waitUntil: 'domcontentloaded' });
       
-      const newsfeedSection = page.locator('.sidebar-news-feed');
+      const newsfeedSection = page.locator('.sidebar-feed');
       const newsfeedCount = await newsfeedSection.count();
       
       if (newsfeedCount > 0) {
@@ -331,6 +343,48 @@ test.describe('Newsfeed Validation', () => {
           }
         }
       }
+    });
+  });
+
+  test.describe('Per-page Newsfeed Filtering', () => {
+    test('bell-county page shows bell-county items only (and max 5)', async ({ page }) => {
+      // The template filters based on `page.news_city`. Ensure bell-county.md is configured.
+      await page.goto('/bell-county/', { waitUntil: 'domcontentloaded' });
+
+      const feed = page.locator('.sidebar-feed');
+      if ((await feed.count()) === 0) {
+        test.skip();
+        return;
+      }
+
+      const items = feed.locator('.sidebar-feed-item');
+      const count = await items.count();
+      expect(count).toBeLessThanOrEqual(5);
+
+      // Read the JSON and compute expected titles for bell-county-news
+      const dataPath = path.resolve(process.cwd(), '_data', 'news-feed.json');
+      if (!fs.existsSync(dataPath)) {
+        test.skip();
+        return;
+      }
+      const newsData = JSON.parse(fs.readFileSync(dataPath, 'utf-8'));
+      const expected = (newsData.all_items || [])
+        .filter((it: any) => it.city === 'bell-county-news')
+        .slice(0, 5)
+        .map((it: any) => it.title);
+
+      // If no expected items, the widget can legitimately show empty state (not a list)
+      if (expected.length === 0) {
+        // either empty-state paragraph exists, or widget doesn't render list items
+        expect(count).toBe(0);
+        return;
+      }
+
+      // Ensure rendered titles are a subset of expected titles
+      const renderedTitles = await items.locator('a.sidebar-feed-title').allTextContents();
+      renderedTitles.forEach((t) => {
+        expect(expected).toContain(t.trim());
+      });
     });
   });
 });

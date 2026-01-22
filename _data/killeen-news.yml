@@ -1,0 +1,29 @@
+# RSS feed sources for Killeen-area legal/news updates
+feeds:
+  - name: "Killeen Daily Herald — Local"
+    url: "https://kdhnews.com/search/?f=rss&t=article&c=news/local&l=50&s=start_time&sd=desc"
+    category: "local"
+    type: "news"
+    max_items: 20
+    enabled: true
+
+  - name: "Killeen PD News"
+    url: "https://killeenpdnews.com/feed/"
+    category: "local"
+    type: "police"
+    max_items: 20
+    enabled: true
+
+  - name: "FOX 44 — Killeen tag"
+    url: "https://www.fox44news.com/tag/killeen/feed/"
+    category: "local"
+    type: "news"
+    max_items: 20
+    enabled: true
+
+config:
+  max_age_days: 30
+  timeout_seconds: 12
+  retry_attempts: 2
+  delay_between_feeds: 1
+
