@@ -131,7 +131,7 @@ url: "https://www.legalluminary.com"
 
 1. Create a `CNAME` file in the root with your domain:
    ```
-   www.yourdomain.com
+   www.legalluminary.com
    ```
 2. Configure DNS with your registrar:
    - **A records** pointing to GitHub's IPs
