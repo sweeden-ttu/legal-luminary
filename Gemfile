@@ -12,6 +12,10 @@ gem "logger"
 gem "base64"
 gem "bigdecimal"
 
+# RSS feed parsing for legal news feeds
+gem "feedjira", "~> 3.2"
+gem "faraday", "~> 2.0"
+
 # Windows and JRuby does not include zoneinfo files
 platforms :mingw, :x64_mingw, :mswin, :jruby do
   gem "tzinfo", ">= 1", "< 3"

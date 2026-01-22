@@ -1,0 +1,54 @@
+# RSS Feed Configuration for Legal News
+# Sources validated for Bell County Texas and Texas state legal news
+
+feeds:
+  # Local Bell County Sources
+  - name: "City of Killeen"
+    url: "https://www.killeentexas.gov/rss.aspx"
+    category: "local"
+    type: "government"
+    max_items: 10
+    enabled: true
+    
+  - name: "Killeen Daily Herald"
+    url: "https://kdhnews.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory"
+    category: "local"
+    type: "news"
+    max_items: 15
+    enabled: true
+    
+  # Texas State Government Sources
+  - name: "Texas Legislature - Today's Bills Filed"
+    url: "https://capitol.texas.gov/MyTLO/RSS/RSSFeeds.aspx?FeedType=TodayBillsFiledHouse"
+    category: "state"
+    type: "legislature"
+    max_items: 10
+    enabled: true
+    
+  - name: "Texas Legislature - Today's Passed Bills"
+    url: "https://capitol.texas.gov/MyTLO/RSS/RSSFeeds.aspx?FeedType=TodayPassedBills"
+    category: "state"
+    type: "legislature"
+    max_items: 10
+    enabled: true
+    
+  - name: "Texas Legislature - Upcoming House Committee Meetings"
+    url: "https://capitol.texas.gov/MyTLO/RSS/RSSFeeds.aspx?FeedType=UpcomingHouseCommitteeMeetings"
+    category: "state"
+    type: "legislature"
+    max_items: 10
+    enabled: true
+    
+  - name: "Texas Legislature - Upcoming Senate Committee Meetings"
+    url: "https://capitol.texas.gov/MyTLO/RSS/RSSFeeds.aspx?FeedType=UpcomingSenateCommitteeMeetings"
+    category: "state"
+    type: "legislature"
+    max_items: 10
+    enabled: true
+
+# Configuration
+config:
+  max_age_days: 30  # Only show items from last 30 days
+  timeout_seconds: 10  # HTTP request timeout
+  retry_attempts: 2  # Number of retry attempts for failed feeds
+  delay_between_feeds: 1  # Seconds to wait between feed requests

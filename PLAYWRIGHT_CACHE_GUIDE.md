@@ -27,7 +27,7 @@ import { test } from '@playwright/test';
 test('test with cache', async ({ context }) => {
   // Cache is enabled by default
   const page = await context.newPage();
-  await page.goto('https://example.com');
+  await page.goto('https://legalluminary.com');
   // JS files are cached automatically
 });
 ```
@@ -42,7 +42,7 @@ test('test without cache', async ({ context }) => {
   });
   
   const page = await context.newPage();
-  await page.goto('https://example.com');
+  await page.goto('https://legalluminary.com');
 });
 ```
 
@@ -85,7 +85,7 @@ test('cache JS files manually', async ({ page, context }) => {
     });
   });
   
-  await page.goto('https://example.com');
+  await page.goto('https://legalluminary.com');
 });
 ```
 
@@ -112,7 +112,7 @@ test('log all JS files', async ({ page }) => {
     }
   });
   
-  await page.goto('https://example.com');
+  await page.goto('https://legalluminary.com');
   console.log('JS files loaded:', jsFiles);
 });
 ```
@@ -142,7 +142,7 @@ test('download all JS files', async ({ page }) => {
     }
   });
   
-  await page.goto('https://example.com');
+  await page.goto('https://legalluminary.com');
   await page.waitForLoadState('networkidle');
 });
 ```
@@ -184,7 +184,7 @@ test('cache per site', async ({ context }) => {
   });
   
   const page = await context.newPage();
-  await page.goto('https://example.com');
+  await page.goto('https://legalluminary.com');
 });
 ```
 
@@ -194,7 +194,7 @@ test('cache per site', async ({ context }) => {
 
 ```typescript
 test('inspect cache', async ({ page }) => {
-  await page.goto('https://example.com');
+  await page.goto('https://legalluminary.com');
   
   // Open DevTools (if not headless)
   // Or use CDP to inspect cache
@@ -225,7 +225,7 @@ test('list cached resources', async ({ page }) => {
     }
   });
   
-  await page.goto('https://example.com');
+  await page.goto('https://legalluminary.com');
   await page.waitForLoadState('networkidle');
   
   console.log('Cached resources:', cachedResources.filter(r => r.type === 'script'));
