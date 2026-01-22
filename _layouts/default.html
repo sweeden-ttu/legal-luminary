@@ -1,13 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ site.lang | default: 'en-US' }}">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }} | {{ site.title }}</title>
-  <meta name="description" content="{{ page.description | default: site.description }}">
-  
+  {% seo %}
+  {% assign robots_meta = page.robots | default: 'index,follow' %}
+  <meta name="robots" content="{{ robots_meta }}">
+  <meta name="theme-color" content="#0f233c">
+  {% assign site_language = site.lang | default: 'en-US' %}
+  {% assign org_id = site.url | append: '/#organization' %}
+  {% assign website_id = site.url | append: '/#website' %}
+  {% assign page_url_absolute = page.url | absolute_url %}
+  {% assign show_breadcrumbs = false %}
+  {% if page.collection == 'posts' or page.url != '/' %}
+    {% assign show_breadcrumbs = true %}
+  {% endif %}
+  {% if show_breadcrumbs %}
+    {% if page.collection == 'posts' %}
+      {% capture breadcrumb_list %}
+      {
+        "@type":"ListItem",
+        "position":1,
+        "name":"Home",
+        "item":"{{ site.url }}/"
+      },
+      {
+        "@type":"ListItem",
+        "position":2,
+        "name":"Legal Articles",
+        "item":"{{ '/archive/' | absolute_url }}"
+      },
+      {
+        "@type":"ListItem",
+        "position":3,
+        "name":{{ page.title | jsonify }},
+        "item":"{{ page_url_absolute }}"
+      }
+      {% endcapture %}
+    {% else %}
+      {% capture breadcrumb_list %}
+      {
+        "@type":"ListItem",
+        "position":1,
+        "name":"Home",
+        "item":"{{ site.url }}/"
+      },
+      {
+        "@type":"ListItem",
+        "position":2,
+        "name":{{ page.title | default: site.title | jsonify }},
+        "item":"{{ page_url_absolute }}"
+      }
+      {% endcapture %}
+    {% endif %}
+  {% endif %}
+  {% if site.service_area %}
+    {% capture area_served_json %}
+    [
+      {
+        "@type":"AdministrativeArea",
+        "name":"{{ site.service_area.county | default: 'Bell County' }}, {{ site.service_area.state | default: 'Texas' }}"
+      }
+      {% for city in site.service_area.cities %}
+        ,{
+          "@type":"City",
+          "name":"{{ city }}, {{ site.service_area.state | default: 'Texas' }}"
+        }
+      {% endfor %}
+    ]
+    {% endcapture %}
+  {% endif %}
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"Organization",
+        "@id":"{{ org_id }}",
+        "name":{{ site.title | jsonify }},
+        "url":"{{ site.url }}",
+        "description":{{ site.description | jsonify }},
+        {% if site.email %}
+        "contactPoint":[{
+          "@type":"ContactPoint",
+          "contactType":"customer support",
+          "email":"{{ site.email }}",
+          {% if site.service_area %}
+          "areaServed":{{ area_served_json | strip | replace: '\n', '' }},
+          {% endif %}
+          "availableLanguage":"{{ site_language }}"
+        }],
+        {% endif %}
+        "logo":"{{ '/hero.png' | absolute_url }}"
+      },
+      {
+        "@type":"WebSite",
+        "@id":"{{ website_id }}",
+        "url":"{{ site.url }}",
+        "name":{{ site.title | jsonify }},
+        "inLanguage":"{{ site_language }}",
+        "publisher":{"@id":"{{ org_id }}"}
+      }
+      {% if show_breadcrumbs %}
+      ,{
+        "@type":"BreadcrumbList",
+        "@id":"{{ page_url_absolute }}#breadcrumb",
+        "itemListElement":[{{ breadcrumb_list | strip | replace: '\n', '' }}]
+      }
+      {% endif %}
+      {% if page.collection == 'posts' %}
+      ,{
+        "@type":"BlogPosting",
+        "@id":"{{ page_url_absolute }}#article",
+        "headline":{{ page.title | jsonify }},
+        "description":{{ page.description | default: page.excerpt | default: site.description | strip_html | strip_newlines | truncate: 160 | jsonify }},
+        "datePublished":"{{ page.date | date_to_xmlschema }}",
+        "dateModified":"{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
+        "mainEntityOfPage":"{{ page_url_absolute }}",
+        "image":"{{ page.image | default: '/hero.png' | absolute_url }}",
+        "author":{
+          "@type":"Person",
+          "name":{{ site.author | default: site.title | jsonify }}
+        },
+        "publisher":{"@id":"{{ org_id }}"}
+      }
+      {% endif %}
+    ]
+  }
+  </script>
+  <link rel="icon" type="image/svg+xml" href="{{ '/assets/imgs/legal-luminary-research-tool.svg' | relative_url }}">
+
   <!-- Google Tag Manager -->
-  {% if site.gtm_container_id and site.gtm_container_id == "GTM-KBVFD8NL" %}
+  {% if site.gtm_container_id and site.gtm_container_id != "GTM-XXXXXXX" %}
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -15,17 +139,19 @@
   })(window,document,'script','dataLayer','{{ site.gtm_container_id }}');</script>
   <!-- End Google Tag Manager -->
   {% endif %}
-  
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
-  {% if site.gtm_container_id and site.gtm_container_id == "GTM-KBVFD8NL" %}
+  <!-- Google Tag Manager (noscript) -->
+  {% if site.gtm_container_id and site.gtm_container_id != "GTM-XXXXXXX" %}
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.gtm_container_id }}"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   {% endif %}
-  
+
   <header class="site-header">
     <div class="header-top">
       <div class="container">
@@ -38,8 +164,8 @@
     <div class="header-main">
       <div class="container">
         <div class="logo">
-          <a href="{{ '/' | relative_url }}">
-            <div class="logo-icon">⚖</div>
+          <a href="{{ '/' | relative_url }}" aria-label="{{ site.title | escape }} home">
+            <div class="logo-icon" aria-hidden="true">⚖</div>
             <div class="logo-text">
               <span class="logo-title">Central Texas Legal Resource</span>
               <span class="logo-tagline">Information • Guidance • Justice</span>
@@ -47,12 +173,15 @@
           </a>
         </div>
         <nav class="main-nav" aria-label="Main navigation">
-          <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
-          <ul class="nav-menu">
+          <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-controls="primary-menu" aria-expanded="false">
+            <span aria-hidden="true">☰</span>
+            <span class="sr-only">Toggle navigation</span>
+          </button>
+          <ul class="nav-menu" id="primary-menu">
             {% for item in site.navigation %}
             <li class="{% if item.children %}nav-item-has-children{% endif %}">
-              <a href="{% if item.external %}{{ item.url }}{% else %}{{ item.url | relative_url }}{% endif %}" 
-                 {% if page.url == item.url %}class="active"{% endif %}
+              <a href="{% if item.external %}{{ item.url }}{% else %}{{ item.url | relative_url }}{% endif %}"
+                 {% if page.url == item.url %}class="active" aria-current="page"{% endif %}
                  {% if item.alt %}title="{{ item.alt }}"{% endif %}
                  {% if item.external %}target="_blank" rel="noopener noreferrer"{% endif %}>
                 {{ item.title }}
@@ -62,7 +191,7 @@
                 {% for child in item.children %}
                 <li>
                   <a href="{% if child.external %}{{ child.url }}{% else %}{{ child.url | relative_url }}{% endif %}"
-                     {% if page.url == child.url %}class="active"{% endif %}
+                     {% if page.url == child.url %}class="active" aria-current="page"{% endif %}
                      {% if child.alt %}title="{{ child.alt }}"{% endif %}
                      {% if child.external %}target="_blank" rel="noopener noreferrer"{% endif %}>
                     {{ child.title }}
@@ -89,14 +218,39 @@
   </section>
   {% endif %}
 
-  <main class="site-main">
+  <main id="main-content" class="site-main" tabindex="-1">
     <div class="container">
+      {% if show_breadcrumbs %}
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <ol>
+          <li><a href="{{ '/' | relative_url }}">Home</a></li>
+          {% if page.collection == 'posts' %}
+          <li><a href="{{ '/archive/' | relative_url }}">Legal Articles</a></li>
+          <li><span aria-current="page">{{ page.title }}</span></li>
+          {% elsif page.url != '/' %}
+          <li><span aria-current="page">{{ page.title }}</span></li>
+          {% endif %}
+        </ol>
+      </nav>
+      {% endif %}
       <div class="content-wrapper">
         <article class="main-content">
           {{ content }}
+          {% if page.collection == 'posts' %}
+          <section class="related-resources" aria-labelledby="related-resources-title">
+            <h2 id="related-resources-title">Related Legal Resources</h2>
+            <p>Continue researching Central Texas legal issues with these in-depth guides:</p>
+            <ul>
+              <li><a href="{{ '/texas-law/' | relative_url }}">Understanding Texas Law</a></li>
+              <li><a href="{{ '/bell-county/' | relative_url }}">Bell County Courts & Procedures</a></li>
+              <li><a href="{{ '/defense/' | relative_url }}">Criminal Defense Guidance</a></li>
+              <li><a href="{{ '/personal-injury/' | relative_url }}">Personal Injury Rights in Texas</a></li>
+            </ul>
+          </section>
+          {% endif %}
         </article>
-        <aside class="sidebar">
-          <div class="ad-section">
+        <aside class="sidebar" aria-label="Helpful resources">
+          <div class="ad-section" aria-label="Sponsored legal providers">
             <span class="ad-label">ADVERTISEMENT</span>
             {% if page.url == '/' or page.url == '/index.html' or page.url == '/defense/' or page.url == '/defense/index.html' or page.sidebar_ads == "defense" %}
             {% include ads-defense.html %}
