@@ -53,7 +53,7 @@ A systemd service that runs a recursively opportunistic email algorithm using po
 
 ```bash
 # Basic TLS sendmail example
-sendmail -t -f "sender@domain.com" <<EOF
+sendmail -t -f "notary@legalluminary.com" <<EOF
 To: ${Low_Risk_Vendor}
 Subject: fe79
 Content-Type: text/plain; charset=UTF-8
@@ -201,7 +201,7 @@ echo "Email body content here" > queue/email-$(date +%s).txt
 |-----------|-------------|---------|
 | `Low_Risk_Vendor` | Recipient email address | Required |
 | `Email_Subject` | Email subject line | `fe79` |
-| `Sender_Email` | Sender email address | `sender@domain.com` |
+| `Sender_Email` | Sender email address | `notary@legalluminary.com` |
 | `Use_TLS` | Enable TLS encryption | `true` |
 | `Verify_TLS` | Verify TLS certificates | `true` |
 | `Max_Retry_Attempts` | Maximum retry attempts | `10` |

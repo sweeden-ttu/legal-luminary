@@ -1,0 +1,43 @@
+{
+  "last_updated": "2026-01-21T18:49:08-06:00",
+  "feeds": [
+    {
+      "source": "City of Killeen",
+      "url": "https://www.killeentexas.gov/rss.aspx",
+      "items": [],
+      "error": "Failed to fetch or parse feed"
+    },
+    {
+      "source": "Killeen Daily Herald",
+      "url": "https://kdhnews.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory",
+      "items": [],
+      "item_count": 0
+    },
+    {
+      "source": "Texas Legislature - Today's Bills Filed",
+      "url": "https://capitol.texas.gov/MyTLO/RSS/RSSFeeds.aspx?FeedType=TodayBillsFiledHouse",
+      "items": [],
+      "error": "Failed to fetch or parse feed"
+    },
+    {
+      "source": "Texas Legislature - Today's Passed Bills",
+      "url": "https://capitol.texas.gov/MyTLO/RSS/RSSFeeds.aspx?FeedType=TodayPassedBills",
+      "items": [],
+      "error": "Failed to fetch or parse feed"
+    },
+    {
+      "source": "Texas Legislature - Upcoming House Committee Meetings",
+      "url": "https://capitol.texas.gov/MyTLO/RSS/RSSFeeds.aspx?FeedType=UpcomingHouseCommitteeMeetings",
+      "items": [],
+      "error": "Failed to fetch or parse feed"
+    },
+    {
+      "source": "Texas Legislature - Upcoming Senate Committee Meetings",
+      "url": "https://capitol.texas.gov/MyTLO/RSS/RSSFeeds.aspx?FeedType=UpcomingSenateCommitteeMeetings",
+      "items": [],
+      "error": "Failed to fetch or parse feed"
+    }
+  ],
+  "all_items": [],
+  "total_items": 0
+}

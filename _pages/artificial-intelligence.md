@@ -136,6 +136,46 @@ Cloud Fronts Group - Central Texas Legal Aids provides cutting-edge artificial i
 - Eligibility screening for various immigration programs
 - Document translation and preparation support
 
+### Featured AI Application: Luminary Law
+
+**Luminary Law** — A revolutionary GenAI-powered legal aid web application designed specifically for small Texas plaintiff-side law firms. This cutting-edge application represents a significant advancement in legal technology integration.
+
+**Key Features:**
+
+- **Multi-Provider Authentication** — Supports Google, Microsoft, and Apple login for enhanced security and accessibility
+- **Role-Based Workflows** — Tailored interfaces for different legal professionals:
+  - Attorneys: Deep case law discussion, strategic analysis, and advanced legal research
+  - Paralegals: Rules, deadlines, drafting structure, and procedural guidance
+  - Admin/Intake Staff: Plain language support, fact gathering, and client summaries
+- **Advanced AI Integration** — Powered by Google's Gemini models with specialized legal guardrails
+- **Multimodal Capabilities** — Supports text, image, and audio processing for comprehensive case analysis
+- **Legal Practice Areas** — Covers commercial law, civil litigation, construction law, consumer law, personal injury, probate/wills, real estate, SSDI, and veterans benefits
+
+**Technical Capabilities:**
+
+- **Intelligent Document Processing** — Advanced parsing and categorization of legal documents
+- **Case Analysis & Intake** — Automated case assessment and potential claim identification
+- **Strategic Planning** — AI-assisted case strategy development and outcome prediction
+- **Texas-Specific Legal Focus** — Specialized for Texas state law and local court procedures
+- **Confidentiality & Compliance** — Built-in legal ethics and confidentiality safeguards
+
+**Benefits for Legal Practice:**
+
+- Streamlines client intake processes
+- Enhances legal research capabilities
+- Improves case management efficiency
+- Reduces time spent on routine tasks
+- Provides strategic insights for better case outcomes
+- Maintains ethical compliance and confidentiality standards
+
+**Getting Started with Luminary Law:**
+- Visit the [Luminary Law repository](https://github.com/sweeden-ttu/luminary-law) on GitHub
+- Requires Node.js and a Gemini API key for operation
+- Features comprehensive documentation for setup and deployment
+- Designed for integration with existing legal practice workflows
+
+**Note:** Luminary Law is designed to assist legal professionals and should be used as a supplementary tool alongside traditional legal research and analysis methods.
+
 ## Integration Capabilities
 
 ### Platform Integrations
