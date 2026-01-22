@@ -6,39 +6,6 @@ hero: true
 hero_title: "Central Texas Legal Resource"
 hero_subtitle: "A trusted guide to understanding Texas law and finding qualified legal representation in Bell County"
 description: "Legal information resource for Bell County and Central Texas. Find qualified defense attorneys and personal injury lawyers."
-sidebar_ads_content: |
-  <div class="ad-card featured">
-    <div class="ad-specialty">Process Server</div>
-    <h4>Central Texas Process Service</h4>
-    <p>Professional process serving in Bell County and Central Texas. Reliable, timely service of legal documents, summons, notices and court filings.</p>
-    <div class="ad-contact">
-      <div class="ad-phone">
-        <a href="tel:+12543176688">📞 (254) 317-6688</a>
-      </div>
-    </div>
-    <a href="tel:+2543176688" class="ad-cta">Contact Now</a>
-  </div>
-
-  <div class="ad-card">
-    <div class="ad-specialty">Notary Public</div>
-    <h4>Scott Weeden, Notary Public</h4>
-    <p>Licensed notary public services. Document notarization, affidavits, and official certifications. Mobile service available.</p>
-    <div class="ad-contact">
-      <div class="ad-phone">
-        <a href="mailto:notary@legalluminary.com">📞 notary@legalluminary.com</a>
-      </div>
-      <div>📱 <a href="https://facebook.com/scotdwg81" target="_blank" rel="noopener noreferrer">Facebook</a> | <a href="https://instagram.com/scotdwg81" target="_blank" rel="noopener noreferrer">Instagram</a></div>
-    </div>
-    <a href="tel:+12543176688" class="ad-cta">Get in Touch</a>
-    <p class="ad-disclaimer">Licensed Notary Public in Texas, Bell County</p>
-  </div>
-
-  <div class="ad-card">
-    <div class="ad-specialty">Legal Services</div>
-    <h4>Advertise Here</h4>
-    <p>Reach clients actively seeking legal services in Bell County and Central Texas.</p>
-    <a href="/advertise/" class="ad-cta">Learn More</a>
-  </div>
 ---
 
 <p class="intro-text">
@@ -46,7 +13,7 @@ Whether individuals are facing criminal charges or have been injured due to some
 </p>
 
 <div style="text-align: center; margin: 3rem 0; padding: 1rem 0;">
-<img src="{{ '/assets/imgs/legal-luminary-research-tool.svg' | relative_url }}" alt="Central Texas Legal Luminary - Research Tool" style="max-width: 100%; height: auto; border-radius: 8px;">
+<img src="{{ '/assets/imgs/legal-luminary-research-tool.svg' | relative_url }}" alt="Central Texas Legal Luminary - AI-Enhanced Legal Research Tool" style="max-width: 100%; height: auto; border-radius: 8px;">
 </div>
 
 <div style="text-align: center; margin: 2rem 0;">
