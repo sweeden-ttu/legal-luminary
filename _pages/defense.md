@@ -26,13 +26,16 @@ sidebar_ads_content: |
 
   <div class="ad-card">
     <div class="ad-specialty">Bail Bonds</div>
-    <h4>Bad Boy Bail Bonds of Texas</h4>
+    <h4>BAD BOY BAIL BONDS - BELL COUNTY</h4>
     <p>24/7 bail bond services. Fast release, payment plans available. Serving Bell County and Central Texas.</p>
     <div class="ad-contact">
+      <div>📍 1350 Jackrabbit Rd<br>Belton, TX, USA</div>
       <div class="ad-phone">
         <a href="tel:+12546342245">📞 (254) 634-2245</a>
       </div>
-      <div>🌐 <a href="https://badboyabilene.com/" target="_blank" rel="noopener noreferrer sponsored">badboyabilene.com</a></div>
+      <div class="ad-email">
+        ✉️ <a href="mailto:bellco@badboytexas.com">bellco@badboytexas.com</a>
+      </div>
     </div>
     <a href="tel:+12546342245" class="ad-cta">Get Help Now</a>
   </div>
