@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: bell-county
 title: Bell County Law
 permalink: /bell-county/
 hero: true

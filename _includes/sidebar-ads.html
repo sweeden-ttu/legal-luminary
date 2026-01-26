@@ -1,0 +1,21 @@
+{%- comment -%}
+Sidebar Ads Include
+Accepts: ad_type (defense, injury, texas, bell-county, resources, or general)
+{%- endcomment -%}
+
+<div class="ad-section" aria-label="Sponsored legal providers">
+  <span class="ad-label">ADVERTISEMENT</span>
+  {% if include.ad_type == 'defense' %}
+    {% include ads-defense.html %}
+  {% elsif include.ad_type == 'injury' %}
+    {% include ads-injury.html %}
+  {% elsif include.ad_type == 'texas' %}
+    {% include ads-general.html %}
+  {% elsif include.ad_type == 'bell-county' %}
+    {% include ads-general.html %}
+  {% elsif include.ad_type == 'resources' %}
+    {% include ads-general.html %}
+  {% else %}
+    {% include ads-general.html %}
+  {% endif %}
+</div>

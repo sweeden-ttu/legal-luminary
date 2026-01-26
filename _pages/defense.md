@@ -1,51 +1,11 @@
 ---
-layout: default
+layout: defense
 title: Defense Attorneys
 permalink: /defense/
-sidebar_ads: defense
 hero: true
 hero_title: "Criminal Defense Information"
 hero_subtitle: "Understanding rights and finding aggressive representation in Bell County"
 description: "Criminal defense information for Bell County. Learn about assault, domestic violence, and other charges. Find experienced defense attorneys."
-sidebar_ads_content: |
-  <div class="ad-card featured">
-    <div class="ad-specialty">Criminal Defense</div>
-    <h4>Robert Lewis, Attorney at Law</h4>
-    <p>Experienced criminal defense representation in Killeen and Bell County. Aggressive defense for assault, domestic violence, and felony charges.</p>
-    <div class="ad-contact">
-      <div class="ad-phone">
-        <a href="tel:+12547024767">📞 (254) 702-4767</a>
-      </div>
-    </div>
-    <div class="ad-contact">
-      📍 Killeen, TX 76541
-    </div>
-    <a href="tel:+12547024767" class="ad-cta">Free Consultation</a>
-    <p class="ad-disclaimer">Licensed in Texas</p>
-  </div>
-
-  <div class="ad-card">
-    <div class="ad-specialty">Bail Bonds</div>
-    <h4>BAD BOY BAIL BONDS - BELL COUNTY</h4>
-    <p>24/7 bail bond services. Fast release, payment plans available. Serving Bell County and Central Texas.</p>
-    <div class="ad-contact">
-      <div>📍 1350 Jackrabbit Rd<br>Belton, TX, USA</div>
-      <div class="ad-phone">
-        <a href="tel:+12546342245">📞 (254) 634-2245</a>
-      </div>
-      <div class="ad-email">
-        ✉️ <a href="mailto:bellco@badboytexas.com">bellco@badboytexas.com</a>
-      </div>
-    </div>
-    <a href="tel:+12546342245" class="ad-cta">Get Help Now</a>
-  </div>
-
-  <div class="ad-card">
-    <div class="ad-specialty">Legal Services</div>
-    <h4>Advertise Here</h4>
-    <p>Reach clients actively seeking defense attorneys in Bell County and Central Texas.</p>
-    <a href="/advertise/" class="ad-cta">Learn More</a>
-  </div>
 ---
 
 <p class="intro-text">

@@ -250,24 +250,16 @@
           {% endif %}
         </article>
         <aside class="sidebar" aria-label="Helpful resources">
-<<<<<<< HEAD
           {% include sidebar-feed.html %}
+          {% if page.sidebar_ads_content %}
           <div class="ad-section" aria-label="Sponsored legal providers">
             <span class="ad-label">ADVERTISEMENT</span>
-            {% if page.sidebar_ads_content %}
             {{ page.sidebar_ads_content }}
-=======
-          <div class="ad-section" aria-label="Sponsored legal providers">
-            <span class="ad-label">ADVERTISEMENT</span>
-            {% if page.url == '/' or page.url == '/index.html' or page.url == '/defense/' or page.url == '/defense/index.html' or page.sidebar_ads == "defense" %}
-            {% include ads-defense.html %}
-            {% elsif page.url == '/personal-injury/' or page.url == '/personal-injury/index.html' or page.sidebar_ads == "injury" %}
-            {% include ads-injury.html %}
->>>>>>> origin/master
-            {% else %}
-            {% include ads-general.html %}
-            {% endif %}
           </div>
+          {% else %}
+          {% assign ad_type = page.layout | default: 'general' %}
+          {% include sidebar-ads.html ad_type=ad_type %}
+          {% endif %}
           <div class="sidebar-info">
             <h3>Need Legal Help?</h3>
             <p>The attorneys featured on this site are ready to assist individuals with their legal matters in Bell County and throughout Texas.</p>

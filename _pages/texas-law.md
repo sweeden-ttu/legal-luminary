@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: texas
 title: Texas Law
 permalink: /texas-law/
 hero: true

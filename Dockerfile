@@ -18,9 +18,9 @@ RUN apk add --no-cache \
     imagemagick
 
 # Install Python packages for attribution processing
-RUN pip3 install --break-system-packages \
-    pdf2image>=1.16.0 \
-    PyPDF2>=3.0.0
+RUN pip3 install \
+    pdf2image \
+    PyPDF2
 
 USER jekyll
 
