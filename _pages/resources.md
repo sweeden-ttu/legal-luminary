@@ -39,13 +39,32 @@ Main Phone: (254) 933-5100<br>
 
 ### Court Websites & Forms
 
-- Bell County District Clerk (felony filings, civil over $200k): <a href="https://www.bellcountytx.com/departments/district_clerk/index.php" target="_blank" rel="noopener">bellcountytx.com/departments/district_clerk</a>
-- Bell County County Clerk (misdemeanors, probate, records): <a href="https://www.bellcountytx.com/departments/county_clerk/index.php" target="_blank" rel="noopener">bellcountytx.com/departments/county_clerk</a>
-- Bell County Sheriff (warrants, jail, inmate lookup): <a href="https://www.bellcountytx.com/departments/sheriff/index.php" target="_blank" rel="noopener">bellcountytx.com/departments/sheriff</a>
+- **Odyssey Portal** — <a href="https://justice.bellcounty.texas.gov/PublicPortal/" target="_blank" rel="noopener noreferrer">Search Court Hearings and Records</a> — Search all Bell County court cases, hearings, and records online
+
+- **District Clerk** — <a href="https://www.bellcountytx.com/district_clerk/index.php" target="_blank" rel="noopener noreferrer">bellcountytx.com/district_clerk</a> — Handles felony criminal cases and civil cases over $200,000. Phone: (254) 933-5197
+
+- **County Clerk** — <a href="https://www.bellcountytx.com/county_government/county_clerk/index.php" target="_blank" rel="noopener noreferrer">bellcountytx.com/county_government/county_clerk</a> — Handles misdemeanor cases, probate, marriage licenses, birth/death certificates, and property records. Phone: (254) 933-5160
+
+- **District Courts** — <a href="https://www.bellcountytx.com/county_government/district_courts/index.php" target="_blank" rel="noopener noreferrebell-county/r">bellcountytx.com/county_government/district_courts</a> — Information on all six District Courts (27th, 146th, 169th, 264th, 426th, 478th)
+
+- **County Courts at Law** — <a href="https://www.bellcountytx.com/county_government/county_courts/index.php" target="_blank" rel="noopener noreferrer">bellcountytx.com/county_government/county_courts</a> — Information on County Courts at Law 1, 2, and 3
+
+- **Justice of the Peace** — <a href="https://www.bellcountytx.com/county_government/justice_of_the_peace/index.php" target="_blank" rel="noopener noreferrer">bellcountytx.com/county_government/justice_of_the_peace</a> — Information on all six JP courts, citations, small claims, and evictions
+
+- **County Attorney** — <a href="https://www.bellcountytx.com/county_government/county_attorney/index.php" target="_blank" rel="noopener noreferrer">bellcountytx.com/county_government/county_attorney</a> — Prosecutes Class A/B misdemeanors. Bell County Courthouse Annex, 550 East 2nd Avenue, Belton, TX 76513. Phone: (254) 933-5161
+
+- **District Attorney** — <a href="https://www.bellcountytx.com/county_government/district_attorney/index.php" target="_blank" rel="noopener noreferrer">bellcountytx.com/county_government/district_attorney</a> — Prosecutes felonies. Includes victim services information
+
+- **Sheriff** — <a href="https://www.bellcountytx.com/county_government/sheriff/index.php" target="_blank" rel="noopener noreferrer">bellcountytx.com/county_government/sheriff</a> — Jail information, inmate lookup, warrants, civil process. Phone: (254) 933-5400
+
 - **Killeen Municipal Court** online services: Dial (254) 501-7850 and press #325, or visit <a href="https://www.killeentexas.gov/172/Municipal-Court" target="_blank" rel="noopener">killeentexas.gov/172/Municipal-Court</a>
+
 - **Temple Municipal Court** payments & forms: Dial (254) 298-5690 and press #151, or visit <a href="https://www.templetx.gov/151/Municipal-Court" target="_blank" rel="noopener">templetx.gov/151/Municipal-Court</a>
+
 - **Belton Municipal Court** docket & payments: Dial (254) 933-5828 and press #235, or visit <a href="https://www.beltontexas.gov/235/Municipal-Court" target="_blank" rel="noopener">beltontexas.gov/235/Municipal-Court</a>
-- Bell County Attorney’s Office (misdemeanor prosecution): <a href="https://www.bellcountytx.com/departments/county_attorney/index.php" target="_blank" rel="noopener">bellcountytx.com/departments/county_attorney</a> — Courthouse Annex, 550 East 2nd Avenue, Belton, TX 76513 — Main line via County Clerk: (254) 933-5161
+
+- Bell County Attorney’s Office (misdemeanor prosecution): <a href="https://www.bellcountytx.com/county_government/county_attorney/index.php" target="_blank" rel="noopener">bellcountytx.com/departments/county_attorney</a> — Courthouse Annex, 550 East 2nd Avenue, Belton, TX 76513 — Main line via County Clerk: (254) 933-5161
+
 - Application for Return of Cash Bail (U.S. District Court — Western District of Texas): <a href="https://www.txwd.uscourts.gov/main-forms/cash-bail/" target="_blank" rel="noopener">txwd.uscourts.gov/main-forms/cash-bail/</a>
 
 ## Texas State Resources

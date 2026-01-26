@@ -17,6 +17,30 @@ feeds:
     max_items: 15
     enabled: true
     
+  # Bell County Police Department RSS Feeds
+  - name: "Killeen Police Department"
+    url: "https://killeenpdnews.com/feed/"
+    category: "local"
+    type: "police"
+    max_items: 15
+    enabled: true
+    
+  - name: "Temple Police Department"
+    url: "https://city-of-temple.prowly.com/rss"
+    category: "local"
+    type: "police"
+    max_items: 15
+    enabled: true
+    note: "Includes all Temple city news; TPD releases are included"
+    
+  - name: "Belton Police Department"
+    url: "https://www.beltontexas.gov/newslist.php"
+    category: "local"
+    type: "police"
+    max_items: 10
+    enabled: false
+    note: "RSS feed not available; may need alternative source"
+    
   # Texas State Government Sources
   - name: "Texas Legislature - Today's Bills Filed"
     url: "https://capitol.texas.gov/MyTLO/RSS/RSSFeeds.aspx?FeedType=TodayBillsFiledHouse"

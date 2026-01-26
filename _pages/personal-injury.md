@@ -47,78 +47,35 @@ When individuals have been injured due to someone else's negligence, they should
 
 ## Types of Personal Injury Cases
 
-Personal injury law covers a wide range of situations where someone's negligence or wrongful conduct causes harm to another. The following are common types of cases handled by injury attorneys in Bell County:
+Personal injury law covers situations where someone's negligence causes harm to another. Common cases in Bell County include:
 
 ### Motor Vehicle Accidents
 
 <div class="info-box">
 <h4>Texas is an At-Fault State</h4>
-<p>Texas uses a fault-based system for car accidents. The driver who caused the accident (or their insurance) is responsible for damages. Individuals may recover compensation from the at-fault driver's liability insurance or through their own uninsured/underinsured motorist coverage.</p>
+<p>Texas uses a fault-based system. The driver who caused the accident (or their insurance) is responsible for damages. Individuals may recover compensation from the at-fault driver's liability insurance or through their own uninsured/underinsured motorist coverage.</p>
 </div>
 
-Car accidents on I-35, Highway 190, and other busy Bell County roads frequently cause serious injuries. Common causes include distracted driving, speeding, failure to yield, and commercial vehicle negligence. Compensation may include medical expenses, lost wages, vehicle damage, and pain and suffering.
-
-**Types of vehicle accident cases include:**
-
-- **Car Accidents** — Collisions involving passenger vehicles, including rear-end accidents, intersection crashes, and highway incidents
-- **Truck and Commercial Vehicle Accidents** — Accidents involving 18-wheelers, delivery trucks, and other commercial vehicles often result in catastrophic injuries due to the size and weight of these vehicles
-- **Motorcycle Accidents** — Motorcyclists are particularly vulnerable and often suffer severe injuries even in minor collisions
-- **Bicycle Accidents** — Cyclists struck by motor vehicles may have claims against negligent drivers
-- **Pedestrian Accidents** — Individuals struck while walking, jogging, or crossing streets
-- **Bus Accidents** — Accidents involving public transit, school buses, or charter buses
-- **Drunk Driving Accidents** — Victims of intoxicated drivers may pursue claims against both the driver and potentially establishments that over-served alcohol (dram shop liability)
-
-### Dram Shop Liability
-
-Texas law allows victims to pursue claims against bars, restaurants, and other establishments that serve alcohol to visibly intoxicated persons or minors who then cause injuries. These cases require proving the establishment's negligence in serving alcohol contributed to the accident.
-
-### Catastrophic Injuries
-
-Some accidents result in life-altering injuries that require extensive medical treatment and long-term care:
-
-- Traumatic brain injuries
-- Spinal cord injuries and paralysis
-- Severe burns
-- Amputation or loss of limbs
-- Multiple fractures
-- Permanent disfigurement
-
-These cases often involve substantial damages to account for lifetime medical needs, loss of earning capacity, and diminished quality of life.
-
-### Wrongful Death
-
-When negligence results in the death of a loved one, surviving family members may pursue a wrongful death claim. Texas law allows spouses, children, and parents of the deceased to seek compensation for funeral expenses, lost financial support, loss of companionship, and mental anguish.
+Car accidents on I-35, Highway 190, and other busy Bell County roads frequently cause serious injuries. Types include car accidents, truck and commercial vehicle accidents, motorcycle accidents, bicycle accidents, pedestrian accidents, bus accidents, and drunk driving accidents (which may involve dram shop liability claims against establishments that over-served alcohol).
 
 ### Premises Liability
 
-Property owners have a duty to maintain safe conditions. When they fail, injuries result:
-
-**Apartment Complex Negligence** — Inadequate security leading to assault or robbery. Poorly maintained common areas causing falls. Failure to address known hazards. Negligent maintenance of stairways, pools, and parking areas.
-
-**Commercial Property** — Slip and fall accidents. Inadequate lighting or security. Defective conditions. Negligent maintenance.
-
-**Residential Property** — Dog bites. Swimming pool accidents. Dangerous conditions.
+Property owners must maintain safe conditions. When they fail, injuries result from slip and fall accidents, inadequate security, defective conditions, negligent maintenance, dog bites, and swimming pool accidents.
 
 ### Workplace Injuries
 
 <div class="info-box">
 <h4>Workers' Compensation in Texas</h4>
-<p>Texas is unique — employers can opt out of workers' compensation. If an individual's employer is a "non-subscriber," they may sue them directly for negligence, potentially recovering more than workers' comp would provide. Even with workers' comp, individuals may have third-party claims against equipment manufacturers or other responsible parties.</p>
+<p>Texas is unique — employers can opt out of workers' compensation. If an individual's employer is a "non-subscriber," they may sue them directly for negligence, potentially recovering more than workers' comp would provide.</p>
 </div>
 
-**On-the-Job Injuries** include construction accidents, industrial machinery injuries, repetitive stress injuries, exposure to harmful substances, and transportation accidents during work.
+Workplace injuries include construction accidents, industrial machinery injuries, repetitive stress injuries, exposure to harmful substances, and transportation accidents during work.
 
-**Fort Cavazos Civilian Workers** — Civilian employees at military installations have specific rights and procedures for workplace injuries.
+### Other Cases
 
-### Disability Claims
+**Catastrophic Injuries** — Life-altering injuries including traumatic brain injuries, spinal cord injuries, severe burns, amputations, and permanent disfigurement.
 
-When injuries prevent individuals from working:
-
-**Social Security Disability** — Federal program for those unable to work due to disability lasting at least 12 months.
-
-**Long-Term Disability Insurance** — Claims against private disability policies through employers or individual coverage.
-
-**Veterans Disability** — VA disability claims for service-connected conditions.
+**Wrongful Death** — When negligence results in death, surviving family members may pursue claims for funeral expenses, lost financial support, loss of companionship, and mental anguish.
 
 ## What Compensation May Be Available
 
@@ -127,32 +84,16 @@ When injuries prevent individuals from working:
 <li><strong>Lost Income</strong> — Wages lost during recovery and reduced future earning capacity</li>
 <li><strong>Pain and Suffering</strong> — Physical pain and emotional distress</li>
 <li><strong>Property Damage</strong> — Vehicle repair or replacement, damaged personal items</li>
-<li><strong>Loss of Enjoyment</strong> — Inability to participate in activities individuals previously enjoyed</li>
-<li><strong>Disfigurement</strong> — Scarring or permanent physical changes</li>
 </ul>
 
 ## Why Individuals Need a Personal Injury Attorney
 
-### Insurance Companies Are Not Their Friends
-
-Insurance adjusters contact individuals quickly after an accident. Their goal is to settle cheaply. Tactics include taking recorded statements that can be used against individuals, offering quick settlements before the full extent of injuries is known, disputing medical treatment as unnecessary, and claiming individuals were partially at fault.
-
-### An Attorney Levels the Playing Field
-
-**Investigation** — Gathering evidence, obtaining police reports, interviewing witnesses, working with accident reconstructionists.
-
-**Medical Documentation** — Ensuring injuries are properly documented and individuals receive appropriate treatment.
-
-**Valuation** — Calculating the true value of claims including future damages.
-
-**Negotiation** — Dealing with insurance companies from a position of knowledge and strength.
-
-**Litigation** — Filing suit and taking cases to trial if a fair settlement isn't offered.
+Insurance adjusters contact individuals quickly after an accident with the goal of settling cheaply. An attorney levels the playing field by investigating cases, gathering evidence, obtaining police reports, ensuring proper medical documentation, calculating true claim values, negotiating with insurance companies, and filing suit when necessary.
 
 ## Time Limits Apply
 
 <div class="legal-notice">
-<strong>Statute of Limitations:</strong> In Texas, individuals generally have <strong>two years</strong> from the date of injury to file a personal injury lawsuit. Missing this deadline typically bars claims forever. Some claims have shorter deadlines. Individuals should not delay in consulting an attorney.
+<strong>Statute of Limitations:</strong> In Texas, individuals generally have <strong>two years</strong> from the date of injury to file a personal injury lawsuit. Missing this deadline typically bars claims forever. Individuals should not delay in consulting an attorney.
 </div>
 
 ## Take the First Step
