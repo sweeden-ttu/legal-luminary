@@ -1,20 +1,19 @@
-version: '3.8'
-
 services:
   # Development server with live reload
   jekyll:
     build:
       context: .
       dockerfile: Dockerfile
-    command: bundle exec jekyll serve --watch --force_polling --incremental --host 0.0.0.0 --port 4000 --livereload --livereload-port 35729 --baseurl ''
+    command: jekyll serve --watch --force_polling --incremental --host 0.0.0.0 --port 4000 --livereload --livereload-port 35729 --baseurl ''
     volumes:
-      - .:/srv/jekyll
+      - .:/srv/jekyll:Z
       - bundle_cache:/usr/local/bundle
     ports:
       - '4000:4000'
       - '35729:35729'
     environment:
-      RUBYOPT: '-W0'
+      JEKYLL_UID: ${UID:-1000}
+      JEKYLL_GID: ${GID:-1000}
       JEKYLL_ENV: development
 
   # Production build (outputs to _site/)
@@ -22,11 +21,13 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    command: bundle exec jekyll build
+    command: jekyll build
     volumes:
-      - .:/srv/jekyll
+      - .:/srv/jekyll:Z
       - bundle_cache:/usr/local/bundle
     environment:
+      JEKYLL_UID: ${UID:-1000}
+      JEKYLL_GID: ${GID:-1000}
       JEKYLL_ENV: production
 
 volumes:
