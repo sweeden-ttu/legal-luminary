@@ -17,6 +17,24 @@ OUTPUT_DATA = SITE_ROOT / "_data" / "candidates_city_index.json"
 
 STATE = "texas"
 
+# Hub / grid: these cities first (fixed order), then all others by candidate count (desc).
+CITY_GRID_PRIORITY = ("killeen", "nolanville")
+
+
+def sort_cities_for_grid(
+    city_buckets: list[dict[str, Any]],
+) -> list[dict[str, Any]]:
+    def sort_key(bucket: dict[str, Any]) -> tuple[int, int, int, str]:
+        city = bucket["city"]
+        n = len(bucket["candidates"])
+        try:
+            pin = CITY_GRID_PRIORITY.index(city)
+            return (0, pin, -n, city)
+        except ValueError:
+            return (1, 0, -n, city)
+
+    return sorted(city_buckets, key=sort_key)
+
 
 def slugify(value: str) -> str:
     lowered = re.sub(r"[^a-z0-9]+", "_", value.lower())
@@ -32,6 +50,20 @@ def extract_office(markdown_text: str) -> str:
     if not match:
         return "Municipal Candidate"
     return match.group(1).strip()
+
+
+def format_running_for_office(office: str) -> str:
+    """Normalize display office line: always `Running for …` (no duplicate prefix)."""
+    text = (office or "").strip() or "Municipal Candidate"
+    # Placeholder from extract_office when dossier lacks "## Office Sought"
+    if text == "Municipal Candidate":
+        text = "municipal office"
+    lowered = text.lower()
+    marker = "running for "
+    if lowered.startswith(marker):
+        rest = text[len(marker) :].lstrip()
+        return "Running for " + rest
+    return "Running for " + text
 
 
 def parse_candidate_slug(candidate_name: str, source_slug: str) -> str:
@@ -148,7 +180,7 @@ def migrate_candidate(candidate_dir: Path) -> dict[str, Any] | None:
     city = slugify(poll_data.get("city_context", "killeen"))
 
     candidate_slug = parse_candidate_slug(candidate_name_poll, source_slug)
-    office = extract_office(source_markdown)
+    office = format_running_for_office(extract_office(source_markdown))
     profile_summary = extract_profile_summary(source_markdown)
 
     target_dir = TARGET_COLLECTION_ROOT / city
@@ -193,9 +225,10 @@ def build_index(records: list[dict[str, Any]]) -> dict[str, Any]:
         city_bucket = cities.setdefault(city, {"city": city, "candidates": []})
         city_bucket["candidates"].append(record)
 
+    city_list = sort_cities_for_grid(list(cities.values()))
     return {
         "state": STATE,
-        "cities": list(cities.values()),
+        "cities": city_list,
         "candidates": sorted_records,
         "count": len(sorted_records),
     }
