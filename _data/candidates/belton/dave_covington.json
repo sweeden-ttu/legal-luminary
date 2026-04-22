@@ -1,0 +1,64 @@
+{
+  "candidate_slug": "dave_covington",
+  "source_slug": "covington_dave",
+  "city": "belton",
+  "name": "Covington Dave",
+  "articles": [
+    {
+      "url": "https://www.beltontexas.gov/government/city_clerk/election/index.php",
+      "title": "Welcome to City of Belton",
+      "domain": "beltontexas.gov",
+      "excerpt": "**2026 Election Information - May 2, 2026 ( CANCELLED )**",
+      "confidence": "high",
+      "field": "election_2026_details"
+    },
+    {
+      "url": "https://www.beltontexas.gov/news_detail_T11_R1355.php",
+      "title": "Two Incumbents File for Belton City Council",
+      "domain": "beltontexas.gov",
+      "excerpt": "The 2026 General Election is scheduled for Saturday, May 2.",
+      "confidence": "high",
+      "field": "election_2026_details"
+    },
+    {
+      "url": "https://www.beltontexas.gov/government/city_council/index.php",
+      "title": "Welcome to City of Belton",
+      "domain": "beltontexas.gov",
+      "excerpt": "Term Expires: May 2026 | **Dave Covington |",
+      "confidence": "high",
+      "field": "public_service_history"
+    },
+    {
+      "url": "https://www.zillow.com/profile/DaveCovington",
+      "title": "Dave Covington - Real Estate Agent in Belton, TX - Zillow",
+      "domain": "zillow.com",
+      "excerpt": "Visit Dave Covington's profile on Zillow to find ratings and reviews. Find great Belton, TX real estate professionals on Zillow like Dave Covington of Covington Real Estate, Inc.",
+      "confidence": "high",
+      "field": "online_presence"
+    },
+    {
+      "url": "https://www.linkedin.com/in/dave-covington-1058ba74",
+      "title": "Dave Covington - Covington Real Estate, Inc. | LinkedIn",
+      "domain": "linkedin.com",
+      "excerpt": "View Dave Covington’s profile on LinkedIn, a professional community of 1 billion members.",
+      "confidence": "high",
+      "field": "online_presence"
+    },
+    {
+      "url": "https://www.beltontexas.gov/government/city_clerk/index.php",
+      "title": "Welcome to City of Belton",
+      "domain": "beltontexas.gov",
+      "excerpt": "City clerks act as local compliance officers for federal, state, and local statutes, including the Open Meetings Act and Public Information Act, and serve as the filing authority for campaign finance reports and financial disclosure statements.",
+      "confidence": "high",
+      "field": "online_presence"
+    },
+    {
+      "url": "https://www.ethics.state.tx.us/search/cf/",
+      "title": "Search Campaign Finance",
+      "domain": "ethics.state.tx.us",
+      "excerpt": "Most individuals or entities filing campaign finance reports with the Texas Ethics Commission (TEC) are required to file reports electronically unless the individual or entity is eligible to claim a statutory exemption. See Who Has To File Electronic",
+      "confidence": "medium",
+      "field": "endorsements"
+    }
+  ]
+}

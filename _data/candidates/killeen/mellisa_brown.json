@@ -1,0 +1,72 @@
+{
+  "candidate_slug": "mellisa_brown",
+  "source_slug": "brown_mellisa",
+  "city": "killeen",
+  "name": "Brown Mellisa",
+  "articles": [
+    {
+      "url": "https://www.facebook.com/mellisa.brown.7186896/",
+      "title": "Mellisa Brown - Facebook",
+      "domain": "facebook.com",
+      "excerpt": "Local Festival Coordinator at [Killeen Comedy Festival](https://www.facebook.com/Killeen-Comedy-Festival-820890844432455/)",
+      "confidence": "high",
+      "field": "community_involvement"
+    },
+    {
+      "url": "https://kdhnews.com/centerforpolitics/former-councilwoman-seeks-to-be-elected-again-for-killeen-council/article_49866a79-4d5a-42d7-99ed-2e405c9102f7.html",
+      "title": "Former councilwoman seeks to be elected again for Killeen ...",
+      "domain": "kdhnews.com",
+      "excerpt": "On other issues, such as zoning, she echoed a common refrain from critics of the current council iteration that infrastructure should be in place before constructing homes. But she also stressed the use of more planned unit developments, which she sa",
+      "confidence": "high",
+      "field": "views_on_zoning_and_development"
+    },
+    {
+      "url": "https://kdhnews.com/news/local/brown-released-from-jail-wednesday-after-arrest-resulting-from-tumultuous-killeen-council-meeting/article_42f444d8-340e-11ef-9abf-bf98ed05c0c3.html",
+      "title": "Brown released from jail Wednesday after arrest resulting ...",
+      "domain": "kdhnews.com",
+      "excerpt": "Mellisa Brown, a former councilwoman who ran an unsuccessful campaign for mayor in May, was arrested Tuesday on a charge of criminal trespass when she reentered the council chambers after",
+      "confidence": "high",
+      "field": "controversies_and_legal_issues"
+    },
+    {
+      "url": "https://ballotpedia.org/Mellisa_Brown_(Killeen_City_Council_At-large,_Texas,_candidate_2026)",
+      "title": "Mellisa Brown (Killeen City Council At-large, Texas ...",
+      "domain": "ballotpedia.org",
+      "excerpt": "Mellisa Brown is running for election to the Killeen City Council At-large in Texas. Brown is on the ballot in the general election on May 2, 2026. [source] [1] Click here to view Ballotpedia's local election coverage in Texas by county in 2026.",
+      "confidence": "high",
+      "field": "current_election_details"
+    },
+    {
+      "url": "https://www.killeentexas.gov/DocumentCenter/View/13561/Mellisa-Brown---Form-COH-04-02-2026_Redacted",
+      "title": "CANDIDATE / OFFICEHOLDER CAMPAIGN FINANCE REPORT",
+      "domain": "killeentexas.gov",
+      "excerpt": "The C/OH Instruction Guide explains how to complete this form. STREET ADDRESS (NO PO BOX PLEASE); APT / SUITE #: CITY. STATE: ZIP CODE. THIS BOX IS FOR NOTICE OF POLITICAL CONTRIBUTIONS ACCEPTED OR POLITICAL EXPENDITURES MADE BY POLITICAL COMMITTEES ",
+      "confidence": "high",
+      "field": "campaign_finance_summary"
+    },
+    {
+      "url": "https://www.killeentexas.gov/324/City-Secretary",
+      "title": "City Secretary | City of Killeen, TX",
+      "domain": "killeentexas.gov",
+      "excerpt": "Section Title: City Secretary > Records Custodian\nContent:\nThis division manages the city's official records and permanent records facility. This division also oversees the city's Records Management Program and provides training to city employees on ",
+      "confidence": "high",
+      "field": "campaign_finance_summary"
+    },
+    {
+      "url": "https://www.facebook.com/mellisa.brown.7186896/videos/939055742439207/",
+      "title": "Killeen Charter Review Committee | Mellisa Brown | Facebook",
+      "domain": "facebook.com",
+      "excerpt": "But in addition to filing fees, I intended to bring it up at the candidate forum last night but the questions",
+      "confidence": "high",
+      "field": "social_media_presence"
+    },
+    {
+      "url": "https://www.kxxv.com/hometown/bell-county/former-killeen-city-council-member-mellisa-brown-announces-plan-to-run-for-mayor",
+      "title": "Former Killeen city council member Melissa Brown announces ...",
+      "domain": "kxxv.com",
+      "excerpt": "KILLEEN, Texas — Former Killeen city council member Melissa Brown has announced that she's planning to run for mayor of Killeen. Brown is accusing Killeen Mayor, Debbie Nash-King, of",
+      "confidence": "high",
+      "field": "political_career_history.position_or_candidacy"
+    }
+  ]
+}

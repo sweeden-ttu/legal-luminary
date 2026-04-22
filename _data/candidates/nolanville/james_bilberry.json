@@ -1,0 +1,40 @@
+{
+  "candidate_slug": "james_bilberry",
+  "source_slug": "bilberry_james",
+  "city": "nolanville",
+  "name": "Bilberry James",
+  "articles": [
+    {
+      "url": "https://kdhnews.com/news/local/3-nolanville-council-seats-are-up-for-election-with-1-unopposed/article_f25b532b-1cac-40e7-8eb8-09f3f4e59656.html",
+      "title": "3 Nolanville council seats are up for election with 1 unopposed",
+      "domain": "kdhnews.com",
+      "excerpt": " During my tenure as a City Council member I was part of the growth and development beginning in the initial stages of park development, city street improvements and beginning the current City Hall and Police Department. I was also a member of the Ci",
+      "confidence": "high",
+      "field": "highlighted_past_achievements"
+    },
+    {
+      "url": "https://ballotpedia.org/James_Bilberry_(Nolanville_City_Council_Seat_5,_Texas,_candidate_2025)",
+      "title": "James Bilberry (Nolanville City Council Seat 5, Texas ...",
+      "domain": "ballotpedia.org",
+      "excerpt": "James Bilberry ran for election to the Nolanville City Council Seat 5 in Texas. Bilberry was on the ballot in the general election on November 4, 2025. [source] [1]",
+      "confidence": "high",
+      "field": "political_background_and_experience"
+    },
+    {
+      "url": "https://kdhnews.com/news/local/a-losing-battle-residents-of-troubled-nolanville-trailer-park-warn-city-council-they-re-fighting/article_d006519e-5ee6-11ed-9603-1757c2e42bc2.html",
+      "title": "A losing battle: Residents of troubled Nolanville trailer ...",
+      "domain": "kdhnews.com",
+      "excerpt": "Bilberry, clearly worn down from the hour and a half of testimony, told the residents that he was “sick” of what they were going through.",
+      "confidence": "high",
+      "field": "political_background_and_experience"
+    },
+    {
+      "url": "https://www.ethics.state.tx.us/search/cf/",
+      "title": "Search Campaign Finance - ethics.state.tx.us",
+      "domain": "ethics.state.tx.us",
+      "excerpt": "All reports filed on paper after July 2010 can be viewed in PDF format. However, only the total amounts are viewable for paper-filed reports filed previous to 2010.",
+      "confidence": "medium",
+      "field": "context_of_2025_nolanville_election"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "candidate_slug": "c_cochran",
+  "source_slug": "cochran_c",
+  "city": "killeen",
+  "name": "Cochran C",
+  "articles": [
+    {
+      "url": "https://www.cochran-4-killeen.com/",
+      "title": "Cochran 4 Killeen",
+      "domain": "cochran-4-killeen.com",
+      "excerpt": "Dr. Cochran continued his deep commitment to the Killeen community and volunteers on most weekdays and weekends. His involvement includes supporting the United Service Organization (USO), The Mission Continues - Killeen Platoon, and Habitat for Human",
+      "confidence": "high",
+      "field": "community_involvement"
+    },
+    {
+      "url": "https://www.killeentexas.gov/DocumentCenter/View/13405/C-Cochran---District-3-03-04-2026_Redacted",
+      "title": "APPLICATION FOR A PLACE ON THE BALLOT FOR A SPECIAL ELECTION ...",
+      "domain": "killeentexas.gov",
+      "excerpt": "\"I, (name of candidate) Camron Cochran of Bell County, Texas, being a candidate for the office of District 3 Councilmember, Killeen, swear that I will support and defend the Constitution and laws of the United States and of the State of Texas.",
+      "confidence": "high",
+      "field": "candidate_name"
+    },
+    {
+      "url": "https://www.tdtnews.com/news/region/article_c323837d-d21b-5a50-a10d-5f933b0b4d49.html",
+      "title": "Cochran, Mustapher, Bass: Who will represent south and ...",
+      "domain": "tdtnews.com",
+      "excerpt": "From left, David Bass, Camron Cochran and Terry Mustapher are running for Killeen City Council District 3 in the May 2 election. Composite Image/www.kdhnews.com",
+      "confidence": "high",
+      "field": "candidate_name"
+    },
+    {
+      "url": "https://kdhnews.com/news/local/local-resident-files-multiple-tec-complaints-against-mayor-and-council/article_899bb560-7d1f-11ef-85e2-cf6b51f2fcb6.html",
+      "title": "Local resident files multiple TEC complaints against mayor ...",
+      "domain": "kdhnews.com",
+      "excerpt": "Killeen resident Camron Cochran has filed at least six complaints with the TEC against Mayor Debbie Nash-King and various city council members. He has been warned previously that frivolous",
+      "confidence": "high",
+      "field": "candidate_name"
+    },
+    {
+      "url": "https://kdhnews.com/news/local/killeen-district-3-candidate-stirs-controversy-on-social-media/article_20880659-ccf3-431c-a99b-7aacda2e3cf5.html",
+      "title": "Killeen District 3 candidate stirs controversy on social media | Local News | kdhnews.com",
+      "domain": "kdhnews.com",
+      "excerpt": "Cochran, who has run for public office several times previously, has been known for getting into conflicts with Killeen council members and downtown business owners, often in a very public way.",
+      "confidence": "high",
+      "field": "candidate_name"
+    },
+    {
+      "url": "https://www.killeentexas.gov/719/2026-District-3-Special-Election",
+      "title": "2026 District 3 Special Election | City of Killeen, TX",
+      "domain": "killeentexas.gov",
+      "excerpt": "Campaign Treasurer Appointment 03-04-2026 (PDF)",
+      "confidence": "high",
+      "field": "campaign_treasurer_appointment"
+    },
+    {
+      "url": "https://www.killeentexas.gov/DocumentCenter/View/13540/Campaign-Finance-Report-03-31-2026-PDF",
+      "title": "CANDIDATE / OFFICEHOLDER CAMPAIGN FINANCE REPORT",
+      "domain": "killeentexas.gov",
+      "excerpt": "I understand that designating a report as a final report terminates my campaign treasurer appointment. I also understand that I may not accept any campaign contributions or make any campaign expenditures without a campaign treasurer appointment on fi",
+      "confidence": "high",
+      "field": "campaign_treasurer_appointment"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "candidate_slug": "sue_croft",
+  "source_slug": "croft_sue",
+  "city": "killeen",
+  "name": "Croft Sue",
+  "articles": [
+    {
+      "url": "https://kdhnews.com/centerforpolitics/15-candidates-battle-for-3-at-large-killeen-council-seats/article_32d74a0c-717c-4069-880f-260e9b5417e0.html",
+      "title": "15 candidates battle for 3 at-large Killeen council seats",
+      "domain": "kdhnews.com",
+      "excerpt": "“I’m your watchdog,” she said. “I’m going to make sure that you understand what’s being built next door to you.”",
+      "confidence": "high",
+      "field": "key_quotes"
+    },
+    {
+      "url": "https://kdhnews.com/centerforpolitics/killeen-council-candidate-croft-talks-development-and-quality-of-life/article_d4bfe463-4477-4d34-85d6-c60302a4bc7d.html",
+      "title": "Killeen council candidate Croft talks development and quality ...",
+      "domain": "kdhnews.com",
+      "excerpt": "In a video interview with KDH News, Killeen City Council at-large candidate Sue “Neesy” Croft spoke about quality of life issues and development.",
+      "confidence": "high",
+      "field": "public_record_and_controversies"
+    },
+    {
+      "url": "https://www.killeentexas.gov/650/Elections",
+      "title": "Elections | City of Killeen, TX",
+      "domain": "killeentexas.gov",
+      "excerpt": "Elections | City of Killeen, TX\nMay 3, 2025 — Elections. May 3, 2025 Election Results (General Election/Recall/Prop B):.",
+      "confidence": "high",
+      "field": "public_record_and_controversies"
+    },
+    {
+      "url": "https://www.ethics.state.tx.us/search/cf/",
+      "title": "Search Campaign Finance",
+      "domain": "ethics.state.tx.us",
+      "excerpt": "All reports filed on paper after July 2010 can be viewed in PDF format. However, only the total amounts are viewable for paper-filed reports filed previous to 2010.",
+      "confidence": "high",
+      "field": "public_record_and_controversies"
+    },
+    {
+      "url": "https://ballotpedia.org/Sue_Croft_(Killeen_City_Council_At-large,_Texas,_candidate_2026)",
+      "title": "Sue Croft (Killeen City Council At-large, Texas, candidate ...",
+      "domain": "ballotpedia.org",
+      "excerpt": "Endorsements Ballotpedia is gathering information about candidate endorsements. To send us an endorsement, click here.",
+      "confidence": "high",
+      "field": "public_record_and_controversies"
+    },
+    {
+      "url": "https://www.killeentexas.gov/706/2026-General-Election",
+      "title": "May 2, 2026 General Election | City of Killeen, TX",
+      "domain": "killeentexas.gov",
+      "excerpt": "Filers will find answers to most of their questions in the instruction guides to the forms. Please email Laura Calcote, City Secretary, or call at 254-501-7717 for additional guidance.",
+      "confidence": "high",
+      "field": "public_record_and_controversies"
+    },
+    {
+      "url": "https://killeentexas.gov/650/Elections",
+      "title": "Elections | City of Killeen, TX",
+      "domain": "killeentexas.gov",
+      "excerpt": "May 3, 2025 Unofficial Final Election Results (available as soon as possible after 7 p.m. on May 3) May 3, 2025 Early Voting & Absentee Results (available after 7 p.m. on May 3)",
+      "confidence": "high",
+      "field": "candidate_profile_summary"
+    }
+  ]
+}

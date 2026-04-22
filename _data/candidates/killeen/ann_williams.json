@@ -1,0 +1,48 @@
+{
+  "candidate_slug": "ann_williams",
+  "source_slug": "williams_beverly_ann",
+  "city": "killeen",
+  "name": "Williams Beverly Ann",
+  "articles": [
+    {
+      "url": "https://beverlywilliams.org/",
+      "title": "Dr. Beverly Williams – Your Vote… Your Voice",
+      "domain": "beverlywilliams.org",
+      "excerpt": "After my military service, I chose to pursue a career in mental health because I witnessed many of my fellow soldiers suffering from PTSD. I felt called to support and advocate for those facing emotional and psychological challenges.",
+      "confidence": "high",
+      "field": "executive_summary"
+    },
+    {
+      "url": "https://kdhnews.com/centerforpolitics/beverly-williams-files-for-killeen-council-at-large-election/article_e422de35-1587-47b8-843d-2b5833966ee2.html",
+      "title": "Beverly Williams files for Killeen council at-large election",
+      "domain": "kdhnews.com",
+      "excerpt": "According to the filing document, Williams has lived in Killeen for approximately 25 years.",
+      "confidence": "high",
+      "field": "executive_summary"
+    },
+    {
+      "url": "https://www.killeentexas.gov/706/2026-General-Election",
+      "title": "May 2, 2026 General Election | City of Killeen, TX",
+      "domain": "killeentexas.gov",
+      "excerpt": "Please email Laura Calcote, City Secretary, or call at 254-501-7717 for additional guidance. Please note, as a candidate for public office, you are encouraged to read and become familiar with the information relating to campaign laws and procedures i",
+      "confidence": "high",
+      "field": "executive_summary"
+    },
+    {
+      "url": "https://www.killeentexas.gov/324/City-Secretary",
+      "title": "City Secretary | City of Killeen, TX",
+      "domain": "killeentexas.gov",
+      "excerpt": "City Secretary | City of Killeen, TX\nThe City Secretary serves as the City Council Administrative Aide, Elections Administrator, and Records Custodian.",
+      "confidence": "high",
+      "field": "election_details"
+    },
+    {
+      "url": "https://www.killeentexas.gov/DocumentCenter/View/13540/Campaign-Finance-Report-03-31-2026-PDF",
+      "title": "CANDIDATE / OFFICEHOLDER CAMPAIGN FINANCE REPORT",
+      "domain": "killeentexas.gov",
+      "excerpt": "I also understand that I must file an annual report of unexpended contributions and that I may not retain unexpended contributions or unexpended interest or income earned on political contributions longer than six years after filing this final report",
+      "confidence": "high",
+      "field": "election_details"
+    }
+  ]
+}

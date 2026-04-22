@@ -1,0 +1,178 @@
+---
+layout: candidates-root
+---
+
+<link
+    rel="stylesheet"
+    href="{{ '/assets/css/candidates-elections.css' | relative_url }}"
+/>
+
+{% assign index = site.data.candidates_city_index %} {% assign city_items =
+index.cities | sort: "city" %}
+
+<div class="elections-page">
+    <!-- ═══ Hero ═══════════════════════════════════════════════ -->
+    <section class="elections-hero" aria-labelledby="elections-title">
+        <div class="elections-hero__inner">
+            <div class="elections-hero__eyebrow">
+                <svg
+                    width="12"
+                    height="12"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                    aria-hidden="true"
+                >
+                    <path
+                        d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 1.5a6.5 6.5 0 1 1 0 13 6.5 6.5 0 0 1 0-13zM7 4v4.414l2.793 2.793 1.06-1.06L8.5 7.586V4H7z"
+                    />
+                </svg>
+                Bell County, Texas · May 2026
+            </div>
+            <h1 class="elections-hero__title" id="elections-title">
+                Municipal Elections<br /><span
+                    style="font-weight: 400; opacity: 0.75"
+                    >2026</span
+                >
+            </h1>
+            <p class="elections-hero__subtitle">
+                {{ index.count }} candidates across {{ city_items.size }} cities
+            </p>
+            <div class="elections-hero__search" role="search">
+                <svg
+                    class="elections-hero__search-icon"
+                    width="16"
+                    height="16"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                >
+                    <circle cx="11" cy="11" r="8" />
+                    <path d="m21 21-4.35-4.35" />
+                </svg>
+                <input
+                    id="candidateSearch"
+                    type="search"
+                    class="elections-hero__search-input"
+                    placeholder="Search by name or office…"
+                    aria-label="Search candidates"
+                    autocomplete="off"
+                />
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ City Nav ════════════════════════════════════════════ -->
+    <nav class="elections-city-nav" aria-label="Filter by city">
+        <div class="elections-city-nav__inner">
+            <button
+                type="button"
+                class="elections-city-tab is-active"
+                data-city=""
+                aria-pressed="true"
+            >
+                All
+                <span class="elections-city-tab__count">{{ index.count }}</span>
+            </button>
+            {% for city in city_items %}
+            <button
+                type="button"
+                class="elections-city-tab"
+                data-city="{{ city.city }}"
+                aria-pressed="false"
+            >
+                {{ city.city | capitalize }}
+                <span class="elections-city-tab__count"
+                    >{{ city.candidates.size }}</span
+                >
+            </button>
+            {% endfor %}
+        </div>
+    </nav>
+
+    <!-- ═══ Candidate Grid ══════════════════════════════════════ -->
+    <div class="elections-body">
+        <p
+            class="elections-results-meta"
+            id="candidateResultCount"
+            aria-live="polite"
+        >
+            {{ index.count }} candidates
+        </p>
+
+        {% for city_group in city_items %}
+        <section
+            class="elections-city-section"
+            id="city-{{ city_group.city }}"
+            data-city-section="{{ city_group.city }}"
+            aria-label="Candidates in {{ city_group.city | capitalize }}"
+        >
+            <header class="elections-city-section__header">
+                <h2 class="elections-city-section__name">
+                    {{ city_group.city | capitalize }}
+                </h2>
+                <span class="elections-city-section__count"
+                    >{{ city_group.candidates.size }} candidates</span
+                >
+            </header>
+
+            <div class="elections-grid">
+                {% for candidate in city_group.candidates %}
+                <article
+                    class="elections-candidate-card"
+                    data-city="{{ candidate.city }}"
+                    data-name="{{ candidate.name | downcase }}"
+                    data-office="{{ candidate.office | downcase }}"
+                >
+                    <a
+                        href="{{ candidate.profile_url | relative_url }}"
+                        class="elections-candidate-card__link"
+                        aria-label="{{ candidate.name }}, {{ candidate.office }}, {{ candidate.city | capitalize }}"
+                    >
+                        <div class="elections-candidate-card__photo-wrap">
+                            <img
+                                src="{{ candidate.headshot | relative_url }}"
+                                alt="{{ candidate.name }} – candidate photo"
+                                class="elections-candidate-card__photo"
+                                loading="lazy"
+                                onerror="
+                                    this.classList.add('is-broken');
+                                    this.nextElementSibling.style.display =
+                                        'grid';
+                                "
+                            />
+                            <div
+                                class="elections-candidate-card__initial"
+                                aria-hidden="true"
+                                style="display: none"
+                            >
+                                {{ candidate.name | slice: 0, 1 | upcase }}
+                            </div>
+                        </div>
+                        <div class="elections-candidate-card__body">
+                            <p class="elections-candidate-card__city">
+                                {{ candidate.city | capitalize }}
+                            </p>
+                            <h3 class="elections-candidate-card__name">
+                                {{ candidate.name }}
+                            </h3>
+                            <p class="elections-candidate-card__office">
+                                {{ candidate.office }}
+                            </p>
+                            <span class="elections-candidate-card__cta"
+                                >View Profile</span
+                            >
+                        </div>
+                    </a>
+                </article>
+                {% endfor %}
+            </div>
+        </section>
+        {% endfor %}
+    </div>
+    <!-- /.elections-body -->
+</div>
+<!-- /.elections-page -->
+
+<script src="{{ '/assets/js/candidates-city.js' | relative_url }}"></script>

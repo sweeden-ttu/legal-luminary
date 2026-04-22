@@ -1,0 +1,64 @@
+{
+  "candidate_slug": "charleen_dowell",
+  "source_slug": "dowell_charleen",
+  "city": "moody",
+  "name": "Dowell Charleen",
+  "articles": [
+    {
+      "url": "https://ballotpedia.org/Charleen_Dowell_(Mayor_of_Moody,_Texas,_candidate_2024)",
+      "title": "Charleen Dowell (Mayor of Moody, Texas, candidate 2024)",
+      "domain": "ballotpedia.org",
+      "excerpt": "Ballotpedia did not receive biographical information for this candidate.",
+      "confidence": "high",
+      "field": "biographical_background"
+    },
+    {
+      "url": "https://cityofmoody.net/approved-minutes-of-the-city-council-meeting-on-december-132022/",
+      "title": "APPROVED MINUTES OF THE CITY COUNCIL MEETING ON DECEMBER 13 ...",
+      "domain": "cityofmoody.net",
+      "excerpt": "Item #12 was voted on for resolutions and to continue on with the application for the\nT.W.D.B. Loan for Wastewater Plant.",
+      "confidence": "high",
+      "field": "campaign_priorities_and_platform"
+    },
+    {
+      "url": "https://moodytx.gov/approved-minutes-from-city-council-meeting-on-8-12-25/",
+      "title": "APPROVED MINUTES FROM CITY COUNCIL MEETING ON 8/12/25 ...",
+      "domain": "moodytx.gov",
+      "excerpt": "9. Item #9 Proposed Budget. The council was given a proposed budget in their folders to look over. Council suggested a workshop to go over the line items on the budget. A motion was made by Michael Bransford and seconded by Carol Haas, to accept the ",
+      "confidence": "high",
+      "field": "campaign_priorities_and_platform"
+    },
+    {
+      "url": "https://cityofmoody.net/document-center/",
+      "title": "City Documents – The City of Moody, Texas",
+      "domain": "cityofmoody.net",
+      "excerpt": "Renae Rivera City Treasurer ext: 404 Renae Rivera Court Chief Clerk Ext: 403 Department Heads Roger Kennedy Chief of Police ext: 409 / 405 Beau Massey Director of Public Utilities ext: 407 Elected Officials Charleen Dowell Mayor Karla Alton Alderpers",
+      "confidence": "high",
+      "field": "campaign_priorities_and_platform"
+    },
+    {
+      "url": "https://cityofmoody.net/approved-minutes-from-council-meeting-on-6-12-25/",
+      "title": "Approved minutes from Council meeting on 6/12/25.",
+      "domain": "cityofmoody.net",
+      "excerpt": "The city council of Moody, Texas met in a regular session, June 12, 2025.",
+      "confidence": "high",
+      "field": "campaign_priorities_and_platform"
+    },
+    {
+      "url": "https://moodytx.gov/city-of-moody-texas/",
+      "title": "City of Moody, TEXAS – Moodytx.gov",
+      "domain": "moodytx.gov",
+      "excerpt": "Mayor, Charlene Dowell called the Public Hearing of the Moody City Council to order, determined that a quorum was present with Mayor Charlene Dowell, Richard Moore, Karla Alton, Jennifer Houghton, Josh Richter, and John Carpenter.",
+      "confidence": "high",
+      "field": "candidate_profile"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Moody,_Texas",
+      "title": "Moody, Texas",
+      "domain": "en.wikipedia.org",
+      "excerpt": "Moody, Texas\nApr 4, 2026 — Moody is a city in McLennan County, Texas, United States. The population was 1,376 at the 2020 census. It is part of the Waco Metropolitan Statistical Area.",
+      "confidence": "high",
+      "field": "city_of_moody_profile.county"
+    }
+  ]
+}

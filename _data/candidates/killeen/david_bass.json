@@ -1,0 +1,88 @@
+{
+  "candidate_slug": "david_bass",
+  "source_slug": "bass_david",
+  "city": "killeen",
+  "name": "Bass David",
+  "articles": [
+    {
+      "url": "https://davidbasstx.com/",
+      "title": "David Bass for Killeen City Council District 3",
+      "domain": "davidbasstx.com",
+      "excerpt": "Official campaign website for David Bass, candidate for Killeen City Council District 3 in Bell County. Learn about his platform, get involved, and donate to support his campaign.",
+      "confidence": "high",
+      "field": "campaign_outreach"
+    },
+    {
+      "url": "https://www.facebook.com/profile.php/?id=61587712223265",
+      "title": "David Bass for Killeen City Council District 3 - Facebook",
+      "domain": "facebook.com",
+      "excerpt": "David Bass for Killeen City Council District 3, Killeen. 17 likes · 55 talking about this. US Army Veteran, Retired KISD School Teacher",
+      "confidence": "high",
+      "field": "campaign_outreach"
+    },
+    {
+      "url": "https://kdhnews.com/centerforpolitics/army-veteran-bass-looks-to-fill-vacant-district-3-seat-on-killeen-council/article_2dc73850-4d37-47a9-8f93-be3bdf3fb628.html",
+      "title": "Army veteran Bass looks to fill vacant District 3 seat on ...",
+      "domain": "kdhnews.com",
+      "excerpt": "Bass is also a very big proponent of medical marijuana and is the founder of Texas Veterans for Medical Marijuana.",
+      "confidence": "high",
+      "field": "advocacy_for_medical_marijuana"
+    },
+    {
+      "url": "https://kdhnews.com/news/local/ex-army-officer-kicked-soldiers-out-for-smoking-pot-now-he-champions-medical-marijuana/article_12f908a0-00c0-11ed-8d21-7b65e011a3bb.html",
+      "title": "Ex-Army officer kicked soldiers out for smoking pot; now he ...",
+      "domain": "kdhnews.com",
+      "excerpt": "Ex-Army officer kicked soldiers out for smoking pot; now he champions medical marijuana. David Bass, 66, a Killeen resident and Army veteran holds up a THC infused gummy he takes three",
+      "confidence": "high",
+      "field": "advocacy_for_medical_marijuana"
+    },
+    {
+      "url": "https://spectrumlocalnews.com/tx/south-texas-el-paso/politics/2022/09/12/medical-marijuana-expansion-becomes-campaign-issue",
+      "title": "Medical marijuana expansion becomes campaign issue",
+      "domain": "spectrumlocalnews.com",
+      "excerpt": "KILLEEN, Texas — Retired Army Maj. David Bass served in the U.S. Army for 25 years from 1985 to 2006. He’s a veteran of operations Desert Storm and Iraqi Freedom. “When I returned to Fort Hood, I had these symptoms that I didn’t understand,” Bass sai",
+      "confidence": "high",
+      "field": "advocacy_for_medical_marijuana"
+    },
+    {
+      "url": "https://www.killeentexas.gov/DocumentCenter/View/13558/David-Bass---Form-COH-04-02-2026_Redacted",
+      "title": "CANDIDATE / OFFICEHOLDER CAMPAIGN FINANCE REPORT",
+      "domain": "killeentexas.gov",
+      "excerpt": "CANDIDATES AND OFFICEHOLDERS ARE REQUIRED TO REPORT THIS INFORMATION ONLY IF THEY RECEIVE NOTICE OF SUCH EXPENDITURES. 1. TOTAL UNITEMIZED POLITICAL CONTRIBUTIONS (OTHER THAN PLEDGES, LOANS, OR GUARANTEES OF LOANS, OR CONTRIBUTIONS MADE ELECTRONICALL",
+      "confidence": "high",
+      "field": "campaign_finance_summary"
+    },
+    {
+      "url": "https://www.ethics.state.tx.us/search/cf/",
+      "title": "Search Campaign Finance",
+      "domain": "ethics.state.tx.us",
+      "excerpt": "All reports filed on paper after July 2010 can be viewed in PDF format. However, only the total amounts are viewable for paper-filed reports filed previous to 2010.",
+      "confidence": "high",
+      "field": "campaign_finance_summary"
+    },
+    {
+      "url": "https://www.killeentexas.gov/720/2026-District-3-Special-Election",
+      "title": "2026 District 3 Special Election | City of Killeen, TX",
+      "domain": "killeentexas.gov",
+      "excerpt": "Candidates for mayor and councilmember shall meet the qualifications for elective office as established in the Texas Election Code. In addition to the foregoing, candidates for the four district councilmembers shall be bona fide residents of the dist",
+      "confidence": "high",
+      "field": "election_information"
+    },
+    {
+      "url": "https://www.tdtnews.com/news/region/article_e1bffe5c-822b-58cf-a25f-e79db71c8fbb.html",
+      "title": "Army veteran Bass looks to fill vacant District 3 seat on ...",
+      "domain": "tdtnews.com",
+      "excerpt": "David Bass, a candidate for Killeen City Council, poses for a photo after a sit-down interview at the KDH newsroom Tuesday. A long-time Killeen resident is throwing his hat in the",
+      "confidence": "high",
+      "field": "election_information"
+    },
+    {
+      "url": "https://www.tdtnews.com/news/region/article_c323837d-d21b-5a50-a10d-5f933b0b4d49.html",
+      "title": "Cochran, Mustapher, Bass: Who will represent south and ...",
+      "domain": "tdtnews.com",
+      "excerpt": "Now that the filing period has ended for the Killeen City Council District 3 special election, which will take place on May 2, the contest has come together with three",
+      "confidence": "high",
+      "field": "election_information"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "candidate_slug": "nicholas_guajardo",
+  "source_slug": "guajardo_nicholas",
+  "city": "killeen",
+  "name": "Guajardo Nicholas",
+  "articles": [
+    {
+      "url": "https://www.facebook.com/profile.php/?id=61586814850669",
+      "title": "Nicholas Guajardo for Killeen City Council - Facebook",
+      "domain": "facebook.com",
+      "excerpt": "Focused on jobs, safety, and a stronger future for Killeen.",
+      "confidence": "high",
+      "field": "online_presence"
+    },
+    {
+      "url": "https://kdhnews.com/centerforpolitics/guajardo-emphasizes-attracting-jobs-industry-to-killeen-in-run-for-council/article_522b3131-be5c-4322-8509-41e2c2a09cd7.html",
+      "title": "Guajardo emphasizes attracting jobs, industry to Killeen in ...",
+      "domain": "kdhnews.com",
+      "excerpt": "He served in the Army for approximately eight years, and then attended Texas A&M University-Central Texas and received a master’s degree in business administration.",
+      "confidence": "high",
+      "field": "executive_summary"
+    },
+    {
+      "url": "https://ballotpedia.org/Nicholas_Guajardo_(Killeen_City_Council_At-large,_Texas,_candidate_2026)",
+      "title": "Nicholas Guajardo (Killeen City Council At-large, Texas ...",
+      "domain": "ballotpedia.org",
+      "excerpt": "Nicholas Guajardo is running for election to the Killeen City Council At-large in Texas. Guajardo is on the ballot in the general election on May 2, 2026. [source]",
+      "confidence": "high",
+      "field": "executive_summary"
+    },
+    {
+      "url": "https://kdhnews.com/centerforpolitics/guajardo-files-for-killeen-at-large-council-seat/article_8a30d578-b57f-4372-a1a9-27d1f4cb3a81.html",
+      "title": "Guajardo files for Killeen at-large council seat - kdhnews.com",
+      "domain": "kdhnews.com",
+      "excerpt": "Nicholas Guajardo filed for the Killeen at-large council seat Friday for the May 2 election.",
+      "confidence": "high",
+      "field": "executive_summary"
+    },
+    {
+      "url": "https://www.killeentexas.gov/DocumentCenter/View/13185/Nicholas-Guajardo---Form-CTA-01-16-2026_Redacted",
+      "title": "APPOINTMENT OF A CAMPAIGN TREASURER BY A CANDIDATE",
+      "domain": "killeentexas.gov",
+      "excerpt": "I am aware of my responsibility to file timely reports as required by title 15 of the Election Code. I am aware of the restrictions in title 15 of the Election Code on contributions from corporations and labor organizations.",
+      "confidence": "high",
+      "field": "candidate_name"
+    }
+  ]
+}

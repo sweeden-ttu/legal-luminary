@@ -1,0 +1,64 @@
+{
+  "candidate_slug": "kelese_richardson",
+  "source_slug": "richardson_kelese",
+  "city": "killeen",
+  "name": "Richardson Kelese",
+  "articles": [
+    {
+      "url": "https://kdhnews.com/centerforpolitics/15-candidates-battle-for-3-at-large-killeen-council-seats/article_32d74a0c-717c-4069-880f-260e9b5417e0.html",
+      "title": "15 candidates battle for 3 at-large Killeen council seats",
+      "domain": "kdhnews.com",
+      "excerpt": "Kelese Richardson works in customer service and has lived in the area for 13 years. She secured an endorsement from the Killeen Professional Firefighters Association.",
+      "confidence": "high",
+      "field": "endorsements"
+    },
+    {
+      "url": "https://ballotpedia.org/Kelese_Richardson_(Killeen_City_Council_At-large,_Texas,_candidate_2026)",
+      "title": "Kelese Richardson (Killeen City Council At-large, Texas ...",
+      "domain": "ballotpedia.org",
+      "excerpt": "Kelese Richardson is running for election to the Killeen City Council At-large in Texas. Richardson is on the ballot in the general election on May 2, 2026. [source]",
+      "confidence": "high",
+      "field": "candidate_profile"
+    },
+    {
+      "url": "https://www.killeentexas.gov/DocumentCenter/View/13549/Kelese-Richardson---Form-COH-04-02-2026_Redacted",
+      "title": "CANDIDATE / OFFICEHOLDER CAMPAIGN FINANCE REPORT",
+      "domain": "killeentexas.gov",
+      "excerpt": "I swear, or affirm, under penalty of perjury, that the accompanying report is true and correct and includes all information required to be reported by me under Title 15, Election Code.",
+      "confidence": "high",
+      "field": "candidate_profile"
+    },
+    {
+      "url": "https://kdhnews.com/centerforpolitics/solomon-outspending-opponents-in-killeen-mayoral-race-nash-king-tops-council-candidates/article_786b2640-348d-40b7-affd-090b8604d15e.html",
+      "title": "Solomon outspending opponents in Killeen mayoral race; Nash ...",
+      "domain": "kdhnews.com",
+      "excerpt": "Last week, the Killeen mayoral and council candidates for the May 2 city election released their campaign finance reports, viewable on the city’s election page, and Councilman Joseph",
+      "confidence": "high",
+      "field": "candidate_profile"
+    },
+    {
+      "url": "https://www.killeentexas.gov/706/2026-General-Election",
+      "title": "May 2, 2026 General Election | City of Killeen, TX",
+      "domain": "killeentexas.gov",
+      "excerpt": "* Date of Next Officer Election  (Fecha de la Próxima Elección de Oficial): May 2, 2026 (2 de mayo de 2026)",
+      "confidence": "high",
+      "field": "election_information"
+    },
+    {
+      "url": "https://www.killeentexas.gov/m/newsflash/Home/Detail/2787",
+      "title": "City of Killeen Announces Candidate Filing Period for ...",
+      "domain": "killeentexas.gov",
+      "excerpt": "City of Killeen Announces Candidate Filing Period for ...\nCandidates for mayor and city council must meet the qualifications for elective office as outlined in the Texas Election Code. A councilmember who no longer",
+      "confidence": "high",
+      "field": "election_information"
+    },
+    {
+      "url": "https://www.killeentexas.gov/DocumentCenter/View/13306/Kelese-Richardson---At-Large-02-13-2026_Redacted-PDF",
+      "title": "APPLICATION FOR A PLACE ON THE BALLOT FOR A GENERAL ...",
+      "domain": "killeentexas.gov",
+      "excerpt": "\"I, (name of candidate) Klasie Richardson of Bell County, Texas, Being a candidate for the office of At-large Council member, swear that I will support and defend the Constitution and laws of the United States and of the State of Texas.",
+      "confidence": "high",
+      "field": "executive_summary"
+    }
+  ]
+}

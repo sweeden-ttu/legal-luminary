@@ -1,0 +1,48 @@
+{
+  "candidate_slug": "michael_whitson",
+  "source_slug": "whitson_michael",
+  "city": "nolanville",
+  "name": "Whitson Michael",
+  "articles": [
+    {
+      "url": "https://kdhnews.com/centerforpolitics/nolanville-residents-to-decide-on-who-to-pick-for-two-council-seats-for-nov-4/article_4e157bdd-fe49-4a8d-b267-48ee6244fed3.html",
+      "title": "Nolanville residents to decide on who to pick for two council ...",
+      "domain": "kdhnews.com",
+      "excerpt": "“That’s why my focus is straightforward: First, strengthening infrastructure, from smoother roads to dependable emergency responses that give us all that extra peace of mind. Second, supporting education so our kids, grandkids, and base families have",
+      "confidence": "high",
+      "field": "key_statements_and_quotes"
+    },
+    {
+      "url": "https://ballotpedia.org/Michael_Whitson_(Nolanville_City_Council_Seat_4,_Texas,_candidate_2025)",
+      "title": "Michael Whitson (Nolanville City Council Seat 4, Texas ...",
+      "domain": "ballotpedia.org",
+      "excerpt": "Michael Whitson ran for election to the Nolanville City Council Seat 4 in Texas. Whitson was on the ballot in the general election on November 4, 2025. [source] Ballotpedia did not receive biographical information for this candidate.",
+      "confidence": "high",
+      "field": "candidate_overview"
+    },
+    {
+      "url": "https://www.nolanvilletx.gov/page/Elections",
+      "title": "City of Nolanville, Texas",
+      "domain": "nolanvilletx.gov",
+      "excerpt": "Election Day - Tuesday, November 4, 2025",
+      "confidence": "high",
+      "field": "election_details"
+    },
+    {
+      "url": "https://www.facebook.com/kdhnews/posts/nolanville-city-council-members-juanita-sims-and-mikayla-mondragon-are-scheduled/1369630158444468",
+      "title": "Nolanville City Council Members Juanita Sims and ...",
+      "domain": "facebook.com",
+      "excerpt": "Nolanville City Council Members Juanita Sims and ...\nNolanville City Council Members Juanita Sims and Mikayla Mondragon are scheduled to retain their seats after both secured a plurality of the vote in",
+      "confidence": "high",
+      "field": "election_details"
+    },
+    {
+      "url": "https://www.ethics.texas.gov/enforcement/complaints/",
+      "title": "Complaints - Texas Ethics Commission",
+      "domain": "ethics.texas.gov",
+      "excerpt": "The Ethics Commission is authorized to undertake civil enforcement actions in response to a sworn complaint, hold enforcement hearings, issue orders, impose civil penalties, and refer matters for criminal prosecution. The Open Orders that the Commiss",
+      "confidence": "medium",
+      "field": "campaign_finance_details"
+    }
+  ]
+}
