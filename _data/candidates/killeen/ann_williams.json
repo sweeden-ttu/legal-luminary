@@ -44,5 +44,9 @@
       "confidence": "high",
       "field": "election_details"
     }
-  ]
+  ],
+  "facebook_url": "",
+  "linkedin_url": "",
+  "instagram_url": "",
+  "campaign_website": "https://beverlywilliams.org"
 }

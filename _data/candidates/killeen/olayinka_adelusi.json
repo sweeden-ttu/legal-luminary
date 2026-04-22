@@ -116,5 +116,9 @@
       "confidence": "medium",
       "field": "campaign_finance_summary"
     }
-  ]
+  ],
+  "facebook_url": "https://www.facebook.com/profile.php",
+  "linkedin_url": "",
+  "instagram_url": "",
+  "campaign_website": "https://olayinkaadelusiforkilleen.com"
 }

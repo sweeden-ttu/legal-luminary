@@ -36,5 +36,9 @@
       "confidence": "high",
       "field": "election_candidacy_details"
     }
-  ]
+  ],
+  "facebook_url": "",
+  "linkedin_url": "",
+  "instagram_url": "",
+  "campaign_website": ""
 }

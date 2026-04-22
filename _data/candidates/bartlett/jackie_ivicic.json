@@ -52,5 +52,9 @@
       "confidence": "high",
       "field": "online_presence_and_contact.address"
     }
-  ]
+  ],
+  "facebook_url": "",
+  "linkedin_url": "",
+  "instagram_url": "",
+  "campaign_website": "https://www.tapt.com/ivicic.html"
 }

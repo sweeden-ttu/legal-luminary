@@ -44,5 +44,9 @@
       "confidence": "high",
       "field": "candidate_name"
     }
-  ]
+  ],
+  "facebook_url": "https://www.facebook.com/profile.php",
+  "linkedin_url": "",
+  "instagram_url": "",
+  "campaign_website": ""
 }

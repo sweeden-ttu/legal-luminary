@@ -45,8 +45,8 @@
           "source_slug": "southworth_chet",
           "office": "Running for Killeen City Council, At-large",
           "profile_url": "/candidates/texas/killeen/chet_southworth/",
-          "headshot": "/assets/imgs/candidates/texas/killeen/chet_southworth/headshot.png",
-          "thumbnail": "/assets/imgs/candidates/texas/killeen/chet_southworth/thumbnail.png"
+          "headshot": "/assets/imgs/candidates/texas/killeen/chet_southworth/headshot.jpg",
+          "thumbnail": "/assets/imgs/candidates/texas/killeen/chet_southworth/thumbnail.jpg"
         },
         {
           "name": "Christy Wilbanks",
@@ -65,7 +65,7 @@
           "city": "killeen",
           "candidate_slug": "david_bass",
           "source_slug": "bass_david",
-          "office": "Running for municipal office",
+          "office": "Running for City Council at-large",
           "profile_url": "/candidates/texas/killeen/david_bass/",
           "headshot": "/assets/imgs/candidates/texas/killeen/david_bass/headshot.png",
           "thumbnail": "/assets/imgs/candidates/texas/killeen/david_bass/thumbnail.png"
@@ -76,7 +76,7 @@
           "city": "killeen",
           "candidate_slug": "debbie_nashking",
           "source_slug": "nashking_debbie",
-          "office": "Running for municipal office",
+          "office": "Running for City Council at-large",
           "profile_url": "/candidates/texas/killeen/debbie_nashking/",
           "headshot": "/assets/imgs/candidates/texas/killeen/debbie_nashking/headshot.png",
           "thumbnail": "/assets/imgs/candidates/texas/killeen/debbie_nashking/thumbnail.png"
@@ -87,7 +87,7 @@
           "city": "killeen",
           "candidate_slug": "delsina_west",
           "source_slug": "west_delsina",
-          "office": "Running for municipal office",
+          "office": "Running for City Council at-large",
           "profile_url": "/candidates/texas/killeen/delsina_west/",
           "headshot": "/assets/imgs/candidates/texas/killeen/delsina_west/headshot.png",
           "thumbnail": "/assets/imgs/candidates/texas/killeen/delsina_west/thumbnail.png"
@@ -301,7 +301,7 @@
           "city": "nolanville",
           "candidate_slug": "michael_whitson",
           "source_slug": "whitson_michael",
-          "office": "Running for municipal office",
+          "office": "Running for City Council at-large",
           "profile_url": "/candidates/texas/nolanville/michael_whitson/",
           "headshot": "/assets/imgs/candidates/texas/nolanville/michael_whitson/headshot.png",
           "thumbnail": "/assets/imgs/candidates/texas/nolanville/michael_whitson/thumbnail.png"
@@ -339,7 +339,7 @@
           "city": "bartlett",
           "candidate_slug": "chad_mees",
           "source_slug": "mees_chad",
-          "office": "Running for municipal office",
+          "office": "Running for City Council at-large",
           "profile_url": "/candidates/texas/bartlett/chad_mees/",
           "headshot": "/assets/imgs/candidates/texas/bartlett/chad_mees/headshot.png",
           "thumbnail": "/assets/imgs/candidates/texas/bartlett/chad_mees/thumbnail.png"
@@ -361,7 +361,7 @@
           "city": "bartlett",
           "candidate_slug": "vickie_cooper",
           "source_slug": "cooper_vickie",
-          "office": "Running for municipal office",
+          "office": "Running for City Council at-large",
           "profile_url": "/candidates/texas/bartlett/vickie_cooper/",
           "headshot": "/assets/imgs/candidates/texas/bartlett/vickie_cooper/headshot.png",
           "thumbnail": "/assets/imgs/candidates/texas/bartlett/vickie_cooper/thumbnail.png"
@@ -388,7 +388,7 @@
           "city": "belton",
           "candidate_slug": "sr_holmes",
           "source_slug": "holmes_john_r_sr",
-          "office": "Running for municipal office",
+          "office": "Running for City Council at-large",
           "profile_url": "/candidates/texas/belton/sr_holmes/",
           "headshot": "/assets/imgs/candidates/texas/belton/sr_holmes/headshot.png",
           "thumbnail": "/assets/imgs/candidates/texas/belton/sr_holmes/thumbnail.png"
@@ -419,7 +419,7 @@
       "city": "bartlett",
       "candidate_slug": "chad_mees",
       "source_slug": "mees_chad",
-      "office": "Running for municipal office",
+      "office": "Running for City Council at-large",
       "profile_url": "/candidates/texas/bartlett/chad_mees/",
       "headshot": "/assets/imgs/candidates/texas/bartlett/chad_mees/headshot.png",
       "thumbnail": "/assets/imgs/candidates/texas/bartlett/chad_mees/thumbnail.png"
@@ -441,7 +441,7 @@
       "city": "bartlett",
       "candidate_slug": "vickie_cooper",
       "source_slug": "cooper_vickie",
-      "office": "Running for municipal office",
+      "office": "Running for City Council at-large",
       "profile_url": "/candidates/texas/bartlett/vickie_cooper/",
       "headshot": "/assets/imgs/candidates/texas/bartlett/vickie_cooper/headshot.png",
       "thumbnail": "/assets/imgs/candidates/texas/bartlett/vickie_cooper/thumbnail.png"
@@ -463,7 +463,7 @@
       "city": "belton",
       "candidate_slug": "sr_holmes",
       "source_slug": "holmes_john_r_sr",
-      "office": "Running for municipal office",
+      "office": "Running for City Council at-large",
       "profile_url": "/candidates/texas/belton/sr_holmes/",
       "headshot": "/assets/imgs/candidates/texas/belton/sr_holmes/headshot.png",
       "thumbnail": "/assets/imgs/candidates/texas/belton/sr_holmes/thumbnail.png"
@@ -509,8 +509,8 @@
       "source_slug": "southworth_chet",
       "office": "Running for Killeen City Council, At-large",
       "profile_url": "/candidates/texas/killeen/chet_southworth/",
-      "headshot": "/assets/imgs/candidates/texas/killeen/chet_southworth/headshot.png",
-      "thumbnail": "/assets/imgs/candidates/texas/killeen/chet_southworth/thumbnail.png"
+      "headshot": "/assets/imgs/candidates/texas/killeen/chet_southworth/headshot.jpg",
+      "thumbnail": "/assets/imgs/candidates/texas/killeen/chet_southworth/thumbnail.jpg"
     },
     {
       "name": "Christy Wilbanks",
@@ -529,7 +529,7 @@
       "city": "killeen",
       "candidate_slug": "david_bass",
       "source_slug": "bass_david",
-      "office": "Running for municipal office",
+      "office": "Running for City Council at-large",
       "profile_url": "/candidates/texas/killeen/david_bass/",
       "headshot": "/assets/imgs/candidates/texas/killeen/david_bass/headshot.png",
       "thumbnail": "/assets/imgs/candidates/texas/killeen/david_bass/thumbnail.png"
@@ -540,7 +540,7 @@
       "city": "killeen",
       "candidate_slug": "debbie_nashking",
       "source_slug": "nashking_debbie",
-      "office": "Running for municipal office",
+      "office": "Running for City Council at-large",
       "profile_url": "/candidates/texas/killeen/debbie_nashking/",
       "headshot": "/assets/imgs/candidates/texas/killeen/debbie_nashking/headshot.png",
       "thumbnail": "/assets/imgs/candidates/texas/killeen/debbie_nashking/thumbnail.png"
@@ -551,7 +551,7 @@
       "city": "killeen",
       "candidate_slug": "delsina_west",
       "source_slug": "west_delsina",
-      "office": "Running for municipal office",
+      "office": "Running for City Council at-large",
       "profile_url": "/candidates/texas/killeen/delsina_west/",
       "headshot": "/assets/imgs/candidates/texas/killeen/delsina_west/headshot.png",
       "thumbnail": "/assets/imgs/candidates/texas/killeen/delsina_west/thumbnail.png"
@@ -771,7 +771,7 @@
       "city": "nolanville",
       "candidate_slug": "michael_whitson",
       "source_slug": "whitson_michael",
-      "office": "Running for municipal office",
+      "office": "Running for City Council at-large",
       "profile_url": "/candidates/texas/nolanville/michael_whitson/",
       "headshot": "/assets/imgs/candidates/texas/nolanville/michael_whitson/headshot.png",
       "thumbnail": "/assets/imgs/candidates/texas/nolanville/michael_whitson/thumbnail.png"

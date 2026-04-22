@@ -52,5 +52,9 @@
       "confidence": "high",
       "field": "campaign_finance_details"
     }
-  ]
+  ],
+  "facebook_url": "",
+  "linkedin_url": "",
+  "instagram_url": "",
+  "campaign_website": "https://www.raymondjames.com/johnrholmessr/about-us/bio"
 }

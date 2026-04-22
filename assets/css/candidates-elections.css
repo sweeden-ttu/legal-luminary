@@ -450,6 +450,82 @@
     font-weight: 500;
 }
 
+/* Campaign & social (profile hero) */
+.profile-connect {
+    margin-top: 1.25rem;
+    padding-top: 1.1rem;
+    border-top: 1px solid var(--c-border);
+}
+.profile-connect__heading {
+    margin: 0 0 0.65rem;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--c-muted);
+}
+.profile-connect__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 0.65rem;
+    align-items: stretch;
+}
+.profile-connect__list > li {
+    margin: 0;
+}
+.profile-connect__btn {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.35rem;
+    min-width: 4.5rem;
+    padding: 0.55rem 0.45rem 0.45rem;
+    border-radius: 10px;
+    border: 1px solid var(--c-border);
+    background: var(--c-bg);
+    color: var(--c-navy);
+    text-decoration: none;
+    font-size: 0.68rem;
+    font-weight: 700;
+    line-height: 1.2;
+    transition:
+        background 0.15s,
+        border-color 0.15s,
+        color 0.15s,
+        box-shadow 0.15s;
+}
+.profile-connect__btn:hover {
+    border-color: var(--c-gold);
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(15, 32, 68, 0.08);
+    color: var(--c-navy-d);
+}
+.profile-connect__btn--site .profile-connect__icon {
+    color: #0f766e;
+}
+.profile-connect__btn--missing {
+    cursor: default;
+    color: var(--c-muted);
+    background: #f8fafc;
+    border-style: dashed;
+    opacity: 0.85;
+}
+.profile-connect__btn--missing .profile-connect__icon {
+    opacity: 0.45;
+}
+.profile-connect__icon {
+    flex-shrink: 0;
+    display: block;
+}
+.profile-connect__label {
+    text-align: center;
+    max-width: 5.5rem;
+}
+
 /* Two-column body */
 .profile-body {
     display: grid;
