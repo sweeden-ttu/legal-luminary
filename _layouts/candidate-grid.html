@@ -8,7 +8,7 @@ layout: candidates-root
 />
 
 {% assign index = site.data.candidates_city_index %} {% assign city_items =
-index.cities | sort: "city" %}
+index.cities %} {% assign page_url_abs = page.url | absolute_url %}
 
 <div class="elections-page">
     <!-- ═══ Hero ═══════════════════════════════════════════════ -->
@@ -29,13 +29,11 @@ index.cities | sort: "city" %}
                 Bell County, Texas · May 2026
             </div>
             <h1 class="elections-hero__title" id="elections-title">
-                Municipal Elections<br /><span
-                    style="font-weight: 400; opacity: 0.75"
-                    >2026</span
-                >
+                {{ page.title | escape }}
             </h1>
             <p class="elections-hero__subtitle">
-                {{ index.count }} candidates across {{ city_items.size }} cities
+                {{ index.count }} candidate{% if index.count != 1 %}s{% endif %} across
+                {{ city_items.size }} cities — mayor, council, and municipal offices
             </p>
             <div class="elections-hero__search" role="search">
                 <svg
@@ -174,5 +172,34 @@ index.cities | sort: "city" %}
     <!-- /.elections-body -->
 </div>
 <!-- /.elections-page -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": {{ page.title | jsonify }},
+  "description": {{ page.description | jsonify }},
+  "url": {{ page_url_abs | jsonify }},
+  "numberOfItems": {{ index.count }},
+  "itemListElement": [
+    {% for candidate in index.candidates %}
+    {
+      "@type": "ListItem",
+      "position": {{ forloop.index }},
+      "item": {
+        "@type": "Person",
+        "name": {{ candidate.name | jsonify }},
+        "url": {{ candidate.profile_url | absolute_url | jsonify }},
+        "jobTitle": {{ candidate.office | jsonify }},
+        "homeLocation": {
+          "@type": "City",
+          "name": {{ candidate.city | replace: "_", " " | capitalize | jsonify }}
+        }
+      }
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>
 
 <script src="{{ '/assets/js/candidates-city.js' | relative_url }}"></script>
