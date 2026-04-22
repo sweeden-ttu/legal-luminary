@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: candidates-root
 ---
 
 <link
@@ -61,12 +61,12 @@ city_data = site.data.candidates[city] %} {% assign art_data = city_data[cslug]
         <div class="profile-body">
             <!-- Main: Candidate Profile Summary only -->
             <article class="profile-content">
-                {% if page.profile_summary %}
+                {% if page.profile_summary and page.profile_summary != "" %}
                 <h2 class="profile-content__section-title">
-                    Candidate Profile Summary
+                    Executive summary
                 </h2>
-                {{ page.profile_summary | markdownify }} {% else %} {{ content
-                }} {% endif %}
+                {{ page.profile_summary | markdownify }}
+                {% endif %}
             </article>
 
             <!-- Sidebar: Recent Coverage only -->

@@ -44,23 +44,89 @@ def parse_candidate_slug(candidate_name: str, source_slug: str) -> str:
     return slugify(source_slug)
 
 
+_SUFFIXES = {"sr", "jr", "ii", "iii", "iv", "v"}
+
+
+def _title_token(token: str) -> str:
+    t = token.replace("-", " ").strip()
+    if len(t) == 1:
+        return t.upper()
+    return t[:1].upper() + t[1:].lower() if t else t
+
+
+def display_name_from_source_slug(source_slug: str) -> str:
+    """
+    source_slug matches dossier folder: lastname_firstname[_more][_suffix].
+    Produces 'First ... Last' (and optional suffix) for UI — avoids relying on
+    poll_result candidate_name word order, which can be inconsistent.
+    """
+    raw = source_slug.strip().lower()
+    parts = [p for p in raw.split("_") if p]
+    if len(parts) <= 1:
+        return _title_token(parts[0]) if parts else source_slug.strip()
+    body = parts[:]
+    suffix: str | None = None
+    if len(body) >= 2 and body[-1] in _SUFFIXES:
+        suffix = body[-1]
+        body = body[:-1]
+    last_token = body[0]
+    given_tokens = body[1:]
+    given = " ".join(_title_token(g) for g in given_tokens)
+    last = _title_token(last_token)
+    if suffix:
+        suf = suffix.upper() if suffix in ("ii", "iii", "iv", "v") else suffix.title()
+        return f"{given} {last} {suf}".strip()
+    return f"{given} {last}".strip()
+
+
+def extract_profile_summary(markdown_text: str) -> str:
+    """First narrative block after a known summary heading; avoids shipping full dossier in page body."""
+    text = markdown_text.lstrip("\ufeff")
+    patterns = [
+        r"^#\s+Candidate Profile Summary\s*\n+(.*?)(?=\n# |\Z)",
+        r"^#\s+Executive Summary\s*\n+(.*?)(?=\n# |\Z)",
+        r"^#\s+Candidate Overview\s*\n+(.*?)(?=\n# |\Z)",
+    ]
+    for pat in patterns:
+        m = re.search(pat, text, flags=re.DOTALL | re.MULTILINE)
+        if m:
+            block = m.group(1).strip()
+            if block:
+                return block
+    m = re.search(r"^#\s+[^\n]+\n+(.*?)(?=\n# |\Z)", text, flags=re.DOTALL | re.MULTILINE)
+    if m:
+        return m.group(1).strip()
+    return ""
+
+
+def yaml_profile_summary_block(summary: str) -> str:
+    if not summary.strip():
+        return 'profile_summary: ""\n'
+    lines = summary.rstrip().splitlines()
+    indented = "\n".join("  " + line for line in lines)
+    return f"profile_summary: |\n{indented}\n"
+
+
 def front_matter(payload: dict[str, Any]) -> str:
+    title_json = json.dumps(payload["title"])
+    office_json = json.dumps(payload["office"])
     lines: list[str] = [
         "---",
         "layout: candidate-profile",
-        f'title: "{payload["title"]}"',
+        f"title: {title_json}",
         f'state: "{payload["state"]}"',
         f'city: "{payload["city"]}"',
         f'candidate_slug: "{payload["candidate_slug"]}"',
         f'source_slug: "{payload["source_slug"]}"',
-        f'office: "{payload["office"]}"',
+        f"office: {office_json}",
         f'permalink: "{payload["permalink"]}"',
         f'headshot: "{payload["headshot"]}"',
         f'thumbnail: "{payload["thumbnail"]}"',
+        yaml_profile_summary_block(payload.get("profile_summary") or "").rstrip("\n"),
         "---",
         "",
     ]
-    return "\n".join(lines)
+    return "\n".join(lines) + "\n"
 
 
 def ensure_dir(path: Path) -> None:
@@ -76,12 +142,14 @@ def migrate_candidate(candidate_dir: Path) -> dict[str, Any] | None:
     poll_data = json.loads(poll_result_path.read_text(encoding="utf-8"))
     source_markdown = source_md_path.read_text(encoding="utf-8")
 
-    candidate_name = poll_data.get("candidate_name", candidate_dir.name).strip()
     source_slug = poll_data.get("candidate_slug", candidate_dir.name).strip()
+    candidate_name_poll = poll_data.get("candidate_name", candidate_dir.name).strip()
+    display_name = display_name_from_source_slug(source_slug)
     city = slugify(poll_data.get("city_context", "killeen"))
 
-    candidate_slug = parse_candidate_slug(candidate_name, source_slug)
+    candidate_slug = parse_candidate_slug(candidate_name_poll, source_slug)
     office = extract_office(source_markdown)
+    profile_summary = extract_profile_summary(source_markdown)
 
     target_dir = TARGET_COLLECTION_ROOT / city
     ensure_dir(target_dir)
@@ -89,7 +157,7 @@ def migrate_candidate(candidate_dir: Path) -> dict[str, Any] | None:
     permalink = f"/candidates/{STATE}/{city}/{candidate_slug}/"
 
     candidate_payload = {
-        "title": candidate_name,
+        "title": display_name,
         "state": STATE,
         "city": city,
         "candidate_slug": candidate_slug,
@@ -98,12 +166,14 @@ def migrate_candidate(candidate_dir: Path) -> dict[str, Any] | None:
         "permalink": permalink,
         "headshot": f"/assets/imgs/candidates/{STATE}/{city}/{candidate_slug}/headshot.png",
         "thumbnail": f"/assets/imgs/candidates/{STATE}/{city}/{candidate_slug}/thumbnail.png",
+        "profile_summary": profile_summary,
     }
-    content = front_matter(candidate_payload) + source_markdown.rstrip() + "\n"
+    # Body intentionally empty: executive summary lives in front matter only.
+    content = front_matter(candidate_payload)
     target_page_path.write_text(content, encoding="utf-8")
 
     return {
-        "name": candidate_name,
+        "name": display_name,
         "state": STATE,
         "city": city,
         "candidate_slug": candidate_slug,

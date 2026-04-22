@@ -30,7 +30,7 @@ GEM
     feedjira (3.2.1)
       loofah (>= 2.3.1)
       sax-machine (>= 1.0)
-    ffi (1.17.3)
+    ffi (1.17.4)
     forwardable-extended (2.6.0)
     gemoji (3.0.1)
     github-pages (228)
