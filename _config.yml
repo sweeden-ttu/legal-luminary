@@ -56,21 +56,12 @@ navigation:
     url: /candidates/
   - title: Court Directory
     url: /court-directory/
-  - title: Resources
-    url: /resources/
-    children:
-      - title: Fort Cavazos (Fort Hood)
-        url: /fort-cavazos/
-      - title: Bell County Odyssey Portal
-        url: https://justice.bellcounty.texas.gov/PublicPortal/
-        alt: Search Court Hearings and Case Records
-        external: true
-      - title: Artificial Intelligence
-        url: /artificial-intelligence/
   - title: Defense Attorneys
     url: /defense/
   - title: Personal Injury
     url: /personal-injury/
+  - title: About
+    url: /artificial-intelligence/
 
 # Service Area Information
 service_area:
