@@ -1,0 +1,64 @@
+{
+  "candidate_slug": "christy_wilbanks",
+  "source_slug": "wilbanks_christy",
+  "city": "killeen",
+  "name": "Wilbanks Christy",
+  "articles": [
+    {
+      "url": "https://kdhnews.com/centerforpolitics/killeen-council-candidate-wilbanks-says-she-ll-push-for-manufacturing-jobs-in-the-city/article_bf3b42f0-7b75-47a7-afbf-1560721631ac.html",
+      "title": "Killeen council candidate Wilbanks says she’ll push for ...",
+      "domain": "kdhnews.com",
+      "excerpt": "As far as government transparency is concerned, Wilbanks said she would support the city giving updates on road projects monthly rather than quarterly.",
+      "confidence": "high",
+      "field": "stance_on_government_transparency"
+    },
+    {
+      "url": "https://kdhnews.com/centerforpolitics/15-candidates-battle-for-3-at-large-killeen-council-seats/article_32d74a0c-717c-4069-880f-260e9b5417e0.html",
+      "title": "15 candidates battle for 3 at-large Killeen council seats",
+      "domain": "kdhnews.com",
+      "excerpt": "She also suggested increasing transparency by asking for updates from the city’s engineering department more frequently",
+      "confidence": "high",
+      "field": "stance_on_government_transparency"
+    },
+    {
+      "url": "https://www.killeentexas.gov/ArchiveCenter/ViewFile/Item/1078",
+      "title": "CANDIDATE / OFFICEHOLDER CAMPAIGN FINANCE REPORT",
+      "domain": "killeentexas.gov",
+      "excerpt": "My name is Christy L. Wilbanks and my date of birth is 03/13/13 My address is 4305 Mildred Ave Killeen, TX 76549 Bell (street) (city) (state) (zip code) (country) Executed in Bell County. State of Texas on the day of April 2020 (year) (month) Chut Wi",
+      "confidence": "high",
+      "field": "political_platform_and_priorities"
+    },
+    {
+      "url": "https://christyforkilleen.org/",
+      "title": "Christy for Killeen",
+      "domain": "christyforkilleen.org",
+      "excerpt": "Christian, wife, mother, and grandmother. Killeen is my home! With my proven background in business, community service, and volunteerism, I bring strong leadership skills and a fresh perspective to our city.",
+      "confidence": "high",
+      "field": "political_platform_and_priorities"
+    },
+    {
+      "url": "https://kdhnews.com/centerforpolitics/killeen-council-candidates-lay-out-some-of-their-viewpoints-at-forum/article_8638223b-ea0f-4b39-8c09-2e6706163915.html",
+      "title": "Killeen council candidates lay out some of their viewpoints ...",
+      "domain": "kdhnews.com",
+      "excerpt": "She has often criticized tax abatements offered by the Killeen Public Facility Corporation. She has been arrested twice at council meetings, but the charges were dropped both times. Christy",
+      "confidence": "high",
+      "field": "social_media_and_campaign_presence"
+    },
+    {
+      "url": "https://killeentexas.gov/DocumentCenter/View/12027/First-Campaign-Finance-Report-04-02-2025-PDF",
+      "title": "CANDIDATE / OFFICEHOLDER CAMPAIGN FINANCE REPORT",
+      "domain": "killeentexas.gov",
+      "excerpt": "I swear, or affirm, under penalty of perjury, that the accompanying report is true and correct and includes all information required to be reported by me under Title 15, Election Code.",
+      "confidence": "high",
+      "field": "campaign_finance_information"
+    },
+    {
+      "url": "https://www.killeentexas.gov/706/2026-General-Election",
+      "title": "May 2, 2026 General Election | City of Killeen, TX",
+      "domain": "killeentexas.gov",
+      "excerpt": "**Killeen City Hall - Main Foyer** *(Main Early Voting Location)* , 101 North College Street, Killeen, TX 76541\n**Jackson Professional Learning Center - Conference Room C** *(Branch Early Voting Location)* , 902 Rev R A Abercrombie Drive, Killeen, TX",
+      "confidence": "high",
+      "field": "election_voting_information"
+    }
+  ]
+}

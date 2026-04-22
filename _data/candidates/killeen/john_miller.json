@@ -1,0 +1,88 @@
+{
+  "candidate_slug": "john_miller",
+  "source_slug": "miller_john",
+  "city": "killeen",
+  "name": "Miller John",
+  "articles": [
+    {
+      "url": "https://ballotpedia.org/John_Miller_(Killeen_City_Council_At-large,_Texas,_candidate_2026)",
+      "title": "John Miller (Killeen City Council At-large, Texas, candidate ...",
+      "domain": "ballotpedia.org",
+      "excerpt": "Any candidate running for elected office, at any level, can complete Ballotpedia's Candidate Survey. Completing the survey will update the candidate's Ballotpedia profile, letting voters know who they are and what they stand for.",
+      "confidence": "high",
+      "field": "online_presence_and_contact"
+    },
+    {
+      "url": "https://kdhnews.com/centerforpolitics/a-round-up-of-killeen-council-candidates-interviewed-by-kdh/article_da092a63-2d27-4639-ad7d-583b849f8074.html",
+      "title": "A round-up of Killeen council candidates interviewed by KDH",
+      "domain": "kdhnews.com",
+      "excerpt": "John “Crow” Miller, 60, is [banking](https://kdhnews.com/news/local/video-killeen-council-candidate-john-crow-miller/video_860e9fd5-0779-41bd-8e95-799d41c9c388.html) on the city of Killeen’s interest in expanding arts both as a way of increasing the ",
+      "confidence": "high",
+      "field": "public_statements_and_interviews"
+    },
+    {
+      "url": "https://www.facebook.com/reel/1696101601372715/",
+      "title": "Killeen council at-large candidate John \"Crow\" Miller sat ...",
+      "domain": "facebook.com",
+      "excerpt": "Killeen council at-large candidate John \"Crow\" Miller sat down with KDH News to discuss using untapped funds to help promote art within the city of",
+      "confidence": "high",
+      "field": "public_statements_and_interviews"
+    },
+    {
+      "url": "https://kdhnews.com/centerforpolitics/15-candidates-battle-for-3-at-large-killeen-council-seats/article_32d74a0c-717c-4069-880f-260e9b5417e0.html",
+      "title": "15 candidates battle for 3 at-large Killeen council seats",
+      "domain": "kdhnews.com",
+      "excerpt": "The election for the three Killeen City Council at-large seats is by far the most crowded field in the upcoming May 2 election on a local level. There are 15 candidates vying for an at-large seat",
+      "confidence": "high",
+      "field": "election_context_and_field"
+    },
+    {
+      "url": "https://www.tdtnews.com/news/region/article_ac3d769d-e5d5-5e5f-ad99-3a1b300ee7d1.html",
+      "title": "Killeen council candidate ‘Crow’ Miller wants to help the ...",
+      "domain": "tdtnews.com",
+      "excerpt": "John “Crow” Miller decided to run for Killeen council after being “disappointed” that a good portion of the City Council as well as mayor decided to drop out.",
+      "confidence": "high",
+      "field": "election_context_and_field"
+    },
+    {
+      "url": "https://www.facebook.com/25NewsKXXV/posts/three-killeen-city-council-seats-are-vacant-following-a-wave-of-resignations-and/1391576736337010",
+      "title": "Three Killeen City Council seats are vacant following a ...",
+      "domain": "facebook.com",
+      "excerpt": "Three Killeen City Council seats are vacant following a ...\nThree Killeen City Council seats are vacant following a wave of resignations, and a special election is set for May 2 to fill them. Read more at the link",
+      "confidence": "high",
+      "field": "election_context_and_field"
+    },
+    {
+      "url": "https://www.killeentexas.gov/153/City-Council",
+      "title": "City Council | City of Killeen, TX",
+      "domain": "killeentexas.gov",
+      "excerpt": "The city elects its mayor and three council members at large, meaning that every registered voter within the city limits may vote for all four positions. The other four council members represent specific districts of the city and are elected by voter",
+      "confidence": "high",
+      "field": "election_context_and_field"
+    },
+    {
+      "url": "https://www.killeentexas.gov/DocumentCenter/View/13310/John-Crow-Miller---At-Large-02-12-2026_Redacted-PDF",
+      "title": "APPLICATION FOR A PLACE ON THE BALLOT FOR A GENERAL ELECTION ...",
+      "domain": "killeentexas.gov",
+      "excerpt": "When a candidate signs the application, it is an acknowledgment that the candidate is aware of the nepotism law. The nepotism prohibitions of chapter 573, Government Code, are summarized below:",
+      "confidence": "high",
+      "field": "election_context_and_field"
+    },
+    {
+      "url": "https://www.ethics.state.tx.us/search/cf/",
+      "title": "Search Campaign Finance",
+      "domain": "ethics.state.tx.us",
+      "excerpt": "All reports filed on paper after July 2010 can be viewed in PDF format. However, only the total amounts are viewable for paper-filed reports filed previous to 2010.",
+      "confidence": "high",
+      "field": "election_context_and_field"
+    },
+    {
+      "url": "https://killeentexas.gov/ArchiveCenter/",
+      "title": "Archive Center • City of Killeen, TX • CivicEngage",
+      "domain": "killeentexas.gov",
+      "excerpt": "Choose the drop down menus to view archived documents. Select the All Archive Items drop down or use the search feature to access older documents. Adobe Reader may be required to view some documents. www.adobe.com.",
+      "confidence": "high",
+      "field": "election_context_and_field"
+    }
+  ]
+}

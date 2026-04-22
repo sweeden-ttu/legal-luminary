@@ -1,0 +1,88 @@
+{
+  "candidate_slug": "debbie_nashking",
+  "source_slug": "nashking_debbie",
+  "city": "killeen",
+  "name": "Nashking Debbie",
+  "articles": [
+    {
+      "url": "https://www.killeentexas.gov/directory.aspx?EID=12",
+      "title": "Staff Directory • Debbie Nash-King",
+      "domain": "killeentexas.gov",
+      "excerpt": "Ms. Nash-King was married to the late (CSM) Retired Elijah King, Jr., and she has one daughter, Elizabeth Nash, who lives in Texas.",
+      "confidence": "high",
+      "field": "personal_life"
+    },
+    {
+      "url": "https://www.killeentexas.gov/DocumentCenter/View/13547/Debbie-Nash-King---Form-COH-04-02-2026_Redacted",
+      "title": "CANDIDATE / OFFICEHOLDER CAMPAIGN FINANCE REPORT",
+      "domain": "killeentexas.gov",
+      "excerpt": "Guide explains how to complete this form. THIS BOX IS FOR NOTICE OF POLITICAL CONTRIBUTIONS ACCEPTED OR POLITICAL EXPENDITURES MADE BY POLITICAL COMMITTEES TO SUPPORT THE CANDIDATE / OFFICEHOLDER. THESE EXPENDITURES MAY HAVE BEEN MADE WITHOUT THE CAN",
+      "confidence": "high",
+      "field": "campaign_finance_overview"
+    },
+    {
+      "url": "https://www.ethics.texas.gov/data-reports/",
+      "title": "Search Report Data - Texas Ethics Commission",
+      "domain": "ethics.texas.gov",
+      "excerpt": "Search from: Campaign Finance Reports, Lobby Registration/Activity, 1295 Filings, Delinquent Filers and Unpaid Penalty Data",
+      "confidence": "high",
+      "field": "campaign_finance_overview"
+    },
+    {
+      "url": "https://kdhnews.com/news/local/mayor-on-survey-this-is-some-harsh-criticism-she-said-before-parading-dept-heads/article_2d0ab906-ab08-4c40-bbac-35c7275da31c.html",
+      "title": "Mayor on survey: ‘This is some harsh criticism,’ she said ...",
+      "domain": "kdhnews.com",
+      "excerpt": "There was a lengthy discussion among the Killeen City Council and other city leaders following the survey presentation in November. “This is some harsh criticism,” Killeen Mayor Debbie",
+      "confidence": "high",
+      "field": "controversies_and_criticisms"
+    },
+    {
+      "url": "https://kdhnews.com/centerforpolitics/nash-king-announces-run-for-killeen-council-at-large-seat-resigns-as-mayor/article_ef6251c3-2f0d-4a8e-881f-02420bdf1fa7.html",
+      "title": "Nash-King announces run for Killeen council at-large seat ...",
+      "domain": "kdhnews.com",
+      "excerpt": "Mayor Debbie Nash-King is sworn in for her third term after her re-election is certified in a Tuesday special meeting. Killeen Mayor Debbie Nash-King announced that she has filed to",
+      "confidence": "high",
+      "field": "candidate_election_status"
+    },
+    {
+      "url": "https://ballotpedia.org/Debbie_Nash-King_(Killeen_City_Council_At-large,_Texas,_candidate_2026)",
+      "title": "Debbie Nash-King (Killeen City Council At-large, Texas ...",
+      "domain": "ballotpedia.org",
+      "excerpt": "Debbie Nash-King is running for election to the Killeen City Council At-large in Texas. Nash-King is on the ballot in the general election on May 2, 2026. [source]",
+      "confidence": "high",
+      "field": "candidate_election_status"
+    },
+    {
+      "url": "https://debbieforkilleen.com/",
+      "title": "Home | Debbie for Mayor of Killeen",
+      "domain": "debbieforkilleen.com",
+      "excerpt": "Debbie Nash-King is running for Killeen City Council At-Large. Find out how she is working towards a brighter future for the city of Killeen.",
+      "confidence": "high",
+      "field": "candidate_election_status"
+    },
+    {
+      "url": "https://www.killeentexas.gov/DocumentCenter/View/13304/Debbie-Nash-King---At-Large-02-13-2026_Redacted-PDF",
+      "title": "APPLICATION FOR A PLACE ON THE BALLOT FOR A GENERAL ELECTION ...",
+      "domain": "killeentexas.gov",
+      "excerpt": "\"I, (name of candidate) Debbie A. Nash-King of Bell County, Texas, Being a candidate for the office of At-Large Councilmember swear that I will support and defend the Constitution and laws of the United States and of the State of Texas.",
+      "confidence": "high",
+      "field": "candidate_election_status"
+    },
+    {
+      "url": "https://www.kcentv.com/article/news/local/killeen-new-mayor-nash-king-steps-down/500-7e1ab301-02e8-4b3e-80e7-ea1d5a7f6025",
+      "title": "City of Killeen swears in new mayor after Nash-King steps down",
+      "domain": "kcentv.com",
+      "excerpt": "KILLEEN, Texas — Riakos Adams was sworn in as mayor of Killeen this weekend, stepping into the role after former Mayor Debbie Nash-King resigned Feb. 17. Adams, who had been serving",
+      "confidence": "high",
+      "field": "candidate_election_status"
+    },
+    {
+      "url": "https://debbieforkilleen.com/about/meet-debbie/",
+      "title": "Meet Debbie | Debbie for Mayor of Killeen",
+      "domain": "debbieforkilleen.com",
+      "excerpt": "Following her service to her country, Ms. Nash-King attended Leadership Killeen and became heavily involved in another kind of service, volunteering wholeheartedly on behalf of a variety of import causes.",
+      "confidence": "high",
+      "field": "campaign_platform_overview"
+    }
+  ]
+}

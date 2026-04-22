@@ -1,0 +1,803 @@
+{
+  "state": "texas",
+  "cities": [
+    {
+      "city": "bartlett",
+      "candidates": [
+        {
+          "name": "Chad Mees",
+          "state": "texas",
+          "city": "bartlett",
+          "candidate_slug": "chad_mees",
+          "source_slug": "mees_chad",
+          "office": "Municipal Candidate",
+          "profile_url": "/candidates/texas/bartlett/chad_mees/",
+          "headshot": "/assets/imgs/candidates/texas/bartlett/chad_mees/headshot.png",
+          "thumbnail": "/assets/imgs/candidates/texas/bartlett/chad_mees/thumbnail.png"
+        },
+        {
+          "name": "Jackie Ivicic",
+          "state": "texas",
+          "city": "bartlett",
+          "candidate_slug": "jackie_ivicic",
+          "source_slug": "ivicic_jackie",
+          "office": "Bartlett City Council At-large",
+          "profile_url": "/candidates/texas/bartlett/jackie_ivicic/",
+          "headshot": "/assets/imgs/candidates/texas/bartlett/jackie_ivicic/headshot.png",
+          "thumbnail": "/assets/imgs/candidates/texas/bartlett/jackie_ivicic/thumbnail.png"
+        },
+        {
+          "name": "Vickie Cooper",
+          "state": "texas",
+          "city": "bartlett",
+          "candidate_slug": "vickie_cooper",
+          "source_slug": "cooper_vickie",
+          "office": "Municipal Candidate",
+          "profile_url": "/candidates/texas/bartlett/vickie_cooper/",
+          "headshot": "/assets/imgs/candidates/texas/bartlett/vickie_cooper/headshot.png",
+          "thumbnail": "/assets/imgs/candidates/texas/bartlett/vickie_cooper/thumbnail.png"
+        }
+      ]
+    },
+    {
+      "city": "belton",
+      "candidates": [
+        {
+          "name": "Dave Covington",
+          "state": "texas",
+          "city": "belton",
+          "candidate_slug": "dave_covington",
+          "source_slug": "covington_dave",
+          "office": "Belton City Council, Place 2",
+          "profile_url": "/candidates/texas/belton/dave_covington/",
+          "headshot": "/assets/imgs/candidates/texas/belton/dave_covington/headshot.png",
+          "thumbnail": "/assets/imgs/candidates/texas/belton/dave_covington/thumbnail.png"
+        },
+        {
+          "name": "John R Holmes Sr",
+          "state": "texas",
+          "city": "belton",
+          "candidate_slug": "sr_holmes",
+          "source_slug": "holmes_john_r_sr",
+          "office": "Municipal Candidate",
+          "profile_url": "/candidates/texas/belton/sr_holmes/",
+          "headshot": "/assets/imgs/candidates/texas/belton/sr_holmes/headshot.png",
+          "thumbnail": "/assets/imgs/candidates/texas/belton/sr_holmes/thumbnail.png"
+        }
+      ]
+    },
+    {
+      "city": "killeen",
+      "candidates": [
+        {
+          "name": "Beverly Ann Williams",
+          "state": "texas",
+          "city": "killeen",
+          "candidate_slug": "ann_williams",
+          "source_slug": "williams_beverly_ann",
+          "office": "Killeen City Council, At-Large",
+          "profile_url": "/candidates/texas/killeen/ann_williams/",
+          "headshot": "/assets/imgs/candidates/texas/killeen/ann_williams/headshot.png",
+          "thumbnail": "/assets/imgs/candidates/texas/killeen/ann_williams/thumbnail.png"
+        },
+        {
+          "name": "C Cochran",
+          "state": "texas",
+          "city": "killeen",
+          "candidate_slug": "c_cochran",
+          "source_slug": "cochran_c",
+          "office": "Killeen City Council, District 3",
+          "profile_url": "/candidates/texas/killeen/c_cochran/",
+          "headshot": "/assets/imgs/candidates/texas/killeen/c_cochran/headshot.png",
+          "thumbnail": "/assets/imgs/candidates/texas/killeen/c_cochran/thumbnail.png"
+        },
+        {
+          "name": "Charles Kimble",
+          "state": "texas",
+          "city": "killeen",
+          "candidate_slug": "charles_kimble",
+          "source_slug": "kimble_charles",
+          "office": "Killeen City Councilmember",
+          "profile_url": "/candidates/texas/killeen/charles_kimble/",
+          "headshot": "/assets/imgs/candidates/texas/killeen/charles_kimble/headshot.png",
+          "thumbnail": "/assets/imgs/candidates/texas/killeen/charles_kimble/thumbnail.png"
+        },
+        {
+          "name": "Chet Southworth",
+          "state": "texas",
+          "city": "killeen",
+          "candidate_slug": "chet_southworth",
+          "source_slug": "southworth_chet",
+          "office": "Killeen City Council, At-large",
+          "profile_url": "/candidates/texas/killeen/chet_southworth/",
+          "headshot": "/assets/imgs/candidates/texas/killeen/chet_southworth/headshot.png",
+          "thumbnail": "/assets/imgs/candidates/texas/killeen/chet_southworth/thumbnail.png"
+        },
+        {
+          "name": "Christy Wilbanks",
+          "state": "texas",
+          "city": "killeen",
+          "candidate_slug": "christy_wilbanks",
+          "source_slug": "wilbanks_christy",
+          "office": "Killeen City Council, At-Large",
+          "profile_url": "/candidates/texas/killeen/christy_wilbanks/",
+          "headshot": "/assets/imgs/candidates/texas/killeen/christy_wilbanks/headshot.png",
+          "thumbnail": "/assets/imgs/candidates/texas/killeen/christy_wilbanks/thumbnail.png"
+        },
+        {
+          "name": "David Bass",
+          "state": "texas",
+          "city": "killeen",
+          "candidate_slug": "david_bass",
+          "source_slug": "bass_david",
+          "office": "Municipal Candidate",
+          "profile_url": "/candidates/texas/killeen/david_bass/",
+          "headshot": "/assets/imgs/candidates/texas/killeen/david_bass/headshot.png",
+          "thumbnail": "/assets/imgs/candidates/texas/killeen/david_bass/thumbnail.png"
+        },
+        {
+          "name": "Debbie Nashking",
+          "state": "texas",
+          "city": "killeen",
+          "candidate_slug": "debbie_nashking",
+          "source_slug": "nashking_debbie",
+          "office": "Municipal Candidate",
+          "profile_url": "/candidates/texas/killeen/debbie_nashking/",
+          "headshot": "/assets/imgs/candidates/texas/killeen/debbie_nashking/headshot.png",
+          "thumbnail": "/assets/imgs/candidates/texas/killeen/debbie_nashking/thumbnail.png"
+        },
+        {
+          "name": "Delsina West",
+          "state": "texas",
+          "city": "killeen",
+          "candidate_slug": "delsina_west",
+          "source_slug": "west_delsina",
+          "office": "Municipal Candidate",
+          "profile_url": "/candidates/texas/killeen/delsina_west/",
+          "headshot": "/assets/imgs/candidates/texas/killeen/delsina_west/headshot.png",
+          "thumbnail": "/assets/imgs/candidates/texas/killeen/delsina_west/thumbnail.png"
+        },
+        {
+          "name": "Dominic Quoc Vo",
+          "state": "texas",
+          "city": "killeen",
+          "candidate_slug": "quoc_vo",
+          "source_slug": "vo_dominic_quoc",
+          "office": "Killeen City Council At-large",
+          "profile_url": "/candidates/texas/killeen/quoc_vo/",
+          "headshot": "/assets/imgs/candidates/texas/killeen/quoc_vo/headshot.png",
+          "thumbnail": "/assets/imgs/candidates/texas/killeen/quoc_vo/thumbnail.png"
+        },
+        {
+          "name": "John Miller",
+          "state": "texas",
+          "city": "killeen",
+          "candidate_slug": "john_miller",
+          "source_slug": "miller_john",
+          "office": "Killeen City Council",
+          "profile_url": "/candidates/texas/killeen/john_miller/",
+          "headshot": "/assets/imgs/candidates/texas/killeen/john_miller/headshot.png",
+          "thumbnail": "/assets/imgs/candidates/texas/killeen/john_miller/thumbnail.png"
+        },
+        {
+          "name": "Jose Segarra",
+          "state": "texas",
+          "city": "killeen",
+          "candidate_slug": "jose_segarra",
+          "source_slug": "segarra_jose",
+          "office": "Mayor of Killeen",
+          "profile_url": "/candidates/texas/killeen/jose_segarra/",
+          "headshot": "/assets/imgs/candidates/texas/killeen/jose_segarra/headshot.png",
+          "thumbnail": "/assets/imgs/candidates/texas/killeen/jose_segarra/thumbnail.png"
+        },
+        {
+          "name": "Joseph Solomon",
+          "state": "texas",
+          "city": "killeen",
+          "candidate_slug": "joseph_solomon",
+          "source_slug": "solomon_joseph",
+          "office": "Mayor of Killeen, Texas",
+          "profile_url": "/candidates/texas/killeen/joseph_solomon/",
+          "headshot": "/assets/imgs/candidates/texas/killeen/joseph_solomon/headshot.png",
+          "thumbnail": "/assets/imgs/candidates/texas/killeen/joseph_solomon/thumbnail.png"
+        },
+        {
+          "name": "Kelese Richardson",
+          "state": "texas",
+          "city": "killeen",
+          "candidate_slug": "kelese_richardson",
+          "source_slug": "richardson_kelese",
+          "office": "Killeen City Council, At-large",
+          "profile_url": "/candidates/texas/killeen/kelese_richardson/",
+          "headshot": "/assets/imgs/candidates/texas/killeen/kelese_richardson/headshot.png",
+          "thumbnail": "/assets/imgs/candidates/texas/killeen/kelese_richardson/thumbnail.png"
+        },
+        {
+          "name": "Macaire Morrissey",
+          "state": "texas",
+          "city": "killeen",
+          "candidate_slug": "macaire_morrissey",
+          "source_slug": "morrissey_macaire",
+          "office": "Killeen City Council, At-Large",
+          "profile_url": "/candidates/texas/killeen/macaire_morrissey/",
+          "headshot": "/assets/imgs/candidates/texas/killeen/macaire_morrissey/headshot.png",
+          "thumbnail": "/assets/imgs/candidates/texas/killeen/macaire_morrissey/thumbnail.png"
+        },
+        {
+          "name": "Mellisa Brown",
+          "state": "texas",
+          "city": "killeen",
+          "candidate_slug": "mellisa_brown",
+          "source_slug": "brown_mellisa",
+          "office": "Killeen City Council, At-large",
+          "profile_url": "/candidates/texas/killeen/mellisa_brown/",
+          "headshot": "/assets/imgs/candidates/texas/killeen/mellisa_brown/headshot.png",
+          "thumbnail": "/assets/imgs/candidates/texas/killeen/mellisa_brown/thumbnail.png"
+        },
+        {
+          "name": "Myrna Malicbanzon",
+          "state": "texas",
+          "city": "killeen",
+          "candidate_slug": "myrna_malicbanzon",
+          "source_slug": "malicbanzon_myrna",
+          "office": "Killeen City Council, At-large",
+          "profile_url": "/candidates/texas/killeen/myrna_malicbanzon/",
+          "headshot": "/assets/imgs/candidates/texas/killeen/myrna_malicbanzon/headshot.png",
+          "thumbnail": "/assets/imgs/candidates/texas/killeen/myrna_malicbanzon/thumbnail.png"
+        },
+        {
+          "name": "Nicholas Guajardo",
+          "state": "texas",
+          "city": "killeen",
+          "candidate_slug": "nicholas_guajardo",
+          "source_slug": "guajardo_nicholas",
+          "office": "Killeen City Council",
+          "profile_url": "/candidates/texas/killeen/nicholas_guajardo/",
+          "headshot": "/assets/imgs/candidates/texas/killeen/nicholas_guajardo/headshot.png",
+          "thumbnail": "/assets/imgs/candidates/texas/killeen/nicholas_guajardo/thumbnail.png"
+        },
+        {
+          "name": "Olayinka Adelusi",
+          "state": "texas",
+          "city": "killeen",
+          "candidate_slug": "olayinka_adelusi",
+          "source_slug": "adelusi_olayinka",
+          "office": "Killeen City Council, At-large",
+          "profile_url": "/candidates/texas/killeen/olayinka_adelusi/",
+          "headshot": "/assets/imgs/candidates/texas/killeen/olayinka_adelusi/headshot.png",
+          "thumbnail": "/assets/imgs/candidates/texas/killeen/olayinka_adelusi/thumbnail.png"
+        },
+        {
+          "name": "Ramon Alvarez",
+          "state": "texas",
+          "city": "killeen",
+          "candidate_slug": "ramon_alvarez",
+          "source_slug": "alvarez_ramon",
+          "office": "Killeen City Council at-large",
+          "profile_url": "/candidates/texas/killeen/ramon_alvarez/",
+          "headshot": "/assets/imgs/candidates/texas/killeen/ramon_alvarez/headshot.png",
+          "thumbnail": "/assets/imgs/candidates/texas/killeen/ramon_alvarez/thumbnail.png"
+        },
+        {
+          "name": "Riakos Adams",
+          "state": "texas",
+          "city": "killeen",
+          "candidate_slug": "riakos_adams",
+          "source_slug": "adams_riakos",
+          "office": "Mayor of Killeen, Texas",
+          "profile_url": "/candidates/texas/killeen/riakos_adams/",
+          "headshot": "/assets/imgs/candidates/texas/killeen/riakos_adams/headshot.png",
+          "thumbnail": "/assets/imgs/candidates/texas/killeen/riakos_adams/thumbnail.png"
+        },
+        {
+          "name": "Shavonn Hull",
+          "state": "texas",
+          "city": "killeen",
+          "candidate_slug": "shavonn_hull",
+          "source_slug": "hull_shavonn",
+          "office": "Killeen City Council, At-large",
+          "profile_url": "/candidates/texas/killeen/shavonn_hull/",
+          "headshot": "/assets/imgs/candidates/texas/killeen/shavonn_hull/headshot.png",
+          "thumbnail": "/assets/imgs/candidates/texas/killeen/shavonn_hull/thumbnail.png"
+        },
+        {
+          "name": "Sue Croft",
+          "state": "texas",
+          "city": "killeen",
+          "candidate_slug": "sue_croft",
+          "source_slug": "croft_sue",
+          "office": "Killeen City Council, At-Large",
+          "profile_url": "/candidates/texas/killeen/sue_croft/",
+          "headshot": "/assets/imgs/candidates/texas/killeen/sue_croft/headshot.png",
+          "thumbnail": "/assets/imgs/candidates/texas/killeen/sue_croft/thumbnail.png"
+        },
+        {
+          "name": "Terry Mustapher",
+          "state": "texas",
+          "city": "killeen",
+          "candidate_slug": "terry_mustapher",
+          "source_slug": "mustapher_terry",
+          "office": "Killeen City Councilmember",
+          "profile_url": "/candidates/texas/killeen/terry_mustapher/",
+          "headshot": "/assets/imgs/candidates/texas/killeen/terry_mustapher/headshot.png",
+          "thumbnail": "/assets/imgs/candidates/texas/killeen/terry_mustapher/thumbnail.png"
+        }
+      ]
+    },
+    {
+      "city": "moody",
+      "candidates": [
+        {
+          "name": "Charleen Dowell",
+          "state": "texas",
+          "city": "moody",
+          "candidate_slug": "charleen_dowell",
+          "source_slug": "dowell_charleen",
+          "office": "Mayor of Moody, Texas",
+          "profile_url": "/candidates/texas/moody/charleen_dowell/",
+          "headshot": "/assets/imgs/candidates/texas/moody/charleen_dowell/headshot.png",
+          "thumbnail": "/assets/imgs/candidates/texas/moody/charleen_dowell/thumbnail.png"
+        }
+      ]
+    },
+    {
+      "city": "nolanville",
+      "candidates": [
+        {
+          "name": "James Bilberry",
+          "state": "texas",
+          "city": "nolanville",
+          "candidate_slug": "james_bilberry",
+          "source_slug": "bilberry_james",
+          "office": "Nolanville City Council",
+          "profile_url": "/candidates/texas/nolanville/james_bilberry/",
+          "headshot": "/assets/imgs/candidates/texas/nolanville/james_bilberry/headshot.png",
+          "thumbnail": "/assets/imgs/candidates/texas/nolanville/james_bilberry/thumbnail.png"
+        },
+        {
+          "name": "Juanita Sims",
+          "state": "texas",
+          "city": "nolanville",
+          "candidate_slug": "juanita_sims",
+          "source_slug": "sims_juanita",
+          "office": "Nolanville City Council, Seat 2",
+          "profile_url": "/candidates/texas/nolanville/juanita_sims/",
+          "headshot": "/assets/imgs/candidates/texas/nolanville/juanita_sims/headshot.png",
+          "thumbnail": "/assets/imgs/candidates/texas/nolanville/juanita_sims/thumbnail.png"
+        },
+        {
+          "name": "Lawrence Reis",
+          "state": "texas",
+          "city": "nolanville",
+          "candidate_slug": "lawrence_reis",
+          "source_slug": "reis_lawrence",
+          "office": "Nolanville City Council",
+          "profile_url": "/candidates/texas/nolanville/lawrence_reis/",
+          "headshot": "/assets/imgs/candidates/texas/nolanville/lawrence_reis/headshot.png",
+          "thumbnail": "/assets/imgs/candidates/texas/nolanville/lawrence_reis/thumbnail.png"
+        },
+        {
+          "name": "Michael Whitson",
+          "state": "texas",
+          "city": "nolanville",
+          "candidate_slug": "michael_whitson",
+          "source_slug": "whitson_michael",
+          "office": "Municipal Candidate",
+          "profile_url": "/candidates/texas/nolanville/michael_whitson/",
+          "headshot": "/assets/imgs/candidates/texas/nolanville/michael_whitson/headshot.png",
+          "thumbnail": "/assets/imgs/candidates/texas/nolanville/michael_whitson/thumbnail.png"
+        },
+        {
+          "name": "Mikayla Mondragon",
+          "state": "texas",
+          "city": "nolanville",
+          "candidate_slug": "mikayla_mondragon",
+          "source_slug": "mondragon_mikayla",
+          "office": "Nolanville City Council Seat 4",
+          "profile_url": "/candidates/texas/nolanville/mikayla_mondragon/",
+          "headshot": "/assets/imgs/candidates/texas/nolanville/mikayla_mondragon/headshot.png",
+          "thumbnail": "/assets/imgs/candidates/texas/nolanville/mikayla_mondragon/thumbnail.png"
+        },
+        {
+          "name": "Zonte Pendergrass",
+          "state": "texas",
+          "city": "nolanville",
+          "candidate_slug": "zonte_pendergrass",
+          "source_slug": "pendergrass_zonte",
+          "office": "Nolanville City Council",
+          "profile_url": "/candidates/texas/nolanville/zonte_pendergrass/",
+          "headshot": "/assets/imgs/candidates/texas/nolanville/zonte_pendergrass/headshot.png",
+          "thumbnail": "/assets/imgs/candidates/texas/nolanville/zonte_pendergrass/thumbnail.png"
+        }
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "name": "Chad Mees",
+      "state": "texas",
+      "city": "bartlett",
+      "candidate_slug": "chad_mees",
+      "source_slug": "mees_chad",
+      "office": "Municipal Candidate",
+      "profile_url": "/candidates/texas/bartlett/chad_mees/",
+      "headshot": "/assets/imgs/candidates/texas/bartlett/chad_mees/headshot.png",
+      "thumbnail": "/assets/imgs/candidates/texas/bartlett/chad_mees/thumbnail.png"
+    },
+    {
+      "name": "Jackie Ivicic",
+      "state": "texas",
+      "city": "bartlett",
+      "candidate_slug": "jackie_ivicic",
+      "source_slug": "ivicic_jackie",
+      "office": "Bartlett City Council At-large",
+      "profile_url": "/candidates/texas/bartlett/jackie_ivicic/",
+      "headshot": "/assets/imgs/candidates/texas/bartlett/jackie_ivicic/headshot.png",
+      "thumbnail": "/assets/imgs/candidates/texas/bartlett/jackie_ivicic/thumbnail.png"
+    },
+    {
+      "name": "Vickie Cooper",
+      "state": "texas",
+      "city": "bartlett",
+      "candidate_slug": "vickie_cooper",
+      "source_slug": "cooper_vickie",
+      "office": "Municipal Candidate",
+      "profile_url": "/candidates/texas/bartlett/vickie_cooper/",
+      "headshot": "/assets/imgs/candidates/texas/bartlett/vickie_cooper/headshot.png",
+      "thumbnail": "/assets/imgs/candidates/texas/bartlett/vickie_cooper/thumbnail.png"
+    },
+    {
+      "name": "Dave Covington",
+      "state": "texas",
+      "city": "belton",
+      "candidate_slug": "dave_covington",
+      "source_slug": "covington_dave",
+      "office": "Belton City Council, Place 2",
+      "profile_url": "/candidates/texas/belton/dave_covington/",
+      "headshot": "/assets/imgs/candidates/texas/belton/dave_covington/headshot.png",
+      "thumbnail": "/assets/imgs/candidates/texas/belton/dave_covington/thumbnail.png"
+    },
+    {
+      "name": "John R Holmes Sr",
+      "state": "texas",
+      "city": "belton",
+      "candidate_slug": "sr_holmes",
+      "source_slug": "holmes_john_r_sr",
+      "office": "Municipal Candidate",
+      "profile_url": "/candidates/texas/belton/sr_holmes/",
+      "headshot": "/assets/imgs/candidates/texas/belton/sr_holmes/headshot.png",
+      "thumbnail": "/assets/imgs/candidates/texas/belton/sr_holmes/thumbnail.png"
+    },
+    {
+      "name": "Beverly Ann Williams",
+      "state": "texas",
+      "city": "killeen",
+      "candidate_slug": "ann_williams",
+      "source_slug": "williams_beverly_ann",
+      "office": "Killeen City Council, At-Large",
+      "profile_url": "/candidates/texas/killeen/ann_williams/",
+      "headshot": "/assets/imgs/candidates/texas/killeen/ann_williams/headshot.png",
+      "thumbnail": "/assets/imgs/candidates/texas/killeen/ann_williams/thumbnail.png"
+    },
+    {
+      "name": "C Cochran",
+      "state": "texas",
+      "city": "killeen",
+      "candidate_slug": "c_cochran",
+      "source_slug": "cochran_c",
+      "office": "Killeen City Council, District 3",
+      "profile_url": "/candidates/texas/killeen/c_cochran/",
+      "headshot": "/assets/imgs/candidates/texas/killeen/c_cochran/headshot.png",
+      "thumbnail": "/assets/imgs/candidates/texas/killeen/c_cochran/thumbnail.png"
+    },
+    {
+      "name": "Charles Kimble",
+      "state": "texas",
+      "city": "killeen",
+      "candidate_slug": "charles_kimble",
+      "source_slug": "kimble_charles",
+      "office": "Killeen City Councilmember",
+      "profile_url": "/candidates/texas/killeen/charles_kimble/",
+      "headshot": "/assets/imgs/candidates/texas/killeen/charles_kimble/headshot.png",
+      "thumbnail": "/assets/imgs/candidates/texas/killeen/charles_kimble/thumbnail.png"
+    },
+    {
+      "name": "Chet Southworth",
+      "state": "texas",
+      "city": "killeen",
+      "candidate_slug": "chet_southworth",
+      "source_slug": "southworth_chet",
+      "office": "Killeen City Council, At-large",
+      "profile_url": "/candidates/texas/killeen/chet_southworth/",
+      "headshot": "/assets/imgs/candidates/texas/killeen/chet_southworth/headshot.png",
+      "thumbnail": "/assets/imgs/candidates/texas/killeen/chet_southworth/thumbnail.png"
+    },
+    {
+      "name": "Christy Wilbanks",
+      "state": "texas",
+      "city": "killeen",
+      "candidate_slug": "christy_wilbanks",
+      "source_slug": "wilbanks_christy",
+      "office": "Killeen City Council, At-Large",
+      "profile_url": "/candidates/texas/killeen/christy_wilbanks/",
+      "headshot": "/assets/imgs/candidates/texas/killeen/christy_wilbanks/headshot.png",
+      "thumbnail": "/assets/imgs/candidates/texas/killeen/christy_wilbanks/thumbnail.png"
+    },
+    {
+      "name": "David Bass",
+      "state": "texas",
+      "city": "killeen",
+      "candidate_slug": "david_bass",
+      "source_slug": "bass_david",
+      "office": "Municipal Candidate",
+      "profile_url": "/candidates/texas/killeen/david_bass/",
+      "headshot": "/assets/imgs/candidates/texas/killeen/david_bass/headshot.png",
+      "thumbnail": "/assets/imgs/candidates/texas/killeen/david_bass/thumbnail.png"
+    },
+    {
+      "name": "Debbie Nashking",
+      "state": "texas",
+      "city": "killeen",
+      "candidate_slug": "debbie_nashking",
+      "source_slug": "nashking_debbie",
+      "office": "Municipal Candidate",
+      "profile_url": "/candidates/texas/killeen/debbie_nashking/",
+      "headshot": "/assets/imgs/candidates/texas/killeen/debbie_nashking/headshot.png",
+      "thumbnail": "/assets/imgs/candidates/texas/killeen/debbie_nashking/thumbnail.png"
+    },
+    {
+      "name": "Delsina West",
+      "state": "texas",
+      "city": "killeen",
+      "candidate_slug": "delsina_west",
+      "source_slug": "west_delsina",
+      "office": "Municipal Candidate",
+      "profile_url": "/candidates/texas/killeen/delsina_west/",
+      "headshot": "/assets/imgs/candidates/texas/killeen/delsina_west/headshot.png",
+      "thumbnail": "/assets/imgs/candidates/texas/killeen/delsina_west/thumbnail.png"
+    },
+    {
+      "name": "Dominic Quoc Vo",
+      "state": "texas",
+      "city": "killeen",
+      "candidate_slug": "quoc_vo",
+      "source_slug": "vo_dominic_quoc",
+      "office": "Killeen City Council At-large",
+      "profile_url": "/candidates/texas/killeen/quoc_vo/",
+      "headshot": "/assets/imgs/candidates/texas/killeen/quoc_vo/headshot.png",
+      "thumbnail": "/assets/imgs/candidates/texas/killeen/quoc_vo/thumbnail.png"
+    },
+    {
+      "name": "John Miller",
+      "state": "texas",
+      "city": "killeen",
+      "candidate_slug": "john_miller",
+      "source_slug": "miller_john",
+      "office": "Killeen City Council",
+      "profile_url": "/candidates/texas/killeen/john_miller/",
+      "headshot": "/assets/imgs/candidates/texas/killeen/john_miller/headshot.png",
+      "thumbnail": "/assets/imgs/candidates/texas/killeen/john_miller/thumbnail.png"
+    },
+    {
+      "name": "Jose Segarra",
+      "state": "texas",
+      "city": "killeen",
+      "candidate_slug": "jose_segarra",
+      "source_slug": "segarra_jose",
+      "office": "Mayor of Killeen",
+      "profile_url": "/candidates/texas/killeen/jose_segarra/",
+      "headshot": "/assets/imgs/candidates/texas/killeen/jose_segarra/headshot.png",
+      "thumbnail": "/assets/imgs/candidates/texas/killeen/jose_segarra/thumbnail.png"
+    },
+    {
+      "name": "Joseph Solomon",
+      "state": "texas",
+      "city": "killeen",
+      "candidate_slug": "joseph_solomon",
+      "source_slug": "solomon_joseph",
+      "office": "Mayor of Killeen, Texas",
+      "profile_url": "/candidates/texas/killeen/joseph_solomon/",
+      "headshot": "/assets/imgs/candidates/texas/killeen/joseph_solomon/headshot.png",
+      "thumbnail": "/assets/imgs/candidates/texas/killeen/joseph_solomon/thumbnail.png"
+    },
+    {
+      "name": "Kelese Richardson",
+      "state": "texas",
+      "city": "killeen",
+      "candidate_slug": "kelese_richardson",
+      "source_slug": "richardson_kelese",
+      "office": "Killeen City Council, At-large",
+      "profile_url": "/candidates/texas/killeen/kelese_richardson/",
+      "headshot": "/assets/imgs/candidates/texas/killeen/kelese_richardson/headshot.png",
+      "thumbnail": "/assets/imgs/candidates/texas/killeen/kelese_richardson/thumbnail.png"
+    },
+    {
+      "name": "Macaire Morrissey",
+      "state": "texas",
+      "city": "killeen",
+      "candidate_slug": "macaire_morrissey",
+      "source_slug": "morrissey_macaire",
+      "office": "Killeen City Council, At-Large",
+      "profile_url": "/candidates/texas/killeen/macaire_morrissey/",
+      "headshot": "/assets/imgs/candidates/texas/killeen/macaire_morrissey/headshot.png",
+      "thumbnail": "/assets/imgs/candidates/texas/killeen/macaire_morrissey/thumbnail.png"
+    },
+    {
+      "name": "Mellisa Brown",
+      "state": "texas",
+      "city": "killeen",
+      "candidate_slug": "mellisa_brown",
+      "source_slug": "brown_mellisa",
+      "office": "Killeen City Council, At-large",
+      "profile_url": "/candidates/texas/killeen/mellisa_brown/",
+      "headshot": "/assets/imgs/candidates/texas/killeen/mellisa_brown/headshot.png",
+      "thumbnail": "/assets/imgs/candidates/texas/killeen/mellisa_brown/thumbnail.png"
+    },
+    {
+      "name": "Myrna Malicbanzon",
+      "state": "texas",
+      "city": "killeen",
+      "candidate_slug": "myrna_malicbanzon",
+      "source_slug": "malicbanzon_myrna",
+      "office": "Killeen City Council, At-large",
+      "profile_url": "/candidates/texas/killeen/myrna_malicbanzon/",
+      "headshot": "/assets/imgs/candidates/texas/killeen/myrna_malicbanzon/headshot.png",
+      "thumbnail": "/assets/imgs/candidates/texas/killeen/myrna_malicbanzon/thumbnail.png"
+    },
+    {
+      "name": "Nicholas Guajardo",
+      "state": "texas",
+      "city": "killeen",
+      "candidate_slug": "nicholas_guajardo",
+      "source_slug": "guajardo_nicholas",
+      "office": "Killeen City Council",
+      "profile_url": "/candidates/texas/killeen/nicholas_guajardo/",
+      "headshot": "/assets/imgs/candidates/texas/killeen/nicholas_guajardo/headshot.png",
+      "thumbnail": "/assets/imgs/candidates/texas/killeen/nicholas_guajardo/thumbnail.png"
+    },
+    {
+      "name": "Olayinka Adelusi",
+      "state": "texas",
+      "city": "killeen",
+      "candidate_slug": "olayinka_adelusi",
+      "source_slug": "adelusi_olayinka",
+      "office": "Killeen City Council, At-large",
+      "profile_url": "/candidates/texas/killeen/olayinka_adelusi/",
+      "headshot": "/assets/imgs/candidates/texas/killeen/olayinka_adelusi/headshot.png",
+      "thumbnail": "/assets/imgs/candidates/texas/killeen/olayinka_adelusi/thumbnail.png"
+    },
+    {
+      "name": "Ramon Alvarez",
+      "state": "texas",
+      "city": "killeen",
+      "candidate_slug": "ramon_alvarez",
+      "source_slug": "alvarez_ramon",
+      "office": "Killeen City Council at-large",
+      "profile_url": "/candidates/texas/killeen/ramon_alvarez/",
+      "headshot": "/assets/imgs/candidates/texas/killeen/ramon_alvarez/headshot.png",
+      "thumbnail": "/assets/imgs/candidates/texas/killeen/ramon_alvarez/thumbnail.png"
+    },
+    {
+      "name": "Riakos Adams",
+      "state": "texas",
+      "city": "killeen",
+      "candidate_slug": "riakos_adams",
+      "source_slug": "adams_riakos",
+      "office": "Mayor of Killeen, Texas",
+      "profile_url": "/candidates/texas/killeen/riakos_adams/",
+      "headshot": "/assets/imgs/candidates/texas/killeen/riakos_adams/headshot.png",
+      "thumbnail": "/assets/imgs/candidates/texas/killeen/riakos_adams/thumbnail.png"
+    },
+    {
+      "name": "Shavonn Hull",
+      "state": "texas",
+      "city": "killeen",
+      "candidate_slug": "shavonn_hull",
+      "source_slug": "hull_shavonn",
+      "office": "Killeen City Council, At-large",
+      "profile_url": "/candidates/texas/killeen/shavonn_hull/",
+      "headshot": "/assets/imgs/candidates/texas/killeen/shavonn_hull/headshot.png",
+      "thumbnail": "/assets/imgs/candidates/texas/killeen/shavonn_hull/thumbnail.png"
+    },
+    {
+      "name": "Sue Croft",
+      "state": "texas",
+      "city": "killeen",
+      "candidate_slug": "sue_croft",
+      "source_slug": "croft_sue",
+      "office": "Killeen City Council, At-Large",
+      "profile_url": "/candidates/texas/killeen/sue_croft/",
+      "headshot": "/assets/imgs/candidates/texas/killeen/sue_croft/headshot.png",
+      "thumbnail": "/assets/imgs/candidates/texas/killeen/sue_croft/thumbnail.png"
+    },
+    {
+      "name": "Terry Mustapher",
+      "state": "texas",
+      "city": "killeen",
+      "candidate_slug": "terry_mustapher",
+      "source_slug": "mustapher_terry",
+      "office": "Killeen City Councilmember",
+      "profile_url": "/candidates/texas/killeen/terry_mustapher/",
+      "headshot": "/assets/imgs/candidates/texas/killeen/terry_mustapher/headshot.png",
+      "thumbnail": "/assets/imgs/candidates/texas/killeen/terry_mustapher/thumbnail.png"
+    },
+    {
+      "name": "Charleen Dowell",
+      "state": "texas",
+      "city": "moody",
+      "candidate_slug": "charleen_dowell",
+      "source_slug": "dowell_charleen",
+      "office": "Mayor of Moody, Texas",
+      "profile_url": "/candidates/texas/moody/charleen_dowell/",
+      "headshot": "/assets/imgs/candidates/texas/moody/charleen_dowell/headshot.png",
+      "thumbnail": "/assets/imgs/candidates/texas/moody/charleen_dowell/thumbnail.png"
+    },
+    {
+      "name": "James Bilberry",
+      "state": "texas",
+      "city": "nolanville",
+      "candidate_slug": "james_bilberry",
+      "source_slug": "bilberry_james",
+      "office": "Nolanville City Council",
+      "profile_url": "/candidates/texas/nolanville/james_bilberry/",
+      "headshot": "/assets/imgs/candidates/texas/nolanville/james_bilberry/headshot.png",
+      "thumbnail": "/assets/imgs/candidates/texas/nolanville/james_bilberry/thumbnail.png"
+    },
+    {
+      "name": "Juanita Sims",
+      "state": "texas",
+      "city": "nolanville",
+      "candidate_slug": "juanita_sims",
+      "source_slug": "sims_juanita",
+      "office": "Nolanville City Council, Seat 2",
+      "profile_url": "/candidates/texas/nolanville/juanita_sims/",
+      "headshot": "/assets/imgs/candidates/texas/nolanville/juanita_sims/headshot.png",
+      "thumbnail": "/assets/imgs/candidates/texas/nolanville/juanita_sims/thumbnail.png"
+    },
+    {
+      "name": "Lawrence Reis",
+      "state": "texas",
+      "city": "nolanville",
+      "candidate_slug": "lawrence_reis",
+      "source_slug": "reis_lawrence",
+      "office": "Nolanville City Council",
+      "profile_url": "/candidates/texas/nolanville/lawrence_reis/",
+      "headshot": "/assets/imgs/candidates/texas/nolanville/lawrence_reis/headshot.png",
+      "thumbnail": "/assets/imgs/candidates/texas/nolanville/lawrence_reis/thumbnail.png"
+    },
+    {
+      "name": "Michael Whitson",
+      "state": "texas",
+      "city": "nolanville",
+      "candidate_slug": "michael_whitson",
+      "source_slug": "whitson_michael",
+      "office": "Municipal Candidate",
+      "profile_url": "/candidates/texas/nolanville/michael_whitson/",
+      "headshot": "/assets/imgs/candidates/texas/nolanville/michael_whitson/headshot.png",
+      "thumbnail": "/assets/imgs/candidates/texas/nolanville/michael_whitson/thumbnail.png"
+    },
+    {
+      "name": "Mikayla Mondragon",
+      "state": "texas",
+      "city": "nolanville",
+      "candidate_slug": "mikayla_mondragon",
+      "source_slug": "mondragon_mikayla",
+      "office": "Nolanville City Council Seat 4",
+      "profile_url": "/candidates/texas/nolanville/mikayla_mondragon/",
+      "headshot": "/assets/imgs/candidates/texas/nolanville/mikayla_mondragon/headshot.png",
+      "thumbnail": "/assets/imgs/candidates/texas/nolanville/mikayla_mondragon/thumbnail.png"
+    },
+    {
+      "name": "Zonte Pendergrass",
+      "state": "texas",
+      "city": "nolanville",
+      "candidate_slug": "zonte_pendergrass",
+      "source_slug": "pendergrass_zonte",
+      "office": "Nolanville City Council",
+      "profile_url": "/candidates/texas/nolanville/zonte_pendergrass/",
+      "headshot": "/assets/imgs/candidates/texas/nolanville/zonte_pendergrass/headshot.png",
+      "thumbnail": "/assets/imgs/candidates/texas/nolanville/zonte_pendergrass/thumbnail.png"
+    }
+  ],
+  "count": 35
+}

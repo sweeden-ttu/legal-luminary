@@ -1,0 +1,56 @@
+{
+  "candidate_slug": "jackie_ivicic",
+  "source_slug": "ivicic_jackie",
+  "city": "bartlett",
+  "name": "Ivicic Jackie",
+  "articles": [
+    {
+      "url": "https://ballotpedia.org/Jackie_Ivicic_(Bartlett_City_Council_At-large,_Texas,_candidate_2026)",
+      "title": "Jackie Ivicic (Bartlett City Council At-large, Texas ...",
+      "domain": "ballotpedia.org",
+      "excerpt": "Ruth Diaz (Nonpartisan), Jackie Ivicic (Nonpartisan), and Jennifer Tucker (Nonpartisan) are running in the general election for Bartlett City Council At-large on May 2, 2026.",
+      "confidence": "high",
+      "field": "opponents"
+    },
+    {
+      "url": "https://www.tapt.com/ivicic.html",
+      "title": "Ivicic",
+      "domain": "tapt.com",
+      "excerpt": "Over the next 10 years I became a member with TAPT and began working towards my Officials and Master Officials Certifications. In 2014 I obtained my Officials Certification and then a year later in 2015 I received my Masters Officials (Now known as T",
+      "confidence": "high",
+      "field": "certifications_and_teaching"
+    },
+    {
+      "url": "https://bartlett.txed.net/apps/staff/",
+      "title": "Staff Directory | Bartlett Independent School District",
+      "domain": "bartlett.txed.net",
+      "excerpt": "Jackie Ivicic Transportation / Maintenance Director104",
+      "confidence": "high",
+      "field": "certifications_and_teaching"
+    },
+    {
+      "url": "https://www.bartlett-tx.us/secretary/page/city-elections",
+      "title": "City Elections - Bartlett Texas",
+      "domain": "bartlett-tx.us",
+      "excerpt": "| City Council - Place 2 | Jackie Ivicic | 2024 | 2026 |",
+      "confidence": "high",
+      "field": "professional_roles_and_affiliations"
+    },
+    {
+      "url": "https://www.bartlett-tx.us/secretary/page/may-2-2026-election-general",
+      "title": "May 2, 2026 Election - General | Bartlett Texas",
+      "domain": "bartlett-tx.us",
+      "excerpt": "General Election to elect (2) Council Members for two-year terms to the Bartlett City Council.",
+      "confidence": "high",
+      "field": "election_information"
+    },
+    {
+      "url": "https://www.bartlett-tx.us/contact",
+      "title": "Contact Us | Bartlett Texas",
+      "domain": "bartlett-tx.us",
+      "excerpt": "Contact Us | Bartlett Texas\nMar 30, 2026 — 140 W Clark Street, Bartlett, TX 76511 Choose a Department: City Hall 254-527-3219 Police Dispatch 254-933-5412 Public Works On-Call 254-913",
+      "confidence": "high",
+      "field": "online_presence_and_contact.address"
+    }
+  ]
+}

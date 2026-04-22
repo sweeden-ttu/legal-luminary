@@ -1,0 +1,48 @@
+{
+  "candidate_slug": "terry_mustapher",
+  "source_slug": "mustapher_terry",
+  "city": "killeen",
+  "name": "Mustapher Terry",
+  "articles": [
+    {
+      "url": "https://www.killeentexas.gov/719/2026-District-3-Special-Election",
+      "title": "2026 District 3 Special Election | City of Killeen, TX",
+      "domain": "killeentexas.gov",
+      "excerpt": "**Killeen City Hall** *(Main Early Voting Location)* , 101 North College Street, Killeen, TX 76541\n**Jackson Professional Learning Center** *(Branch Early Voting Location)* , 902 Rev R A Abercrombie Drive, Killeen, TX 76543\n**Killeen Lions Park Senio",
+      "confidence": "high",
+      "field": "voter_information_for_district_3"
+    },
+    {
+      "url": "https://kdhnews.com/centerforpolitics/cochran-mustapher-bass-who-will-represent-south-and-central-killeen-on-the-city-council/article_cc24bd39-9eca-40a1-90a0-a68f4a93f871.html",
+      "title": "Cochran, Mustapher, Bass: Who will represent south and ...",
+      "domain": "kdhnews.com",
+      "excerpt": "Cochran is an Air Force veteran, active in city politics and has run several times for local office. He is also controversial for a number of reasons, having been kicked out of Killeen council meetings for disruption. He has also locked horns with do",
+      "confidence": "high",
+      "field": "opponents"
+    },
+    {
+      "url": "https://www.facebook.com/events/2233835823763780/",
+      "title": "Candidate Meet & Greet Terry Mustapher for Bell County ...",
+      "domain": "facebook.com",
+      "excerpt": "I will be introducing myself, sharing my background and qualifications, and discussing my commitment to fairness, integrity as a candidate. This is a great opportunity to connect, ask questions, and share what matters most to you. I would love to mee",
+      "confidence": "high",
+      "field": "campaign_priorities_and_platform"
+    },
+    {
+      "url": "https://www.killeentexas.gov/DocumentCenter/View/13407/Terry-Mustapher---District-3-03-04-2026_Redacted",
+      "title": "APPLICATION FOR A PLACE ON THE BALLOT FOR A SPECIAL ELECTION ...",
+      "domain": "killeentexas.gov",
+      "excerpt": "Before me, the undersigned authority, on this day personally appeared (name of candidate). \"I, (name of candidate) office of Councilmember District 3 swear that I will support and defend the Constitution and laws of the United States and of the State",
+      "confidence": "high",
+      "field": "candidate_background"
+    },
+    {
+      "url": "https://www.sos.texas.gov/elections/laws/filing-in-a-local-election.shtml",
+      "title": "Filing as a Candidate in a Local General Election",
+      "domain": "sos.texas.gov",
+      "excerpt": "Candidates seeking to have their name placed on the ballot in a local election must file a candidate application. Some political subdivisions may also require a filing fee and/or a petition in lieu of a filing fee to be filed along with the candidate",
+      "confidence": "high",
+      "field": "election_information"
+    }
+  ]
+}

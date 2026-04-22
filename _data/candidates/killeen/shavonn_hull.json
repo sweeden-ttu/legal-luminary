@@ -1,0 +1,72 @@
+{
+  "candidate_slug": "shavonn_hull",
+  "source_slug": "hull_shavonn",
+  "city": "killeen",
+  "name": "Hull Shavonn",
+  "articles": [
+    {
+      "url": "https://kdhnews.com/centerforpolitics/shavonn-hull-files-for-killeen-council-at-large/article_eacc96a4-dd00-413e-91da-57bd4ec74734.html",
+      "title": "Shavonn Hull files for Killeen council at-large - kdhnews.com",
+      "domain": "kdhnews.com",
+      "excerpt": "Hull lists her occupation as community liaison and home maker",
+      "confidence": "high",
+      "field": "candidate_profile"
+    },
+    {
+      "url": "https://www.facebook.com/kdhnews/posts/shavonn-hull-filed-wednesday-for-an-at-large-killeen-city-council-seat-according/1441637901243693/",
+      "title": "Shavonn Hull filed Wednesday for an... - Killeen Daily Herald ...",
+      "domain": "facebook.com",
+      "excerpt": "Shavonn Hull filed Wednesday for an at-large Killeen City Council seat, according to the city of Killeen’s election page.",
+      "confidence": "high",
+      "field": "candidate_profile"
+    },
+    {
+      "url": "https://ballotpedia.org/Shavonn_Hull_(Killeen_City_Council_At-large,_Texas,_candidate_2026)",
+      "title": "Shavonn Hull (Killeen City Council At-large, Texas, candidate ...",
+      "domain": "ballotpedia.org",
+      "excerpt": "Shavonn Hull is running for election to the Killeen City Council At-large in Texas. Hull is on the ballot in the general election on May 2, 2026. [source] [1] Click here to view Ballotpedia's local election coverage in Texas by county in 2026.",
+      "confidence": "high",
+      "field": "candidate_profile"
+    },
+    {
+      "url": "https://www.linkedin.com/in/shavonn-hull-664a167b",
+      "title": "Shavonn Hull - Charis Church | LinkedIn",
+      "domain": "linkedin.com",
+      "excerpt": "Experience: Charis Church · Education: University of Mary Hardin-Baylor · Location: Killeen · 9 connections on LinkedIn. View Shavonn Hull’s profile on LinkedIn, a professional",
+      "confidence": "high",
+      "field": "biographical_background"
+    },
+    {
+      "url": "https://www.killeentexas.gov/706/2026-General-Election",
+      "title": "May 2, 2026 General Election | City of Killeen, TX",
+      "domain": "killeentexas.gov",
+      "excerpt": "May 2, 2026 General Election | City of Killeen, TX\nKilleen City Hall - Main Foyer (Main Early Voting Location), 101 North College Street, Killeen, TX 76541 · Jackson Professional Learning Center - Conference Room",
+      "confidence": "high",
+      "field": "biographical_background"
+    },
+    {
+      "url": "https://goodparty.org/candidate/shavonn-hull/killeen-city-council-at-large",
+      "title": "Shavonn Hull for Killeen City Council - At Large | Good Party",
+      "domain": "goodparty.org",
+      "excerpt": "Civility Candidates pledge to run a clean campaign free of mudslinging and uphold a minimum standard of civility in their campaign's conduct.",
+      "confidence": "high",
+      "field": "election_details"
+    },
+    {
+      "url": "https://killeentexas.gov/DocumentCenter/View/13227/Shavonn-Hull---Form-CTA-01-28-2026_Redacted-PDF",
+      "title": "APPOINTMENT OF A CAMPAIGN TREASURER BY A CANDIDATE",
+      "domain": "killeentexas.gov",
+      "excerpt": "I do not intend to accept more than $1,140 in political contributions or make more than $1,140 in political expenditures (excluding filing fees) in connection with any future election within the election cycle.",
+      "confidence": "high",
+      "field": "election_details"
+    },
+    {
+      "url": "https://www.killeentexas.gov/153/City-Council",
+      "title": "City Council | City of Killeen, TX",
+      "domain": "killeentexas.gov",
+      "excerpt": "The city elects its mayor and three council members at large, meaning that every registered voter within the city limits may vote for all four positions. The other four council members represent specific districts of the city and are elected by voter",
+      "confidence": "high",
+      "field": "election_details"
+    }
+  ]
+}

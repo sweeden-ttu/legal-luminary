@@ -1,0 +1,80 @@
+{
+  "candidate_slug": "vickie_cooper",
+  "source_slug": "cooper_vickie",
+  "city": "bartlett",
+  "name": "Cooper Vickie",
+  "articles": [
+    {
+      "url": "https://www.bartlett-tx.us/citycouncil",
+      "title": "City Council - Bartlett Texas",
+      "domain": "bartlett-tx.us",
+      "excerpt": "| City Council - Place 2 (Mayor Pro Tem) | Vickie Cooper | 2024 | 2026 |",
+      "confidence": "high",
+      "field": "candidate_name"
+    },
+    {
+      "url": "https://www.bartlett-tx.us/secretary/page/city-elections",
+      "title": "City Elections | Bartlett Texas",
+      "domain": "bartlett-tx.us",
+      "excerpt": "City Council - Place 1 (Mayor Pro Tem)\nVickie Cooper\n2024\n2026\n",
+      "confidence": "high",
+      "field": "candidate_name"
+    },
+    {
+      "url": "https://directory.tml.org/profile/individual/94834",
+      "title": "Vickie Cooper - TML City Officials Directory",
+      "domain": "directory.tml.org",
+      "excerpt": "Vickie Cooper City of Bartlett City Councilmember Return to search results Member Type: Member Individual Region: 10-Highland Lakes-Austin Area County: Williamson, Bell Address: PO Drawer H Bartlett, TX 76511-0907 Phone: (254) 527-3219",
+      "confidence": "high",
+      "field": "candidate_name"
+    },
+    {
+      "url": "https://www.txdirectory.com/online/person/?id=60300",
+      "title": "Vickie Cooper - Texas State Directory Online",
+      "domain": "txdirectory.com",
+      "excerpt": "Since 1935 the Texas State Directory has been a trusted resource and has been referred to as the bible for anyone working in or wanting to learn about state, city and county government. 2026 © All Rights Reserved. Privacy Policy | Terms of Service.",
+      "confidence": "high",
+      "field": "candidate_name"
+    },
+    {
+      "url": "https://www.facebook.com/vickie.cooper.1694059/posts/784432090141917/",
+      "title": "Vickie Cooper - The Lutheran church is opening the... | Facebook",
+      "domain": "facebook.com",
+      "excerpt": "Citizens of Bartlett: Bartlett's Fall Community Clean-up Day will be this Saturday November 01, 2025. Dumpsters will be available until full. (FIRST COME, FIRST SERVE). The City Brush Pile Site will also be open at the same time as the Citywide Fall ",
+      "confidence": "high",
+      "field": "candidate_name"
+    },
+    {
+      "url": "https://www.bartlett-tx.us/secretary/page/may-2-2026-election-general",
+      "title": "May 2, 2026 Election - General | Bartlett Texas",
+      "domain": "bartlett-tx.us",
+      "excerpt": "Click HERE for listing of City Council members and their respective terms in office. Candidate filing applications are available below or for pick-up at City Hall.",
+      "confidence": "high",
+      "field": "term_of_office"
+    },
+    {
+      "url": "https://www.bartlett-tx.us/administrator/custom-contact-page/city-administrator-contact-information",
+      "title": "City Administrator Contact Information | Bartlett Texas",
+      "domain": "bartlett-tx.us",
+      "excerpt": "City Administrator Contact Information | Bartlett Texas\n4 days ago — 140 W. Clark Street, Post Office Drawer H Bartlett, Texas 76511. City Hall: 254.527.3219. Fax: 254.527.4280. Printer-friendly version.",
+      "confidence": "high",
+      "field": "biographical_background"
+    },
+    {
+      "url": "https://www.bartlett-tx.us/citycouncil/page/bell-county-precinct-map",
+      "title": "Bell County - Precinct Map | Bartlett Texas",
+      "domain": "bartlett-tx.us",
+      "excerpt": "Bell County - Precinct Map | Bartlett Texas\n4 days ago — 140 W Clark Street, Bartlett, TX 76511 Choose a Department: City Hall 254-527-3219 Police Dispatch 254-933-5412 Public Works On-Call 254-913",
+      "confidence": "high",
+      "field": "jurisdictional_information"
+    },
+    {
+      "url": "https://www.bartlett-tx.us/meetings",
+      "title": "Meetings | Bartlett Texas",
+      "domain": "bartlett-tx.us",
+      "excerpt": "Meetings | Bartlett Texas\nMeetings ; 11/24/2025 - 6:00pm, City Council - Regular Meeting and Planning & Zoning Meeting - 11-24-25, Agenda,Agenda · Agenda Packet · Minutes,Minutes ; 11/18/",
+      "confidence": "medium",
+      "field": "political_priorities_and_platform"
+    }
+  ]
+}

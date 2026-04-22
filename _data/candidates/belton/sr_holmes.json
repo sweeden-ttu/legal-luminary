@@ -1,0 +1,56 @@
+{
+  "candidate_slug": "sr_holmes",
+  "source_slug": "holmes_john_r_sr",
+  "city": "belton",
+  "name": "Holmes John R Sr",
+  "articles": [
+    {
+      "url": "https://www.beltontexas.gov/government/city_council/strategic_plan.php",
+      "title": "Welcome to City of Belton",
+      "domain": "beltontexas.gov",
+      "excerpt": "The Strategic Plan document informs the decision-making process of the Belton City Council. It is a living document typically updated on an annual basis, with more comprehensive update occurring every five years.",
+      "confidence": "high",
+      "field": "campaign_priorities"
+    },
+    {
+      "url": "https://www.beltontexas.gov/government/city_council/index.php",
+      "title": "City Council",
+      "domain": "beltontexas.gov",
+      "excerpt": "The council develops a Strategic Plan, and establishes fees and rates for city goods and services.",
+      "confidence": "high",
+      "field": "campaign_priorities"
+    },
+    {
+      "url": "https://www.beltontexas.gov/government/city_clerk/election/index.php",
+      "title": "Welcome to City of Belton",
+      "domain": "beltontexas.gov",
+      "excerpt": "Filed candidates:\nJohn R. Holmes, Sr., incumbent - Place 1\nDave Covington, incumbent - Place 2",
+      "confidence": "high",
+      "field": "campaign_priorities"
+    },
+    {
+      "url": "https://www.beltontexas.gov/news_detail_T11_R1355.php",
+      "title": "Two Incumbents File for Belton City Council",
+      "domain": "beltontexas.gov",
+      "excerpt": "Holmes is the current Mayor Pro Tem. He has served on the Belton City Council for nine years and was previously a member of the Belton Planning and Zoning Commission (P&Z).",
+      "confidence": "high",
+      "field": "political_experience"
+    },
+    {
+      "url": "https://www.raymondjames.com/johnrholmessr/about-us/bio?_=john.holmessr",
+      "title": "John R. Holmes Sr. - John R. Holmes, Sr. - Temple, TX",
+      "domain": "raymondjames.com",
+      "excerpt": "He is an elected member of the Belton City Council currently serving as Mayor Pro Tem and a member of the Belton Economic Development Corporation. He’s also held many other roles including former chairman of Belton’s Ethics Commission and former chai",
+      "confidence": "high",
+      "field": "political_experience"
+    },
+    {
+      "url": "https://cms3.revize.com/revize/bellcountytx/elections/Campaign%20Treasurer/2025/2025_Schneider_Russell.pdf",
+      "title": "CANDIDATE / OFFICEHOLDER CAMPAIGN FINANCE REPORT",
+      "domain": "cms3.revize.com",
+      "excerpt": "Beginning on January 1, 2024, a candidate or officeholder who has accepted more than $32,810 in political contributions or made more than $32,810 in political expenditures in any calendar year must file all subsequent reports electronically.",
+      "confidence": "high",
+      "field": "campaign_finance_details"
+    }
+  ]
+}

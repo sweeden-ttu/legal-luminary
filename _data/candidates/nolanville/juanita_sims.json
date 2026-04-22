@@ -1,0 +1,64 @@
+{
+  "candidate_slug": "juanita_sims",
+  "source_slug": "sims_juanita",
+  "city": "nolanville",
+  "name": "Sims Juanita",
+  "articles": [
+    {
+      "url": "https://goodparty.org/candidate/juanita-sims/nolanville-city-council-seat-2",
+      "title": "Juanita Sims for Nolanville City Council - Seat 2 | Good Party",
+      "domain": "goodparty.org",
+      "excerpt": "The GoodParty.org Pledge",
+      "confidence": "high",
+      "field": "public_affiliations"
+    },
+    {
+      "url": "https://ballotpedia.org/Juanita_Sims_(Nolanville_City_Council_Seat_2,_Texas,_candidate_2025)",
+      "title": "Juanita Sims (Nolanville City Council Seat 2, Texas ...",
+      "domain": "ballotpedia.org",
+      "excerpt": "Election results Endorsements Ballotpedia did not identify endorsements for Sims in this election.",
+      "confidence": "high",
+      "field": "endorsements_summary"
+    },
+    {
+      "url": "https://kdhnews.com/news/local/sims-apparent-winner-of-nolanville-council-seat-after-late-votes-tallied/article_9375ebec-7e64-11ee-bf48-7f942afdbfdc.html",
+      "title": "Sims apparent winner of Nolanville council seat after late ...",
+      "domain": "kdhnews.com",
+      "excerpt": "In final, unofficial results announced at 12:08 a.m. Wednesday, Sims had 143 votes, a nine-vote margin over second-place finisher Michael Whitson, who received 134 votes.",
+      "confidence": "high",
+      "field": "executive_summary"
+    },
+    {
+      "url": "https://www.nolanvilletx.gov/page/open/2668/0/Regular%20Council%20Meeting%20Minutes%20%20April%204,%202024",
+      "title": "Regular Meeting of August 18, 2022 - nolanvilletx.gov",
+      "domain": "nolanvilletx.gov",
+      "excerpt": "Councilmembers Karishma Talbott, Juanita Sims, Mikayla Mondragon, Jerry Rains and Mayor Pro-tem Patrick Ramsdell were all present for the meeting. Mayor Williams performed the Invocation and led Pledges to the Flags.",
+      "confidence": "high",
+      "field": "executive_summary"
+    },
+    {
+      "url": "http://nolanvilletx.gov/",
+      "title": "Nolanville City Council Members List",
+      "domain": "nolanvilletx.gov",
+      "excerpt": "Juanita Sims Councilmember Seat 2",
+      "confidence": "high",
+      "field": "executive_summary"
+    },
+    {
+      "url": "https://www.facebook.com/kdhnews/posts/nolanville-city-council-members-juanita-sims-and-mikayla-mondragon-are-scheduled/1369630158444468",
+      "title": "Nolanville City Council Members Juanita Sims and ...",
+      "domain": "facebook.com",
+      "excerpt": "Nolanville City Council Members Juanita Sims and ...\nNolanville City Council Members Juanita Sims and Mikayla Mondragon are scheduled to retain their seats after both secured a plurality of the vote in",
+      "confidence": "high",
+      "field": "executive_summary"
+    },
+    {
+      "url": "https://www.nolanvilletx.gov/page/Council",
+      "title": "City of Nolanville, Texas",
+      "domain": "nolanvilletx.gov",
+      "excerpt": "The City of Nolanville operates under a Council-Manager form of government. In this structure, elected City Council members establish policies for municipal operations, while the administrative responsibilities are managed by the City Manager, who is",
+      "confidence": "high",
+      "field": "executive_summary"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "candidate_slug": "charles_kimble",
+  "source_slug": "kimble_charles",
+  "city": "killeen",
+  "name": "Kimble Charles",
+  "articles": [
+    {
+      "url": "https://kdhnews.com/news/local/former-police-chief-kimble-a-shoo-in-for-district-2-with-no-challengers/article_71d3437b-98b6-484f-8610-ac82db4e4395.html",
+      "title": "Former police chief Kimble a shoo-in for District 2 with no ...",
+      "domain": "kdhnews.com",
+      "excerpt": "“District 2 needs focused attention on the everyday issues that shape people’s lives: neighborhood safety, responsive city services, strong code enforcement, where needed, and infrastructure that keeps pace with growth,”",
+      "confidence": "high",
+      "field": "key_policy_areas"
+    },
+    {
+      "url": "https://www.killeentexas.gov/717/2026-District-2-Special-Election",
+      "title": "2026 Special Election | City of Killeen, TX",
+      "domain": "killeentexas.gov",
+      "excerpt": "Charles “Chuck” Kimble",
+      "confidence": "high",
+      "field": "candidate_profile"
+    },
+    {
+      "url": "https://www.facebook.com/KilleenTexas/posts/after-six-and-a-half-years-of-service-to-killeen-and-a-distinguished-career-span/1364143839082860",
+      "title": "City of Killeen, Texas - Government",
+      "domain": "facebook.com",
+      "excerpt": "City of Killeen, Texas - Government\n... Killeen's police chief, Charles Kimble, 53, has announced he plans to retire.' If I am reading this correctly, ' Killeen's police chief, plans to retire'.",
+      "confidence": "high",
+      "field": "candidate_profile"
+    },
+    {
+      "url": "https://www.killeentexas.gov/CivicAlerts.asp?AID=1631",
+      "title": "Killeen Police Chief announces retirement, following 31 years ...",
+      "domain": "killeentexas.gov",
+      "excerpt": "KILLEEN, Texas (Dec. 6, 2022) – Killeen Police Chief, Charles Kimble is retiring from the City of Killeen, announcing his last day as Jan. 27, 2023. “I began my career more than three decades ago with a passion for serving and helping the citizens of",
+      "confidence": "high",
+      "field": "candidate_profile"
+    },
+    {
+      "url": "https://www.killeentexas.gov/Archive.aspx?AMID=73",
+      "title": "Archive Center • Campaign Finance Report 2025",
+      "domain": "killeentexas.gov",
+      "excerpt": "Campaign Finance Report 2025",
+      "confidence": "high",
+      "field": "candidate_profile"
+    }
+  ]
+}

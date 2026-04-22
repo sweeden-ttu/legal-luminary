@@ -1,0 +1,40 @@
+{
+  "candidate_slug": "macaire_morrissey",
+  "source_slug": "morrissey_macaire",
+  "city": "killeen",
+  "name": "Morrissey Macaire",
+  "articles": [
+    {
+      "url": "https://kdhnews.com/centerforpolitics/killeen-city-council-candidate-was-dismissed-from-kpd-for-impeding-sexual-assault-investigation/article_2cc1747b-918a-4181-96a9-e27d55abf544.html",
+      "title": "Killeen City Council candidate was dismissed from KPD for ...",
+      "domain": "kdhnews.com",
+      "excerpt": "One of the candidates for Killeen City Council was previously dismissed by the Killeen Police Department for impeding a sexual assault investigation of another KPD officer, before being reinstated.",
+      "confidence": "high",
+      "field": "professional_background"
+    },
+    {
+      "url": "https://www.killeentexas.gov/DocumentCenter/View/13313/Macaire-Mac-Morrissey---At-Large-Write-In-02-12-2026_Redacted-PDF",
+      "title": "DECLARATION OF WRITE-IN CANDIDACY FOR CITIES, SCHOOL ...",
+      "domain": "killeentexas.gov",
+      "excerpt": "I have been commonly known by this nickname for at least three years prior to this election. Please review sections 52.031, 52.032 and 52.033 of the Texas Election Code regarding the rules for how names may be listed on the official ballot.",
+      "confidence": "high",
+      "field": "official_filings"
+    },
+    {
+      "url": "https://kdhnews.com/centerforpolitics/at-the-end-of-candidate-filings-a-crowded-field-for-city-school-elections/article_f3dddece-212d-4e2d-a459-b33e4197836b.html",
+      "title": "At the end of candidate filings, a crowded field for city ...",
+      "domain": "kdhnews.com",
+      "excerpt": "The filing period for the May 2 election ended Friday, with races in Killeen looking especially competitive.",
+      "confidence": "high",
+      "field": "election_candidacy_details"
+    },
+    {
+      "url": "https://www.killeentexas.gov/Archive.aspx?AMID=73",
+      "title": "Archive Center • Campaign Finance Report 2025",
+      "domain": "killeentexas.gov",
+      "excerpt": "Archive Center • Campaign Finance Report 2025 Home Archive Center",
+      "confidence": "high",
+      "field": "election_candidacy_details"
+    }
+  ]
+}

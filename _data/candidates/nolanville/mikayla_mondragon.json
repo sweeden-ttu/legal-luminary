@@ -1,0 +1,40 @@
+{
+  "candidate_slug": "mikayla_mondragon",
+  "source_slug": "mondragon_mikayla",
+  "city": "nolanville",
+  "name": "Mondragon Mikayla",
+  "articles": [
+    {
+      "url": "https://mondragon4ncc4.my.canva.site/",
+      "title": "Mikayla Mondragon Nolanville City Council Seat 4 Candidate",
+      "domain": "mondragon4ncc4.my.canva.site",
+      "excerpt": "~Harker Heights Vet Center (Volunteer)\nHelped to Co-Facilitate Art Therapy Group",
+      "confidence": "high",
+      "field": "volunteer_activities"
+    },
+    {
+      "url": "https://ballotpedia.org/Mikayla_Mondragon_(Nolanville_City_Council_Seat_4,_Texas,_candidate_2025)",
+      "title": "Mikayla Mondragon (Nolanville City Council Seat 4, Texas ...",
+      "domain": "ballotpedia.org",
+      "excerpt": "Ballotpedia did not identify endorsements for Mondragon in this election.",
+      "confidence": "high",
+      "field": "endorsements"
+    },
+    {
+      "url": "https://www.facebook.com/61550992413934/",
+      "title": "Mikayla Mondragon - Facebook",
+      "domain": "facebook.com",
+      "excerpt": "Mikayla Mondragon, Nolanville, Texas. 50 likes. My name is Mikayla Mondragon and I am running for Nolanville City Council Seat #4.",
+      "confidence": "high",
+      "field": "online_presence_and_contact_information"
+    },
+    {
+      "url": "https://www.ethics.state.tx.us/search/cf/",
+      "title": "Search Campaign Finance",
+      "domain": "ethics.state.tx.us",
+      "excerpt": "All reports filed on paper after July 2010 can be viewed in PDF format. However, only the total amounts are viewable for paper-filed reports filed previous to 2010.",
+      "confidence": "high",
+      "field": "campaign_finance.donation_information"
+    }
+  ]
+}

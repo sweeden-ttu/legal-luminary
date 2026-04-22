@@ -1,0 +1,149 @@
+---
+layout: candidates-root
+---
+
+<link
+    rel="stylesheet"
+    href="{{ '/assets/css/candidates-elections.css' | relative_url }}"
+/>
+
+{% assign city = page.city %} {% assign cslug = page.candidate_slug %} {% assign
+city_data = site.data.candidates[city] %} {% assign art_data = city_data[cslug]
+%} {% assign articles = art_data.articles %}
+
+<div class="profile-page">
+    <div class="profile-page__inner">
+        <!-- ═══ Breadcrumbs ═══════════════════════════════════════ -->
+        <nav class="profile-breadcrumbs" aria-label="Breadcrumb">
+            <a href="{{ '/' | relative_url }}">Home</a>
+            <span class="profile-breadcrumbs__sep" aria-hidden="true">/</span>
+            <a href="{{ '/candidates/' | relative_url }}">Elections 2026</a>
+            <span class="profile-breadcrumbs__sep" aria-hidden="true">/</span>
+            <a
+                href="{{ '/candidates/#city=' | append: page.city | relative_url }}"
+                >{{ page.city | capitalize }}</a
+            >
+            <span class="profile-breadcrumbs__sep" aria-hidden="true">/</span>
+            <span aria-current="page">{{ page.title }}</span>
+        </nav>
+
+        <!-- ═══ Profile Hero ═══════════════════════════════════════ -->
+        <section class="profile-hero" aria-labelledby="profile-name">
+            <div class="profile-hero__photo-wrap">
+                <img
+                    src="{{ page.headshot | relative_url }}"
+                    alt="{{ page.title }} – official candidate photo"
+                    class="profile-hero__photo"
+                    loading="eager"
+                    onerror="this.style.display = 'none'"
+                />
+                <div class="profile-hero__initial" aria-hidden="true">
+                    {{ page.title | slice: 0, 1 | upcase }}
+                </div>
+            </div>
+            <div class="profile-hero__info">
+                <div class="profile-hero__eyebrow">
+                    <span class="profile-hero__city-tag"
+                        >{{ page.city | capitalize }}, TX</span
+                    >
+                    <span class="profile-hero__election-tag"
+                        >2026 Municipal Election</span
+                    >
+                </div>
+                <h1 class="profile-hero__name" id="profile-name">
+                    {{ page.title }}
+                </h1>
+                <p class="profile-hero__office">{{ page.office }}</p>
+            </div>
+        </section>
+
+        <!-- ═══ Two-column Body ════════════════════════════════════ -->
+        <div class="profile-body">
+            <!-- Main: Candidate Profile Summary only -->
+            <article class="profile-content">
+                {% if page.profile_summary and page.profile_summary != "" %}
+                <h2 class="profile-content__section-title">
+                    Executive summary
+                </h2>
+                {{ page.profile_summary | markdownify }}
+                {% endif %}
+            </article>
+
+            <!-- Sidebar: Recent Coverage only -->
+            <aside class="profile-sidebar" aria-label="Recent coverage">
+                <div class="profile-sidebar__panel">
+                    <header class="profile-sidebar__panel-header">
+                        <span
+                            class="profile-sidebar__panel-icon"
+                            aria-hidden="true"
+                            >📰</span
+                        >
+                        <h2 class="profile-sidebar__panel-title">
+                            Recent Coverage
+                        </h2>
+                    </header>
+
+                    {% if articles and articles.size > 0 %}
+                    <ul class="profile-articles-list" role="list">
+                        {% for article in articles limit: 10 %}
+                        <li class="profile-article-item">
+                            <a
+                                href="{{ article.url }}"
+                                class="profile-article-link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="{{ article.title }} (opens in new tab)"
+                            >
+                                <div class="profile-article__domain">
+                                    {{ article.domain }} {% if
+                                    article.confidence %}
+                                    <span
+                                        class="profile-article__confidence profile-article__confidence--{{ article.confidence }}"
+                                    >
+                                        {{ article.confidence }}
+                                    </span>
+                                    {% endif %}
+                                </div>
+                                <span class="profile-article__title"
+                                    >{{ article.title | truncate: 90 }}</span
+                                >
+                                {% if article.excerpt and article.excerpt != ""
+                                %}
+                                <span class="profile-article__excerpt"
+                                    >{{ article.excerpt | strip_html | truncate:
+                                    160 }}</span
+                                >
+                                {% endif %}
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    {% else %}
+                    <p class="profile-sidebar__empty">
+                        No articles on record for this candidate.
+                    </p>
+                    {% endif %}
+                </div>
+
+                <a
+                    href="{{ '/candidates/' | relative_url }}"
+                    style="
+                        display: flex;
+                        align-items: center;
+                        gap: 0.4rem;
+                        font-size: 0.83rem;
+                        font-weight: 700;
+                        color: var(--c-navy);
+                        text-decoration: none;
+                        padding: 0.5rem 0;
+                    "
+                >
+                    ← All Candidates
+                </a>
+            </aside>
+        </div>
+        <!-- /.profile-body -->
+    </div>
+    <!-- /.profile-page__inner -->
+</div>
+<!-- /.profile-page -->
