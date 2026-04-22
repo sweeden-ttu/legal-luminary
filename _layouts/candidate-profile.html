@@ -7,9 +7,41 @@ layout: candidates-root
     href="{{ '/assets/css/candidates-elections.css' | relative_url }}"
 />
 
-{% assign city = page.city %} {% assign cslug = page.candidate_slug %} {% assign
-city_data = site.data.candidates[city] %} {% assign art_data = city_data[cslug]
-%} {% assign articles = art_data.articles %}
+{% assign city = page.city %}
+{% assign cslug = page.candidate_slug %}
+{% assign city_data = site.data.candidates[city] %}
+{% assign art_data = nil %}
+{% if city_data %}
+    {% assign art_data = city_data[cslug] %}
+{% endif %}
+{% assign articles = nil %}
+{% if art_data %}
+    {% assign articles = art_data.articles %}
+{% endif %}
+{% assign fb = "" %}
+{% if page.facebook_url and page.facebook_url != "" %}
+    {% assign fb = page.facebook_url | strip %}
+{% elsif art_data and art_data.facebook_url and art_data.facebook_url != "" %}
+    {% assign fb = art_data.facebook_url | strip %}
+{% endif %}
+{% assign li = "" %}
+{% if page.linkedin_url and page.linkedin_url != "" %}
+    {% assign li = page.linkedin_url | strip %}
+{% elsif art_data and art_data.linkedin_url and art_data.linkedin_url != "" %}
+    {% assign li = art_data.linkedin_url | strip %}
+{% endif %}
+{% assign ig = "" %}
+{% if page.instagram_url and page.instagram_url != "" %}
+    {% assign ig = page.instagram_url | strip %}
+{% elsif art_data and art_data.instagram_url and art_data.instagram_url != "" %}
+    {% assign ig = art_data.instagram_url | strip %}
+{% endif %}
+{% assign web = "" %}
+{% if page.campaign_website and page.campaign_website != "" %}
+    {% assign web = page.campaign_website | strip %}
+{% elsif art_data and art_data.campaign_website and art_data.campaign_website != "" %}
+    {% assign web = art_data.campaign_website | strip %}
+{% endif %}
 
 <div class="profile-page">
     <div class="profile-page__inner">
@@ -54,6 +86,9 @@ city_data = site.data.candidates[city] %} {% assign art_data = city_data[cslug]
                     {{ page.title }}
                 </h1>
                 <p class="profile-hero__office">{{ page.office }}</p>
+                {% include candidates/profile-connect.html facebook_url=fb
+                    linkedin_url=li instagram_url=ig campaign_website=web
+                    candidate_name=page.title %}
             </div>
         </section>
 

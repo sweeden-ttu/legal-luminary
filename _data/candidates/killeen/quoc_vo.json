@@ -76,5 +76,9 @@
       "confidence": "high",
       "field": "campaign_platform_overview"
     }
-  ]
+  ],
+  "facebook_url": "https://www.facebook.com/profile.php",
+  "linkedin_url": "",
+  "instagram_url": "",
+  "campaign_website": "https://www.voforkilleen.com/meet_dominic"
 }
