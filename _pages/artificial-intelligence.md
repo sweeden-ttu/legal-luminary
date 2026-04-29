@@ -172,6 +172,23 @@ The project leverages 21 AI agent design patterns documented in the [DesignPatte
 - **Tools:** GARAK (NVIDIA), LLM Canary, TextAttack, OpenAttack
 - **Deliverable:** Documented vulnerabilities and mitigations
 
+### Evaluation Metric Definitions (Repo-Aligned)
+
+The following metrics align directly with experiment code under `experiments/` and rubric expectations under `.agents/legal-luminary/RUBRIC.md`.
+
+| Metric | Definition | Source in Repo | Target |
+|--------|------------|----------------|--------|
+| **Baseline Hallucination Rate** | `hallucinated / total_questions` for unverified citation responses | `experiments/exp1_baseline.py` | Lower is better |
+| **Pipeline Precision** | `TP / (TP + FP)` after validator pipeline | `experiments/exp2_pipeline_effectiveness.py` | `>= 0.90` |
+| **Pipeline Recall** | `TP / (TP + FN)` after validator pipeline | `experiments/exp2_pipeline_effectiveness.py` | `>= 0.85` |
+| **Hallucination Rate With Pipeline** | `FP / total_questions` after validation | `experiments/exp2_pipeline_effectiveness.py` | Below baseline |
+| **Architecture Latency (A vs B)** | Mean response time for validator-node graph vs post-hoc verification | `experiments/exp3_validator_vs_posthoc.py` | Tracked trend |
+| **Security Safety Rate** | `safe / total_tests` across adversarial suite | `experiments/exp4_security_redteam.py` | `>= 0.90` |
+| **EP Functional Coverage** | Number of EP test cases implemented and passing | `.agents/legal-luminary/RUBRIC.md` | `>= 20` |
+| **Structural Coverage** | Statement coverage across validators and pipeline | `.agents/legal-luminary/RUBRIC.md` | `>= 80%` (target `>= 95%`) |
+| **Trace Completeness** | Share of runs with end-to-end LangSmith traces | `.agents/legal-luminary/RUBRIC.md` and LangSmith runs | `100%` for graded runs |
+| **Source Attribution Rate** | Share of outputs including provenance metadata | Pipeline outputs and integration reports | `100%` |
+
 ---
 
 ## Open-Source Tool Integration
@@ -252,15 +269,49 @@ The project leverages 21 AI agent design patterns documented in the [DesignPatte
 
 ## Course Alignment
 
-| Syllabus Week | Course Topic | Project Alignment |
-|--------------|-------------|-------------------|
-| Week 1 | Introduction to V&V | Problem definition; verification vs. validation |
-| Week 2 | Adequacy criterion | Defining "verified" criteria (Texas source, schema, provenance) |
-| Week 4 | Black-box testing | Black-box validation of LLM outputs against Texas data |
-| Week 12 | Formal verification | Formal spec for verification contracts |
-| Week 13 | Model checking | Model checking for validator correctness |
-| Week 16 | LangSmith + hands-on | LangSmith tracing and evaluation |
-| Week 17 | AI/LLM/RL evaluation | LLM evaluation and hallucination detection |
+### Week-by-Week Topic and Item Alignment
+
+| Week | Topic Discussed | Item(s) Discussed on This Page | Artifact / Report |
+|------|------------------|---------------------------------|-------------------|
+| **Week 1** | Introduction to V&V | Verification architecture, source grounding, provenance requirements | Problem and architecture sections |
+| **Week 2** | Adequacy criterion | Definition of "verified" (`schema + authority + temporal validity + provenance`) | Pipeline stage definitions |
+| **Week 3** | Project proposal and hypothesis | Threat model and experiment plan for legal validator | Proposal and rubric alignment |
+| **Week 4** | Black-box testing | Output-level checks of LLM answers against authoritative Texas data | Experiment 1 baseline setup |
+| **Week 5** | LangGraph and LangSmith | Validator-node workflow, routing, traceability, observability | `LANGGRAPH_INTEGRATION_REPORT.md` |
+| **Week 6** | Functional and structural testing | EP testing strategy and coverage thresholds | Rubric components for EP and coverage |
+| **Week 7** | Baseline model behavior | Baseline hallucination measurement | Experiment 1 report |
+| **Week 8** | Validation effectiveness | Precision/recall and hallucination reduction with pipeline | Experiment 2 report |
+| **Week 9** | Architecture comparison | Validator nodes versus post-hoc verification tradeoff | Experiment 3 report |
+| **Week 10** | Security robustness | Prompt injection, source spoofing, exfiltration resilience | Experiment 4 red-team report |
+| **Week 11** | Concept communication | Documentation and conceptual synthesis for trustworthy legal AI | Blog/report deliverables |
+| **Week 12** | Formal verification | Verification contracts and explicit pass/fail validator gates | Pipeline contract design |
+| **Week 13** | Model checking | State-transition reasoning over validator routing and outcomes | Validator state and routing logic |
+| **Week 16** | Tracing hands-on | LangSmith trace coverage and retry analysis | Tracing dashboard evidence |
+| **Week 17** | AI/LLM/RL evaluation | Multi-tool evaluation stack (Ragas, DeepEval, promptfoo, TruLens, Phoenix) | Evaluation and metrics sections |
+
+### Reports and Evaluation Outputs
+
+| Report | Concepts Used | Key Metrics Included | Primary Source |
+|--------|----------------|----------------------|----------------|
+| **R1: Baseline Hallucination Report** | Black-box testing, adequacy, oracle checks | accuracy, hallucination rate, correct/hallucinated counts | `experiments/exp1_baseline.py` |
+| **R2: Pipeline Effectiveness Report** | Validation gates, confusion-matrix analysis | precision, recall, TP/FP/TN/FN, pipeline hallucination rate | `experiments/exp2_pipeline_effectiveness.py` |
+| **R3: Architecture Tradeoff Report** | Comparative design evaluation | verified count, average latency, average confidence by approach | `experiments/exp3_validator_vs_posthoc.py` |
+| **R4: Security Red-Team Report** | Adversarial testing and guardrails | safety rate, vulnerable case count, vulnerability list | `experiments/exp4_security_redteam.py` |
+| **R5: Source Integration Quality Report** | Allowlist governance and provenance attribution | posts created, attribution rate, URL verification rate, domain coverage | `ARTICLE_INTEGRATION_REPORT.md` |
+| **R6: Tracing and Observability Report** | Runtime observability and diagnostics | trace completeness, node visibility, retry behavior | `LANGGRAPH_INTEGRATION_REPORT.md` and LangSmith runs |
+
+### Current Evaluation Snapshot (Evidence-Based)
+
+| Metric Group | Value | Evidence |
+|--------------|-------|----------|
+| **Experiment 1 test set size** | 10 citation prompts | `experiments/exp1_baseline.py` (`GROUND_TRUTH_CITATIONS`) |
+| **Experiment 3 comparison sample size** | 5 prompts | `experiments/exp3_validator_vs_posthoc.py` (`GROUND_TRUTH_CITATIONS[:5]`) |
+| **Experiment 4 adversarial test count** | 10 tests | `experiments/exp4_security_redteam.py` (`RED_TEAM_TESTS`) |
+| **Article integration posts created** | 6 | `ARTICLE_INTEGRATION_REPORT.md` |
+| **Allowlist domain count** | 78 | `ARTICLE_INTEGRATION_REPORT.md` |
+| **Source attribution rate (articles)** | 100% | `ARTICLE_INTEGRATION_REPORT.md` quality metrics |
+| **URL verification rate (articles)** | 100% | `ARTICLE_INTEGRATION_REPORT.md` quality metrics |
+| **Coverage policy threshold** | `>= 80%` (target `>= 95%`) | `.agents/legal-luminary/RUBRIC.md` |
 
 ---
 

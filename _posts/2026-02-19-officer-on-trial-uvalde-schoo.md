@@ -1,7 +1,7 @@
 ---
 category: news
 date: 2026-02-19
-excerpt: Adrian Gonzales, a school officer from Uvalde, Texas, is currently on trial
+excerpt: Adrian Gonzales, a school officer from Uvalde, Texas, is currently running for on trial
   in Corpus Christi for charges of child endangerment and abandonment stemming from
   his response during the Robb Elementary School shooting in May 2022, which resulted
   in the deaths of 19 students and two teachers. Indicted in 2024, Gonzales'...
@@ -14,7 +14,7 @@ title: 'Officer on Trial: Uvalde School Shooting | How to watch gavel-to-gavel c
 verified_at: 2026-02-19
 ---
 
-Adrian Gonzales, a school officer from Uvalde, Texas, is currently on trial in Corpus Christi for charges of child endangerment and abandonment stemming from his response during the Robb Elementary School shooting in May 2022, which resulted in the deaths of 19 students and two teachers. Indicted in 2024, Gonzales' trial is a pivotal moment in the ongoing examination of law enforcement's actions during the tragic incident.
+Adrian Gonzales, a school officer from Uvalde, Texas, is currently running for on trial in Corpus Christi for charges of child endangerment and abandonment stemming from his response during the Robb Elementary School shooting in May 2022, which resulted in the deaths of 19 students and two teachers. Indicted in 2024, Gonzales' trial is a pivotal moment in the ongoing examination of law enforcement's actions during the tragic incident.
 
 KVUE is providing extensive live coverage of the trial, from jury selection to potential sentencing, with Senior Investigative Reporter Tanya Eiserer leading the reporting. The trial is being closely watched, especially as it follows the indictment of Uvalde school police Chief Pete Arredondo, who faces similar charges but has not yet been scheduled for trial.
 

@@ -23,5 +23,5 @@
 ## Notes
 
 - Salado is a village with Board of Aldermen (6 elected positions including Mayor)
-- Mayor position is currently vacant
+- Mayor position is currently running for vacant
 - Regular meetings on 1st and 3rd Thursdays

@@ -101,6 +101,14 @@ layout: candidates-root
                     Executive summary
                 </h2>
                 {{ page.profile_summary | markdownify }}
+                {% endif %} {% if page.office_timeline and page.office_timeline
+                != "" %}
+                <h2 class="profile-content__section-title">
+                    Public service timeline
+                </h2>
+                <div class="profile-office-timeline">
+                    {{ page.office_timeline | markdownify }}
+                </div>
                 {% endif %}
             </article>
 

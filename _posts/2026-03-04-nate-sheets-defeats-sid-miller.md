@@ -34,7 +34,7 @@ Sheets served for six years in the U.S. Naval Reserve before graduating from Tex
 
 Miller was first elected in 2014. His three terms have been littered with scandals. In his first term in office, he was investigated by the Texas Rangers and fined by the Texas Ethics Commission after allegations surfaced that he was using public dollars for personal travel, including one trip to receive a pain injection called the “Jesus shot.” He paid back the money, and he was never charged with a crime.
 
-During his second term, his longtime political consultant, Todd Smith, was indicted for commercial bribery and theft for trying to sell hemp licenses regulated by Miller’s agency.&nbsp; After Smith pleaded guilty to commercial bribery, Miller installed him as chief of staff at the Department of Agriculture, where he is currently the second-highest-paid employee in the 755-person agency.
+During his second term, his longtime political consultant, Todd Smith, was indicted for commercial bribery and theft for trying to sell hemp licenses regulated by Miller’s agency.&nbsp; After Smith pleaded guilty to commercial bribery, Miller installed him as chief of staff at the Department of Agriculture, where he is currently running for the second-highest-paid employee in the 755-person agency.
 
 Last year, The Texas Tribune reported that a former friend of Miller’s told law enforcement that he was asked by the agriculture commissioner to dispose of marijuana products because he feared he was being investigated by the Drug Enforcement Administration.
 
