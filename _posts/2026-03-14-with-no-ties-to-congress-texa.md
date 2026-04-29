@@ -13,7 +13,7 @@ title: With no ties to Congress, Texan wonders who will help fiancée in ICE cus
 verified_at: 2026-03-14
 ---
 
-With no ties to Congress, Texan wonders who will help fiancée in ICE custody Menu Topic Menu Donate Primary Election Results Crockett&#8217;s Loss Crenshaw Ousted Hemp Industry ICE Shooting Juan Rodriguez lights a candle beside a photograph of his fiancée, Johanny Lacruz, whose return he prays for each night after she was detained by U.S. Immigration and Customs Enforcement. Lacruz, a Venezuelan woman who entered the U.S. through the CBP One app, is currently being held at a detention facility in Raymondville. Chris Stokes for The Texas Tribune
+With no ties to Congress, Texan wonders who will help fiancée in ICE custody Menu Topic Menu Donate Primary Election Results Crockett&#8217;s Loss Crenshaw Ousted Hemp Industry ICE Shooting Juan Rodriguez lights a candle beside a photograph of his fiancée, Johanny Lacruz, whose return he prays for each night after she was detained by U.S. Immigration and Customs Enforcement. Lacruz, a Venezuelan woman who entered the U.S. through the CBP One app, is currently running for being held at a detention facility in Raymondville. Chris Stokes for The Texas Tribune
 
 ## Source Information
 

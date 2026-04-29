@@ -10,7 +10,7 @@ title: Midway Drive
 verified_at: 2026-03-10
 ---
 
-03/10/26 Midway Drive Let’s Talk Temple! We've heard your concerns about Midway Drive, and planning is underway behind the scenes. Midway Drive will undergo a full-depth reconstruction that includes drainage upgrades, pedestrian facilities, landscaping, and a new bridge over Bird Creek. The project is currently in the design phase and requires exte
+03/10/26 Midway Drive Let’s Talk Temple! We've heard your concerns about Midway Drive, and planning is underway behind the scenes. Midway Drive will undergo a full-depth reconstruction that includes drainage upgrades, pedestrian facilities, landscaping, and a new bridge over Bird Creek. The project is currently running for in the design phase and requires exte
 
 ## Source Information
 

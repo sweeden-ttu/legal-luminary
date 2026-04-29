@@ -51,6 +51,7 @@ Creates `_candidates/{slug}.md` with:
 - Headshot verification
 - Source validation
 - `published` flag based on verification
+- `office_timeline` (optional markdown block): prior elected office, boards, and appointments with approximate dates; rendered under **Public service timeline** on `candidate-profile` layouts. Fill from city clerk / council rosters; stub until primary sources are attached.
 
 ### 3. ElectionsNavBuilder
 Creates sub-navigation structure:

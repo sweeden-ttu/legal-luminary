@@ -572,6 +572,53 @@
     color: #1d4ed8;
 }
 
+.profile-content__section-title {
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: var(--c-navy);
+    margin: 1.75rem 0 0.65rem;
+    letter-spacing: -0.01em;
+}
+.profile-content__section-title:first-child {
+    margin-top: 0;
+}
+
+.profile-office-timeline {
+    margin-top: 0.25rem;
+    padding: 0 0 0.5rem;
+    border-left: 3px solid var(--c-gold);
+    padding-left: 1.1rem;
+}
+.profile-office-timeline p {
+    margin: 0.4rem 0 0.75rem;
+}
+.profile-office-timeline ul,
+.profile-office-timeline ol {
+    margin: 0.35rem 0 0.85rem;
+    padding-left: 1.15rem;
+}
+.profile-office-timeline li {
+    margin: 0.25rem 0;
+}
+.profile-office-timeline table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.92rem;
+    margin: 0.5rem 0 1rem;
+}
+.profile-office-timeline th,
+.profile-office-timeline td {
+    border: 1px solid var(--c-border);
+    padding: 0.45rem 0.6rem;
+    text-align: left;
+    vertical-align: top;
+}
+.profile-office-timeline th {
+    background: var(--c-bg);
+    font-weight: 700;
+    color: var(--c-navy);
+}
+
 /* Sidebar */
 .profile-sidebar {
     position: sticky;
