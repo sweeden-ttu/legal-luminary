@@ -11,5 +11,9 @@ headshot: "/assets/imgs/candidates/texas/killeen/c_cochran/headshot.png"
 thumbnail: "/assets/imgs/candidates/texas/killeen/c_cochran/thumbnail.png"
 profile_summary: |
   Camron Cochran
+office_timeline: |
+  **Public service timeline** — Document prior elected office, boards, and appointments (role, body, dates). Prefer city clerk filings, council minutes, or campaign finance disclosures.
+
+
 ---
 
