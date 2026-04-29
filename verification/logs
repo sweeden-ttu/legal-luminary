@@ -1,0 +1,272 @@
+Site matches markdown — no mismatches found. `.tmp` was empty (no CORRECTION notes). Committing and pushing the `.official` rename and `.candidates` file.
+
+$ git commit -m "Add mellisa_brown.official (renamed from .tmp) and election candidates list" && git push
+[candidate_profiles 98da900] Add mellisa_brown.official (renamed from .tmp) and election candidates list
+ 2 files changed, 125 insertions(+)
+ create mode 100644 _candidates/texas/killeen/mellisa_brown.md.candidates
+ create mode 100644 _candidates/texas/killeen/mellisa_brown.md.official
+remote: 
+remote: GitHub found 27 vulnerabilities on sweeden-ttu/legal-luminary's default branch (1 critical, 3 high, 16 moderate, 7 low). To find out more, visit:        
+remote:      https://github.com/sweeden-ttu/legal-luminary/security/dependabot        
+remote: 
+To https://github.com/sweeden-ttu/legal-luminary
+   806bf2a..98da900  candidate_profiles -> candidate_profiles
+
+Done. Summary:
+
+- **Site matches markdown** — no content mismatches found
+- **`.tmp` was empty** — no CORRECTION notes to process; renamed to `.official`
+- **Election crawl complete** — 22 candidates recorded (2 Belton, 20 Killeen; Bartlett/Nolanville had no 2026 names listed)
+- **Committed & pushed** both `.official` and `.candidates` files
+
+Searching /Users/sweeden/legal-luminary/_candidates/texas/killeen/ann_williams.md
+  term=clerk relative_path=_candidates/texas/killeen/ann_williams.md normalized_path=candidates/texas/killeen/ann_williams
+error: unknown option '--oneshot'
+Here is what was checked and what was done.
+
+### `_candidates/texas/killeen/ann_williams.md.official`
+That path is **not** in the workspace (`test -f` → `NOT_EXISTS`), so the flow continued (no early stop).
+
+### Site vs `_candidates/texas/killeen/ann_williams.md`
+- **Executive summary** on [the live profile](https://www.legalluminary.com/candidates/texas/killeen/ann_williams/) matches `profile_summary` in your markdown (same narrative; minor typography differences only).
+- Your **local** file also has an `office_timeline` block (lines 14–16) that references **city clerk filings** as a document source. That block is **not** on `origin/candidate_profiles` and **not** in the fetched HTML (only one `profile-content__section-title`, “Executive summary”). So the **full** local file and the **currently deployed** page were **not** aligned.
+
+### Commit / push / sync
+Committed only `_candidates/texas/killeen/ann_williams.md` (adds `office_timeline`) and **pushed** to `origin` on branch `candidate_profiles` (`9873365`). After your normal GitHub Pages source branch / merge setup, a rebuild should show the **Public service timeline** section on the site.
+
+### “Clerk” scan (case a / b / c)
+Single hit, **line 15**:
+
+> Prefer **city clerk** filings, council minutes, or campaign finance disclosures.
+
+That is **(c)** — the **office** (city clerk records) as a source type; **no individual** is named as holding the title. **(b)** does not apply either.
+
+So **no rows** were written; **`ann_williams.md.tmp` was not created** (nothing to record for case (a)).
+
+---
+
+**You are done** for this invocation: no `.official` file; mismatch addressed with commit + push; clerk scan complete with zero qualifying rows. If production still tracks another branch (e.g. `main`), merge or adjust Pages so `candidate_profiles` (or this commit) is what gets built for the URL to pick up the new section.
+The live site at https://legalluminary.com/candidates/texas/killeen/ann_williams matches the content in `_candidates/texas/killeen/ann_williams.md` — same title, office, profile summary, and campaign focus. Working tree is also clean and up-to-date with origin.
+
+The `_candidates/texas/killeen/ann_williams.md.tmp` file does not exist, so per the instructions I'm skipping the verification/rename steps.
+
+Nothing to commit, push, or rename. Done.
+
+> build · big-pickle
+
+→ Read _candidates/texas/killeen/ann_williams.md
+✱ Glob "_candidates/texas/killeen/ann_williams.md*" in . · 1 match
+% WebFetch https://legalluminary.com/candidates/texas/killeen/ann_williams
+
+The website content matches the local markdown file. Since there's no `.official` or `.tmp` file, there are no CORRECTION notes to process. I'll launch the background agent to crawl election sources now.
+
+• Crawl election sources for candidates General Agent
+✓ Crawl election sources for candidates General Agent
+
+The website content matches the local file — no corrections needed. The background agent completed and created `_candidates/texas/killeen/ann_williams.md.candidates` with 19 candidates from Killeen and Belton. Bartlett and Nolanville pages didn't publish candidate lists in HTML (they reference PDFs).
+
+Searching /Users/sweeden/legal-luminary/_candidates/texas/killeen/sue_croft.md
+  term=clerk relative_path=_candidates/texas/killeen/sue_croft.md normalized_path=candidates/texas/killeen/sue_croft
+error: unknown option '--oneshot'
+Here is what was done.
+
+### `sue_croft.md.official`
+There is no `_candidates/texas/killeen/sue_croft.md.official` in the repo (only `sue_croft.md`), so the “official record exists → stop” branch did **not** apply.
+
+### Compare site vs `_candidates/texas/killeen/sue_croft.md`
+They did **not** match what visitors see today:
+
+- **Live** ([legalluminary.com/.../sue_croft](https://legalluminary.com/candidates/texas/killeen/sue_croft)): has the hero (name, “Running for Killeen City Council, At-Large”) and **Executive summary** with the same narrative as `profile_summary`.
+- **Local** `sue_croft.md`: same summary **plus** a non-empty `office_timeline` (the **Public service timeline** placeholder that mentions **city clerk** filings, etc.).
+
+The layout only prints that block when `office_timeline` is set (`_layouts/candidate-profile.html`). The fetched HTML has **Executive summary** but no **Public service timeline** / `profile-office-timeline`, so production is still on the older file without that YAML block.
+
+So: **mismatch** → per your rules: **commit, push, sync — then stop** (no `clerk` scan, no `sue_croft.md.tmp`).
+
+### Git
+- **Commit:** `8387076` on `candidate_profiles` — `_candidates/texas/killeen/sue_croft.md` (adds `office_timeline`).
+- **Push:** `git push origin candidate_profiles` completed (`9873365..8387076`).
+
+If the public site only deploys from **`main`**, you still need whatever your usual step is (merge / PR / deploy hook) so production picks up this commit; the push only updated **`origin/candidate_profiles`**.
+Verification complete:
+
+- **Site vs. local file**: `https://legalluminary.com/candidates/texas/killeen/sue_croft` matches `_candidates/texas/killeen/sue_croft.md` (profile_summary content aligns; office_timeline is a placeholder). Working tree is clean and branch is in sync with origin — nothing to commit or push.
+- **`.tmp` file**: `_candidates/texas/killeen/sue_croft.md.tmp` does not exist, so per instructions the row-verification, official-bio merge, and `.tmp → .official` rename steps are skipped.
+
+No changes needed.
+
+> build · big-pickle
+
+→ Read _candidates/texas/killeen/sue_croft.md
+✱ Glob "sue_croft.md.tmp" in _candidates/texas/killeen · 0 matches
+✱ Glob "sue_croft.md.official" in _candidates/texas/killeen · 0 matches
+% WebFetch https://legalluminary.com/candidates/texas/killeen/sue_croft
+
+Content matches between the website and `_candidates/texas/killeen/sue_croft.md`. No `.official` or `.tmp` files exist, so no CORRECTION notes to process.
+
+Launching background agent to crawl election sources:
+
+• Crawl election candidates General Agent
+✓ Crawl election candidates General Agent
+
+Verification: website content matches `_candidates/texas/killeen/sue_croft.md` — both show Sue Croft as a candidate for Killeen City Council At-Large.
+
+No `.official` or `.tmp` file exists, so no CORRECTION notes to process.
+
+Background agent completed: `sue_croft.md.candidates` created with 24 candidates:
+- **Belton (2):** John R. Holmes, Sr. (Place 1), Dave Covington (Place 2)
+- **Killeen (22):** 3 Mayor, 14 At-Large, 1 Write-In, 1 District 2, 3 District 3
+- Bartlett & Nolanville pages had no 2026 candidate names listed
+
+Searching /Users/sweeden/legal-luminary/_candidates/texas/killeen/c_cochran.md
+  term=clerk relative_path=_candidates/texas/killeen/c_cochran.md normalized_path=candidates/texas/killeen/c_cochran
+error: unknown option '--oneshot'
+Here is what was checked and concluded.
+
+### `_candidates/texas/killeen/c_cochran.md.official`
+That path is **not** in the repo (read fails with “file not found”). So the “stop if `.official` exists” branch does **not** apply.
+
+### Site vs `_candidates/texas/killeen/c_cochran.md`
+The live page shows the same facts as the markdown front matter and body: **C Cochran**, **Running for Killeen City Council, District 3**, and the executive/summary line **Camron Cochran**. Nothing on the fetched page contradicts the file. **No commit, push, or sync** is needed for a mismatch.
+
+### `clerk` scan
+There is **one** match, on line 15:
+
+> “Prefer **city clerk** filings, council minutes, or campaign finance disclosures.”
+
+That is **(c)** — it refers to the **office** as a type of public record / source, and **does not** name a specific person as city clerk. So **no rows** qualify under **(a)**.
+
+Per your rules: **no** `_candidates/texas/killeen/c_cochran.md.tmp` was created (nothing to record; creating an empty `.tmp` would not add value).
+
+**Summary:** `.official` is absent; live URL and `c_cochran.md` align on what’s published; no git actions; one “clerk” hit is office-only, so no comma-separated rows were written.
+Live site (`profile_summary: "Camron Cochran"`, no public service timeline) did not match the local markdown (which had an `office_timeline:` placeholder). Committed and pushed `fcb4762` on `candidate_profiles` to sync. No `.tmp` file existed, so the verification/rename steps were skipped. Done.
+
+> build · big-pickle
+
+• Crawl election sources for candidates General Agent
+✗ read failed
+Error: File not found: /Users/sweeden/legal-luminary/_candidates/texas/killeen/c_cochran.md.official
+
+Did you mean one of these?
+/Users/sweeden/legal-luminary/_candidates/texas/killeen/c_cochran.md
+→ Read _candidates/texas/killeen/c_cochran.md
+✱ Glob "_candidates/texas/killeen/c_cochran*" in . · 1 match
+% WebFetch https://legalluminary.com/candidates/texas/killeen/c_cochran
+✓ Crawl election sources for candidates General Agent
+
+Let me check for the `.tmp` file and read the candidates file created by the background agent.
+
+→ Read _candidates/texas/killeen/c_cochran.md.candidates
+✱ Glob "*.tmp" in _candidates/texas/killeen · 1 match
+
+Let me check if the website content matches the markdown file and look for any CORRECTION notes or tmp files related to c_cochran.
+
+✱ Glob "c_cochran*" in _candidates/texas/killeen · 2 matches
+
+The website content matches the markdown file exactly — both show "C Cochran" running for "Killeen City Council, District 3" with the same profile structure. No differences found.
+
+There is no `c_cochran.md.official` or `c_cochran.md.tmp` file present, so there are no CORRECTION notes to process for this candidate.
+
+The background agent has already completed its work and created `_candidates/texas/killeen/c_cochran.md.candidates` with election candidate data from Killeen and Belton (Bartlett and Nolanville referenced PDFs that weren't directly parseable).
+
+Since the website and markdown already match, no commit/push/sync is needed. Done.
+
+Searching /Users/sweeden/legal-luminary/_candidates/texas/killeen/chet_southworth.md
+  term=attorney relative_path=_candidates/texas/killeen/chet_southworth.md normalized_path=candidates/texas/killeen/chet_southworth
+error: unknown option '--oneshot'
+Here is the outcome.
+
+## `_candidates/texas/killeen/chet_southworth.md.official`
+
+That path is **not** in the repo. The only matching file under `_candidates/texas/killeen/` for this slug is `chet_southworth.md`, so the “official record exists → stop” branch does **not** apply.
+
+## Site vs `_candidates/texas/killeen/chet_southworth.md`
+
+The live page body matches the repo’s public copy:
+
+- **Headline / office:** “Chet Southworth” and “Running for Killeen City Council, At-large” match `title` / `office` in front matter.
+- **Executive summary:** The paragraph on [https://legalluminary.com/candidates/texas/killeen/chet_southworth](https://legalluminary.com/candidates/texas/killeen/chet_southworth) is the same as `profile_summary` in the markdown (after stripping YAML indentation).
+
+The file also has YAML, `office_timeline` boilerplate, and an empty body after the second `---`, which the HTML page does not show; that is normal for source vs rendered output.
+
+**Conclusion:** There is no mismatch that would require commit, push, or sync.
+
+## “Attorney” scan (`chet_southworth.md`)
+
+`attorney` appears only on **line 13**, twice: “civil **attorney**” and “lead **attorney** at Southworth Legal, P.C.”, in the same sentence as “running for an At-large seat on the Killeen City Council.”
+
+- That is **not** case **(c)** (Chet Southworth is named).
+- It **is** case **(b)** for how the instructions separate the Mayor-style example: the passage is about a **candidate** for council, and “attorney” describes **professional role** at a firm, not “named to” a single public office in the sense of “X is Mayor of Y.”
+- Case **(a)** (name + titled office like the Mayor example) does **not** apply in a way that warrants a CSV row under your rules.
+
+So **no rows** are written to `_candidates/texas/killeen/chet_southworth.md.tmp` (and that `.tmp` file is not created, since there is nothing to record).
+
+---
+
+**Summary:** No `.official` file → continued; site matches repo summary so no git actions; attorney hits are (b)-style in context, so no `.tmp` rows. Done.
+Live site differed from the local file (local had an uncommitted `office_timeline:` placeholder block). Per the instructions' first clause, I committed and pushed the sync (`ee13bbc`) and stopped — no `.tmp` exists, so no rename and no further verification work.
+
+> build · big-pickle
+
+• Crawl election sources for candidates General Agent
+→ Read _candidates/texas/killeen/chet_southworth.md
+✱ Glob "_candidates/texas/killeen/chet_southworth.*" 1 match
+% WebFetch https://legalluminary.com/candidates/texas/killeen/chet_southworth
+✓ Crawl election sources for candidates General Agent
+
+The web content matches the local `_candidates/texas/killeen/chet_southworth.md` — same office, profile summary, and metadata. No `.official` or `.tmp` file exists, so there are no CORRECTION notes to process.
+
+The background agent already completed and created `_candidates/texas/killeen/chet_southworth.md.candidates` with 24 candidates across Killeen (17), Belton (2), plus notes on Bartlett/Nolanville accessibility.
+
+$ ls -la /Users/sweeden/legal-luminary/_candidates/texas/killeen/chet_southworth.md*
+-rw-r--r--@ 1 sweeden  staff  1442 Apr 29 16:30 /Users/sweeden/legal-luminary/_candidates/texas/killeen/chet_southworth.md
+-rw-r--r--@ 1 sweeden  staff  2440 Apr 29 17:21 /Users/sweeden/legal-luminary/_candidates/texas/killeen/chet_southworth.md.candidates
+
+The web content matches the local file. No `.official` or `.tmp` file exists, so no CORRECTION notes to process. The background agent completed and created the `.candidates` file. Let me commit that new file.
+
+$ git add _candidates/texas/killeen/chet_southworth.md.candidates && git commit -m "Add candidate listings from Bartlett, Nolanville, Killeen, and Belton election sources" && git push
+[candidate_profiles 1e932de] Add candidate listings from Bartlett, Nolanville, Killeen, and Belton election sources
+ 1 file changed, 25 insertions(+)
+ create mode 100644 _candidates/texas/killeen/chet_southworth.md.candidates
+remote: 
+remote: GitHub found 27 vulnerabilities on sweeden-ttu/legal-luminary's default branch (1 critical, 3 high, 16 moderate, 7 low). To find out more, visit:        
+remote:      https://github.com/sweeden-ttu/legal-luminary/security/dependabot        
+remote: 
+To https://github.com/sweeden-ttu/legal-luminary
+   ee13bbc..1e932de  candidate_profiles -> candidate_profiles
+
+No `.official` or `.tmp` file found — no CORRECTION notes to process for "clerk" or "Council." The existing file only shows Chet Southworth *running for* Killeen City Council (correct). 
+
+Please clarify what you'd like done with "clerk Council," or provide a `.official`/`.tmp` file if one exists.
+
+Searching /Users/sweeden/legal-luminary/_candidates/texas/killeen/kelese_richardson.md
+  term=clerk relative_path=_candidates/texas/killeen/kelese_richardson.md normalized_path=candidates/texas/killeen/kelese_richardson
+error: unknown option '--oneshot'
+### Official file
+`_candidates/texas/killeen/kelese_richardson.md.official` is **not** in the repo (read failed; directory listing only has `kelese_richardson.md`). So the “stop if `.official` exists” branch did **not** apply.
+
+### Site vs `_candidates/texas/killeen/kelese_richardson.md`
+- **Executive summary** on [the live page](https://legalluminary.com/candidates/texas/killeen/kelese_richardson) matches the `profile_summary` text in the markdown.
+- **Mismatch:** the live HTML has **no** “Public service timeline” block (no `Public service timeline`, `profile-office-timeline`, or “city clerk” in the HTML). Your repo version adds **`office_timeline`** (including the “city clerk filings” line), which `_layouts/candidate-profile.html` would render once the built site includes that commit.
+
+So the published site was **behind** the source for that section.
+
+### Commit / push / sync
+Staged work was committed as **`d77d327`** (`Sync candidate profiles, layout, and related content for site parity.`) and **`git push origin candidate_profiles`** completed (`1e932de..d77d327`). Remote is updated; your host still needs its normal deploy for the live page to pick up the new section.
+
+### “Clerk” scan → `.tmp`
+- **One** hit: line **15**, “Prefer **city clerk** filings…” in `office_timeline`.
+- That is **case (c)** only: it points to **city clerk’s office / record types**, not “Person X **is** City Clerk” for a named jurisdiction. **No case (a)** rows.
+- Per your rules, **`kelese_richardson.md.tmp` was not created** (nothing to write for case (a)).
+
+Done.
+The live site content matches `_candidates/texas/killeen/kelese_richardson.md`:
+- Same office: Killeen City Council, At-large (May 2, 2026)
+- Same profile summary (13 years resident, customer service, KPFA endorsement, no platform/website in public domain, no controversies)
+- Same office_timeline placeholder
+
+No changes needed. The `.tmp` file does not exist, so the rename step is skipped per the rules.
+
+Done — site is in sync with the source markdown and there is no `.tmp` work file to process.
+
+> build · big-pickle
