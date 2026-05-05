@@ -1,0 +1,129 @@
+mayor:
+- name: Jose Segarra
+  total: 1739
+  vote_percent: 38.39%
+  absentee: 183
+  early_voting: 1033
+  election_day: 523
+- name: Riakos "Rock" Adams
+  total: 934
+  vote_percent: 20.62%
+  absentee: 87
+  early_voting: 538
+  election_day: 309
+- name: Joseph Solomon
+  total: 1857
+  vote_percent: 40.99%
+  absentee: 106
+  early_voting: 1233
+  election_day: 518
+council_at_large:
+- name: Kelese Richardson
+  total: 819
+  vote_percent: 7.54%
+  absentee: 43
+  early_voting: 559
+  election_day: 217
+- name: Beverly Ann Williams
+  total: 1018
+  vote_percent: 9.37%
+  absentee: 75
+  early_voting: 632
+  election_day: 311
+- name: Christy Wilbanks
+  total: 659
+  vote_percent: 6.06%
+  absentee: 48
+  early_voting: 395
+  election_day: 216
+- name: Sue "Neesy" Croft
+  total: 494
+  vote_percent: 4.54%
+  absentee: 40
+  early_voting: 310
+  election_day: 144
+- name: Chet Southworth
+  total: 430
+  vote_percent: 3.96%
+  absentee: 46
+  early_voting: 249
+  election_day: 135
+- name: Delsina West
+  total: 788
+  vote_percent: 7.25%
+  absentee: 49
+  early_voting: 539
+  election_day: 200
+- name: Olayinka Adelusi
+  total: 946
+  vote_percent: 8.70%
+  absentee: 25
+  early_voting: 610
+  election_day: 311
+- name: Shavonn Hull
+  total: 276
+  vote_percent: 2.54%
+  absentee: 8
+  early_voting: 164
+  election_day: 104
+- name: Myrna Malic-Banzon
+  total: 242
+  vote_percent: 2.23%
+  absentee: 18
+  early_voting: 123
+  election_day: 101
+- name: John "Crow" Miller
+  total: 520
+  vote_percent: 4.78%
+  absentee: 61
+  early_voting: 315
+  election_day: 144
+- name: Dominic Quoc Vo
+  total: 301
+  vote_percent: 2.77%
+  absentee: 17
+  early_voting: 173
+  election_day: 111
+- name: Mellisa Brown
+  total: 1122
+  vote_percent: 10.32%
+  absentee: 80
+  early_voting: 660
+  election_day: 382
+- name: Nicholas Guajardo
+  total: 755
+  vote_percent: 6.95%
+  absentee: 52
+  early_voting: 439
+  election_day: 264
+- name: Debbie Nash-King
+  total: 2478
+  vote_percent: 22.80%
+  absentee: 204
+  early_voting: 1599
+  election_day: 675
+- name: 'Write-In: Macaire "Mac" Morrissey'
+  total: 2
+  vote_percent: 0.02%
+  absentee: 0
+  early_voting: 2
+  election_day: 0
+council_dist_3:
+- name: C. Cochran
+  total: 311
+  vote_percent: 28.14%
+  absentee: 33
+  early_voting: 190
+  election_day: 88
+- name: David Bass
+  total: 572
+  vote_percent: 51.76%
+  absentee: 47
+  early_voting: 370
+  election_day: 155
+- name: Terry Mustapher
+  total: 222
+  vote_percent: 20.09%
+  absentee: 29
+  early_voting: 119
+  election_day: 74

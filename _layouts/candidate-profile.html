@@ -101,7 +101,23 @@ layout: candidates-root
                     Executive summary
                 </h2>
                 {{ page.profile_summary | markdownify }}
-                {% endif %} {% if page.office_timeline and page.office_timeline
+                {% endif %}
+                {% if page.election_results_2026 %}
+                <h2 class="profile-content__section-title">
+                    May 2, 2026 Election Results
+                </h2>
+                <div class="profile-office-timeline">
+                    <ul>
+                        <li><strong>Total Votes:</strong> {{ page.election_results_2026.total }}</li>
+                        <li><strong>Vote Percentage:</strong> {{ page.election_results_2026.vote_percent }}</li>
+                        <li><strong>Absentee:</strong> {{ page.election_results_2026.absentee }}</li>
+                        <li><strong>Early Voting:</strong> {{ page.election_results_2026.early_voting }}</li>
+                        <li><strong>Election Day:</strong> {{ page.election_results_2026.election_day }}</li>
+                    </ul>
+                </div>
+                {% endif %}
+
+                {% if page.office_timeline and page.office_timeline
                 != "" %}
                 <h2 class="profile-content__section-title">
                     Public service timeline
