@@ -7,11 +7,12 @@
 # Site Settings
 title: "Legal Luminary of Central Texas - News, Courts, Politics, and more"
 logo: /assets/imgs/legal-luminary-research-tool.svg
-description: "Your trusted guide to Texas and Bell County law - Defense & Personal Injury information"
+description: "Bell County 2026 judicial elections, Justice of the Peace races, judge profiles, and personal injury resources for Central Texas"
 tagline: "Information • Guidance • Justice"
 author: "Central Texas Legal Resource"
 email: "notary@legalluminary.com"
 lang: en-US
+asset_version: "20260530"
 
 # URL Configuration
 # For GitHub Pages project site (username.github.io/repo-name):
@@ -44,24 +45,24 @@ plugins:
 
 # Site Navigation
 navigation:
-  - title: Home
+  - title: Elections 2026
     url: /
-  - title: Fort Hood
-    url: /fort-cavazos/
-  - title: Texas Law
-    url: /texas-law/
-  - title: Bell County
-    url: /bell-county/
-  - title: Election 2026
+  - title: Justice of the Peace
+    url: /#jp-matchups
+  - title: Judge Profiles
+    url: /#judge-profiles
+  - title: Personal Injury
+    url: /personal-injury/
+  - title: Municipal Candidates
     url: /candidates/
   - title: Court Directory
     url: /court-directory/
-  - title: Defense Attorneys
-    url: /defense/
-  - title: Personal Injury
-    url: /personal-injury/
+  - title: Legal News
+    url: /legal-news/
+  - title: Bell County
+    url: /bell-county/
   - title: About
-    url: /artificial-intelligence/
+    url: /about-legal-luminary/
 
 # Service Area Information
 service_area:

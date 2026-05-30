@@ -1,0 +1,278 @@
+/* Home — judicial elections & judge profiles */
+.home-judicial {
+    background: var(--c-bg, #f1f5f9);
+}
+
+.home-hero .home-hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+.home-hero .btn {
+    font-size: 0.95rem;
+}
+
+.home-section {
+    padding: 3rem 1.5rem;
+}
+
+.home-section--profiles {
+    background: #fff;
+}
+
+.home-section--injury {
+    background: linear-gradient(180deg, #f8fafc 0%, var(--c-bg, #f1f5f9) 100%);
+}
+
+.home-section__inner {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.home-section__header {
+    margin-bottom: 1.75rem;
+    max-width: 720px;
+}
+
+.home-section__header--row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 1rem;
+    max-width: none;
+}
+
+.home-section__header h2 {
+    margin-bottom: 0.35rem;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.home-section__footnote {
+    margin-top: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.home-matchups-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: var(--radius-card, 14px);
+    overflow: hidden;
+    box-shadow: var(--shadow-card);
+}
+
+.home-matchups-table th,
+.home-matchups-table td {
+    padding: 0.85rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--c-border, #e2e8f0);
+}
+
+.home-matchups-table thead th {
+    background: var(--c-navy, #0f2044);
+    color: #fff;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.home-matchups-table tr.is-contested {
+    background: rgba(200, 151, 42, 0.06);
+}
+
+.matchup-incumbent {
+    color: var(--c-muted, #64748b);
+    font-size: 0.85em;
+}
+
+.home-profiles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.25rem;
+}
+
+.home-profile-card {
+    background: #fff;
+    border-radius: var(--radius-card, 14px);
+    box-shadow: var(--shadow-card);
+    overflow: hidden;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.home-profile-card:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-2px);
+}
+
+.home-profile-card__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+}
+
+.home-profile-card__photo-wrap {
+    position: relative;
+    aspect-ratio: 4 / 3;
+    background: linear-gradient(135deg, #1a3a6e, #0f2044);
+}
+
+.home-profile-card__photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home-profile-card__photo.is-broken {
+    display: none;
+}
+
+.home-profile-card__initial {
+    display: none;
+    place-items: center;
+    position: absolute;
+    inset: 0;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--c-gold-l, #f5d87a);
+    font-family: 'Cinzel', serif;
+}
+
+.home-profile-card__body {
+    padding: 1rem 1.1rem 1.25rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-profile-card__badge {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--c-gold, #c8972a);
+    margin-bottom: 0.5rem;
+}
+
+.home-profile-card__badge--muted {
+    color: var(--c-muted, #64748b);
+}
+
+.home-profile-card__name {
+    font-size: 1.1rem;
+    margin: 0 0 0.25rem;
+    border: none;
+    padding: 0;
+}
+
+.home-profile-card__office {
+    font-size: 0.85rem;
+    color: var(--c-muted, #64748b);
+    margin: 0 0 0.5rem;
+}
+
+.home-profile-card__teaser {
+    font-size: 0.9rem;
+    margin: 0 0 0.75rem;
+    flex: 1;
+}
+
+.home-profile-card__cta {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--c-navy, #0f2044);
+}
+
+.home-injury-panel {
+    display: grid;
+    grid-template-columns: 1fr minmax(260px, 340px);
+    gap: 2rem;
+    align-items: start;
+}
+
+.home-injury-panel__featured {
+    background: #fff;
+    border-radius: var(--radius-card, 14px);
+    padding: 1.25rem 1.5rem;
+    box-shadow: var(--shadow-card);
+    border-left: 4px solid var(--c-gold, #c8972a);
+}
+
+.home-injury-panel__ad-label {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--c-muted, #64748b);
+    margin: 0 0 0.5rem;
+}
+
+.home-injury-panel__title {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.home-injury-panel__disclaimer {
+    font-size: 0.8rem;
+    color: var(--c-muted, #64748b);
+    margin-top: 0.75rem;
+    margin-bottom: 0;
+}
+
+.home-news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.25rem;
+}
+
+.home-news-card {
+    background: #fff;
+    border-radius: var(--radius-card, 14px);
+    padding: 1.25rem;
+    box-shadow: var(--shadow-card);
+}
+
+.home-news-card__date {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--c-muted, #64748b);
+    margin-bottom: 0.35rem;
+}
+
+.home-news-card__title {
+    font-size: 1.05rem;
+    margin: 0 0 0.5rem;
+    border: none;
+    padding: 0;
+}
+
+.home-news-card__title a {
+    color: var(--c-navy, #0f2044);
+}
+
+.home-news-card__excerpt {
+    font-size: 0.9rem;
+    margin: 0 0 0.75rem;
+}
+
+.home-news-card__link {
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .home-injury-panel {
+        grid-template-columns: 1fr;
+    }
+
+    .home-section__header--row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

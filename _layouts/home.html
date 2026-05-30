@@ -1,0 +1,164 @@
+---
+layout: candidates-root
+full_width: true
+extra_stylesheets:
+  - /assets/css/candidates-elections.css
+  - /assets/css/home-judicial.css
+---
+
+{% assign j = site.data.judicial_home %}
+{% assign injury = site.attorneys.injury %}
+
+<div class="home-judicial">
+  <section class="elections-hero home-hero" aria-labelledby="home-title">
+    <div class="elections-hero__inner">
+      <div class="elections-hero__eyebrow">
+        Bell County, Texas · General Election {{ j.election_day }}
+      </div>
+      <h1 class="elections-hero__title" id="home-title">{{ page.title | escape }}</h1>
+      <p class="elections-hero__subtitle">
+        Justice of the Peace races, verified judicial profiles, and personal injury resources for Killeen, Temple, and Central Texas voters.
+      </p>
+      <div class="home-hero__actions">
+        <a href="#jp-matchups" class="btn btn-primary">JP Matchups</a>
+        <a href="#judge-profiles" class="btn btn-secondary">Judge Profiles</a>
+        <a href="{{ '/personal-injury/' | relative_url }}" class="btn btn-secondary">Personal Injury</a>
+        <a href="{{ '/candidates/' | relative_url }}" class="btn btn-secondary">All Candidates</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-section" id="jp-matchups" aria-labelledby="matchups-heading">
+    <div class="home-section__inner">
+      <header class="home-section__header">
+        <h2 id="matchups-heading">2026 Central Texas Judicial Matchups</h2>
+        <p class="intro-text">
+          Following the primary runoff elections on {{ j.runoff_completed }}, the November {{ j.election_day | split: " " | last }} ballot is set for Bell County. The Justice of the Peace race in Killeen (Precinct 4, Place 2) is the most competitive local judicial contest; most District and County Court seats currently have unopposed Republican nominees.
+        </p>
+      </header>
+
+      <div class="table-responsive">
+        <table class="matchups-table home-matchups-table">
+          <thead>
+            <tr>
+              <th scope="col">Office</th>
+              <th scope="col">Democratic Nominee</th>
+              <th scope="col">Republican Nominee</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for row in j.matchups %}
+            <tr class="{% if row.contested %}is-contested{% endif %}">
+              <th scope="row">{{ row.office }}</th>
+              <td>
+                {% if row.democrat.name %}
+                  {% if row.democrat.url %}
+                    <a href="{{ row.democrat.url | relative_url }}">{{ row.democrat.name }}</a>
+                  {% else %}
+                    {{ row.democrat.name }}
+                  {% endif %}
+                {% else %}
+                  <em>None filed</em>
+                {% endif %}
+              </td>
+              <td>
+                {% if row.republican.name %}
+                  {% if row.republican.url %}
+                    <a href="{{ row.republican.url | relative_url }}">{{ row.republican.name }}</a>
+                    {% if row.republican.note %}<span class="matchup-incumbent">({{ row.republican.note }})</span>{% endif %}
+                  {% else %}
+                    {{ row.republican.name }}
+                  {% endif %}
+                {% else %}
+                  <em>None filed</em>
+                {% endif %}
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      <p class="home-section__footnote">
+        <a href="{{ '/news/2026/05/27/central-texas-judicial-matchups/' | relative_url }}">Read the full election analysis →</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="home-section home-section--profiles" id="judge-profiles" aria-labelledby="profiles-heading">
+    <div class="home-section__inner">
+      <header class="home-section__header">
+        <h2 id="profiles-heading">Judge &amp; Candidate Profiles</h2>
+        <p class="intro-text">
+          Academic credentials, professional depth, and public service records for the Bell County judiciary and 2026 nominees — presented without endorsement.
+        </p>
+      </header>
+
+      <div class="home-profiles-grid">
+        {% for entry in j.profiles %}
+          {% assign slug_needle = entry.profile_slug | append: '/' %}
+          {% assign cand = site.candidates | where_exp: "c", "c.url contains slug_needle" | first %}
+          {% if cand %}
+          <article class="home-profile-card home-profile-card--{{ entry.tier }}">
+            <a href="{{ cand.url | relative_url }}" class="home-profile-card__link">
+              <div class="home-profile-card__photo-wrap">
+                {% if cand.headshot %}
+                <img
+                  src="{{ cand.headshot | relative_url }}"
+                  alt="{{ cand.title | escape }}"
+                  class="home-profile-card__photo"
+                  loading="lazy"
+                  onerror="this.classList.add('is-broken'); this.nextElementSibling.style.display='grid';"
+                />
+                {% endif %}
+                <div class="home-profile-card__initial" aria-hidden="true"{% unless cand.headshot %} style="display:grid"{% endunless %}>
+                  {{ cand.title | slice: 0, 1 | upcase }}
+                </div>
+              </div>
+              <div class="home-profile-card__body">
+                {% if entry.tier == 'featured' %}
+                <span class="home-profile-card__badge">Competitive JP Race</span>
+                {% elsif entry.tier == 'jp' %}
+                <span class="home-profile-card__badge home-profile-card__badge--muted">Justice of the Peace</span>
+                {% else %}
+                <span class="home-profile-card__badge home-profile-card__badge--muted">Judiciary</span>
+                {% endif %}
+                <h3 class="home-profile-card__name">{{ cand.title }}</h3>
+                <p class="home-profile-card__office">{{ cand.office }}</p>
+                <p class="home-profile-card__teaser">{{ entry.teaser }}</p>
+                <span class="home-profile-card__cta">View full profile</span>
+              </div>
+            </a>
+          </article>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="home-section home-section--injury" aria-labelledby="injury-heading">
+    <div class="home-section__inner home-injury-panel">
+      <div class="home-injury-panel__copy">
+        <h2 id="injury-heading">Personal Injury Attorneys</h2>
+        <p class="intro-text">
+          When negligence causes injury in Bell County, Texas law provides paths to compensation — but insurers work to minimize payouts. Understand your rights and connect with counsel who practice in local courts.
+        </p>
+        <a href="{{ '/personal-injury/' | relative_url }}" class="btn btn-primary">Personal Injury Guide</a>
+      </div>
+      {% if injury %}
+      <aside class="home-injury-panel__featured" aria-label="Featured personal injury attorney">
+        <p class="home-injury-panel__ad-label">Advertisement</p>
+        <h3>{{ injury.name }}</h3>
+        <p class="home-injury-panel__title">{{ injury.title }} · {{ injury.specialty }}</p>
+        <p>{{ injury.location }}</p>
+        <p><a href="tel:{{ injury.phone | replace: '(', '' | replace: ')', '' | replace: ' ', '' | replace: '-', '' | prepend: '+1' }}">{{ injury.phone }}</a></p>
+        {% if injury.email %}
+        <p><a href="mailto:{{ injury.email }}">{{ injury.email }}</a></p>
+        {% endif %}
+        <p class="home-injury-panel__disclaimer">Licensed in Texas. Prior results do not guarantee a similar outcome.</p>
+      </aside>
+      {% endif %}
+    </div>
+  </section>
+
+  {% include home-news.html %}
+</div>

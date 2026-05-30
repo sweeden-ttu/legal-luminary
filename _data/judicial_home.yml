@@ -1,0 +1,94 @@
+election_day: "November 3, 2026"
+runoff_completed: "May 26, 2026"
+
+matchups:
+  - office: "Justice of the Peace, Precinct 4, Place 2"
+    contested: true
+    democrat:
+      name: "Jessica A. Gonzalez"
+      url: "/candidates/texas/jessica_gonzalez/"
+    republican:
+      name: "Beatrice \"Bea\" Cox"
+      url: "/candidates/texas/beatrice_cox/"
+  - office: "Justice of the Peace, Precinct 2"
+    contested: false
+    democrat:
+      name: ""
+    republican:
+      name: "Michael Tice"
+      url: "/candidates/texas/michael_tice/"
+  - office: "Bell County Judge"
+    contested: false
+    democrat:
+      name: ""
+    republican:
+      name: "David Blackburn"
+      url: "/candidates/texas/david_blackburn/"
+      note: "Incumbent"
+  - office: "169th District Court"
+    contested: false
+    democrat:
+      name: ""
+    republican:
+      name: "Paul LePak"
+      url: "/candidates/texas/paul_lepak/"
+  - office: "478th District Court"
+    contested: false
+    democrat:
+      name: ""
+    republican:
+      name: "Wade Faulkner"
+      url: "/candidates/texas/wade_faulkner/"
+      note: "Incumbent"
+  - office: "Bell County Court at Law No. 1"
+    contested: false
+    democrat:
+      name: ""
+    republican:
+      name: "Paul Motz"
+      url: "/candidates/texas/paul_motz/"
+      note: "Incumbent"
+  - office: "Bell County Court at Law No. 2"
+    contested: false
+    democrat:
+      name: ""
+    republican:
+      name: "John Mischtian"
+      url: "/candidates/texas/john_mischtian/"
+      note: "Incumbent"
+  - office: "Bell County Court at Law No. 3"
+    contested: false
+    democrat:
+      name: ""
+    republican:
+      name: "John Gauntt Jr."
+      url: "/candidates/texas/john_gauntt_jr/"
+
+profiles:
+  - profile_slug: "jessica_gonzalez"
+    tier: featured
+    teaser: "Killeen City Council veteran and Democratic nominee for Justice of the Peace, Precinct 4 Place 2."
+  - profile_slug: "beatrice_cox"
+    tier: featured
+    teaser: "35 years in Bell County courts and law enforcement; Republican nominee for the Killeen JP seat."
+  - profile_slug: "michael_tice"
+    tier: jp
+    teaser: "State Trooper and Army veteran seeking Justice of the Peace, Precinct 2."
+  - profile_slug: "david_blackburn"
+    tier: judiciary
+    teaser: "County Judge since 2019; JD from St. Mary's, former city manager for Temple and Killeen."
+  - profile_slug: "paul_lepak"
+    tier: judiciary
+    teaser: "30 years of litigation experience; Fellow of the Texas Bar Foundation."
+  - profile_slug: "wade_faulkner"
+    tier: judiciary
+    teaser: "23-year Army JAG career; incumbent judge of the 478th District Court."
+  - profile_slug: "paul_motz"
+    tier: judiciary
+    teaser: "Nearly two decades in appellate, probate, family, and criminal practice before the bench."
+  - profile_slug: "john_mischtian"
+    tier: judiciary
+    teaser: "Incumbent County Court at Law No. 2 judge serving Bell County."
+  - profile_slug: "john_gauntt_jr"
+    tier: judiciary
+    teaser: "Candidate for County Court at Law No. 3 on the 2026 general election ballot."

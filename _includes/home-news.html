@@ -1,0 +1,28 @@
+{% assign news_limit = include.limit | default: 6 %}
+<section class="home-section home-section--news" aria-labelledby="home-news-heading">
+  <div class="home-section__inner">
+    <header class="home-section__header home-section__header--row">
+      <div>
+        <h2 id="home-news-heading">Latest Legal &amp; Election News</h2>
+        <p class="intro-text">Updated coverage through the May 2026 primary runoffs and Bell County judicial ballot.</p>
+      </div>
+      <a href="{{ '/legal-news/' | relative_url }}" class="btn btn-secondary">All legal news</a>
+    </header>
+    <div class="home-news-grid">
+      {% for post in site.posts limit: news_limit %}
+      <article class="home-news-card">
+        <time class="home-news-card__date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+        <h3 class="home-news-card__title">
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </h3>
+        <p class="home-news-card__excerpt">{{ post.excerpt | default: post.content | strip_html | truncatewords: 28 }}</p>
+        <a href="{{ post.url | relative_url }}" class="home-news-card__link">Read article →</a>
+      </article>
+      {% endfor %}
+    </div>
+    <p class="home-section__footnote">
+      <a href="{{ '/archive/' | relative_url }}">Browse the full article archive</a>
+      · <a href="{{ '/about-legal-luminary/' | relative_url }}">About this site</a>
+    </p>
+  </div>
+</section>
