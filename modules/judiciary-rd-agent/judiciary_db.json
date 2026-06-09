@@ -1,0 +1,49 @@
+{
+  "officials": [
+    {
+      "title": "27th Judicial District Court",
+      "name": "Debbie Garrett",
+      "elected_date": "1/02/25",
+      "term_end": "12/31/28",
+      "re_election_year": 2028,
+      "type": "Elected Bench Judge",
+      "url": "https://www.bellcountytx.com/departments/district_courts/27th_district_court.php",
+      "headshot_url": "https://debbiegarrettforjudge.com/wp-content/uploads/2023/08/Debbie-Garrett.jpg"
+    },
+    {
+      "title": "146th Judicial District Court",
+      "name": "Mike Russell",
+      "elected_date": "1/02/25",
+      "term_end": "12/31/28",
+      "re_election_year": 2028,
+      "type": "Elected Bench Judge",
+      "url": "https://www.bellcountytx.com/departments/district_courts/146th_judicial_district_court.php"
+    },
+    {
+      "title": "County Judge",
+      "name": "David Blackburn",
+      "elected_date": "1/02/19",
+      "term_end": "12/31/26",
+      "re_election_year": 2026,
+      "type": "Elected Official (Commissioners Court)",
+      "url": "https://www.bellcountytx.com/county_government/county_judge.php"
+    }
+  ],
+  "pro_tem_and_appointed": [
+    {"title": "District Court Associate Judge", "type": "Appointed"},
+    {"title": "IV-D Associate Judge", "type": "Appointed (Child Support)"},
+    {"title": "Office of Magistrate", "type": "Appointed"}
+  ],
+  "tax_authority": {
+    "body": "Bell County Commissioners Court",
+    "quorum_required": 4,
+    "statutes": ["TX Local Govt Code Ch 81", "TX Tax Code Ch 26"],
+    "process": "Truth-in-Taxation"
+  },
+  "legal_authority": {
+    "general": "Texas Constitution, Texas Local Government Code",
+    "district_courts": "Texas Government Code Ch 24",
+    "county_courts": "Texas Government Code Ch 25",
+    "justice_of_peace": "Texas Government Code Ch 27"
+  }
+}
