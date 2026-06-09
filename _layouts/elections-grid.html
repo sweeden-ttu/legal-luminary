@@ -1,0 +1,96 @@
+---
+layout: candidates-root
+extra_stylesheets:
+  - /assets/css/candidates-elections.css
+---
+<div class="elections-page">
+    <section class="elections-hero" aria-labelledby="elections-title">
+        <div class="elections-hero__inner">
+            <div class="elections-hero__eyebrow">
+                <svg width="12" height="12" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 1.5a6.5 6.5 0 1 1 0 13 6.5 6.5 0 0 1 0-13zM7 4v4.414l2.793 2.793 1.06-1.06L8.5 7.586V4H7z" />
+                </svg>
+                Texas 2026 Statewide Elections
+            </div>
+            <h1 class="elections-hero__title" id="elections-title">
+                {{ page.title | escape }}
+            </h1>
+            <p class="elections-hero__subtitle">
+                {{ page.description | default: "Explore candidates for major statewide offices." }}
+            </p>
+        </div>
+    </section>
+
+    <div class="elections-body">
+        <aside class="elections-sidebar">
+            <div class="elections-sidebar__sticky">
+                <h2 class="elections-sidebar__heading">Statewide Races</h2>
+                <nav class="elections-nav" aria-label="Elections Sub-navigation">
+                    <ul class="elections-nav__list">
+                        <li><a href="#texas_attorney_general" class="elections-nav__link">Texas attorney general</a></li>
+                        <li><a href="#texas_comptroller" class="elections-nav__link">Texas Comptroller race</a></li>
+                        <li><a href="#texas_governor" class="elections-nav__link">Texas Governor</a></li>
+                        <li><a href="#texas_statewide_judges" class="elections-nav__link">Other Texas judicial race</a></li>
+                        <li><a href="#us_senate" class="elections-nav__link">U.S. Senate (Texas senator)</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+
+        <main class="elections-main">
+            {% assign categories = "texas_attorney_general|Texas attorney general,texas_comptroller|Texas Comptroller race,texas_governor|Texas Governor,texas_statewide_judges|Other Texas judicial race,us_senate|U.S. Senate (Texas senator)" | split: "," %}
+
+            {% for cat in categories %}
+                {% assign parts = cat | split: "|" %}
+                {% assign cat_slug = parts[0] %}
+                {% assign cat_title = parts[1] %}
+
+                <section class="elections-city-section" id="{{ cat_slug }}">
+                    <header class="elections-city-header">
+                        <h2 class="elections-city-title">{{ cat_title }}</h2>
+                        <a href="{{ '/elections/tx/' | append: cat_slug | relative_url }}" class="elections-city-viewall">
+                            View all <span aria-hidden="true">&rarr;</span>
+                        </a>
+                    </header>
+                    <div class="elections-grid">
+                        {% assign office_candidates = site.candidates | where: "office_slug", cat_slug %}
+                        {% if office_candidates.size > 0 %}
+                            {% for candidate in office_candidates %}
+                            <article class="elections-candidate-card">
+                                <a href="{{ candidate.url | relative_url }}" class="elections-candidate-card__link">
+                                    <div class="elections-candidate-card__photo-wrap">
+                                        <img src="{{ candidate.photo | relative_url }}" alt="{{ candidate.name }} photo" class="elections-candidate-card__photo" loading="lazy" onerror="this.src='/assets/imgs/candidates/placeholder.jpg'" />
+                                    </div>
+                                    <div class="elections-candidate-card__body">
+                                        <h3 class="elections-candidate-card__name">
+                                            {{ candidate.name }}
+                                        </h3>
+                                        {% if candidate.incumbent == true or candidate.incumbent == "true" %}
+                                        <p class="elections-candidate-card__office" style="color: #0366d6; font-weight: bold;">
+                                            Incumbent
+                                        </p>
+                                        {% endif %}
+                                        {% if candidate.website and candidate.website != "" %}
+                                        <p class="elections-candidate-card__office" style="word-break: break-all;">
+                                            {{ candidate.website }}
+                                        </p>
+                                        {% endif %}
+                                        <span class="elections-candidate-card__cta">View Profile</span>
+                                    </div>
+                                </a>
+                            </article>
+                            {% endfor %}
+                        {% else %}
+                            <p style="padding: 1rem; color: #586069;"><em>Profiles for this office are currently being updated.</em></p>
+                        {% endif %}
+                    </div>
+                </section>
+            {% endfor %}
+            <section class="elections-city-section" style="margin-top: 3rem;">
+                <div class="info-alert" style="background-color: #f6f8fa; border-left: 4px solid #0366d6; padding: 1rem; border-radius: 4px;">
+                    <p style="margin: 0;"><strong>Who Represents Me?</strong> For comprehensive information about all the statewide offices you are eligible to vote for, please visit the official <a href="https://wrm.capitol.texas.gov/home" target="_blank" rel="noopener noreferrer">Texas "Who Represents Me?"</a> portal.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+</div>

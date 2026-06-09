@@ -22,6 +22,13 @@ sources:
 Legal Luminary is a public-service research project covering Bell County courts, the November 2026 judicial ballot, and practical legal information for Central Texas residents. The site contains no paid endorsements; candidate and judge profiles are presented for voter education.
 </p>
 
+<div class="info-box">
+<h4>The Story Behind legalluminary.com</h4>
+<p>
+This domain was originally purchased with the intent of fighting a personal lawsuit—a battle that I eventually lost. The experience changed my life forever, and I will never forget the challenges of navigating an opaque and complex legal system without adequate guidance. Out of that defeat, this site was reborn. It has been repurposed as a public-service resource to ensure that others facing legal hurdles in Central Texas have access to the clear, transparent information they need to navigate the courts.
+</p>
+</div>
+
 ## Serving Bell County & Central Texas
 
 <div class="cards-grid">

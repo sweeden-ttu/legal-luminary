@@ -1,122 +1,227 @@
 [
   {
-    "url": "https://www.legalluminary.com/news/2026/03/03/talarico-defeats-crockett-in-texas-democratic-sena-expanded",
-    "status": 503,
+    "url": "https://www.legalluminary.com/",
+    "status": 0,
     "sourcePages": [
       "https://www.legalluminary.com/",
-      "https://www.legalluminary.com/archive"
+      "https://www.legalluminary.com/resources",
+      "https://www.legalluminary.com/news-feeds",
+      "https://www.legalluminary.com/personal-injury",
+      "https://www.legalluminary.com/bell-county"
+    ]
+  },
+  {
+    "url": "https://www.legalluminary.com/personal-injury",
+    "status": 0,
+    "sourcePages": [
+      "https://www.legalluminary.com/",
+      "https://www.legalluminary.com/resources",
+      "https://www.legalluminary.com/news-feeds",
+      "https://www.legalluminary.com/personal-injury",
+      "https://www.legalluminary.com/bell-county"
+    ]
+  },
+  {
+    "url": "https://www.legalluminary.com/candidates",
+    "status": 0,
+    "sourcePages": [
+      "https://www.legalluminary.com/",
+      "https://www.legalluminary.com/resources",
+      "https://www.legalluminary.com/news-feeds",
+      "https://www.legalluminary.com/personal-injury",
+      "https://www.legalluminary.com/bell-county"
+    ]
+  },
+  {
+    "url": "https://www.legalluminary.com/court-directory",
+    "status": 0,
+    "sourcePages": [
+      "https://www.legalluminary.com/",
+      "https://www.legalluminary.com/resources",
+      "https://www.legalluminary.com/news-feeds",
+      "https://www.legalluminary.com/personal-injury",
+      "https://www.legalluminary.com/bell-county"
+    ]
+  },
+  {
+    "url": "https://www.legalluminary.com/legal-news",
+    "status": 0,
+    "sourcePages": [
+      "https://www.legalluminary.com/",
+      "https://www.legalluminary.com/resources",
+      "https://www.legalluminary.com/news-feeds",
+      "https://www.legalluminary.com/personal-injury",
+      "https://www.legalluminary.com/bell-county"
+    ]
+  },
+  {
+    "url": "https://www.legalluminary.com/bell-county",
+    "status": 0,
+    "sourcePages": [
+      "https://www.legalluminary.com/",
+      "https://www.legalluminary.com/resources",
+      "https://www.legalluminary.com/news-feeds",
+      "https://www.legalluminary.com/personal-injury",
+      "https://www.legalluminary.com/bell-county"
+    ]
+  },
+  {
+    "url": "https://www.legalluminary.com/about-legal-luminary",
+    "status": 0,
+    "sourcePages": [
+      "https://www.legalluminary.com/",
+      "https://www.legalluminary.com/resources",
+      "https://www.legalluminary.com/news-feeds",
+      "https://www.legalluminary.com/personal-injury",
+      "https://www.legalluminary.com/bell-county"
+    ]
+  },
+  {
+    "url": "https://www.legalluminary.com/candidates/texas/jessica_gonzalez",
+    "status": 0,
+    "sourcePages": [
+      "https://www.legalluminary.com/"
+    ]
+  },
+  {
+    "url": "https://www.legalluminary.com/candidates/texas/beatrice_cox",
+    "status": 0,
+    "sourcePages": [
+      "https://www.legalluminary.com/"
+    ]
+  },
+  {
+    "url": "https://www.legalluminary.com/candidates/texas/michael_tice",
+    "status": 0,
+    "sourcePages": [
+      "https://www.legalluminary.com/"
+    ]
+  },
+  {
+    "url": "https://www.legalluminary.com/candidates/texas/david_blackburn",
+    "status": 0,
+    "sourcePages": [
+      "https://www.legalluminary.com/"
+    ]
+  },
+  {
+    "url": "https://www.legalluminary.com/candidates/texas/paul_lepak",
+    "status": 0,
+    "sourcePages": [
+      "https://www.legalluminary.com/"
+    ]
+  },
+  {
+    "url": "https://www.legalluminary.com/candidates/texas/wade_faulkner",
+    "status": 0,
+    "sourcePages": [
+      "https://www.legalluminary.com/"
+    ]
+  },
+  {
+    "url": "https://www.legalluminary.com/candidates/texas/paul_motz",
+    "status": 0,
+    "sourcePages": [
+      "https://www.legalluminary.com/"
+    ]
+  },
+  {
+    "url": "https://www.legalluminary.com/candidates/texas/john_mischtian",
+    "status": 0,
+    "sourcePages": [
+      "https://www.legalluminary.com/"
+    ]
+  },
+  {
+    "url": "https://www.legalluminary.com/candidates/texas/john_gauntt_jr",
+    "status": 0,
+    "sourcePages": [
+      "https://www.legalluminary.com/"
+    ]
+  },
+  {
+    "url": "https://www.legalluminary.com/news/2026/05/27/central-texas-judicial-matchups",
+    "status": 0,
+    "sourcePages": [
+      "https://www.legalluminary.com/",
+      "https://www.legalluminary.com/resources",
+      "https://www.legalluminary.com/news-feeds",
+      "https://www.legalluminary.com/personal-injury",
+      "https://www.legalluminary.com/bell-county"
+    ]
+  },
+  {
+    "url": "https://www.legalluminary.com/news/2026/05/29/keeping-ai-honest",
+    "status": 0,
+    "sourcePages": [
+      "https://www.legalluminary.com/",
+      "https://www.legalluminary.com/resources",
+      "https://www.legalluminary.com/news-feeds",
+      "https://www.legalluminary.com/personal-injury",
+      "https://www.legalluminary.com/bell-county"
+    ]
+  },
+  {
+    "url": "https://www.legalluminary.com/news/2026/05/26/texas-primary-runoff-results",
+    "status": 0,
+    "sourcePages": [
+      "https://www.legalluminary.com/",
+      "https://www.legalluminary.com/resources",
+      "https://www.legalluminary.com/news-feeds",
+      "https://www.legalluminary.com/personal-injury",
+      "https://www.legalluminary.com/bell-county"
+    ]
+  },
+  {
+    "url": "https://www.legalluminary.com/news/2026/05/02/killeen-election-results",
+    "status": 0,
+    "sourcePages": [
+      "https://www.legalluminary.com/",
+      "https://www.legalluminary.com/resources",
+      "https://www.legalluminary.com/news-feeds",
+      "https://www.legalluminary.com/personal-injury",
+      "https://www.legalluminary.com/bell-county"
     ]
   },
   {
     "url": "https://www.legalluminary.com/news/2026/04/15/killeen-municipal-election-briefing",
-    "status": 404,
+    "status": 0,
     "sourcePages": [
-      "https://www.legalluminary.com/about",
-      "https://www.legalluminary.com/archive",
+      "https://www.legalluminary.com/",
       "https://www.legalluminary.com/resources",
       "https://www.legalluminary.com/news-feeds",
-      "https://www.legalluminary.com/defense",
       "https://www.legalluminary.com/personal-injury",
-      "https://www.legalluminary.com/bell-county",
-      "https://www.legalluminary.com/texas-law"
+      "https://www.legalluminary.com/bell-county"
     ]
   },
   {
-    "url": "https://www.legalluminary.com/news/2026/04/15/temple-public-library-launches-tour-of-the-li",
-    "status": 404,
+    "url": "https://www.legalluminary.com/news/2026/04/15/killeen-municipal-election-briefing-1776325306",
+    "status": 0,
     "sourcePages": [
-      "https://www.legalluminary.com/about",
-      "https://www.legalluminary.com/archive",
+      "https://www.legalluminary.com/",
       "https://www.legalluminary.com/resources",
       "https://www.legalluminary.com/news-feeds",
-      "https://www.legalluminary.com/defense",
       "https://www.legalluminary.com/personal-injury",
-      "https://www.legalluminary.com/bell-county",
-      "https://www.legalluminary.com/texas-law"
+      "https://www.legalluminary.com/bell-county"
     ]
   },
   {
-    "url": "https://www.legalluminary.com/news/2026/04/15/morning-structure-fire",
-    "status": 404,
+    "url": "https://www.legalluminary.com/archive",
+    "status": 0,
     "sourcePages": [
-      "https://www.legalluminary.com/about",
-      "https://www.legalluminary.com/archive",
+      "https://www.legalluminary.com/",
       "https://www.legalluminary.com/resources",
       "https://www.legalluminary.com/news-feeds",
-      "https://www.legalluminary.com/defense",
       "https://www.legalluminary.com/personal-injury",
-      "https://www.legalluminary.com/bell-county",
-      "https://www.legalluminary.com/texas-law"
+      "https://www.legalluminary.com/bell-county"
     ]
   },
   {
-    "url": "https://www.legalluminary.com/news/2026/04/15/killeen-police-investigate-fatal-crash-on-sh",
-    "status": 404,
+    "url": "https://www.legalluminary.com/defense",
+    "status": 0,
     "sourcePages": [
-      "https://www.legalluminary.com/about",
-      "https://www.legalluminary.com/archive",
       "https://www.legalluminary.com/resources",
-      "https://www.legalluminary.com/news-feeds",
-      "https://www.legalluminary.com/defense",
-      "https://www.legalluminary.com/personal-injury",
-      "https://www.legalluminary.com/bell-county",
-      "https://www.legalluminary.com/texas-law"
-    ]
-  },
-  {
-    "url": "https://www.legalluminary.com/news/2026/04/15/killeen-police-identify-victim-in-fatal-pedes",
-    "status": 404,
-    "sourcePages": [
-      "https://www.legalluminary.com/about",
-      "https://www.legalluminary.com/archive",
-      "https://www.legalluminary.com/resources",
-      "https://www.legalluminary.com/news-feeds",
-      "https://www.legalluminary.com/defense",
-      "https://www.legalluminary.com/personal-injury",
-      "https://www.legalluminary.com/bell-county",
-      "https://www.legalluminary.com/texas-law"
-    ]
-  },
-  {
-    "url": "https://www.legalluminary.com/news/2026/04/15/upcoming-texas-legislature-committee-meetings",
-    "status": 404,
-    "sourcePages": [
-      "https://www.legalluminary.com/about",
-      "https://www.legalluminary.com/archive",
-      "https://www.legalluminary.com/resources",
-      "https://www.legalluminary.com/news-feeds",
-      "https://www.legalluminary.com/defense",
-      "https://www.legalluminary.com/personal-injury",
-      "https://www.legalluminary.com/bell-county",
-      "https://www.legalluminary.com/texas-law"
-    ]
-  },
-  {
-    "url": "https://www.legalluminary.com/news/2026/04/15/killeen-police-charge-36-year-old-male-with-m",
-    "status": 404,
-    "sourcePages": [
-      "https://www.legalluminary.com/archive"
-    ]
-  },
-  {
-    "url": "https://www.legalluminary.com/news/2026/04/15/city-of-temple-to-host-bulky-item-disposal-ev",
-    "status": 404,
-    "sourcePages": [
-      "https://www.legalluminary.com/archive"
-    ]
-  },
-  {
-    "url": "https://www.legalluminary.com/news/2026/04/15/city-of-temple-provides-update-on-tanglefoot",
-    "status": 404,
-    "sourcePages": [
-      "https://www.legalluminary.com/archive"
-    ]
-  },
-  {
-    "url": "https://www.legalluminary.com/news/2026/04/15/city-of-temple-earth-day-event-canceled-due-t",
-    "status": 404,
-    "sourcePages": [
-      "https://www.legalluminary.com/archive"
+      "https://www.legalluminary.com/bell-county"
     ]
   }
 ]

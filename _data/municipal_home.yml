@@ -1,0 +1,73 @@
+election_day: "November 3, 2026"
+runoff_completed: "May 26, 2026"
+
+mayoral_matchups:
+  - office: "Killeen Mayor"
+    contested: true
+    candidate_1:
+      name: "Riakos Adams"
+      url: "/candidates/texas/riakos_adams/"
+      note: "Incumbent"
+    candidate_2:
+      name: "Debbie Nash-King"
+      url: "/candidates/texas/debbie_nash_king/"
+  - office: "Belton Mayor"
+    contested: false
+    candidate_1:
+      name: "David K. Leigh"
+      url: "/candidates/texas/david_k_leigh/"
+      note: "Incumbent"
+    candidate_2:
+      name: ""
+  - office: "Harker Heights Mayor"
+    contested: false
+    candidate_1:
+      name: "Michael Blomquist"
+      url: "/candidates/texas/michael_blomquist/"
+      note: "Incumbent"
+    candidate_2:
+      name: ""
+  - office: "Temple Mayor"
+    contested: true
+    candidate_1:
+      name: "Tim Davis"
+      url: "/candidates/texas/tim_davis/"
+      note: "Incumbent"
+    candidate_2:
+      name: "Brian Chandler"
+      url: "/candidates/texas/brian_chandler/"
+
+council_matchups:
+  - office: "Killeen City Council, District 3"
+    contested: true
+    candidate_1:
+      name: "Nina Cobb"
+      url: "/candidates/texas/nina_cobb/"
+      note: "Incumbent"
+    candidate_2:
+      name: "Jessica Jones"
+      url: "/candidates/texas/jessica_jones/"
+  - office: "Belton City Council, Place 2"
+    contested: false
+    candidate_1:
+      name: "Dave Covington"
+      url: "/candidates/texas/dave_covington/"
+      note: "Incumbent"
+    candidate_2:
+      name: ""
+  - office: "Harker Heights City Council, Place 1"
+    contested: false
+    candidate_1:
+      name: "Brian Burt"
+      url: "/candidates/texas/brian_burt/"
+      note: "Incumbent"
+    candidate_2:
+      name: ""
+  - office: "Temple City Council, District 1"
+    contested: false
+    candidate_1:
+      name: "Jessica Walker"
+      url: "/candidates/texas/jessica_walker/"
+      note: "Incumbent"
+    candidate_2:
+      name: ""

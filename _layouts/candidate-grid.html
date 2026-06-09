@@ -1,207 +1,94 @@
 ---
 layout: candidates-root
+extra_stylesheets:
+  - /assets/css/candidates-elections.css
 ---
-
-<link
-    rel="stylesheet"
-    href="{{ '/assets/css/candidates-elections.css' | relative_url }}"
-/>
-
-{% assign index = site.data.candidates_city_index %} {% assign city_items =
-index.cities %} {% assign page_url_abs = page.url | absolute_url %}
-
 <div class="elections-page">
     <!-- ═══ Hero ═══════════════════════════════════════════════ -->
     <section class="elections-hero" aria-labelledby="elections-title">
         <div class="elections-hero__inner">
             <div class="elections-hero__eyebrow">
-                <svg
-                    width="12"
-                    height="12"
-                    fill="currentColor"
-                    viewBox="0 0 16 16"
-                    aria-hidden="true"
-                >
-                    <path
-                        d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 1.5a6.5 6.5 0 1 1 0 13 6.5 6.5 0 0 1 0-13zM7 4v4.414l2.793 2.793 1.06-1.06L8.5 7.586V4H7z"
-                    />
+                <svg width="12" height="12" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 1.5a6.5 6.5 0 1 1 0 13 6.5 6.5 0 0 1 0-13zM7 4v4.414l2.793 2.793 1.06-1.06L8.5 7.586V4H7z" />
                 </svg>
-                Bell County, Texas · May 2026
+                Texas 2026 Elections
             </div>
             <h1 class="elections-hero__title" id="elections-title">
                 {{ page.title | escape }}
             </h1>
             <p class="elections-hero__subtitle">
-                {{ index.count }} candidate{% if index.count != 1 %}s{% endif %} across
-                {{ city_items.size }} cities — mayor, council, and municipal offices
+                Candidate Profiles for the November 2026 General Election
             </p>
-            <div class="elections-hero__search" role="search">
-                <svg
-                    class="elections-hero__search-icon"
-                    width="16"
-                    height="16"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                >
-                    <circle cx="11" cy="11" r="8" />
-                    <path d="m21 21-4.35-4.35" />
-                </svg>
-                <input
-                    id="candidateSearch"
-                    type="search"
-                    class="elections-hero__search-input"
-                    placeholder="Search by name or office…"
-                    aria-label="Search candidates"
-                    autocomplete="off"
-                />
-            </div>
         </div>
     </section>
 
-    <!-- ═══ City Nav ════════════════════════════════════════════ -->
-    <nav class="elections-city-nav" aria-label="Filter by city">
-        <div class="elections-city-nav__inner">
-            <button
-                type="button"
-                class="elections-city-tab is-active"
-                data-city=""
-                aria-pressed="true"
-            >
-                All
-                <span class="elections-city-tab__count">{{ index.count }}</span>
-            </button>
-            {% for city in city_items %}
-            <button
-                type="button"
-                class="elections-city-tab"
-                data-city="{{ city.city }}"
-                aria-pressed="false"
-            >
-                {{ city.city | capitalize }}
-                <span class="elections-city-tab__count"
-                    >{{ city.candidates.size }}</span
-                >
-            </button>
-            {% endfor %}
+    <div style="max-width: 800px; margin: 2rem auto; padding: 1rem; background-color: #f6f8fa; border-left: 4px solid #0366d6; border-radius: 4px;">
+        <p style="margin: 0; font-size: 0.95rem; line-height: 1.5; color: #24292e;">
+            <strong>Note:</strong> These are only the elections happening in our service area. If you are wondering who represents you currently, and what offices you might need to know about before the upcoming election, you should visit the site <strong>"Who Represents Me?"</strong> at <a href="https://wrm.capitol.texas.gov/home" target="_blank" rel="noopener noreferrer" style="color: #0366d6; text-decoration: underline;">https://wrm.capitol.texas.gov/home</a>.
+        </p>
+    </div>
+
+    <nav class="elections-city-nav" aria-label="Filter by office">
+        <div class="elections-city-nav__inner" style="flex-wrap: wrap; justify-content: center; gap: 8px;">
+            <a href="#us_congressional_district_11" class="elections-city-tab">U.S. Congressional District 11</a>
+            <a href="#texas_house_district_54" class="elections-city-tab">Texas House District 54</a>
+            <a href="#texas_senate_district_24" class="elections-city-tab">Texas Senate District 24</a>
+            <a href="#state_board_of_education_district_10" class="elections-city-tab">State Board of Education District 10</a>
+            <a href="#us_congressional_district_31" class="elections-city-tab">U.S. Congressional District 31</a>
+            <a href="#bell_county_justice_of_peace" class="elections-city-tab">Bell County Justice of Peace</a>
+            <a href="#killeen_mayor_and_city_council" class="elections-city-tab">Killeen Mayor and City Counsel</a>
+            <a href="#other_cities" class="elections-city-tab">Other Cities (Harker Heights, Copperas Cove, Nolanville, Bartlett, Belton, Moody)</a>
         </div>
     </nav>
 
     <!-- ═══ Candidate Grid ══════════════════════════════════════ -->
     <div class="elections-body">
-        <p
-            class="elections-results-meta"
-            id="candidateResultCount"
-            aria-live="polite"
-        >
-            {{ index.count }} candidates
-        </p>
+        
+        {% assign offices = "us_congressional_district_11,texas_house_district_54,texas_senate_district_24,state_board_of_education_district_10,us_congressional_district_31,bell_county_justice_of_peace,killeen_mayor_and_city_council,other_cities" | split: "," %}
+        {% assign office_names = "U.S. Congressional District 11,Texas House District 54,Texas Senate District 24,State Board of Education District 10,U.S. Congressional District 31,Bell County Justice of Peace,Killeen Mayor and City Counsel,Other Cities (Harker Heights, Copperas Cove, Nolanville, Bartlett, Belton, Moody)" | split: "," %}
 
-        {% for city_group in city_items %}
-        <section
-            class="elections-city-section"
-            id="city-{{ city_group.city }}"
-            data-city-section="{{ city_group.city }}"
-            aria-label="Candidates in {{ city_group.city | capitalize }}"
-        >
+        {% for office_slug in offices %}
+        <section class="elections-city-section" id="{{ office_slug }}" style="margin-top: 3rem;">
             <header class="elections-city-section__header">
                 <h2 class="elections-city-section__name">
-                    {{ city_group.city | capitalize }}
+                    {{ office_names[forloop.index0] }}
                 </h2>
-                <span class="elections-city-section__count"
-                    >{{ city_group.candidates.size }} candidates</span
-                >
             </header>
 
             <div class="elections-grid">
-                {% for candidate in city_group.candidates %}
-                <article
-                    class="elections-candidate-card"
-                    data-city="{{ candidate.city }}"
-                    data-name="{{ candidate.name | downcase }}"
-                    data-office="{{ candidate.office | downcase }}"
-                >
-                    <a
-                        href="{{ candidate.profile_url | relative_url }}"
-                        class="elections-candidate-card__link"
-                        aria-label="{{ candidate.name }}, {{ candidate.office }}, {{ candidate.city | capitalize }}"
-                    >
-                        <div class="elections-candidate-card__photo-wrap">
-                            <img
-                                src="{{ candidate.headshot | relative_url }}"
-                                alt="{{ candidate.name }} – candidate photo"
-                                class="elections-candidate-card__photo"
-                                loading="lazy"
-                                onerror="
-                                    this.classList.add('is-broken');
-                                    this.nextElementSibling.style.display =
-                                        'grid';
-                                "
-                            />
-                            <div
-                                class="elections-candidate-card__initial"
-                                aria-hidden="true"
-                                style="display: none"
-                            >
-                                {{ candidate.name | slice: 0, 1 | upcase }}
+                {% assign office_candidates = site.candidates | where: "office_slug", office_slug %}
+                {% if office_candidates.size > 0 %}
+                    {% for candidate in office_candidates %}
+                    <article class="elections-candidate-card">
+                        <a href="{{ candidate.url | relative_url }}" class="elections-candidate-card__link">
+                            <div class="elections-candidate-card__photo-wrap">
+                                <img src="{{ candidate.photo | relative_url }}" alt="{{ candidate.name }} photo" class="elections-candidate-card__photo" loading="lazy" onerror="this.src='/assets/imgs/candidates/placeholder.jpg'" />
                             </div>
-                        </div>
-                        <div class="elections-candidate-card__body">
-                            <p class="elections-candidate-card__city">
-                                {{ candidate.city | capitalize }}
-                            </p>
-                            <h3 class="elections-candidate-card__name">
-                                {{ candidate.name }}
-                            </h3>
-                            <p class="elections-candidate-card__office">
-                                {{ candidate.office }}
-                            </p>
-                            <span class="elections-candidate-card__cta"
-                                >View Profile</span
-                            >
-                        </div>
-                    </a>
-                </article>
-                {% endfor %}
+                            <div class="elections-candidate-card__body">
+                                <h3 class="elections-candidate-card__name">
+                                    {{ candidate.name }}
+                                </h3>
+                                {% if candidate.incumbent == true or candidate.incumbent == "true" %}
+                                <p class="elections-candidate-card__office" style="color: #0366d6; font-weight: bold;">
+                                    Incumbent
+                                </p>
+                                {% endif %}
+                                {% if candidate.website and candidate.website != "" %}
+                                <p class="elections-candidate-card__office" style="word-break: break-all;">
+                                    {{ candidate.website }}
+                                </p>
+                                {% endif %}
+                                <span class="elections-candidate-card__cta">View Profile</span>
+                            </div>
+                        </a>
+                    </article>
+                    {% endfor %}
+                {% else %}
+                    <p style="padding: 1rem; color: #586069;"><em>Profiles for this office are currently being updated.</em></p>
+                {% endif %}
             </div>
         </section>
         {% endfor %}
-        *Note: The original subject matter and composition of candidate photos have been preserved, expanding or replacing canvas backgrounds to fill card height and maintain visual consistency across the panel of candidates.
-        This site contains no paid promotions or endorsements and is part of a public service journalism research project in Trustworthy AI. See the about page for more information.
+
     </div>
-    <!-- /.elections-body -->
 </div>
-<!-- /.elections-page -->
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  "name": {{ page.title | jsonify }},
-  "description": {{ page.description | jsonify }},
-  "url": {{ page_url_abs | jsonify }},
-  "numberOfItems": {{ index.count }},
-  "itemListElement": [
-    {% for candidate in index.candidates %}
-    {
-      "@type": "ListItem",
-      "position": {{ forloop.index }},
-      "item": {
-        "@type": "Person",
-        "name": {{ candidate.name | jsonify }},
-        "url": {{ candidate.profile_url | absolute_url | jsonify }},
-        "jobTitle": {{ candidate.office | jsonify }},
-        "homeLocation": {
-          "@type": "City",
-          "name": {{ candidate.city | replace: "_", " " | capitalize | jsonify }}
-        }
-      }
-    }{% unless forloop.last %},{% endunless %}
-    {% endfor %}
-  ]
-}
-</script>
-
-<script src="{{ '/assets/js/candidates-city.js' | relative_url }}"></script>

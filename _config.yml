@@ -45,20 +45,23 @@ plugins:
 
 # Site Navigation
 navigation:
-  - title: Elections 2026
-    url: /
-  - title: Justice of the Peace
-    url: /#jp-matchups
-  - title: Judge Profiles
-    url: /#judge-profiles
-  - title: Personal Injury
-    url: /personal-injury/
-  - title: Municipal Candidates
+  - title: Attorneys
+    url: "#"
+    children:
+      - title: Personal Injury
+        url: /personal-injury/
+      - title: Family Law
+        url: /family-law/
+      - title: Title Agencies
+        url: /title-agencies/
+  - title: Elections
+    url: /elections/
+  - title: Candidates
     url: /candidates/
-  - title: Court Directory
+  - title: Courts
     url: /court-directory/
-  - title: Legal News
-    url: /legal-news/
+  - title: Fort Hood (Military)
+    url: /fort-cavazos/
   - title: Bell County
     url: /bell-county/
   - title: About

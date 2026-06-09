@@ -1,0 +1,94 @@
+---
+layout: candidates-root
+extra_stylesheets:
+  - /assets/css/candidates-elections.css
+---
+<div class="elections-page">
+    <section class="elections-hero" aria-labelledby="elections-title">
+        <div class="elections-hero__inner">
+            <div class="elections-hero__eyebrow">
+                <svg width="12" height="12" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 1.5a6.5 6.5 0 1 1 0 13 6.5 6.5 0 0 1 0-13zM7 4v4.414l2.793 2.793 1.06-1.06L8.5 7.586V4H7z" />
+                </svg>
+                Texas 2026 Elections
+            </div>
+            <h1 class="elections-hero__title" id="elections-title">
+                {{ page.title | escape }}
+            </h1>
+            <p class="elections-hero__subtitle">
+                Candidate Profiles for the November 2026 General Election
+            </p>
+        </div>
+    </section>
+
+    <div class="elections-body" style="max-width: 1200px; margin: 0 auto; padding: 2rem 1rem; display: grid; grid-template-columns: 2fr 1fr; gap: 3rem; align-items: start;">
+        
+        <main class="category-main">
+            {% if page.office_description %}
+            <div class="office-description" style="margin-bottom: 2rem; padding: 1.5rem; background: #fff; border: 1px solid #e1e4e8; border-radius: 6px;">
+                <h3 style="margin-top: 0;">About This Office</h3>
+                {{ page.office_description | markdownify }}
+            </div>
+            {% endif %}
+
+            {% if page.runoff_context %}
+            <div class="runoff-context" style="margin-bottom: 2rem; padding: 1.5rem; background: #f6f8fa; border-left: 4px solid #0366d6; border-radius: 4px;">
+                <h3 style="margin-top: 0;">Election Context & Runoffs</h3>
+                {{ page.runoff_context | markdownify }}
+            </div>
+            {% endif %}
+            
+            <h2 style="margin-bottom: 1rem;">Candidates on the Ballot</h2>
+            <div class="elections-grid">
+                {% assign office_candidates = site.candidates | where: "office_slug", page.office_slug %}
+                {% if office_candidates.size > 0 %}
+                    {% for candidate in office_candidates %}
+                    <article class="elections-candidate-card">
+                        <a href="{{ candidate.url | relative_url }}" class="elections-candidate-card__link">
+                            <div class="elections-candidate-card__photo-wrap">
+                                <img src="{{ candidate.photo | relative_url }}" alt="{{ candidate.name }} photo" class="elections-candidate-card__photo" loading="lazy" onerror="this.src='/assets/imgs/candidates/placeholder.jpg'" />
+                            </div>
+                            <div class="elections-candidate-card__body">
+                                <h3 class="elections-candidate-card__name">
+                                    {{ candidate.name }}
+                                </h3>
+                                {% if candidate.incumbent == true or candidate.incumbent == "true" %}
+                                <p class="elections-candidate-card__office" style="color: #0366d6; font-weight: bold;">
+                                    Incumbent
+                                </p>
+                                {% endif %}
+                                {% if candidate.website and candidate.website != "" %}
+                                <p class="elections-candidate-card__office" style="word-break: break-all;">
+                                    {{ candidate.website }}
+                                </p>
+                                {% endif %}
+                                <span class="elections-candidate-card__cta">View Profile</span>
+                            </div>
+                        </a>
+                    </article>
+                    {% endfor %}
+                {% else %}
+                    <p style="padding: 1rem; color: #586069;"><em>Profiles for this office are currently being updated.</em></p>
+                {% endif %}
+            </div>
+        </main>
+
+        <aside class="category-sidebar">
+            <div class="syndicated-content" style="position: sticky; top: 2rem;">
+                <h2 style="margin-bottom: 1.5rem; border-bottom: 2px solid #0366d6; padding-bottom: 0.5rem; font-size: 1.25rem;">Syndicated News</h2>
+                <!-- Dynamic Javascript Widgets injected from the markdown file will render here -->
+                {{ content }}
+            </div>
+        </aside>
+
+    </div>
+</div>
+
+<style>
+/* Responsive layout for the 2-column grid */
+@media (max-width: 768px) {
+    .elections-body {
+        grid-template-columns: 1fr !important;
+    }
+}
+</style>
