@@ -141,3 +141,4 @@ Gemfile.lock
 .conda-lsp/lib/python3.11/re/__pycache__/_constants.cpython-311.pyc
 .conda-lsp/lib/python3.11/re/__pycache__/_parser.cpython-311.pyc
 .conda-lsp/lib/python3.11/site-packages/_distutils_hack/__pycache__/__init__.cpython-311.pyc
+judicial_officials.db
