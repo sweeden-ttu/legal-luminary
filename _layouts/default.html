@@ -154,6 +154,7 @@
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v={{ site.asset_version }}">
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
   <header class="site-header">
     <div class="header-top">
       <div class="container">
@@ -343,7 +344,7 @@
           <h4><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h4>
           <p class="article-date">{{ post.date | date: "%B %d, %Y" }}</p>
           <p class="article-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-          <a href="{{ post.url | relative_url }}" class="read-more">Read More →</a>
+          <a href="{{ post.url | relative_url }}" class="read-more" aria-label="Read more about {{ post.title | escape }}">Read More →</a>
         </div>
         {% endfor %}
       </div>
