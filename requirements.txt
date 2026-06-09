@@ -9,3 +9,5 @@ httpx
 langchain-core
 langgraph
 beautifulsoup4
+requests
+langchain_ollama
