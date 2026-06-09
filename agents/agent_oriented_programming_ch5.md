@@ -1314,3 +1314,4 @@ cannot be immediately accepted after a put() message. This can only be handled b
 adding a state variable, afterPut. That is b_buf must be redefined to account for the
 newly added method. The problem is that gget() is history sensitive. This is similar to
 the Brock–Ackerman anomaly [1981] described in Chapter 4.
+

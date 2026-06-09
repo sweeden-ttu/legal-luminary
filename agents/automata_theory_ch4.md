@@ -2039,3 +2039,5 @@ two integers is found by adding the numbers and ﬁnding the remainder of
 thissumwhendividedby5.Therefore ¯3 + ¯4 = ¯2and ¯2 + ¯3 = ¯0.Construct
 the Moore machine that gives a sum of initial strings of elements of Z5.
 Thus the input ¯2¯1¯4¯0¯3¯2¯1 produces output ¯0¯2¯3¯2¯2¯0¯2¯3.
+
+

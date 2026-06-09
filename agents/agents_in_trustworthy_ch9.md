@@ -792,3 +792,4 @@ traction, measured as Amplitude × dura- the intensity of the contraction of
 tion × length (mmHg- s-cm) of the distal the distal esophagus. The measuring
 esophageal contraction (previously unit for Distal Contractile Integral is
 utilized only amplitude) mmHg- s-cm.
+
