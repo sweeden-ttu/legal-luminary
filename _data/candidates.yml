@@ -7,14 +7,16 @@ metadata:
   - Texas Senate 24, House 54
   - SBOE District 10 (next election typically 2028)
   - Bell County elected offices on 2026 ballot where listed
-  - Bell County municipal mayors and councils (from _cities hub data)
+  - Killeen mayor and council (seated until next municipal election)
   - Central Texas College trustees (major elections in odd years; confirm with CTC)
+  - TX Comptroller 2026 general — Don Huffines (R) vs. Sarah Eckhardt (D); Kelly Hancock
+    acting until successor is sworn in
   fec_note: "US House TX-31: post\u2011March 2026 primary, site lists general matchup\
     \ only (John R. Carter vs. Justin Early). Verify certification with Texas SOS and\
     \ FEC."
 candidates:
 - id: 20
-  name: Russell Schneider
+  name: Bill Schumann
   position: Bell County Commissioner, Precinct 1
   office: Bell County Commissioner P1
   jurisdiction: Bell County
@@ -23,20 +25,25 @@ candidates:
   election_phase: seated
   FEC: 'no'
   facebook_url: null
-  website_url: https://www.bellcountytx.com/county_government/commissioners_court/index.php
-  notes: Incumbent; listed on Bell County Commissioners Court.
+  website_url: null
   group_city: ''
   group_state: Texas
   group_function: CountyAdministration
   office_group_key: Bell County Commissioner P1
   office_up_for_election_this_year: false
-  office_incumbent_name: Russell Schneider
-  office_opponents_platform_key_facts: []
-  headshot_url: null
+  office_incumbent_name: Bill Schumann
+  office_opponents_platform_key_facts:
+  - Love you and your messages. I have and will again donate to your campaign. I'm
+    not a Texan, but do you have foot work on the grounds of ...
+  - Liberty in Action sent all Kerr county commissioner and county judge candidates
+    screening questions for the upcoming primary (March 3, 2026).
+  - Also, a bill (H. R. 5984) granting a pension to :Kannie A. Bell; to the Committee
+    on Invalid Pensions. .Allio, a bill ...
+  headshot_url: http://media.bizj.us/view/img/10239080/bill-schumann-tesoro*1200xx512-385-0-57.jpg
   largest_financial_supporter_name: null
   largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
+  instagram_url: https://www.facebook.com/100090016290561/posts/toledomaza-alejandrobooking-number-2025020262booking-datetime07312025-0847charge/725530657124138/
+  linkedin_url: https://www.linkedin.com/pub/dir/Bill/Schumann
 - id: 21
   name: Bobby Whitson
   position: Bell County Commissioner, Precinct 2
@@ -93,13 +100,13 @@ candidates:
   - '... election - the three top vote-getters are elected as County Commissioners.
     The results were: Dawida(D) 27% Dunn (R) 26% :Cramner(R) 24 % Vuono (0) 23% The
     ...'
-  headshot_url: https://lookaside.fbsbx.com/lookaside/crawler/instagram/bellcountycommish/profile_pic.jpg
+  headshot_url: https://bloximages.newyork1.vip.townnews.com/kdhnews.com/content/tncms/assets/v3/editorial/8/ed/8ed67ba6-9fdc-11eb-93f0-0717e0675f16/607b7c70494ce.image.jpg
   largest_financial_supporter_name: null
   largest_financial_supporter_work_for: null
   instagram_url: https://www.facebook.com/bellcodems/posts/-stacey-wilson-for-county-commissioner-precinct-2-stacey-l-wilson-instagramcomst/1281821050654714/
   linkedin_url: null
 - id: 23
-  name: Greg Reynolds
+  name: John Driver
   position: Bell County Commissioner, Precinct 3
   office: Bell County Commissioner P3
   jurisdiction: Bell County
@@ -107,21 +114,26 @@ candidates:
   party: REP
   election_phase: seated
   FEC: 'no'
-  facebook_url: null
-  website_url: https://www.bellcountytx.com/county_government/commissioners_court/index.php
-  notes: Incumbent; listed on Bell County Commissioners Court.
+  facebook_url: https://www.facebook.com/JohnFisherPct4/posts/yesterday-evening-at-the-bell-county-election-returns-sheena-and-i-went-over-and/1901911589856390/
+  website_url: null
   group_city: ''
   group_state: Texas
   group_function: CountyAdministration
   office_group_key: Bell County Commissioner P3
   office_up_for_election_this_year: false
-  office_incumbent_name: Greg Reynolds
-  office_opponents_platform_key_facts: []
-  headshot_url: null
+  office_incumbent_name: John Driver
+  office_opponents_platform_key_facts:
+  - '[Senate Hearing 115-643] [From the U.S. Government Publishing Office] S. Hrg.
+    115-643 NOMINATION TO THE NATIONAL AERONAUTICS AND SPACE ADMINISTRATION, ...'
+  - analysis expert in cases unconnected to elections and voting (e.g., for automobile
+    risk analysis), and I have been hired as a data scientist ...
+  - Pleadings Allowed; Form of Motions and Other Papers. 8. General Rules of Pleading.
+    9. Pleading Special Matters. 10. Form of Pleadings.
+  headshot_url: https://bloximages.newyork1.vip.townnews.com/kdhnews.com/content/tncms/assets/v3/editorial/0/d0/0d0d83ac-8bf0-4b55-a0a1-853c4d270690/699108418a698.image.jpg
   largest_financial_supporter_name: null
   largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
+  instagram_url: https://www.mintmuseum.org/news/author/taylorsocialdesignhouse-com/
+  linkedin_url: https://www.linkedin.com/in/john-driver-a3a28026
 - id: 24
   name: Louie Minor
   position: Bell County Commissioner, Precinct 4
@@ -129,11 +141,11 @@ candidates:
   jurisdiction: Bell County
   status: incumbent
   party: DEM
-  election_phase: general_2026
+  election_phase: primary_2026
   FEC: 'no'
   facebook_url: null
   website_url: null
-  notes: Incumbent Democrat; nominated after the March 2026 primary. Faces Republican Curtis Emmons in the November 2026 general.
+  notes: Incumbent; D primary with Ernest Wilkerson.
   group_city: ''
   group_state: Texas
   group_function: CountyAdministration
@@ -149,7 +161,7 @@ candidates:
     ...
   - The PRESIDENT pro tempore. Sixty-five Senators have an- swered to their names.
     A quorum is present. NOMINATION OF NAT GOLDSTEIN,.
-  headshot_url: /assets/imgs/candidates/25.png
+  headshot_url: https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Louie_Minor_20260203_083721.jpg
   largest_financial_supporter_name: null
   largest_financial_supporter_work_for: null
   instagram_url: https://www.instagram.com/reel/DUZKdQwFHc0/
@@ -161,11 +173,10 @@ candidates:
   jurisdiction: Bell County
   status: candidate
   party: REP
-  election_phase: general_2026
+  election_phase: primary_2026
   FEC: 'no'
   facebook_url: https://www.facebook.com/ElectEmmons/
   website_url: null
-  notes: Republican nominee for Precinct 4. Faces incumbent Commissioner Louie Minor (D) in the November 2026 general.
   group_city: ''
   group_state: Texas
   group_function: CountyAdministration
@@ -181,7 +192,7 @@ candidates:
     ...
   - The PRESIDENT pro tempore. Sixty-five Senators have an- swered to their names.
     A quorum is present. NOMINATION OF NAT GOLDSTEIN,.
-  headshot_url: /assets/imgs/candidates/26.png
+  headshot_url: https://bloximages.newyork1.vip.townnews.com/kdhnews.com/content/tncms/assets/v3/editorial/8/89/88970ff3-fcef-57a6-b898-cde53e954eda/698f913bcc816.image.jpg
   largest_financial_supporter_name: null
   largest_financial_supporter_work_for: null
   instagram_url: null
@@ -191,13 +202,12 @@ candidates:
   position: Bell County Commissioner, Precinct 4 (candidate)
   office: Bell County Commissioner P4
   jurisdiction: Bell County
-  status: eliminated
+  status: candidate
   party: DEM
   election_phase: primary_2026
   FEC: 'no'
   facebook_url: https://www.facebook.com/VoteErnest/
   website_url: null
-  notes: Eliminated in the March 2026 Democratic primary; did not advance to the general.
   group_city: ''
   group_state: Texas
   group_function: CountyAdministration
@@ -213,7 +223,7 @@ candidates:
     ...
   - The PRESIDENT pro tempore. Sixty-five Senators have an- swered to their names.
     A quorum is present. NOMINATION OF NAT GOLDSTEIN,.
-  headshot_url: /assets/imgs/candidates/27.png
+  headshot_url: https://bloximages.newyork1.vip.townnews.com/kdhnews.com/content/tncms/assets/v3/editorial/b/66/b662c147-deda-4fab-80be-540ec5b17f1c/698d1b6ab788c.image.jpg
   largest_financial_supporter_name: null
   largest_financial_supporter_work_for: null
   instagram_url: https://www.instagram.com/votewilkerson/
@@ -303,7 +313,7 @@ candidates:
     the benefits of gender equality and women's empowerment across the whole of ...
   - '[Senate Hearing 114-687] [From the U.S. Government Publishing Office] S. Hrg.
     114-687 U.S. NATIONAL SECURITY CHALLENGES AND ONGOING MILITARY OPERATIONS ...'
-  headshot_url: null
+  headshot_url: https://bloximages.newyork1.vip.townnews.com/kdhnews.com/content/tncms/assets/v3/editorial/e/43/e433d406-b0cf-11ef-b1f4-6b4c9c7d6bd2/674de9487cadd.image.jpg
   largest_financial_supporter_name: null
   largest_financial_supporter_work_for: null
   instagram_url: https://ppdphoto.photoshelter.com/archive/
@@ -379,7 +389,7 @@ candidates:
   FEC: 'no'
   facebook_url: https://www.facebook.com/BCSD13/posts/1336213528532414/
   website_url: null
-  notes: Sheriff; per Bell County government. Elected 2024; sworn in Jan 2025.
+  notes: Elected 2024; sworn in Jan 2025. Next county election cycle per Bell County.
   group_city: ''
   group_state: Texas
   group_function: Executive
@@ -392,40 +402,11 @@ candidates:
     to public service and private industry are competing ...
   - "BELTON \u2014 Patrick \u201CPat\u201D Patterson will follow in his stepfather's\
     \ footsteps as Bell County Precinct 1 Justice of the Peace while incumbent ..."
-  headshot_url: null
+  headshot_url: https://www.geosciences.msstate.edu/sites/www.geosciences.msstate.edu/files/styles/msstatedrupal_medium/public/2024-11/Bill_Cooke.jpg?itok=wFFX6nIr
   largest_financial_supporter_name: null
   largest_financial_supporter_work_for: null
   instagram_url: https://www.instagram.com/p/DQAbB8vEx07/
-  linkedin_url: null
-- id: 27
-  name: Beatrice Cox
-  position: Justice of the Peace, Bell County Precinct 4, Place 2 (candidate)
-  office: Bell JP P4 Place 2
-  jurisdiction: Bell County
-  status: candidate
-  party: REP
-  election_phase: primary_2026
-  FEC: 'no'
-  facebook_url: https://www.facebook.com/BeaForJP/
-  website_url: null
-  group_city: ''
-  group_state: Texas
-  group_function: Judicial
-  office_group_key: Bell JP P4 Place 2
-  office_up_for_election_this_year: true
-  office_incumbent_name: Nicola J. James
-  office_opponents_platform_key_facts:
-  - Biography. Ballotpedia did not receive biographical information for this candidate.
-    Elections. Democratic primary. Democratic primary ...
-  - Incumbent judge, Nicola James, faces Jessica Gonzalez, who currently serves on
-    the Killeen City Council, and LaTasha Quarles, who is a veteran ...
-  - Jessica A. Gonzalez (Bell County Justice of the Peace Precinct 4, Place 2, Texas,
-    candidate 2026).
-  headshot_url: /assets/imgs/candidates/28.png
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: https://www.linkedin.com/in/bea-cox-a19b6176
+  linkedin_url: https://www.facebook.com/48hours/posts/killeen-texas-police-say-spc-corey-grafton-20-was-arrested-in-the-july-2019-deat/10160353098473496/
 - id: 28
   name: Latasha Carroway Quarles
   position: Justice of the Peace, Bell County Precinct 4, Place 2 (candidate)
@@ -446,14 +427,14 @@ candidates:
   office_opponents_platform_key_facts:
   - Biography. Ballotpedia did not receive biographical information for this candidate.
     Elections. Democratic primary. Democratic primary ...
-  - Incumbent judge, Nicola James, faces Jessica Gonzalez, who currently serves on
-    the Killeen City Council, and LaTasha Quarles, who is a veteran ...
+  - Candidates for this race include Nicola J. James, Jessica A. Gonzalez, and
+    LaTasha Carroway Quarles.
   - Jessica A. Gonzalez (Bell County Justice of the Peace Precinct 4, Place 2, Texas,
     candidate 2026).
-  headshot_url: /assets/imgs/candidates/29.png
+  headshot_url: https://bloximages.newyork1.vip.townnews.com/kdhnews.com/content/tncms/assets/v3/editorial/d/ad/dad258c5-582c-49a9-9071-8d3586530f43/6990ce1254a8e.image.jpg
   largest_financial_supporter_name: null
   largest_financial_supporter_work_for: null
-  instagram_url: null
+  instagram_url: https://www.facebook.com/GrizzysHoodNews/posts/court-records-reveal-that-frank-steven-demo-from-spring-branch-has-been-charged-/1333301018156382/
   linkedin_url: https://www.linkedin.com/in/latashaquarles
 - id: 29
   name: Nicola J. James
@@ -464,9 +445,8 @@ candidates:
   party: DEM
   election_phase: primary_2026
   FEC: 'no'
-  facebook_url: null
-  website_url: https://www.jamesj4txjustice.com
-  notes: Incumbent JP; filed for re-election in the March 2026 Democratic primary (per Bell County filings and local coverage).
+  facebook_url: https://www.facebook.com/kdhnews/posts/three-candidates-have-filed-for-justice-of-the-peace-precinct-4-place-2-in-bell-/1457676362973180/
+  website_url: null
   group_city: ''
   group_state: Texas
   group_function: Judicial
@@ -476,15 +456,15 @@ candidates:
   office_opponents_platform_key_facts:
   - Biography. Ballotpedia did not receive biographical information for this candidate.
     Elections. Democratic primary. Democratic primary ...
-  - Incumbent judge, Nicola James, faces Jessica Gonzalez, who currently serves on
-    the Killeen City Council, and LaTasha Quarles, who is a veteran ...
+  - Candidates for this race include Nicola J. James, Jessica A. Gonzalez, and
+    LaTasha Carroway Quarles.
   - Jessica A. Gonzalez (Bell County Justice of the Peace Precinct 4, Place 2, Texas,
     candidate 2026).
-  headshot_url: /assets/imgs/candidates/30.png
+  headshot_url: https://bloximages.newyork1.vip.townnews.com/kdhnews.com/content/tncms/assets/v3/editorial/f/f9/ff9c5d41-cfc0-4c88-be04-fdb81f30bab6/6905f3e5e463a.image.png
   largest_financial_supporter_name: null
   largest_financial_supporter_work_for: null
   instagram_url: https://www.instagram.com/james4txjustice/
-  linkedin_url: null
+  linkedin_url: https://kdhnews.com/harker_heights_herald/community/judge-nicola-james-to-seek-reelection-to-bell-county-precinct-4-place-2-jp-post/article_568ac374-58ea-4a72-b260-65987c3ee881.html
 - id: 30
   name: Jessica A. Gonzalez
   position: Justice of the Peace, Bell County Precinct 4, Place 2 (candidate)
@@ -506,14 +486,39 @@ candidates:
   office_opponents_platform_key_facts:
   - Biography. Ballotpedia did not receive biographical information for this candidate.
     Elections. Democratic primary. Democratic primary ...
-  - Incumbent judge, Nicola James, faces Jessica Gonzalez, who currently serves on
-    the Killeen City Council, and LaTasha Quarles, who is a veteran ...
+  - Candidates for this race include Nicola J. James, Jessica A. Gonzalez, and
+    LaTasha Carroway Quarles.
   - Jessica A. Gonzalez (Bell County Justice of the Peace Precinct 4, Place 2, Texas,
     candidate 2026).
-  headshot_url: /assets/imgs/candidates/31.png
+  headshot_url: https://bloximages.newyork1.vip.townnews.com/kdhnews.com/content/tncms/assets/v3/editorial/b/fc/bfc394bf-fcb6-4957-8757-91afd549cc7b/69a7bfea5188e.image.jpg
   largest_financial_supporter_name: null
   largest_financial_supporter_work_for: null
   instagram_url: https://www.instagram.com/p/DU6yQ0ckjUF/
+  linkedin_url: null
+- id: 44
+  name: Gregory Johnson
+  position: Justice of the Peace, Bell County Precinct 4, Place 1
+  office: Bell JP P4 Place 1
+  jurisdiction: Bell County
+  status: incumbent
+  party: null
+  election_phase: seated
+  FEC: 'no'
+  facebook_url: null
+  website_url: https://www.bellcountytx.com/county_government/justice_of_the_peace/precinct_4_place_1/index.php
+  notes: Ground truth from Bell County JP Precinct 4 Place 1 page.
+  group_city: Killeen
+  group_state: Texas
+  group_function: Judicial
+  office_group_key: Bell JP P4 Place 1
+  office_up_for_election_this_year: false
+  office_incumbent_name: Gregory Johnson
+  office_opponents_platform_key_facts:
+  - Bell County JP P4 Place 1 officeholder listing and contact details.
+  headshot_url: https://www.bellcountytx.com/county_government/justice_of_the_peace/precinct_4_place_1/index.php
+  largest_financial_supporter_name: null
+  largest_financial_supporter_work_for: null
+  instagram_url: null
   linkedin_url: null
 - id: 17
   name: Brad Buckley
@@ -543,7 +548,7 @@ candidates:
   largest_financial_supporter_name: null
   largest_financial_supporter_work_for: null
   instagram_url: null
-  linkedin_url: null
+  linkedin_url: https://www.linkedin.com/in/cash-rugely-363133285
 - id: 18
   name: Dawn Richardson
   position: Texas State Representative, House District 54 (candidate)
@@ -568,7 +573,7 @@ candidates:
     not worried about having to buy things out of their own pockets.
   - Bell County is one county that has seen a low voter turnout over the last several
     years. However, with a strong turnout, they could quickly flip ...
-  headshot_url: null
+  headshot_url: https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Dawn_Richardson.jpg
   largest_financial_supporter_name: null
   largest_financial_supporter_work_for: null
   instagram_url: https://www.instagram.com/anewdawnfortexas/
@@ -649,1905 +654,292 @@ candidates:
   office_up_for_election_this_year: true
   office_incumbent_name: John R. Carter
   office_opponents_platform_key_facts: []
-  headshot_url: null
+  headshot_url: https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Justin_Early_20250701_092705.png
   largest_financial_supporter_name: null
   largest_financial_supporter_work_for: null
   instagram_url: null
   linkedin_url: https://communityimpact.com/austin/georgetown/election/2026/01/28/qa-hear-from-the-democratic-candidates-running-for-us-house-district-31/
-- id: 32
-  name: Riakos Adams
-  position: Mayor, City of Killeen
-  office: Killeen Municipal
+- id: 34
+  name: Ramon Alvarez
+  position: Killeen City Council, At-Large / Mayor Pro Tem
+  office: Killeen Council At-Large
   jurisdiction: Killeen
   status: incumbent
   party: null
   election_phase: seated
   FEC: 'no'
-  facebook_url: https://www.killeentexas.gov/city-council
-  website_url: https://www.killeentexas.gov/city-council
-  notes: >-
-    Seated mayor per Bell County city directory in _cities (bell_county.md and killeen README).
+  facebook_url: https://kdhnews.com/news/local/killeen-councilman-alvarez-calls-rezoning-rejection-mob-rule-in-facebook-post/article_93e9af66-f481-11ef-b85e-a720dd8de45f.html
+  website_url: null
   group_city: Killeen
   group_state: Texas
   group_function: Executive
-  office_group_key: Killeen Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Riakos Adams
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 34
-  name: Ramon Alvarez
-  position: Mayor Pro Tem, Killeen City Council
-  office: Killeen Municipal
-  jurisdiction: Killeen
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: https://www.killeentexas.gov/city-council
-  website_url: null
-  notes: >-
-    Mayor pro tem per Bell County city directory (_cities).
-  group_city: Killeen
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Killeen Municipal
+  office_group_key: Killeen Council At-Large
   office_up_for_election_this_year: false
   office_incumbent_name: Ramon Alvarez
-  office_opponents_platform_key_facts: []
+  office_opponents_platform_key_facts:
+  - "What are your thoughts on the mayor's decision to step down and the potential\
+    \ impact on the city council? Dennis Drury \u25BB Killeen TX Citizen ..."
+  - FALSE AND MISLEADING INFORMATION. (City of Killeen, Texas) The city manager, mayor,
+    and city council are promoting on social media a ...
+  - With Early Voting beginning at 8 a.m. on Monday, the Telegram contacted state
+    and local politicians for their views on the 17 statewide ...
   headshot_url: https://boxrec.com/images/thumb/1/1f/Ramon_Alvarez.jpg/200px-Ramon_Alvarez.jpg
   largest_financial_supporter_name: null
   largest_financial_supporter_work_for: null
   instagram_url: null
-  linkedin_url: null
-- id: 37
-  name: Joseph Solomon
-  position: Councilmember At-Large, Killeen City Council
-  office: Killeen Municipal
+  linkedin_url: https://kdhnews.com/news/local/killeen-candidate-to-host-meet-and-greet-event-march-27/article_5821dcf8-883b-11eb-8c61-2bf5a1dc7bff.html
+- id: 32
+  name: Debbie Nash-King
+  position: Mayor, City of Killeen
+  office: Killeen Mayor
   jurisdiction: Killeen
   status: incumbent
   party: null
   election_phase: seated
   FEC: 'no'
-  facebook_url: https://www.killeentexas.gov/city-council
+  facebook_url: https://www.facebook.com/KilleenTexas/posts/mayor-debbie-nash-king-shares-a-special-black-history-month-message-honoring-thi/1333794652117779/
   website_url: null
-  notes: >-
-    At-large council seat per Bell County city directory (_cities).
+  group_city: Killeen
+  group_state: Texas
+  group_function: Executive
+  office_group_key: Killeen Mayor
+  office_up_for_election_this_year: false
+  office_incumbent_name: Debbie Nash-King
+  office_opponents_platform_key_facts:
+  - The filing period for the May 2 election ended Friday, with races in Killeen looking
+    especially competitive.
+  - The Killeen Charter Review Committee, tasked with making recommendations to the
+    Killeen City Council for changes to the city charter, ...
+  - "... video series leading up to the May 2, 2026 election. | Killeen Daily Herald\
+    \ | Facebook. Log in \xB7 Video. \U000F1858. Killeen Daily Herald. Feb 6\U000F078B\
+    \U000F17E0. \U000F312B ..."
+  headshot_url: https://killeen.legistar.com/View.ashx?M=P&ID=182954&GUID=6A9498B8-EA7B-450B-B104-B7C79AF9BE2C
+  largest_financial_supporter_name: null
+  largest_financial_supporter_work_for: null
+  instagram_url: https://www.instagram.com/p/CjYNxkjMv3e/
+  linkedin_url: https://www.linkedin.com/posts/ericvonfranklin_killeen-mayor-prioritizes-relationship-with-activity-7048617639597772800-eiE0
+- id: 33
+  name: Jose Segarra
+  position: Killeen City Council, At-Large
+  office: Killeen Council At-Large
+  jurisdiction: Killeen
+  status: incumbent
+  party: null
+  election_phase: seated
+  FEC: 'no'
+  facebook_url: https://www.facebook.com/kdhnews/posts/killeen-mayor-debbie-nash-king-announced-that-she-has-filed-to-run-for-one-of-th/1456150003125816/
+  website_url: null
   group_city: Killeen
   group_state: Texas
   group_function: Legislative
-  office_group_key: Killeen Municipal
+  office_group_key: Killeen Council At-Large
+  office_up_for_election_this_year: false
+  office_incumbent_name: Ramon Alvarez
+  office_opponents_platform_key_facts:
+  - "What are your thoughts on the mayor's decision to step down and the potential\
+    \ impact on the city council? Dennis Drury \u25BB Killeen TX Citizen ..."
+  - FALSE AND MISLEADING INFORMATION. (City of Killeen, Texas) The city manager, mayor,
+    and city council are promoting on social media a ...
+  - With Early Voting beginning at 8 a.m. on Monday, the Telegram contacted state
+    and local politicians for their views on the 17 statewide ...
+  headshot_url: https://www.killeentexas.gov/ImageRepository/Document?documentID=83
+  largest_financial_supporter_name: null
+  largest_financial_supporter_work_for: null
+  instagram_url: https://kdhnews.com/news/local/mobile-lemonade-and-coffee-bar-to-host-grand-opening-saturday/article_174d55fb-3d0a-4eb1-a262-5fba192fec21.html
+  linkedin_url: https://kdhnews.com/centerforpolitics/two-people-file-for-killeen-council-at-large-seat/article_3a259c4a-cc5c-11ee-aa47-7f41d5bacb8c.html
+- id: 35
+  name: Riakos Adams
+  position: Killeen City Council, At-Large
+  office: Killeen Council At-Large
+  jurisdiction: Killeen
+  status: incumbent
+  party: null
+  election_phase: seated
+  FEC: 'no'
+  facebook_url: https://www.facebook.com/kdhnews/posts/beverly-williams-an-army-veteran-filed-for-the-killeen-city-council-at-large-pos/1428419932565490/
+  website_url: null
+  group_city: Killeen
+  group_state: Texas
+  group_function: Legislative
+  office_group_key: Killeen Council At-Large
+  office_up_for_election_this_year: false
+  office_incumbent_name: Ramon Alvarez
+  office_opponents_platform_key_facts:
+  - "What are your thoughts on the mayor's decision to step down and the potential\
+    \ impact on the city council? Dennis Drury \u25BB Killeen TX Citizen ..."
+  - FALSE AND MISLEADING INFORMATION. (City of Killeen, Texas) The city manager, mayor,
+    and city council are promoting on social media a ...
+  - With Early Voting beginning at 8 a.m. on Monday, the Telegram contacted state
+    and local politicians for their views on the 17 statewide ...
+  headshot_url: https://www.killeentexas.gov/ImageRepository/Document?documentId=11178
+  largest_financial_supporter_name: null
+  largest_financial_supporter_work_for: null
+  instagram_url: https://kdhnews.com/news/local/mobile-lemonade-and-coffee-bar-to-host-grand-opening-saturday/article_174d55fb-3d0a-4eb1-a262-5fba192fec21.html
+  linkedin_url: https://kdhnews.com/centerforpolitics/two-people-file-for-killeen-council-at-large-seat/article_3a259c4a-cc5c-11ee-aa47-7f41d5bacb8c.html
+- id: 36
+  name: Jessica Gonzalez
+  position: Killeen City Council, District 1
+  office: Killeen Council D1
+  jurisdiction: Killeen
+  status: incumbent
+  party: null
+  election_phase: seated
+  FEC: 'no'
+  facebook_url: https://www.facebook.com/jessicag4mekilleen/
+  website_url: null
+  group_city: Killeen
+  group_state: Texas
+  group_function: Legislative
+  office_group_key: Killeen Council D1
+  office_up_for_election_this_year: false
+  office_incumbent_name: Jessica Gonzalez
+  office_opponents_platform_key_facts:
+  - Deb For Long Beach I want to publicly thank you for taking the time to chat with
+    me in person about the law suit. The FPPC process is in ...
+  - The purpose of this addendum is to attach a comment letter from the owner of Anthony's.
+    Fish Grotto, which is the existing restaurant that ...
+  - 'By Mr. RABAUT: Resolution of the Senate of the State of Michigan requesting the
+    Fed- eral Government to give consideration to the. Hearst plan ...'
+  headshot_url: https://assembly.state.ny.us/write/upload/member_files/034/header_headshot/034.png?hhst=1662743506
+  largest_financial_supporter_name: null
+  largest_financial_supporter_work_for: null
+  instagram_url: https://www.instagram.com/p/DIwdbecTyk8/
+  linkedin_url: https://www.linkedin.com/in/jessica-gonzalez-1871243a6
+- id: 37
+  name: Joseph Solomon
+  position: Killeen City Council, District 2
+  office: Killeen Council D2
+  jurisdiction: Killeen
+  status: incumbent
+  party: null
+  election_phase: seated
+  FEC: 'no'
+  facebook_url: https://www.facebook.com/kdhnews/posts/councilman-joseph-solomon-filed-to-run-for-mayor-of-city-of-killeen-friday-in-th/1442592117814938/
+  website_url: null
+  group_city: Killeen
+  group_state: Texas
+  group_function: Legislative
+  office_group_key: Killeen Council D2
   office_up_for_election_this_year: false
   office_incumbent_name: Joseph Solomon
-  office_opponents_platform_key_facts: []
+  office_opponents_platform_key_facts:
+  - Deb For Long Beach I want to publicly thank you for taking the time to chat with
+    me in person about the law suit. The FPPC process is in ...
+  - We ask all federal, state, and local candidates to complete the Candidate Connection
+    questionnaire and share what motivates them on political and personal ...
+  - The Legislature acknowledges that certain municipalities may have additional qualifications
+    for candidates. The Circuit Court judge failed to ...
   headshot_url: https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100044627340358
   largest_financial_supporter_name: null
   largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
+  instagram_url: https://www.tdtnews.com/news/region/article_dc7edae3-1588-5882-9028-434d1fd0521b.html
+  linkedin_url: https://www.linkedin.com/in/joe-solomon-solomon-1162b3114
 - id: 38
   name: Nina Cobb
-  position: Councilmember District 3, Killeen City Council
-  office: Killeen Municipal
+  position: Killeen City Council, District 3
+  office: Killeen Council D3
   jurisdiction: Killeen
   status: incumbent
   party: null
   election_phase: seated
   FEC: 'no'
-  facebook_url: https://www.killeentexas.gov/city-council
+  facebook_url: https://www.facebook.com/kdhnews/posts/since-the-start-of-the-filing-period-on-march-4-three-people-have-filed-to-run-f/1475216821219134/
   website_url: null
-  notes: >-
-    District 3 per Bell County city directory (_cities).
   group_city: Killeen
   group_state: Texas
   group_function: Legislative
-  office_group_key: Killeen Municipal
+  office_group_key: Killeen Council D3
   office_up_for_election_this_year: false
   office_incumbent_name: Nina Cobb
-  office_opponents_platform_key_facts: []
+  office_opponents_platform_key_facts:
+  - Deb For Long Beach I want to publicly thank you for taking the time to chat with
+    me in person about the law suit. The FPPC process is in ...
+  - Since the start of the filing period on March 4, three people have filed to run
+    for former councilwoman Nina Cobb's District 3 seat on the ...
+  - "3 Killeen City Council seats sit empty ahead of May special election. 57 views\
+    \ \xB7 6 days ago ...more. 25 News KXXV. 219K. Subscribe. 3. Share."
   headshot_url: https://fineartconnoisseur.com/wp-content/uploads/2022/08/1_Walker_WP.jpg
   largest_financial_supporter_name: null
   largest_financial_supporter_work_for: null
   instagram_url: null
   linkedin_url: https://www.killeentexas.gov/directory.aspx?EID=140
-- id: 900
-  name: David K. Leigh
-  position: Mayor
-  office: Belton Municipal
-  jurisdiction: Belton
+- id: 39
+  name: Anthony Kendrick
+  position: Killeen City Council, District 4
+  office: Killeen Council D4
+  jurisdiction: Killeen
   status: incumbent
   party: null
   election_phase: seated
   FEC: 'no'
+  facebook_url: https://www.facebook.com/61573556377934/photos/
+  website_url: null
+  group_city: Killeen
+  group_state: Texas
+  group_function: Legislative
+  office_group_key: Killeen Council D4
+  office_up_for_election_this_year: false
+  office_incumbent_name: Anthony Kendrick
+  office_opponents_platform_key_facts:
+  - The clash between Sen. John Cornyn and Attorney General Ken Paxton in the Texas
+    GOP is heating up. And Texas Democrats Sarah Eckhardt and ...
+  - 'OCR: Do you really think this District 4 candidate is an independent thinker,
+    or just another puppet for the mayor? How can we really trust ...'
+  - "OCR: WHEN CITY COUNCIL TURNS INTO REALITY \u03BD... THE RECKLESS & ARROGANT EDITION\
+    \ Columbus Ga City Council olumbusGaCiyCunciMetin1-1-2 Meeting ..."
+  headshot_url: https://www.killeentexas.gov/ImageRepository/Document?documentID=12239
+  largest_financial_supporter_name: null
+  largest_financial_supporter_work_for: null
+  instagram_url: https://archive.org/stream/The_Austin_Chronicle-2014-12-19/The_Austin_Chronicle-2014-12-19_djvu.txt
+  linkedin_url: https://www.linkedin.com/in/anthony-kendrick-814576368
+- id: 45
+  name: Don Huffines
+  position: Texas Comptroller of Public Accounts candidate (Republican nominee)
+  office: TX Comptroller
+  jurisdiction: Texas
+  status: candidate
+  party: REP
+  election_phase: general_2026
+  FEC: 'no'
   facebook_url: null
   website_url: null
   notes: >-
-    Per city directory (_cities). Term note: May 2027.
-  group_city: Belton
+    Won the March 2026 Republican primary outright (no runoff). Faces Sarah Eckhardt
+    in the November 3, 2026 general. Kelly Hancock is acting Comptroller until the
+    elected successor takes office. Verify certification with Texas Secretary of State.
+  group_city: ''
   group_state: Texas
   group_function: Executive
-  office_group_key: Belton Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: David K. Leigh
+  office_group_key: TX Comptroller
+  office_up_for_election_this_year: true
+  office_incumbent_name: Kelly Hancock
   office_opponents_platform_key_facts: []
   headshot_url: null
   largest_financial_supporter_name: null
   largest_financial_supporter_work_for: null
   instagram_url: null
   linkedin_url: null
-- id: 901
-  name: John R. Holmes Sr.
-  position: Mayor Pro Tem
-  office: Belton Municipal
-  jurisdiction: Belton
-  status: incumbent
-  party: null
-  election_phase: seated
+- id: 46
+  name: Sarah Eckhardt
+  position: Texas Comptroller of Public Accounts candidate (Democratic nominee)
+  office: TX Comptroller
+  jurisdiction: Texas
+  status: candidate
+  party: DEM
+  election_phase: general_2026
   FEC: 'no'
   facebook_url: null
   website_url: null
   notes: >-
-    Per city directory (_cities). Term note: May 2026.
-  group_city: Belton
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Belton Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: John R. Holmes Sr.
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 902
-  name: Dave Covington
-  position: Councilmember Place 2
-  office: Belton Municipal
-  jurisdiction: Belton
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per city directory (_cities). Term note: May 2026.
-  group_city: Belton
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Belton Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Dave Covington
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 903
-  name: Craig Pearson
-  position: Councilmember Place 3
-  office: Belton Municipal
-  jurisdiction: Belton
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per city directory (_cities). Term note: May 2027.
-  group_city: Belton
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Belton Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Craig Pearson
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 904
-  name: Daniel Bucher
-  position: Councilmember Place 5
-  office: Belton Municipal
-  jurisdiction: Belton
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per city directory (_cities). Term note: May 2028.
-  group_city: Belton
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Belton Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Daniel Bucher
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 905
-  name: Luke Potts
-  position: Councilmember Place 6
-  office: Belton Municipal
-  jurisdiction: Belton
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per city directory (_cities). Term note: May 2028.
-  group_city: Belton
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Belton Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Luke Potts
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 906
-  name: 'Stephanie O''Banion'
-  position: Councilmember Place 7
-  office: Belton Municipal
-  jurisdiction: Belton
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per city directory (_cities). Term note: May 2028.
-  group_city: Belton
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Belton Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: 'Stephanie O''Banion'
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 907
-  name: Michael Blomquist
-  position: Mayor
-  office: Harker Heights Municipal
-  jurisdiction: Harker Heights
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per Bell County city directory (_cities/bell_county.md).
-  group_city: Harker Heights
+    Democratic nominee after March 2026 primary. Faces Don Huffines in the November
+    3, 2026 general. Kelly Hancock is acting Comptroller until the elected successor
+    takes office. Verify certification with Texas Secretary of State.
+  group_city: ''
   group_state: Texas
   group_function: Executive
-  office_group_key: Harker Heights Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Michael Blomquist
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 908
-  name: Lynda Nash
-  position: Mayor Pro Tem
-  office: Harker Heights Municipal
-  jurisdiction: Harker Heights
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per Bell County city directory (_cities/bell_county.md).
-  group_city: Harker Heights
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Harker Heights Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Lynda Nash
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 909
-  name: Brian Burt
-  position: Councilmember Place 1
-  office: Harker Heights Municipal
-  jurisdiction: Harker Heights
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per Bell County city directory (_cities/bell_county.md).
-  group_city: Harker Heights
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Harker Heights Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Brian Burt
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 910
-  name: Shane Hodyniak
-  position: Councilmember Place 2
-  office: Harker Heights Municipal
-  jurisdiction: Harker Heights
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per Bell County city directory (_cities/bell_county.md).
-  group_city: Harker Heights
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Harker Heights Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Shane Hodyniak
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 911
-  name: Jesse Lee Myles III
-  position: Councilmember Place 3
-  office: Harker Heights Municipal
-  jurisdiction: Harker Heights
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per Bell County city directory (_cities/bell_county.md).
-  group_city: Harker Heights
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Harker Heights Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Jesse Lee Myles III
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 912
-  name: Sam Halabi
-  position: Councilmember Place 5
-  office: Harker Heights Municipal
-  jurisdiction: Harker Heights
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per Bell County city directory (_cities/bell_county.md).
-  group_city: Harker Heights
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Harker Heights Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Sam Halabi
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 913
-  name: Tim Davis
-  position: Mayor (At-Large)
-  office: Temple Municipal
-  jurisdiction: Temple
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per Bell County city directory (_cities/bell_county.md).
-  group_city: Temple
-  group_state: Texas
-  group_function: Executive
-  office_group_key: Temple Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Tim Davis
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 914
-  name: Jessica Walker
-  position: Mayor Pro Tem (District 1)
-  office: Temple Municipal
-  jurisdiction: Temple
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per Bell County city directory (_cities/bell_county.md).
-  group_city: Temple
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Temple Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Jessica Walker
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 915
-  name: Dr. Zoe Grant
-  position: Councilmember (District 2)
-  office: Temple Municipal
-  jurisdiction: Temple
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per Bell County city directory (_cities/bell_county.md).
-  group_city: Temple
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Temple Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Dr. Zoe Grant
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 916
-  name: Karl Kuykendall
-  position: Councilmember (District 3)
-  office: Temple Municipal
-  jurisdiction: Temple
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per Bell County city directory (_cities/bell_county.md).
-  group_city: Temple
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Temple Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Karl Kuykendall
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 917
-  name: Mike Pilkington
-  position: Councilmember (District 4)
-  office: Temple Municipal
-  jurisdiction: Temple
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per Bell County city directory (_cities/bell_county.md).
-  group_city: Temple
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Temple Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Mike Pilkington
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 918
-  name: Andy Williams
-  position: Mayor
-  office: Nolanville Municipal
-  jurisdiction: Nolanville
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per Bell County city directory (_cities/bell_county.md).
-  group_city: Nolanville
-  group_state: Texas
-  group_function: Executive
-  office_group_key: Nolanville Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Andy Williams
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 919
-  name: James Lynn Bilberry
-  position: Mayor Pro Tem
-  office: Nolanville Municipal
-  jurisdiction: Nolanville
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per Bell County city directory (_cities/bell_county.md).
-  group_city: Nolanville
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Nolanville Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: James Lynn Bilberry
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 920
-  name: Karishma Talbott
-  position: Councilmember Seat 1
-  office: Nolanville Municipal
-  jurisdiction: Nolanville
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per Bell County city directory (_cities/bell_county.md).
-  group_city: Nolanville
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Nolanville Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Karishma Talbott
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 921
-  name: Juanita Sims
-  position: Councilmember Seat 2
-  office: Nolanville Municipal
-  jurisdiction: Nolanville
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per Bell County city directory (_cities/bell_county.md).
-  group_city: Nolanville
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Nolanville Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Juanita Sims
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 922
-  name: Tanara Grisham
-  position: Councilmember Seat 3
-  office: Nolanville Municipal
-  jurisdiction: Nolanville
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per Bell County city directory (_cities/bell_county.md).
-  group_city: Nolanville
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Nolanville Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Tanara Grisham
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 923
-  name: Mikayla Mondragon
-  position: Councilmember Seat 4
-  office: Nolanville Municipal
-  jurisdiction: Nolanville
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per Bell County city directory (_cities/bell_county.md).
-  group_city: Nolanville
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Nolanville Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Mikayla Mondragon
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 924
-  name: '(vacant)'
-  position: Mayor
-  office: Salado Municipal
-  jurisdiction: Salado
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per city directory (_cities). listed vacant in city directory.
-  group_city: Salado
-  group_state: Texas
-  group_function: Executive
-  office_group_key: Salado Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: null
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 925
-  name: Zach Hurst
-  position: Mayor Pro Tem
-  office: Salado Municipal
-  jurisdiction: Salado
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per Bell County city directory (_cities/bell_county.md).
-  group_city: Salado
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Salado Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Zach Hurst
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 926
-  name: Neil Dunch
-  position: Alderman
-  office: Salado Municipal
-  jurisdiction: Salado
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per Bell County city directory (_cities/bell_county.md).
-  group_city: Salado
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Salado Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Neil Dunch
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 927
-  name: James (Jim) Lassiter
-  position: Alderman
-  office: Salado Municipal
-  jurisdiction: Salado
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per Bell County city directory (_cities/bell_county.md).
-  group_city: Salado
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Salado Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: James (Jim) Lassiter
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 928
-  name: Allen Sandor
-  position: Alderman
-  office: Salado Municipal
-  jurisdiction: Salado
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per Bell County city directory (_cities/bell_county.md).
-  group_city: Salado
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Salado Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Allen Sandor
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 929
-  name: '(vacant)'
-  position: Alderman
-  office: Salado Municipal
-  jurisdiction: Salado
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per city directory (_cities). listed vacant in city directory.
-  group_city: Salado
-  group_state: Texas
-  group_function: Executive
-  office_group_key: Salado Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: null
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 930
-  name: Charleen Dowell
-  position: Mayor
-  office: Moody Municipal
-  jurisdiction: Moody
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per Bell County city directory (_cities/bell_county.md).
-  group_city: Moody
-  group_state: Texas
-  group_function: Executive
-  office_group_key: Moody Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Charleen Dowell
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 931
-  name: Cody Goodwin
-  position: Alderperson
-  office: Moody Municipal
-  jurisdiction: Moody
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per Bell County city directory (_cities/bell_county.md).
-  group_city: Moody
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Moody Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Cody Goodwin
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 932
-  name: John Carpenter
-  position: Alderperson
-  office: Moody Municipal
-  jurisdiction: Moody
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per Bell County city directory (_cities/bell_county.md).
-  group_city: Moody
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Moody Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: John Carpenter
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 933
-  name: Carol Haas
-  position: Alderperson
-  office: Moody Municipal
-  jurisdiction: Moody
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per Bell County city directory (_cities/bell_county.md).
-  group_city: Moody
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Moody Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Carol Haas
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 934
-  name: Richard Moore
-  position: Alderperson
-  office: Moody Municipal
-  jurisdiction: Moody
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per Bell County city directory (_cities/bell_county.md).
-  group_city: Moody
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Moody Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Richard Moore
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 935
-  name: Michael Bransford
-  position: Alderperson
-  office: Moody Municipal
-  jurisdiction: Moody
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per Bell County city directory (_cities/bell_county.md).
-  group_city: Moody
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Moody Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Michael Bransford
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 936
-  name: Michael Morgan
-  position: Mayor
-  office: Troy Municipal
-  jurisdiction: Troy
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per Bell County city directory (_cities/bell_county.md).
-  group_city: Troy
-  group_state: Texas
-  group_function: Executive
-  office_group_key: Troy Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Michael Morgan
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 937
-  name: Laurie Bailey
-  position: Mayor Pro Tem
-  office: Troy Municipal
-  jurisdiction: Troy
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per Bell County city directory (_cities/bell_county.md).
-  group_city: Troy
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Troy Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Laurie Bailey
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 938
-  name: Leland Boykin
-  position: Councilmember
-  office: Troy Municipal
-  jurisdiction: Troy
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per Bell County city directory (_cities/bell_county.md).
-  group_city: Troy
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Troy Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Leland Boykin
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 939
-  name: Brett Hanson
-  position: Councilmember
-  office: Troy Municipal
-  jurisdiction: Troy
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per Bell County city directory (_cities/bell_county.md).
-  group_city: Troy
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Troy Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Brett Hanson
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 940
-  name: James Hicks
-  position: Councilmember
-  office: Troy Municipal
-  jurisdiction: Troy
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per Bell County city directory (_cities/bell_county.md).
-  group_city: Troy
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Troy Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: James Hicks
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 941
-  name: Paul Ramirez
-  position: Councilmember
-  office: Troy Municipal
-  jurisdiction: Troy
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per Bell County city directory (_cities/bell_county.md).
-  group_city: Troy
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Troy Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Paul Ramirez
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 942
-  name: Chad Mees
-  position: Mayor
-  office: Bartlett Municipal
-  jurisdiction: Bartlett
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per city directory (_cities). Term note: 2026.
-  group_city: Bartlett
-  group_state: Texas
-  group_function: Executive
-  office_group_key: Bartlett Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Chad Mees
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 943
-  name: Vickie Cooper
-  position: Mayor Pro Tem
-  office: Bartlett Municipal
-  jurisdiction: Bartlett
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per city directory (_cities). Term note: 2026.
-  group_city: Bartlett
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Bartlett Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Vickie Cooper
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 944
-  name: Gayle Jones
-  position: Councilmember Place 1
-  office: Bartlett Municipal
-  jurisdiction: Bartlett
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per city directory (_cities). Term note: 2027.
-  group_city: Bartlett
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Bartlett Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Gayle Jones
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 945
-  name: Jesse Luna
-  position: Councilmember Place 3
-  office: Bartlett Municipal
-  jurisdiction: Bartlett
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per city directory (_cities). Term note: 2027.
-  group_city: Bartlett
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Bartlett Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Jesse Luna
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 946
-  name: Jackie Ivicic
-  position: Councilmember Place 4
-  office: Bartlett Municipal
-  jurisdiction: Bartlett
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per city directory (_cities). Term note: 2026.
-  group_city: Bartlett
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Bartlett Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Jackie Ivicic
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 947
-  name: Thomas Zimmer
-  position: Councilmember Place 5
-  office: Bartlett Municipal
-  jurisdiction: Bartlett
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per city directory (_cities). Term note: 2027.
-  group_city: Bartlett
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Bartlett Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Thomas Zimmer
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 948
-  name: Johnny Kallus
-  position: Mayor
-  office: Holland Municipal
-  jurisdiction: Holland
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per city directory (_cities). Term note: 2023-2025.
-  group_city: Holland
-  group_state: Texas
-  group_function: Executive
-  office_group_key: Holland Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Johnny Kallus
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 949
-  name: AJ Hill
-  position: Mayor Pro Tem
-  office: Holland Municipal
-  jurisdiction: Holland
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per city directory (_cities). Term note: 2025-2027.
-  group_city: Holland
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Holland Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: AJ Hill
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 950
-  name: Oscar Perez
-  position: Councilmember Seat 1
-  office: Holland Municipal
-  jurisdiction: Holland
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per city directory (_cities). Term note: 2025-2027.
-  group_city: Holland
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Holland Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Oscar Perez
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 951
-  name: Barbara Critchfield
-  position: Councilmember Seat 2
-  office: Holland Municipal
-  jurisdiction: Holland
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per city directory (_cities). Term note: 2023-2025.
-  group_city: Holland
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Holland Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Barbara Critchfield
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 952
-  name: Dale Rendon
-  position: Councilmember Seat 3
-  office: Holland Municipal
-  jurisdiction: Holland
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per city directory (_cities). Term note: 2025-2027.
-  group_city: Holland
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Holland Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Dale Rendon
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 953
-  name: Laura Cosper
-  position: Councilmember Seat 4
-  office: Holland Municipal
-  jurisdiction: Holland
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per city directory (_cities). Term note: 2023-2025.
-  group_city: Holland
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Holland Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Laura Cosper
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 954
-  name: Domingo Montalbo
-  position: Mayor
-  office: Little River-Academy Municipal
-  jurisdiction: Little River-Academy
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per Bell County city directory (_cities/bell_county.md).
-  group_city: Little River-Academy
-  group_state: Texas
-  group_function: Executive
-  office_group_key: Little River-Academy Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Domingo Montalbo
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 955
-  name: Elmer Williams
-  position: Councilmember
-  office: Little River-Academy Municipal
-  jurisdiction: Little River-Academy
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per Bell County city directory (_cities/bell_county.md).
-  group_city: Little River-Academy
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Little River-Academy Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Elmer Williams
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 956
-  name: Russ Nelson
-  position: Councilmember
-  office: Little River-Academy Municipal
-  jurisdiction: Little River-Academy
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per Bell County city directory (_cities/bell_county.md).
-  group_city: Little River-Academy
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Little River-Academy Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Russ Nelson
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 957
-  name: David Newsome
-  position: Councilmember
-  office: Little River-Academy Municipal
-  jurisdiction: Little River-Academy
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per Bell County city directory (_cities/bell_county.md).
-  group_city: Little River-Academy
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Little River-Academy Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: David Newsome
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 958
-  name: Robert Kirkpatrick
-  position: Councilmember
-  office: Little River-Academy Municipal
-  jurisdiction: Little River-Academy
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per Bell County city directory (_cities/bell_county.md).
-  group_city: Little River-Academy
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Little River-Academy Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Robert Kirkpatrick
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 959
-  name: James Baker
-  position: Councilmember
-  office: Little River-Academy Municipal
-  jurisdiction: Little River-Academy
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per Bell County city directory (_cities/bell_county.md).
-  group_city: Little River-Academy
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Little River-Academy Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: James Baker
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 960
-  name: Jeff Watson
-  position: Mayor
-  office: Rogers Municipal
-  jurisdiction: Rogers
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per Bell County city directory (_cities/bell_county.md).
-  group_city: Rogers
-  group_state: Texas
-  group_function: Executive
-  office_group_key: Rogers Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Jeff Watson
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 961
-  name: Ernest Stroud
-  position: Mayor Pro Tem
-  office: Rogers Municipal
-  jurisdiction: Rogers
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per Bell County city directory (_cities/bell_county.md).
-  group_city: Rogers
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Rogers Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Ernest Stroud
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 962
-  name: Robyn Skrhak
-  position: Councilmember
-  office: Rogers Municipal
-  jurisdiction: Rogers
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per Bell County city directory (_cities/bell_county.md).
-  group_city: Rogers
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Rogers Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Robyn Skrhak
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 963
-  name: Joshua Norsworthy
-  position: Councilmember
-  office: Rogers Municipal
-  jurisdiction: Rogers
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per Bell County city directory (_cities/bell_county.md).
-  group_city: Rogers
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Rogers Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Joshua Norsworthy
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 964
-  name: Mallory Anthony
-  position: Councilmember
-  office: Rogers Municipal
-  jurisdiction: Rogers
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per Bell County city directory (_cities/bell_county.md).
-  group_city: Rogers
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Rogers Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Mallory Anthony
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 965
-  name: Doyle Ray Harris
-  position: Councilmember
-  office: Rogers Municipal
-  jurisdiction: Rogers
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per Bell County city directory (_cities/bell_county.md).
-  group_city: Rogers
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Rogers Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Doyle Ray Harris
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 966
-  name: James Snyder
-  position: Mayor
-  office: Morgans Point Resort Municipal
-  jurisdiction: 'Morgan''s Point Resort'
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per Bell County city directory (_cities/bell_county.md).
-  group_city: 'Morgan''s Point Resort'
-  group_state: Texas
-  group_function: Executive
-  office_group_key: Morgans Point Resort Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: James Snyder
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 967
-  name: Roxanne Stryker
-  position: Mayor Pro Tem
-  office: Morgans Point Resort Municipal
-  jurisdiction: 'Morgan''s Point Resort'
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per Bell County city directory (_cities/bell_county.md).
-  group_city: 'Morgan''s Point Resort'
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Morgans Point Resort Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Roxanne Stryker
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 968
-  name: Stephen Bishop
-  position: Councilmember
-  office: Morgans Point Resort Municipal
-  jurisdiction: 'Morgan''s Point Resort'
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per Bell County city directory (_cities/bell_county.md).
-  group_city: 'Morgan''s Point Resort'
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Morgans Point Resort Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Stephen Bishop
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 969
-  name: Dorothy Allyn
-  position: Councilmember
-  office: Morgans Point Resort Municipal
-  jurisdiction: 'Morgan''s Point Resort'
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per Bell County city directory (_cities/bell_county.md).
-  group_city: 'Morgan''s Point Resort'
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Morgans Point Resort Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Dorothy Allyn
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 970
-  name: Samuel Pallin
-  position: Councilmember
-  office: Morgans Point Resort Municipal
-  jurisdiction: 'Morgan''s Point Resort'
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per Bell County city directory (_cities/bell_county.md).
-  group_city: 'Morgan''s Point Resort'
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Morgans Point Resort Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Samuel Pallin
-  office_opponents_platform_key_facts: []
-  headshot_url: null
-  largest_financial_supporter_name: null
-  largest_financial_supporter_work_for: null
-  instagram_url: null
-  linkedin_url: null
-- id: 971
-  name: Bruce Leonhardt
-  position: Councilmember
-  office: Morgans Point Resort Municipal
-  jurisdiction: 'Morgan''s Point Resort'
-  status: incumbent
-  party: null
-  election_phase: seated
-  FEC: 'no'
-  facebook_url: null
-  website_url: null
-  notes: >-
-    Per Bell County city directory (_cities/bell_county.md).
-  group_city: 'Morgan''s Point Resort'
-  group_state: Texas
-  group_function: Legislative
-  office_group_key: Morgans Point Resort Municipal
-  office_up_for_election_this_year: false
-  office_incumbent_name: Bruce Leonhardt
+  office_group_key: TX Comptroller
+  office_up_for_election_this_year: true
+  office_incumbent_name: Kelly Hancock
   office_opponents_platform_key_facts: []
   headshot_url: null
   largest_financial_supporter_name: null

@@ -54,6 +54,7 @@ tmp/
 temp/
 ._*
 ._
+<<<<<<< HEAD
 langchain_core/__pycache__/__init__.cpython-311.pyc
 langchain_core/__pycache__/__init__.cpython-313.pyc
 langchain_core/__pycache__/__init__.cpython-314.pyc
@@ -144,3 +145,5 @@ Gemfile.lock
 judicial_officials.db
 bell_county_data/
 data/
+*.pyc
+__pycache__/

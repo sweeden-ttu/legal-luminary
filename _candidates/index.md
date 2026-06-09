@@ -1,33 +1,44 @@
 ---
-layout: candidate-grid
-title: "November 2026 Candidates and Offices"
+layout: default
+title: "Candidates - Elected Officials & Races"
 permalink: /candidates/
-description: >-
-  Information on candidates and offices up for election in November 2026 across
-  Bell County, Killeen, Temple, Harker Heights, and Copperas Cove.
-body_class: page-elections
+description: "Browse candidates for Federal, State, County, Municipal, and Education offices in Central Texas"
+body_class: page-candidates
 ---
 
-## Federal Offices
-* [John Cornyn (U.S. Senator)](/candidates/texas/federal/john_cornyn/)
-* [John Carter (U.S. Representative, District 31)](/candidates/texas/federal/john_carter/)
+<link rel="stylesheet" href="{{ '/assets/css/candidates-new.css' | relative_url }}">
 
-## State Offices
-* [Greg Abbott (Governor)](/candidates/texas/state/greg_abbott/)
-* [Gina Hinojosa (Governor Candidate)](/candidates/texas/state/gina_hinojosa/)
-* [Sarah Eckhardt (Comptroller Candidate)](/candidates/texas/state/sarah_eckhardt/)
-* [Pete Flores (State Senator, District 24)](/candidates/texas/state/pete_flores/)
-* [Brad Buckley (State Representative, District 54)](/candidates/texas/state/brad_buckley/)
+<section class="candidates-hub candidates-section" aria-label="Candidates and elected offices">
+  <a href="#candidates-content" class="skip-link">Skip to candidates</a>
+  <h1>Candidates & Elected Officials</h1>
+  <p class="section-intro">Bell County and Central Texas races. <strong>Sample data</strong> rows are placeholders. <a href="{{ '/candidates/FINANCIALS/' | relative_url }}">FEC finance report</a></p>
 
-## Bell County Offices
-* [David Blackburn (County Judge)](/candidates/texas/bell_county/david_blackburn/)
-* [Bobby Whitson (County Commissioner, Precinct 2)](/candidates/texas/bell_county/bobby_whitson/)
-* [Louie Minor (County Commissioner, Precinct 4)](/candidates/texas/bell_county/louie_minor/)
-* [Jessica A. Gonzalez (Justice of the Peace, Precinct 4, Place 2)](/candidates/texas/bell_county/jessica_gonzalez/)
-* [Beatrice Cox (Justice of the Peace, Precinct 4, Place 2)](/candidates/texas/bell_county/beatrice_cox/)
+  <div class="candidates-tab-stack">
+    <div class="tab-nav-sentinel"></div>
+    {% include candidates/tab-navigation.html %}
 
-## Municipal Offices
-* [Riakos Adams (Mayor of Killeen)](/candidates/texas/cities/killeen/riakos_adams/)
-* [Timothy A. Davis (Mayor of Temple)](/candidates/texas/cities/temple/timothy_a_davis/)
-* [Michael Blomquist (Mayor of Harker Heights)](/candidates/texas/cities/harker_heights/michael_blomquist/)
-* [Dan Yancey (Mayor of Copperas Cove)](/candidates/texas/cities/copperas_cove/dan_yancey/)
+    <div id="candidates-content"></div>
+
+    <div class="tab-content active" id="tab-federal" role="tabpanel" aria-labelledby="tab-btn-federal">
+      {% include candidates/tabs/federal.html %}
+    </div>
+
+    <div class="tab-content" id="tab-state" role="tabpanel" aria-labelledby="tab-btn-state">
+      {% include candidates/tabs/state.html %}
+    </div>
+
+    <div class="tab-content" id="tab-county" role="tabpanel" aria-labelledby="tab-btn-county">
+      {% include candidates/tabs/county.html %}
+    </div>
+
+    <div class="tab-content" id="tab-municipal" role="tabpanel" aria-labelledby="tab-btn-municipal">
+      {% include candidates/tabs/municipal.html %}
+    </div>
+
+    <div class="tab-content" id="tab-education" role="tabpanel" aria-labelledby="tab-btn-education">
+      {% include candidates/tabs/education.html %}
+    </div>
+  </div>
+</section>
+
+{% include candidates/candidates-tabs-script.html %}

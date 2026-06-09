@@ -1,5 +1,19 @@
 {% assign c = include.candidate %}
 {% assign mode = include.mode | default: "featured" %}
+{% assign show_headshot = false %}
+{% assign has_headshot = c.headshot_url and c.headshot_url != '' and c.headshot_url != 'null' %}
+{% if has_headshot %}
+  {% assign show_headshot = true %}
+  {% if c.status != 'incumbent' and c.office_group_key and c.office_incumbent_name %}
+    {% assign incumbent_pool = site.data.candidates.candidates | where: "office_group_key", c.office_group_key | where: "name", c.office_incumbent_name %}
+    {% if incumbent_pool.size > 0 %}
+      {% assign incumbent_candidate = incumbent_pool.first %}
+      {% if incumbent_candidate.headshot_url and incumbent_candidate.headshot_url == c.headshot_url %}
+        {% assign show_headshot = false %}
+      {% endif %}
+    {% endif %}
+  {% endif %}
+{% endif %}
 <div class="candidate-card candidate-card--{{ mode }}
   {% if c.status == 'incumbent' %}incumbent{% endif %}
   {% if c.status == 'primary_winner' %}primary-winner{% endif %}
@@ -8,13 +22,8 @@
   <div class="incumbent-strip">Incumbent</div>
   {% endif %}
   <div class="card-header">
-    {% if c.headshot_url and c.headshot_url != '' and c.headshot_url != 'null' %}
-    {% assign _hs = c.headshot_url %}
-    {% if _hs contains '://' %}
-    <img src="{{ _hs }}" alt="{{ c.name }}" class="headshot" width="120" height="150" loading="lazy">
-    {% else %}
-    <img src="{{ _hs | relative_url }}" alt="{{ c.name }}" class="headshot" width="120" height="150" loading="lazy">
-    {% endif %}
+    {% if show_headshot %}
+    <img src="{{ c.headshot_url }}" alt="{{ c.name }}" class="headshot" width="120" height="150" loading="lazy">
     {% else %}
     <div class="headshot-placeholder headshot-placeholder--{{ c.party }}">
       <span>{{ c.name | slice: 0, 1 }}</span>
@@ -58,39 +67,18 @@
     {% if c.finance %}
     <div class="candidate-finance">
       <h5>Campaign Finance</h5>
-      {% if c.finance.raised %}
       <div class="finance-row">
         <span class="finance-label">Raised:</span>
-        <span class="finance-value">${{ c.finance.raised }}</span>
+        <span class="finance-value">${{ c.finance.raised | default: 0 }}</span>
       </div>
-      {% endif %}
-      {% if c.finance.cash_display %}
       <div class="finance-row">
         <span class="finance-label">Cash on Hand:</span>
-        <span class="finance-value">{{ c.finance.cash_display }}</span>
+        <span class="finance-value {% if c.finance.cash < 0 %}negative{% endif %}">${{ c.finance.cash | default: 0 }}</span>
       </div>
-      {% elsif c.finance.cash %}
-      <div class="finance-row">
-        <span class="finance-label">Cash on Hand:</span>
-        <span class="finance-value {% if c.finance.cash < 0 %}negative{% endif %}">${{ c.finance.cash }}</span>
-      </div>
-      {% endif %}
-      {% if c.finance.individual_pct %}
       <div class="finance-row">
         <span class="finance-label">Individual:</span>
         <span class="finance-value">{{ c.finance.individual_pct }}%</span>
       </div>
-      {% endif %}
-      {% if c.finance.major_donors %}
-      <div class="finance-row finance-row--donors">
-        <span class="finance-label">Major donors (this cycle):</span>
-        <ul class="finance-donors">
-          {% for donor in c.finance.major_donors %}
-          <li>{{ donor }}</li>
-          {% endfor %}
-        </ul>
-      </div>
-      {% endif %}
     </div>
     {% elsif c.fec == 'yes' %}
     <div class="candidate-finance">
