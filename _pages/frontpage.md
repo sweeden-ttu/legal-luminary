@@ -1,154 +1,68 @@
 ---
 layout: default
-title: Legal Luminary of Central Texas - News, Courts, Politics, and more
+title: Home
 permalink: /
 hero: true
 hero_title: "Central Texas Legal Resource"
-hero_subtitle: "Your guide to Bell County courts, elected officials, and legal representation in Central Texas"
-description: "Legal information resource for Bell County and Central Texas. Court directory, elected officials, defense attorneys, and personal injury lawyers serving Belton, Killeen, Temple, Fort Cavazos, and surrounding communities."
-verified_at: 2026-02-19
-sources:
-  - url: "https://www.bellcountytx.com"
-    label: "Bell County Official Website"
-    evidence: "Official Bell County government website providing court contact information and county official details"
-    visited: true
-    confirmed: true
-  - url: "https://justice.bellcounty.texas.gov/PublicPortal/"
-    label: "Bell County Odyssey Portal"
-    evidence: "Official court case search system - verified by direct access and search functionality test"
-    visited: true
-    confirmed: true
-confidence:
-  base: 0.707
-  current: 1.0
-  aho_corasick_boost: 0.542
-  formula: "compound_ema_qfa_aho"
-  qfa_state: VALIDATE
-  milestone: M2
-  milestone_contributions:
-    M1_INIT: 0.03
-    M2_VERIFY: 0.45
-    M3_COVERAGE: 0.03
-    M4_VV: 0.032
-  validation: 0.05
-  aho_corasick: 0.542
-  code_refactor: 0.0
-  vv_integration: 0.004
-  aho_corasick_matches: 42
+hero_subtitle: "A trusted guide to understanding Texas law and finding qualified legal representation in Bell County"
+description: "Legal information resource for Bell County and Central Texas. Find qualified defense attorneys and personal injury lawyers."
+sidebar_ads: home
 ---
 
 <p class="intro-text">
-Central Texas Legal Resource provides residents, attorneys, and researchers with practical information about the Bell County court system, local government structure, elected and appointed officials, and legal representation options. Whether you need a court phone number, want to understand how cases move through the system, or are looking for qualified counsel, start here.
+Whether individuals are facing criminal charges or have been injured due to someone else's negligence, understanding their legal rights is the first step toward justice. Central Texas Legal Resource provides comprehensive information about Texas and Bell County law, connecting individuals with experienced attorneys ready to advocate on their behalf.
 </p>
+
+<div style="text-align: center; margin: 3rem 0; padding: 1rem 0;">
+<img src="{{ '/assets/imgs/legal-luminary-research-tool.svg' | relative_url }}" alt="Central Texas Legal Luminary - Research Tool" style="max-width: 100%; height: auto; border-radius: 8px;">
+</div>
+
+<div style="text-align: center; margin: 2rem 0;">
+<img src="{{ '/assets/imgs/central-texas-attorney-team.jpeg' | relative_url }}" alt="Central Texas Attorney Team" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+</div>
 
 ## Serving Bell County & Central Texas
 
-<div class="cards-grid">
-<div class="card">
-<h3>Fort Cavazos (Fort Hood)</h3>
-<p>Central Texas is home to one of the largest military installations in the world. Military personnel and families stationed at Fort Cavazos may face civilian legal matters off-post, which are handled by Bell County or municipal courts. This site provides resources for soldiers, veterans, and their families navigating the Central Texas legal system.</p>
-<a href="/resources/" class="btn btn-primary">Military Resources</a>
-</div>
-
-<div class="card">
-<h3>Belton — County Seat</h3>
-<p>Home to the Bell County Justice Center, all District Courts, County Courts at Law, and county administrative offices. The courthouse is located at 1201 Huey Drive, Belton, TX 76513.</p>
-<a href="/bell-county/" class="btn btn-primary">Bell County Courts</a>
-</div>
-
-<div class="card">
-<h3>Killeen</h3>
-<p>Largest city in Bell County with a population of approximately 160,000. Killeen Municipal Court handles city ordinance violations and Class C misdemeanors at 714 N. 2nd Street.</p>
-<a href="/court-directory/" class="btn btn-primary">Court Directory</a>
-</div>
-
-<div class="card">
-<h3>Temple</h3>
-<p>Second-largest city in Bell County and a major medical and economic hub. Temple Municipal Court is located at 210 N. Main Street, Temple, TX 76501.</p>
-<a href="/court-directory/" class="btn btn-primary">Court Directory</a>
-</div>
-</div>
-
-## Quick Court Contacts
-
-<div class="info-box">
-<h4>Bell County Justice Center</h4>
-<p>1201 Huey Drive, Belton, TX 76513<br>
-Main Phone: <a href="tel:+12549335100">(254) 933-5100</a><br>
-<a href="https://www.bellcountytx.com" target="_blank" rel="noopener">bellcountytx.com</a></p>
-</div>
-
-<table>
-  <thead>
-    <tr>
-      <th scope="col">Office</th>
-      <th scope="col">Phone</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>District Clerk</strong> (felony filings, civil over $200K)</td>
-      <td><a href="tel:+12549335197">(254) 933-5197</a></td>
-    </tr>
-    <tr>
-      <td><strong>County Clerk</strong> (misdemeanors, probate, records)</td>
-      <td><a href="tel:+12549335160">(254) 933-5160</a></td>
-    </tr>
-    <tr>
-      <td><strong>District Attorney</strong> — Stephanie Newell</td>
-      <td><a href="tel:+12549335215">(254) 933-5215</a></td>
-    </tr>
-    <tr>
-      <td><strong>County Attorney</strong> (misdemeanor prosecution)</td>
-      <td><a href="tel:+12549335161">(254) 933-5161</a></td>
-    </tr>
-    <tr>
-      <td><strong>Sheriff / Jail</strong> (warrants, inmates)</td>
-      <td><a href="tel:+12549335400">(254) 933-5400</a></td>
-    </tr>
-    <tr>
-      <td><strong>Killeen Municipal Court</strong></td>
-      <td><a href="tel:+12545017850">(254) 501-7850</a></td>
-    </tr>
-    <tr>
-      <td><strong>Temple Municipal Court</strong></td>
-      <td><a href="tel:+12542985690">(254) 298-5690</a></td>
-    </tr>
-    <tr>
-      <td><strong>Belton Municipal Court</strong></td>
-      <td><a href="tel:+12549335828">(254) 933-5828</a></td>
-    </tr>
-  </tbody>
-</table>
-
-<a href="/court-directory/" class="btn btn-primary">Full Court Directory with Judges & Addresses</a>
-
-## Legal Representation
+Our mission is to help residents of Killeen, Temple, Belton, Harker Heights, Copperas Cove, and surrounding communities navigate the legal system with confidence. We provide educational resources and connect individuals with qualified attorneys who specialize in their specific legal needs.
 
 <div class="cards-grid">
 <div class="card">
-<h3>Criminal Defense</h3>
-<p>Facing assault charges, DWI, domestic violence, or other criminal accusations in Bell County? Learn about your rights under Texas law and find defense attorneys who practice in local courts.</p>
+<h3>⚔️ Criminal Defense</h3>
+<p>Facing assault charges, domestic violence allegations, or other criminal accusations? Learn about rights under Texas law and find aggressive defense representation.</p>
 <a href="/defense/" class="btn btn-primary">Defense Information</a>
 </div>
 
 <div class="card">
-<h3>Personal Injury</h3>
-<p>Injured in a car accident, workplace incident, or due to property negligence? Understand your options for compensation and connect with experienced injury attorneys in Central Texas.</p>
+<h3>🏥 Personal Injury</h3>
+<p>Injured in a car accident, workplace incident, or due to property negligence? Understand options for compensation and connect with experienced injury attorneys.</p>
 <a href="/personal-injury/" class="btn btn-primary">Injury Information</a>
 </div>
 </div>
 
-## Key Online Resources
+## Why Legal Representation Matters
+
+<div class="info-box">
+<h4>Protecting Rights</h4>
+<p>The Texas legal system can be complex and unforgiving. Whether individuals are defending against charges or seeking compensation for injuries, having qualified legal representation significantly improves their chances of a favorable outcome. The attorneys featured on this site have experience in Bell County courts and understand local procedures.</p>
+</div>
+
+## Legal Information Resources
 
 <ul class="check-list">
-<li><strong><a href="https://justice.bellcounty.texas.gov/PublicPortal/" target="_blank" rel="noopener noreferrer">Odyssey Portal</a></strong> — Search Bell County court hearings, case records, and dockets online</li>
-<li><strong><a href="https://bell.go2gov.net" target="_blank" rel="noopener noreferrer">Online Payments</a></strong> — Pay citations and court fines online</li>
-<li><strong><a href="/texas-law/">Texas Law Overview</a></strong> — State statutes, penalties, and procedures</li>
-<li><strong><a href="/bell-county/">Bell County Specifics</a></strong> — Local court information and procedures</li>
-<li><strong><a href="/resources/">Legal Resources</a></strong> — Legal aid, victim services, and self-help resources</li>
+<li><strong>Texas Law Overview</strong> — Understanding state statutes, penalties, and procedures</li>
+<li><strong>Bell County Specifics</strong> — Local court information, procedures, and resources</li>
+<li><strong>Defense Attorney Guide</strong> — What to look for and what to expect</li>
+<li><strong>Personal Injury Basics</strong> — Rights when individuals have been injured</li>
 </ul>
 
 <div class="legal-notice">
-<strong>Important Notice:</strong> The information provided on this website is for general educational purposes only and does not constitute legal advice. No attorney-client relationship is formed by use of this site. Every legal situation is unique. For advice specific to your circumstances, consult with a licensed Texas attorney.
+<strong>Important Notice:</strong> The information provided on this website is for general educational purposes only and does not constitute legal advice. No attorney-client relationship is formed by use of this site. Every legal situation is unique. For advice specific to their circumstances, individuals should consult with a licensed Texas attorney. The attorneys advertised on this site are independent practitioners licensed in Texas and are solely responsible for their own services. Prior results do not guarantee a similar outcome.
 </div>
+
+## Areas We Cover
+
+Central Texas Legal Resource serves the entire Bell County area, including:
+
+**Cities:** Killeen, Temple, Belton, Harker Heights, Copperas Cove, Nolanville, Salado, Rogers, Troy, Holland, Little River-Academy
+
+**Courts:** Bell County District Courts, Bell County Courts at Law, Killeen Municipal Court, Temple Municipal Court, Belton Municipal Court

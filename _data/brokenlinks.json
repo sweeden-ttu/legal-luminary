@@ -1,0 +1,343 @@
+{
+  "last_checked": "2026-01-22 05:32:45",
+  "total_links": 30,
+  "broken_links_count": 6,
+  "links": [
+    {
+      "link_name": "sll.texas.gov",
+      "link_url": "https://sll.texas.gov",
+      "source_file": "_pages/resources.md",
+      "source_type": "page",
+      "source_files": [
+        "_pages/resources.md"
+      ],
+      "error_404": false,
+      "status_code": 200
+    },
+    {
+      "link_name": "statutes.capitol.texas.gov",
+      "link_url": "https://statutes.capitol.texas.gov",
+      "source_file": "_pages/resources.md",
+      "source_type": "page",
+      "source_files": [
+        "_pages/resources.md"
+      ],
+      "error_404": false,
+      "status_code": 200
+    },
+    {
+      "link_name": "texasbar.com",
+      "link_url": "https://www.texasbar.com",
+      "source_file": "_pages/resources.md",
+      "source_type": "page",
+      "source_files": [
+        "_pages/resources.md"
+      ],
+      "error_404": false,
+      "status_code": 200
+    },
+    {
+      "link_name": "bellcountytx.com",
+      "link_url": "https://www.bellcountytx.com",
+      "source_file": "_pages/resources.md",
+      "source_type": "page",
+      "source_files": [
+        "_pages/resources.md"
+      ],
+      "error_404": false,
+      "status_code": 200
+    },
+    {
+      "link_name": "bellcountytx.com/departments/district_clerk",
+      "link_url": "https://www.bellcountytx.com/departments/district_clerk/index.php",
+      "source_file": "_pages/resources.md",
+      "source_type": "page",
+      "source_files": [
+        "_pages/resources.md"
+      ],
+      "error_404": true,
+      "status_code": 404
+    },
+    {
+      "link_name": "bellcountytx.com/departments/county_clerk",
+      "link_url": "https://www.bellcountytx.com/departments/county_clerk/index.php",
+      "source_file": "_pages/resources.md",
+      "source_type": "page",
+      "source_files": [
+        "_pages/resources.md"
+      ],
+      "error_404": true,
+      "status_code": 404
+    },
+    {
+      "link_name": "bellcountytx.com/departments/sheriff",
+      "link_url": "https://www.bellcountytx.com/departments/sheriff/index.php",
+      "source_file": "_pages/resources.md",
+      "source_type": "page",
+      "source_files": [
+        "_pages/resources.md"
+      ],
+      "error_404": true,
+      "status_code": 404
+    },
+    {
+      "link_name": "killeentexas.gov/172/Municipal-Court",
+      "link_url": "https://www.killeentexas.gov/172/Municipal-Court",
+      "source_file": "_pages/resources.md",
+      "source_type": "page",
+      "source_files": [
+        "_pages/resources.md"
+      ],
+      "error_404": false,
+      "status_code": 200
+    },
+    {
+      "link_name": "templetx.gov/151/Municipal-Court",
+      "link_url": "https://www.templetx.gov/151/Municipal-Court",
+      "source_file": "_pages/resources.md",
+      "source_type": "page",
+      "source_files": [
+        "_pages/resources.md"
+      ],
+      "error_404": true,
+      "status_code": 404
+    },
+    {
+      "link_name": "beltontexas.gov/235/Municipal-Court",
+      "link_url": "https://www.beltontexas.gov/235/Municipal-Court",
+      "source_file": "_pages/resources.md",
+      "source_type": "page",
+      "source_files": [
+        "_pages/resources.md"
+      ],
+      "error_404": true,
+      "status_code": 404
+    },
+    {
+      "link_name": "bellcountytx.com/departments/county_attorney",
+      "link_url": "https://www.bellcountytx.com/departments/county_attorney/index.php",
+      "source_file": "_pages/resources.md",
+      "source_type": "page",
+      "source_files": [
+        "_pages/resources.md"
+      ],
+      "error_404": true,
+      "status_code": 404
+    },
+    {
+      "link_name": "txwd.uscourts.gov/main-forms/cash-bail/",
+      "link_url": "https://www.txwd.uscourts.gov/main-forms/cash-bail/",
+      "source_file": "_pages/resources.md",
+      "source_type": "page",
+      "source_files": [
+        "_pages/resources.md"
+      ],
+      "error_404": false,
+      "status_code": 200
+    },
+    {
+      "link_name": "Facebook",
+      "link_url": "https://facebook.com/scotdwg81",
+      "source_file": "_pages/frontpage.md",
+      "source_type": "page",
+      "source_files": [
+        "_pages/frontpage.md"
+      ],
+      "error_404": false,
+      "status_code": 200
+    },
+    {
+      "link_name": "Instagram",
+      "link_url": "https://instagram.com/scotdwg81",
+      "source_file": "_pages/frontpage.md",
+      "source_type": "page",
+      "source_files": [
+        "_pages/frontpage.md"
+      ],
+      "error_404": false,
+      "status_code": 200
+    },
+    {
+      "link_name": "mbaattorneys.com",
+      "link_url": "https://mbaattorneys.com",
+      "source_file": "_pages/personal-injury.md",
+      "source_type": "page",
+      "source_files": [
+        "_pages/personal-injury.md",
+        "_posts/2025-10-01-what-happens-if-hurt-in-store-holiday-shopping.md",
+        "_posts/2025-08-03-common-mistakes-filing-social-security-disability.md",
+        "_posts/2025-09-03-how-long-does-probate-take-in-texas.md",
+        "_posts/2025-11-02-top-social-security-disability-myths-debunked.md",
+        "_posts/2025-12-02-holiday-reminder-updating-your-will.md",
+        "_includes/ads-injury.html"
+      ],
+      "error_404": false,
+      "status_code": 200
+    },
+    {
+      "link_name": "Luminary Law repository",
+      "link_url": "https://github.com/sweeden-ttu/luminary-law",
+      "source_file": "_pages/artificial-intelligence.md",
+      "source_type": "page",
+      "source_files": [
+        "_pages/artificial-intelligence.md"
+      ],
+      "error_404": false,
+      "status_code": 200
+    },
+    {
+      "link_name": "Docker",
+      "link_url": "https://docs.docker.com/get-docker/",
+      "source_file": "_posts/2020-04-17-local-env.md",
+      "source_type": "post",
+      "source_files": [
+        "_posts/2020-04-17-local-env.md"
+      ],
+      "error_404": false,
+      "status_code": 200
+    },
+    {
+      "link_name": "Docker Compose",
+      "link_url": "https://docs.docker.com/compose/",
+      "source_file": "_posts/2020-04-17-local-env.md",
+      "source_type": "post",
+      "source_files": [
+        "_posts/2020-04-17-local-env.md"
+      ],
+      "error_404": false,
+      "status_code": 200
+    },
+    {
+      "link_name": "docs",
+      "link_url": "https://help.github.com/en/github/working-with-github-pages/testing-your-github-pages-site-locally-with-jekyll",
+      "source_file": "_posts/2020-04-17-local-env.md",
+      "source_type": "post",
+      "source_files": [
+        "_posts/2020-04-17-local-env.md"
+      ],
+      "error_404": false,
+      "status_code": 200
+    },
+    {
+      "link_name": "a gif!",
+      "link_url": "https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif",
+      "source_file": "_posts/2020-03-18-my-first-post.md",
+      "source_type": "post",
+      "source_files": [
+        "_posts/2020-03-18-my-first-post.md"
+      ],
+      "error_404": false,
+      "status_code": 200
+    },
+    {
+      "link_name": "Github repository",
+      "link_url": "https://github.com/sweeden-ttu/legal-luminary",
+      "source_file": "_posts/2020-03-22-get-code.md",
+      "source_type": "post",
+      "source_files": [
+        "_posts/2020-03-22-get-code.md"
+      ],
+      "error_404": false,
+      "status_code": 200
+    },
+    {
+      "link_name": "Github Pages",
+      "link_url": "https://pages.github.com/",
+      "source_file": "_posts/2020-03-24-edit-content.md",
+      "source_type": "post",
+      "source_files": [
+        "_posts/2020-03-24-edit-content.md"
+      ],
+      "error_404": false,
+      "status_code": 200
+    },
+    {
+      "link_name": "Markdown",
+      "link_url": "https://daringfireball.net/projects/markdown/syntax",
+      "source_file": "_posts/2020-03-24-edit-content.md",
+      "source_type": "post",
+      "source_files": [
+        "_posts/2020-03-24-edit-content.md"
+      ],
+      "error_404": false,
+      "status_code": 200
+    },
+    {
+      "link_name": "typora",
+      "link_url": "https://typora.io/",
+      "source_file": "_posts/2020-03-24-edit-content.md",
+      "source_type": "post",
+      "source_files": [
+        "_posts/2020-03-24-edit-content.md"
+      ],
+      "error_404": false,
+      "status_code": 200
+    },
+    {
+      "link_name": "the docs",
+      "link_url": "https://jekyllrb.com/docs/posts/",
+      "source_file": "_posts/2020-04-15-posts.md",
+      "source_type": "post",
+      "source_files": [
+        "_posts/2020-04-15-posts.md"
+      ],
+      "error_404": false,
+      "status_code": 200
+    },
+    {
+      "link_name": "documentation",
+      "link_url": "https://jekyllrb.com/docs/liquid/",
+      "source_file": "_posts/2020-04-19-links.md",
+      "source_type": "post",
+      "source_files": [
+        "_posts/2020-04-19-links.md"
+      ],
+      "error_404": false,
+      "status_code": 200
+    },
+    {
+      "link_name": "Liquid",
+      "link_url": "https://shopify.github.io/liquid/",
+      "source_file": "_posts/2020-04-19-links.md",
+      "source_type": "post",
+      "source_files": [
+        "_posts/2020-04-19-links.md"
+      ],
+      "error_404": false,
+      "status_code": 200
+    },
+    {
+      "link_name": "nice article",
+      "link_url": "https://www.webisland.agency/blog/jekyll-internal-links/",
+      "source_file": "_posts/2020-04-19-links.md",
+      "source_type": "post",
+      "source_files": [
+        "_posts/2020-04-19-links.md"
+      ],
+      "error_404": false,
+      "status_code": 200
+    },
+    {
+      "link_name": "Facebook",
+      "link_url": "https://facebook.com/sarahmartineznotary",
+      "source_file": "_includes/ads-general.html",
+      "source_type": "include",
+      "source_files": [
+        "_includes/ads-general.html"
+      ],
+      "error_404": false,
+      "status_code": 200
+    },
+    {
+      "link_name": "Instagram",
+      "link_url": "https://instagram.com/smartineznotary",
+      "source_file": "_includes/ads-general.html",
+      "source_type": "include",
+      "source_files": [
+        "_includes/ads-general.html"
+      ],
+      "error_404": false,
+      "status_code": 200
+    }
+  ]
+}

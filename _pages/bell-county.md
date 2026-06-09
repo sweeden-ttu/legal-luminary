@@ -1,31 +1,12 @@
 ---
-layout: bell-county
+layout: default
 title: Bell County Law
 permalink: /bell-county/
 hero: true
 hero_title: "Bell County Legal Information"
 hero_subtitle: "Local courts, procedures, and resources for Central Texas residents"
 description: "Bell County court information, local legal procedures, and resources for Killeen, Temple, and Belton area residents."
-sources:
-  - url: "https://www.bellcountytx.com/"
-    label: "Bell County Official Website"
-    evidence: "Official Bell County government website - verified by direct access"
-    visited: true
-    confirmed: true
-  - url: "https://www.bellcountytx.com/county_government/justice_of_the_peace/index.php"
-    label: "Bell County Justice of the Peace"
-    evidence: "Ground-truth directory used for all Bell County JP precinct and place validation."
-    visited: true
-    confirmed: true
-confidence:
-  base: 0.707
-  current: 0.81
-  formula: "compound_ema_qfa"
-  qfa_state: VALIDATE
-  milestone: M2
-  validation: 0.05
-  aho_corasick: 0.05
-verified_at: 2026-02-11
+news_city: bell-county-news
 ---
 
 <p class="intro-text">
@@ -34,21 +15,45 @@ Bell County, located in Central Texas, has its own court system and procedures w
 
 ## Bell County Court System
 
-Bell County operates multiple courts handling different types of cases:
+Bell County operates multiple courts handling different types of cases. Knowing which court handles a matter helps individuals understand the process ahead.
 
 ### District Courts
 
-Four District Courts (27th, 146th, 169th, and 426th) handle felony criminal cases, civil cases over $200,000, family law matters including divorce, and juvenile cases.
+Bell County has four District Courts (27th, 146th, 169th, and 426th) handling:
+
+<ul class="check-list">
+<li>Felony criminal cases</li>
+<li>Civil cases over $200,000</li>
+<li>Family law matters including divorce</li>
+<li>Juvenile cases</li>
+</ul>
 
 ### County Courts at Law
 
-Three County Courts at Law handle misdemeanor criminal cases (Class A and B), civil cases between $500 and $200,000, appeals from Justice of the Peace courts, and probate matters.
+Bell County has three County Courts at Law handling:
+
+<ul class="check-list">
+<li>Misdemeanor criminal cases (Class A and B)</li>
+<li>Civil cases between $500 and $200,000</li>
+<li>Appeals from Justice of the Peace courts</li>
+<li>Probate matters</li>
+</ul>
 
 ### Prosecutors & Contacts
 
-- **Bell County Attorney's Office** — Prosecutes Class A/B misdemeanors. Bell County Courthouse Annex, 550 East 2nd Avenue, Belton, TX 76513. (254) 933-5161
+- **Bell County Attorney’s Office** — Prosecutes Class A/B misdemeanors in County Courts at Law. Location: Bell County Courthouse Annex, 550 East 2nd Avenue, Belton, TX 76513. Main line: (254) 933-5161 (County Clerk main switchboard; ask for County Attorney).
 - **Bell County District Attorney (Stephanie Newell)** — Prosecutes felonies in District Courts.
 
+### Justice of the Peace Courts
+
+Five Justice of the Peace precincts handle:
+
+<ul class="check-list">
+<li>Class C misdemeanors (fine-only offenses)</li>
+<li>Small claims civil cases up to $20,000</li>
+<li>Evictions</li>
+<li>Truancy cases</li>
+</ul>
 
 ## Bell County Courthouse Information
 
@@ -61,66 +66,52 @@ The main facility houses District Courts and County Courts at Law.</p>
 
 ### Municipal Courts
 
-Local cities maintain municipal courts for city ordinance violations and certain Class C misdemeanors:
+Local cities maintain their own municipal courts for city ordinance violations and certain Class C misdemeanors:
 
-- **Killeen Municipal Court** — 714 N. 2nd Street, Killeen, TX 76541
-- **Temple Municipal Court** — 210 N. Main Street, Temple, TX 76501
-- **Belton Municipal Court** — 520 E. Central Avenue, Belton, TX 76513
+**Killeen Municipal Court** — 714 N. 2nd Street, Killeen, TX 76541
 
-## Justices of the Peace
+**Temple Municipal Court** — 210 N. Main Street, Temple, TX 76501
 
-Bell County has six Justice of the Peace courts handling Class C misdemeanors (fine-only offenses), small claims civil cases up to $20,000, evictions, and truancy cases. The following elected judicial officials currently serve on the bench:
+**Belton Municipal Court** — 520 E. Central Avenue, Belton, TX 76513
 
-<div class="cards-grid two-columns">
-<div class="card">
-<h3>Precinct 1</h3>
-<p><strong>Judge Theodore R. (Ted) Duffield</strong></p>
-<p>Bell County Justice Center<br>
-1201 Huey Road, Belton, TX 76513</p>
-<p>Phone: <a href="tel:+12549335183">(254) 933-5183</a><br>
-Email: <a href="mailto:JP1@bellcounty.texas.gov">JP1@bellcounty.texas.gov</a></p>
-</div>
+## Local Legal Considerations
 
-<div class="card">
-<h3>Precinct 2</h3>
-<p><strong>Judge Cliff Coleman</strong></p>
-<p>Phone: <a href="tel:+12549335398">(254) 933-5398</a></p>
-</div>
+### Military Community
 
-<div class="card">
-<h3>Precinct 3, Place 1</h3>
-<p><strong>Judge Rosanne Fisher</strong></p>
-<p>Phone: <a href="tel:+12547706822">(254) 770-6822</a></p>
-</div>
+Bell County is home to Fort Cavazos (formerly Fort Hood), one of the largest military installations in the world. This creates unique legal considerations:
 
-<div class="card">
-<h3>Precinct 3, Place 2</h3>
-<p><strong>Judge Larry Wilkey</strong></p>
-<p>Phone: <a href="tel:+12547706831">(254) 770-6831</a></p>
-</div>
+Service members facing charges have additional rights and considerations. Military personnel may face both civilian and military legal proceedings. Attorneys familiar with military-civilian interactions provide valuable guidance for service members and their families.
 
-<div class="card">
-<h3>Precinct 4, Place 1</h3>
-<p><strong>Judge Gregory Johnson</strong></p>
-<p>Phone: <a href="tel:+12546345882">(254) 634-5882</a></p>
-</div>
+### Population Centers
 
-<div class="card">
-<h3>Precinct 4, Place 2</h3>
-<p><strong>Judge Nicola J. James</strong></p>
-<p>Phone: <a href="tel:+12546347612">(254) 634-7612</a></p>
-</div>
-</div>
+Bell County's major cities each have their own character and legal landscape:
+
+**Killeen** — The largest city in Bell County, closely connected to Fort Cavazos. High volume of cases in local courts.
+
+**Temple** — Major medical and commercial center. Significant personal injury caseload due to traffic volume and medical facilities.
+
+**Belton** — County seat where most District Court proceedings occur.
+
+**Harker Heights, Copperas Cove** — Growing communities with increasing court activity.
+
+## Finding Legal Representation in Bell County
 
 <div class="info-box">
-<h4>Justice Court Resources</h4>
-<p>Search court hearings and records online through the <a href="https://justice.bellcounty.texas.gov/PublicPortal/" target="_blank" rel="noopener noreferrer">Bell County Odyssey Portal</a>. Pay citations online at <a href="https://bell.go2gov.net" target="_blank" rel="noopener noreferrer">bell.go2gov.net</a>.</p>
+<h4>Why Local Experience Matters</h4>
+<p>Attorneys who regularly practice in Bell County courts understand local procedures, know the prosecutors and judges, and can navigate the system efficiently on behalf of their clients. The attorneys featured on this site have experience in Bell County courts.</p>
 </div>
 
+### What to Look For
 
-## Finding Legal Representation
+When selecting an attorney in Bell County:
 
-Attorneys who regularly practice in Bell County courts understand local procedures, know the prosecutors and judges, and can navigate the system efficiently. When selecting an attorney, look for experience in local courts, specific practice area expertise, clear communication, and a track record of results in similar cases.
+**Experience in Local Courts** — Knowledge of local procedures and personnel
+
+**Specific Practice Area Expertise** — Defense or personal injury focus
+
+**Communication** — Responsive and clear about cases
+
+**Track Record** — History of results in similar cases
 
 <div class="legal-notice">
 <strong>Take Action:</strong> If individuals are facing legal issues in Bell County, time is often critical. Criminal cases have court dates that approach quickly. Personal injury claims have statutes of limitations. Contacting an attorney promptly protects rights and options.
@@ -138,4 +129,234 @@ Attorneys who regularly practice in Bell County courts understand local procedur
 <p>Connect with injury attorneys who handle Bell County cases.</p>
 <a href="/personal-injury/" class="btn btn-primary">Injury Attorneys</a>
 </div>
+</div>
+
+<hr>
+
+<div class="judges-directory">
+  <h2>Bell County Judges Directory</h2>
+  <p class="intro-text">
+    Directory of judges serving Bell County District Courts and County Courts at Law. This directory includes contact information, court details, and election information for all Bell County judges.
+  </p>
+
+  {% if site.data.judges %}
+    {% assign district_judges = site.data.judges | where: "court_type", "District Court" %}
+    {% assign county_judges = site.data.judges | where: "court_type", "County Court at Law" %}
+    
+    {% if district_judges.size > 0 %}
+      <section class="judges-section">
+        <h3>District Court Judges</h3>
+        <p class="section-description">
+          District Court judges handle felony criminal cases and civil cases over $200,000. Judges serve 4-year terms and are elected in partisan elections.
+        </p>
+        
+        <div class="judges-list">
+          {% for judge in district_judges %}
+            <div class="judge-card">
+              <div class="judge-header">
+                <h4>{{ judge.court_name }}</h4>
+                {% if judge.judge_name %}
+                  <p class="judge-name">{{ judge.judge_name }}, Judge</p>
+                {% else %}
+                  <p class="judge-name">Judge information not available</p>
+                {% endif %}
+              </div>
+
+              <div class="judge-contact">
+                <h5>Contact Information</h5>
+                <div class="contact-details">
+                  {% if judge.phone %}
+                    <div class="contact-item">
+                      <strong>Phone:</strong>
+                      <a href="tel:{{ judge.phone | replace: ' ', '' | replace: '(', '' | replace: ')', '' | replace: '-', '' }}">{{ judge.phone }}</a>
+                    </div>
+                  {% endif %}
+                  
+                  {% if judge.fax %}
+                    <div class="contact-item">
+                      <strong>Fax:</strong> {{ judge.fax }}
+                    </div>
+                  {% endif %}
+                  
+                  {% if judge.court_coordinator %}
+                    <div class="contact-item">
+                      <strong>Court Coordinator:</strong>
+                      {% if judge.coordinator_email %}
+                        <a href="mailto:{{ judge.coordinator_email }}">{{ judge.court_coordinator }}</a>
+                      {% else %}
+                        {{ judge.court_coordinator }}
+                      {% endif %}
+                    </div>
+                  {% endif %}
+                  
+                  {% if judge.court_reporter %}
+                    <div class="contact-item">
+                      <strong>Court Reporter:</strong> {{ judge.court_reporter }}
+                    </div>
+                  {% endif %}
+                </div>
+              </div>
+
+              {% if judge.address %}
+                <div class="judge-section">
+                  <h5>Location</h5>
+                  <p>{{ judge.address }}</p>
+                  {% if judge.mailing_address %}
+                    <p class="mailing-address"><strong>Mailing:</strong> {{ judge.mailing_address | replace: "Office Hours:", "<br>Office Hours:" }}</p>
+                  {% endif %}
+                </div>
+              {% endif %}
+
+              {% if judge.election_info %}
+                <div class="judge-section election-info">
+                  <h5>Election Information</h5>
+                  <div class="election-details">
+                    {% if judge.election_info.election_year %}
+                      <p><strong>Elected:</strong> {{ judge.election_info.election_year }}</p>
+                    {% elsif judge.election_info.appointment_year %}
+                      <p><strong>Appointed:</strong> {{ judge.election_info.appointment_date | default: judge.election_info.appointment_year }}</p>
+                      {% if judge.election_info.appointment_year %}
+                        <p class="appointment-note">Appointed by Governor Greg Abbott in {{ judge.election_info.appointment_year }}</p>
+                      {% endif %}
+                    {% endif %}
+                    
+                    {% if judge.election_info.next_election %}
+                      <p class="next-election">
+                        <strong>Next Election:</strong>
+                        <span class="election-year">{{ judge.election_info.next_election }}</span>
+                      </p>
+                    {% endif %}
+                    
+                    <p><strong>Term Length:</strong> {{ judge.election_info.term_length_years }} years</p>
+                    
+                    {% if judge.election_info.election_notes %}
+                      <p class="election-notes">{{ judge.election_info.election_notes }}</p>
+                    {% endif %}
+                  </div>
+                </div>
+              {% endif %}
+
+              {% if judge.url %}
+                <div class="judge-section">
+                  <p class="court-link">
+                    <a href="{{ judge.url }}" target="_blank" rel="noopener noreferrer">View Court Website →</a>
+                  </p>
+                </div>
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+      </section>
+    {% endif %}
+
+    {% if county_judges.size > 0 %}
+      <section class="judges-section">
+        <h3>County Court at Law Judges</h3>
+        <p class="section-description">
+          County Court at Law judges handle misdemeanor cases, probate matters, and smaller civil cases. Judges serve 4-year terms and are elected in partisan elections.
+        </p>
+        
+        <div class="judges-list">
+          {% for judge in county_judges %}
+            <div class="judge-card">
+              <div class="judge-header">
+                <h4>{{ judge.court_name }}</h4>
+                {% if judge.judge_name %}
+                  <p class="judge-name">{{ judge.judge_name }}, Judge</p>
+                {% else %}
+                  <p class="judge-name">Judge information not available</p>
+                {% endif %}
+              </div>
+
+              <div class="judge-contact">
+                <h5>Contact Information</h5>
+                <div class="contact-details">
+                  {% if judge.phone %}
+                    <div class="contact-item">
+                      <strong>Phone:</strong>
+                      <a href="tel:{{ judge.phone | replace: ' ', '' | replace: '(', '' | replace: ')', '' | replace: '-', '' }}">{{ judge.phone }}</a>
+                    </div>
+                  {% endif %}
+                  
+                  {% if judge.fax %}
+                    <div class="contact-item">
+                      <strong>Fax:</strong> {{ judge.fax }}
+                    </div>
+                  {% endif %}
+                  
+                  {% if judge.court_coordinator %}
+                    <div class="contact-item">
+                      <strong>Court Coordinator:</strong>
+                      {% if judge.coordinator_email %}
+                        <a href="mailto:{{ judge.coordinator_email }}">{{ judge.court_coordinator }}</a>
+                      {% else %}
+                        {{ judge.court_coordinator }}
+                      {% endif %}
+                    </div>
+                  {% endif %}
+                  
+                  {% if judge.court_reporter %}
+                    <div class="contact-item">
+                      <strong>Court Reporter:</strong> {{ judge.court_reporter }}
+                    </div>
+                  {% endif %}
+                </div>
+              </div>
+
+              {% if judge.address %}
+                <div class="judge-section">
+                  <h5>Location</h5>
+                  <p>{{ judge.address }}</p>
+                  {% if judge.mailing_address %}
+                    <p class="mailing-address"><strong>Mailing:</strong> {{ judge.mailing_address | replace: "Office Hours:", "<br>Office Hours:" }}</p>
+                  {% endif %}
+                </div>
+              {% endif %}
+
+              {% if judge.election_info %}
+                <div class="judge-section election-info">
+                  <h5>Election Information</h5>
+                  <div class="election-details">
+                    {% if judge.election_info.election_year %}
+                      <p><strong>Elected:</strong> {{ judge.election_info.election_year }}</p>
+                    {% elsif judge.election_info.appointment_year %}
+                      <p><strong>Appointed:</strong> {{ judge.election_info.appointment_date | default: judge.election_info.appointment_year }}</p>
+                      {% if judge.election_info.appointment_year %}
+                        <p class="appointment-note">Appointed by Governor Greg Abbott in {{ judge.election_info.appointment_year }}</p>
+                      {% endif %}
+                    {% endif %}
+                    
+                    {% if judge.election_info.next_election %}
+                      <p class="next-election">
+                        <strong>Next Election:</strong>
+                        <span class="election-year">{{ judge.election_info.next_election }}</span>
+                      </p>
+                    {% endif %}
+                    
+                    <p><strong>Term Length:</strong> {{ judge.election_info.term_length_years }} years</p>
+                    
+                    {% if judge.election_info.election_notes %}
+                      <p class="election-notes">{{ judge.election_info.election_notes }}</p>
+                    {% endif %}
+                  </div>
+                </div>
+              {% endif %}
+
+              {% if judge.url %}
+                <div class="judge-section">
+                  <p class="court-link">
+                    <a href="{{ judge.url }}" target="_blank" rel="noopener noreferrer">View Court Website →</a>
+                  </p>
+                </div>
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+      </section>
+    {% endif %}
+  {% else %}
+    <div class="no-judges">
+      <p>Judge information is not yet available. The judge directory is being compiled and will be populated automatically.</p>
+    </div>
+  {% endif %}
 </div>

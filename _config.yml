@@ -5,13 +5,17 @@
 # See: .github/workflows/jekyll.yml
 
 # Site Settings
-title: "Legal Luminary of Central Texas - News, Courts, Politics, and more"
+title: "Central Texas Legal Resources"
 logo: /assets/imgs/legal-luminary-research-tool.svg
 description: "Your trusted guide to Texas and Bell County law - Defense & Personal Injury information"
 tagline: "Information • Guidance • Justice"
 author: "Central Texas Legal Resource"
 email: "notary@legalluminary.com"
 lang: en-US
+
+# Google Tag Manager
+# Replace GTM-XXXXXXX with your actual GTM container ID after setup
+gtm_container_id: "GTM-KBVFD8NL"
 
 # URL Configuration
 # For GitHub Pages project site (username.github.io/repo-name):
@@ -28,7 +32,6 @@ markdown: kramdown
 highlighter: rouge
 permalink: pretty
 timezone: America/Chicago
-future: true
 
 # Kramdown options
 kramdown:
@@ -42,12 +45,15 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
 
+# Sass/SCSS Processing
+# We keep the GitHub Pages default theme, but we do NOT want it to build its SCSS
+# (Ruby sass has encoding issues on some environments). We serve our own CSS.
+theme: null
+
 # Site Navigation
 navigation:
   - title: Home
     url: /
-  - title: Fort Hood
-    url: /fort-cavazos/
   - title: Texas Law
     url: /texas-law/
   - title: Bell County
@@ -56,13 +62,9 @@ navigation:
     url: /defense/
   - title: Personal Injury
     url: /personal-injury/
-  - title: Court Directory
-    url: /court-directory/
   - title: Resources
     url: /resources/
     children:
-      - title: Fort Cavazos (Fort Hood)
-        url: /fort-cavazos/
       - title: Bell County Odyssey Portal
         url: https://justice.bellcounty.texas.gov/PublicPortal/
         alt: Search Court Hearings and Case Records
@@ -82,15 +84,6 @@ service_area:
     - Copperas Cove
     - Nolanville
     - Salado
-    - Fort Cavazos (Fort Hood)
-    - Waco
-
-# Social media (optional; omit or leave blank to hide)
-social_media:
-  facebook: "https://tinyurl.com/facebook-cloudfronts"
-  # twitter: ""
-  # instagram: ""
-  # linkedin: ""
 
 # Featured Attorneys (for easy updating)
 attorneys:
@@ -110,15 +103,13 @@ attorneys:
     specialty: "Personal Injury"
 
 # Sass/SCSS Processing
-sass:
-  style: compressed
-  sass_dir: _sass
+# Not using SCSS - using plain CSS (style.css) instead
+# sass:
+#   style: compressed
+#   encoding: UTF-8
 
-# Collections: candidates (built and deployed with site)
-collections:
-  candidates:
-    output: true
-    permalink: /candidates/:path/
+# Collections (if needed for future expansion)
+collections_dir: collections
 
 # Build Output
 destination: _site
@@ -147,13 +138,14 @@ exclude:
   - Dockerfile
   - docs
   - test_cases
+  - "*.scss"
 
 # Include files that should be processed
 include:
   - _pages
-  - _candidates
   - _includes
   - _layouts
+  - _posts
   - _data
   - _sass
   - .nojekyll
@@ -161,12 +153,7 @@ include:
 # Defaults for pages
 defaults:
   - scope:
-      path: "_pages"
+      path: ""
       type: "pages"
     values:
       layout: "default"
-      permalink: /:name/
-  - scope:
-      type: "candidates"
-    values:
-      layout: "candidates"

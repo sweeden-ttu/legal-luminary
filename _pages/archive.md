@@ -1,6 +1,6 @@
 ---
 permalink: /archive/
-layout: page
+layout: default
 title: Blog archive
 verified_at: 2026-02-11
 ---

@@ -1,0 +1,79 @@
+{%- comment -%}
+Featured Notary ("Notary of the Day")
+
+Selects a notary from site.data.notaries deterministically per-day.
+
+Why deterministic?
+- Changes each day
+- Stable across page loads for a given day
+- No build-time randomness required
+
+Selection algorithm:
+- Create a numeric seed from current date (YYYYMMDD)
+- Add a small numeric component derived from news-feed metadata (optional)
+  NOTE: user requested no association with headlines; this is only used as extra
+  entropy when present, but NOT tied to specific news items.
+- Index = seed mod number of notaries
+
+Renders a single ad-card.
+{%- endcomment -%}
+
+{%- assign notaries = site.data.notaries -%}
+{%- if notaries and notaries.size and notaries.size > 0 -%}
+  {%- assign today_seed = "now" | date: "%Y%m%d" | plus: 0 -%}
+
+  {%- comment -%}
+  Optional entropy: incorporate total_items from the news feed if available.
+  This does NOT associate with any headline; it just nudges rotation.
+  {%- endcomment -%}
+  {%- assign news_total = 0 -%}
+  {%- if site.data.news-feed and site.data.news-feed.total_items -%}
+    {%- assign news_total = site.data.news-feed.total_items | plus: 0 -%}
+  {%- endif -%}
+
+  {%- assign idx = today_seed | plus: news_total | modulo: notaries.size -%}
+  {%- assign featured = notaries[idx] -%}
+
+  <div class="ad-card" data-testid="featured-notary">
+    <div class="ad-specialty">Notary Public</div>
+    <h4>{% if featured.name %}{{ featured.name }}{% else %}Texas Notary Public{% endif %}</h4>
+
+    {%- if featured.location -%}
+      <p>Notary public services in {{ featured.location }}. Mobile service may be available.</p>
+    {%- else -%}
+      <p>Notary public services for legal documents, affidavits, and official certifications.</p>
+    {%- endif -%}
+
+    <div class="ad-contact">
+      {%- if featured.phone -%}
+        {%- assign phone_digits = featured.phone | replace: " ", "" | replace: "(", "" | replace: ")", "" | replace: "-", "" | replace: ".", "" -%}
+        <div class="ad-phone">
+          <a href="tel:+1{{ phone_digits }}">📞 {{ featured.phone }}</a>
+        </div>
+      {%- endif -%}
+
+      {%- if featured.email -%}
+        <div class="ad-email">
+          <a href="mailto:{{ featured.email }}">✉️ {{ featured.email }}</a>
+        </div>
+      {%- endif -%}
+
+      {%- if featured.website -%}
+        <div class="ad-website">
+          <a href="{{ featured.website }}" target="_blank" rel="noopener noreferrer">Website</a>
+        </div>
+      {%- endif -%}
+    </div>
+
+    {%- if featured.phone -%}
+      <a href="tel:+1{{ phone_digits }}" class="ad-cta">Get in Touch</a>
+    {%- elsif featured.email -%}
+      <a href="mailto:{{ featured.email }}" class="ad-cta">Get in Touch</a>
+    {%- else -%}
+      <a href="{{ '/notaries/' | relative_url }}" class="ad-cta">View Notary Directory</a>
+    {%- endif -%}
+
+    <p class="ad-disclaimer">Notary of the Day • Texas Notary Public</p>
+  </div>
+{%- endif -%}
+

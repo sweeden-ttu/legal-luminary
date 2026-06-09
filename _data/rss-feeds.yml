@@ -4,11 +4,14 @@
 feeds:
   # Local Bell County Sources
   - name: "City of Killeen"
-    url: "https://www.killeentexas.gov/rss.aspx"
+    # NOTE: Killeen's /rss.aspx is an HTML landing page, not RSS XML.
+    # The actual RSS endpoints are not reliably accessible (404) from this environment.
+    # Leave this disabled until a working XML URL is confirmed.
+    url: "https://www.killeentexas.gov/RSSFeed.aspx?ModID=76&CID=All-0"
     category: "local"
     type: "government"
     max_items: 10
-    enabled: true
+    enabled: false
     
   - name: "Killeen Daily Herald"
     url: "https://kdhnews.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory"

@@ -1,0 +1,179 @@
+- title: County Clerk
+  name: Shelley Coston
+  phone: 254-933-5165
+  email: shelley.coston@bellcounty.texas.gov
+  elected_date: 1/02/07
+  elected_year: 2007
+  next_election: 2026
+  last_election_year: 2006
+  position_type: County Clerk
+  term_length_years: 4
+  days_until_election: 286
+- title: County Attorney
+  name: James E. Nichols
+  phone: 254-933-5135
+  email: county.attorney@bellcounty.texas.gov
+  elected_date: 1/02/13
+  elected_year: 2013
+  next_election: 2028
+  last_election_year: 2012
+  position_type: County Attorney
+  term_length_years: 4
+  days_until_election: 1017
+- title: District Attorney
+  name: Stephanie Newell
+  phone: 254-933-5215
+  email: DistrictAttorney@bellcounty.texas.gov
+  elected_date: 1/03/25
+  elected_year: 2025
+  next_election: 2028
+  last_election_year: 2024
+  position_type: District Attorney
+  term_length_years: 4
+  days_until_election: 1017
+- title: District Clerk
+  name: Joanna Staton
+  phone: 254-933-5197
+  email: joanna.staton@bellcounty.texas.gov
+  elected_date: 1/02/15
+  elected_year: 2015
+  next_election: 2026
+  last_election_year: 2014
+  position_type: District Clerk
+  term_length_years: 4
+  days_until_election: 286
+- title: Peace Justice, Pct. 1
+  name: Theodore R Duffield
+  phone: 254-933-5183
+  email: JP1@bellcounty.texas.gov
+  elected_date: 1/01/95
+  elected_year: 1995
+  next_election: 2026
+  last_election_year: 1994
+  position_type: Justice of the Peace
+  term_length_years: 4
+  precinct: 1
+  days_until_election: 286
+- title: Peace Justice, Pct. 2
+  name: Cliff Coleman
+  phone: 254-933-5398
+  email: JP2@bellcounty.texas.gov
+  elected_date: 1/02/19
+  elected_year: 2019
+  next_election: 2026
+  last_election_year: 2018
+  position_type: Justice of the Peace
+  term_length_years: 4
+  precinct: 2
+  days_until_election: 286
+- title: Peace Justice, Pct. 3 Pl. 1
+  name: Rosanne Fisher
+  phone: 254-770-6822
+  email: JP3PL1@bellcounty.texas.gov
+  elected_date: 1/02/25
+  elected_year: 2025
+  next_election: 2028
+  last_election_year: 2024
+  position_type: Justice of the Peace
+  term_length_years: 4
+  precinct: 3
+  place: 1
+  days_until_election: 1017
+- title: Peace Justice, Pct. 3 Pl. 2
+  name: Larry Wilkey
+  phone: 254-770-6831
+  email: larry.wilkey@bellcounty.texas.gov
+  elected_date: 6/25/22
+  elected_year: 2022
+  next_election: 2026
+  last_election_year: 2022
+  position_type: Justice of the Peace
+  term_length_years: 4
+  precinct: 3
+  place: 2
+  days_until_election: 286
+- title: Peace Justice, Pct. 4 Pl. 1
+  name: Gregory Johnson
+  phone: 254-634-5882
+  email: gregory.johnson@bellcounty.texas.gov
+  elected_date: 1/04/21
+  elected_year: 2021
+  next_election: 2028
+  last_election_year: 2020
+  position_type: Justice of the Peace
+  term_length_years: 4
+  precinct: 4
+  place: 1
+  days_until_election: 1017
+- title: Peace Justice, Pct. 4, Pl. 2
+  name: Nicola James
+  phone: 254-634-7612
+  email: nicola.james@bellcounty.texas.gov
+  elected_date: 1/03/23
+  elected_year: 2023
+  next_election: 2026
+  last_election_year: 2022
+  position_type: Justice of the Peace
+  term_length_years: 4
+  precinct: 4
+  place: 2
+  days_until_election: 286
+- title: Sheriff
+  name: Bill Cooke
+  phone: 254-933-5400
+  email: null
+  elected_date: 1/02/25
+  elected_year: 2025
+  next_election: 2028
+  last_election_year: 2024
+  position_type: Sheriff
+  term_length_years: 4
+  days_until_election: 1017
+- title: Constable Pct. 1
+  name: Pat A. Duffield
+  phone: 254-933-5916
+  email: pat.duffield@bellcounty.texas.gov
+  elected_date: 8/27/18
+  elected_year: 2018
+  next_election: 2026
+  last_election_year: 2018
+  position_type: Constable
+  term_length_years: 4
+  precinct: 1
+  days_until_election: 286
+- title: Constable Pct. 2
+  name: Chris Bazar
+  phone: 254-933-5987
+  email: christopher.bazar@bellcounty.texas.gov
+  elected_date: 7/12/24
+  elected_year: 2024
+  next_election: 2028
+  last_election_year: 2024
+  position_type: Constable
+  term_length_years: 4
+  precinct: 2
+  days_until_election: 1017
+- title: Constable Pct. 3
+  name: Devin Rosenthal
+  phone: 254-770-6808
+  email: Constable_Pct3@bellcounty.texas.gov
+  elected_date: 4/01/20
+  elected_year: 2020
+  next_election: 2028
+  last_election_year: 2020
+  position_type: Constable
+  term_length_years: 4
+  precinct: 3
+  days_until_election: 1017
+- title: Constable Pct. 4
+  name: Martha Dominguez
+  phone: 254-634-6263
+  email: martha.dominguez@bellcounty.texas.gov
+  elected_date: 1/04/21
+  elected_year: 2021
+  next_election: 2028
+  last_election_year: 2020
+  position_type: Constable
+  term_length_years: 4
+  precinct: 4
+  days_until_election: 1017
