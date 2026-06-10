@@ -1,6 +1,6 @@
 ---
 layout: candidate-profile
-title: "Beatrice "Bea" Cox"
+title: "Beatrice \"Bea\" Cox"
 office: "Justice of the Peace, Precinct 4, Place 2"
 incumbent: false
 jurisdiction: "Bell County"

@@ -1,0 +1,23 @@
+---
+layout: default
+title: Candidates – Bell County Judicial Elections
+permalink: /candidates/
+---
+
+<h1 class="page-title">Bell County Judicial Candidates – November 2026</h1>
+<p class="todo">TODO: Add Attorney General of Texas and other statewide offices later.</p>
+<div class="candidates-list">
+  {% for candidate in site.candidates %}
+  <article class="candidate-card">
+    <img src="{{ candidate.headshot | relative_url }}" alt="{{ candidate.title }}" style="width:100%; height:auto; border-radius:8px; margin-bottom:0.5rem;" />
+    <h3>{{ candidate.title }}</h3>
+    <p><strong>Office:</strong> {{ candidate.office }}</p>
+    {% if candidate.incumbent %}
+    <p><strong>Incumbent:</strong> Yes</p>
+    {% else %}
+    <p><strong>Incumbent:</strong> No</p>
+    {% endif %}
+    <p><a href="{{ candidate.url }}">View Dossier</a></p>
+  </article>
+  {% endfor %}
+</div>

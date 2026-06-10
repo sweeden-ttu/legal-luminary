@@ -1,6 +1,6 @@
 ---
 layout: candidate-profile
-title: "Patrick "Pat" Patterson"
+title: "Patrick \"Pat\" Patterson"
 office: "Visiting Senior Judge / Former JP"
 incumbent: false
 jurisdiction: "Bell County"
