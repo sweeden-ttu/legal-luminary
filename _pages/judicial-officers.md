@@ -14,28 +14,28 @@ last_updated: 2026-06-09
 
 | Court | Judge | Status |
 |-------|-------|--------|
-{% for j in site.candidates %}{% if j.path contains "courts/district/" and j.incumbent == true and j.election_status != "former" %}| {{ j.office }} | **{{ j.title }}** | {% if j.election_status == "general_2026" %}Up for election **2026**{% else %}Incumbent{% endif %} |
+{% for j in site.candidates %}{% if j.path contains "courts/district/" and j.incumbent == true and j.election_status != "former" %}| {{ j.office }} | **[{{ j.title }}]({{ j.url }})** | {% if j.election_status == "general_2026" %}Up for election **2026**{% else %}Incumbent{% endif %} |
 {% endif %}{% endfor %}
 
 ## County Courts at Law
 
 | Court | Judge | Status |
 |-------|-------|--------|
-{% for j in site.candidates %}{% if j.path contains "courts/county/" and j.election_status != "former" %}| {{ j.office }} | **{{ j.title }}** | {% if j.incumbent == false %}Candidate{% elsif j.election_status == "general_2026" %}Up for election **2026**{% else %}Incumbent{% endif %} |
+{% for j in site.candidates %}{% if j.path contains "courts/county/" and j.election_status != "former" %}| {{ j.office }} | **[{{ j.title }}]({{ j.url }})** | {% if j.incumbent == false %}Candidate{% elsif j.election_status == "general_2026" %}Up for election **2026**{% else %}Incumbent{% endif %} |
 {% endif %}{% endfor %}
 
 ## Justices of the Peace
 
 | Precinct | Judge | Status |
 |----------|-------|--------|
-{% for j in site.candidates %}{% if j.path contains "courts/jp/" %}| {{ j.office }} | **{{ j.title }}** | {% if j.incumbent %}Incumbent{% else %}Candidate{% endif %} |
+{% for j in site.candidates %}{% if j.path contains "courts/jp/" %}| {{ j.office }} | **[{{ j.title }}]({{ j.url }})** | {% if j.incumbent %}Incumbent{% else %}Candidate{% endif %} |
 {% endif %}{% endfor %}
 
 ## Visiting Senior Judges
 
 | Name | Title |
 |------|-------|
-{% for j in site.candidates %}{% if j.path contains "courts/senior/" %}| **{{ j.title }}** | {{ j.office }} |
+{% for j in site.candidates %}{% if j.path contains "courts/senior/" %}| **[{{ j.title }}]({{ j.url }})** | {{ j.office }} |
 {% endif %}{% endfor %}
 
 ---
