@@ -45,21 +45,22 @@ layout: candidates-root
 
 <div class="profile-page">
     <div class="profile-page__inner">
-        <!-- ═══ Breadcrumbs ═══════════════════════════════════════ -->
+        <!-- Breadcrumbs -->
         <nav class="profile-breadcrumbs" aria-label="Breadcrumb">
             <a href="{{ '/' | relative_url }}">Home</a>
             <span class="profile-breadcrumbs__sep" aria-hidden="true">/</span>
+            {% if page.path contains "courts/" %}
+            <a href="{{ '/candidates/courts/' | relative_url }}">Judicial Officers</a>
+            {% else %}
             <a href="{{ '/candidates/' | relative_url }}">Election 2026</a>
             <span class="profile-breadcrumbs__sep" aria-hidden="true">/</span>
-            <a
-                href="{{ '/candidates/#city=' | append: page.city | relative_url }}"
-                >{{ page.city | capitalize }}</a
-            >
+            <a href="{{ '/candidates/#city=' | append: page.city | relative_url }}">{{ page.city | capitalize }}</a>
+            {% endif %}
             <span class="profile-breadcrumbs__sep" aria-hidden="true">/</span>
             <span aria-current="page">{{ page.title }}</span>
         </nav>
 
-        <!-- ═══ Profile Hero ═══════════════════════════════════════ -->
+        <!-- Profile Hero -->
         <section class="profile-hero" aria-labelledby="profile-name">
             <div class="profile-hero__photo-wrap">
                 <img
@@ -75,71 +76,58 @@ layout: candidates-root
             </div>
             <div class="profile-hero__info">
                 <div class="profile-hero__eyebrow">
-                    <span class="profile-hero__city-tag"
-                        >{{ page.city | capitalize }}, TX</span
-                    >
-                    <span class="profile-hero__election-tag"
-                        >2026 Municipal Election</span
-                    >
+                    <span class="profile-hero__city-tag">Bell County, TX</span>
+                    {% if page.election_status == "general_2026" %}
+                    <span class="profile-hero__election-tag">2026 General Election</span>
+                    {% elsif page.election_status == "seated" or page.election_status == "appointed" %}
+                    <span class="profile-hero__election-tag">Currently Serving</span>
+                    {% elsif page.election_status == "senior" %}
+                    <span class="profile-hero__election-tag">Senior / Visiting Judge</span>
+                    {% elsif page.election_status == "former" %}
+                    <span class="profile-hero__election-tag">Former Judge</span>
+                    {% endif %}
                 </div>
                 <h1 class="profile-hero__name" id="profile-name">
                     {{ page.title }}
                 </h1>
                 <p class="profile-hero__office">{{ page.office }}</p>
-                {% include candidates/profile-connect.html facebook_url=fb
-                    linkedin_url=li instagram_url=ig campaign_website=web
-                    candidate_name=page.title %}
             </div>
         </section>
 
-        <!-- ═══ Two-column Body ════════════════════════════════════ -->
+        <!-- Two-column Body -->
         <div class="profile-body">
-            <!-- Main: Candidate Profile Summary only -->
+            <!-- Main Content -->
             <article class="profile-content">
+
                 {% if page.profile_summary and page.profile_summary != "" %}
-                <h2 class="profile-content__section-title">
-                    Executive summary
-                </h2>
+                <h2 class="profile-content__section-title">Biography</h2>
                 {{ page.profile_summary | markdownify }}
                 {% endif %}
-                {% if page.election_results_2026 %}
-                <h2 class="profile-content__section-title">
-                    May 2, 2026 Election Results
-                </h2>
-                <div class="profile-office-timeline">
-                    <ul>
-                        <li><strong>Total Votes:</strong> {{ page.election_results_2026.total }}</li>
-                        <li><strong>Vote Percentage:</strong> {{ page.election_results_2026.vote_percent }}</li>
-                        <li><strong>Absentee:</strong> {{ page.election_results_2026.absentee }}</li>
-                        <li><strong>Early Voting:</strong> {{ page.election_results_2026.early_voting }}</li>
-                        <li><strong>Election Day:</strong> {{ page.election_results_2026.election_day }}</li>
-                    </ul>
-                </div>
+
+                {% if page.credentials and page.credentials != "" %}
+                <h2 class="profile-content__section-title">Credentials & Education</h2>
+                {{ page.credentials | markdownify }}
                 {% endif %}
 
-                {% if page.office_timeline and page.office_timeline
-                != "" %}
-                <h2 class="profile-content__section-title">
-                    Public service timeline
-                </h2>
-                <div class="profile-office-timeline">
-                    {{ page.office_timeline | markdownify }}
+                {% if page.professional_history and page.professional_history != "" %}
+                <h2 class="profile-content__section-title">Professional History</h2>
+                {{ page.professional_history | markdownify }}
+                {% endif %}
+
+                {% if page.odyssey_results_placeholder and page.odyssey_results_placeholder != "" %}
+                <h2 class="profile-content__section-title">Record</h2>
+                <div class="legal-notice">
+                    {{ page.odyssey_results_placeholder | markdownify }}
                 </div>
                 {% endif %}
             </article>
 
-            <!-- Sidebar: Recent Coverage only -->
-            <aside class="profile-sidebar" aria-label="Recent coverage">
+            <!-- Sidebar: Syndicate Column -->
+            <aside class="profile-sidebar" aria-label="News and resources">
                 <div class="profile-sidebar__panel">
                     <header class="profile-sidebar__panel-header">
-                        <span
-                            class="profile-sidebar__panel-icon"
-                            aria-hidden="true"
-                            >📰</span
-                        >
-                        <h2 class="profile-sidebar__panel-title">
-                            Recent Coverage
-                        </h2>
+                        <span class="profile-sidebar__panel-icon" aria-hidden="true">&#128240;</span>
+                        <h2 class="profile-sidebar__panel-title">In the News</h2>
                     </header>
 
                     {% if articles and articles.size > 0 %}
@@ -154,24 +142,11 @@ layout: candidates-root
                                 aria-label="{{ article.title }} (opens in new tab)"
                             >
                                 <div class="profile-article__domain">
-                                    {{ article.domain }} {% if
-                                    article.confidence %}
-                                    <span
-                                        class="profile-article__confidence profile-article__confidence--{{ article.confidence }}"
-                                    >
-                                        {{ article.confidence }}
-                                    </span>
-                                    {% endif %}
+                                    {{ article.domain }}
                                 </div>
-                                <span class="profile-article__title"
-                                    >{{ article.title | truncate: 90 }}</span
-                                >
-                                {% if article.excerpt and article.excerpt != ""
-                                %}
-                                <span class="profile-article__excerpt"
-                                    >{{ article.excerpt | strip_html | truncate:
-                                    160 }}</span
-                                >
+                                <span class="profile-article__title">{{ article.title | truncate: 90 }}</span>
+                                {% if article.excerpt and article.excerpt != "" %}
+                                <span class="profile-article__excerpt">{{ article.excerpt | strip_html | truncate: 160 }}</span>
                                 {% endif %}
                             </a>
                         </li>
@@ -179,30 +154,47 @@ layout: candidates-root
                     </ul>
                     {% else %}
                     <p class="profile-sidebar__empty">
-                        No articles on record for this candidate.
+                        No news articles on record for this judicial officer. Check back as we add coverage from local news sources.
                     </p>
                     {% endif %}
                 </div>
 
+                <div class="profile-sidebar__panel">
+                    <header class="profile-sidebar__panel-header">
+                        <span class="profile-sidebar__panel-icon" aria-hidden="true">&#128214;</span>
+                        <h2 class="profile-sidebar__panel-title">Resources</h2>
+                    </header>
+                    <ul class="profile-articles-list" role="list">
+                        <li class="profile-article-item">
+                            <a href="{{ '/candidates/courts/' | relative_url }}" class="profile-article-link">
+                                <span class="profile-article__title">Bell County Judicial Officers Directory</span>
+                            </a>
+                        </li>
+                        <li class="profile-article-item">
+                            <a href="https://www.bellcountytx.com/county_government/district_courts/index.php" target="_blank" rel="noopener noreferrer" class="profile-article-link">
+                                <span class="profile-article__title">Bell County District Courts</span>
+                            </a>
+                        </li>
+                        <li class="profile-article-item">
+                            <a href="https://www.bellcountytx.com/county_government/county_courts/index.php" target="_blank" rel="noopener noreferrer" class="profile-article-link">
+                                <span class="profile-article__title">Bell County Courts at Law</span>
+                            </a>
+                        </li>
+                        <li class="profile-article-item">
+                            <a href="https://justice.bellcounty.texas.gov/PublicPortal/" target="_blank" rel="noopener noreferrer" class="profile-article-link">
+                                <span class="profile-article__title">Odyssey Public Portal — Case Search</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
                 <a
-                    href="{{ '/candidates/' | relative_url }}"
-                    style="
-                        display: flex;
-                        align-items: center;
-                        gap: 0.4rem;
-                        font-size: 0.83rem;
-                        font-weight: 700;
-                        color: var(--c-navy);
-                        text-decoration: none;
-                        padding: 0.5rem 0;
-                    "
+                    href="{{ '/candidates/courts/' | relative_url }}"
+                    style="display: flex; align-items: center; gap: 0.4rem; font-size: 0.83rem; font-weight: 700; color: var(--c-navy); text-decoration: none; padding: 0.5rem 0;"
                 >
-                    ← Election 2026
+                    &larr; Judicial Officers
                 </a>
             </aside>
         </div>
-        <!-- /.profile-body -->
     </div>
-    <!-- /.profile-page__inner -->
 </div>
-<!-- /.profile-page -->
