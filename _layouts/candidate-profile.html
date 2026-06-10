@@ -188,6 +188,80 @@ layout: candidates-root
                     </ul>
                 </div>
 
+                {% if fb != "" or li != "" or ig != "" or web != "" %}
+                <div class="profile-sidebar__panel">
+                    <header class="profile-sidebar__panel-header">
+                        <span class="profile-sidebar__panel-icon" aria-hidden="true">&#128279;</span>
+                        <h2 class="profile-sidebar__panel-title">Links</h2>
+                    </header>
+                    <ul class="profile-articles-list" role="list">
+                        {% if fb != "" %}
+                        <li class="profile-article-item">
+                            <a href="{{ fb }}" class="profile-article-link" target="_blank" rel="noopener noreferrer">
+                                <span class="profile-article__title">Facebook</span>
+                            </a>
+                        </li>
+                        {% endif %}
+                        {% if li != "" %}
+                        <li class="profile-article-item">
+                            <a href="{{ li }}" class="profile-article-link" target="_blank" rel="noopener noreferrer">
+                                <span class="profile-article__title">LinkedIn</span>
+                            </a>
+                        </li>
+                        {% endif %}
+                        {% if ig != "" %}
+                        <li class="profile-article-item">
+                            <a href="{{ ig }}" class="profile-article-link" target="_blank" rel="noopener noreferrer">
+                                <span class="profile-article__title">Instagram</span>
+                            </a>
+                        </li>
+                        {% endif %}
+                        {% if web != "" %}
+                        <li class="profile-article-item">
+                            <a href="{{ web }}" class="profile-article-link" target="_blank" rel="noopener noreferrer">
+                                <span class="profile-article__title">Campaign Website</span>
+                            </a>
+                        </li>
+                        {% endif %}
+                    </ul>
+                </div>
+                {% endif %}
+
+                {% if page.court_contact %}
+                <div class="profile-sidebar__panel">
+                    <header class="profile-sidebar__panel-header">
+                        <span class="profile-sidebar__panel-icon" aria-hidden="true">&#128222;</span>
+                        <h2 class="profile-sidebar__panel-title">Court Contact</h2>
+                    </header>
+                    <dl class="profile-contact-list">
+                        {% if page.court_contact.court_coordinator and page.court_contact.court_coordinator != "" %}
+                        <dt>Coordinator</dt>
+                        <dd>{{ page.court_contact.court_coordinator }}</dd>
+                        {% endif %}
+                        {% if page.court_contact.coordinator_email and page.court_contact.coordinator_email != "" %}
+                        <dt>Email</dt>
+                        <dd><a href="mailto:{{ page.court_contact.coordinator_email }}">{{ page.court_contact.coordinator_email }}</a></dd>
+                        {% endif %}
+                        {% if page.court_contact.court_reporter and page.court_contact.court_reporter != "" %}
+                        <dt>Court Reporter</dt>
+                        <dd>{{ page.court_contact.court_reporter }}</dd>
+                        {% endif %}
+                        {% if page.court_contact.phone and page.court_contact.phone != "" %}
+                        <dt>Phone</dt>
+                        <dd><a href="tel:{{ page.court_contact.phone | remove: ' ' | remove: '(' | remove: ')' | remove: '-' }}">{{ page.court_contact.phone }}</a></dd>
+                        {% endif %}
+                        {% if page.court_contact.fax and page.court_contact.fax != "" %}
+                        <dt>Fax</dt>
+                        <dd>{{ page.court_contact.fax }}</dd>
+                        {% endif %}
+                        {% if page.court_contact.address and page.court_contact.address != "" %}
+                        <dt>Address</dt>
+                        <dd>{{ page.court_contact.address }}</dd>
+                        {% endif %}
+                    </dl>
+                </div>
+                {% endif %}
+
                 <a
                     href="{{ '/candidates/courts/' | relative_url }}"
                     style="display: flex; align-items: center; gap: 0.4rem; font-size: 0.83rem; font-weight: 700; color: var(--c-navy); text-decoration: none; padding: 0.5rem 0;"

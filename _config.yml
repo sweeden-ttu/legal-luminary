@@ -66,6 +66,13 @@ navigation:
     url: /personal-injury/
   - title: Family Law
     url: /family-law/
+  - title: Resources
+    url: /resources/
+    children:
+      - title: Links
+        url: /links/
+      - title: About
+        url: /about/
 
 # Service Area Information
 service_area:

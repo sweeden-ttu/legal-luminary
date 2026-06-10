@@ -737,6 +737,37 @@
         position: static;
     }
 }
+/* ── Court Contact List in Sidebar ─────────────────────── */
+.profile-contact-list {
+    margin: 0;
+    padding: 0;
+    font-size: 0.8rem;
+}
+.profile-contact-list dt {
+    font-weight: 700;
+    color: var(--c-navy);
+    margin-top: 0.5rem;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+.profile-contact-list dt:first-child {
+    margin-top: 0;
+}
+.profile-contact-list dd {
+    margin: 0.1rem 0 0 0;
+    color: var(--c-text);
+    line-height: 1.4;
+}
+.profile-contact-list a {
+    color: var(--c-navy);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+.profile-contact-list a:hover {
+    color: var(--c-gold);
+}
+
 @media (max-width: 640px) {
     .elections-hero {
         padding: 2.5rem 1rem 2rem;
