@@ -7,7 +7,7 @@ jurisdiction: "Bell County"
 party: "Republican"
 official_profile: "https://www.bellcountytx.com/county_government/district_courts/264th_district_court/index.php"
 campaign_website: null
-candidate_slug: "paul_lepak"
+candidate_slug: "paul_l_lepak"
 headshot: null
 election_status: "general_2026"
 office_up_for_election: true

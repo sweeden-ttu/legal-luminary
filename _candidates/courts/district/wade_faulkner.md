@@ -13,4 +13,4 @@ election_status: "general_2026"
 office_up_for_election: true
 notes: "Incumbent judge of the 478th Judicial District Court. Republican nominee, unopposed in November general election."
 ---
-Wade Faulkner is the presiding judge of the 478th Judicial District Court in Bell County, Texas. Judge Faulkner's court handles felony criminal cases and civil matters. The 478th District Court is located at the Bell County Justice Center in Belton, Texas.
+Wade Faulkner is the presiding judge of the 478th Judicial District Court in Bell County, Texas. He was elected to the bench and is seeking re-election in 2026 as the Republican nominee, unopposed in the November general election.
