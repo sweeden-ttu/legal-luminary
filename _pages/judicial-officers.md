@@ -31,13 +31,6 @@ last_updated: 2026-06-09
 {% for j in site.candidates %}{% if j.path contains "courts/jp/" %}| {{ j.office }} | **{{ j.title }}** | {% if j.incumbent %}Incumbent{% else %}Candidate{% endif %} |
 {% endif %}{% endfor %}
 
-## Associate Judges & Magistrates
-
-| Name | Title |
-|------|-------|
-{% for j in site.candidates %}{% if j.path contains "courts/associate/" %}| **{{ j.title }}** | {{ j.office }} |
-{% endif %}{% endfor %}
-
 ## Visiting Senior Judges
 
 | Name | Title |
