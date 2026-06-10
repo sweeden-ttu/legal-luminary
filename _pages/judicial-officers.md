@@ -23,7 +23,7 @@ last_updated: 2026-06-09
   </div>
 </div>
 
-<p style="font-size:0.9em;color:#555;margin:0 0 20px 0"><strong>71.6%</strong> of eviction/foreclosure cases in our dataset are filed in these three JP courts. (<a href="/data-pipeline#eviction-foreclosure-analysis">Methodology</a>)</p>
+<p style="font-size:0.9em;color:#555;margin:0 0 20px 0"><strong>78.1%</strong> of eviction/foreclosure cases in our dataset are filed in these three JP courts. (<a href="/methodology">Methodology</a>)</p>
 
 ## District Courts
 
