@@ -1,13 +1,54 @@
-{
-  "articles": [
-    {
-      "title": "Bell County Commissioners Approve New Legal Resource Center",
-      "date": "2026-02-11",
-      "url": "/2026/02/11/bell-county-legal-resource-center/",
-      "excerpt": "The Bell County Commissioners Court met on February 11, 2026 to discuss emerging community legal services. The commissioners approved funding for a new centralized legal resource center to serve residents across Bell County.",
-      "source": "Killeen Daily Herald",
-      "category": "news"
+[
+  {
+    "title": "Local Texas election officials await appointment of new secretary of state as midterm preparations ramp up",
+    "link": "https://feeds.texastribune.org/link/16799/17356147/texas-2026-midterm-new-secretary-of-state-election-officials",
+    "content": "After Jane Nelson\u2019s unexpected resignation, local election leaders worry her successor could complicate midterm election administration. Gov. Greg Abbott hasn\u2019t yet named a replacement. <img height=\"1\" src=\"https://feeds.texastribune.org/link/16799/17356147.gif\" width=\"1\" />",
+    "source": "https://www.texastribune.org/feeds/main/",
+    "published": "2026-06-08T10:00:00",
+    "analysis": {
+      "confidence_score": 4.5,
+      "confidence_level": "Medium",
+      "reasoning": "Confidence Medium based on: Political: election (3)",
+      "analyzed_at": "2026-06-09T23:22:10.706051"
     }
-  ],
-  "generated_at": "2026-02-11T00:00:00Z"
-}
+  },
+  {
+    "title": "East Texas county judge urges state lawmakers to help locals combat data center proliferation",
+    "link": "https://feeds.texastribune.org/link/16799/17357241/east-texas-data-center-gets-community-pushback",
+    "content": "A proposed data center in Angelina County will occupy more than 1,000 acres outside of Lufkin. The county judge says there's nothing he can do to stop it. <img height=\"1\" src=\"https://feeds.texastribune.org/link/16799/17357241.gif\" width=\"1\" />",
+    "source": "https://www.texastribune.org/feeds/main/",
+    "published": "2026-06-09T23:48:26",
+    "analysis": {
+      "confidence_score": 4.0,
+      "confidence_level": "Medium",
+      "reasoning": "Confidence Medium based on: Legal: judge (2)",
+      "analyzed_at": "2026-06-09T23:22:10.703441"
+    }
+  },
+  {
+    "title": "Texas county rescinds its data center moratorium after $100 million lawsuit from developer",
+    "link": "https://feeds.texastribune.org/link/16799/17354935/texas-hill-county-moratorium-rescinded-data-centers",
+    "content": "Hill County, which appears to be the first Texas county to pass a moratorium, replaced it Thursday with a checklist of requirements for developers. <img height=\"1\" src=\"https://feeds.texastribune.org/link/16799/17354935.gif\" width=\"1\" />",
+    "source": "https://www.texastribune.org/feeds/main/",
+    "published": "2026-06-05T19:04:32",
+    "analysis": {
+      "confidence_score": 2.0,
+      "confidence_level": "Low",
+      "reasoning": "Confidence Low based on: Legal: lawsuit (1)",
+      "analyzed_at": "2026-06-09T23:22:10.706814"
+    }
+  },
+  {
+    "title": "Screwworm outbreak hits vacant Texas congressional district, as leading candidates scramble to assist",
+    "link": "https://feeds.texastribune.org/link/16799/17356795/screwworm-texas-vacant-congressional-district-gonzales-herrera-padilla-stout",
+    "content": "Gov. Greg Abbott has not yet scheduled a special election for the 23rd Congressional District, which was previously represented by disgraced ex-Rep. Tony Gonzales.<img height=\"1\" src=\"https://feeds.texastribune.org/link/16799/17356795.gif\" width=\"1\" />",
+    "source": "https://www.texastribune.org/feeds/main/",
+    "published": "2026-06-09T10:00:00",
+    "analysis": {
+      "confidence_score": 1.5,
+      "confidence_level": "Low",
+      "reasoning": "Confidence Low based on: Political: election (1)",
+      "analyzed_at": "2026-06-09T23:22:10.704682"
+    }
+  }
+]

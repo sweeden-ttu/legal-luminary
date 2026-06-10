@@ -10,4 +10,5 @@ langchain-core
 langgraph
 beautifulsoup4
 requests
+feedparser
 langchain_ollama
