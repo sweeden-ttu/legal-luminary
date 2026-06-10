@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-03-23'
+  last_updated: '2026-06-09'
   infinite_scroll:
     page_size: 20
   scope:
@@ -103,7 +103,175 @@ candidates:
   headshot_url: https://bloximages.newyork1.vip.townnews.com/kdhnews.com/content/tncms/assets/v3/editorial/8/ed/8ed67ba6-9fdc-11eb-93f0-0717e0675f16/607b7c70494ce.image.jpg
   largest_financial_supporter_name: null
   largest_financial_supporter_work_for: null
-  instagram_url: https://www.facebook.com/bellcodems/posts/-stacey-wilson-for-county-commissioner-precinct-2-stacey-l-wilson-instagramcomst/1281821050654714/
+  instagram_url: null
+  linkedin_url: null
+- id: 47
+  name: Paul L. LePak
+  position: 264th Judicial District Court Judge
+  office: 264th District Court
+  jurisdiction: Bell County
+  status: incumbent
+  party: REP
+  election_phase: general_2026
+  FEC: 'no'
+  facebook_url: null
+  website_url: https://www.bellcountytx.com/county_government/district_courts/264th_district_court/index.php
+  notes: Appointed by Gov. Abbott June 2018. Republican nominee for 264th District Court, unopposed in November general.
+  group_city: Belton
+  group_state: Texas
+  group_function: Judicial
+  office_group_key: 264th District Court
+  office_up_for_election_this_year: true
+  office_incumbent_name: Paul L. LePak
+  office_opponents_platform_key_facts: []
+  headshot_url: null
+  largest_financial_supporter_name: null
+  largest_financial_supporter_work_for: null
+  instagram_url: null
+  linkedin_url: null
+- id: 48
+  name: Wade Faulkner
+  position: 478th Judicial District Court Judge
+  office: 478th District Court
+  jurisdiction: Bell County
+  status: incumbent
+  party: REP
+  election_phase: general_2026
+  FEC: 'no'
+  facebook_url: null
+  website_url: https://www.bellcountytx.com/county_government/district_courts/478th_judicial_district_court/index.php
+  notes: Incumbent judge of the 478th District Court. Republican nominee, unopposed in November general.
+  group_city: Belton
+  group_state: Texas
+  group_function: Judicial
+  office_group_key: 478th District Court
+  office_up_for_election_this_year: true
+  office_incumbent_name: Wade Faulkner
+  office_opponents_platform_key_facts: []
+  headshot_url: null
+  largest_financial_supporter_name: null
+  largest_financial_supporter_work_for: null
+  instagram_url: null
+  linkedin_url: null
+- id: 49
+  name: Paul A. Motz
+  position: County Court at Law No. 1 Judge
+  office: County Court at Law 1
+  jurisdiction: Bell County
+  status: incumbent
+  party: REP
+  election_phase: general_2026
+  FEC: 'no'
+  facebook_url: null
+  website_url: https://www.bellcountytx.com/county_government/county_courts/court_at_law_1/index.php
+  notes: Incumbent judge of County Court at Law No. 1. Also presides over Civil, Probate, and Mental Health Court. Republican nominee, unopposed in November general.
+  group_city: Belton
+  group_state: Texas
+  group_function: Judicial
+  office_group_key: County Court at Law 1
+  office_up_for_election_this_year: true
+  office_incumbent_name: Paul A. Motz
+  office_opponents_platform_key_facts: []
+  headshot_url: null
+  largest_financial_supporter_name: null
+  largest_financial_supporter_work_for: null
+  instagram_url: null
+  linkedin_url: null
+- id: 50
+  name: John Mischtian
+  position: County Court at Law No. 2 Judge
+  office: County Court at Law 2
+  jurisdiction: Bell County
+  status: incumbent
+  party: REP
+  election_phase: general_2026
+  FEC: 'no'
+  facebook_url: null
+  website_url: https://www.bellcountytx.com/county_government/county_courts/court_at_law_2/index.php
+  notes: Incumbent judge of County Court at Law No. 2. Republican nominee, unopposed in November general.
+  group_city: Belton
+  group_state: Texas
+  group_function: Judicial
+  office_group_key: County Court at Law 2
+  office_up_for_election_this_year: true
+  office_incumbent_name: John Mischtian
+  office_opponents_platform_key_facts: []
+  headshot_url: null
+  largest_financial_supporter_name: null
+  largest_financial_supporter_work_for: null
+  instagram_url: null
+  linkedin_url: null
+- id: 51
+  name: John Gauntt Jr.
+  position: County Court at Law No. 3 Judge (candidate)
+  office: County Court at Law 3
+  jurisdiction: Bell County
+  status: candidate
+  party: REP
+  election_phase: general_2026
+  FEC: 'no'
+  facebook_url: https://www.facebook.com/JohnGaunttJr
+  website_url: https://johngaunttjr.com
+  notes: Fourth-generation Bell County attorney. Prosecutor for 24 years. Republican nominee, unopposed in November general. Incumbent Rebecca DePew not seeking re-election.
+  group_city: Belton
+  group_state: Texas
+  group_function: Judicial
+  office_group_key: County Court at Law 3
+  office_up_for_election_this_year: true
+  office_incumbent_name: Rebecca DePew
+  office_opponents_platform_key_facts: []
+  headshot_url: null
+  largest_financial_supporter_name: null
+  largest_financial_supporter_work_for: null
+  instagram_url: null
+  linkedin_url: null
+- id: 52
+  name: Richard Sapp
+  position: Justice of the Peace, Precinct 2 (candidate)
+  office: Bell JP P2
+  jurisdiction: Bell County
+  status: candidate
+  party: REP
+  election_phase: general_2026
+  FEC: 'no'
+  facebook_url: null
+  website_url: https://sapp4jp.com
+  notes: Retired Temple Police detective (32 yrs). Won 4-way R primary. Incumbent Cliff Coleman retiring. Unopposed in November general.
+  group_city: Salado
+  group_state: Texas
+  group_function: Judicial
+  office_group_key: Bell JP P2
+  office_up_for_election_this_year: true
+  office_incumbent_name: Cliff Coleman
+  office_opponents_platform_key_facts: []
+  headshot_url: null
+  largest_financial_supporter_name: null
+  largest_financial_supporter_work_for: null
+  instagram_url: null
+  linkedin_url: null
+- id: 53
+  name: Beatrice "Bea" Cox
+  position: Justice of the Peace, Precinct 4, Place 2 (candidate)
+  office: Bell JP P4 Place 2
+  jurisdiction: Bell County
+  status: candidate
+  party: REP
+  election_phase: general_2026
+  FEC: 'no'
+  facebook_url: https://www.facebook.com/BeaForJP/
+  website_url: null
+  notes: Republican nominee for JP P4 Place 2. Faces Democrat Jessica A. Gonzalez in November general.
+  group_city: Killeen
+  group_state: Texas
+  group_function: Judicial
+  office_group_key: Bell JP P4 Place 2
+  office_up_for_election_this_year: true
+  office_incumbent_name: Nicola J. James
+  office_opponents_platform_key_facts: []
+  headshot_url: null
+  largest_financial_supporter_name: null
+  largest_financial_supporter_work_for: null
+  instagram_url: null
   linkedin_url: null
 - id: 23
   name: John Driver
@@ -472,11 +640,11 @@ candidates:
   jurisdiction: Bell County
   status: candidate
   party: DEM
-  election_phase: primary_2026
+  election_phase: general_2026
   FEC: 'no'
   facebook_url: https://www.facebook.com/repjessicagonzalez/
   website_url: null
-  notes: Not necessarily the same person as Killeen Council D1 Jessica Gonzalez.
+  notes: Democratic nominee for JP P4 Place 2 after winning May 26 runoff. Faces Republican Beatrice Cox in November general. Not necessarily the same person as Killeen Council D1 Jessica Gonzalez.
   group_city: ''
   group_state: Texas
   group_function: Judicial
