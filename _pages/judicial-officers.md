@@ -17,27 +17,11 @@ last_updated: 2026-06-09
 {% for j in site.candidates %}{% if j.path contains "courts/district/" and j.incumbent == true and j.election_status != "former" %}| {{ j.office }} | **{{ j.title }}** | {% if j.election_status == "general_2026" %}Up for election **2026**{% else %}Incumbent{% endif %} |
 {% endif %}{% endfor %}
 
-### Former District Judges
-
-| Judge | Court |
-|-------|-------|
-{% for j in site.candidates %}{% if j.path contains "courts/district/" and j.election_status == "former" %}| {{ j.title }} | {{ j.office }} |
-{% endif %}{% endfor %}
-{% for j in site.candidates %}{% if j.path contains "courts/district/" and j.incumbent == false and j.election_status != "former" %}| {{ j.title }} | {{ j.office }} |
-{% endif %}{% endfor %}
-
 ## County Courts at Law
 
 | Court | Judge | Status |
 |-------|-------|--------|
 {% for j in site.candidates %}{% if j.path contains "courts/county/" and j.election_status != "former" %}| {{ j.office }} | **{{ j.title }}** | {% if j.incumbent == false %}Candidate{% elsif j.election_status == "general_2026" %}Up for election **2026**{% else %}Incumbent{% endif %} |
-{% endif %}{% endfor %}
-
-### Former County Court Judges
-
-| Judge | Court |
-|-------|-------|
-{% for j in site.candidates %}{% if j.path contains "courts/county/" and j.election_status == "former" %}| {{ j.title }} | {{ j.office }} |
 {% endif %}{% endfor %}
 
 ## Justices of the Peace
