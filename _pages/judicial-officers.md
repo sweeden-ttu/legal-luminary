@@ -8,21 +8,6 @@ last_updated: 2026-06-09
 
 <h1>Bell County Judicial Officers</h1>
 
-<div style="display:flex;gap:24px;flex-wrap:wrap;margin:16px 0">
-  <div style="text-align:center">
-    <img src="/assets/images/headshots/gregory_johnson.png" alt="Gregory Johnson" style="width:180px;height:220px;object-fit:cover;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.15)">
-    <div style="margin-top:6px"><strong>Gregory Johnson</strong><br>JP4 Place 1</div>
-  </div>
-  <div style="text-align:center">
-    <img src="/assets/images/headshots/nicola_james.png" alt="Nicola J. James" style="width:180px;height:220px;object-fit:cover;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.15)">
-    <div style="margin-top:6px"><strong>Nicola J. James</strong><br>JP4 Place 2</div>
-  </div>
-  <div style="text-align:center">
-    <img src="/assets/images/headshots/larry_wilke.png" alt="Larry Wilkey" style="width:180px;height:220px;object-fit:cover;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.15)">
-    <div style="margin-top:6px"><strong>Larry Wilkey</strong><br>JP3 Place 2</div>
-  </div>
-</div>
-
 <p style="font-size:0.9em;color:#555;margin:0 0 20px 0"><strong>78.1%</strong> of eviction/foreclosure cases in our dataset are filed in these three JP courts. (<a href="/methodology">Methodology</a>)</p>
 
 ## District Courts
