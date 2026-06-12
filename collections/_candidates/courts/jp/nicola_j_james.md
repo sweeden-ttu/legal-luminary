@@ -13,7 +13,7 @@ election_status: seated
 office_up_for_election: false
 notes: Incumbent Justice of the Peace for Precinct 4, Place 2. Lost the Democratic primary in March 2026. Term expires December
   31, 2026. Term expires 12/31/26.
-rubber_stamp: true
+rubber_stamp: false
 profile_summary: 'Nicola J. James is the incumbent Justice of the Peace for Bell County Precinct 4, Place 2. She was elected
   to the position but lost the March 2026 Democratic primary for re-election, making her a lame-duck incumbent whose term
   expires December 31, 2026.

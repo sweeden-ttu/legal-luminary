@@ -12,17 +12,22 @@ class AnalystAgent:
         "Legal": {
             "weight": 2.0,
             "terms": ["lawsuit", "appeal", "indictment", "grand jury", "docket", "litigation", 
-                      "probate", "guardianship", "bench warrant", "judge", "court", "attorney"]
+                      "probate", "guardianship", "bench warrant", "judge", "court", "attorney",
+                      "supreme court", "attorney general", "district attorney", "prosecutor",
+                      "legal", "justice", "ruling", "statute", "ordinance"]
         },
         "Political": {
             "weight": 1.5,
             "terms": ["election", "political", "city council", "commissioners court", 
-                      "public hearing", "bond election", "canvass", "charter amendment", "precinct"]
+                      "public hearing", "bond election", "canvass", "charter amendment", "precinct",
+                      "voter", "registration", "ballot", "candidate", "mayor", "governor",
+                      "legislation", "legislature", "senate", "house of representatives", "bill"]
         },
         "Regional": {
             "weight": 1.0,
             "terms": ["killeen", "central texas", "bell county", "temple", "fort cavazos", 
-                      "harker heights", "copperas cove", "nolanville", "belton"]
+                      "harker heights", "copperas cove", "nolanville", "belton", "salado",
+                      "harker heights", "fort hood", "lampasas", "coryell county"]
         }
     }
 

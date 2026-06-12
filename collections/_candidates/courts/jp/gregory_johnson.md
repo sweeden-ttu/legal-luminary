@@ -12,7 +12,7 @@ headshot: null
 election_status: seated
 office_up_for_election: false
 notes: Sitting Justice of the Peace for Bell County Precinct 4, Place 1. Term expires December 31, 2028. Term expires 12/31/28.
-rubber_stamp: true
+rubber_stamp: false
 profile_summary: 'Gregory Johnson is the Justice of the Peace for Bell County Precinct 4, Place 1. The Precinct 4 JP courts
   serve the Killeen area of Bell County, which is the largest city in the county and home to a significant population connected
   with Fort Cavazos.

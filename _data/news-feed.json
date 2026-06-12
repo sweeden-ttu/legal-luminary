@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-01-22T07:47:06-06:00",
+  "last_updated": "2026-06-12T10:49:41-05:00",
   "feeds": [
     {
       "source": "Killeen Daily Herald — Local",
@@ -7,119 +7,127 @@
       "city": "killeen-news",
       "items": [
         {
-          "title": "Florence City Council fires police lieutenant after executive session",
-          "link": "https://kdhnews.com/news/local/florence-city-council-fires-police-lieutenant-after-executive-session/article_66710a49-8f06-4904-ba14-8ce454fbb701.html",
-          "date": "2026-01-22T07:46:58-06:00",
-          "excerpt": "FLORENCE — The Florence City Council convened in executive session Tuesday night to address personnel matters involving Florence Police Chief Wayne Thompson and Lt. David Guthrie, following allegation...",
+          "title": "KPD summer camp teaches safety, leadership and life skills to local youth",
+          "link": "https://kdhnews.com/news/local/kpd-summer-camp-teaches-safety-leadership-and-life-skills-to-local-youth/article_cb3d7b93-d689-40a3-9167-e795795d208e.html",
+          "date": "2026-06-12T10:49:34-05:00",
+          "excerpt": "Middle school students spent the week learning valuable life skills, public safety lessons and teamwork during the third annual CSI Summer Camp hosted by the Killeen Police Department in partnership w...",
           "source": "Killeen Daily Herald — Local",
           "city": "killeen-news"
         },
         {
-          "title": "Thefts reported in Copperas Cove, Killeen",
-          "link": "https://kdhnews.com/news/crime/thefts-reported-in-copperas-cove-killeen/article_809d9b00-c7c5-4a9a-9469-50100d59fd31.html",
-          "date": "2026-01-22T07:46:58-06:00",
+          "title": "Killeen man charged with manslaughter in connection to fatal January crash",
+          "link": "https://kdhnews.com/news/crime/killeen-man-charged-with-manslaughter-in-connection-to-fatal-january-crash/article_aa0a1110-a00f-42be-9798-d7c3cdd841c2.html",
+          "date": "2026-06-12T10:49:34-05:00",
+          "excerpt": "The Harker Heights Police Department announced that, on Wednesday, the Texas Department of Public Safety and the Bell County Sheriff’s Office served an arrest warrant for Scott Cotton, a 40-year-old r...",
+          "source": "Killeen Daily Herald — Local",
+          "city": "killeen-news"
+        },
+        {
+          "title": "Man sentenced to 30 years in prison for deadly hit-and-run",
+          "link": "https://kdhnews.com/news/crime/man-sentenced-to-30-years-in-prison-for-deadly-hit-and-run/article_0f7b9be9-da9c-4ea9-93f1-88385077313a.html",
+          "date": "2026-06-12T10:49:34-05:00",
+          "excerpt": "BELTON — During a three-day trial this week, a jury heard from law enforcement officers, scientists, record-keepers and witnesses as the state methodically laid out the nuts and bolts of its case agai...",
+          "source": "Killeen Daily Herald — Local",
+          "city": "killeen-news"
+        },
+        {
+          "title": "Murder indictment handed down after shooting death of Killeen man earlier this year",
+          "link": "https://kdhnews.com/news/crime/murder-indictment-handed-down-after-shooting-death-of-killeen-man-earlier-this-year/article_509c98e0-991d-424b-b717-cf632b0f1d25.html",
+          "date": "2026-06-12T10:49:34-05:00",
+          "excerpt": "A Burnet man was indicted by a Bell County grand jury this week after Killeen police said he and another man had taken LSD and were arguing prior to a deadly shooting earlier this year.",
+          "source": "Killeen Daily Herald — Local",
+          "city": "killeen-news"
+        },
+        {
+          "title": "Jury finds man guilty of hit-and-run that killed Fort Hood soldier",
+          "link": "https://kdhnews.com/news/crime/jury-finds-man-guilty-of-hit-and-run-that-killed-fort-hood-soldier/article_a1e98262-5552-42ad-b3d2-ce2f67eba78f.html",
+          "date": "2026-06-12T10:49:34-05:00",
+          "excerpt": "BELTON — Jurors had the opportunity during their deliberations to examine two oversize pieces of evidence: the bumper and the hood of a gray 2007 Mercedes-Benz CLS 550.",
+          "source": "Killeen Daily Herald — Local",
+          "city": "killeen-news"
+        },
+        {
+          "title": "Killeen council to consider zoning request for cell tower that concerned some residents",
+          "link": "https://kdhnews.com/news/local/killeen-council-to-consider-zoning-request-for-cell-tower-that-concerned-some-residents/article_b453a0b9-e9ea-45ba-a94c-4265414ff4c5.html",
+          "date": "2026-06-12T10:49:34-05:00",
+          "excerpt": "The Killeen City Council will hold a public hearing Tuesday on a conditional-use permit for a Verizon cellphone tower being built at 7432 East Trimmier Road, which several residents spoke out against ...",
+          "source": "Killeen Daily Herald — Local",
+          "city": "killeen-news"
+        },
+        {
+          "title": "Multi-vehicle accident occurs on I-14 near Jasper bridge",
+          "link": "https://kdhnews.com/news/local/multi-vehicle-accident-occurs-on-i-14-near-jasper-bridge/article_efbfc435-99a5-4793-89e6-8d0bf3ab74f1.html",
+          "date": "2026-06-12T10:49:34-05:00",
+          "excerpt": "A multiple vehicle accident occurred Wednesday on westbound I-14 near the Jasper bridge at 12:41 p.m. and left one person with minor injuries, according to the Killeen Police Department.",
+          "source": "Killeen Daily Herald — Local",
+          "city": "killeen-news"
+        },
+        {
+          "title": "After visit from KDH News, KPD said it will release daily police blotter",
+          "link": "https://kdhnews.com/news/crime/after-visit-from-kdh-news-kpd-said-it-will-release-daily-police-blotter/article_52856491-db12-4113-aa35-aff0ef35befe.html",
+          "date": "2026-06-12T10:49:34-05:00",
+          "excerpt": "A months-long standoff over public access to local crime data has reached a resolution after KDH News visited Killeen Police Department Headquarters on Tuesday morning and was initially told the infor...",
+          "source": "Killeen Daily Herald — Local",
+          "city": "killeen-news"
+        },
+        {
+          "title": "Police reports: Larceny in Killeen; family violence in Copperas Cove",
+          "link": "https://kdhnews.com/news/crime/police-reports-larceny-in-killeen-family-violence-in-copperas-cove/article_3390785b-1c90-41e8-bdfb-74062b0f7ea7.html",
+          "date": "2026-06-12T10:49:34-05:00",
           "excerpt": "Area police reports indicated:",
           "source": "Killeen Daily Herald — Local",
           "city": "killeen-news"
         },
         {
-          "title": "Killeen-area residents urged to prepare for cold, ice this weekend",
-          "link": "https://kdhnews.com/news/weather/killeen-area-residents-urged-to-prepare-for-cold-ice-this-weekend/article_854e264c-f9f5-4c1b-95de-bb39d77cb847.html",
-          "date": "2026-01-22T07:46:58-06:00",
-          "excerpt": "The Killeen-Fort Hood area is expecting a very cold weekend, with temperatures at or below freezing and the possibility of sleet or ice on roadways.",
+          "title": "Killeen man said he hit a deer, police said he knew it was a man who died; jury will decide",
+          "link": "https://kdhnews.com/news/crime/killeen-man-said-he-hit-a-deer-police-said-he-knew-it-was-a-man/article_af6ac20c-f15f-4679-94ee-dbd1b37afb09.html",
+          "date": "2026-06-12T10:49:34-05:00",
+          "excerpt": "BELTON — The man straightened the collar of his brown blazer just seconds before the people who would decide his fate were brought into the courtroom. Less than a minute after the panel of four men an...",
           "source": "Killeen Daily Herald — Local",
           "city": "killeen-news"
         },
         {
-          "title": "Artic intrustion to bring frigid temps, ice to Killeen area",
-          "link": "https://kdhnews.com/news/local/artic-intrustion-to-bring-frigid-temps-ice-to-killeen-area/article_2e200f1a-1b87-4e22-a5eb-05564ac23fbc.html",
-          "date": "2026-01-22T07:46:58-06:00",
-          "excerpt": "As the weather turns colder this week, the National Weather Service says Central Texas should expect an “arctic intrusion” that will bring dangerously cold temperatures and wintry precipitation starti...",
+          "title": "Bell County indictments",
+          "link": "https://kdhnews.com/news/crime/bell-county-indictments/article_129b5db8-6fb0-4a42-a972-efc1508dfd3f.html",
+          "date": "2026-06-12T10:49:34-05:00",
+          "excerpt": "Indicted by a Bell County grand jury in early August 2024 were:",
           "source": "Killeen Daily Herald — Local",
           "city": "killeen-news"
         },
         {
-          "title": "Hearing scheduled for Thursday at courthouse in Belton over combining marijuana lawsuits",
-          "link": "https://kdhnews.com/news/local/hearing-scheduled-for-thursday-at-courthouse-in-belton-over-combining-marijuana-lawsuits/article_302483da-90cd-4d65-8344-80641e21f66e.html",
-          "date": "2026-01-22T07:46:58-06:00",
-          "excerpt": "More than two years ago, the Texas Attorney General’s Office declined to join the Bell County district and county attorneys’ offices in their civil lawsuit against the city of Killeen over its voter-a...",
+          "title": "KPD chief explains interruption in police reports, won’t expand availability",
+          "link": "https://kdhnews.com/news/crime/kpd-chief-explains-interruption-in-police-reports-won-t-expand-availability/article_3a379cf8-b3eb-47c0-a732-9bf3785b34df.html",
+          "date": "2026-06-12T10:49:34-05:00",
+          "excerpt": "The Killeen Daily Herald, and the public in general, has not had online or electronic access to the daily crime report from the Killeen Police Department since March 30.",
           "source": "Killeen Daily Herald — Local",
           "city": "killeen-news"
         },
         {
-          "title": "Police reports: Aggravated assault and a terroristic threat were reported in Killeen",
-          "link": "https://kdhnews.com/news/crime/police-reports-aggravated-assault-and-a-terroristic-threat-were-reported-in-killeen/article_ea674a67-bc5a-44bf-ae7e-16020db5b398.html",
-          "date": "2026-01-22T07:46:58-06:00",
-          "excerpt": "Killeen",
-          "source": "Killeen Daily Herald — Local",
-          "city": "killeen-news"
-        },
-        {
-          "title": "Ex-KHA director has started to serve 3-year sentence at minimum security prison in Bryan",
-          "link": "https://kdhnews.com/news/local/ex-kha-director-has-started-to-serve-3-year-sentence-at-minimum-security-prison-in/article_9b522e95-7639-43d5-a559-71fa7de6beaf.html",
-          "date": "2026-01-22T07:46:58-06:00",
-          "excerpt": "The ex-director of the Killeen Housing Authority, who was convicted in November of one count of theft of government property, surrendered herself to the Federal Bureau of Prisons as required and has s...",
-          "source": "Killeen Daily Herald — Local",
-          "city": "killeen-news"
-        },
-        {
-          "title": "Police reports: Vehicle theft and burglary reported in Killeen",
-          "link": "https://kdhnews.com/news/crime/police-reports-vehicle-theft-and-burglary-reported-in-killeen/article_5691d5f2-471e-4c3e-a46c-fc8943c6a24b.html",
-          "date": "2026-01-22T07:46:58-06:00",
+          "title": "Police reports: Multiple reports of controlled substances in area cities",
+          "link": "https://kdhnews.com/news/crime/police-reports-multiple-reports-of-controlled-substances-in-area-cities/article_444ec066-831e-4695-b40b-fc8f04de09ae.html",
+          "date": "2026-06-12T10:49:34-05:00",
           "excerpt": "Area police reports indicated:",
           "source": "Killeen Daily Herald — Local",
           "city": "killeen-news"
         },
         {
-          "title": "Fatal shooting on Sunday,  police investigating the domestic disturbance",
-          "link": "https://kdhnews.com/news/crime/fatal-shooting-on-sunday-police-investigating-the-domestic-disturbance/article_83b5def5-378e-496d-9d78-8673c3c989d1.html",
-          "date": "2026-01-22T07:46:58-06:00",
-          "excerpt": "There were two victims following a shooting Sunday afternoon that left one man dead.",
+          "title": "Killeen man faces 4 felony charges in addition to 2022 murder accusation",
+          "link": "https://kdhnews.com/news/crime/killeen-man-faces-4-felony-charges-in-addition-to-2022-murder-accusation/article_4ad20ba2-0b01-4408-ab51-a17530bc697d.html",
+          "date": "2026-06-12T10:49:34-05:00",
+          "excerpt": "A Killeen man who is set to stand trial later this month on a murder charge now is facing four more felony accusations after a string of armed robberies and one shooting earlier this year.",
           "source": "Killeen Daily Herald — Local",
           "city": "killeen-news"
         },
         {
-          "title": "Killeen man sentenced to prison time after admitting to wrong-way crash while drunk, killing 26-year-old woman",
-          "link": "https://kdhnews.com/news/crime/killeen-man-sentenced-to-prison-time-after-admitting-to-wrong-way-crash-while-drunk-killing/article_65b8f30c-d869-4f88-b04c-fe10c3518145.html",
-          "date": "2026-01-22T07:46:58-06:00",
-          "excerpt": "BELTON — When a girl named Destiny arrived on the doorstep of the Lopez home just before Christmas in 2011, it was a gift that was just meant to be.",
-          "source": "Killeen Daily Herald — Local",
-          "city": "killeen-news"
-        },
-        {
-          "title": "Killeen man found guilty of burglary after hotel shampoo traced back to scene",
-          "link": "https://kdhnews.com/news/crime/killeen-man-found-guilty-of-burglary-after-hotel-shampoo-traced-back-to-scene/article_d01d7fa7-07ff-4e5e-a45b-89a5559cf61d.html",
-          "date": "2026-01-22T07:46:58-06:00",
-          "excerpt": "A tiny bottle of hotel shampoo proved to be the key to solving a burglary in Killeen last year. And last week, a man was sentenced to prison time for the crime.",
-          "source": "Killeen Daily Herald — Local",
-          "city": "killeen-news"
-        },
-        {
-          "title": "Police reports: Shots fired, illegal discharge of a firearm in Killeen",
-          "link": "https://kdhnews.com/news/crime/police-reports-shots-fired-illegal-discharge-of-a-firearm-in-killeen/article_ebec5524-6875-4ef4-9ee6-9c60e98c1c33.html",
-          "date": "2026-01-22T07:46:58-06:00",
+          "title": "Police reports: A juvenile complaint was reported in Lampasas",
+          "link": "https://kdhnews.com/news/crime/police-reports-a-juvenile-complaint-was-reported-in-lampasas/article_0f37a2a4-8307-4e82-bbb1-56df92327bc1.html",
+          "date": "2026-06-12T10:49:34-05:00",
           "excerpt": "Area police reports indicated:",
-          "source": "Killeen Daily Herald — Local",
-          "city": "killeen-news"
-        },
-        {
-          "title": "DA says many more jury trials were held than were included in state stats",
-          "link": "https://kdhnews.com/news/local/da-says-many-more-jury-trials-were-held-than-were-included-in-state-stats/article_45965452-1c19-4150-9bee-040d33c81bc5.html",
-          "date": "2026-01-22T07:46:58-06:00",
-          "excerpt": "The tallies maintained by the Bell County District Attorney’s Office are a bit different than state statistics regarding the number of jury trials that have been held in the county’s district courts o...",
-          "source": "Killeen Daily Herald — Local",
-          "city": "killeen-news"
-        },
-        {
-          "title": "Police Reports: Assaults and theft in Killeen and Lampasas",
-          "link": "https://kdhnews.com/news/crime/police-reports-assaults-and-theft-in-killeen-and-lampasas/article_1005e5ee-3116-44d0-9151-c93ce97a72f8.html",
-          "date": "2026-01-22T07:46:58-06:00",
-          "excerpt": "KILLEEN",
           "source": "Killeen Daily Herald — Local",
           "city": "killeen-news"
         }
       ],
-      "item_count": 14
+      "item_count": 15
     },
     {
       "source": "Killeen PD News",
@@ -127,82 +135,82 @@
       "city": "killeen-news",
       "items": [
         {
-          "title": "Killeen Police Investigate Fatal Shooting on Illinois Avenue",
-          "link": "https://killeenpdnews.com/2026/01/18/killeen-police-investigate-fatal-shooting-on-illinois-avenue/",
-          "date": "2026-01-22T07:46:59-06:00",
-          "excerpt": "Killeen, TX (January 18, 2026): The Killeen Police Department is investigating a shooting that resulted in the death of a 58-year-old male. On Sunday, January 18, 2026, at approximately 1:34 p.m., off...",
+          "title": "Killeen Police Release Identities in Fatal Stan Schlueter Loop Crash",
+          "link": "https://killeenpdnews.com/2026/06/02/killeen-police-release-identities-in-fatal-stan-schlueter-loop-crash/",
+          "date": "2026-06-12T10:49:35-05:00",
+          "excerpt": "UPDATE (June 2, 2026): The driver of the Toyota SUV has been identified as Andre Richmond. The female passenger in the Kia SUV has been identified as Rosa Hernandez. The 77-year-old male driver of the...",
           "source": "Killeen PD News",
           "city": "killeen-news"
         },
         {
-          "title": "Killeen Police Charge Second Suspect in Fatal Monte Carlo Shooting",
-          "link": "https://killeenpdnews.com/2026/01/15/killeen-police-charge-second-suspect-in-fatal-monte-carlo-shooting/",
-          "date": "2026-01-22T07:46:59-06:00",
-          "excerpt": "Killeen, TX (January 15, 2026): UPDATE – Detectives with the Killeen Police Department Robbery-Homicide Unit have identified a second suspect in the murder of 22-year-old Tai’Lynn Akaya Wright. Follow...",
+          "title": "Killeen Police Investigate a Fatal Crash on Stan Schlueter Loop",
+          "link": "https://killeenpdnews.com/2026/06/01/killeen-police-investigate-a-fatal-crash-on-stan-schlueter-loop-2/",
+          "date": "2026-06-12T10:49:35-05:00",
+          "excerpt": "Killeen, TX (June 1, 2026): The Killeen Police Department is investigating a fatal two-vehicle crash that occurred Monday morning on Stan Schlueter Loop. On Monday, June 1, 2026, at approximately 7:40...",
           "source": "Killeen PD News",
           "city": "killeen-news"
         },
         {
-          "title": "Killeen Police Investigate a Fatality Crash on Stan Schlueter Loop",
-          "link": "https://killeenpdnews.com/2026/01/10/killeen-police-investigate-a-fatality-crash-on-stan-schlueter-loop/",
-          "date": "2026-01-22T07:46:59-06:00",
-          "excerpt": "Killeen, TX (January 10, 2026): Killeen Police are actively investigating the death of a 34-year-old male from a vehicle collision. On Saturday, January 10, 2026, at approximately 8:58 a.m., officers ...",
+          "title": "Killeen Police Charge 47-Year-Old with Murder",
+          "link": "https://killeenpdnews.com/2026/05/29/killeen-police-charge-47-year-old-with-murder/",
+          "date": "2026-06-12T10:49:35-05:00",
+          "excerpt": "##### ***UPDATE*** Killeen, TX (May 29th, 2026):Killeen Police Charge 47-Year-Old with Murder The Killeen Police Department’s Robbery/Homicide Unit reviewed this case with the Bell County District Att...",
           "source": "Killeen PD News",
           "city": "killeen-news"
         },
         {
-          "title": "Killeen Police Charge 29-Year-Old Man with Murder",
-          "link": "https://killeenpdnews.com/2026/01/08/killeen-police-charge-29-year-old-man-with-murder/",
-          "date": "2026-01-22T07:46:59-06:00",
-          "excerpt": "Killeen, TX (January 8, 2026) — UPDATE: Detectives with the Robbery-Homicide Unit have identified a suspect in the murder of Anthony Glenn Powell. On Wednesday, October 16, 2024, at approximately 10:4...",
+          "title": "Killeen Police Investigate Shooting in 5800 block of Siltstone Lp",
+          "link": "https://killeenpdnews.com/2026/05/26/killeen-police-investigate-shooting-in-5800-block-of-siltstone-lp/",
+          "date": "2026-06-12T10:49:35-05:00",
+          "excerpt": "On May 25, 2026, at approximately 11:58 p.m., officers with the Killeen Police Department responded to a shooting investigation in the 5800 block of Siltstone Loop. Preliminary investigation revealed ...",
           "source": "Killeen PD News",
           "city": "killeen-news"
         },
         {
-          "title": "Killeen Police Arrest Driver for DWI Following New Year’s Day Crash",
-          "link": "https://killeenpdnews.com/2026/01/02/killeen-police-arrest-driver-for-dwi-following-new-years-day-crash/",
-          "date": "2026-01-22T07:46:59-06:00",
-          "excerpt": "On January 1, 2026, at approximately 12:16 a.m., officers were dispatched to the area of Rosewood Drive and Bronze Drive for a major single-vehicle crash. The Killeen Police Department Traffic Unit re...",
+          "title": "Killeen Police Traffic Unit Conducts Railroad Crossing Safety Detail",
+          "link": "https://killeenpdnews.com/2026/05/08/killeen-police-traffic-unit-conducts-railroad-crossing-safety-detail/",
+          "date": "2026-06-12T10:49:35-05:00",
+          "excerpt": "Killeen, TX (May 8, 2026): On Wednesday, May 6, 2026, the Killeen Police Department Traffic Unit conducted a Railroad Crossing Safety Detail from 8:00 a.m. to 11:00 a.m. to promote traffic safety and ...",
           "source": "Killeen PD News",
           "city": "killeen-news"
         },
         {
-          "title": "Killeen Police Charge 18-Year-Old in Fatal Monte Carlo Shooting",
-          "link": "https://killeenpdnews.com/2026/01/02/killeen-police-charge-18-year-old-in-fatal-monte-carlo-shooting/",
-          "date": "2026-01-22T07:46:59-06:00",
-          "excerpt": "Killeen, TX (January 2, 2026): UPDATE &#8211; Detectives with the Killeen Police Department Robbery-Homicide Unit have identified a suspect in the murder of 22-year-old Tai’Lynn Akaya Wright. Followin...",
+          "title": "Killeen Police Investigate a Homicide on Bluestem Lane",
+          "link": "https://killeenpdnews.com/2026/05/04/killeen-police-investigate-a-homicide-on-bluestem-lane/",
+          "date": "2026-06-12T10:49:35-05:00",
+          "excerpt": "Killeen, TX (May 4, 2026): On Sunday, May 3, 2026, at approximately 1:55 p.m., officers were dispatched to the 4200 block of Bluestem Lane in reference to a welfare check. Upon the officer’s arrival, ...",
           "source": "Killeen PD News",
           "city": "killeen-news"
         },
         {
-          "title": "Killeen Police Arrest Two People Involved in Crash on Interstate 14",
-          "link": "https://killeenpdnews.com/2025/12/11/killeen-police-arrest-two-people-involved-in-crash-on-interstate-14/",
-          "date": "2026-01-22T07:46:59-06:00",
-          "excerpt": "Killeen, TX (December 11, 2025) – UPDATE: Through the ongoing investigation, officers determined that there were four occupants inside the Mustang at the time of the crash. Evidence showed that immedi...",
+          "title": "NEWS RELEASE: KILLEEN POLICE INVESTIGATE THE MURDER OF A 21-YEAR-OLD MALE ON 18th ST",
+          "link": "https://killeenpdnews.com/2026/04/30/news-release-killeen-police-investigate-the-murder-of-a-21-year-old-male-on-18th-st/",
+          "date": "2026-06-12T10:49:35-05:00",
+          "excerpt": "Killeen, TX (April 30, 2026): The Killeen Police Department is actively investigating a shooting that resulted in the death of a 21-year-old male. On Thursday, April 30, 2026, at approximately 5:07 p....",
           "source": "Killeen PD News",
           "city": "killeen-news"
         },
         {
-          "title": "Killeen Police Investigate Motorcycle Crash on Interstate 14",
-          "link": "https://killeenpdnews.com/2025/12/10/killeen-police-investigate-motorcycle-crash-on-interstate-14/",
-          "date": "2026-01-22T07:46:59-06:00",
-          "excerpt": "Killeen, TX (December 10, 2025): A 41-year-old male motorcyclist is in critical but stable condition following a crash involving a vehicle. On December 9, 2025, at approximately 2:01 p.m., officers we...",
+          "title": "Killeen Police Investigate a Major Crash on Robinett Road",
+          "link": "https://killeenpdnews.com/2026/04/30/killeen-police-investigate-a-major-crash-on-robinett-road/",
+          "date": "2026-06-12T10:49:35-05:00",
+          "excerpt": "Killeen, TX (April 30, 2026): Investigators with the Killeen Police Department Traffic Unit are investigating a crash that left two drivers injured while another vehicle fled the scene. On April 30, 2...",
           "source": "Killeen PD News",
           "city": "killeen-news"
         },
         {
-          "title": "Killeen Police Investigate a Fatal Single-Vehicle Crash",
-          "link": "https://killeenpdnews.com/2025/12/04/killeen-police-investigate-a-fatal-single-vehicle-crash/",
-          "date": "2026-01-22T07:46:59-06:00",
-          "excerpt": "On Thursday, December 4, 2025, at approximately 4:33 p.m., officers responded to the 4800 block of E. Rancier Avenue for a single-vehicle crash. They arrived to find the vehicle off the roadway and on...",
+          "title": "Killeen Police Charge 36-Year-Old-Male with Murder",
+          "link": "https://killeenpdnews.com/2026/04/08/killeen-police-charge-36-year-old-male-with-murder-3/",
+          "date": "2026-06-12T10:49:35-05:00",
+          "excerpt": "Killeen, TX (April 8, 2026) UPDATE: Detectives with the Killeen Police Department’s Criminal Investigation Division, Robbery-Homicide Unit, received a criminal complaint from the Bell County District ...",
           "source": "Killeen PD News",
           "city": "killeen-news"
         },
         {
-          "title": "Killeen Police Investigate Fatal Shooting on Monte Carlo Lane",
-          "link": "https://killeenpdnews.com/2025/11/26/killeen-police-investigate-fatal-shooting-on-monte-carlo-lane/",
-          "date": "2026-01-22T07:46:59-06:00",
-          "excerpt": "Killeen, TX (November 26, 2025): The Killeen Police Department is actively investigating the death of a 22-year-old female following a shooting incident. On November 26, 2025, at approximately 2:02 a....",
+          "title": "Killeen Police Identify Victim in Fatal Pedestrian Crash",
+          "link": "https://killeenpdnews.com/2026/03/31/killeen-police-identify-victim-in-fatal-pedestrian-crash/",
+          "date": "2026-06-12T10:49:35-05:00",
+          "excerpt": "Killeen, TX (March 31, 2026) UPDATE: Investigators with the Traffic Unit have identified the victim as Jerry Wayne Craigo. This fatality continues to be under investigation, and there is no additional...",
           "source": "Killeen PD News",
           "city": "killeen-news"
         }
@@ -215,23 +223,15 @@
       "city": "killeen-news",
       "items": [
         {
-          "title": "Volunteers needed for Central Texas Point in Time count",
-          "link": "https://www.fox44news.com/news/local-news/bell-county/volunteers-needed-for-central-texas-point-in-time-count/",
-          "date": "2026-01-22T07:47:01-06:00",
-          "excerpt": "CENTRAL TEXAS (FOX 44) - Homelessness continues to be a major concern here in Central Texas, and the Texas Homeless Network is preparing for its upcoming annual homeless count. Killeen Police Departme...",
-          "source": "FOX 44 — Killeen tag",
-          "city": "killeen-news"
-        },
-        {
-          "title": "Shooting in Killeen Kills One Sunday Afternoon",
-          "link": "https://www.fox44news.com/news/local-news/bell-county/shooting-in-killeen-kills-one-sunday-afternoon/",
-          "date": "2026-01-22T07:47:01-06:00",
-          "excerpt": "KILLEEN, Texas (FOX 44) - The Killeen Police Department is investigating a shooting that resulted in the death of a 58-year-old male Sunday (Jan. 18, 2026) afternoon. Officers responded to a report of...",
+          "title": "Injuries reported in Killeen five-vehicle crash",
+          "link": "https://www.fox44news.com/news/local-news/bell-county/injuries-reported-in-killeen-five-vehicle-crash/",
+          "date": "2026-06-12T10:49:36-05:00",
+          "excerpt": "KILLEEN, Texas (FOX 44) - Injuries have been reported in connection with a five-vehicle crash in Killeen early Wednesday afternoon. The Killeen Police Department's Traffic Unit responded to a crash on...",
           "source": "FOX 44 — Killeen tag",
           "city": "killeen-news"
         }
       ],
-      "item_count": 2
+      "item_count": 1
     },
     {
       "source": "Temple Daily Telegram — News",
@@ -239,426 +239,376 @@
       "city": "temple-news",
       "items": [
         {
-          "title": "As immigrant arrests rise, here’s what to know about ICE operations in Texas",
-          "link": "https://www.tdtnews.com/news/article_ceb72413-89de-423f-930a-4637cc7b4f64.html",
-          "date": "2026-01-22T07:47:03-06:00",
-          "excerpt": "As the Trump Administration intensifies its sweeping immigration crackdown, outrage across the country is building — especially after recent shootings by Immigration and Customs Enforcement agents.",
+          "title": "Trump plans to nominate US Attorney Jay Clayton to be director of national intelligence",
+          "link": "https://www.tdtnews.com/news/article_20523e19-209b-48e0-93a0-53de1166cfbc.html",
+          "date": "2026-06-12T10:49:38-05:00",
+          "excerpt": "WASHINGTON (AP) — President Donald Trump said Thursday that he plans to nominate Jay Clayton, the U.S. attorney for the Southern District of New York and a former Securities and Exchange Commission ch...",
           "source": "Temple Daily Telegram — News",
           "city": "temple-news"
         },
         {
-          "title": "Justice Department investigating whether Minnesota's Walz and Frey impeded immigration enforcement",
-          "link": "https://www.tdtnews.com/news/nation_world/article_59cbfc54-e20c-5b34-870f-a8f4fe010fa0.html",
-          "date": "2026-01-22T07:47:03-06:00",
-          "excerpt": "The Justice Department is investigating whether Minnesota Gov. Tim Walz and Minneapolis Mayor Jacob Frey have impeded federal immigration enforcement through public statements they have made, accordin...",
+          "title": "One killed, two injured in crash in Temple",
+          "link": "https://www.tdtnews.com/news/article_919c7b3b-b942-4cd9-8d1c-4c7047cb5cfd.html",
+          "date": "2026-06-12T10:49:38-05:00",
+          "excerpt": "The Temple Police Department is investigating a fatal traffic crash that left one individual dead and two people injured. At around 2:58 p.m., on Tuesday, officers were dispatched to the area of Airpo...",
           "source": "Temple Daily Telegram — News",
           "city": "temple-news"
         },
         {
-          "title": "Thousands march in Greenland to support Arctic island in the face of Trump's threats to take it over",
-          "link": "https://www.tdtnews.com/news/nation_world/article_96de84a1-e7eb-5a7b-afd6-1a5963f1fade.html",
-          "date": "2026-01-22T07:47:03-06:00",
-          "excerpt": "Thousands of Greenlanders carefully marched across snow and ice to take a stand against U.S. President Donald Trump. They rallied on Saturday by holding signs of protest, waving their national flag an...",
+          "title": "Testimony ends after 4 days, closing arguments set in trial of fatal Texas track meet stabbing",
+          "link": "https://www.tdtnews.com/news/nation_world/article_2ba919dd-a29c-5184-b532-aea7e0589fe5.html",
+          "date": "2026-06-12T10:49:38-05:00",
+          "excerpt": "A teenager charged with murder in the fatal stabbing of a competitor at a Texas track meet won't be testifying in his own defense. After a long break, a judge said closing arguments will be heard Tues...",
           "source": "Temple Daily Telegram — News",
           "city": "temple-news"
         },
         {
-          "title": "Judge rules feds in Minneapolis immigration operation can’t detain or tear gas peaceful protesters",
-          "link": "https://www.tdtnews.com/news/nation_world/article_52f3ca32-61bb-5813-be95-39f9f968608f.html",
-          "date": "2026-01-22T07:47:03-06:00",
-          "excerpt": "A U.S. judge has ruled federal officers in a Minneapolis-area immigration operation can’t detain or tear gas peaceful protesters who aren’t obstructing authorities, including when these people are obs...",
+          "title": "Ken Paxton's attorney in his impeachment trial endorses James Talarico in US Senate race",
+          "link": "https://www.tdtnews.com/news/nation_world/article_4d51f514-a9d1-5437-846c-77c2b4f4c43e.html",
+          "date": "2026-06-12T10:49:38-05:00",
+          "excerpt": "An attorney who defended Texas Attorney General Ken Paxton in his impeachment trial has endorsed Paxton's Democratic opponent in the U.S. Senate race. State Rep. James Talarico on Monday drew attentio...",
           "source": "Temple Daily Telegram — News",
           "city": "temple-news"
         },
         {
-          "title": "ICE says Cuban immigrant died while attempting suicide. A witness says guards pinned and choked him",
-          "link": "https://www.tdtnews.com/news/article_927a9465-3076-5faa-bfb9-a1ba2df17d07.html",
-          "date": "2026-01-22T07:47:03-06:00",
-          "excerpt": "A Cuban immigrant who lived in the U.S. for nearly three decades died in a Texas immigration facility during an altercation with guards. While the local medical examiner has indicated his death will l...",
+          "title": "Police search for suspects in Ohio shooting that wounded 12 near a street festival",
+          "link": "https://www.tdtnews.com/news/nation_world/article_1f8283db-9e00-5458-bf38-b723576c7c77.html",
+          "date": "2026-06-12T10:49:38-05:00",
+          "excerpt": "Police in Ohio are still searching for suspects who opened fire near a busy street festival in Toledo and wounded 12 people over the weekend. The Toledo Police Department said Sunday that each of the ...",
           "source": "Temple Daily Telegram — News",
           "city": "temple-news"
         },
         {
-          "title": "Supreme Court will hear appeal by maker of popular Roundup weedkiller to block thousands of lawsuits",
-          "link": "https://www.tdtnews.com/news/article_742beced-6447-55f8-9dbe-554e32ef8c1b.html",
-          "date": "2026-01-22T07:47:03-06:00",
-          "excerpt": "The Supreme Court has agreed to hear an appeal from agrochemical manufacturer Bayer to block thousands of state lawsuits alleging it failed to warn people its popular weedkiller could cause cancer. Th...",
+          "title": "British deputy prime minister tells JD Vance he was wrong to blame immigration for teen's murder",
+          "link": "https://www.tdtnews.com/news/nation_world/article_3c8260b8-9401-55b2-83e2-ec0ff4524e05.html",
+          "date": "2026-06-12T10:49:38-05:00",
+          "excerpt": "Britain’s deputy prime minister said Sunday that he told U.S. Vice President JD Vance he was wrong to blame immigration for the death of a university student who was handcuffed as he lay dying from a ...",
           "source": "Temple Daily Telegram — News",
           "city": "temple-news"
         },
         {
-          "title": "Judge orders release of Liberian man arrested in Minneapolis by agents with a battering ram",
-          "link": "https://www.tdtnews.com/news/article_7816470f-5ac2-574c-bae6-8a0252892dd1.html",
-          "date": "2026-01-22T07:47:03-06:00",
-          "excerpt": "A federal judge in Minnesota has ordered the release of a Liberian man after heavily armed immigration agents broke into his home using a battering ram and arrested him. U.S. District Judge Jeffrey Br...",
+          "title": "At least 12 people shot at an Ohio festival and a search for suspects is still ongoing, police say",
+          "link": "https://www.tdtnews.com/news/nation_world/article_a1732961-1116-5e14-8448-0c4652070a01.html",
+          "date": "2026-06-12T10:49:38-05:00",
+          "excerpt": "Authorities say a shooting near a busy street festival in Ohio has wounded at least 12 people. Toledo police say the shooting happened Saturday near the Old West End Festival, an annual gathering of l...",
           "source": "Temple Daily Telegram — News",
           "city": "temple-news"
         },
         {
-          "title": "Minnesota protesters, agents repeatedly square off while prosecutors quit after Renee Good's death",
-          "link": "https://www.tdtnews.com/news/nation_world/article_9f4a79a0-3a57-531c-810a-4a9f36952e02.html",
-          "date": "2026-01-22T07:47:03-06:00",
-          "excerpt": "Days of demonstrations against immigration agents and a new lawsuit have left Minnesota tense. Federal officers sprayed eye irritant and dropped tear gas at activists on Tuesday in Minneapolis. Studen...",
+          "title": "Virginia man gets life in prison for double murder scheme in affair with au pair",
+          "link": "https://www.tdtnews.com/news/nation_world/article_b001348c-41a2-52e4-9bb4-5615cd4e3d16.html",
+          "date": "2026-06-12T10:49:38-05:00",
+          "excerpt": "A Virginia man who was having an affair with the family’s Brazilian au pair has been sentenced to life in prison without parole for the murder of his wife and a man who was lured to the couple’s home ...",
           "source": "Temple Daily Telegram — News",
           "city": "temple-news"
         },
         {
-          "title": "Supreme Court seems likely to uphold state bans on transgender athletes in girls and women's sports",
-          "link": "https://www.tdtnews.com/news/article_4381c657-db60-58da-b018-f08a00590c7a.html",
-          "date": "2026-01-22T07:47:03-06:00",
-          "excerpt": "The Supreme Court seems likely to uphold state laws barring transgender girls and women from playing on school athletic teams. Lower courts ruled for the transgender athletes in Idaho and West Virgini...",
-          "source": "Temple Daily Telegram — News",
-          "city": "temple-news"
-        },
-        {
-          "title": "What to know about the warrants most immigration agents use to make arrests",
-          "link": "https://www.tdtnews.com/news/nation_world/article_3d591e55-b012-5562-90b1-4b2721dc5514.html",
-          "date": "2026-01-22T07:47:03-06:00",
-          "excerpt": "The Trump administration's immigration enforcement tactics are sparking debate over federal agents' authority to enter private property. There have been arrests in recent months at day care centers, a...",
+          "title": "Texas county rescinds its data center moratorium after $100 million lawsuit from developer",
+          "link": "https://www.tdtnews.com/news/article_c2fe7e01-1e9b-415a-b197-0f57f7ce5a88.html",
+          "date": "2026-06-12T10:49:38-05:00",
+          "excerpt": "A rural North Texas county that appears to be the first in the state to pass a data center moratorium has rescinded the measure after being sued by a developer for $100 million in damages.",
           "source": "Temple Daily Telegram — News",
           "city": "temple-news"
         }
       ],
-      "item_count": 10
+      "item_count": 9
     },
     {
       "source": "FOX 44 — Temple tag",
       "url": "https://www.fox44news.com/tag/temple/feed/",
       "city": "temple-news",
-      "items": [
-        {
-          "title": "Shoemaker Pulls Away to Defeat Temple on the road, 63-53",
-          "link": "https://www.fox44news.com/sports/shoemaker-pulls-away-to-defeat-temple-on-the-road-63-53/",
-          "date": "2026-01-22T07:47:04-06:00",
-          "excerpt": "Temple, Texas (FOX 44) — Temple’s home-court advantage wasn’t enough Tuesday night as the Wildcats dropped a 63-53 decision to Shoemaker. A second-half push brought Temple within reach, but the Wolves...",
-          "source": "FOX 44 — Temple tag",
-          "city": "temple-news"
-        }
-      ],
-      "item_count": 1
+      "items": [],
+      "item_count": 0
     },
     {
       "source": "KXXV (Central Texas)",
       "url": "https://www.kxxv.com/index.rss",
       "city": "temple-news",
-      "items": [
-        {
-          "title": "Immigrant’s death in ICE custody ruled homicide by El Paso medical examiner",
-          "link": "https://www.kxxv.com/news/texas-news/immigrants-death-in-ice-custody-ruled-homicide-by-el-paso-medical-examiner",
-          "date": "2026-01-22T07:47:05-06:00",
-          "excerpt": "Immigration officials initially said the Cuban detainee died of “medical distress” but later changed the cause to suicide. The medical examiner ruled he was suffocated while being restrained.",
-          "source": "KXXV (Central Texas)",
-          "city": "temple-news"
-        }
-      ],
-      "item_count": 1
+      "items": [],
+      "item_count": 0
     }
   ],
   "all_items": [
     {
-      "title": "Immigrant’s death in ICE custody ruled homicide by El Paso medical examiner",
-      "link": "https://www.kxxv.com/news/texas-news/immigrants-death-in-ice-custody-ruled-homicide-by-el-paso-medical-examiner",
-      "date": "2026-01-22T07:47:05-06:00",
-      "excerpt": "Immigration officials initially said the Cuban detainee died of “medical distress” but later changed the cause to suicide. The medical examiner ruled he was suffocated while being restrained.",
-      "source": "KXXV (Central Texas)",
-      "city": "temple-news"
-    },
-    {
-      "title": "Shoemaker Pulls Away to Defeat Temple on the road, 63-53",
-      "link": "https://www.fox44news.com/sports/shoemaker-pulls-away-to-defeat-temple-on-the-road-63-53/",
-      "date": "2026-01-22T07:47:04-06:00",
-      "excerpt": "Temple, Texas (FOX 44) — Temple’s home-court advantage wasn’t enough Tuesday night as the Wildcats dropped a 63-53 decision to Shoemaker. A second-half push brought Temple within reach, but the Wolves...",
-      "source": "FOX 44 — Temple tag",
-      "city": "temple-news"
-    },
-    {
-      "title": "As immigrant arrests rise, here’s what to know about ICE operations in Texas",
-      "link": "https://www.tdtnews.com/news/article_ceb72413-89de-423f-930a-4637cc7b4f64.html",
-      "date": "2026-01-22T07:47:03-06:00",
-      "excerpt": "As the Trump Administration intensifies its sweeping immigration crackdown, outrage across the country is building — especially after recent shootings by Immigration and Customs Enforcement agents.",
+      "title": "Texas county rescinds its data center moratorium after $100 million lawsuit from developer",
+      "link": "https://www.tdtnews.com/news/article_c2fe7e01-1e9b-415a-b197-0f57f7ce5a88.html",
+      "date": "2026-06-12T10:49:38-05:00",
+      "excerpt": "A rural North Texas county that appears to be the first in the state to pass a data center moratorium has rescinded the measure after being sued by a developer for $100 million in damages.",
       "source": "Temple Daily Telegram — News",
       "city": "temple-news"
     },
     {
-      "title": "Supreme Court will hear appeal by maker of popular Roundup weedkiller to block thousands of lawsuits",
-      "link": "https://www.tdtnews.com/news/article_742beced-6447-55f8-9dbe-554e32ef8c1b.html",
-      "date": "2026-01-22T07:47:03-06:00",
-      "excerpt": "The Supreme Court has agreed to hear an appeal from agrochemical manufacturer Bayer to block thousands of state lawsuits alleging it failed to warn people its popular weedkiller could cause cancer. Th...",
+      "title": "Virginia man gets life in prison for double murder scheme in affair with au pair",
+      "link": "https://www.tdtnews.com/news/nation_world/article_b001348c-41a2-52e4-9bb4-5615cd4e3d16.html",
+      "date": "2026-06-12T10:49:38-05:00",
+      "excerpt": "A Virginia man who was having an affair with the family’s Brazilian au pair has been sentenced to life in prison without parole for the murder of his wife and a man who was lured to the couple’s home ...",
       "source": "Temple Daily Telegram — News",
       "city": "temple-news"
     },
     {
-      "title": "What to know about the warrants most immigration agents use to make arrests",
-      "link": "https://www.tdtnews.com/news/nation_world/article_3d591e55-b012-5562-90b1-4b2721dc5514.html",
-      "date": "2026-01-22T07:47:03-06:00",
-      "excerpt": "The Trump administration's immigration enforcement tactics are sparking debate over federal agents' authority to enter private property. There have been arrests in recent months at day care centers, a...",
+      "title": "At least 12 people shot at an Ohio festival and a search for suspects is still ongoing, police say",
+      "link": "https://www.tdtnews.com/news/nation_world/article_a1732961-1116-5e14-8448-0c4652070a01.html",
+      "date": "2026-06-12T10:49:38-05:00",
+      "excerpt": "Authorities say a shooting near a busy street festival in Ohio has wounded at least 12 people. Toledo police say the shooting happened Saturday near the Old West End Festival, an annual gathering of l...",
       "source": "Temple Daily Telegram — News",
       "city": "temple-news"
     },
     {
-      "title": "Supreme Court seems likely to uphold state bans on transgender athletes in girls and women's sports",
-      "link": "https://www.tdtnews.com/news/article_4381c657-db60-58da-b018-f08a00590c7a.html",
-      "date": "2026-01-22T07:47:03-06:00",
-      "excerpt": "The Supreme Court seems likely to uphold state laws barring transgender girls and women from playing on school athletic teams. Lower courts ruled for the transgender athletes in Idaho and West Virgini...",
+      "title": "British deputy prime minister tells JD Vance he was wrong to blame immigration for teen's murder",
+      "link": "https://www.tdtnews.com/news/nation_world/article_3c8260b8-9401-55b2-83e2-ec0ff4524e05.html",
+      "date": "2026-06-12T10:49:38-05:00",
+      "excerpt": "Britain’s deputy prime minister said Sunday that he told U.S. Vice President JD Vance he was wrong to blame immigration for the death of a university student who was handcuffed as he lay dying from a ...",
       "source": "Temple Daily Telegram — News",
       "city": "temple-news"
     },
     {
-      "title": "Minnesota protesters, agents repeatedly square off while prosecutors quit after Renee Good's death",
-      "link": "https://www.tdtnews.com/news/nation_world/article_9f4a79a0-3a57-531c-810a-4a9f36952e02.html",
-      "date": "2026-01-22T07:47:03-06:00",
-      "excerpt": "Days of demonstrations against immigration agents and a new lawsuit have left Minnesota tense. Federal officers sprayed eye irritant and dropped tear gas at activists on Tuesday in Minneapolis. Studen...",
+      "title": "Police search for suspects in Ohio shooting that wounded 12 near a street festival",
+      "link": "https://www.tdtnews.com/news/nation_world/article_1f8283db-9e00-5458-bf38-b723576c7c77.html",
+      "date": "2026-06-12T10:49:38-05:00",
+      "excerpt": "Police in Ohio are still searching for suspects who opened fire near a busy street festival in Toledo and wounded 12 people over the weekend. The Toledo Police Department said Sunday that each of the ...",
       "source": "Temple Daily Telegram — News",
       "city": "temple-news"
     },
     {
-      "title": "Judge orders release of Liberian man arrested in Minneapolis by agents with a battering ram",
-      "link": "https://www.tdtnews.com/news/article_7816470f-5ac2-574c-bae6-8a0252892dd1.html",
-      "date": "2026-01-22T07:47:03-06:00",
-      "excerpt": "A federal judge in Minnesota has ordered the release of a Liberian man after heavily armed immigration agents broke into his home using a battering ram and arrested him. U.S. District Judge Jeffrey Br...",
+      "title": "Ken Paxton's attorney in his impeachment trial endorses James Talarico in US Senate race",
+      "link": "https://www.tdtnews.com/news/nation_world/article_4d51f514-a9d1-5437-846c-77c2b4f4c43e.html",
+      "date": "2026-06-12T10:49:38-05:00",
+      "excerpt": "An attorney who defended Texas Attorney General Ken Paxton in his impeachment trial has endorsed Paxton's Democratic opponent in the U.S. Senate race. State Rep. James Talarico on Monday drew attentio...",
       "source": "Temple Daily Telegram — News",
       "city": "temple-news"
     },
     {
-      "title": "ICE says Cuban immigrant died while attempting suicide. A witness says guards pinned and choked him",
-      "link": "https://www.tdtnews.com/news/article_927a9465-3076-5faa-bfb9-a1ba2df17d07.html",
-      "date": "2026-01-22T07:47:03-06:00",
-      "excerpt": "A Cuban immigrant who lived in the U.S. for nearly three decades died in a Texas immigration facility during an altercation with guards. While the local medical examiner has indicated his death will l...",
+      "title": "Testimony ends after 4 days, closing arguments set in trial of fatal Texas track meet stabbing",
+      "link": "https://www.tdtnews.com/news/nation_world/article_2ba919dd-a29c-5184-b532-aea7e0589fe5.html",
+      "date": "2026-06-12T10:49:38-05:00",
+      "excerpt": "A teenager charged with murder in the fatal stabbing of a competitor at a Texas track meet won't be testifying in his own defense. After a long break, a judge said closing arguments will be heard Tues...",
       "source": "Temple Daily Telegram — News",
       "city": "temple-news"
     },
     {
-      "title": "Judge rules feds in Minneapolis immigration operation can’t detain or tear gas peaceful protesters",
-      "link": "https://www.tdtnews.com/news/nation_world/article_52f3ca32-61bb-5813-be95-39f9f968608f.html",
-      "date": "2026-01-22T07:47:03-06:00",
-      "excerpt": "A U.S. judge has ruled federal officers in a Minneapolis-area immigration operation can’t detain or tear gas peaceful protesters who aren’t obstructing authorities, including when these people are obs...",
+      "title": "One killed, two injured in crash in Temple",
+      "link": "https://www.tdtnews.com/news/article_919c7b3b-b942-4cd9-8d1c-4c7047cb5cfd.html",
+      "date": "2026-06-12T10:49:38-05:00",
+      "excerpt": "The Temple Police Department is investigating a fatal traffic crash that left one individual dead and two people injured. At around 2:58 p.m., on Tuesday, officers were dispatched to the area of Airpo...",
       "source": "Temple Daily Telegram — News",
       "city": "temple-news"
     },
     {
-      "title": "Thousands march in Greenland to support Arctic island in the face of Trump's threats to take it over",
-      "link": "https://www.tdtnews.com/news/nation_world/article_96de84a1-e7eb-5a7b-afd6-1a5963f1fade.html",
-      "date": "2026-01-22T07:47:03-06:00",
-      "excerpt": "Thousands of Greenlanders carefully marched across snow and ice to take a stand against U.S. President Donald Trump. They rallied on Saturday by holding signs of protest, waving their national flag an...",
+      "title": "Trump plans to nominate US Attorney Jay Clayton to be director of national intelligence",
+      "link": "https://www.tdtnews.com/news/article_20523e19-209b-48e0-93a0-53de1166cfbc.html",
+      "date": "2026-06-12T10:49:38-05:00",
+      "excerpt": "WASHINGTON (AP) — President Donald Trump said Thursday that he plans to nominate Jay Clayton, the U.S. attorney for the Southern District of New York and a former Securities and Exchange Commission ch...",
       "source": "Temple Daily Telegram — News",
       "city": "temple-news"
     },
     {
-      "title": "Justice Department investigating whether Minnesota's Walz and Frey impeded immigration enforcement",
-      "link": "https://www.tdtnews.com/news/nation_world/article_59cbfc54-e20c-5b34-870f-a8f4fe010fa0.html",
-      "date": "2026-01-22T07:47:03-06:00",
-      "excerpt": "The Justice Department is investigating whether Minnesota Gov. Tim Walz and Minneapolis Mayor Jacob Frey have impeded federal immigration enforcement through public statements they have made, accordin...",
-      "source": "Temple Daily Telegram — News",
-      "city": "temple-news"
-    },
-    {
-      "title": "Volunteers needed for Central Texas Point in Time count",
-      "link": "https://www.fox44news.com/news/local-news/bell-county/volunteers-needed-for-central-texas-point-in-time-count/",
-      "date": "2026-01-22T07:47:01-06:00",
-      "excerpt": "CENTRAL TEXAS (FOX 44) - Homelessness continues to be a major concern here in Central Texas, and the Texas Homeless Network is preparing for its upcoming annual homeless count. Killeen Police Departme...",
+      "title": "Injuries reported in Killeen five-vehicle crash",
+      "link": "https://www.fox44news.com/news/local-news/bell-county/injuries-reported-in-killeen-five-vehicle-crash/",
+      "date": "2026-06-12T10:49:36-05:00",
+      "excerpt": "KILLEEN, Texas (FOX 44) - Injuries have been reported in connection with a five-vehicle crash in Killeen early Wednesday afternoon. The Killeen Police Department's Traffic Unit responded to a crash on...",
       "source": "FOX 44 — Killeen tag",
       "city": "killeen-news"
     },
     {
-      "title": "Shooting in Killeen Kills One Sunday Afternoon",
-      "link": "https://www.fox44news.com/news/local-news/bell-county/shooting-in-killeen-kills-one-sunday-afternoon/",
-      "date": "2026-01-22T07:47:01-06:00",
-      "excerpt": "KILLEEN, Texas (FOX 44) - The Killeen Police Department is investigating a shooting that resulted in the death of a 58-year-old male Sunday (Jan. 18, 2026) afternoon. Officers responded to a report of...",
-      "source": "FOX 44 — Killeen tag",
-      "city": "killeen-news"
-    },
-    {
-      "title": "Killeen Police Investigate Fatal Shooting on Monte Carlo Lane",
-      "link": "https://killeenpdnews.com/2025/11/26/killeen-police-investigate-fatal-shooting-on-monte-carlo-lane/",
-      "date": "2026-01-22T07:46:59-06:00",
-      "excerpt": "Killeen, TX (November 26, 2025): The Killeen Police Department is actively investigating the death of a 22-year-old female following a shooting incident. On November 26, 2025, at approximately 2:02 a....",
+      "title": "Killeen Police Identify Victim in Fatal Pedestrian Crash",
+      "link": "https://killeenpdnews.com/2026/03/31/killeen-police-identify-victim-in-fatal-pedestrian-crash/",
+      "date": "2026-06-12T10:49:35-05:00",
+      "excerpt": "Killeen, TX (March 31, 2026) UPDATE: Investigators with the Traffic Unit have identified the victim as Jerry Wayne Craigo. This fatality continues to be under investigation, and there is no additional...",
       "source": "Killeen PD News",
       "city": "killeen-news"
     },
     {
-      "title": "Killeen Police Investigate a Fatal Single-Vehicle Crash",
-      "link": "https://killeenpdnews.com/2025/12/04/killeen-police-investigate-a-fatal-single-vehicle-crash/",
-      "date": "2026-01-22T07:46:59-06:00",
-      "excerpt": "On Thursday, December 4, 2025, at approximately 4:33 p.m., officers responded to the 4800 block of E. Rancier Avenue for a single-vehicle crash. They arrived to find the vehicle off the roadway and on...",
+      "title": "Killeen Police Charge 36-Year-Old-Male with Murder",
+      "link": "https://killeenpdnews.com/2026/04/08/killeen-police-charge-36-year-old-male-with-murder-3/",
+      "date": "2026-06-12T10:49:35-05:00",
+      "excerpt": "Killeen, TX (April 8, 2026) UPDATE: Detectives with the Killeen Police Department’s Criminal Investigation Division, Robbery-Homicide Unit, received a criminal complaint from the Bell County District ...",
       "source": "Killeen PD News",
       "city": "killeen-news"
     },
     {
-      "title": "Killeen Police Investigate Motorcycle Crash on Interstate 14",
-      "link": "https://killeenpdnews.com/2025/12/10/killeen-police-investigate-motorcycle-crash-on-interstate-14/",
-      "date": "2026-01-22T07:46:59-06:00",
-      "excerpt": "Killeen, TX (December 10, 2025): A 41-year-old male motorcyclist is in critical but stable condition following a crash involving a vehicle. On December 9, 2025, at approximately 2:01 p.m., officers we...",
+      "title": "Killeen Police Investigate a Major Crash on Robinett Road",
+      "link": "https://killeenpdnews.com/2026/04/30/killeen-police-investigate-a-major-crash-on-robinett-road/",
+      "date": "2026-06-12T10:49:35-05:00",
+      "excerpt": "Killeen, TX (April 30, 2026): Investigators with the Killeen Police Department Traffic Unit are investigating a crash that left two drivers injured while another vehicle fled the scene. On April 30, 2...",
       "source": "Killeen PD News",
       "city": "killeen-news"
     },
     {
-      "title": "Killeen Police Arrest Two People Involved in Crash on Interstate 14",
-      "link": "https://killeenpdnews.com/2025/12/11/killeen-police-arrest-two-people-involved-in-crash-on-interstate-14/",
-      "date": "2026-01-22T07:46:59-06:00",
-      "excerpt": "Killeen, TX (December 11, 2025) – UPDATE: Through the ongoing investigation, officers determined that there were four occupants inside the Mustang at the time of the crash. Evidence showed that immedi...",
+      "title": "NEWS RELEASE: KILLEEN POLICE INVESTIGATE THE MURDER OF A 21-YEAR-OLD MALE ON 18th ST",
+      "link": "https://killeenpdnews.com/2026/04/30/news-release-killeen-police-investigate-the-murder-of-a-21-year-old-male-on-18th-st/",
+      "date": "2026-06-12T10:49:35-05:00",
+      "excerpt": "Killeen, TX (April 30, 2026): The Killeen Police Department is actively investigating a shooting that resulted in the death of a 21-year-old male. On Thursday, April 30, 2026, at approximately 5:07 p....",
       "source": "Killeen PD News",
       "city": "killeen-news"
     },
     {
-      "title": "Killeen Police Arrest Driver for DWI Following New Year’s Day Crash",
-      "link": "https://killeenpdnews.com/2026/01/02/killeen-police-arrest-driver-for-dwi-following-new-years-day-crash/",
-      "date": "2026-01-22T07:46:59-06:00",
-      "excerpt": "On January 1, 2026, at approximately 12:16 a.m., officers were dispatched to the area of Rosewood Drive and Bronze Drive for a major single-vehicle crash. The Killeen Police Department Traffic Unit re...",
+      "title": "Killeen Police Investigate a Homicide on Bluestem Lane",
+      "link": "https://killeenpdnews.com/2026/05/04/killeen-police-investigate-a-homicide-on-bluestem-lane/",
+      "date": "2026-06-12T10:49:35-05:00",
+      "excerpt": "Killeen, TX (May 4, 2026): On Sunday, May 3, 2026, at approximately 1:55 p.m., officers were dispatched to the 4200 block of Bluestem Lane in reference to a welfare check. Upon the officer’s arrival, ...",
       "source": "Killeen PD News",
       "city": "killeen-news"
     },
     {
-      "title": "Killeen Police Charge 29-Year-Old Man with Murder",
-      "link": "https://killeenpdnews.com/2026/01/08/killeen-police-charge-29-year-old-man-with-murder/",
-      "date": "2026-01-22T07:46:59-06:00",
-      "excerpt": "Killeen, TX (January 8, 2026) — UPDATE: Detectives with the Robbery-Homicide Unit have identified a suspect in the murder of Anthony Glenn Powell. On Wednesday, October 16, 2024, at approximately 10:4...",
+      "title": "Killeen Police Traffic Unit Conducts Railroad Crossing Safety Detail",
+      "link": "https://killeenpdnews.com/2026/05/08/killeen-police-traffic-unit-conducts-railroad-crossing-safety-detail/",
+      "date": "2026-06-12T10:49:35-05:00",
+      "excerpt": "Killeen, TX (May 8, 2026): On Wednesday, May 6, 2026, the Killeen Police Department Traffic Unit conducted a Railroad Crossing Safety Detail from 8:00 a.m. to 11:00 a.m. to promote traffic safety and ...",
       "source": "Killeen PD News",
       "city": "killeen-news"
     },
     {
-      "title": "Killeen Police Investigate a Fatality Crash on Stan Schlueter Loop",
-      "link": "https://killeenpdnews.com/2026/01/10/killeen-police-investigate-a-fatality-crash-on-stan-schlueter-loop/",
-      "date": "2026-01-22T07:46:59-06:00",
-      "excerpt": "Killeen, TX (January 10, 2026): Killeen Police are actively investigating the death of a 34-year-old male from a vehicle collision. On Saturday, January 10, 2026, at approximately 8:58 a.m., officers ...",
+      "title": "Killeen Police Investigate Shooting in 5800 block of Siltstone Lp",
+      "link": "https://killeenpdnews.com/2026/05/26/killeen-police-investigate-shooting-in-5800-block-of-siltstone-lp/",
+      "date": "2026-06-12T10:49:35-05:00",
+      "excerpt": "On May 25, 2026, at approximately 11:58 p.m., officers with the Killeen Police Department responded to a shooting investigation in the 5800 block of Siltstone Loop. Preliminary investigation revealed ...",
       "source": "Killeen PD News",
       "city": "killeen-news"
     },
     {
-      "title": "Killeen Police Charge Second Suspect in Fatal Monte Carlo Shooting",
-      "link": "https://killeenpdnews.com/2026/01/15/killeen-police-charge-second-suspect-in-fatal-monte-carlo-shooting/",
-      "date": "2026-01-22T07:46:59-06:00",
-      "excerpt": "Killeen, TX (January 15, 2026): UPDATE – Detectives with the Killeen Police Department Robbery-Homicide Unit have identified a second suspect in the murder of 22-year-old Tai’Lynn Akaya Wright. Follow...",
+      "title": "Killeen Police Investigate a Fatal Crash on Stan Schlueter Loop",
+      "link": "https://killeenpdnews.com/2026/06/01/killeen-police-investigate-a-fatal-crash-on-stan-schlueter-loop-2/",
+      "date": "2026-06-12T10:49:35-05:00",
+      "excerpt": "Killeen, TX (June 1, 2026): The Killeen Police Department is investigating a fatal two-vehicle crash that occurred Monday morning on Stan Schlueter Loop. On Monday, June 1, 2026, at approximately 7:40...",
       "source": "Killeen PD News",
       "city": "killeen-news"
     },
     {
-      "title": "Killeen Police Investigate Fatal Shooting on Illinois Avenue",
-      "link": "https://killeenpdnews.com/2026/01/18/killeen-police-investigate-fatal-shooting-on-illinois-avenue/",
-      "date": "2026-01-22T07:46:59-06:00",
-      "excerpt": "Killeen, TX (January 18, 2026): The Killeen Police Department is investigating a shooting that resulted in the death of a 58-year-old male. On Sunday, January 18, 2026, at approximately 1:34 p.m., off...",
+      "title": "Killeen Police Release Identities in Fatal Stan Schlueter Loop Crash",
+      "link": "https://killeenpdnews.com/2026/06/02/killeen-police-release-identities-in-fatal-stan-schlueter-loop-crash/",
+      "date": "2026-06-12T10:49:35-05:00",
+      "excerpt": "UPDATE (June 2, 2026): The driver of the Toyota SUV has been identified as Andre Richmond. The female passenger in the Kia SUV has been identified as Rosa Hernandez. The 77-year-old male driver of the...",
       "source": "Killeen PD News",
       "city": "killeen-news"
     },
     {
-      "title": "Killeen Police Charge 18-Year-Old in Fatal Monte Carlo Shooting",
-      "link": "https://killeenpdnews.com/2026/01/02/killeen-police-charge-18-year-old-in-fatal-monte-carlo-shooting/",
-      "date": "2026-01-22T07:46:59-06:00",
-      "excerpt": "Killeen, TX (January 2, 2026): UPDATE &#8211; Detectives with the Killeen Police Department Robbery-Homicide Unit have identified a suspect in the murder of 22-year-old Tai’Lynn Akaya Wright. Followin...",
+      "title": "Killeen Police Charge 47-Year-Old with Murder",
+      "link": "https://killeenpdnews.com/2026/05/29/killeen-police-charge-47-year-old-with-murder/",
+      "date": "2026-06-12T10:49:35-05:00",
+      "excerpt": "##### ***UPDATE*** Killeen, TX (May 29th, 2026):Killeen Police Charge 47-Year-Old with Murder The Killeen Police Department’s Robbery/Homicide Unit reviewed this case with the Bell County District Att...",
       "source": "Killeen PD News",
       "city": "killeen-news"
     },
     {
-      "title": "Thefts reported in Copperas Cove, Killeen",
-      "link": "https://kdhnews.com/news/crime/thefts-reported-in-copperas-cove-killeen/article_809d9b00-c7c5-4a9a-9469-50100d59fd31.html",
-      "date": "2026-01-22T07:46:58-06:00",
+      "title": "Killeen man charged with manslaughter in connection to fatal January crash",
+      "link": "https://kdhnews.com/news/crime/killeen-man-charged-with-manslaughter-in-connection-to-fatal-january-crash/article_aa0a1110-a00f-42be-9798-d7c3cdd841c2.html",
+      "date": "2026-06-12T10:49:34-05:00",
+      "excerpt": "The Harker Heights Police Department announced that, on Wednesday, the Texas Department of Public Safety and the Bell County Sheriff’s Office served an arrest warrant for Scott Cotton, a 40-year-old r...",
+      "source": "Killeen Daily Herald — Local",
+      "city": "killeen-news"
+    },
+    {
+      "title": "Killeen man faces 4 felony charges in addition to 2022 murder accusation",
+      "link": "https://kdhnews.com/news/crime/killeen-man-faces-4-felony-charges-in-addition-to-2022-murder-accusation/article_4ad20ba2-0b01-4408-ab51-a17530bc697d.html",
+      "date": "2026-06-12T10:49:34-05:00",
+      "excerpt": "A Killeen man who is set to stand trial later this month on a murder charge now is facing four more felony accusations after a string of armed robberies and one shooting earlier this year.",
+      "source": "Killeen Daily Herald — Local",
+      "city": "killeen-news"
+    },
+    {
+      "title": "Police reports: Multiple reports of controlled substances in area cities",
+      "link": "https://kdhnews.com/news/crime/police-reports-multiple-reports-of-controlled-substances-in-area-cities/article_444ec066-831e-4695-b40b-fc8f04de09ae.html",
+      "date": "2026-06-12T10:49:34-05:00",
       "excerpt": "Area police reports indicated:",
       "source": "Killeen Daily Herald — Local",
       "city": "killeen-news"
     },
     {
-      "title": "DA says many more jury trials were held than were included in state stats",
-      "link": "https://kdhnews.com/news/local/da-says-many-more-jury-trials-were-held-than-were-included-in-state-stats/article_45965452-1c19-4150-9bee-040d33c81bc5.html",
-      "date": "2026-01-22T07:46:58-06:00",
-      "excerpt": "The tallies maintained by the Bell County District Attorney’s Office are a bit different than state statistics regarding the number of jury trials that have been held in the county’s district courts o...",
+      "title": "KPD chief explains interruption in police reports, won’t expand availability",
+      "link": "https://kdhnews.com/news/crime/kpd-chief-explains-interruption-in-police-reports-won-t-expand-availability/article_3a379cf8-b3eb-47c0-a732-9bf3785b34df.html",
+      "date": "2026-06-12T10:49:34-05:00",
+      "excerpt": "The Killeen Daily Herald, and the public in general, has not had online or electronic access to the daily crime report from the Killeen Police Department since March 30.",
       "source": "Killeen Daily Herald — Local",
       "city": "killeen-news"
     },
     {
-      "title": "Police reports: Shots fired, illegal discharge of a firearm in Killeen",
-      "link": "https://kdhnews.com/news/crime/police-reports-shots-fired-illegal-discharge-of-a-firearm-in-killeen/article_ebec5524-6875-4ef4-9ee6-9c60e98c1c33.html",
-      "date": "2026-01-22T07:46:58-06:00",
+      "title": "Bell County indictments",
+      "link": "https://kdhnews.com/news/crime/bell-county-indictments/article_129b5db8-6fb0-4a42-a972-efc1508dfd3f.html",
+      "date": "2026-06-12T10:49:34-05:00",
+      "excerpt": "Indicted by a Bell County grand jury in early August 2024 were:",
+      "source": "Killeen Daily Herald — Local",
+      "city": "killeen-news"
+    },
+    {
+      "title": "Killeen man said he hit a deer, police said he knew it was a man who died; jury will decide",
+      "link": "https://kdhnews.com/news/crime/killeen-man-said-he-hit-a-deer-police-said-he-knew-it-was-a-man/article_af6ac20c-f15f-4679-94ee-dbd1b37afb09.html",
+      "date": "2026-06-12T10:49:34-05:00",
+      "excerpt": "BELTON — The man straightened the collar of his brown blazer just seconds before the people who would decide his fate were brought into the courtroom. Less than a minute after the panel of four men an...",
+      "source": "Killeen Daily Herald — Local",
+      "city": "killeen-news"
+    },
+    {
+      "title": "Police reports: Larceny in Killeen; family violence in Copperas Cove",
+      "link": "https://kdhnews.com/news/crime/police-reports-larceny-in-killeen-family-violence-in-copperas-cove/article_3390785b-1c90-41e8-bdfb-74062b0f7ea7.html",
+      "date": "2026-06-12T10:49:34-05:00",
       "excerpt": "Area police reports indicated:",
       "source": "Killeen Daily Herald — Local",
       "city": "killeen-news"
     },
     {
-      "title": "Killeen man found guilty of burglary after hotel shampoo traced back to scene",
-      "link": "https://kdhnews.com/news/crime/killeen-man-found-guilty-of-burglary-after-hotel-shampoo-traced-back-to-scene/article_d01d7fa7-07ff-4e5e-a45b-89a5559cf61d.html",
-      "date": "2026-01-22T07:46:58-06:00",
-      "excerpt": "A tiny bottle of hotel shampoo proved to be the key to solving a burglary in Killeen last year. And last week, a man was sentenced to prison time for the crime.",
+      "title": "After visit from KDH News, KPD said it will release daily police blotter",
+      "link": "https://kdhnews.com/news/crime/after-visit-from-kdh-news-kpd-said-it-will-release-daily-police-blotter/article_52856491-db12-4113-aa35-aff0ef35befe.html",
+      "date": "2026-06-12T10:49:34-05:00",
+      "excerpt": "A months-long standoff over public access to local crime data has reached a resolution after KDH News visited Killeen Police Department Headquarters on Tuesday morning and was initially told the infor...",
       "source": "Killeen Daily Herald — Local",
       "city": "killeen-news"
     },
     {
-      "title": "Killeen man sentenced to prison time after admitting to wrong-way crash while drunk, killing 26-year-old woman",
-      "link": "https://kdhnews.com/news/crime/killeen-man-sentenced-to-prison-time-after-admitting-to-wrong-way-crash-while-drunk-killing/article_65b8f30c-d869-4f88-b04c-fe10c3518145.html",
-      "date": "2026-01-22T07:46:58-06:00",
-      "excerpt": "BELTON — When a girl named Destiny arrived on the doorstep of the Lopez home just before Christmas in 2011, it was a gift that was just meant to be.",
+      "title": "Multi-vehicle accident occurs on I-14 near Jasper bridge",
+      "link": "https://kdhnews.com/news/local/multi-vehicle-accident-occurs-on-i-14-near-jasper-bridge/article_efbfc435-99a5-4793-89e6-8d0bf3ab74f1.html",
+      "date": "2026-06-12T10:49:34-05:00",
+      "excerpt": "A multiple vehicle accident occurred Wednesday on westbound I-14 near the Jasper bridge at 12:41 p.m. and left one person with minor injuries, according to the Killeen Police Department.",
       "source": "Killeen Daily Herald — Local",
       "city": "killeen-news"
     },
     {
-      "title": "Fatal shooting on Sunday,  police investigating the domestic disturbance",
-      "link": "https://kdhnews.com/news/crime/fatal-shooting-on-sunday-police-investigating-the-domestic-disturbance/article_83b5def5-378e-496d-9d78-8673c3c989d1.html",
-      "date": "2026-01-22T07:46:58-06:00",
-      "excerpt": "There were two victims following a shooting Sunday afternoon that left one man dead.",
+      "title": "Killeen council to consider zoning request for cell tower that concerned some residents",
+      "link": "https://kdhnews.com/news/local/killeen-council-to-consider-zoning-request-for-cell-tower-that-concerned-some-residents/article_b453a0b9-e9ea-45ba-a94c-4265414ff4c5.html",
+      "date": "2026-06-12T10:49:34-05:00",
+      "excerpt": "The Killeen City Council will hold a public hearing Tuesday on a conditional-use permit for a Verizon cellphone tower being built at 7432 East Trimmier Road, which several residents spoke out against ...",
       "source": "Killeen Daily Herald — Local",
       "city": "killeen-news"
     },
     {
-      "title": "Police reports: Vehicle theft and burglary reported in Killeen",
-      "link": "https://kdhnews.com/news/crime/police-reports-vehicle-theft-and-burglary-reported-in-killeen/article_5691d5f2-471e-4c3e-a46c-fc8943c6a24b.html",
-      "date": "2026-01-22T07:46:58-06:00",
+      "title": "Jury finds man guilty of hit-and-run that killed Fort Hood soldier",
+      "link": "https://kdhnews.com/news/crime/jury-finds-man-guilty-of-hit-and-run-that-killed-fort-hood-soldier/article_a1e98262-5552-42ad-b3d2-ce2f67eba78f.html",
+      "date": "2026-06-12T10:49:34-05:00",
+      "excerpt": "BELTON — Jurors had the opportunity during their deliberations to examine two oversize pieces of evidence: the bumper and the hood of a gray 2007 Mercedes-Benz CLS 550.",
+      "source": "Killeen Daily Herald — Local",
+      "city": "killeen-news"
+    },
+    {
+      "title": "Murder indictment handed down after shooting death of Killeen man earlier this year",
+      "link": "https://kdhnews.com/news/crime/murder-indictment-handed-down-after-shooting-death-of-killeen-man-earlier-this-year/article_509c98e0-991d-424b-b717-cf632b0f1d25.html",
+      "date": "2026-06-12T10:49:34-05:00",
+      "excerpt": "A Burnet man was indicted by a Bell County grand jury this week after Killeen police said he and another man had taken LSD and were arguing prior to a deadly shooting earlier this year.",
+      "source": "Killeen Daily Herald — Local",
+      "city": "killeen-news"
+    },
+    {
+      "title": "KPD summer camp teaches safety, leadership and life skills to local youth",
+      "link": "https://kdhnews.com/news/local/kpd-summer-camp-teaches-safety-leadership-and-life-skills-to-local-youth/article_cb3d7b93-d689-40a3-9167-e795795d208e.html",
+      "date": "2026-06-12T10:49:34-05:00",
+      "excerpt": "Middle school students spent the week learning valuable life skills, public safety lessons and teamwork during the third annual CSI Summer Camp hosted by the Killeen Police Department in partnership w...",
+      "source": "Killeen Daily Herald — Local",
+      "city": "killeen-news"
+    },
+    {
+      "title": "Man sentenced to 30 years in prison for deadly hit-and-run",
+      "link": "https://kdhnews.com/news/crime/man-sentenced-to-30-years-in-prison-for-deadly-hit-and-run/article_0f7b9be9-da9c-4ea9-93f1-88385077313a.html",
+      "date": "2026-06-12T10:49:34-05:00",
+      "excerpt": "BELTON — During a three-day trial this week, a jury heard from law enforcement officers, scientists, record-keepers and witnesses as the state methodically laid out the nuts and bolts of its case agai...",
+      "source": "Killeen Daily Herald — Local",
+      "city": "killeen-news"
+    },
+    {
+      "title": "Police reports: A juvenile complaint was reported in Lampasas",
+      "link": "https://kdhnews.com/news/crime/police-reports-a-juvenile-complaint-was-reported-in-lampasas/article_0f37a2a4-8307-4e82-bbb1-56df92327bc1.html",
+      "date": "2026-06-12T10:49:34-05:00",
       "excerpt": "Area police reports indicated:",
-      "source": "Killeen Daily Herald — Local",
-      "city": "killeen-news"
-    },
-    {
-      "title": "Ex-KHA director has started to serve 3-year sentence at minimum security prison in Bryan",
-      "link": "https://kdhnews.com/news/local/ex-kha-director-has-started-to-serve-3-year-sentence-at-minimum-security-prison-in/article_9b522e95-7639-43d5-a559-71fa7de6beaf.html",
-      "date": "2026-01-22T07:46:58-06:00",
-      "excerpt": "The ex-director of the Killeen Housing Authority, who was convicted in November of one count of theft of government property, surrendered herself to the Federal Bureau of Prisons as required and has s...",
-      "source": "Killeen Daily Herald — Local",
-      "city": "killeen-news"
-    },
-    {
-      "title": "Florence City Council fires police lieutenant after executive session",
-      "link": "https://kdhnews.com/news/local/florence-city-council-fires-police-lieutenant-after-executive-session/article_66710a49-8f06-4904-ba14-8ce454fbb701.html",
-      "date": "2026-01-22T07:46:58-06:00",
-      "excerpt": "FLORENCE — The Florence City Council convened in executive session Tuesday night to address personnel matters involving Florence Police Chief Wayne Thompson and Lt. David Guthrie, following allegation...",
-      "source": "Killeen Daily Herald — Local",
-      "city": "killeen-news"
-    },
-    {
-      "title": "Police reports: Aggravated assault and a terroristic threat were reported in Killeen",
-      "link": "https://kdhnews.com/news/crime/police-reports-aggravated-assault-and-a-terroristic-threat-were-reported-in-killeen/article_ea674a67-bc5a-44bf-ae7e-16020db5b398.html",
-      "date": "2026-01-22T07:46:58-06:00",
-      "excerpt": "Killeen",
-      "source": "Killeen Daily Herald — Local",
-      "city": "killeen-news"
-    },
-    {
-      "title": "Hearing scheduled for Thursday at courthouse in Belton over combining marijuana lawsuits",
-      "link": "https://kdhnews.com/news/local/hearing-scheduled-for-thursday-at-courthouse-in-belton-over-combining-marijuana-lawsuits/article_302483da-90cd-4d65-8344-80641e21f66e.html",
-      "date": "2026-01-22T07:46:58-06:00",
-      "excerpt": "More than two years ago, the Texas Attorney General’s Office declined to join the Bell County district and county attorneys’ offices in their civil lawsuit against the city of Killeen over its voter-a...",
-      "source": "Killeen Daily Herald — Local",
-      "city": "killeen-news"
-    },
-    {
-      "title": "Artic intrustion to bring frigid temps, ice to Killeen area",
-      "link": "https://kdhnews.com/news/local/artic-intrustion-to-bring-frigid-temps-ice-to-killeen-area/article_2e200f1a-1b87-4e22-a5eb-05564ac23fbc.html",
-      "date": "2026-01-22T07:46:58-06:00",
-      "excerpt": "As the weather turns colder this week, the National Weather Service says Central Texas should expect an “arctic intrusion” that will bring dangerously cold temperatures and wintry precipitation starti...",
-      "source": "Killeen Daily Herald — Local",
-      "city": "killeen-news"
-    },
-    {
-      "title": "Killeen-area residents urged to prepare for cold, ice this weekend",
-      "link": "https://kdhnews.com/news/weather/killeen-area-residents-urged-to-prepare-for-cold-ice-this-weekend/article_854e264c-f9f5-4c1b-95de-bb39d77cb847.html",
-      "date": "2026-01-22T07:46:58-06:00",
-      "excerpt": "The Killeen-Fort Hood area is expecting a very cold weekend, with temperatures at or below freezing and the possibility of sleet or ice on roadways.",
-      "source": "Killeen Daily Herald — Local",
-      "city": "killeen-news"
-    },
-    {
-      "title": "Police Reports: Assaults and theft in Killeen and Lampasas",
-      "link": "https://kdhnews.com/news/crime/police-reports-assaults-and-theft-in-killeen-and-lampasas/article_1005e5ee-3116-44d0-9151-c93ce97a72f8.html",
-      "date": "2026-01-22T07:46:58-06:00",
-      "excerpt": "KILLEEN",
       "source": "Killeen Daily Herald — Local",
       "city": "killeen-news"
     }
   ],
-  "total_items": 38
+  "total_items": 35
 }

@@ -12,7 +12,7 @@ headshot: null
 election_status: seated
 office_up_for_election: true
 notes: Incumbent Justice of the Peace for Precinct 3, Place 2, serving the Temple area. Elected June 2022. Next election 2026.
-rubber_stamp: true
+rubber_stamp: false
 profile_summary: 'Larry Wilkey is the Justice of the Peace for Bell County Precinct 3, Place 2, serving the Temple area.
   The Precinct 3 JP courts handle a high volume of eviction cases, civil matters up to $20,000, Class C misdemeanor
   criminal cases, and emergency protective orders.
