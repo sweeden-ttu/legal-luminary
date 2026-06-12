@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Killeen's Data Blackout: How a Newspaper Visit Forced KPD to Release Crime Data"
-date: 2026-06-12
+date: 2026-06-12 23:59:59
 categories: news
 ---
 

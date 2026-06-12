@@ -79,13 +79,7 @@ Main Phone: <a href="tel:+12549335100">(254) 933-5100</a><br>
 </div>
 
 | Office | Phone |
-|---<!--
-  CONFIDENCE SCORE: 1.0
-  BASE: 0.707 | AHO_CORASICK_BOOST: 0.542
-  VALIDATION: +0.05 | AHO_CORASICK: +0.542
-  LAST_UPDATED: 2026-03-20
--->
------|-------|
+|--------|-------|
 | **District Clerk** (felony filings, civil over $200K) | [(254) 933-5197](tel:+12549335197) |
 | **County Clerk** (misdemeanors, probate, records) | [(254) 933-5160](tel:+12549335160) |
 | **District Attorney** — Stephanie Newell | [(254) 933-5215](tel:+12549335215) |
