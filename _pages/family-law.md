@@ -3,6 +3,7 @@ layout: family-law
 title: Family Law
 permalink: /family-law/
 hero: true
+sidebar_ads: "family"
 hero_title: "Family Law Information"
 hero_subtitle: "Navigating divorce, custody, and family matters in Bell County"
 description: "Family law information for Bell County. Divorce, child custody, child support, adoption, and more. Find experienced family law attorneys."
