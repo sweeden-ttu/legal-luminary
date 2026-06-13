@@ -74,6 +74,10 @@ p { margin: 0 0 1rem; }
 
 a { color: var(--navy-light); text-decoration: none; transition: color 0.2s; }
 a:hover { color: var(--gold-dark); }
+a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
+  outline: 2px solid var(--gold-light);
+  outline-offset: 2px;
+}
 
 .container { max-width: 1280px; margin: 0 auto; padding: 0 1.25rem; }
 
