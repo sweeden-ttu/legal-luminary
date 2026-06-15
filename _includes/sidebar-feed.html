@@ -102,7 +102,7 @@ If not set, we fall back to "all" (site-wide aggregated).
       {%- endfor -%}
     </ul>
 
-    <a class="sidebar-feed-more" href="{{ '/legal-news/' | relative_url }}">View all legal news</a>
+    <a class="sidebar-feed-more" href="{{ '/legal-news/' | relative_url }}" aria-label="View all local legal news articles">View all legal news</a>
 
     {%- if news_data.last_updated -%}
       <div class="sidebar-news-updated">

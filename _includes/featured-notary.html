@@ -66,11 +66,11 @@ Renders a single ad-card.
     </div>
 
     {%- if featured.phone -%}
-      <a href="tel:+1{{ phone_digits }}" class="ad-cta">Get in Touch</a>
+      <a href="tel:+1{{ phone_digits }}" class="ad-cta" aria-label="Get in touch with {{ featured.name | default: 'Texas Notary Public' }}">Get in Touch</a>
     {%- elsif featured.email -%}
-      <a href="mailto:{{ featured.email }}" class="ad-cta">Get in Touch</a>
+      <a href="mailto:{{ featured.email }}" class="ad-cta" aria-label="Get in touch with {{ featured.name | default: 'Texas Notary Public' }}">Get in Touch</a>
     {%- else -%}
-      <a href="{{ '/notaries/' | relative_url }}" class="ad-cta">View Notary Directory</a>
+      <a href="{{ '/notaries/' | relative_url }}" class="ad-cta" aria-label="View Notary directory to find {{ featured.name | default: 'Texas Notary Public' }}">View Notary Directory</a>
     {%- endif -%}
 
     <p class="ad-disclaimer">Notary of the Day • Texas Notary Public</p>
