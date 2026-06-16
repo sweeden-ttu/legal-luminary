@@ -752,6 +752,14 @@ ul.check-list li::before { content: "✓"; position: absolute; left: 0; color: v
 .social-links__link { display: inline-flex; align-items: center; justify-content: center; color: var(--white); opacity: 0.85; padding: 0.35rem; border-radius: 4px; transition: opacity 0.2s, color 0.2s; }
 .social-links__link:hover { opacity: 1; color: var(--gold-light); }
 .social-links__link:focus-visible { outline: 2px solid var(--gold-light); outline-offset: 2px; }
+
+/* Global focus styles for accessibility */
+a:focus-visible,
+button:focus-visible,
+.btn:focus-visible {
+  outline: 2px solid var(--gold-light);
+  outline-offset: 2px;
+}
 .social-links__icon { width: 24px; height: 24px; display: block; }
 
 .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1.25rem; text-align: center; font-size: 0.75rem; opacity: 0.7; }
