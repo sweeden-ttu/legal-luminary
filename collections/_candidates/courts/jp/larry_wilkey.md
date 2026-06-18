@@ -40,6 +40,17 @@ professional_history: '**Bell County Precinct 3 Place 2** — Justice of the Pea
   Elected June 2022.
 
   '
-odyssey_results_placeholder: Court case records and JP court statistics will be added here.
----
+odyssey_statistics:
+  total_cases_scraped: 3299
+  total_judgments_awarded: 1010
+  total_judgment_amount_awarded: $2708411.54
+  average_judgment_amount: $2681.60
+  distinct_attorneys_appeared: 59
+  top_case_types:
+    - Contract: Evictions - Residential: 1324 cases
+    - Traffic: 322 cases
+    - Debt/Contract: Debt Collection: 121 cases
+    - Other Civil: Small Claims: 64 cases
+    - Criminal Non-Traffic: 59 cases
+
 Larry Wilkey is the Justice of the Peace for Bell County Precinct 3, Place 2, serving the Temple area.

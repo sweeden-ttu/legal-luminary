@@ -79,9 +79,19 @@ professional_history: '**Private Legal Practice** — Attorney
   re-election in 2026.
 
   '
-odyssey_results_placeholder: Court case records and judicial statistics from the Odyssey case management system will be added
-  here. This section will include docket analysis, case disposition trends, sentencing patterns, and other data-driven insights
-  into Judge LePak's judicial record.
+odyssey_statistics:
+  total_cases_scraped: 610
+  total_judgments_awarded: 0
+  total_judgment_amount_awarded: $0.00
+  average_judgment_amount: $0.00
+  distinct_attorneys_appeared: 113
+  top_case_types:
+    - Divorce: Children: 160 cases
+    - Divorce:  No Children: 152 cases
+    - Other Parent-Child - No Divorce: 68 cases
+    - Modification Other: 52 cases
+    - Protective Orders - No Divorce: 48 cases
+
 court_contact:
   court_name: 264th Judicial District Court
   court_type: District Court

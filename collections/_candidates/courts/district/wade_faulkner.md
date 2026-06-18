@@ -56,9 +56,19 @@ professional_history: '**478th Judicial District Court** — District Judge
   Presides over felony criminal cases and civil litigation. Running for re-election in 2026.
 
   '
-odyssey_results_placeholder: Court case records and judicial statistics from the Odyssey case management system will be added
-  here. This section will include docket analysis, case disposition trends, and other data-driven insights into Judge Faulkner's
-  judicial record.
+odyssey_statistics:
+  total_cases_scraped: 24
+  total_judgments_awarded: 0
+  total_judgment_amount_awarded: $0.00
+  average_judgment_amount: $0.00
+  distinct_attorneys_appeared: 24
+  top_case_types:
+    - Felony: 15 cases
+    - Protective Orders - No Divorce: 3 cases
+    - Divorce: Children: 2 cases
+    - Divorce:  No Children: 1 cases
+    - Register of Foreign Judgment: 1 cases
+
 court_contact:
   court_name: 478th Judicial District Court
   court_type: District Court

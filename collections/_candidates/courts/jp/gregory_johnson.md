@@ -51,6 +51,17 @@ professional_history: '**Bell County Precinct 4 Place 1** — Justice of the Pea
   2028.
 
   '
-odyssey_results_placeholder: Court case records and JP court statistics will be added here.
----
+odyssey_statistics:
+  total_cases_scraped: 3403
+  total_judgments_awarded: 2407
+  total_judgment_amount_awarded: $6448398.70
+  average_judgment_amount: $2679.02
+  distinct_attorneys_appeared: 179
+  top_case_types:
+    - Contract: Evictions - Residential: 2132 cases
+    - Debt/Contract: Debt Collection: 513 cases
+    - Other Civil: Small Claims: 262 cases
+    - Traffic: 251 cases
+    - Criminal Non-Traffic: 74 cases
+
 Gregory Johnson is the Justice of the Peace for Bell County Precinct 4, Place 1, serving the Killeen area of Bell County.

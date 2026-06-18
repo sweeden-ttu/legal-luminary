@@ -1,0 +1,4127 @@
+{
+  "id": "1a94ca7b-c3da-4551-9780-a3ec1c62775c",
+  "version": "2.0",
+  "name": "Bell County - Johnson",
+  "url": "https://justice.bellcounty.texas.gov",
+  "tests": [
+    {
+      "id": "f372dcb9-f4a7-4575-be8d-3bda62354260",
+      "name": "Untitled (1)",
+      "commands": [
+        {
+          "id": "1aa202dd-e82b-47fe-b5ff-64f6db968707",
+          "comment": "",
+          "command": "open",
+          "target": "/PublicPortal/Home/Dashboard/26",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "deb0b040-1074-4c78-a9fb-d026ec57caa4",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "1245x866",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "f32cf434-60b9-4164-b9e5-1c81967940b3",
+          "comment": "",
+          "command": "select",
+          "target": "id=cboHSSearchBy",
+          "targets": [],
+          "value": "label=Judicial Officer"
+        },
+        {
+          "id": "73079882-ca07-43ff-a71a-e869f9292f3c",
+          "comment": "",
+          "command": "click",
+          "target": "css=#cboHSSearchBy > option:nth-child(7)",
+          "targets": [
+            [
+              "css=#cboHSSearchBy > option:nth-child(7)",
+              "css:finder"
+            ],
+            [
+              "xpath=//option[@value='JudicialOfficer']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//select[@id='cboHSSearchBy']/option[7]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[5]/fieldset/select/option[7]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//option[contains(.,'Judicial Officer')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "0252f966-48ea-4c62-ae1b-2afb294abe9d",
+          "comment": "",
+          "command": "click",
+          "target": "css=#judicialOfficerDiv label",
+          "targets": [
+            [
+              "css=#judicialOfficerDiv label",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='judicialOfficerDiv']/fieldset/label",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[12]/fieldset/label",
+              "xpath:position"
+            ],
+            [
+              "xpath=//label[contains(.,'* Select Judicial Officer')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "85c199ba-59c4-4c6f-af33-9eaa4a3ce97a",
+          "comment": "",
+          "command": "select",
+          "target": "id=selHSJudicialOfficer",
+          "targets": [],
+          "value": "label=Johnson, Gregory D."
+        },
+        {
+          "id": "5e6339fd-60a1-463d-a793-b11e066c4b2c",
+          "comment": "",
+          "command": "click",
+          "target": "css=option:nth-child(37)",
+          "targets": [
+            [
+              "css=option:nth-child(37)",
+              "css:finder"
+            ],
+            [
+              "xpath=//option[@value='75928']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//select[@id='selHSJudicialOfficer']/option[37]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//option[37]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//option[contains(.,'Johnson, Gregory D.')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "0dde622f-f898-4a1f-9a8d-ed595aa302ee",
+          "comment": "",
+          "command": "executeScript",
+          "target": "var f = document.getElementById('SearchCriteria_DateFrom');\nvar t = document.getElementById('SearchCriteria_DateTo');\nif (f) { f.value = '05/13/2026'; $(f).trigger('change'); }\nif (t) { t.value = '06/13/2026'; $(t).trigger('change'); }\nreturn 'Dates set: 05/13/2026 - 06/13/2026';",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "ee0e49e1-ec1d-4efb-aff8-6ac6163e8e5f",
+          "comment": "",
+          "command": "click",
+          "target": "id=btnHSSubmit",
+          "targets": [
+            [
+              "id=btnHSSubmit",
+              "id"
+            ],
+            [
+              "css=#btnHSSubmit",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "3aa9fd65-b7db-4a6a-b677-b8de4425aba5",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=span.k-pager-info",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "eeb48348-9342-4cd9-8d00-d7b10366d5e7",
+          "comment": "",
+          "command": "executeScript",
+          "target": "var grid = $('#hearingResultsGrid').data('kendoGrid');\nif (!grid) return 'NO_GRID';\nvar ds = grid.dataSource;\nds.pageSize(99999);\nvar items = ds.data();\nif (items.toJSON) items = items.toJSON();\nvar cols = grid.columns;\nvar csv = '';\nfor (var j = 0; j < cols.length; j++) {\n  csv += (cols[j].title || cols[j].field || 'Col'+j);\n  if (j < cols.length-1) csv += ',';\n}\nfor (var i = 0; i < items.length; i++) {\n  csv += '\\n';\n  for (var j = 0; j < cols.length; j++) {\n    var v = items[i][cols[j].field];\n    if (v === null || v === undefined) v = '';\n    v = String(v).replace(/\"/g, '\"\"');\n    if (v.includes(',') || v.includes('\"') || v.includes('\\n')) v = '\"'+v+'\"';\n    csv += v;\n    if (j < cols.length-1) csv += ',';\n  }\n}\nvar blob = new Blob([csv], {type: 'text/csv'});\nvar a = document.createElement('a');\na.href = URL.createObjectURL(blob);\na.download = 'johnson.csv';\na.style.display = 'none';\ndocument.body.appendChild(a);\na.click();\nsetTimeout(function(){ document.body.removeChild(a); }, 50);\nreturn 'OK '+items.length+' rows';",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "9c4c08a8-4ca4-447c-a36e-d3b6be05c31d",
+          "comment": "",
+          "command": "pause",
+          "target": "5000",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "33fc8fa7-4813-4498-87aa-a283aaabb363",
+      "name": "Untitled (1) (1)",
+      "commands": [
+        {
+          "id": "a7a6d5dd-b400-486a-9b84-e253b4772ca0",
+          "comment": "",
+          "command": "open",
+          "target": "/PublicPortal/Home/Dashboard/26",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "6880d5e9-f85f-47cf-861b-b40dadf3405e",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "1245x866",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "a46f59d4-bd6e-4416-bb58-0ea5d722041d",
+          "comment": "",
+          "command": "select",
+          "target": "id=cboHSSearchBy",
+          "targets": [],
+          "value": "label=Judicial Officer"
+        },
+        {
+          "id": "51d8b132-cd8a-493a-a7de-8daa337d0dd9",
+          "comment": "",
+          "command": "click",
+          "target": "css=#cboHSSearchBy > option:nth-child(7)",
+          "targets": [
+            [
+              "css=#cboHSSearchBy > option:nth-child(7)",
+              "css:finder"
+            ],
+            [
+              "xpath=//option[@value='JudicialOfficer']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//select[@id='cboHSSearchBy']/option[7]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[5]/fieldset/select/option[7]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//option[contains(.,'Judicial Officer')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "4dd013ce-fe82-4c67-99f8-39bff4e26bf6",
+          "comment": "",
+          "command": "click",
+          "target": "css=#judicialOfficerDiv label",
+          "targets": [
+            [
+              "css=#judicialOfficerDiv label",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='judicialOfficerDiv']/fieldset/label",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[12]/fieldset/label",
+              "xpath:position"
+            ],
+            [
+              "xpath=//label[contains(.,'* Select Judicial Officer')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "10ccdfc6-612e-4e8d-aa40-58facec634f6",
+          "comment": "",
+          "command": "select",
+          "target": "id=selHSJudicialOfficer",
+          "targets": [],
+          "value": "label=Johnson, Gregory D."
+        },
+        {
+          "id": "e6c93b25-7cb2-4087-9e71-8ba7a70f1cd7",
+          "comment": "",
+          "command": "click",
+          "target": "css=option:nth-child(37)",
+          "targets": [
+            [
+              "css=option:nth-child(37)",
+              "css:finder"
+            ],
+            [
+              "xpath=//option[@value='75928']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//select[@id='selHSJudicialOfficer']/option[37]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//option[37]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//option[contains(.,'Johnson, Gregory D.')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "6889553e-b32f-4d91-abdb-88d29eb34ade",
+          "comment": "",
+          "command": "executeScript",
+          "target": "var f = document.getElementById('SearchCriteria_DateFrom');\nvar t = document.getElementById('SearchCriteria_DateTo');\nif (f) { f.value = '04/13/2026'; $(f).trigger('change'); }\nif (t) { t.value = '05/13/2026'; $(t).trigger('change'); }\nreturn 'Dates set: 04/13/2026 - 05/13/2026';",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "31ddc000-f93e-4829-9f42-572124293e81",
+          "comment": "",
+          "command": "click",
+          "target": "id=btnHSSubmit",
+          "targets": [
+            [
+              "id=btnHSSubmit",
+              "id"
+            ],
+            [
+              "css=#btnHSSubmit",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "a998d6d2-ea18-4328-9d1f-7aca8606479a",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=span.k-pager-info",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "601d6904-e26e-4624-ae08-735dfa88905b",
+          "comment": "",
+          "command": "executeScript",
+          "target": "var grid = $('#hearingResultsGrid').data('kendoGrid');\nif (!grid) return 'NO_GRID';\nvar ds = grid.dataSource;\nds.pageSize(99999);\nvar items = ds.data();\nif (items.toJSON) items = items.toJSON();\nvar cols = grid.columns;\nvar csv = '';\nfor (var j = 0; j < cols.length; j++) {\n  csv += (cols[j].title || cols[j].field || 'Col'+j);\n  if (j < cols.length-1) csv += ',';\n}\nfor (var i = 0; i < items.length; i++) {\n  csv += '\\n';\n  for (var j = 0; j < cols.length; j++) {\n    var v = items[i][cols[j].field];\n    if (v === null || v === undefined) v = '';\n    v = String(v).replace(/\"/g, '\"\"');\n    if (v.includes(',') || v.includes('\"') || v.includes('\\n')) v = '\"'+v+'\"';\n    csv += v;\n    if (j < cols.length-1) csv += ',';\n  }\n}\nvar blob = new Blob([csv], {type: 'text/csv'});\nvar a = document.createElement('a');\na.href = URL.createObjectURL(blob);\na.download = 'johnson.csv';\na.style.display = 'none';\ndocument.body.appendChild(a);\na.click();\nsetTimeout(function(){ document.body.removeChild(a); }, 50);\nreturn 'OK '+items.length+' rows';",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "9284ace7-1c70-4547-a9cb-362d3700cf66",
+          "comment": "",
+          "command": "pause",
+          "target": "5000",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "22d56004-79ba-4c65-9d97-2377a7f40df6",
+      "name": "Untitled (1) (1) (1)",
+      "commands": [
+        {
+          "id": "7ac003e0-83da-41ce-a0b2-33169cb51a6e",
+          "comment": "",
+          "command": "open",
+          "target": "/PublicPortal/Home/Dashboard/26",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "9a5d2ea0-1031-4608-abf9-c898a69d8c79",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "1245x866",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "a1fe498b-027a-4799-a449-50385891a458",
+          "comment": "",
+          "command": "select",
+          "target": "id=cboHSSearchBy",
+          "targets": [],
+          "value": "label=Judicial Officer"
+        },
+        {
+          "id": "9463b42c-7f5a-4ba6-8e80-af7b21c1659f",
+          "comment": "",
+          "command": "click",
+          "target": "css=#cboHSSearchBy > option:nth-child(7)",
+          "targets": [
+            [
+              "css=#cboHSSearchBy > option:nth-child(7)",
+              "css:finder"
+            ],
+            [
+              "xpath=//option[@value='JudicialOfficer']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//select[@id='cboHSSearchBy']/option[7]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[5]/fieldset/select/option[7]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//option[contains(.,'Judicial Officer')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "942c307e-59e1-456c-91f7-7d91f1cbfd25",
+          "comment": "",
+          "command": "click",
+          "target": "css=#judicialOfficerDiv label",
+          "targets": [
+            [
+              "css=#judicialOfficerDiv label",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='judicialOfficerDiv']/fieldset/label",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[12]/fieldset/label",
+              "xpath:position"
+            ],
+            [
+              "xpath=//label[contains(.,'* Select Judicial Officer')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "2227d636-53fb-4c0c-a442-1c9061d125ed",
+          "comment": "",
+          "command": "select",
+          "target": "id=selHSJudicialOfficer",
+          "targets": [],
+          "value": "label=Johnson, Gregory D."
+        },
+        {
+          "id": "4c871e28-cb7b-44fb-9a9a-fc6e374a7a67",
+          "comment": "",
+          "command": "click",
+          "target": "css=option:nth-child(37)",
+          "targets": [
+            [
+              "css=option:nth-child(37)",
+              "css:finder"
+            ],
+            [
+              "xpath=//option[@value='75928']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//select[@id='selHSJudicialOfficer']/option[37]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//option[37]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//option[contains(.,'Johnson, Gregory D.')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "d2e684d5-1a8b-4324-b406-5a7bf9b8e364",
+          "comment": "",
+          "command": "executeScript",
+          "target": "var f = document.getElementById('SearchCriteria_DateFrom');\nvar t = document.getElementById('SearchCriteria_DateTo');\nif (f) { f.value = '03/13/2026'; $(f).trigger('change'); }\nif (t) { t.value = '04/13/2026'; $(t).trigger('change'); }\nreturn 'Dates set: 03/13/2026 - 04/13/2026';",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "82b0d486-9560-4850-868f-4e5a2fc8d408",
+          "comment": "",
+          "command": "click",
+          "target": "id=btnHSSubmit",
+          "targets": [
+            [
+              "id=btnHSSubmit",
+              "id"
+            ],
+            [
+              "css=#btnHSSubmit",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "e5f85c71-bc00-4480-ac31-0df39023b3ed",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=span.k-pager-info",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "81faf9da-0255-4450-aa81-86bd455368f3",
+          "comment": "",
+          "command": "executeScript",
+          "target": "var grid = $('#hearingResultsGrid').data('kendoGrid');\nif (!grid) return 'NO_GRID';\nvar ds = grid.dataSource;\nds.pageSize(99999);\nvar items = ds.data();\nif (items.toJSON) items = items.toJSON();\nvar cols = grid.columns;\nvar csv = '';\nfor (var j = 0; j < cols.length; j++) {\n  csv += (cols[j].title || cols[j].field || 'Col'+j);\n  if (j < cols.length-1) csv += ',';\n}\nfor (var i = 0; i < items.length; i++) {\n  csv += '\\n';\n  for (var j = 0; j < cols.length; j++) {\n    var v = items[i][cols[j].field];\n    if (v === null || v === undefined) v = '';\n    v = String(v).replace(/\"/g, '\"\"');\n    if (v.includes(',') || v.includes('\"') || v.includes('\\n')) v = '\"'+v+'\"';\n    csv += v;\n    if (j < cols.length-1) csv += ',';\n  }\n}\nvar blob = new Blob([csv], {type: 'text/csv'});\nvar a = document.createElement('a');\na.href = URL.createObjectURL(blob);\na.download = 'johnson.csv';\na.style.display = 'none';\ndocument.body.appendChild(a);\na.click();\nsetTimeout(function(){ document.body.removeChild(a); }, 50);\nreturn 'OK '+items.length+' rows';",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "d6c0bcc1-2cb6-445a-b0d4-d2e300b74da7",
+          "comment": "",
+          "command": "pause",
+          "target": "5000",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "e3c3fded-63a6-4474-a99f-c79bb953e08b",
+      "name": "Untitled (1) (1) (2)",
+      "commands": [
+        {
+          "id": "d9c0566d-12b4-4f7f-9ad3-bc03eba7f294",
+          "comment": "",
+          "command": "open",
+          "target": "/PublicPortal/Home/Dashboard/26",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "4522da28-95ab-4c4e-972e-5d861d0b4dc5",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "1245x866",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "09ee8083-39ae-466a-b2ae-6b19914bed2d",
+          "comment": "",
+          "command": "select",
+          "target": "id=cboHSSearchBy",
+          "targets": [],
+          "value": "label=Judicial Officer"
+        },
+        {
+          "id": "ad0f0461-d965-4a38-90a0-c0c07fd18bca",
+          "comment": "",
+          "command": "click",
+          "target": "css=#cboHSSearchBy > option:nth-child(7)",
+          "targets": [
+            [
+              "css=#cboHSSearchBy > option:nth-child(7)",
+              "css:finder"
+            ],
+            [
+              "xpath=//option[@value='JudicialOfficer']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//select[@id='cboHSSearchBy']/option[7]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[5]/fieldset/select/option[7]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//option[contains(.,'Judicial Officer')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "0efcf58b-859c-421c-a40d-752ccb777f7d",
+          "comment": "",
+          "command": "click",
+          "target": "css=#judicialOfficerDiv label",
+          "targets": [
+            [
+              "css=#judicialOfficerDiv label",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='judicialOfficerDiv']/fieldset/label",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[12]/fieldset/label",
+              "xpath:position"
+            ],
+            [
+              "xpath=//label[contains(.,'* Select Judicial Officer')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "65e6f2a8-1d0a-4e89-a1c1-aa19f05b81d1",
+          "comment": "",
+          "command": "select",
+          "target": "id=selHSJudicialOfficer",
+          "targets": [],
+          "value": "label=Johnson, Gregory D."
+        },
+        {
+          "id": "cf3aba4a-ae81-4e27-9b47-2f8284a8d098",
+          "comment": "",
+          "command": "click",
+          "target": "css=option:nth-child(37)",
+          "targets": [
+            [
+              "css=option:nth-child(37)",
+              "css:finder"
+            ],
+            [
+              "xpath=//option[@value='75928']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//select[@id='selHSJudicialOfficer']/option[37]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//option[37]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//option[contains(.,'Johnson, Gregory D.')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "9b4d5113-71d8-4eac-a71a-ed15fcb0c1ad",
+          "comment": "",
+          "command": "executeScript",
+          "target": "var f = document.getElementById('SearchCriteria_DateFrom');\nvar t = document.getElementById('SearchCriteria_DateTo');\nif (f) { f.value = '02/13/2026'; $(f).trigger('change'); }\nif (t) { t.value = '03/13/2026'; $(t).trigger('change'); }\nreturn 'Dates set: 02/13/2026 - 03/13/2026';",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "82b2f308-da74-435c-a8f7-cf5707c5e2bd",
+          "comment": "",
+          "command": "click",
+          "target": "id=btnHSSubmit",
+          "targets": [
+            [
+              "id=btnHSSubmit",
+              "id"
+            ],
+            [
+              "css=#btnHSSubmit",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "470a9d2c-72d9-4bf9-bc96-ca33b15e05a9",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=span.k-pager-info",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "f88a061e-0184-43c1-966a-a2b91f40725d",
+          "comment": "",
+          "command": "executeScript",
+          "target": "var grid = $('#hearingResultsGrid').data('kendoGrid');\nif (!grid) return 'NO_GRID';\nvar ds = grid.dataSource;\nds.pageSize(99999);\nvar items = ds.data();\nif (items.toJSON) items = items.toJSON();\nvar cols = grid.columns;\nvar csv = '';\nfor (var j = 0; j < cols.length; j++) {\n  csv += (cols[j].title || cols[j].field || 'Col'+j);\n  if (j < cols.length-1) csv += ',';\n}\nfor (var i = 0; i < items.length; i++) {\n  csv += '\\n';\n  for (var j = 0; j < cols.length; j++) {\n    var v = items[i][cols[j].field];\n    if (v === null || v === undefined) v = '';\n    v = String(v).replace(/\"/g, '\"\"');\n    if (v.includes(',') || v.includes('\"') || v.includes('\\n')) v = '\"'+v+'\"';\n    csv += v;\n    if (j < cols.length-1) csv += ',';\n  }\n}\nvar blob = new Blob([csv], {type: 'text/csv'});\nvar a = document.createElement('a');\na.href = URL.createObjectURL(blob);\na.download = 'johnson.csv';\na.style.display = 'none';\ndocument.body.appendChild(a);\na.click();\nsetTimeout(function(){ document.body.removeChild(a); }, 50);\nreturn 'OK '+items.length+' rows';",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "34a7ded6-6ab8-4745-ab53-b538e86403c6",
+          "comment": "",
+          "command": "pause",
+          "target": "5000",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "268ccff7-d2fd-4d0a-b098-f76847a76855",
+      "name": "Untitled (1) (1) (3)",
+      "commands": [
+        {
+          "id": "46ec7068-081f-4463-bc9d-2d0851b04cce",
+          "comment": "",
+          "command": "open",
+          "target": "/PublicPortal/Home/Dashboard/26",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "eb63a8a1-1840-4c6c-abce-f76739327a1d",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "1245x866",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "7398a0ca-2d23-44cc-a630-8741f6829844",
+          "comment": "",
+          "command": "select",
+          "target": "id=cboHSSearchBy",
+          "targets": [],
+          "value": "label=Judicial Officer"
+        },
+        {
+          "id": "749f78f2-52c5-4cda-8dcc-c7a1356e3ff0",
+          "comment": "",
+          "command": "click",
+          "target": "css=#cboHSSearchBy > option:nth-child(7)",
+          "targets": [
+            [
+              "css=#cboHSSearchBy > option:nth-child(7)",
+              "css:finder"
+            ],
+            [
+              "xpath=//option[@value='JudicialOfficer']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//select[@id='cboHSSearchBy']/option[7]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[5]/fieldset/select/option[7]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//option[contains(.,'Judicial Officer')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "869f63ff-d6ce-47ce-970b-737be5be5a68",
+          "comment": "",
+          "command": "click",
+          "target": "css=#judicialOfficerDiv label",
+          "targets": [
+            [
+              "css=#judicialOfficerDiv label",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='judicialOfficerDiv']/fieldset/label",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[12]/fieldset/label",
+              "xpath:position"
+            ],
+            [
+              "xpath=//label[contains(.,'* Select Judicial Officer')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "f5af89a9-2823-442e-98be-f61e51e3acbf",
+          "comment": "",
+          "command": "select",
+          "target": "id=selHSJudicialOfficer",
+          "targets": [],
+          "value": "label=Johnson, Gregory D."
+        },
+        {
+          "id": "9580e09f-b8ac-4d41-9da7-37cc35da1ee7",
+          "comment": "",
+          "command": "click",
+          "target": "css=option:nth-child(37)",
+          "targets": [
+            [
+              "css=option:nth-child(37)",
+              "css:finder"
+            ],
+            [
+              "xpath=//option[@value='75928']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//select[@id='selHSJudicialOfficer']/option[37]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//option[37]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//option[contains(.,'Johnson, Gregory D.')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "b613f3fe-dc1b-4f72-89b4-674fa472be59",
+          "comment": "",
+          "command": "executeScript",
+          "target": "var f = document.getElementById('SearchCriteria_DateFrom');\nvar t = document.getElementById('SearchCriteria_DateTo');\nif (f) { f.value = '01/13/2026'; $(f).trigger('change'); }\nif (t) { t.value = '02/13/2026'; $(t).trigger('change'); }\nreturn 'Dates set: 01/13/2026 - 02/13/2026';",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "366a5300-e61a-4d63-b183-bcf771fdf432",
+          "comment": "",
+          "command": "click",
+          "target": "id=btnHSSubmit",
+          "targets": [
+            [
+              "id=btnHSSubmit",
+              "id"
+            ],
+            [
+              "css=#btnHSSubmit",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "ad003690-fdf2-47d5-a1e0-e335c7660fc6",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=span.k-pager-info",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "349f982c-b71f-447d-9c1f-1190aaeaf147",
+          "comment": "",
+          "command": "executeScript",
+          "target": "var grid = $('#hearingResultsGrid').data('kendoGrid');\nif (!grid) return 'NO_GRID';\nvar ds = grid.dataSource;\nds.pageSize(99999);\nvar items = ds.data();\nif (items.toJSON) items = items.toJSON();\nvar cols = grid.columns;\nvar csv = '';\nfor (var j = 0; j < cols.length; j++) {\n  csv += (cols[j].title || cols[j].field || 'Col'+j);\n  if (j < cols.length-1) csv += ',';\n}\nfor (var i = 0; i < items.length; i++) {\n  csv += '\\n';\n  for (var j = 0; j < cols.length; j++) {\n    var v = items[i][cols[j].field];\n    if (v === null || v === undefined) v = '';\n    v = String(v).replace(/\"/g, '\"\"');\n    if (v.includes(',') || v.includes('\"') || v.includes('\\n')) v = '\"'+v+'\"';\n    csv += v;\n    if (j < cols.length-1) csv += ',';\n  }\n}\nvar blob = new Blob([csv], {type: 'text/csv'});\nvar a = document.createElement('a');\na.href = URL.createObjectURL(blob);\na.download = 'johnson.csv';\na.style.display = 'none';\ndocument.body.appendChild(a);\na.click();\nsetTimeout(function(){ document.body.removeChild(a); }, 50);\nreturn 'OK '+items.length+' rows';",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "4f8fa475-7bb7-478f-b3c3-ce4804a45616",
+          "comment": "",
+          "command": "pause",
+          "target": "5000",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "1f80a2e9-0f28-4f86-b36d-a0f1f325c17d",
+      "name": "Untitled (1) (1) (4)",
+      "commands": [
+        {
+          "id": "0616523a-79a0-4aaf-abbb-e1126a9c833e",
+          "comment": "",
+          "command": "open",
+          "target": "/PublicPortal/Home/Dashboard/26",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "976c5cdc-03ac-4313-b0d2-720dbef27f28",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "1245x866",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "30a6cbbe-e7ac-4e46-b171-bff636bb3c3a",
+          "comment": "",
+          "command": "select",
+          "target": "id=cboHSSearchBy",
+          "targets": [],
+          "value": "label=Judicial Officer"
+        },
+        {
+          "id": "456dadac-2309-4dea-bbd1-8f16bf9908a3",
+          "comment": "",
+          "command": "click",
+          "target": "css=#cboHSSearchBy > option:nth-child(7)",
+          "targets": [
+            [
+              "css=#cboHSSearchBy > option:nth-child(7)",
+              "css:finder"
+            ],
+            [
+              "xpath=//option[@value='JudicialOfficer']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//select[@id='cboHSSearchBy']/option[7]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[5]/fieldset/select/option[7]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//option[contains(.,'Judicial Officer')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "f90efa5e-ea91-4076-ac99-6cff43dcb9cf",
+          "comment": "",
+          "command": "click",
+          "target": "css=#judicialOfficerDiv label",
+          "targets": [
+            [
+              "css=#judicialOfficerDiv label",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='judicialOfficerDiv']/fieldset/label",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[12]/fieldset/label",
+              "xpath:position"
+            ],
+            [
+              "xpath=//label[contains(.,'* Select Judicial Officer')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "10b022dc-97ee-42b2-9f4c-2352596e9bc4",
+          "comment": "",
+          "command": "select",
+          "target": "id=selHSJudicialOfficer",
+          "targets": [],
+          "value": "label=Johnson, Gregory D."
+        },
+        {
+          "id": "f78cbbfd-9e85-4f60-95c8-309ae8d3cc4d",
+          "comment": "",
+          "command": "click",
+          "target": "css=option:nth-child(37)",
+          "targets": [
+            [
+              "css=option:nth-child(37)",
+              "css:finder"
+            ],
+            [
+              "xpath=//option[@value='75928']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//select[@id='selHSJudicialOfficer']/option[37]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//option[37]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//option[contains(.,'Johnson, Gregory D.')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "59bf1861-fd92-4a1f-9975-9776a37f27bb",
+          "comment": "",
+          "command": "executeScript",
+          "target": "var f = document.getElementById('SearchCriteria_DateFrom');\nvar t = document.getElementById('SearchCriteria_DateTo');\nif (f) { f.value = '12/13/2025'; $(f).trigger('change'); }\nif (t) { t.value = '01/13/2026'; $(t).trigger('change'); }\nreturn 'Dates set: 12/13/2025 - 01/13/2026';",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "6bf84a69-3d11-4394-a651-27e2aa79c592",
+          "comment": "",
+          "command": "click",
+          "target": "id=btnHSSubmit",
+          "targets": [
+            [
+              "id=btnHSSubmit",
+              "id"
+            ],
+            [
+              "css=#btnHSSubmit",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "d7a7c413-ef0c-438f-a60f-ce05b0a9d7eb",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=span.k-pager-info",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "438c3082-ccf6-4866-b4fa-0d4c81f813b8",
+          "comment": "",
+          "command": "executeScript",
+          "target": "var grid = $('#hearingResultsGrid').data('kendoGrid');\nif (!grid) return 'NO_GRID';\nvar ds = grid.dataSource;\nds.pageSize(99999);\nvar items = ds.data();\nif (items.toJSON) items = items.toJSON();\nvar cols = grid.columns;\nvar csv = '';\nfor (var j = 0; j < cols.length; j++) {\n  csv += (cols[j].title || cols[j].field || 'Col'+j);\n  if (j < cols.length-1) csv += ',';\n}\nfor (var i = 0; i < items.length; i++) {\n  csv += '\\n';\n  for (var j = 0; j < cols.length; j++) {\n    var v = items[i][cols[j].field];\n    if (v === null || v === undefined) v = '';\n    v = String(v).replace(/\"/g, '\"\"');\n    if (v.includes(',') || v.includes('\"') || v.includes('\\n')) v = '\"'+v+'\"';\n    csv += v;\n    if (j < cols.length-1) csv += ',';\n  }\n}\nvar blob = new Blob([csv], {type: 'text/csv'});\nvar a = document.createElement('a');\na.href = URL.createObjectURL(blob);\na.download = 'johnson.csv';\na.style.display = 'none';\ndocument.body.appendChild(a);\na.click();\nsetTimeout(function(){ document.body.removeChild(a); }, 50);\nreturn 'OK '+items.length+' rows';",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "fa68efd3-f726-43f7-b274-587fa058bcf1",
+          "comment": "",
+          "command": "pause",
+          "target": "5000",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "69d904c0-9c99-470f-94ab-de90a732ffaf",
+      "name": "Untitled (1) (1) (5)",
+      "commands": [
+        {
+          "id": "33041d22-2c75-430b-8951-935f486de9f0",
+          "comment": "",
+          "command": "open",
+          "target": "/PublicPortal/Home/Dashboard/26",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "22cd936b-69f6-40c5-b1c2-26b1d1c8a017",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "1245x866",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "a856abb7-bb9c-403b-a288-813a062d201f",
+          "comment": "",
+          "command": "select",
+          "target": "id=cboHSSearchBy",
+          "targets": [],
+          "value": "label=Judicial Officer"
+        },
+        {
+          "id": "fd09b8cf-5eb8-4529-8d3f-cfa9d3e6bb04",
+          "comment": "",
+          "command": "click",
+          "target": "css=#cboHSSearchBy > option:nth-child(7)",
+          "targets": [
+            [
+              "css=#cboHSSearchBy > option:nth-child(7)",
+              "css:finder"
+            ],
+            [
+              "xpath=//option[@value='JudicialOfficer']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//select[@id='cboHSSearchBy']/option[7]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[5]/fieldset/select/option[7]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//option[contains(.,'Judicial Officer')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "f42f44f8-36d0-4ea3-a454-1c36cdf106d7",
+          "comment": "",
+          "command": "click",
+          "target": "css=#judicialOfficerDiv label",
+          "targets": [
+            [
+              "css=#judicialOfficerDiv label",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='judicialOfficerDiv']/fieldset/label",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[12]/fieldset/label",
+              "xpath:position"
+            ],
+            [
+              "xpath=//label[contains(.,'* Select Judicial Officer')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "5e144032-63a4-4d99-8e0c-a384e652d561",
+          "comment": "",
+          "command": "select",
+          "target": "id=selHSJudicialOfficer",
+          "targets": [],
+          "value": "label=Johnson, Gregory D."
+        },
+        {
+          "id": "ba20c5ce-73a6-47e8-943b-600e512de5d5",
+          "comment": "",
+          "command": "click",
+          "target": "css=option:nth-child(37)",
+          "targets": [
+            [
+              "css=option:nth-child(37)",
+              "css:finder"
+            ],
+            [
+              "xpath=//option[@value='75928']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//select[@id='selHSJudicialOfficer']/option[37]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//option[37]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//option[contains(.,'Johnson, Gregory D.')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "f2d55887-8e78-47bb-88ce-9a140f6c7ae3",
+          "comment": "",
+          "command": "executeScript",
+          "target": "var f = document.getElementById('SearchCriteria_DateFrom');\nvar t = document.getElementById('SearchCriteria_DateTo');\nif (f) { f.value = '11/13/2025'; $(f).trigger('change'); }\nif (t) { t.value = '12/13/2025'; $(t).trigger('change'); }\nreturn 'Dates set: 11/13/2025 - 12/13/2025';",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "b851dd6c-b1ff-415d-b195-3831bcc18c98",
+          "comment": "",
+          "command": "click",
+          "target": "id=btnHSSubmit",
+          "targets": [
+            [
+              "id=btnHSSubmit",
+              "id"
+            ],
+            [
+              "css=#btnHSSubmit",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "8a473b51-0aac-4922-9678-7fa6ed5e4ba9",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=span.k-pager-info",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "55c23806-ea8e-4456-aadc-81ec2aec08c4",
+          "comment": "",
+          "command": "executeScript",
+          "target": "var grid = $('#hearingResultsGrid').data('kendoGrid');\nif (!grid) return 'NO_GRID';\nvar ds = grid.dataSource;\nds.pageSize(99999);\nvar items = ds.data();\nif (items.toJSON) items = items.toJSON();\nvar cols = grid.columns;\nvar csv = '';\nfor (var j = 0; j < cols.length; j++) {\n  csv += (cols[j].title || cols[j].field || 'Col'+j);\n  if (j < cols.length-1) csv += ',';\n}\nfor (var i = 0; i < items.length; i++) {\n  csv += '\\n';\n  for (var j = 0; j < cols.length; j++) {\n    var v = items[i][cols[j].field];\n    if (v === null || v === undefined) v = '';\n    v = String(v).replace(/\"/g, '\"\"');\n    if (v.includes(',') || v.includes('\"') || v.includes('\\n')) v = '\"'+v+'\"';\n    csv += v;\n    if (j < cols.length-1) csv += ',';\n  }\n}\nvar blob = new Blob([csv], {type: 'text/csv'});\nvar a = document.createElement('a');\na.href = URL.createObjectURL(blob);\na.download = 'johnson.csv';\na.style.display = 'none';\ndocument.body.appendChild(a);\na.click();\nsetTimeout(function(){ document.body.removeChild(a); }, 50);\nreturn 'OK '+items.length+' rows';",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "4ec3d1a8-f30f-4d20-8f76-aeacc9d75f5c",
+          "comment": "",
+          "command": "pause",
+          "target": "5000",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "6367495b-75ed-496d-a36e-d2e6b3ea56e1",
+      "name": "Untitled (1) (1) (6)",
+      "commands": [
+        {
+          "id": "c554d7fa-06c1-4b44-93ef-011da2128c8a",
+          "comment": "",
+          "command": "open",
+          "target": "/PublicPortal/Home/Dashboard/26",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "6b6517c5-518f-40db-abd5-986e7b79074f",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "1245x866",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "e8105a1a-f06a-406c-9d50-3abbcd485b7f",
+          "comment": "",
+          "command": "select",
+          "target": "id=cboHSSearchBy",
+          "targets": [],
+          "value": "label=Judicial Officer"
+        },
+        {
+          "id": "d4248663-a263-456e-8d93-7a9ae4df13b7",
+          "comment": "",
+          "command": "click",
+          "target": "css=#cboHSSearchBy > option:nth-child(7)",
+          "targets": [
+            [
+              "css=#cboHSSearchBy > option:nth-child(7)",
+              "css:finder"
+            ],
+            [
+              "xpath=//option[@value='JudicialOfficer']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//select[@id='cboHSSearchBy']/option[7]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[5]/fieldset/select/option[7]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//option[contains(.,'Judicial Officer')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "2a54b41a-8cb6-43d9-98e2-64c374b4f13f",
+          "comment": "",
+          "command": "click",
+          "target": "css=#judicialOfficerDiv label",
+          "targets": [
+            [
+              "css=#judicialOfficerDiv label",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='judicialOfficerDiv']/fieldset/label",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[12]/fieldset/label",
+              "xpath:position"
+            ],
+            [
+              "xpath=//label[contains(.,'* Select Judicial Officer')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "2d9fd86e-f058-4c1b-98ea-c93f59d0e408",
+          "comment": "",
+          "command": "select",
+          "target": "id=selHSJudicialOfficer",
+          "targets": [],
+          "value": "label=Johnson, Gregory D."
+        },
+        {
+          "id": "1f0fb9f4-8faa-47e2-8a2a-9d2bf7bc6636",
+          "comment": "",
+          "command": "click",
+          "target": "css=option:nth-child(37)",
+          "targets": [
+            [
+              "css=option:nth-child(37)",
+              "css:finder"
+            ],
+            [
+              "xpath=//option[@value='75928']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//select[@id='selHSJudicialOfficer']/option[37]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//option[37]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//option[contains(.,'Johnson, Gregory D.')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "c658bdea-f4f4-495a-a0cc-2b3f443027b5",
+          "comment": "",
+          "command": "executeScript",
+          "target": "var f = document.getElementById('SearchCriteria_DateFrom');\nvar t = document.getElementById('SearchCriteria_DateTo');\nif (f) { f.value = '10/13/2025'; $(f).trigger('change'); }\nif (t) { t.value = '11/13/2025'; $(t).trigger('change'); }\nreturn 'Dates set: 10/13/2025 - 11/13/2025';",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "8fdd6aa4-3dff-4575-af7f-1ee0a95ff019",
+          "comment": "",
+          "command": "click",
+          "target": "id=btnHSSubmit",
+          "targets": [
+            [
+              "id=btnHSSubmit",
+              "id"
+            ],
+            [
+              "css=#btnHSSubmit",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "69ce07a3-349f-48a0-b3bd-4532e5ec8589",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=span.k-pager-info",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "1d781ae0-9ab1-4406-a709-5934e2e162da",
+          "comment": "",
+          "command": "executeScript",
+          "target": "var grid = $('#hearingResultsGrid').data('kendoGrid');\nif (!grid) return 'NO_GRID';\nvar ds = grid.dataSource;\nds.pageSize(99999);\nvar items = ds.data();\nif (items.toJSON) items = items.toJSON();\nvar cols = grid.columns;\nvar csv = '';\nfor (var j = 0; j < cols.length; j++) {\n  csv += (cols[j].title || cols[j].field || 'Col'+j);\n  if (j < cols.length-1) csv += ',';\n}\nfor (var i = 0; i < items.length; i++) {\n  csv += '\\n';\n  for (var j = 0; j < cols.length; j++) {\n    var v = items[i][cols[j].field];\n    if (v === null || v === undefined) v = '';\n    v = String(v).replace(/\"/g, '\"\"');\n    if (v.includes(',') || v.includes('\"') || v.includes('\\n')) v = '\"'+v+'\"';\n    csv += v;\n    if (j < cols.length-1) csv += ',';\n  }\n}\nvar blob = new Blob([csv], {type: 'text/csv'});\nvar a = document.createElement('a');\na.href = URL.createObjectURL(blob);\na.download = 'johnson.csv';\na.style.display = 'none';\ndocument.body.appendChild(a);\na.click();\nsetTimeout(function(){ document.body.removeChild(a); }, 50);\nreturn 'OK '+items.length+' rows';",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "562f5e33-e716-4bba-b204-69d0517c0db2",
+          "comment": "",
+          "command": "pause",
+          "target": "5000",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "d1eb6382-f5c6-4912-901b-854ee6449bb3",
+      "name": "Untitled (1) (1) (7)",
+      "commands": [
+        {
+          "id": "4f42b82e-29e8-478b-8d65-45053d357437",
+          "comment": "",
+          "command": "open",
+          "target": "/PublicPortal/Home/Dashboard/26",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "63d2f69a-e24e-428e-a30f-51a5305711ee",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "1245x866",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "4f525c19-58d5-45c6-ab53-28536bdfc2c7",
+          "comment": "",
+          "command": "select",
+          "target": "id=cboHSSearchBy",
+          "targets": [],
+          "value": "label=Judicial Officer"
+        },
+        {
+          "id": "be6274e8-c388-4a80-81ad-2f1c12822fcf",
+          "comment": "",
+          "command": "click",
+          "target": "css=#cboHSSearchBy > option:nth-child(7)",
+          "targets": [
+            [
+              "css=#cboHSSearchBy > option:nth-child(7)",
+              "css:finder"
+            ],
+            [
+              "xpath=//option[@value='JudicialOfficer']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//select[@id='cboHSSearchBy']/option[7]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[5]/fieldset/select/option[7]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//option[contains(.,'Judicial Officer')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "41b7642a-7786-4a6a-9a2d-77dbb69c2d9c",
+          "comment": "",
+          "command": "click",
+          "target": "css=#judicialOfficerDiv label",
+          "targets": [
+            [
+              "css=#judicialOfficerDiv label",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='judicialOfficerDiv']/fieldset/label",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[12]/fieldset/label",
+              "xpath:position"
+            ],
+            [
+              "xpath=//label[contains(.,'* Select Judicial Officer')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "ff0dfd39-a2ff-40c6-a5c5-425ed94ae3af",
+          "comment": "",
+          "command": "select",
+          "target": "id=selHSJudicialOfficer",
+          "targets": [],
+          "value": "label=Johnson, Gregory D."
+        },
+        {
+          "id": "417ef7dc-86da-4784-8123-9e4d0e686f05",
+          "comment": "",
+          "command": "click",
+          "target": "css=option:nth-child(37)",
+          "targets": [
+            [
+              "css=option:nth-child(37)",
+              "css:finder"
+            ],
+            [
+              "xpath=//option[@value='75928']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//select[@id='selHSJudicialOfficer']/option[37]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//option[37]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//option[contains(.,'Johnson, Gregory D.')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "5509a3db-fe2c-4df1-b5b4-2e48e2fef2ac",
+          "comment": "",
+          "command": "executeScript",
+          "target": "var f = document.getElementById('SearchCriteria_DateFrom');\nvar t = document.getElementById('SearchCriteria_DateTo');\nif (f) { f.value = '09/13/2025'; $(f).trigger('change'); }\nif (t) { t.value = '10/13/2025'; $(t).trigger('change'); }\nreturn 'Dates set: 09/13/2025 - 10/13/2025';",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "241a3248-2159-4351-9e65-18c88d33cd0f",
+          "comment": "",
+          "command": "click",
+          "target": "id=btnHSSubmit",
+          "targets": [
+            [
+              "id=btnHSSubmit",
+              "id"
+            ],
+            [
+              "css=#btnHSSubmit",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "1ae13e0a-c0ba-4e5a-8607-ec877e03128c",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=span.k-pager-info",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "a2c860df-f213-41ca-98a2-6a55690249f0",
+          "comment": "",
+          "command": "executeScript",
+          "target": "var grid = $('#hearingResultsGrid').data('kendoGrid');\nif (!grid) return 'NO_GRID';\nvar ds = grid.dataSource;\nds.pageSize(99999);\nvar items = ds.data();\nif (items.toJSON) items = items.toJSON();\nvar cols = grid.columns;\nvar csv = '';\nfor (var j = 0; j < cols.length; j++) {\n  csv += (cols[j].title || cols[j].field || 'Col'+j);\n  if (j < cols.length-1) csv += ',';\n}\nfor (var i = 0; i < items.length; i++) {\n  csv += '\\n';\n  for (var j = 0; j < cols.length; j++) {\n    var v = items[i][cols[j].field];\n    if (v === null || v === undefined) v = '';\n    v = String(v).replace(/\"/g, '\"\"');\n    if (v.includes(',') || v.includes('\"') || v.includes('\\n')) v = '\"'+v+'\"';\n    csv += v;\n    if (j < cols.length-1) csv += ',';\n  }\n}\nvar blob = new Blob([csv], {type: 'text/csv'});\nvar a = document.createElement('a');\na.href = URL.createObjectURL(blob);\na.download = 'johnson.csv';\na.style.display = 'none';\ndocument.body.appendChild(a);\na.click();\nsetTimeout(function(){ document.body.removeChild(a); }, 50);\nreturn 'OK '+items.length+' rows';",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "295b3aab-1cc1-4ca9-99cb-dae8967b2346",
+          "comment": "",
+          "command": "pause",
+          "target": "5000",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "4db51fd6-fa64-410d-aa2d-4137f51a2b6f",
+      "name": "Untitled (1) (1) (8)",
+      "commands": [
+        {
+          "id": "8104feff-feae-4864-a4e1-728a1986c2c2",
+          "comment": "",
+          "command": "open",
+          "target": "/PublicPortal/Home/Dashboard/26",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "5b55c457-80ac-4c73-8e49-194a467e3363",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "1245x866",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "3c681aaa-8661-4ff2-a6ed-fda9943f44cb",
+          "comment": "",
+          "command": "select",
+          "target": "id=cboHSSearchBy",
+          "targets": [],
+          "value": "label=Judicial Officer"
+        },
+        {
+          "id": "907950c9-21de-46db-9755-aab211a22c23",
+          "comment": "",
+          "command": "click",
+          "target": "css=#cboHSSearchBy > option:nth-child(7)",
+          "targets": [
+            [
+              "css=#cboHSSearchBy > option:nth-child(7)",
+              "css:finder"
+            ],
+            [
+              "xpath=//option[@value='JudicialOfficer']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//select[@id='cboHSSearchBy']/option[7]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[5]/fieldset/select/option[7]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//option[contains(.,'Judicial Officer')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "c405de7e-cd34-44d8-bd54-722e3afd374a",
+          "comment": "",
+          "command": "click",
+          "target": "css=#judicialOfficerDiv label",
+          "targets": [
+            [
+              "css=#judicialOfficerDiv label",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='judicialOfficerDiv']/fieldset/label",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[12]/fieldset/label",
+              "xpath:position"
+            ],
+            [
+              "xpath=//label[contains(.,'* Select Judicial Officer')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "6cd40e16-9049-4c19-bcba-868546cd6fc0",
+          "comment": "",
+          "command": "select",
+          "target": "id=selHSJudicialOfficer",
+          "targets": [],
+          "value": "label=Johnson, Gregory D."
+        },
+        {
+          "id": "ebd68179-5988-4324-afd8-05a858f4e612",
+          "comment": "",
+          "command": "click",
+          "target": "css=option:nth-child(37)",
+          "targets": [
+            [
+              "css=option:nth-child(37)",
+              "css:finder"
+            ],
+            [
+              "xpath=//option[@value='75928']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//select[@id='selHSJudicialOfficer']/option[37]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//option[37]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//option[contains(.,'Johnson, Gregory D.')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "dc288056-5690-42a1-9d4c-0af4dede2327",
+          "comment": "",
+          "command": "executeScript",
+          "target": "var f = document.getElementById('SearchCriteria_DateFrom');\nvar t = document.getElementById('SearchCriteria_DateTo');\nif (f) { f.value = '08/13/2025'; $(f).trigger('change'); }\nif (t) { t.value = '09/13/2025'; $(t).trigger('change'); }\nreturn 'Dates set: 08/13/2025 - 09/13/2025';",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "f446dc6a-20f8-4fe0-b9e4-fa036ebf2409",
+          "comment": "",
+          "command": "click",
+          "target": "id=btnHSSubmit",
+          "targets": [
+            [
+              "id=btnHSSubmit",
+              "id"
+            ],
+            [
+              "css=#btnHSSubmit",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "f4dceaab-fdcf-4afd-b5b0-eae32c6cde04",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=span.k-pager-info",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "bf3d6f48-d0c4-4b88-a632-6da69f40112c",
+          "comment": "",
+          "command": "executeScript",
+          "target": "var grid = $('#hearingResultsGrid').data('kendoGrid');\nif (!grid) return 'NO_GRID';\nvar ds = grid.dataSource;\nds.pageSize(99999);\nvar items = ds.data();\nif (items.toJSON) items = items.toJSON();\nvar cols = grid.columns;\nvar csv = '';\nfor (var j = 0; j < cols.length; j++) {\n  csv += (cols[j].title || cols[j].field || 'Col'+j);\n  if (j < cols.length-1) csv += ',';\n}\nfor (var i = 0; i < items.length; i++) {\n  csv += '\\n';\n  for (var j = 0; j < cols.length; j++) {\n    var v = items[i][cols[j].field];\n    if (v === null || v === undefined) v = '';\n    v = String(v).replace(/\"/g, '\"\"');\n    if (v.includes(',') || v.includes('\"') || v.includes('\\n')) v = '\"'+v+'\"';\n    csv += v;\n    if (j < cols.length-1) csv += ',';\n  }\n}\nvar blob = new Blob([csv], {type: 'text/csv'});\nvar a = document.createElement('a');\na.href = URL.createObjectURL(blob);\na.download = 'johnson.csv';\na.style.display = 'none';\ndocument.body.appendChild(a);\na.click();\nsetTimeout(function(){ document.body.removeChild(a); }, 50);\nreturn 'OK '+items.length+' rows';",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "1fadafdf-e6b9-47bc-bc01-7e4ae7079453",
+          "comment": "",
+          "command": "pause",
+          "target": "5000",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "217250b4-f2e6-42b7-9316-d624f2237cf3",
+      "name": "Untitled (1) (1) (9)",
+      "commands": [
+        {
+          "id": "d064fa8d-864e-411f-ab58-ac1033e9ee76",
+          "comment": "",
+          "command": "open",
+          "target": "/PublicPortal/Home/Dashboard/26",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "367888da-30b6-4d78-9af9-29d051df92eb",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "1245x866",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "568fbdee-a18a-44a2-bd2b-27125a7adb37",
+          "comment": "",
+          "command": "select",
+          "target": "id=cboHSSearchBy",
+          "targets": [],
+          "value": "label=Judicial Officer"
+        },
+        {
+          "id": "e5f65847-eba6-448b-88e7-71f61ba632f2",
+          "comment": "",
+          "command": "click",
+          "target": "css=#cboHSSearchBy > option:nth-child(7)",
+          "targets": [
+            [
+              "css=#cboHSSearchBy > option:nth-child(7)",
+              "css:finder"
+            ],
+            [
+              "xpath=//option[@value='JudicialOfficer']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//select[@id='cboHSSearchBy']/option[7]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[5]/fieldset/select/option[7]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//option[contains(.,'Judicial Officer')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "bfc175d7-a0f7-42f9-9705-e45f73037454",
+          "comment": "",
+          "command": "click",
+          "target": "css=#judicialOfficerDiv label",
+          "targets": [
+            [
+              "css=#judicialOfficerDiv label",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='judicialOfficerDiv']/fieldset/label",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[12]/fieldset/label",
+              "xpath:position"
+            ],
+            [
+              "xpath=//label[contains(.,'* Select Judicial Officer')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "0a6de951-0b51-4dd7-a533-32881f15310b",
+          "comment": "",
+          "command": "select",
+          "target": "id=selHSJudicialOfficer",
+          "targets": [],
+          "value": "label=Johnson, Gregory D."
+        },
+        {
+          "id": "974db479-7593-4fc2-8da0-f738b0d8f800",
+          "comment": "",
+          "command": "click",
+          "target": "css=option:nth-child(37)",
+          "targets": [
+            [
+              "css=option:nth-child(37)",
+              "css:finder"
+            ],
+            [
+              "xpath=//option[@value='75928']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//select[@id='selHSJudicialOfficer']/option[37]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//option[37]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//option[contains(.,'Johnson, Gregory D.')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "b293e44d-3903-47b9-a4c3-52d566e87fab",
+          "comment": "",
+          "command": "executeScript",
+          "target": "var f = document.getElementById('SearchCriteria_DateFrom');\nvar t = document.getElementById('SearchCriteria_DateTo');\nif (f) { f.value = '07/13/2025'; $(f).trigger('change'); }\nif (t) { t.value = '08/13/2025'; $(t).trigger('change'); }\nreturn 'Dates set: 07/13/2025 - 08/13/2025';",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "0dd62564-caec-4885-966d-d3b826fccbe1",
+          "comment": "",
+          "command": "click",
+          "target": "id=btnHSSubmit",
+          "targets": [
+            [
+              "id=btnHSSubmit",
+              "id"
+            ],
+            [
+              "css=#btnHSSubmit",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "2084ed35-8339-48e6-b62b-cc74f3d33952",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=span.k-pager-info",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "13888259-e9eb-411d-a9c4-70182b0d081e",
+          "comment": "",
+          "command": "executeScript",
+          "target": "var grid = $('#hearingResultsGrid').data('kendoGrid');\nif (!grid) return 'NO_GRID';\nvar ds = grid.dataSource;\nds.pageSize(99999);\nvar items = ds.data();\nif (items.toJSON) items = items.toJSON();\nvar cols = grid.columns;\nvar csv = '';\nfor (var j = 0; j < cols.length; j++) {\n  csv += (cols[j].title || cols[j].field || 'Col'+j);\n  if (j < cols.length-1) csv += ',';\n}\nfor (var i = 0; i < items.length; i++) {\n  csv += '\\n';\n  for (var j = 0; j < cols.length; j++) {\n    var v = items[i][cols[j].field];\n    if (v === null || v === undefined) v = '';\n    v = String(v).replace(/\"/g, '\"\"');\n    if (v.includes(',') || v.includes('\"') || v.includes('\\n')) v = '\"'+v+'\"';\n    csv += v;\n    if (j < cols.length-1) csv += ',';\n  }\n}\nvar blob = new Blob([csv], {type: 'text/csv'});\nvar a = document.createElement('a');\na.href = URL.createObjectURL(blob);\na.download = 'johnson.csv';\na.style.display = 'none';\ndocument.body.appendChild(a);\na.click();\nsetTimeout(function(){ document.body.removeChild(a); }, 50);\nreturn 'OK '+items.length+' rows';",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "5d14ffb0-fd7d-4666-8b8a-c927cbf1fa80",
+          "comment": "",
+          "command": "pause",
+          "target": "5000",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "edf56af2-188a-4675-85f2-c61aae31ef4b",
+      "name": "Untitled (1) (1) (10)",
+      "commands": [
+        {
+          "id": "b64d60a0-1907-4b57-8e4a-6343fbfe8a1b",
+          "comment": "",
+          "command": "open",
+          "target": "/PublicPortal/Home/Dashboard/26",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "0da71231-9067-4710-8c42-b6674fa14253",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "1245x866",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "54949d77-712b-4060-affb-ca62a32e4f58",
+          "comment": "",
+          "command": "select",
+          "target": "id=cboHSSearchBy",
+          "targets": [],
+          "value": "label=Judicial Officer"
+        },
+        {
+          "id": "a6418f9c-849a-44c7-9301-b18e2f34b93d",
+          "comment": "",
+          "command": "click",
+          "target": "css=#cboHSSearchBy > option:nth-child(7)",
+          "targets": [
+            [
+              "css=#cboHSSearchBy > option:nth-child(7)",
+              "css:finder"
+            ],
+            [
+              "xpath=//option[@value='JudicialOfficer']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//select[@id='cboHSSearchBy']/option[7]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[5]/fieldset/select/option[7]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//option[contains(.,'Judicial Officer')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "842d7b13-33e9-446d-b55c-7e24fd643cb5",
+          "comment": "",
+          "command": "click",
+          "target": "css=#judicialOfficerDiv label",
+          "targets": [
+            [
+              "css=#judicialOfficerDiv label",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='judicialOfficerDiv']/fieldset/label",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[12]/fieldset/label",
+              "xpath:position"
+            ],
+            [
+              "xpath=//label[contains(.,'* Select Judicial Officer')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "8e656946-5499-4633-956d-7bc1f71c2644",
+          "comment": "",
+          "command": "select",
+          "target": "id=selHSJudicialOfficer",
+          "targets": [],
+          "value": "label=Johnson, Gregory D."
+        },
+        {
+          "id": "9ecce05f-9144-489e-97f8-33814aa2aeff",
+          "comment": "",
+          "command": "click",
+          "target": "css=option:nth-child(37)",
+          "targets": [
+            [
+              "css=option:nth-child(37)",
+              "css:finder"
+            ],
+            [
+              "xpath=//option[@value='75928']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//select[@id='selHSJudicialOfficer']/option[37]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//option[37]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//option[contains(.,'Johnson, Gregory D.')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "91bacea0-9f51-429f-a662-dc074bf6045a",
+          "comment": "",
+          "command": "executeScript",
+          "target": "var f = document.getElementById('SearchCriteria_DateFrom');\nvar t = document.getElementById('SearchCriteria_DateTo');\nif (f) { f.value = '06/13/2025'; $(f).trigger('change'); }\nif (t) { t.value = '07/13/2025'; $(t).trigger('change'); }\nreturn 'Dates set: 06/13/2025 - 07/13/2025';",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "3f095a77-e7dd-4330-9b31-fffd876fb04e",
+          "comment": "",
+          "command": "click",
+          "target": "id=btnHSSubmit",
+          "targets": [
+            [
+              "id=btnHSSubmit",
+              "id"
+            ],
+            [
+              "css=#btnHSSubmit",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "cde021bd-7311-4acc-a732-598a12e39789",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=span.k-pager-info",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "119a7314-9bf3-4a13-84bc-23303dfcb3fd",
+          "comment": "",
+          "command": "executeScript",
+          "target": "var grid = $('#hearingResultsGrid').data('kendoGrid');\nif (!grid) return 'NO_GRID';\nvar ds = grid.dataSource;\nds.pageSize(99999);\nvar items = ds.data();\nif (items.toJSON) items = items.toJSON();\nvar cols = grid.columns;\nvar csv = '';\nfor (var j = 0; j < cols.length; j++) {\n  csv += (cols[j].title || cols[j].field || 'Col'+j);\n  if (j < cols.length-1) csv += ',';\n}\nfor (var i = 0; i < items.length; i++) {\n  csv += '\\n';\n  for (var j = 0; j < cols.length; j++) {\n    var v = items[i][cols[j].field];\n    if (v === null || v === undefined) v = '';\n    v = String(v).replace(/\"/g, '\"\"');\n    if (v.includes(',') || v.includes('\"') || v.includes('\\n')) v = '\"'+v+'\"';\n    csv += v;\n    if (j < cols.length-1) csv += ',';\n  }\n}\nvar blob = new Blob([csv], {type: 'text/csv'});\nvar a = document.createElement('a');\na.href = URL.createObjectURL(blob);\na.download = 'johnson.csv';\na.style.display = 'none';\ndocument.body.appendChild(a);\na.click();\nsetTimeout(function(){ document.body.removeChild(a); }, 50);\nreturn 'OK '+items.length+' rows';",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "4e89dbbc-0f80-4a54-a395-5d531c40169e",
+          "comment": "",
+          "command": "pause",
+          "target": "5000",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "e44a7d9a-d9aa-4d7d-9869-011e0ce99d18",
+      "name": "Untitled (1) (1) (11)",
+      "commands": [
+        {
+          "id": "8cb9749e-66ea-48d8-89cd-4006dc2c497b",
+          "comment": "",
+          "command": "open",
+          "target": "/PublicPortal/Home/Dashboard/26",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "ae93e1b7-23c2-4470-abc1-d36b52f57cc0",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "1245x866",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "94ad5390-709a-4c02-9835-9b7ae7a8bbf0",
+          "comment": "",
+          "command": "select",
+          "target": "id=cboHSSearchBy",
+          "targets": [],
+          "value": "label=Judicial Officer"
+        },
+        {
+          "id": "48a6038d-0ce3-4dda-992f-c4a8779849b2",
+          "comment": "",
+          "command": "click",
+          "target": "css=#cboHSSearchBy > option:nth-child(7)",
+          "targets": [
+            [
+              "css=#cboHSSearchBy > option:nth-child(7)",
+              "css:finder"
+            ],
+            [
+              "xpath=//option[@value='JudicialOfficer']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//select[@id='cboHSSearchBy']/option[7]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[5]/fieldset/select/option[7]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//option[contains(.,'Judicial Officer')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "723136c0-bba6-4725-b516-d6557fac3402",
+          "comment": "",
+          "command": "click",
+          "target": "css=#judicialOfficerDiv label",
+          "targets": [
+            [
+              "css=#judicialOfficerDiv label",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='judicialOfficerDiv']/fieldset/label",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[12]/fieldset/label",
+              "xpath:position"
+            ],
+            [
+              "xpath=//label[contains(.,'* Select Judicial Officer')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "6e4dc11e-ec32-4178-b884-19e24c2e3488",
+          "comment": "",
+          "command": "select",
+          "target": "id=selHSJudicialOfficer",
+          "targets": [],
+          "value": "label=Johnson, Gregory D."
+        },
+        {
+          "id": "f3770447-67e2-47f1-8d87-4931179371b7",
+          "comment": "",
+          "command": "click",
+          "target": "css=option:nth-child(37)",
+          "targets": [
+            [
+              "css=option:nth-child(37)",
+              "css:finder"
+            ],
+            [
+              "xpath=//option[@value='75928']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//select[@id='selHSJudicialOfficer']/option[37]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//option[37]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//option[contains(.,'Johnson, Gregory D.')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "dbd2fe8d-6ef8-4b44-8d3c-682e94217d77",
+          "comment": "",
+          "command": "executeScript",
+          "target": "var f = document.getElementById('SearchCriteria_DateFrom');\nvar t = document.getElementById('SearchCriteria_DateTo');\nif (f) { f.value = '05/13/2025'; $(f).trigger('change'); }\nif (t) { t.value = '06/13/2025'; $(t).trigger('change'); }\nreturn 'Dates set: 05/13/2025 - 06/13/2025';",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "27b1002d-b8b0-43e0-a0bf-c9b9e9c8ea0e",
+          "comment": "",
+          "command": "click",
+          "target": "id=btnHSSubmit",
+          "targets": [
+            [
+              "id=btnHSSubmit",
+              "id"
+            ],
+            [
+              "css=#btnHSSubmit",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "1485dbc9-6ca8-4816-89c9-3bb0fca9915f",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=span.k-pager-info",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "f1db2d9a-8f70-4876-ad4d-c41111558163",
+          "comment": "",
+          "command": "executeScript",
+          "target": "var grid = $('#hearingResultsGrid').data('kendoGrid');\nif (!grid) return 'NO_GRID';\nvar ds = grid.dataSource;\nds.pageSize(99999);\nvar items = ds.data();\nif (items.toJSON) items = items.toJSON();\nvar cols = grid.columns;\nvar csv = '';\nfor (var j = 0; j < cols.length; j++) {\n  csv += (cols[j].title || cols[j].field || 'Col'+j);\n  if (j < cols.length-1) csv += ',';\n}\nfor (var i = 0; i < items.length; i++) {\n  csv += '\\n';\n  for (var j = 0; j < cols.length; j++) {\n    var v = items[i][cols[j].field];\n    if (v === null || v === undefined) v = '';\n    v = String(v).replace(/\"/g, '\"\"');\n    if (v.includes(',') || v.includes('\"') || v.includes('\\n')) v = '\"'+v+'\"';\n    csv += v;\n    if (j < cols.length-1) csv += ',';\n  }\n}\nvar blob = new Blob([csv], {type: 'text/csv'});\nvar a = document.createElement('a');\na.href = URL.createObjectURL(blob);\na.download = 'johnson.csv';\na.style.display = 'none';\ndocument.body.appendChild(a);\na.click();\nsetTimeout(function(){ document.body.removeChild(a); }, 50);\nreturn 'OK '+items.length+' rows';",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "6581ffa8-e684-4d69-9dd3-f859aa6eb291",
+          "comment": "",
+          "command": "pause",
+          "target": "5000",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "a907e044-750c-4de6-aa9a-2bad486e64c8",
+      "name": "Untitled (1) (1) (12)",
+      "commands": [
+        {
+          "id": "86de3b9a-4cf9-4efe-9eaf-b0bf5351a6c4",
+          "comment": "",
+          "command": "open",
+          "target": "/PublicPortal/Home/Dashboard/26",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "c18e3d7e-62f8-440d-9e86-e652dcd8a047",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "1245x866",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "703d98f0-daa2-417b-baf5-b35cbfd1c0b4",
+          "comment": "",
+          "command": "select",
+          "target": "id=cboHSSearchBy",
+          "targets": [],
+          "value": "label=Judicial Officer"
+        },
+        {
+          "id": "1479b42b-6604-4bb1-9b58-63f9e2c633c9",
+          "comment": "",
+          "command": "click",
+          "target": "css=#cboHSSearchBy > option:nth-child(7)",
+          "targets": [
+            [
+              "css=#cboHSSearchBy > option:nth-child(7)",
+              "css:finder"
+            ],
+            [
+              "xpath=//option[@value='JudicialOfficer']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//select[@id='cboHSSearchBy']/option[7]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[5]/fieldset/select/option[7]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//option[contains(.,'Judicial Officer')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "ff10d749-ffa3-4762-8452-155f31dcf09f",
+          "comment": "",
+          "command": "click",
+          "target": "css=#judicialOfficerDiv label",
+          "targets": [
+            [
+              "css=#judicialOfficerDiv label",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='judicialOfficerDiv']/fieldset/label",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[12]/fieldset/label",
+              "xpath:position"
+            ],
+            [
+              "xpath=//label[contains(.,'* Select Judicial Officer')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "63e13a2b-6e0f-4c2f-9444-fd446fcbad57",
+          "comment": "",
+          "command": "select",
+          "target": "id=selHSJudicialOfficer",
+          "targets": [],
+          "value": "label=Johnson, Gregory D."
+        },
+        {
+          "id": "e7b4d835-7e9b-4c72-a915-e15d3332c526",
+          "comment": "",
+          "command": "click",
+          "target": "css=option:nth-child(37)",
+          "targets": [
+            [
+              "css=option:nth-child(37)",
+              "css:finder"
+            ],
+            [
+              "xpath=//option[@value='75928']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//select[@id='selHSJudicialOfficer']/option[37]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//option[37]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//option[contains(.,'Johnson, Gregory D.')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "e1e65c72-c2a5-4493-a8ff-806ea447392d",
+          "comment": "",
+          "command": "executeScript",
+          "target": "var f = document.getElementById('SearchCriteria_DateFrom');\nvar t = document.getElementById('SearchCriteria_DateTo');\nif (f) { f.value = '04/13/2025'; $(f).trigger('change'); }\nif (t) { t.value = '05/13/2025'; $(t).trigger('change'); }\nreturn 'Dates set: 04/13/2025 - 05/13/2025';",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "fc3e3c43-1c8a-474d-9ef5-215caf5c6ef7",
+          "comment": "",
+          "command": "click",
+          "target": "id=btnHSSubmit",
+          "targets": [
+            [
+              "id=btnHSSubmit",
+              "id"
+            ],
+            [
+              "css=#btnHSSubmit",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "01b4e178-256e-413b-b7d0-354c06e8101f",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=span.k-pager-info",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "fa53208d-cff0-40a2-90b9-38d26fb09098",
+          "comment": "",
+          "command": "executeScript",
+          "target": "var grid = $('#hearingResultsGrid').data('kendoGrid');\nif (!grid) return 'NO_GRID';\nvar ds = grid.dataSource;\nds.pageSize(99999);\nvar items = ds.data();\nif (items.toJSON) items = items.toJSON();\nvar cols = grid.columns;\nvar csv = '';\nfor (var j = 0; j < cols.length; j++) {\n  csv += (cols[j].title || cols[j].field || 'Col'+j);\n  if (j < cols.length-1) csv += ',';\n}\nfor (var i = 0; i < items.length; i++) {\n  csv += '\\n';\n  for (var j = 0; j < cols.length; j++) {\n    var v = items[i][cols[j].field];\n    if (v === null || v === undefined) v = '';\n    v = String(v).replace(/\"/g, '\"\"');\n    if (v.includes(',') || v.includes('\"') || v.includes('\\n')) v = '\"'+v+'\"';\n    csv += v;\n    if (j < cols.length-1) csv += ',';\n  }\n}\nvar blob = new Blob([csv], {type: 'text/csv'});\nvar a = document.createElement('a');\na.href = URL.createObjectURL(blob);\na.download = 'johnson.csv';\na.style.display = 'none';\ndocument.body.appendChild(a);\na.click();\nsetTimeout(function(){ document.body.removeChild(a); }, 50);\nreturn 'OK '+items.length+' rows';",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "44e92306-7f90-4337-bd9e-71fe023f86da",
+          "comment": "",
+          "command": "pause",
+          "target": "5000",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "7179a607-2225-4594-9f4d-96206d770da7",
+      "name": "Untitled (1) (1) (13)",
+      "commands": [
+        {
+          "id": "d2c58d12-50f9-4ef1-8d12-e0d43448400a",
+          "comment": "",
+          "command": "open",
+          "target": "/PublicPortal/Home/Dashboard/26",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "b4a66de5-a662-48d0-b6fb-15edfefc9432",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "1245x866",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "1494c474-3f9e-4d76-96d8-74a88817d112",
+          "comment": "",
+          "command": "select",
+          "target": "id=cboHSSearchBy",
+          "targets": [],
+          "value": "label=Judicial Officer"
+        },
+        {
+          "id": "faad7fcd-4218-4a26-9bbf-dc4d0554694f",
+          "comment": "",
+          "command": "click",
+          "target": "css=#cboHSSearchBy > option:nth-child(7)",
+          "targets": [
+            [
+              "css=#cboHSSearchBy > option:nth-child(7)",
+              "css:finder"
+            ],
+            [
+              "xpath=//option[@value='JudicialOfficer']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//select[@id='cboHSSearchBy']/option[7]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[5]/fieldset/select/option[7]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//option[contains(.,'Judicial Officer')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "842767b6-8126-4c05-877f-850cbaf8e2a4",
+          "comment": "",
+          "command": "click",
+          "target": "css=#judicialOfficerDiv label",
+          "targets": [
+            [
+              "css=#judicialOfficerDiv label",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='judicialOfficerDiv']/fieldset/label",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[12]/fieldset/label",
+              "xpath:position"
+            ],
+            [
+              "xpath=//label[contains(.,'* Select Judicial Officer')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "8beb4921-8dd2-4489-b936-0f404c7d68b7",
+          "comment": "",
+          "command": "select",
+          "target": "id=selHSJudicialOfficer",
+          "targets": [],
+          "value": "label=Johnson, Gregory D."
+        },
+        {
+          "id": "b87d0d6c-af20-4d13-a2eb-49835c0dd84b",
+          "comment": "",
+          "command": "click",
+          "target": "css=option:nth-child(37)",
+          "targets": [
+            [
+              "css=option:nth-child(37)",
+              "css:finder"
+            ],
+            [
+              "xpath=//option[@value='75928']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//select[@id='selHSJudicialOfficer']/option[37]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//option[37]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//option[contains(.,'Johnson, Gregory D.')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "c401036e-68aa-41f0-bd57-16dc191fb698",
+          "comment": "",
+          "command": "executeScript",
+          "target": "var f = document.getElementById('SearchCriteria_DateFrom');\nvar t = document.getElementById('SearchCriteria_DateTo');\nif (f) { f.value = '03/13/2025'; $(f).trigger('change'); }\nif (t) { t.value = '04/13/2025'; $(t).trigger('change'); }\nreturn 'Dates set: 03/13/2025 - 04/13/2025';",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "fd92c000-6804-4eec-a510-661c28eec2cc",
+          "comment": "",
+          "command": "click",
+          "target": "id=btnHSSubmit",
+          "targets": [
+            [
+              "id=btnHSSubmit",
+              "id"
+            ],
+            [
+              "css=#btnHSSubmit",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "545e8817-f1aa-4333-8a66-a5579e1511f7",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=span.k-pager-info",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "bbfe85c5-4f7c-4593-8a59-9efe1df7e5f2",
+          "comment": "",
+          "command": "executeScript",
+          "target": "var grid = $('#hearingResultsGrid').data('kendoGrid');\nif (!grid) return 'NO_GRID';\nvar ds = grid.dataSource;\nds.pageSize(99999);\nvar items = ds.data();\nif (items.toJSON) items = items.toJSON();\nvar cols = grid.columns;\nvar csv = '';\nfor (var j = 0; j < cols.length; j++) {\n  csv += (cols[j].title || cols[j].field || 'Col'+j);\n  if (j < cols.length-1) csv += ',';\n}\nfor (var i = 0; i < items.length; i++) {\n  csv += '\\n';\n  for (var j = 0; j < cols.length; j++) {\n    var v = items[i][cols[j].field];\n    if (v === null || v === undefined) v = '';\n    v = String(v).replace(/\"/g, '\"\"');\n    if (v.includes(',') || v.includes('\"') || v.includes('\\n')) v = '\"'+v+'\"';\n    csv += v;\n    if (j < cols.length-1) csv += ',';\n  }\n}\nvar blob = new Blob([csv], {type: 'text/csv'});\nvar a = document.createElement('a');\na.href = URL.createObjectURL(blob);\na.download = 'johnson.csv';\na.style.display = 'none';\ndocument.body.appendChild(a);\na.click();\nsetTimeout(function(){ document.body.removeChild(a); }, 50);\nreturn 'OK '+items.length+' rows';",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "311a6e9f-66a7-453a-92c2-c7de6803b552",
+          "comment": "",
+          "command": "pause",
+          "target": "5000",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "9da74824-9501-491c-a370-93d81d2c24aa",
+      "name": "Untitled (1) (1) (14)",
+      "commands": [
+        {
+          "id": "b2633792-0b73-4e52-aec9-7edfece160be",
+          "comment": "",
+          "command": "open",
+          "target": "/PublicPortal/Home/Dashboard/26",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "8388a4dc-fb3a-4c43-99ab-be70997147a2",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "1245x866",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "529718c6-467b-4d86-8456-caf7219d9dfd",
+          "comment": "",
+          "command": "select",
+          "target": "id=cboHSSearchBy",
+          "targets": [],
+          "value": "label=Judicial Officer"
+        },
+        {
+          "id": "affe150e-c8ff-46b8-95fc-8ef2047c7b28",
+          "comment": "",
+          "command": "click",
+          "target": "css=#cboHSSearchBy > option:nth-child(7)",
+          "targets": [
+            [
+              "css=#cboHSSearchBy > option:nth-child(7)",
+              "css:finder"
+            ],
+            [
+              "xpath=//option[@value='JudicialOfficer']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//select[@id='cboHSSearchBy']/option[7]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[5]/fieldset/select/option[7]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//option[contains(.,'Judicial Officer')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "89b06534-6536-4c7d-9f99-250de1fd901d",
+          "comment": "",
+          "command": "click",
+          "target": "css=#judicialOfficerDiv label",
+          "targets": [
+            [
+              "css=#judicialOfficerDiv label",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='judicialOfficerDiv']/fieldset/label",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[12]/fieldset/label",
+              "xpath:position"
+            ],
+            [
+              "xpath=//label[contains(.,'* Select Judicial Officer')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "0f37be96-5a8c-400a-8fb5-08e9221c2233",
+          "comment": "",
+          "command": "select",
+          "target": "id=selHSJudicialOfficer",
+          "targets": [],
+          "value": "label=Johnson, Gregory D."
+        },
+        {
+          "id": "de62d686-2622-4da6-8259-cfdfb30f5343",
+          "comment": "",
+          "command": "click",
+          "target": "css=option:nth-child(37)",
+          "targets": [
+            [
+              "css=option:nth-child(37)",
+              "css:finder"
+            ],
+            [
+              "xpath=//option[@value='75928']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//select[@id='selHSJudicialOfficer']/option[37]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//option[37]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//option[contains(.,'Johnson, Gregory D.')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "2c68baed-08e7-4911-ad53-39b666ce94c2",
+          "comment": "",
+          "command": "executeScript",
+          "target": "var f = document.getElementById('SearchCriteria_DateFrom');\nvar t = document.getElementById('SearchCriteria_DateTo');\nif (f) { f.value = '02/13/2025'; $(f).trigger('change'); }\nif (t) { t.value = '03/13/2025'; $(t).trigger('change'); }\nreturn 'Dates set: 02/13/2025 - 03/13/2025';",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "c14bbeb6-897c-4835-b117-4d4cdbd6b57f",
+          "comment": "",
+          "command": "click",
+          "target": "id=btnHSSubmit",
+          "targets": [
+            [
+              "id=btnHSSubmit",
+              "id"
+            ],
+            [
+              "css=#btnHSSubmit",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "8a8bcfc5-879f-4869-baef-4cedee73f2ab",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=span.k-pager-info",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "7d83c96d-35bb-4302-ba0f-2238f6af0a64",
+          "comment": "",
+          "command": "executeScript",
+          "target": "var grid = $('#hearingResultsGrid').data('kendoGrid');\nif (!grid) return 'NO_GRID';\nvar ds = grid.dataSource;\nds.pageSize(99999);\nvar items = ds.data();\nif (items.toJSON) items = items.toJSON();\nvar cols = grid.columns;\nvar csv = '';\nfor (var j = 0; j < cols.length; j++) {\n  csv += (cols[j].title || cols[j].field || 'Col'+j);\n  if (j < cols.length-1) csv += ',';\n}\nfor (var i = 0; i < items.length; i++) {\n  csv += '\\n';\n  for (var j = 0; j < cols.length; j++) {\n    var v = items[i][cols[j].field];\n    if (v === null || v === undefined) v = '';\n    v = String(v).replace(/\"/g, '\"\"');\n    if (v.includes(',') || v.includes('\"') || v.includes('\\n')) v = '\"'+v+'\"';\n    csv += v;\n    if (j < cols.length-1) csv += ',';\n  }\n}\nvar blob = new Blob([csv], {type: 'text/csv'});\nvar a = document.createElement('a');\na.href = URL.createObjectURL(blob);\na.download = 'johnson.csv';\na.style.display = 'none';\ndocument.body.appendChild(a);\na.click();\nsetTimeout(function(){ document.body.removeChild(a); }, 50);\nreturn 'OK '+items.length+' rows';",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "253926b0-daac-4ecd-92bb-bec01af00aec",
+          "comment": "",
+          "command": "pause",
+          "target": "5000",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "87a0d682-a50c-401d-a1a3-2498fb7cf489",
+      "name": "Untitled (1) (1) (15)",
+      "commands": [
+        {
+          "id": "d0fadab2-60e1-42a0-9c51-156ca564d620",
+          "comment": "",
+          "command": "open",
+          "target": "/PublicPortal/Home/Dashboard/26",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "67084e38-3b0e-4ede-a0a1-42c9aa1167d5",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "1245x866",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "89f72757-952c-4768-8651-92bbbfb997b0",
+          "comment": "",
+          "command": "select",
+          "target": "id=cboHSSearchBy",
+          "targets": [],
+          "value": "label=Judicial Officer"
+        },
+        {
+          "id": "5fa24b26-7b9c-4779-8db9-d5992da255e9",
+          "comment": "",
+          "command": "click",
+          "target": "css=#cboHSSearchBy > option:nth-child(7)",
+          "targets": [
+            [
+              "css=#cboHSSearchBy > option:nth-child(7)",
+              "css:finder"
+            ],
+            [
+              "xpath=//option[@value='JudicialOfficer']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//select[@id='cboHSSearchBy']/option[7]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[5]/fieldset/select/option[7]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//option[contains(.,'Judicial Officer')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "3c42e315-bd0d-4cf0-909a-f3d01124f645",
+          "comment": "",
+          "command": "click",
+          "target": "css=#judicialOfficerDiv label",
+          "targets": [
+            [
+              "css=#judicialOfficerDiv label",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='judicialOfficerDiv']/fieldset/label",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[12]/fieldset/label",
+              "xpath:position"
+            ],
+            [
+              "xpath=//label[contains(.,'* Select Judicial Officer')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "42bffe1c-0616-49c0-b115-46bec07108d6",
+          "comment": "",
+          "command": "select",
+          "target": "id=selHSJudicialOfficer",
+          "targets": [],
+          "value": "label=Johnson, Gregory D."
+        },
+        {
+          "id": "4270c82f-9fd7-4c27-9405-4290cf59a7da",
+          "comment": "",
+          "command": "click",
+          "target": "css=option:nth-child(37)",
+          "targets": [
+            [
+              "css=option:nth-child(37)",
+              "css:finder"
+            ],
+            [
+              "xpath=//option[@value='75928']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//select[@id='selHSJudicialOfficer']/option[37]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//option[37]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//option[contains(.,'Johnson, Gregory D.')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "eec9e900-6715-4170-8cf8-c952c02556f2",
+          "comment": "",
+          "command": "executeScript",
+          "target": "var f = document.getElementById('SearchCriteria_DateFrom');\nvar t = document.getElementById('SearchCriteria_DateTo');\nif (f) { f.value = '01/13/2025'; $(f).trigger('change'); }\nif (t) { t.value = '02/13/2025'; $(t).trigger('change'); }\nreturn 'Dates set: 01/13/2025 - 02/13/2025';",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "035918b9-0418-4e53-bfd8-339792400a47",
+          "comment": "",
+          "command": "click",
+          "target": "id=btnHSSubmit",
+          "targets": [
+            [
+              "id=btnHSSubmit",
+              "id"
+            ],
+            [
+              "css=#btnHSSubmit",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "8de170d6-66fb-48b1-b1e7-a7ef4666bf35",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=span.k-pager-info",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "54b38e71-cfbd-41dc-b3f9-b16fab58118e",
+          "comment": "",
+          "command": "executeScript",
+          "target": "var grid = $('#hearingResultsGrid').data('kendoGrid');\nif (!grid) return 'NO_GRID';\nvar ds = grid.dataSource;\nds.pageSize(99999);\nvar items = ds.data();\nif (items.toJSON) items = items.toJSON();\nvar cols = grid.columns;\nvar csv = '';\nfor (var j = 0; j < cols.length; j++) {\n  csv += (cols[j].title || cols[j].field || 'Col'+j);\n  if (j < cols.length-1) csv += ',';\n}\nfor (var i = 0; i < items.length; i++) {\n  csv += '\\n';\n  for (var j = 0; j < cols.length; j++) {\n    var v = items[i][cols[j].field];\n    if (v === null || v === undefined) v = '';\n    v = String(v).replace(/\"/g, '\"\"');\n    if (v.includes(',') || v.includes('\"') || v.includes('\\n')) v = '\"'+v+'\"';\n    csv += v;\n    if (j < cols.length-1) csv += ',';\n  }\n}\nvar blob = new Blob([csv], {type: 'text/csv'});\nvar a = document.createElement('a');\na.href = URL.createObjectURL(blob);\na.download = 'johnson.csv';\na.style.display = 'none';\ndocument.body.appendChild(a);\na.click();\nsetTimeout(function(){ document.body.removeChild(a); }, 50);\nreturn 'OK '+items.length+' rows';",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "37cf2c76-b4ee-4d3e-93fc-10f32c317154",
+          "comment": "",
+          "command": "pause",
+          "target": "5000",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "ab0fcc3a-fdc7-4038-b6cc-11397f2da041",
+      "name": "Untitled (1) (1) (16)",
+      "commands": [
+        {
+          "id": "af0b0d8b-2e13-4d23-b69c-3a0c54b67ae2",
+          "comment": "",
+          "command": "open",
+          "target": "/PublicPortal/Home/Dashboard/26",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "5d95f818-2804-4cf2-8686-1649e9e5a5d5",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "1245x866",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "8a5dd702-430f-4d9a-a78f-a47d49589ecf",
+          "comment": "",
+          "command": "select",
+          "target": "id=cboHSSearchBy",
+          "targets": [],
+          "value": "label=Judicial Officer"
+        },
+        {
+          "id": "26e05182-4660-4195-8124-a2bfd69fce6b",
+          "comment": "",
+          "command": "click",
+          "target": "css=#cboHSSearchBy > option:nth-child(7)",
+          "targets": [
+            [
+              "css=#cboHSSearchBy > option:nth-child(7)",
+              "css:finder"
+            ],
+            [
+              "xpath=//option[@value='JudicialOfficer']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//select[@id='cboHSSearchBy']/option[7]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[5]/fieldset/select/option[7]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//option[contains(.,'Judicial Officer')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "99ceb371-16e7-4907-b17b-c4baa05bf892",
+          "comment": "",
+          "command": "click",
+          "target": "css=#judicialOfficerDiv label",
+          "targets": [
+            [
+              "css=#judicialOfficerDiv label",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='judicialOfficerDiv']/fieldset/label",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[12]/fieldset/label",
+              "xpath:position"
+            ],
+            [
+              "xpath=//label[contains(.,'* Select Judicial Officer')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "53b53d03-36f1-4083-8276-6771cbaa81df",
+          "comment": "",
+          "command": "select",
+          "target": "id=selHSJudicialOfficer",
+          "targets": [],
+          "value": "label=Johnson, Gregory D."
+        },
+        {
+          "id": "3a5b23fd-686d-40d9-a0aa-8bdab564429b",
+          "comment": "",
+          "command": "click",
+          "target": "css=option:nth-child(37)",
+          "targets": [
+            [
+              "css=option:nth-child(37)",
+              "css:finder"
+            ],
+            [
+              "xpath=//option[@value='75928']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//select[@id='selHSJudicialOfficer']/option[37]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//option[37]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//option[contains(.,'Johnson, Gregory D.')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "35c56760-098c-4f7e-8071-477967ff9b66",
+          "comment": "",
+          "command": "executeScript",
+          "target": "var f = document.getElementById('SearchCriteria_DateFrom');\nvar t = document.getElementById('SearchCriteria_DateTo');\nif (f) { f.value = '12/13/2024'; $(f).trigger('change'); }\nif (t) { t.value = '01/13/2025'; $(t).trigger('change'); }\nreturn 'Dates set: 12/13/2024 - 01/13/2025';",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "f444165b-2e28-4469-94bd-99285fcb4182",
+          "comment": "",
+          "command": "click",
+          "target": "id=btnHSSubmit",
+          "targets": [
+            [
+              "id=btnHSSubmit",
+              "id"
+            ],
+            [
+              "css=#btnHSSubmit",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "6cc96758-f28e-42d3-8010-3412bb8b90e7",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=span.k-pager-info",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "adda6a7d-7a0f-4762-b929-9847bbd2e4fd",
+          "comment": "",
+          "command": "executeScript",
+          "target": "var grid = $('#hearingResultsGrid').data('kendoGrid');\nif (!grid) return 'NO_GRID';\nvar ds = grid.dataSource;\nds.pageSize(99999);\nvar items = ds.data();\nif (items.toJSON) items = items.toJSON();\nvar cols = grid.columns;\nvar csv = '';\nfor (var j = 0; j < cols.length; j++) {\n  csv += (cols[j].title || cols[j].field || 'Col'+j);\n  if (j < cols.length-1) csv += ',';\n}\nfor (var i = 0; i < items.length; i++) {\n  csv += '\\n';\n  for (var j = 0; j < cols.length; j++) {\n    var v = items[i][cols[j].field];\n    if (v === null || v === undefined) v = '';\n    v = String(v).replace(/\"/g, '\"\"');\n    if (v.includes(',') || v.includes('\"') || v.includes('\\n')) v = '\"'+v+'\"';\n    csv += v;\n    if (j < cols.length-1) csv += ',';\n  }\n}\nvar blob = new Blob([csv], {type: 'text/csv'});\nvar a = document.createElement('a');\na.href = URL.createObjectURL(blob);\na.download = 'johnson.csv';\na.style.display = 'none';\ndocument.body.appendChild(a);\na.click();\nsetTimeout(function(){ document.body.removeChild(a); }, 50);\nreturn 'OK '+items.length+' rows';",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "b9a75ff4-652b-4d8a-a7cd-fb3cc2dd6678",
+          "comment": "",
+          "command": "pause",
+          "target": "5000",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "90cb4532-b425-49fe-b28a-9092960904ec",
+      "name": "Untitled (1) (1) (17)",
+      "commands": [
+        {
+          "id": "9077b1a1-ae46-41db-9877-c3ee43aa0101",
+          "comment": "",
+          "command": "open",
+          "target": "/PublicPortal/Home/Dashboard/26",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "5de551b9-6a65-4427-a4c1-b13dd0f0604b",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "1245x866",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "95529c60-c24c-4628-be74-0417ae9d52c3",
+          "comment": "",
+          "command": "select",
+          "target": "id=cboHSSearchBy",
+          "targets": [],
+          "value": "label=Judicial Officer"
+        },
+        {
+          "id": "1fcba86a-1de8-47df-b52f-356fee8994d8",
+          "comment": "",
+          "command": "click",
+          "target": "css=#cboHSSearchBy > option:nth-child(7)",
+          "targets": [
+            [
+              "css=#cboHSSearchBy > option:nth-child(7)",
+              "css:finder"
+            ],
+            [
+              "xpath=//option[@value='JudicialOfficer']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//select[@id='cboHSSearchBy']/option[7]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[5]/fieldset/select/option[7]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//option[contains(.,'Judicial Officer')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "86b4ab59-adc1-4d59-8a20-94f2c54c2931",
+          "comment": "",
+          "command": "click",
+          "target": "css=#judicialOfficerDiv label",
+          "targets": [
+            [
+              "css=#judicialOfficerDiv label",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='judicialOfficerDiv']/fieldset/label",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[12]/fieldset/label",
+              "xpath:position"
+            ],
+            [
+              "xpath=//label[contains(.,'* Select Judicial Officer')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "bcbf501f-6286-413e-ac4d-a78d1178eb53",
+          "comment": "",
+          "command": "select",
+          "target": "id=selHSJudicialOfficer",
+          "targets": [],
+          "value": "label=Johnson, Gregory D."
+        },
+        {
+          "id": "6c041846-ee84-489a-8b63-5e9807b23985",
+          "comment": "",
+          "command": "click",
+          "target": "css=option:nth-child(37)",
+          "targets": [
+            [
+              "css=option:nth-child(37)",
+              "css:finder"
+            ],
+            [
+              "xpath=//option[@value='75928']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//select[@id='selHSJudicialOfficer']/option[37]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//option[37]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//option[contains(.,'Johnson, Gregory D.')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "329ef01f-7d62-4744-86bf-03ab5683a30e",
+          "comment": "",
+          "command": "executeScript",
+          "target": "var f = document.getElementById('SearchCriteria_DateFrom');\nvar t = document.getElementById('SearchCriteria_DateTo');\nif (f) { f.value = '11/13/2024'; $(f).trigger('change'); }\nif (t) { t.value = '12/13/2024'; $(t).trigger('change'); }\nreturn 'Dates set: 11/13/2024 - 12/13/2024';",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "c0eeff12-44d2-4e61-a6ed-a7a9dfcaeed0",
+          "comment": "",
+          "command": "click",
+          "target": "id=btnHSSubmit",
+          "targets": [
+            [
+              "id=btnHSSubmit",
+              "id"
+            ],
+            [
+              "css=#btnHSSubmit",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "6a673bd0-6205-4f82-af34-3a9f2cddf0cf",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=span.k-pager-info",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "c341768d-9f4c-44d7-ba04-5e6a23632a00",
+          "comment": "",
+          "command": "executeScript",
+          "target": "var grid = $('#hearingResultsGrid').data('kendoGrid');\nif (!grid) return 'NO_GRID';\nvar ds = grid.dataSource;\nds.pageSize(99999);\nvar items = ds.data();\nif (items.toJSON) items = items.toJSON();\nvar cols = grid.columns;\nvar csv = '';\nfor (var j = 0; j < cols.length; j++) {\n  csv += (cols[j].title || cols[j].field || 'Col'+j);\n  if (j < cols.length-1) csv += ',';\n}\nfor (var i = 0; i < items.length; i++) {\n  csv += '\\n';\n  for (var j = 0; j < cols.length; j++) {\n    var v = items[i][cols[j].field];\n    if (v === null || v === undefined) v = '';\n    v = String(v).replace(/\"/g, '\"\"');\n    if (v.includes(',') || v.includes('\"') || v.includes('\\n')) v = '\"'+v+'\"';\n    csv += v;\n    if (j < cols.length-1) csv += ',';\n  }\n}\nvar blob = new Blob([csv], {type: 'text/csv'});\nvar a = document.createElement('a');\na.href = URL.createObjectURL(blob);\na.download = 'johnson.csv';\na.style.display = 'none';\ndocument.body.appendChild(a);\na.click();\nsetTimeout(function(){ document.body.removeChild(a); }, 50);\nreturn 'OK '+items.length+' rows';",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "7f142f69-5785-48f7-8c80-92b140917aeb",
+          "comment": "",
+          "command": "pause",
+          "target": "5000",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "ec95c4c6-3a5a-4769-a722-f4781b3cd337",
+      "name": "Untitled (1) (1) (18)",
+      "commands": [
+        {
+          "id": "926b8dce-2ed9-44ed-9ede-2746227860bc",
+          "comment": "",
+          "command": "open",
+          "target": "/PublicPortal/Home/Dashboard/26",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "0d11ef91-9242-4c02-8dc5-eb37d29e6238",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "1245x866",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "879cd810-9225-42a6-8009-ebefc3945ba6",
+          "comment": "",
+          "command": "select",
+          "target": "id=cboHSSearchBy",
+          "targets": [],
+          "value": "label=Judicial Officer"
+        },
+        {
+          "id": "ce342710-caba-4779-a9ba-ed4b15b91ab0",
+          "comment": "",
+          "command": "click",
+          "target": "css=#cboHSSearchBy > option:nth-child(7)",
+          "targets": [
+            [
+              "css=#cboHSSearchBy > option:nth-child(7)",
+              "css:finder"
+            ],
+            [
+              "xpath=//option[@value='JudicialOfficer']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//select[@id='cboHSSearchBy']/option[7]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[5]/fieldset/select/option[7]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//option[contains(.,'Judicial Officer')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "2308339b-1bfd-4448-b2ad-3c237205d31e",
+          "comment": "",
+          "command": "click",
+          "target": "css=#judicialOfficerDiv label",
+          "targets": [
+            [
+              "css=#judicialOfficerDiv label",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='judicialOfficerDiv']/fieldset/label",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[12]/fieldset/label",
+              "xpath:position"
+            ],
+            [
+              "xpath=//label[contains(.,'* Select Judicial Officer')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "d4b323a3-9071-4a32-855a-ec971d81c96f",
+          "comment": "",
+          "command": "select",
+          "target": "id=selHSJudicialOfficer",
+          "targets": [],
+          "value": "label=Johnson, Gregory D."
+        },
+        {
+          "id": "5da19175-a965-4265-b9ea-cb5ea76d7cf7",
+          "comment": "",
+          "command": "click",
+          "target": "css=option:nth-child(37)",
+          "targets": [
+            [
+              "css=option:nth-child(37)",
+              "css:finder"
+            ],
+            [
+              "xpath=//option[@value='75928']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//select[@id='selHSJudicialOfficer']/option[37]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//option[37]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//option[contains(.,'Johnson, Gregory D.')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "dd05986f-2bf4-4336-a18f-c14ab788041d",
+          "comment": "",
+          "command": "executeScript",
+          "target": "var f = document.getElementById('SearchCriteria_DateFrom');\nvar t = document.getElementById('SearchCriteria_DateTo');\nif (f) { f.value = '10/13/2024'; $(f).trigger('change'); }\nif (t) { t.value = '11/13/2024'; $(t).trigger('change'); }\nreturn 'Dates set: 10/13/2024 - 11/13/2024';",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "80858182-f6f7-4537-b14f-d8b8a1085421",
+          "comment": "",
+          "command": "click",
+          "target": "id=btnHSSubmit",
+          "targets": [
+            [
+              "id=btnHSSubmit",
+              "id"
+            ],
+            [
+              "css=#btnHSSubmit",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "5e8773af-c3a4-47c8-905f-5c2d23710f67",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=span.k-pager-info",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "5f342c59-4b77-4bdb-ad7e-4ee6b7b22845",
+          "comment": "",
+          "command": "executeScript",
+          "target": "var grid = $('#hearingResultsGrid').data('kendoGrid');\nif (!grid) return 'NO_GRID';\nvar ds = grid.dataSource;\nds.pageSize(99999);\nvar items = ds.data();\nif (items.toJSON) items = items.toJSON();\nvar cols = grid.columns;\nvar csv = '';\nfor (var j = 0; j < cols.length; j++) {\n  csv += (cols[j].title || cols[j].field || 'Col'+j);\n  if (j < cols.length-1) csv += ',';\n}\nfor (var i = 0; i < items.length; i++) {\n  csv += '\\n';\n  for (var j = 0; j < cols.length; j++) {\n    var v = items[i][cols[j].field];\n    if (v === null || v === undefined) v = '';\n    v = String(v).replace(/\"/g, '\"\"');\n    if (v.includes(',') || v.includes('\"') || v.includes('\\n')) v = '\"'+v+'\"';\n    csv += v;\n    if (j < cols.length-1) csv += ',';\n  }\n}\nvar blob = new Blob([csv], {type: 'text/csv'});\nvar a = document.createElement('a');\na.href = URL.createObjectURL(blob);\na.download = 'johnson.csv';\na.style.display = 'none';\ndocument.body.appendChild(a);\na.click();\nsetTimeout(function(){ document.body.removeChild(a); }, 50);\nreturn 'OK '+items.length+' rows';",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "dbe83730-6aeb-4eba-8593-39410d930214",
+          "comment": "",
+          "command": "pause",
+          "target": "5000",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "3413bad1-0d3f-4d27-b4b5-e101d120b9ce",
+      "name": "Untitled (1) (1) (19)",
+      "commands": [
+        {
+          "id": "be69109a-b6fe-4128-a2cf-c89c33cbe800",
+          "comment": "",
+          "command": "open",
+          "target": "/PublicPortal/Home/Dashboard/26",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "02404cc0-cd44-4906-883e-ae36f57eecae",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "1245x866",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "c3782ab7-8efd-49f1-b67a-879e13f66ea7",
+          "comment": "",
+          "command": "select",
+          "target": "id=cboHSSearchBy",
+          "targets": [],
+          "value": "label=Judicial Officer"
+        },
+        {
+          "id": "adf5b194-3d8b-4c25-bf98-febb75324ba5",
+          "comment": "",
+          "command": "click",
+          "target": "css=#cboHSSearchBy > option:nth-child(7)",
+          "targets": [
+            [
+              "css=#cboHSSearchBy > option:nth-child(7)",
+              "css:finder"
+            ],
+            [
+              "xpath=//option[@value='JudicialOfficer']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//select[@id='cboHSSearchBy']/option[7]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[5]/fieldset/select/option[7]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//option[contains(.,'Judicial Officer')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "af8d86a0-f43a-49cd-bd96-0f3e26a9397e",
+          "comment": "",
+          "command": "click",
+          "target": "css=#judicialOfficerDiv label",
+          "targets": [
+            [
+              "css=#judicialOfficerDiv label",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='judicialOfficerDiv']/fieldset/label",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[12]/fieldset/label",
+              "xpath:position"
+            ],
+            [
+              "xpath=//label[contains(.,'* Select Judicial Officer')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "4647b767-a8ac-4a7a-84eb-774f4a40f21f",
+          "comment": "",
+          "command": "select",
+          "target": "id=selHSJudicialOfficer",
+          "targets": [],
+          "value": "label=Johnson, Gregory D."
+        },
+        {
+          "id": "ff7f8649-3fea-412d-9e59-98ac94a2cf55",
+          "comment": "",
+          "command": "click",
+          "target": "css=option:nth-child(37)",
+          "targets": [
+            [
+              "css=option:nth-child(37)",
+              "css:finder"
+            ],
+            [
+              "xpath=//option[@value='75928']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//select[@id='selHSJudicialOfficer']/option[37]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//option[37]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//option[contains(.,'Johnson, Gregory D.')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "08033412-d910-4626-87aa-87f01694622c",
+          "comment": "",
+          "command": "executeScript",
+          "target": "var f = document.getElementById('SearchCriteria_DateFrom');\nvar t = document.getElementById('SearchCriteria_DateTo');\nif (f) { f.value = '09/13/2024'; $(f).trigger('change'); }\nif (t) { t.value = '10/13/2024'; $(t).trigger('change'); }\nreturn 'Dates set: 09/13/2024 - 10/13/2024';",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "46c00a77-6452-4a5c-933a-6f7dbce1a131",
+          "comment": "",
+          "command": "click",
+          "target": "id=btnHSSubmit",
+          "targets": [
+            [
+              "id=btnHSSubmit",
+              "id"
+            ],
+            [
+              "css=#btnHSSubmit",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "468142d6-ddd8-4594-8df2-c37ab522c691",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=span.k-pager-info",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "37d272d8-6b25-4b5b-a06f-e3e94889292f",
+          "comment": "",
+          "command": "executeScript",
+          "target": "var grid = $('#hearingResultsGrid').data('kendoGrid');\nif (!grid) return 'NO_GRID';\nvar ds = grid.dataSource;\nds.pageSize(99999);\nvar items = ds.data();\nif (items.toJSON) items = items.toJSON();\nvar cols = grid.columns;\nvar csv = '';\nfor (var j = 0; j < cols.length; j++) {\n  csv += (cols[j].title || cols[j].field || 'Col'+j);\n  if (j < cols.length-1) csv += ',';\n}\nfor (var i = 0; i < items.length; i++) {\n  csv += '\\n';\n  for (var j = 0; j < cols.length; j++) {\n    var v = items[i][cols[j].field];\n    if (v === null || v === undefined) v = '';\n    v = String(v).replace(/\"/g, '\"\"');\n    if (v.includes(',') || v.includes('\"') || v.includes('\\n')) v = '\"'+v+'\"';\n    csv += v;\n    if (j < cols.length-1) csv += ',';\n  }\n}\nvar blob = new Blob([csv], {type: 'text/csv'});\nvar a = document.createElement('a');\na.href = URL.createObjectURL(blob);\na.download = 'johnson.csv';\na.style.display = 'none';\ndocument.body.appendChild(a);\na.click();\nsetTimeout(function(){ document.body.removeChild(a); }, 50);\nreturn 'OK '+items.length+' rows';",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "9196f8bb-df2a-4c4f-bdd2-eb6d65405c41",
+          "comment": "",
+          "command": "pause",
+          "target": "5000",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "50542f92-c552-4a00-a2e8-83f4846cd76b",
+      "name": "Untitled (1) (1) (20)",
+      "commands": [
+        {
+          "id": "fce67dc8-09e9-4b0b-a902-1c894bea92d1",
+          "comment": "",
+          "command": "open",
+          "target": "/PublicPortal/Home/Dashboard/26",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "7af66c18-9b8b-483a-8535-087ae3017d55",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "1245x866",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "6422c88a-3a59-485e-970b-2da815df6679",
+          "comment": "",
+          "command": "select",
+          "target": "id=cboHSSearchBy",
+          "targets": [],
+          "value": "label=Judicial Officer"
+        },
+        {
+          "id": "3ee17067-bbd9-4033-ba94-26e4827a4c3c",
+          "comment": "",
+          "command": "click",
+          "target": "css=#cboHSSearchBy > option:nth-child(7)",
+          "targets": [
+            [
+              "css=#cboHSSearchBy > option:nth-child(7)",
+              "css:finder"
+            ],
+            [
+              "xpath=//option[@value='JudicialOfficer']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//select[@id='cboHSSearchBy']/option[7]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[5]/fieldset/select/option[7]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//option[contains(.,'Judicial Officer')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "6e21f120-9b04-42fe-919b-6535659cb92a",
+          "comment": "",
+          "command": "click",
+          "target": "css=#judicialOfficerDiv label",
+          "targets": [
+            [
+              "css=#judicialOfficerDiv label",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='judicialOfficerDiv']/fieldset/label",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[12]/fieldset/label",
+              "xpath:position"
+            ],
+            [
+              "xpath=//label[contains(.,'* Select Judicial Officer')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "143b8aab-35f5-4331-a5fa-477ac31f1e6d",
+          "comment": "",
+          "command": "select",
+          "target": "id=selHSJudicialOfficer",
+          "targets": [],
+          "value": "label=Johnson, Gregory D."
+        },
+        {
+          "id": "2a9e33a6-cc8f-42a7-b763-907b7651c667",
+          "comment": "",
+          "command": "click",
+          "target": "css=option:nth-child(37)",
+          "targets": [
+            [
+              "css=option:nth-child(37)",
+              "css:finder"
+            ],
+            [
+              "xpath=//option[@value='75928']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//select[@id='selHSJudicialOfficer']/option[37]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//option[37]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//option[contains(.,'Johnson, Gregory D.')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "8a8181b9-6225-4fdf-9f6e-9ff0504564ef",
+          "comment": "",
+          "command": "executeScript",
+          "target": "var f = document.getElementById('SearchCriteria_DateFrom');\nvar t = document.getElementById('SearchCriteria_DateTo');\nif (f) { f.value = '08/13/2024'; $(f).trigger('change'); }\nif (t) { t.value = '09/13/2024'; $(t).trigger('change'); }\nreturn 'Dates set: 08/13/2024 - 09/13/2024';",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "7b1ba2d4-3208-488c-8b2d-f46d10fb3718",
+          "comment": "",
+          "command": "click",
+          "target": "id=btnHSSubmit",
+          "targets": [
+            [
+              "id=btnHSSubmit",
+              "id"
+            ],
+            [
+              "css=#btnHSSubmit",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "b8918c69-f050-44ae-91e8-e2ebb43864ff",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=span.k-pager-info",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "62688a41-6249-4c26-9e89-2646581c9a12",
+          "comment": "",
+          "command": "executeScript",
+          "target": "var grid = $('#hearingResultsGrid').data('kendoGrid');\nif (!grid) return 'NO_GRID';\nvar ds = grid.dataSource;\nds.pageSize(99999);\nvar items = ds.data();\nif (items.toJSON) items = items.toJSON();\nvar cols = grid.columns;\nvar csv = '';\nfor (var j = 0; j < cols.length; j++) {\n  csv += (cols[j].title || cols[j].field || 'Col'+j);\n  if (j < cols.length-1) csv += ',';\n}\nfor (var i = 0; i < items.length; i++) {\n  csv += '\\n';\n  for (var j = 0; j < cols.length; j++) {\n    var v = items[i][cols[j].field];\n    if (v === null || v === undefined) v = '';\n    v = String(v).replace(/\"/g, '\"\"');\n    if (v.includes(',') || v.includes('\"') || v.includes('\\n')) v = '\"'+v+'\"';\n    csv += v;\n    if (j < cols.length-1) csv += ',';\n  }\n}\nvar blob = new Blob([csv], {type: 'text/csv'});\nvar a = document.createElement('a');\na.href = URL.createObjectURL(blob);\na.download = 'johnson.csv';\na.style.display = 'none';\ndocument.body.appendChild(a);\na.click();\nsetTimeout(function(){ document.body.removeChild(a); }, 50);\nreturn 'OK '+items.length+' rows';",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "79833e46-09d4-4308-9493-17d869dc9bb4",
+          "comment": "",
+          "command": "pause",
+          "target": "5000",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "b303e019-9f7c-4463-8288-5685376f4ca7",
+      "name": "Untitled (1) (1) (21)",
+      "commands": [
+        {
+          "id": "1df9cc83-fa3a-4070-a982-49eb94b45750",
+          "comment": "",
+          "command": "open",
+          "target": "/PublicPortal/Home/Dashboard/26",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "b63467a9-e95d-4d72-bb38-1683c6524ed6",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "1245x866",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "c342c6b6-5461-400a-a3fa-29983a39b184",
+          "comment": "",
+          "command": "select",
+          "target": "id=cboHSSearchBy",
+          "targets": [],
+          "value": "label=Judicial Officer"
+        },
+        {
+          "id": "4b35f1d3-abda-4c85-9e3e-731ac600e8f1",
+          "comment": "",
+          "command": "click",
+          "target": "css=#cboHSSearchBy > option:nth-child(7)",
+          "targets": [
+            [
+              "css=#cboHSSearchBy > option:nth-child(7)",
+              "css:finder"
+            ],
+            [
+              "xpath=//option[@value='JudicialOfficer']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//select[@id='cboHSSearchBy']/option[7]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[5]/fieldset/select/option[7]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//option[contains(.,'Judicial Officer')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "23decfee-d15e-44a1-8048-b2ddd4f551be",
+          "comment": "",
+          "command": "click",
+          "target": "css=#judicialOfficerDiv label",
+          "targets": [
+            [
+              "css=#judicialOfficerDiv label",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='judicialOfficerDiv']/fieldset/label",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[12]/fieldset/label",
+              "xpath:position"
+            ],
+            [
+              "xpath=//label[contains(.,'* Select Judicial Officer')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "9fe26977-83f9-4cc5-990d-faf4f1a8170f",
+          "comment": "",
+          "command": "select",
+          "target": "id=selHSJudicialOfficer",
+          "targets": [],
+          "value": "label=Johnson, Gregory D."
+        },
+        {
+          "id": "865338d9-3bcb-43e1-a825-680c0265ccee",
+          "comment": "",
+          "command": "click",
+          "target": "css=option:nth-child(37)",
+          "targets": [
+            [
+              "css=option:nth-child(37)",
+              "css:finder"
+            ],
+            [
+              "xpath=//option[@value='75928']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//select[@id='selHSJudicialOfficer']/option[37]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//option[37]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//option[contains(.,'Johnson, Gregory D.')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "61ea37ba-35bd-4f65-a1ed-4a4d0cf7b13c",
+          "comment": "",
+          "command": "executeScript",
+          "target": "var f = document.getElementById('SearchCriteria_DateFrom');\nvar t = document.getElementById('SearchCriteria_DateTo');\nif (f) { f.value = '07/13/2024'; $(f).trigger('change'); }\nif (t) { t.value = '08/13/2024'; $(t).trigger('change'); }\nreturn 'Dates set: 07/13/2024 - 08/13/2024';",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "713b8757-af94-4d8c-a1d2-2acb5ebc7a4a",
+          "comment": "",
+          "command": "click",
+          "target": "id=btnHSSubmit",
+          "targets": [
+            [
+              "id=btnHSSubmit",
+              "id"
+            ],
+            [
+              "css=#btnHSSubmit",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "bbc87d16-1758-431e-8456-f1f04159b820",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=span.k-pager-info",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "01d87ce1-14d8-409c-8bdc-c940f7174ca5",
+          "comment": "",
+          "command": "executeScript",
+          "target": "var grid = $('#hearingResultsGrid').data('kendoGrid');\nif (!grid) return 'NO_GRID';\nvar ds = grid.dataSource;\nds.pageSize(99999);\nvar items = ds.data();\nif (items.toJSON) items = items.toJSON();\nvar cols = grid.columns;\nvar csv = '';\nfor (var j = 0; j < cols.length; j++) {\n  csv += (cols[j].title || cols[j].field || 'Col'+j);\n  if (j < cols.length-1) csv += ',';\n}\nfor (var i = 0; i < items.length; i++) {\n  csv += '\\n';\n  for (var j = 0; j < cols.length; j++) {\n    var v = items[i][cols[j].field];\n    if (v === null || v === undefined) v = '';\n    v = String(v).replace(/\"/g, '\"\"');\n    if (v.includes(',') || v.includes('\"') || v.includes('\\n')) v = '\"'+v+'\"';\n    csv += v;\n    if (j < cols.length-1) csv += ',';\n  }\n}\nvar blob = new Blob([csv], {type: 'text/csv'});\nvar a = document.createElement('a');\na.href = URL.createObjectURL(blob);\na.download = 'johnson.csv';\na.style.display = 'none';\ndocument.body.appendChild(a);\na.click();\nsetTimeout(function(){ document.body.removeChild(a); }, 50);\nreturn 'OK '+items.length+' rows';",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "5dac0d36-eea4-4aad-878e-b8b8c9844cf3",
+          "comment": "",
+          "command": "pause",
+          "target": "5000",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "71cdcbf0-02ad-4621-b3bb-c74351d864bc",
+      "name": "Untitled (1) (1) (22)",
+      "commands": [
+        {
+          "id": "4e02c32c-85ec-40bd-b2d8-57e2f6ca233f",
+          "comment": "",
+          "command": "open",
+          "target": "/PublicPortal/Home/Dashboard/26",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "2cebd719-6a19-4a2e-b47d-1f2aefc3feae",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "1245x866",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "b5c1e2e5-8b83-46c6-ac42-328a99d39757",
+          "comment": "",
+          "command": "select",
+          "target": "id=cboHSSearchBy",
+          "targets": [],
+          "value": "label=Judicial Officer"
+        },
+        {
+          "id": "cdb47ff8-97af-49d4-969c-c690eacd171c",
+          "comment": "",
+          "command": "click",
+          "target": "css=#cboHSSearchBy > option:nth-child(7)",
+          "targets": [
+            [
+              "css=#cboHSSearchBy > option:nth-child(7)",
+              "css:finder"
+            ],
+            [
+              "xpath=//option[@value='JudicialOfficer']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//select[@id='cboHSSearchBy']/option[7]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[5]/fieldset/select/option[7]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//option[contains(.,'Judicial Officer')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "a8f0d135-1a0e-4bfe-9dba-c21d7f6ece37",
+          "comment": "",
+          "command": "click",
+          "target": "css=#judicialOfficerDiv label",
+          "targets": [
+            [
+              "css=#judicialOfficerDiv label",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='judicialOfficerDiv']/fieldset/label",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[12]/fieldset/label",
+              "xpath:position"
+            ],
+            [
+              "xpath=//label[contains(.,'* Select Judicial Officer')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "0610b0d7-f952-4033-8046-a9f7438ed52a",
+          "comment": "",
+          "command": "select",
+          "target": "id=selHSJudicialOfficer",
+          "targets": [],
+          "value": "label=Johnson, Gregory D."
+        },
+        {
+          "id": "ac38e9c5-9b1e-488d-b865-08ed62d30e2e",
+          "comment": "",
+          "command": "click",
+          "target": "css=option:nth-child(37)",
+          "targets": [
+            [
+              "css=option:nth-child(37)",
+              "css:finder"
+            ],
+            [
+              "xpath=//option[@value='75928']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//select[@id='selHSJudicialOfficer']/option[37]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//option[37]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//option[contains(.,'Johnson, Gregory D.')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "98c09ada-02b7-4e9c-b4e9-4832740f7b2a",
+          "comment": "",
+          "command": "executeScript",
+          "target": "var f = document.getElementById('SearchCriteria_DateFrom');\nvar t = document.getElementById('SearchCriteria_DateTo');\nif (f) { f.value = '06/13/2024'; $(f).trigger('change'); }\nif (t) { t.value = '07/13/2024'; $(t).trigger('change'); }\nreturn 'Dates set: 06/13/2024 - 07/13/2024';",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "7cb73067-f831-4efc-a56e-2202ef9ad01d",
+          "comment": "",
+          "command": "click",
+          "target": "id=btnHSSubmit",
+          "targets": [
+            [
+              "id=btnHSSubmit",
+              "id"
+            ],
+            [
+              "css=#btnHSSubmit",
+              "css:finder"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "feb29677-b12a-4740-bef8-39f0bc6c4534",
+          "comment": "",
+          "command": "waitForElementVisible",
+          "target": "css=span.k-pager-info",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "fdbdc930-8065-4154-be21-97b62614b322",
+          "comment": "",
+          "command": "executeScript",
+          "target": "var grid = $('#hearingResultsGrid').data('kendoGrid');\nif (!grid) return 'NO_GRID';\nvar ds = grid.dataSource;\nds.pageSize(99999);\nvar items = ds.data();\nif (items.toJSON) items = items.toJSON();\nvar cols = grid.columns;\nvar csv = '';\nfor (var j = 0; j < cols.length; j++) {\n  csv += (cols[j].title || cols[j].field || 'Col'+j);\n  if (j < cols.length-1) csv += ',';\n}\nfor (var i = 0; i < items.length; i++) {\n  csv += '\\n';\n  for (var j = 0; j < cols.length; j++) {\n    var v = items[i][cols[j].field];\n    if (v === null || v === undefined) v = '';\n    v = String(v).replace(/\"/g, '\"\"');\n    if (v.includes(',') || v.includes('\"') || v.includes('\\n')) v = '\"'+v+'\"';\n    csv += v;\n    if (j < cols.length-1) csv += ',';\n  }\n}\nvar blob = new Blob([csv], {type: 'text/csv'});\nvar a = document.createElement('a');\na.href = URL.createObjectURL(blob);\na.download = 'johnson.csv';\na.style.display = 'none';\ndocument.body.appendChild(a);\na.click();\nsetTimeout(function(){ document.body.removeChild(a); }, 50);\nreturn 'OK '+items.length+' rows';",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "4124abc9-9586-41d7-86a7-9fcb9a355bab",
+          "comment": "",
+          "command": "pause",
+          "target": "5000",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [
+    {
+      "id": "f6dc7c14-5ed4-4045-a4d5-6250c116bd5a",
+      "name": "Default Suite",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": [
+        "f372dcb9-f4a7-4575-be8d-3bda62354260",
+        "33fc8fa7-4813-4498-87aa-a283aaabb363",
+        "22d56004-79ba-4c65-9d97-2377a7f40df6",
+        "e3c3fded-63a6-4474-a99f-c79bb953e08b",
+        "268ccff7-d2fd-4d0a-b098-f76847a76855",
+        "1f80a2e9-0f28-4f86-b36d-a0f1f325c17d",
+        "69d904c0-9c99-470f-94ab-de90a732ffaf",
+        "6367495b-75ed-496d-a36e-d2e6b3ea56e1",
+        "d1eb6382-f5c6-4912-901b-854ee6449bb3",
+        "4db51fd6-fa64-410d-aa2d-4137f51a2b6f",
+        "217250b4-f2e6-42b7-9316-d624f2237cf3",
+        "edf56af2-188a-4675-85f2-c61aae31ef4b",
+        "e44a7d9a-d9aa-4d7d-9869-011e0ce99d18",
+        "a907e044-750c-4de6-aa9a-2bad486e64c8",
+        "7179a607-2225-4594-9f4d-96206d770da7",
+        "9da74824-9501-491c-a370-93d81d2c24aa",
+        "87a0d682-a50c-401d-a1a3-2498fb7cf489",
+        "ab0fcc3a-fdc7-4038-b6cc-11397f2da041",
+        "90cb4532-b425-49fe-b28a-9092960904ec",
+        "ec95c4c6-3a5a-4769-a722-f4781b3cd337",
+        "3413bad1-0d3f-4d27-b4b5-e101d120b9ce",
+        "50542f92-c552-4a00-a2e8-83f4846cd76b",
+        "b303e019-9f7c-4463-8288-5685376f4ca7",
+        "71cdcbf0-02ad-4621-b3bb-c74351d864bc"
+      ]
+    }
+  ],
+  "urls": [
+    "https://justice.bellcounty.texas.gov/"
+  ],
+  "plugins": []
+}
