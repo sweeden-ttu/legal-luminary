@@ -57,6 +57,11 @@ body {
   width: 1px;
 }
 
+:focus-visible {
+  outline: 2px solid var(--gold-light);
+  outline-offset: 2px;
+}
+
 h1, h2, h3, h4 {
   font-family: 'Cinzel', 'Times New Roman', serif;
   font-weight: 700;
