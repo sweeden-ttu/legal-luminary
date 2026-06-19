@@ -69,18 +69,18 @@ odyssey_statistics:
   average_judgment_amount: $0.00
   distinct_attorneys_appeared: 396
   top_case_types:
-    - Independent Administration: 307 cases
-    - Permanent Guardianship of an Adult: 233 cases
-    - Debt/Contract: Debt Collection: 229 cases
-    - JP Appeal Contract: Evictions - Residential: 198 cases
+    - "Independent Administration: 307 cases"
+    - "Permanent Guardianship of an Adult: 233 cases"
+    - "Debt/Contract: Debt Collection: 229 cases"
+    - "JP Appeal Contract: Evictions - Residential: 198 cases"
     - Other Civil: 171 cases
 
 court_contact:
   court_name: Court at Law 1
   court_type: County Court at Law
   fax: (254) 933-5705
-  address: 1201 Huey RoadBelton, Texas  76513
-  mailing_address: P.O. Box 781Belton, Texas  76513Office Hours:  8:00 a
+  address: "1201 Huey RoadBelton, Texas  76513"
+  mailing_address: "P.O. Box 781Belton, Texas  76513Office Hours:  8:00 a"
 election_info:
   election_year: 2022
   next_election: 2026

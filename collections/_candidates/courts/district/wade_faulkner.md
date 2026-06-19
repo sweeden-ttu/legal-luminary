@@ -63,11 +63,11 @@ odyssey_statistics:
   average_judgment_amount: $0.00
   distinct_attorneys_appeared: 24
   top_case_types:
-    - Felony: 15 cases
-    - Protective Orders - No Divorce: 3 cases
-    - Divorce: Children: 2 cases
-    - Divorce:  No Children: 1 cases
-    - Register of Foreign Judgment: 1 cases
+    - "Felony: 15 cases"
+    - "Protective Orders - No Divorce: 3 cases"
+    - "Divorce: Children: 2 cases"
+    - "Divorce:  No Children: 1 cases"
+    - "Register of Foreign Judgment: 1 cases"
 
 court_contact:
   court_name: 478th Judicial District Court
@@ -77,8 +77,8 @@ court_contact:
   court_reporter: Betsy Clifton
   phone: (254) 933-5706
   fax: (254) 933-5990
-  address: 1201 Huey RoadBelton, Texas  76513
-  mailing_address: P.O. Box 324Belton, Texas  76513
+  address: "1201 Huey RoadBelton, Texas  76513"
+  mailing_address: "P.O. Box 324Belton, Texas  76513"
 election_info:
   election_year: null
   appointment_year: 2022

@@ -86,11 +86,11 @@ odyssey_statistics:
   average_judgment_amount: $0.00
   distinct_attorneys_appeared: 113
   top_case_types:
-    - Divorce: Children: 160 cases
-    - Divorce:  No Children: 152 cases
-    - Other Parent-Child - No Divorce: 68 cases
-    - Modification Other: 52 cases
-    - Protective Orders - No Divorce: 48 cases
+    - "Divorce: Children: 160 cases"
+    - "Divorce:  No Children: 152 cases"
+    - "Other Parent-Child - No Divorce: 68 cases"
+    - "Modification Other: 52 cases"
+    - "Protective Orders - No Divorce: 48 cases"
 
 court_contact:
   court_name: 264th Judicial District Court
@@ -100,8 +100,8 @@ court_contact:
   court_reporter: Betty Young
   phone: (254) 933-5245
   fax: (254) 933-5909
-  address: 1201 Huey RoadBelton, Texas  76513
-  mailing_address: P.O. Box 324Belton, Texas  76513
+  address: "1201 Huey RoadBelton, Texas  76513"
+  mailing_address: "P.O. Box 324Belton, Texas  76513"
 election_info:
   election_year: 2022
   appointment_year: 2018

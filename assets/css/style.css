@@ -75,6 +75,11 @@ p { margin: 0 0 1rem; }
 a { color: var(--navy-light); text-decoration: none; transition: color 0.2s; }
 a:hover { color: var(--gold-dark); }
 
+:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 2px;
+}
+
 .container { max-width: 1280px; margin: 0 auto; padding: 0 1.25rem; }
 
 /* Header */
@@ -131,6 +136,7 @@ a:hover { color: var(--gold-dark); }
 }
 
 .nav-item-has-children:hover .nav-submenu,
+.nav-item-has-children:focus-within .nav-submenu,
 .nav-item-has-children.active .nav-submenu {
   display: block;
 }
