@@ -63,11 +63,11 @@ odyssey_statistics:
   average_judgment_amount: $0.00
   distinct_attorneys_appeared: 24
   top_case_types:
-    - Felony: 15 cases
-    - Protective Orders - No Divorce: 3 cases
-    - Divorce: Children: 2 cases
-    - Divorce:  No Children: 1 cases
-    - Register of Foreign Judgment: 1 cases
+    - "Felony: 15 cases"
+    - "Protective Orders - No Divorce: 3 cases"
+    - "Divorce: Children: 2 cases"
+    - "Divorce:  No Children: 1 cases"
+    - "Register of Foreign Judgment: 1 cases"
 
 court_contact:
   court_name: 478th Judicial District Court
@@ -89,3 +89,16 @@ election_info:
   days_until_election: 286
 ---
 Wade Faulkner is the presiding judge of the 478th Judicial District Court in Bell County, Texas. He was elected to the bench and is seeking re-election in 2026 as the Republican nominee, unopposed in the November general election.
+
+
+## Case Load & Decision Summary
+
+Based on an analysis of **4** recently resolved cases, the following is a summary of the judge's major caseload and how they typically decide them.
+
+The **Success Rate** measures how often the Plaintiff/Filer (e.g., the landlord, debt collector, or state) wins a judgment. Cases that were dismissed or resulted in a judgment for the defendant lower this rate. Active or pending cases are excluded.
+
+| Case Type | Resolved Cases | Plaintiff Success Rate |
+|---|---|---|
+| Register of Foreign Judgment | 2 | **100.0%** |
+| Other Civil: Bill of Review | 2 | **100.0%** |
+

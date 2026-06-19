@@ -42,15 +42,29 @@ professional_history: '**Bell County Precinct 3 Place 2** — Justice of the Pea
   '
 odyssey_statistics:
   total_cases_scraped: 3299
-  total_judgments_awarded: 1010
-  total_judgment_amount_awarded: $2708411.54
-  average_judgment_amount: $2681.60
-  distinct_attorneys_appeared: 59
+  total_judgments_awarded: 1758
+  total_judgment_amount_awarded: $4424340.88
+  average_judgment_amount: $2516.69
+  distinct_attorneys_appeared: 97
   top_case_types:
-    - Contract: Evictions - Residential: 1324 cases
-    - Traffic: 322 cases
-    - Debt/Contract: Debt Collection: 121 cases
-    - Other Civil: Small Claims: 64 cases
-    - Criminal Non-Traffic: 59 cases
+    - "Contract: Evictions - Residential: 2327 cases"
+    - "Traffic: 453 cases"
+    - "Debt/Contract: Debt Collection: 164 cases"
+    - "Other Civil: Small Claims: 110 cases"
+    - "Criminal Non-Traffic: 104 cases"
 
+---
 Larry Wilkey is the Justice of the Peace for Bell County Precinct 3, Place 2, serving the Temple area.
+
+
+## Case Load & Decision Summary
+
+Based on an analysis of **4633** recently resolved cases, the following is a summary of the judge's major caseload and how they typically decide them.
+
+The **Success Rate** measures how often the Plaintiff/Filer (e.g., the landlord, debt collector, or state) wins a judgment. Cases that were dismissed or resulted in a judgment for the defendant lower this rate. Active or pending cases are excluded.
+
+| Case Type | Resolved Cases | Plaintiff Success Rate |
+|---|---|---|
+| Contract: Evictions - Residential | 3645 | **63.9%** |
+| Traffic | 407 | **0.0%** |
+| Debt/Contract: Debt Collection | 273 | **76.2%** |

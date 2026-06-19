@@ -43,3 +43,17 @@ odyssey_results_placeholder: Historical case records from Judge Parker's tenure 
   system.
 ---
 Jeanne Parker served as judge of Bell County Court at Law No. 2 prior to Judge John Mischtian.
+
+
+## Case Load & Decision Summary
+
+Based on an analysis of **20** recently resolved cases, the following is a summary of the judge's major caseload and how they typically decide them.
+
+The **Success Rate** measures how often the Plaintiff/Filer (e.g., the landlord, debt collector, or state) wins a judgment. Cases that were dismissed or resulted in a judgment for the defendant lower this rate. Active or pending cases are excluded.
+
+| Case Type | Resolved Cases | Plaintiff Success Rate |
+|---|---|---|
+| Muniment of Title | 6 | **0.0%** |
+| Dependent Administration | 4 | **0.0%** |
+| Independent Administration | 4 | **0.0%** |
+

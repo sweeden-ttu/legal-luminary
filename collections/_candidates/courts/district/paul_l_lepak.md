@@ -86,11 +86,11 @@ odyssey_statistics:
   average_judgment_amount: $0.00
   distinct_attorneys_appeared: 113
   top_case_types:
-    - Divorce: Children: 160 cases
-    - Divorce:  No Children: 152 cases
-    - Other Parent-Child - No Divorce: 68 cases
-    - Modification Other: 52 cases
-    - Protective Orders - No Divorce: 48 cases
+    - "Divorce: Children: 160 cases"
+    - "Divorce:  No Children: 152 cases"
+    - "Other Parent-Child - No Divorce: 68 cases"
+    - "Modification Other: 52 cases"
+    - "Protective Orders - No Divorce: 48 cases"
 
 court_contact:
   court_name: 264th Judicial District Court
@@ -112,3 +112,17 @@ election_info:
   days_until_election: 286
 ---
 Paul L. LePak is the presiding judge of the 264th Judicial District Court ("D Court") in Bell County, Texas. He was appointed to the bench by Governor Greg Abbott in 2018. Prior to his appointment, Judge LePak worked as an attorney in private practice. He earned a B.A. in political science from Marquette University and a J.D. from Villanova University School of Law. He is a member of the State Bar of Texas, the Bell County Bar Association, the Texas Criminal Defense Lawyers Association, and a fellow of the Texas Bar Foundation.
+
+
+## Case Load & Decision Summary
+
+Based on an analysis of **1172** recently resolved cases, the following is a summary of the judge's major caseload and how they typically decide them.
+
+The **Success Rate** measures how often the Plaintiff/Filer (e.g., the landlord, debt collector, or state) wins a judgment. Cases that were dismissed or resulted in a judgment for the defendant lower this rate. Active or pending cases are excluded.
+
+| Case Type | Resolved Cases | Plaintiff Success Rate |
+|---|---|---|
+| Divorce: Children | 318 | **3.8%** |
+| Divorce: No Children | 304 | **0.7%** |
+| Other Parent-Child - No Divorce | 136 | **2.9%** |
+

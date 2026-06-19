@@ -36,10 +36,24 @@ last_updated: 2026-06-09
 
 ### Former County Court Judges
 
-| Judge | Court |
-|-------|-------|
-{% for j in county %}{% if j.title contains "Former" or j.office contains "Former" or j.election_status == "former" %}| [{{ j.title }}]({{ j.url }}) | {{ j.office }} |
-{% endif %}{% endfor %}
+<table class="table">
+  <thead>
+    <tr>
+      <th>Judge</th>
+      <th>Court</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for j in county %}
+      {% if j.title contains "Former" or j.office contains "Former" or j.election_status == "former" %}
+      <tr>
+        <td><strong><a href="{{ j.url }}">{{ j.title }}</a></strong></td>
+        <td>{{ j.office }}</td>
+      </tr>
+      {% endif %}
+    {% endfor %}
+  </tbody>
+</table>
 
 ## Justices of the Peace
 

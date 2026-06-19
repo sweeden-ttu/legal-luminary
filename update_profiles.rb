@@ -62,7 +62,7 @@ stats.each do |judge, data|
   YAML
   
   content = File.read(file)
-  new_content = content.sub(/odyssey_results_placeholder:.*?(?=\n\w)/m, yaml_stats.strip + "\n")
+  new_content = content.sub(/odyssey_statistics:.*?(?=\n\w)/m, yaml_stats.strip + "\n")
   
   File.write(file, new_content)
   puts "Updated #{file}"

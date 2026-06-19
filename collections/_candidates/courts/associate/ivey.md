@@ -58,3 +58,16 @@ odyssey_results_placeholder: Associate Judge Ivey's case records are available t
   Specific docket statistics and case dispositions will be added here as data is compiled.
 ---
 Ivey serves or served as an Associate Judge in Bell County, Texas, appearing in Odyssey electronic case records.
+
+
+## Case Load & Decision Summary
+
+Based on an analysis of **3** recently resolved cases, the following is a summary of the judge's major caseload and how they typically decide them.
+
+The **Success Rate** measures how often the Plaintiff/Filer (e.g., the landlord, debt collector, or state) wins a judgment. Cases that were dismissed or resulted in a judgment for the defendant lower this rate. Active or pending cases are excluded.
+
+| Case Type | Resolved Cases | Plaintiff Success Rate |
+|---|---|---|
+| Small Claims Suits | 2 | **100.0%** |
+| Debt/Contract: Other | 1 | **0.0%** |
+

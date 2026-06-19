@@ -69,11 +69,11 @@ odyssey_statistics:
   average_judgment_amount: $0.00
   distinct_attorneys_appeared: 396
   top_case_types:
-    - Independent Administration: 307 cases
-    - Permanent Guardianship of an Adult: 233 cases
-    - Debt/Contract: Debt Collection: 229 cases
-    - JP Appeal Contract: Evictions - Residential: 198 cases
-    - Other Civil: 171 cases
+    - "Independent Administration: 307 cases"
+    - "Permanent Guardianship of an Adult: 233 cases"
+    - "Debt/Contract: Debt Collection: 229 cases"
+    - "JP Appeal Contract: Evictions - Residential: 198 cases"
+    - "Other Civil: 171 cases"
 
 court_contact:
   court_name: Court at Law 1
@@ -89,3 +89,17 @@ election_info:
   days_until_election: 286
 ---
 Paul A. Motz is the presiding judge of Bell County Court at Law No. 1 in Belton, Texas. In addition to his regular docket, Judge Motz presides over the Civil, Probate, and Mental Health Court. He is the Republican nominee for re-election, unopposed in the November 2026 general election.
+
+
+## Case Load & Decision Summary
+
+Based on an analysis of **884** recently resolved cases, the following is a summary of the judge's major caseload and how they typically decide them.
+
+The **Success Rate** measures how often the Plaintiff/Filer (e.g., the landlord, debt collector, or state) wins a judgment. Cases that were dismissed or resulted in a judgment for the defendant lower this rate. Active or pending cases are excluded.
+
+| Case Type | Resolved Cases | Plaintiff Success Rate |
+|---|---|---|
+| Other Civil | 222 | **44.1%** |
+| JP Appeal Contract: Evictions - Residential | 216 | **46.3%** |
+| Debt/Contract: Debt Collection | 168 | **42.9%** |
+
