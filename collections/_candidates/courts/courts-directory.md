@@ -13,6 +13,13 @@ last_updated: 2026-06-09
 {% assign associate = all | where_exp: "i", "i.path contains 'courts/associate/'" %}
 {% assign senior = all | where_exp: "i", "i.path contains 'courts/senior/'" %}
 
+## Justices of the Peace
+
+| Precinct | Judge | Status |
+|----------|-------|--------|
+{% for j in jp %}| {{ j.office }} | [{{ j.title }}]({{ j.url }}) | {% if j.incumbent %}Incumbent{% else %}Candidate{% endif %} |
+{% endfor %}
+
 ## District Courts — Current Judges
 
 | Court | Judge | Status |
@@ -55,11 +62,11 @@ last_updated: 2026-06-09
   </tbody>
 </table>
 
-## Justices of the Peace
+## Visiting Senior Judges
 
-| Precinct | Judge | Status |
-|----------|-------|--------|
-{% for j in jp %}| {{ j.office }} | [{{ j.title }}]({{ j.url }}) | {% if j.incumbent %}Incumbent{% else %}Candidate{% endif %} |
+| Name | Title |
+|------|-------|
+{% for j in senior %}| [{{ j.title }}]({{ j.url }}) | {{ j.office }} |
 {% endfor %}
 
 ## Associate Judges & Magistrates
@@ -67,13 +74,6 @@ last_updated: 2026-06-09
 | Name | Title |
 |------|-------|
 {% for j in associate %}| [{{ j.title }}]({{ j.url }}) | {{ j.office }} |
-{% endfor %}
-
-## Visiting Senior Judges
-
-| Name | Title |
-|------|-------|
-{% for j in senior %}| [{{ j.title }}]({{ j.url }}) | {{ j.office }} |
 {% endfor %}
 
 ---
