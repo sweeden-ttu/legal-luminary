@@ -4,6 +4,19 @@
   "by_relevance": {
     "critical": [
       {
+        "title": "Texas man charged after Friday officer-involved shooting in Bell County",
+        "date": "2026-06-21",
+        "source": "FOX 7 Austin",
+        "url": "https://www.fox7austin.com/news/texas-man-charged-after-friday-officer-involved-shooting-in-bell-county",
+        "path": "_posts/2026-06-21-texas-man-charged-after-friday-officer-involved-shooting-in-bell-county.md",
+        "score": 100,
+        "matched_keywords": [
+          "bell county",
+          "shooting"
+        ],
+        "relevance": "critical"
+      },
+      {
         "title": "Killeen's Data Blackout: How a Newspaper Visit Forced KPD to Release Crime Data",
         "date": "2026-06-12",
         "source": "Legal Luminary",
@@ -1031,6 +1044,56 @@
       }
     ],
     "high": [
+      {
+        "title": "Talarico hopes to turn Ken Paxton\u2019s scandals into victory",
+        "date": "2026-06-22",
+        "source": "The Texas Tribune",
+        "url": "https://www.texastribune.org/2026/06/22/james-talarico-ken-paxton-scandals-victory/",
+        "path": "_posts/2026-06-22-talarico-hopes-to-turn-ken-paxtons-scandals-into-victory.md",
+        "score": 90,
+        "matched_keywords": [
+          "politics"
+        ],
+        "relevance": "high"
+      },
+      {
+        "title": "Historic Bastrop brick company owner alleges fraud in $29 million lawsuit",
+        "date": "2026-06-22",
+        "source": "Austin American-Statesman",
+        "url": "https://www.statesman.com/story/news/2026/06/22/historic-bastrop-brick-company-lawsuit-fraud/72661001007/",
+        "path": "_posts/2026-06-22-historic-bastrop-brick-company-owner-alleges-fraud-in-29-million-lawsuit.md",
+        "score": 80,
+        "matched_keywords": [
+          "lawsuit"
+        ],
+        "relevance": "high"
+      },
+      {
+        "title": "Ken Paxton easily defeats John Cornyn in Texas Republican Senate runoff, in photos",
+        "date": "2026-06-21",
+        "source": "Messenger-Inquirer",
+        "url": "https://www.messenger-inquirer.com/news/national/ken-paxton-easily-defeats-john-cornyn-in-texas-republican-senate-runoff-in-photos/collection_53e5e40e-fdb1-5f21-a477-96a8be4a3d43.html",
+        "path": "_posts/2026-06-21-ken-paxton-easily-defeats-john-cornyn-in-texas-republican-senate-runoff.md",
+        "score": 70,
+        "matched_keywords": [
+          "elections",
+          "politics"
+        ],
+        "relevance": "high"
+      },
+      {
+        "title": "Abbott slams Democratic candidates at Texas GOP convention",
+        "date": "2026-06-21",
+        "source": "Yahoo News",
+        "url": "https://news.yahoo.com/abbott-slams-democratic-candidates-texas-123100234.html",
+        "path": "_posts/2026-06-21-abbott-slams-democratic-candidates-at-texas-gop-convention.md",
+        "score": 60,
+        "matched_keywords": [
+          "politics",
+          "candidates"
+        ],
+        "relevance": "high"
+      },
       {
         "title": "Paxton\u2019s office threatens legal action if Big 12 penalizes Texas Tech for playing QB who placed bets",
         "date": "2026-06-11",
