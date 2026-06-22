@@ -1,6 +1,6 @@
 import { defineConfig } from '@playwright/test';
 
-const baseURL = process.env.PLAYWRIGHT_BASE_URL || 'http://127.0.0.1:4000';
+const baseURL = process.env.PLAYWRIGHT_BASE_URL || 'https://legalluminary.com';
 
 export default defineConfig({
   testDir: './test_cases',
