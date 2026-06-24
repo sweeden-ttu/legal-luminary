@@ -118,7 +118,7 @@ langchain_openai/__pycache__/__init__.cpython-313.pyc
 langchain_openai/__pycache__/__init__.cpython-314.pyc
 langchain_openai/__pycache__/__init__.cpython-314.pyc
 __pycache__/
-.conda-lsp/
+.conda-lsp
 .conda-lsp/lib/python3.11/json/__pycache__/__init__.cpython-311.pyc
 Gemfile.lock
 .conda-lsp/lib/python3.11/__pycache__/copyreg.cpython-311.pyc
@@ -147,3 +147,6 @@ bell_county_data/
 data/
 *.pyc
 __pycache__/
+.conda-lsp/lib/python3.11/__pycache__/_weakrefset.cpython-311.pyc
+.conda-lsp/lib/python3.11/__pycache__/copyreg.cpython-311.pyc
+.conda-lsp/lib/python3.11/__pycache__/_weakrefset.cpython-311.pyc
