@@ -147,6 +147,7 @@ bell_county_data/
 data/
 *.pyc
 __pycache__/
+.conda-lsp/lib/
+__pycache__/
 .conda-lsp/lib/python3.11/__pycache__/_weakrefset.cpython-311.pyc
-.conda-lsp/lib/python3.11/__pycache__/copyreg.cpython-311.pyc
-.conda-lsp/lib/python3.11/__pycache__/_weakrefset.cpython-311.pyc
+python3.11/__pycache__/_weakrefset.cpython-311.pyc
