@@ -60,8 +60,8 @@ navigation:
     url: /bell-county/
   - title: Judicial Officers
     url: /candidates/courts/
-  - title: Defense Attorneys
-    url: /defense/
+  - title: Criminal Law
+    url: /criminal-law/
   - title: Personal Injury
     url: /personal-injury/
   - title: Family Law

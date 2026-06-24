@@ -1,5 +1,6 @@
 ---
 layout: default
+article_feed: top-articles
 title: Legal Luminary of Central Texas - News, Courts, Politics, and more
 permalink: /
 hero: true

@@ -1,0 +1,76 @@
+{
+  "validated_at": "2026-06-24T01:08:01.995245Z",
+  "total_articles": 4,
+  "by_relevance": {
+    "critical": [
+      {
+        "title": "Recent update regarding personal-injury-articles 2",
+        "date": "2026-06-21",
+        "source": "The Texas Tribune",
+        "url": "https://www.texastribune.org/",
+        "path": "/news/2026/06/21/personal-injury-articles-update-2/",
+        "score": 15.0,
+        "keyword_count": 15,
+        "relevance": "critical",
+        "matched_keywords": [
+          "personal injury",
+          "car accident",
+          "premises liability",
+          "negligence",
+          "compensation"
+        ]
+      },
+      {
+        "title": "Recent update regarding personal-injury-articles 1",
+        "date": "2026-06-22",
+        "source": "The Texas Tribune",
+        "url": "https://www.texastribune.org/",
+        "path": "/news/2026/06/22/personal-injury-articles-update-1/",
+        "score": 15.0,
+        "keyword_count": 15,
+        "relevance": "critical",
+        "matched_keywords": [
+          "personal injury",
+          "car accident",
+          "premises liability",
+          "negligence",
+          "compensation"
+        ]
+      },
+      {
+        "title": "Recent update regarding personal-injury-articles 0",
+        "date": "2026-06-23",
+        "source": "The Texas Tribune",
+        "url": "https://www.texastribune.org/",
+        "path": "/news/2026/06/23/personal-injury-articles-update-0/",
+        "score": 15.0,
+        "keyword_count": 15,
+        "relevance": "critical",
+        "matched_keywords": [
+          "personal injury",
+          "car accident",
+          "premises liability",
+          "negligence",
+          "compensation"
+        ]
+      }
+    ],
+    "high": [],
+    "medium": [],
+    "low": [
+      {
+        "title": "Austin nonprofit working to combat AI 'exploitation' of musicians' intellectual property",
+        "date": "2026-06-23",
+        "source": "Unknown Source",
+        "url": "https://www.kxan.com/news/local/austin/austin-nonprofit-working-to-combat-ai-exploitation-of-musicians-intellectual-property",
+        "path": "/2026/06/23/austin-nonprofit-working-to-combat-ai-exploit.html",
+        "score": 1.0,
+        "keyword_count": 1,
+        "relevance": "low",
+        "matched_keywords": [
+          "compensation"
+        ]
+      }
+    ]
+  }
+}

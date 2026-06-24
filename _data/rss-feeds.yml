@@ -35,7 +35,7 @@ feeds:
     max_items: 15
     enabled: true
     note: "Includes all Temple city news; TPD releases are included"
-    
+
   - name: "Belton Police Department"
     url: "https://www.beltontexas.gov/newslist.php"
     category: "local"
@@ -43,7 +43,46 @@ feeds:
     max_items: 10
     enabled: false
     note: "RSS feed not available; may need alternative source"
-    
+
+  # FCC-Licensed Local TV Affiliates (Waco-Temple-Bryan DMA, serves Bell County)
+  # Verified RSS endpoints below.
+  - name: "KXAN Austin (NBC)"
+    url: "https://www.kxan.com/feed/"
+    category: "local"
+    type: "broadcast-tv"
+    fcc_call_letters: "KXAN"
+    network: "NBC"
+    market: "Austin / Central Texas"
+    max_items: 15
+    enabled: true
+
+  - name: "KCEN Waco-Temple (NBC)"
+    # kcen.com does not expose an XML endpoint from this environment; the
+    # /news/ page is HTML, not RSS. Disabled until a working XML URL is confirmed.
+    url: "https://www.kcen.com/feed/"
+    category: "local"
+    type: "broadcast-tv"
+    fcc_call_letters: "KCEN"
+    network: "NBC"
+    market: "Waco-Temple-Bryan"
+    max_items: 15
+    enabled: false
+    note: "kcen.com/feed/ returns HTML, not RSS XML; awaiting confirmed XML endpoint"
+
+  - name: "Texas Tribune (Statewide)"
+    url: "https://www.texastribune.org/feed/"
+    category: "state"
+    type: "news"
+    max_items: 15
+    enabled: true
+
+  - name: "Killeen Daily Herald (RSS)"
+    url: "https://www.kdhnews.com/search/?f=rss"
+    category: "local"
+    type: "news"
+    max_items: 15
+    enabled: true
+
   # Texas State Government Sources
   # Texas Legislature RSS (use RSS.aspx?Type=... for XML; RSSFeeds.aspx returns HTML)
   - name: "Texas Legislature - Today's Bills Filed"

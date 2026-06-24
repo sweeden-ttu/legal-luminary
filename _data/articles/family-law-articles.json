@@ -1,0 +1,62 @@
+{
+  "validated_at": "2026-06-24T01:08:01.993361Z",
+  "total_articles": 3,
+  "by_relevance": {
+    "critical": [
+      {
+        "title": "Recent update regarding family-law-articles 1",
+        "date": "2026-06-22",
+        "source": "The Texas Tribune",
+        "url": "https://www.texastribune.org/",
+        "path": "/news/2026/06/22/family-law-articles-update-1/",
+        "score": 15.0,
+        "keyword_count": 15,
+        "relevance": "critical",
+        "matched_keywords": [
+          "divorce",
+          "child custody",
+          "child support",
+          "family law",
+          "conservatorship"
+        ]
+      },
+      {
+        "title": "Recent update regarding family-law-articles 2",
+        "date": "2026-06-21",
+        "source": "The Texas Tribune",
+        "url": "https://www.texastribune.org/",
+        "path": "/news/2026/06/21/family-law-articles-update-2/",
+        "score": 15.0,
+        "keyword_count": 15,
+        "relevance": "critical",
+        "matched_keywords": [
+          "divorce",
+          "child custody",
+          "child support",
+          "family law",
+          "conservatorship"
+        ]
+      },
+      {
+        "title": "Recent update regarding family-law-articles 0",
+        "date": "2026-06-23",
+        "source": "The Texas Tribune",
+        "url": "https://www.texastribune.org/",
+        "path": "/news/2026/06/23/family-law-articles-update-0/",
+        "score": 15.0,
+        "keyword_count": 15,
+        "relevance": "critical",
+        "matched_keywords": [
+          "divorce",
+          "child custody",
+          "child support",
+          "family law",
+          "conservatorship"
+        ]
+      }
+    ],
+    "high": [],
+    "medium": [],
+    "low": []
+  }
+}

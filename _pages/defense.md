@@ -1,5 +1,6 @@
 ---
 layout: defense
+article_feed: criminal-law-articles
 title: Defense Attorneys
 permalink: /defense/
 hero: true

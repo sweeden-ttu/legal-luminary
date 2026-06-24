@@ -243,15 +243,14 @@
             <ul>
               <li><a href="{{ '/texas-law/' | relative_url }}">Understanding Texas Law</a></li>
               <li><a href="{{ '/bell-county/' | relative_url }}">Bell County Courts & Procedures</a></li>
-              <li><a href="{{ '/defense/' | relative_url }}">Criminal Defense Guidance</a></li>
+              <li><a href="{{ '/criminal-law/' | relative_url }}">Criminal Law</a></li>
               <li><a href="{{ '/personal-injury/' | relative_url }}">Personal Injury Rights in Texas</a></li>
             </ul>
           </section>
           {% endif %}
         </article>
         <aside class="sidebar" aria-label="Helpful resources">
-          {% include sidebar-feed.html %}
-          {%- comment -%}
+          {% include sidebar-important-articles.html %}{%- comment -%}
           sidebar-feed.html now renders the RSS-based legal news widget site-wide.
           sidebar-news-feed.html is deprecated to avoid duplicate widgets.
           {%- endcomment -%}

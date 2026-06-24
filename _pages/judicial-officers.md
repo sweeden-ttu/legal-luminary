@@ -1,5 +1,6 @@
 ---
 layout: default
+article_feed: judicial-officers-articles
 title: "Bell County Judicial Officers"
 permalink: /candidates/courts/
 description: "Complete directory of all current, former, and visiting judicial officers in Bell County, Texas"

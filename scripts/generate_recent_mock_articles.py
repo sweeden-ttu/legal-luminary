@@ -1,0 +1,1 @@
+# Mock article generator removed

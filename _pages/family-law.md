@@ -1,5 +1,6 @@
 ---
 layout: family-law
+article_feed: family-law-articles
 title: Family Law
 permalink: /family-law/
 hero: true

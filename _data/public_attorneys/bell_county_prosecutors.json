@@ -1,0 +1,108 @@
+{
+  "district_attorney_office": {
+    "role": "District Attorney",
+    "description": "Handles felony prosecutions, grand jury preparation, and major trial work for the 27th Judicial District.",
+    "selection_method": "Elected by voters of Bell County (4-year terms).",
+    "appoints": [
+      "Assistant District Attorneys (Felony Prosecutors)",
+      "Investigators and Support Staff"
+    ],
+    "website": "https://www.bellcountytx.com/county_government/district_attorney/index.php",
+    "contact_info": {
+      "phone": "(254) 933-5215",
+      "email": "districtattorney@bellcounty.texas.gov",
+      "address": "P.O. Box 540, Belton, TX 76513"
+    },
+    "personnel": [
+      {
+        "name": "Stephanie Newell",
+        "title": "District Attorney (Current)",
+        "selection_method": "Elected",
+        "experience": "Took office in January 2025 after winning the 2024 election. Defeated Jeff Parker in the Republican primary.",
+        "sources": [
+          "https://bellcountybar.org",
+          "https://www.txdirectory.com"
+        ]
+      },
+      {
+        "name": "Henry L. Garza",
+        "title": "District Attorney (Former)",
+        "selection_method": "Elected (Served 2001-2024)",
+        "experience": "Served as District Attorney for 23 years across 6 terms. Previously prosecuted misdemeanors in the County Attorney's office from 1983-1986.",
+        "sources": [
+          "https://www.kcentv.com/article/news/local/bell-county-da-not-seeking-re-election/500-117565e3-d731-4ec1-91a6-f1311ff056b3"
+        ]
+      }
+    ]
+  },
+  "county_attorney_office": {
+    "role": "County Attorney",
+    "description": "Handles misdemeanor prosecutions, juvenile justice cases, and advises county officials.",
+    "selection_method": "Elected by voters of Bell County (4-year terms).",
+    "appoints": [
+      "Assistant County Attorneys (Juvenile & Misdemeanor Prosecutors)",
+      "Investigators and Support Staff"
+    ],
+    "website": "https://www.bellcountytx.com/county_government/county_attorney/index.php",
+    "contact_info": {
+      "phone": "(254) 933-5927",
+      "address": "P.O. Box 1127, Belton, TX 76513"
+    },
+    "personnel": [
+      {
+        "name": "James E. Nichols",
+        "title": "County Attorney (Current)",
+        "selection_method": "Elected",
+        "experience": "Current Bell County Attorney. Oversees misdemeanor and juvenile prosecutions.",
+        "sources": [
+          "https://www.txdirectory.com/online/person/?id=61214"
+        ]
+      },
+      {
+        "name": "James Vernon \"Jim\" Murphy",
+        "title": "Assistant County Attorney, Juvenile Prosecutor",
+        "selection_method": "Appointed by County Attorney",
+        "experience": "Over 30 years in the legal field, with a primary focus on juvenile law, criminal, and administrative law. Has served as a juvenile prosecutor in Bell County for approximately 18 years. Participates in Youth Sequential Intercept Model Mapping workshops to improve juvenile justice outcomes.",
+        "sources": [
+          "https://lawyers.justia.com/lawyer/james-vernon-murphy-1447037",
+          "https://www.kcentv.com"
+        ]
+      },
+      {
+        "name": "Sandra Hunt",
+        "title": "Investigator / Complainant",
+        "selection_method": "Appointed/Hired by County Attorney",
+        "experience": "Serves as an investigator for the Bell County Attorney's Office. Often acts as the 'Complainant' on court dockets, meaning she signs the formal complaint or affidavit of probable cause that initiates criminal proceedings based on her investigations. Previously served as a Sergeant and Detective with the Killeen Police Department (Property Crimes, Gang Unit, Organized Crime). Received the Wilroy Pitrucha Award in 2006 from the Bell County DA for excellence in criminal investigations.",
+        "sources": [
+          "https://www.govinfo.gov",
+          "Bell County Courts Docket Records"
+        ]
+      }
+    ]
+  },
+  "courts": {
+    "website": "https://www.bellcountytx.com",
+    "description": "The Bell County courts, including County Courts at Law (misdemeanors/juvenile) and District Courts (felonies), where these prosecutors file cases and litigate. Check the official county site for judicial schedules."
+  },
+  "criminal_defense_attorneys_directory": {
+    "source": "https://lawyers.law.cornell.edu/lawyers/criminal-law/texas/bell-county",
+    "description": "Directory of private criminal defense attorneys available to practice in Bell County, Texas. These attorneys represent defendants in criminal cases against the Bell County public prosecutors.",
+    "attorneys": [
+      {
+        "name": "Rick Cofer",
+        "phone": "(254) 540-8049",
+        "profile_url": "https://lawyers.law.cornell.edu/lawyer/rick-cofer-1558474"
+      },
+      {
+        "name": "Kyle Watkins",
+        "phone": "(254) 444-9920",
+        "profile_url": "https://lawyers.law.cornell.edu/lawyer/kyle-watkins-1557894"
+      },
+      {
+        "name": "F. Edward (Ed) Brown",
+        "phone": "(254) 634-2587",
+        "profile_url": "https://lawyers.law.cornell.edu/lawyer/f-edward-ed-brown-204033"
+      }
+    ]
+  }
+}

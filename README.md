@@ -101,6 +101,18 @@ The main colors of the site are below, however, pages and UI elements are not li
 - Gold (#d4af37 to #f4d03f)  Representing prestige and legal tradition
 - Cyan blue (#4da6ff) Representing AI and technology
 
+## 🤖 AI Automations & Agent Architecture
+
+This project is actively maintained and updated by AI agents. For detailed instructions on how agents should interact with this repository, including web scraping protocols, keyword definitions, and the page-specific newsfeed architecture, please see [AGENTS.md](./AGENTS.md).
+
+Key automated features include:
+- **Page-Specific News Feeds:** Articles are curated dynamically into `_data/articles/` based on keyword schemas.
+- **Automated Keyword Scanner:** The `scripts/scan_articles.py` utility automatically scans recent markdown posts (1-2 weeks old) and routes them into the correct JSON feeds based on keyword frequency scoring.
+- **Strict Content Whitelisting:** News articles are sourced exclusively from authorized local publications.
+- **Automated Validation:** CI/CD triggers validate scraped data against JSON schemas before deployment.
+
+---
+
 ## ⚙️ GitHub Actions Workflow
 
 This project uses GitHub Actions for automated deployment. The workflow:
