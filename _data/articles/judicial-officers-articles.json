@@ -1,8 +1,22 @@
 {
-  "validated_at": "2026-07-17T04:08:51.671272Z",
-  "total_articles": 1,
+  "validated_at": "2026-07-17T04:39:17.983134Z",
+  "total_articles": 2,
   "by_relevance": {
     "critical": [
+      {
+        "title": "Bell County Judicial Scorecard: Evaluating Judicial Administration in Eviction Proceedings",
+        "date": "2026-07-16",
+        "source": "Legal Luminary",
+        "url": "https://legalluminary.com",
+        "path": "/news/2026/07/16/bell-county-judicial-scorecard-evaluating-judicial-administration/",
+        "score": 10.0,
+        "keyword_count": 10,
+        "relevance": "critical",
+        "matched_keywords": [
+          "Justice of the Peace",
+          "judicial"
+        ]
+      },
       {
         "title": "Balancing Equity, Priorities, and Justice: How We Rated Judicial Performance and Bias Over Four-Year Terms in Bell County",
         "date": "2026-07-16",
