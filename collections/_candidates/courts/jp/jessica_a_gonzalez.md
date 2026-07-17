@@ -1,5 +1,5 @@
 ---
-layout: candidate-profile
+layout: candidate-profile-endorsed
 title: Jessica A. Gonzalez
 office: Justice of the Peace, Precinct 4, Place 2
 incumbent: false
@@ -58,19 +58,9 @@ instagram_url: https://www.instagram.com/p/DU6yQ0ckjUF/
 ---
 <img src="/assets/images/candidates/jessica_a_gonzalez/photo3.jpg" alt="Jessica Gonzalez" class="flow-img-left" />Jessica A. Gonzalez is the Democratic nominee for Justice of the Peace, Precinct 4, Place 2. She won the May 26, 2026 Democratic primary runoff and faces Republican Beatrice Cox in the November 3, 2026 general election.
 
+## Recent Controversy
 
-## Recent Study
-
-In our annual published study of Bench Performance in Bell County, publication authors Scott Weeden and Johnathan King found that a single Justice of the Peace ranked dead last in the category of [Balance Sheets versus Constituancy Priorities](https://legalluminary.com/methodology) Apparently, Bell County voters agree Nicola J. James will not appear on this November's ballot.
-
-Balancing a court docket with the priorities of a constituency can be a difficult task given limited judicial resources and time. As a result, any judicial officer who lacks meaningful public feedback may find that their constituency's priorities become misaligned with the time and resources they are allocating to attorneys and businesses. Before long, some of these JPs find themselves seeking employment from the very firms to which they had previously provided disproportionate access—a new reason we publish this information for both voters and candidates ahead of elections.
-
-Our study also found that two other JPs may face a tenuous tenure if the balance between their priorities and constituency access does not change soon. However, with no opponents challenging those JPs, we instead focus our endorsement on our own beloved Gonzales and present voters with this biography.
-
-We received no compensation for this endorsement, and we did not provide the Gonzales campaign with advance notice or an opportunity to provide feedback before publication.
-
-## Legacy Withstanding
-Although not without her own controversy, Gonzalez has withstood activists recall by minority citizen activists, and her district supporters long familiar with her populist brand rejected this recall. She now will seek to carry this firebrand torch to her own style of court room justice, balancing human rights with access to courts and a renewed commitment to human rights. Debt collectors and slum lords balance sheets 'injustices' will likekly be moved to the back of the docket line. <img src="/assets/images/candidates/jessica_a_gonzalez/photo2.jpg" alt="Jessica Gonzalez" class="flow-img-right" />The recall effort ultimately failed to go to a vote because the organizers could not gather even hand full of valid signatures required from her district. This is our official endorsement for our beloved Gonzalez and why we believe she is the best selection for any Republican or Democrat in Bell County voting this November for Justice of the Peace, she will serve a wider Bell County consituancy if elected.
+<img src="/assets/images/candidates/jessica_a_gonzalez/photo2.jpg" alt="Jessica Gonzalez" class="flow-img-right" />A recall petition was filed against Gonzalez by resident Janice Taylor, with organizing assistance from Mellisa Brown. The organizers alleged that Gonzalez failed to report being lobbied by developers, supported rezoning projects without ensuring that the city had the necessary infrastructure to support them, and was argumentative during public meetings. Gonzalez vehemently rejected the allegations, stating that she was strictly adhering to long-term economic planning and remained committed to executing the city's vision and comprehensive plan. The recall effort ultimately failed to go to a vote because the organizers could not gather the 246 valid signatures required from her district.
 
 <img src="/assets/images/candidates/jessica_a_gonzalez/photo4.jpg" alt="Jessica Gonzalez" class="flow-img-left" />On December 6, 2022, Jessica Gonzalez actively supported the amendment to Killeen's marijuana enforcement ordinance (Proposition A) by personally introducing the motion to amend it. Her motion passed in a 4-3 vote and sought to balance the voters' push for decriminalization with practical law enforcement needs. 
 
