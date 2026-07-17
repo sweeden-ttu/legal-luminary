@@ -5,6 +5,7 @@ date: 2026-07-16
 category: news
 source: "Legal Luminary"
 source_url: "https://legalluminary.com"
+permalink: /news/2026/07/16/balancing-equity-priorities-and-justice-how-we-rated-judicial-performance-and-bias-over-four-year-terms/
 ---
 
 ## Assessing the Bench: A Four-Year report card for Central Texas Judicial Officers
