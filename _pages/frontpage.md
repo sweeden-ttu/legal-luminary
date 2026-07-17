@@ -118,6 +118,8 @@ Main Phone: <a href="tel:+12549335100">(254) 933-5100</a><br>
 <li><strong><a href="/resources/">Legal Resources</a></strong> — Legal aid, victim services, and self-help resources</li>
 </ul>
 
+{% include front-page-featured-articles.html %}
+
 <div class="legal-notice">
 <strong>Important Notice:</strong> The information provided on this website is for general educational purposes only and does not constitute legal advice. No attorney-client relationship is formed by use of this site. Every legal situation is unique. For advice specific to your circumstances, consult with a licensed Texas attorney.
 </div>

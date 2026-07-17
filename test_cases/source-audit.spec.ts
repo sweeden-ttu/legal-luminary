@@ -3,9 +3,13 @@ import * as fs from 'fs';
 import * as path from 'path';
 
 const ROOT = process.cwd();
-const CANDIDATES_DIR = path.join(ROOT, '_candidates');
+const CANDIDATES_DIR = fs.existsSync(path.join(ROOT, 'collections', '_candidates'))
+  ? path.join(ROOT, 'collections', '_candidates')
+  : path.join(ROOT, '_candidates');
 const AUDIT_PATH = path.join(ROOT, '_data', 'audit_sources.json');
-const SEARCH_AGENTS_PATH = path.join(ROOT, 'config', 'web_search_agents.json');
+const SEARCH_AGENTS_PATH = fs.existsSync(path.join(ROOT, 'config', 'web_search_agents.json'))
+  ? path.join(ROOT, 'config', 'web_search_agents.json')
+  : path.join(ROOT, 'archive', 'config', 'web_search_agents.json');
 
 function loadCandidateFrontMatter(filePath: string): Record<string, string> {
   const raw = fs.readFileSync(filePath, 'utf-8');

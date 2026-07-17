@@ -33,7 +33,8 @@ def parse_post(filepath):
         if m:
             date_part, slug_part = m.groups()
             category = meta.get('category', 'news')
-            meta['permalink'] = f'/{category}/{date_part}-{slug_part}.html'
+            year, month, day = date_part.split('-')
+            meta['permalink'] = f'/{category}/{year}/{month}/{day}/{slug_part}/'
     return meta, body
 
 def get_post_date(filename, meta):
