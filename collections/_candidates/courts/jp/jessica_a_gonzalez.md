@@ -56,9 +56,7 @@ odyssey_results_placeholder: JP court statistics will be added upon election out
 facebook_url: https://www.facebook.com/repjessicagonzalez/
 instagram_url: https://www.instagram.com/p/DU6yQ0ckjUF/
 ---
-<img src="/assets/images/candidates/jessica_a_gonzalez/photo3.jpg" alt="Jessica Gonzalez" class="flow-img-left" />Jessica A. Gonzalez is the Democratic nominee for Justice of the Peace, Precinct 4, Place 2. She won the May 26, 2026 Democratic primary runoff and faces Republican Beatrice Cox in the November 3, 2026 general election.
-
-## Recent Controversy
+# Recent controversy
 
 <img src="/assets/images/candidates/jessica_a_gonzalez/photo2.jpg" alt="Jessica Gonzalez" class="flow-img-right" />A recall petition was filed against Gonzalez by resident Janice Taylor, with organizing assistance from Mellisa Brown. The organizers alleged that Gonzalez failed to report being lobbied by developers, supported rezoning projects without ensuring that the city had the necessary infrastructure to support them, and was argumentative during public meetings. Gonzalez vehemently rejected the allegations, stating that she was strictly adhering to long-term economic planning and remained committed to executing the city's vision and comprehensive plan. The recall effort ultimately failed to go to a vote because the organizers could not gather the 246 valid signatures required from her district.
 
