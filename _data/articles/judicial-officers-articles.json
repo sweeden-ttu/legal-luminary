@@ -1,16 +1,16 @@
 {
-  "validated_at": "2026-06-24T01:08:01.999522Z",
-  "total_articles": 17,
+  "validated_at": "2026-07-16T20:41:08.475413Z",
+  "total_articles": 1,
   "by_relevance": {
     "critical": [
       {
-        "title": "Recent update regarding judicial-officers-articles 1",
-        "date": "2026-06-22",
-        "source": "The Texas Tribune",
-        "url": "https://www.texastribune.org/",
-        "path": "/news/2026/06/22/judicial-officers-articles-update-1/",
-        "score": 17.0,
-        "keyword_count": 17,
+        "title": "Balancing Equity, Priorities, and Justice: How We Rated Judicial Performance and Bias Over Four-Year Terms",
+        "date": "2026-07-16",
+        "source": "Legal Luminary",
+        "url": "https://legalluminary.com",
+        "path": "/news/2026-07-16-balancing-equity-priorities-and-justice-how-we-rated-judicial-performance-and-bias-over-four-year-terms.html",
+        "score": 19.0,
+        "keyword_count": 19,
         "relevance": "critical",
         "matched_keywords": [
           "Judge",
@@ -20,235 +20,10 @@
           "precinct",
           "judicial"
         ]
-      },
-      {
-        "title": "Recent update regarding judicial-officers-articles 2",
-        "date": "2026-06-21",
-        "source": "The Texas Tribune",
-        "url": "https://www.texastribune.org/",
-        "path": "/news/2026/06/21/judicial-officers-articles-update-2/",
-        "score": 17.0,
-        "keyword_count": 17,
-        "relevance": "critical",
-        "matched_keywords": [
-          "Judge",
-          "Justice of the Peace",
-          "election",
-          "candidate",
-          "precinct",
-          "judicial"
-        ]
-      },
-      {
-        "title": "Recent update regarding judicial-officers-articles 0",
-        "date": "2026-06-23",
-        "source": "The Texas Tribune",
-        "url": "https://www.texastribune.org/",
-        "path": "/news/2026/06/23/judicial-officers-articles-update-0/",
-        "score": 17.0,
-        "keyword_count": 17,
-        "relevance": "critical",
-        "matched_keywords": [
-          "Judge",
-          "Justice of the Peace",
-          "election",
-          "candidate",
-          "precinct",
-          "judicial"
-        ]
-      },
-      {
-        "title": "Judge blocks feds from using immigration database to check voter eligibility",
-        "date": "2026-06-22",
-        "source": "Unknown Source",
-        "url": "https://feeds.texastribune.org/link/16799/17365556/trump-immigration-voting-database-save-judge-texas-blocked",
-        "path": "/2026/06/22/judge-blocks-feds-from-using-immigration-data.html",
-        "score": 5.0,
-        "keyword_count": 5,
-        "relevance": "critical",
-        "matched_keywords": [
-          "Judge",
-          "election",
-          "judicial"
-        ]
       }
     ],
-    "high": [
-      {
-        "title": "East Texas county judge urges state lawmakers to help locals combat data center proliferation",
-        "date": "2026-06-09",
-        "source": "Unknown Source",
-        "url": "",
-        "path": "/news/2026-06-09-east-texas-county-judge-urges-state-lawmakers-to-help-locals-combat-data-center-proliferation.html",
-        "score": 3.0,
-        "keyword_count": 3,
-        "relevance": "high",
-        "matched_keywords": [
-          "Judge"
-        ]
-      },
-      {
-        "title": "David Stumbo wins Republican nomination for attorney general in South Carolina",
-        "date": "2026-06-23",
-        "source": "Unknown Source",
-        "url": "https://kdhnews.com/news/politics/david-stumbo-wins-republican-nomination-for-attorney-general-in-south-carolina/article_1f2142a3-c5a8-5f61-9228-282835579f12.html",
-        "path": "/2026/06/23/david-stumbo-wins-republican-nomination-for-a.html",
-        "score": 3.0,
-        "keyword_count": 3,
-        "relevance": "high",
-        "matched_keywords": [
-          "election",
-          "candidate"
-        ]
-      }
-    ],
-    "medium": [
-      {
-        "title": "Paxton\u2019s office threatens legal action if Big 12 penalizes Texas Tech for playing QB who placed bets",
-        "date": "2026-06-11",
-        "source": "Unknown Source",
-        "url": "",
-        "path": "/news/2026-06-11-paxton-s-office-threatens-legal-action-if-big-12-penalizes-texas-tech-for-playing-qb-who-placed-bets.html",
-        "score": 2.0,
-        "keyword_count": 2,
-        "relevance": "medium",
-        "matched_keywords": [
-          "Judge"
-        ]
-      },
-      {
-        "title": "Ken Paxton easily defeats John Cornyn in Texas Republican Senate runoff, in photos",
-        "date": "2026-06-21",
-        "source": "Messenger-Inquirer",
-        "url": "https://www.messenger-inquirer.com/news/national/ken-paxton-easily-defeats-john-cornyn-in-texas-republican-senate-runoff-in-photos/collection_53e5e40e-fdb1-5f21-a477-96a8be4a3d43.html",
-        "path": "/news/2026/06/21/ken-paxton-easily-defeats-john-cornyn-in-texas-republican-senate-runoff/",
-        "score": 2.0,
-        "keyword_count": 2,
-        "relevance": "medium",
-        "matched_keywords": [
-          "election"
-        ]
-      },
-      {
-        "title": "James Talarico launches Spanish-language World Cup TV ad",
-        "date": "2026-06-11",
-        "source": "Unknown Source",
-        "url": "",
-        "path": "/news/2026-06-11-james-talarico-launches-spanish-language-world-cup-tv-ad.html",
-        "score": 2.0,
-        "keyword_count": 2,
-        "relevance": "medium",
-        "matched_keywords": [
-          "election",
-          "candidate"
-        ]
-      },
-      {
-        "title": "TribCast: What a new secretary of state could mean for Texas elections",
-        "date": "2026-06-23",
-        "source": "Unknown Source",
-        "url": "https://feeds.texastribune.org/link/16799/17366154/tribcast-texas-secretary-of-state-elections",
-        "path": "/2026/06/23/tribcast-what-a-new-secretary-of-state-could-.html",
-        "score": 2.0,
-        "keyword_count": 2,
-        "relevance": "medium",
-        "matched_keywords": [
-          "election"
-        ]
-      },
-      {
-        "title": "Judge blocks Biden-era immigration rule hours after Texas AG and Stephen Miller\u2019s group sued DOJ",
-        "date": "2026-06-23",
-        "source": "Unknown Source",
-        "url": "https://feeds.texastribune.org/link/16799/17365689/texas-paxton-doj-lawsuit-immigration-administrative-rule-biden",
-        "path": "/2026/06/23/judge-blocks-biden-era-immigration-rule-hours.html",
-        "score": 2.0,
-        "keyword_count": 2,
-        "relevance": "medium",
-        "matched_keywords": [
-          "Judge"
-        ]
-      },
-      {
-        "title": "Judge recommends medical parole for inmate who had been on Texas death row for 47 years",
-        "date": "2026-06-10",
-        "source": "Unknown Source",
-        "url": "",
-        "path": "/news/2026-06-10-judge-recommends-medical-parole-for-inmate-who-had-been-on-texas-death-row-for-47-years.html",
-        "score": 2.0,
-        "keyword_count": 2,
-        "relevance": "medium",
-        "matched_keywords": [
-          "Judge"
-        ]
-      }
-    ],
-    "low": [
-      {
-        "title": "Texas Democrats look to rally behind their ticket, draw national attention at state convention",
-        "date": "2026-06-23",
-        "source": "Unknown Source",
-        "url": "https://feeds.texastribune.org/link/16799/17365872/texas-democrats-convention-corpus-christi-bernie-sanders-talarico",
-        "path": "/2026/06/23/texas-democrats-look-to-rally-behind-their-ti.html",
-        "score": 1.0,
-        "keyword_count": 1,
-        "relevance": "low",
-        "matched_keywords": [
-          "election"
-        ]
-      },
-      {
-        "title": "U.S. Supreme Court denies Texas death row inmate\u2019s intellectual disability claim",
-        "date": "2026-06-22",
-        "source": "Unknown Source",
-        "url": "https://feeds.texastribune.org/link/16799/17365557/texas-death-row-victor-saldano-appeal-scotus-intellectual-disability",
-        "path": "/2026/06/22/u-s-supreme-court-denies-texas-death-row-inma.html",
-        "score": 1.0,
-        "keyword_count": 1,
-        "relevance": "low",
-        "matched_keywords": [
-          "judicial"
-        ]
-      },
-      {
-        "title": "Texas\u2019 big health priorities \u2014 dementia research, food labeling and ivermectin \u2014 have hit roadblocks",
-        "date": "2026-06-23",
-        "source": "Unknown Source",
-        "url": "https://feeds.texastribune.org/link/16799/17365871/texas-dementia-food-labeling-ivermectin-health-legislation-maha",
-        "path": "/2026/06/23/texas-big-health-priorities-dementia-research.html",
-        "score": 1.0,
-        "keyword_count": 1,
-        "relevance": "low",
-        "matched_keywords": [
-          "judicial"
-        ]
-      },
-      {
-        "title": "Temple Police Department investigates a fatality crash, 1 deceased",
-        "date": "2026-06-14",
-        "source": "Unknown Source",
-        "url": "https://city-of-temple.prowly.com/461739-temple-police-department-investigates-a-fatality-crash-1-deceased   # external URL \u2013 kept for provenance only",
-        "path": "/2026/06/14/temple-police-department-investigates-a-fatal.html",
-        "score": 1.0,
-        "keyword_count": 1,
-        "relevance": "low",
-        "matched_keywords": [
-          "Justice of the Peace"
-        ]
-      },
-      {
-        "title": "Talarico hopes to turn Ken Paxton\u2019s scandals into victory",
-        "date": "2026-06-22",
-        "source": "The Texas Tribune",
-        "url": "https://www.texastribune.org/2026/06/22/james-talarico-ken-paxton-scandals-victory/",
-        "path": "/news/2026/06/22/talarico-hopes-to-turn-ken-paxtons-scandals-into-victory/",
-        "score": 1.0,
-        "keyword_count": 1,
-        "relevance": "low",
-        "matched_keywords": [
-          "election"
-        ]
-      }
-    ]
+    "high": [],
+    "medium": [],
+    "low": []
   }
 }

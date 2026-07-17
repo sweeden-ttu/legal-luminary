@@ -1,235 +1,29 @@
 {
-  "validated_at": "2026-06-24T01:08:01.999015Z",
-  "total_articles": 16,
+  "validated_at": "2026-07-16T20:41:08.475038Z",
+  "total_articles": 1,
   "by_relevance": {
     "critical": [
       {
-        "title": "Killeen City Council Budget Hearing: The Advertisement That Sparked Debate",
-        "date": "2026-06-12",
-        "source": "Unknown Source",
-        "url": "",
-        "path": "/news/2026-06-12-killeen-daily-herald-advertisement-city-council.html",
-        "score": 10.0,
-        "keyword_count": 10,
-        "relevance": "critical",
-        "matched_keywords": [
-          "Killeen"
-        ]
-      },
-      {
-        "title": "Fact Check: The Truth About Killeen's Alleged 'Data Blackout",
-        "date": "2026-06-12",
-        "source": "Unknown Source",
-        "url": "",
-        "path": "/news/2026-06-12-fact-check-killeen-police-data-blackout.html",
-        "score": 9.0,
-        "keyword_count": 9,
-        "relevance": "critical",
-        "matched_keywords": [
-          "Killeen"
-        ]
-      },
-      {
-        "title": "Recent update regarding bell-county-articles 2",
-        "date": "2026-06-21",
-        "source": "The Texas Tribune",
-        "url": "https://www.texastribune.org/",
-        "path": "/news/2026/06/21/bell-county-articles-update-2/",
-        "score": 15.0,
-        "keyword_count": 15,
+        "title": "Balancing Equity, Priorities, and Justice: How We Rated Judicial Performance and Bias Over Four-Year Terms",
+        "date": "2026-07-16",
+        "source": "Legal Luminary",
+        "url": "https://legalluminary.com",
+        "path": "/news/2026-07-16-balancing-equity-priorities-and-justice-how-we-rated-judicial-performance-and-bias-over-four-year-terms.html",
+        "score": 11.0,
+        "keyword_count": 11,
         "relevance": "critical",
         "matched_keywords": [
           "Bell County court",
           "District Court",
           "County Court at Law",
           "Belton",
-          "Temple"
-        ]
-      },
-      {
-        "title": "Recent update regarding bell-county-articles 0",
-        "date": "2026-06-23",
-        "source": "The Texas Tribune",
-        "url": "https://www.texastribune.org/",
-        "path": "/news/2026/06/23/bell-county-articles-update-0/",
-        "score": 15.0,
-        "keyword_count": 15,
-        "relevance": "critical",
-        "matched_keywords": [
-          "Bell County court",
-          "District Court",
-          "County Court at Law",
-          "Belton",
-          "Temple"
-        ]
-      },
-      {
-        "title": "Killeen's Data Blackout: How a Newspaper Visit Forced KPD to Release Crime Data",
-        "date": "2026-06-12",
-        "source": "Unknown Source",
-        "url": "",
-        "path": "/news/2026-06-12-killeens-data-blackout-how-a-newspaper-visit-forced-kpd-to-release-crime-data.html",
-        "score": 15.0,
-        "keyword_count": 15,
-        "relevance": "critical",
-        "matched_keywords": [
-          "Killeen"
-        ]
-      },
-      {
-        "title": "City of Temple Orders Temporary Closure of Temple Mall Due to Life Safety Concerns",
-        "date": "2026-06-22",
-        "source": "Unknown Source",
-        "url": "https://city-of-temple.prowly.com/459251-city-of-temple-orders-temporary-closure-of-temple-mall-due-to-life-safety-concerns   # external URL \u2013 kept for provenance only",
-        "path": "/2026/06/22/city-of-temple-orders-temporary-closure-of-te.html",
-        "score": 17.0,
-        "keyword_count": 17,
-        "relevance": "critical",
-        "matched_keywords": [
-          "Temple"
-        ]
-      },
-      {
-        "title": "Temple Police Department investigates an aggravated assault, 1 injured",
-        "date": "2026-06-23",
-        "source": "Unknown Source",
-        "url": "https://city-of-temple.prowly.com/462808-temple-police-department-investigates-an-aggravated-assault-1-injured   # external URL \u2013 kept for provenance only",
-        "path": "/2026/06/23/temple-police-department-investigates-an-aggr.html",
-        "score": 6.0,
-        "keyword_count": 6,
-        "relevance": "critical",
-        "matched_keywords": [
-          "Temple"
-        ]
-      },
-      {
-        "title": "Recent update regarding bell-county-articles 1",
-        "date": "2026-06-22",
-        "source": "The Texas Tribune",
-        "url": "https://www.texastribune.org/",
-        "path": "/news/2026/06/22/bell-county-articles-update-1/",
-        "score": 15.0,
-        "keyword_count": 15,
-        "relevance": "critical",
-        "matched_keywords": [
-          "Bell County court",
-          "District Court",
-          "County Court at Law",
-          "Belton",
-          "Temple"
-        ]
-      },
-      {
-        "title": "Temple Police Department investigates a fatality crash, 1 deceased",
-        "date": "2026-06-14",
-        "source": "Unknown Source",
-        "url": "https://city-of-temple.prowly.com/461739-temple-police-department-investigates-a-fatality-crash-1-deceased   # external URL \u2013 kept for provenance only",
-        "path": "/2026/06/14/temple-police-department-investigates-a-fatal.html",
-        "score": 10.0,
-        "keyword_count": 10,
-        "relevance": "critical",
-        "matched_keywords": [
-          "Temple"
-        ]
-      },
-      {
-        "title": "1st Street (Spur 290) Veteran\u2019s Memorial Blvd Construction",
-        "date": "2026-06-15",
-        "source": "Unknown Source",
-        "url": "https://city-of-temple.prowly.com/445471-1st-street-spur-290-veterans-memorial-blvd-construction   # external URL \u2013 kept for provenance only",
-        "path": "/2026/06/15/1st-street-spur-290-veteran-s-memorial-blvd-c.html",
-        "score": 5.0,
-        "keyword_count": 5,
-        "relevance": "critical",
-        "matched_keywords": [
-          "Temple"
-        ]
-      }
-    ],
-    "high": [
-      {
-        "title": "Killeen man charged with manslaughter in connection to fatal January crash",
-        "date": "2026-06-11",
-        "source": "Unknown Source",
-        "url": "https://kdhnews.com/news/crime/killeen-man-charged-with-manslaughter-in-connection-to-fatal-january-crash/article_aa0a1110-a00f-42be-9798-d7c3cdd841c2.html",
-        "path": "/news/2026-06-11-killeen-man-charged-with-manslaughter-in-connection-to-fatal-january-crash.html",
-        "score": 4.0,
-        "keyword_count": 4,
-        "relevance": "high",
-        "matched_keywords": [
-          "Killeen"
-        ]
-      },
-      {
-        "title": "Murder indictment handed down after shooting death of Killeen man earlier this year",
-        "date": "2026-06-11",
-        "source": "Unknown Source",
-        "url": "https://kdhnews.com/news/crime/murder-indictment-handed-down-after-shooting-death-of-killeen-man-earlier-this-year/article_509c98e0-991d-424b-b717-cf632b0f1d25.html",
-        "path": "/news/2026-06-11-murder-indictment-handed-down-after-shooting-death-of-killeen-man-earlier-this-year.html",
-        "score": 4.0,
-        "keyword_count": 4,
-        "relevance": "high",
-        "matched_keywords": [
+          "Temple",
           "Killeen"
         ]
       }
     ],
-    "medium": [
-      {
-        "title": "Final Phase of the Poison Oak Road Improvement Project Starts June 22",
-        "date": "2026-06-15",
-        "source": "Unknown Source",
-        "url": "https://city-of-temple.prowly.com/461903-final-phase-of-the-poison-oak-road-improvement-project-starts-june-22   # external URL \u2013 kept for provenance only",
-        "path": "/2026/06/15/final-phase-of-the-poison-oak-road-improvemen.html",
-        "score": 2.0,
-        "keyword_count": 2,
-        "relevance": "medium",
-        "matched_keywords": [
-          "Temple"
-        ]
-      },
-      {
-        "title": "Man sentenced to 30 years in prison for deadly hit-and-run",
-        "date": "2026-06-11",
-        "source": "Unknown Source",
-        "url": "https://kdhnews.com/news/crime/man-sentenced-to-30-years-in-prison-for-deadly-hit-and-run/article_0f7b9be9-da9c-4ea9-93f1-88385077313a.html",
-        "path": "/news/2026-06-11-man-sentenced-to-30-years-in-prison-for-deadly-hit-and-run.html",
-        "score": 2.0,
-        "keyword_count": 2,
-        "relevance": "medium",
-        "matched_keywords": [
-          "Belton",
-          "Killeen"
-        ]
-      }
-    ],
-    "low": [
-      {
-        "title": "Ghanaian player accused of rape gets back onto the field for World Cup draw against England",
-        "date": "2026-06-23",
-        "source": "Unknown Source",
-        "url": "https://kdhnews.com/sports/soccer/ghanaian-player-accused-of-rape-gets-back-onto-the-field-for-world-cup-draw-against/article_c401e236-4810-5755-8484-e3d62f82558b.html",
-        "path": "/2026/06/23/ghanaian-player-accused-of-rape-gets-back-ont.html",
-        "score": 1.0,
-        "keyword_count": 1,
-        "relevance": "low",
-        "matched_keywords": [
-          "Killeen"
-        ]
-      },
-      {
-        "title": "David Stumbo wins Republican nomination for attorney general in South Carolina",
-        "date": "2026-06-23",
-        "source": "Unknown Source",
-        "url": "https://kdhnews.com/news/politics/david-stumbo-wins-republican-nomination-for-attorney-general-in-south-carolina/article_1f2142a3-c5a8-5f61-9228-282835579f12.html",
-        "path": "/2026/06/23/david-stumbo-wins-republican-nomination-for-a.html",
-        "score": 1.0,
-        "keyword_count": 1,
-        "relevance": "low",
-        "matched_keywords": [
-          "Killeen"
-        ]
-      }
-    ]
+    "high": [],
+    "medium": [],
+    "low": []
   }
 }
