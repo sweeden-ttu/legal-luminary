@@ -35,7 +35,7 @@ def run_test():
             
             try:
                 # Start at home page to simulate full navigation
-                driver.get("http://localhost:4000/")
+                driver.get("https://legalluminary.com/")
                 
                 # 1. Click on Judicial Officers in the main menu
                 judicial_link = wait.until(EC.presence_of_element_located((By.LINK_TEXT, "Judicial Officers")))

@@ -1,0 +1,26 @@
+{
+  "validated_at": "2026-07-16T20:41:08.473561Z",
+  "total_articles": 1,
+  "by_relevance": {
+    "critical": [],
+    "high": [
+      {
+        "title": "Balancing Equity, Priorities, and Justice: How We Rated Judicial Performance and Bias Over Four-Year Terms",
+        "date": "2026-07-16",
+        "source": "Legal Luminary",
+        "url": "https://legalluminary.com",
+        "path": "/news/2026-07-16-balancing-equity-priorities-and-justice-how-we-rated-judicial-performance-and-bias-over-four-year-terms.html",
+        "score": 4.0,
+        "keyword_count": 4,
+        "relevance": "high",
+        "matched_keywords": [
+          "misdemeanor",
+          "felony",
+          "defense attorney"
+        ]
+      }
+    ],
+    "medium": [],
+    "low": []
+  }
+}

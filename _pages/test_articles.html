@@ -1,0 +1,12 @@
+---
+layout: default
+permalink: /test-articles/
+---
+<h1>Articles test</h1>
+{% for doc in site.articles %}
+  <p>Title: {{ doc.title | default: "No title" }}</p>
+  <p>Path: {{ doc.path }}</p>
+  <p>Content size: {{ doc.content | size }}</p>
+  <p>Total articles field: {{ doc.total_articles | default: "None" }}</p>
+  <p>Relevance: {{ doc.by_relevance | default: "None" }}</p>
+{% endfor %}

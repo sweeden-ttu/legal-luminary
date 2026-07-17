@@ -1,5 +1,6 @@
 ---
 layout: texas
+article_feed: texas-law-articles
 title: Texas Law
 permalink: /texas-law/
 hero: true

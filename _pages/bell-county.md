@@ -1,5 +1,6 @@
 ---
 layout: default
+article_feed: bell-county-articles
 title: Bell County Law
 permalink: /bell-county/
 hero: true

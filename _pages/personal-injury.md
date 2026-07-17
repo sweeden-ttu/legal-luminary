@@ -1,5 +1,6 @@
 ---
 layout: injury
+article_feed: personal-injury-articles
 title: Personal Injury
 permalink: /personal-injury/
 hero: true
