@@ -1,8 +1,64 @@
 {
   "validated_at": "2026-06-12T10:45:00",
-  "total_articles": 97,
+  "total_articles": 101,
   "by_relevance": {
     "critical": [
+      {
+        "title": "McKinney council advances airport and road projects",
+        "date": "2026-07-10",
+        "source": "Star Local Media",
+        "url": "/news/2026/07/10/mckinney-council-advances-airport-and-road-projects/",
+        "path": "_posts/2026-07-10-mckinney-council-advances-airport-and-road-projects.md",
+        "score": 120,
+        "matched_keywords": [
+          "mckinney",
+          "council"
+        ],
+        "relevance": "critical"
+      },
+      {
+        "title": "Gatesville PD swears in new officers",
+        "date": "2026-07-10",
+        "source": "The Gatesville Messenger",
+        "url": "/news/2026/07/10/gatesville-pd-swears-in-new-officers/",
+        "path": "_posts/2026-07-10-gatesville-pd-swears-in-new-officers.md",
+        "score": 110,
+        "matched_keywords": [
+          "gatesville",
+          "officers",
+          "city council"
+        ],
+        "relevance": "critical"
+      },
+      {
+        "title": "Texas AG Honors Child Support Assistant Attorneys General of the Year",
+        "date": "2026-07-10",
+        "source": "Texas Border Business",
+        "url": "/news/2026/07/10/texas-attorney-general-honors-child-support-assistant-attorneys/",
+        "path": "_posts/2026-07-10-texas-attorney-general-honors-child-support-assistant-attorneys.md",
+        "score": 160,
+        "matched_keywords": [
+          "attorneys general",
+          "child support",
+          "texas ag"
+        ],
+        "relevance": "critical"
+      },
+      {
+        "title": "Republicans look to legal battle, upcoming legislative session to end open primaries",
+        "date": "2026-07-10",
+        "source": "KVUE",
+        "url": "/news/2026/07/10/republicans-look-to-legal-battle-upcoming-legislative-session-to-end-open-primaries/",
+        "path": "_posts/2026-07-10-republicans-look-to-legal-battle-upcoming-legislative-session-to-end-open-primaries.md",
+        "score": 150,
+        "matched_keywords": [
+          "legal battle",
+          "republicans",
+          "open primaries",
+          "lawsuit"
+        ],
+        "relevance": "critical"
+      },
       {
         "title": "Texas man charged after Friday officer-involved shooting in Bell County",
         "date": "2026-06-21",
@@ -575,7 +631,7 @@
         "relevance": "critical"
       },
       {
-        "title": "NEWS RELEASE: KILLEEN POLICE INVESTIGATE THE MURDER OF A\u00a021-YEAR-OLD MALE ON 18th ST",
+        "title": "NEWS RELEASE: KILLEEN POLICE INVESTIGATE THE MURDER OF A 21-YEAR-OLD MALE ON 18th ST",
         "date": "2026-05-01",
         "source": "Killeen PD News",
         "url": "https://killeenpdnews.com/2026/04/30/news-release-killeen-police-investigate-the-murder-of-a-21-year-old-male-on-18th-st/",
@@ -662,7 +718,7 @@
         "relevance": "critical"
       },
       {
-        "title": "Killeen Police Seek Public\u2019s Help Identifying Three Men in Shots Fired Incident",
+        "title": "Killeen Police Seek Public’s Help Identifying Three Men in Shots Fired Incident",
         "date": "2026-03-07",
         "source": "Killeen Police Department",
         "url": "https://killeenpdnews.com/2026/03/07/killeen-police-seek-publics-help-identifying-three-men-in-shots-fired-incident/",
@@ -710,7 +766,7 @@
       {
         "title": "Murder indictment handed down after shooting death of Killeen man earlier this year",
         "date": "2026-06-11",
-        "source": "Killeen Daily Herald \u2014 Local",
+        "source": "Killeen Daily Herald — Local",
         "url": "https://kdhnews.com/news/crime/murder-indictment-handed-down-after-shooting-death-of-killeen-man-earlier-this-year/article_509c98e0-991d-424b-b717-cf632b0f1d25.html",
         "path": "_posts/2026-06-11-murder-indictment-handed-down-after-shooting-death-of-killeen-man-earlier-this-year.md",
         "score": 370,
@@ -739,7 +795,7 @@
       {
         "title": "Killeen man faces 4 felony charges in addition to 2022 murder accusation",
         "date": "2026-06-07",
-        "source": "Killeen Daily Herald \u2014 Local",
+        "source": "Killeen Daily Herald — Local",
         "url": "https://kdhnews.com/news/crime/killeen-man-faces-4-felony-charges-in-addition-to-2022-murder-accusation/article_4ad20ba2-0b01-4408-ab51-a17530bc697d.html",
         "path": "_posts/2026-06-07-killeen-man-faces-4-felony-charges-in-addition-to-2022-murder-accusation.md",
         "score": 340,
@@ -762,7 +818,7 @@
       {
         "title": "Killeen man charged with manslaughter in connection to fatal January crash",
         "date": "2026-06-11",
-        "source": "Killeen Daily Herald \u2014 Local",
+        "source": "Killeen Daily Herald — Local",
         "url": "https://kdhnews.com/news/crime/killeen-man-charged-with-manslaughter-in-connection-to-fatal-january-crash/article_aa0a1110-a00f-42be-9798-d7c3cdd841c2.html",
         "path": "_posts/2026-06-11-killeen-man-charged-with-manslaughter-in-connection-to-fatal-january-crash.md",
         "score": 335,
@@ -883,7 +939,7 @@
       {
         "title": "Man sentenced to 30 years in prison for deadly hit-and-run",
         "date": "2026-06-11",
-        "source": "Killeen Daily Herald \u2014 Local",
+        "source": "Killeen Daily Herald — Local",
         "url": "https://kdhnews.com/news/crime/man-sentenced-to-30-years-in-prison-for-deadly-hit-and-run/article_0f7b9be9-da9c-4ea9-93f1-88385077313a.html",
         "path": "_posts/2026-06-11-man-sentenced-to-30-years-in-prison-for-deadly-hit-and-run.md",
         "score": 140,
@@ -921,7 +977,7 @@
         "relevance": "critical"
       },
       {
-        "title": "Videos shows run-up to immigration officer\u2019s fatal shooting of Texas man",
+        "title": "Videos shows run-up to immigration officer’s fatal shooting of Texas man",
         "date": "2026-03-06",
         "source": "Texas Tribune",
         "url": "https://www.texastribune.org/2026/03/06/south-padre-immigration-officer-shooting/",
@@ -991,7 +1047,7 @@
       {
         "title": "Virginia man gets life in prison for double murder scheme in affair with au pair",
         "date": "2026-06-06",
-        "source": "Temple Daily Telegram \u2014 News",
+        "source": "Temple Daily Telegram — News",
         "url": "https://www.tdtnews.com/news/nation_world/article_b001348c-41a2-52e4-9bb4-5615cd4e3d16.html",
         "path": "_posts/2026-06-06-virginia-man-gets-life-in-prison-for-double-murder-scheme-in-affair-with-au-pair.md",
         "score": 100,
@@ -1045,7 +1101,7 @@
     ],
     "high": [
       {
-        "title": "Talarico hopes to turn Ken Paxton\u2019s scandals into victory",
+        "title": "Talarico hopes to turn Ken Paxton’s scandals into victory",
         "date": "2026-06-22",
         "source": "The Texas Tribune",
         "url": "https://www.texastribune.org/2026/06/22/james-talarico-ken-paxton-scandals-victory/",
@@ -1095,7 +1151,7 @@
         "relevance": "high"
       },
       {
-        "title": "Paxton\u2019s office threatens legal action if Big 12 penalizes Texas Tech for playing QB who placed bets",
+        "title": "Paxton’s office threatens legal action if Big 12 penalizes Texas Tech for playing QB who placed bets",
         "date": "2026-06-11",
         "source": "Legal Luminary",
         "url": "",
@@ -1115,7 +1171,7 @@
         "relevance": "high"
       },
       {
-        "title": "Corpus Christi\u2019s delayed water response bubbles up to Texas governor\u2019s race",
+        "title": "Corpus Christi’s delayed water response bubbles up to Texas governor’s race",
         "date": "2026-06-11",
         "source": "Legal Luminary",
         "url": "",
@@ -1125,7 +1181,7 @@
         "relevance": "high"
       },
       {
-        "title": "New pro-Talarico super PAC wants to give GOP voters \u201cpermission to defect\u201d",
+        "title": "New pro-Talarico super PAC wants to give GOP voters “permission to defect”",
         "date": "2026-06-09",
         "source": "Legal Luminary",
         "url": "",
@@ -1144,7 +1200,7 @@
       {
         "title": "Testimony ends after 4 days, closing arguments set in trial of fatal Texas track meet stabbing",
         "date": "2026-06-08",
-        "source": "Temple Daily Telegram \u2014 News",
+        "source": "Temple Daily Telegram — News",
         "url": "https://www.tdtnews.com/news/nation_world/article_2ba919dd-a29c-5184-b532-aea7e0589fe5.html",
         "path": "_posts/2026-06-08-testimony-ends-after-4-days-closing-arguments-set-in-trial-of-fatal-texas-track-meet-stabbing.md",
         "score": 90,
