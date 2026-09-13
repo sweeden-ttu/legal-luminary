@@ -1,8 +1,36 @@
 {
-  "validated_at": "2026-06-12T10:45:00",
-  "total_articles": 97,
+  "validated_at": "2026-07-12T12:00:00",
+  "total_articles": 99,
   "by_relevance": {
     "critical": [
+      {
+        "title": "State of Texas: Tax cuts, $1,500 checks - candidates for Governor offer economic relief ideas",
+        "date": "2026-07-11",
+        "source": "KXAN",
+        "url": "/news/2026/07/11/state-of-texas-tax-cuts/",
+        "path": "_posts/2026-07-11-state-of-texas-tax-cuts.md",
+        "score": 200,
+        "matched_keywords": [
+          "politics",
+          "candidate",
+          "election"
+        ],
+        "relevance": "critical"
+      },
+      {
+        "title": "1 dead after police shooting near Townlake YMCA",
+        "date": "2026-07-11",
+        "source": "KXAN",
+        "url": "/news/2026/07/11/1-dead-after-police-shooting-near-townlake-ymca/",
+        "path": "_posts/2026-07-11-1-dead-after-police-shooting-near-townlake-ymca.md",
+        "score": 180,
+        "matched_keywords": [
+          "police",
+          "austin",
+          "central texas"
+        ],
+        "relevance": "critical"
+      },
       {
         "title": "Texas man charged after Friday officer-involved shooting in Bell County",
         "date": "2026-06-21",
