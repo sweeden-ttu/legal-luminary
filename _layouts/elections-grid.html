@@ -48,7 +48,7 @@ extra_stylesheets:
                 <section class="elections-city-section" id="{{ cat_slug }}">
                     <header class="elections-city-header">
                         <h2 class="elections-city-title">{{ cat_title }}</h2>
-                        <a href="{{ '/elections/tx/' | append: cat_slug | relative_url }}" class="elections-city-viewall">
+                        <a href="{% if cat_slug == 'texas_attorney_general' %}{{ '/texas-ag-race-26/' | relative_url }}{% else %}#{{ cat_slug }}{% endif %}" class="elections-city-viewall">
                             View all <span aria-hidden="true">&rarr;</span>
                         </a>
                     </header>

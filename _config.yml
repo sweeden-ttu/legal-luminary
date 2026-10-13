@@ -162,6 +162,14 @@ collections:
 # Defaults for pages
 defaults:
   - scope:
+      path: "modules"
+    values:
+      robots: "noindex,nofollow"
+  - scope:
+      path: "archive"
+    values:
+      robots: "noindex,follow"
+  - scope:
       path: ""
       type: "pages"
     values:

@@ -1,12 +1,12 @@
 ---
 layout: default
 permalink: /texas-ag-race-26/mayes-middleton/
-title: "Mayes Middleton (R) — Texas Attorney General 2026 Primary Runoff | Legal Luminary"
-description: "Mayes Middleton, Texas State Senator (SD 11), is a Republican in the May 26, 2026 Texas Attorney General runoff vs. Chip Roy. November 3, 2026 general. Nonpartisan bio and sources."
+title: "Mayes Middleton (R) — Texas Attorney General 2026 General Election | Legal Luminary"
+description: "Mayes Middleton, Republican nominee for Texas Attorney General, November 3, 2026. Record, background and sources. Informational, nonpartisan."
 image: https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/100/100/Mayes_Middleton.jpg
 robots: index,follow
-date: 2026-03-28
-verified_at: 2026-03-28
+date: 2026-10-12
+verified_at: 2026-10-12
 sources:
   - url: https://ballotpedia.org/Mayes_Middleton
     label: Ballotpedia — Mayes Middleton
@@ -14,36 +14,49 @@ sources:
     label: Campaign website — Mayes Middleton
   - url: https://senate.texas.gov/member.php?d=11
     label: Texas Senate — Senator Mayes Middleton (SD 11)
+  - url: https://www.texastribune.org/2026/10/05/texas-attorney-general-election-2026-candidates-mayes-middleton-nathan-johnson-tom-oxford/
+    label: Texas Tribune — What to know about the 2026 AG race
+  - url: https://www.texastribune.org/2026/02/13/mayes-middleton-gop-primary-texas-attorney-general-2026/
+    label: Texas Tribune — Middleton runs on conservative, not courtroom, record
 ---
 
-# Mayes Middleton and the 2026 Texas Attorney General race
+# Mayes Middleton — Republican nominee for Texas Attorney General
 
-**Mayes Middleton** (Republican) is a member of the **Texas State Senate**, representing [District 11](https://ballotpedia.org/Texas_State_Senate_District_11). He assumed office in the Senate on **January 10, 2023**; his current Senate term ends **January 11, 2027**. He previously served in the **Texas House of Representatives** from **District 23** from **2019 through 2023** before winning election to the Senate. In 2026 he is a candidate for **Attorney General of Texas**. He advanced from the March 3 Republican primary and faces **Chip Roy** in the **Republican primary runoff on May 26, 2026**. The **general election** is **November 3, 2026**. This page is informational only and does not endorse any candidate.
+**Mayes Middleton** (Republican) is a Texas state senator from Galveston (District 11) and the Republican nominee for Attorney General in the **November 3, 2026** general election. He won the May 26 runoff over U.S. Rep. Chip Roy, with about 55% of the vote ([KERA](https://www.keranews.org/news/2026-05-26/texas-attorney-general-nomination-democratic-republican-runoff-nathan-johnson-joe-jaworski-mayes-middleton-chip-roy-ken-paxton)). This page is informational only and does not endorse any candidate.
 
-## Background and education
+## Background
 
-According to [Ballotpedia](https://ballotpedia.org/Mayes_Middleton), Middleton was born in Wallisville, Texas, and resides in Galveston County. He earned bachelor’s degrees and a J.D. from the **University of Texas at Austin**.
+Middleton is president of Middleton Oil Company and operates ranching and farming interests. He holds a bachelor's degree and a J.D. from the University of Texas at Austin ([Ballotpedia](https://ballotpedia.org/Mayes_Middleton)).
 
-## Business and private-sector experience
+## Legislative record
 
-Ballotpedia reports Middleton’s career experience includes serving as president of **Middleton Oil Company** and operating **ranching, cattle, and farming** operations.
+He served in the Texas House (District 23) from 2019 to 2023 and in the Senate since January 2023 ([Texas Senate](https://senate.texas.gov/member.php?d=11)). The Texas Tribune's February profile describes a record built on conservative legislation rather than courtroom experience, and notes that he repeatedly refiled bills that failed in earlier sessions ([Texas Tribune](https://www.texastribune.org/2026/02/13/mayes-middleton-gop-primary-texas-attorney-general-2026/)). His campaign cites legislation on women's sports and on restricting local-government lobbying with public money. For bills he authored and how he voted, see the [Legislature's authored-bills report](https://capitol.texas.gov/reports/report.aspx?LegSess=892&ID=author&Code=A1350) and the Senate journals; this page does not summarize bills whose numbers and outcomes have not been checked against those records.
 
-## Legislative service
+## Stated priorities
 
-Middleton represented **House District 23** after winning the 2018 Republican primary and general elections and was reelected in 2020. He was elected to **Senate District 11** in 2022. Committee assignments and Capitol contact information are available through the [Texas Senate](https://senate.texas.gov/member.php?d=11) and [Ballotpedia](https://ballotpedia.org/Mayes_Middleton).
+Per the [Texas Tribune](https://www.texastribune.org/2026/10/05/texas-attorney-general-election-2026-candidates-mayes-middleton-nathan-johnson-tom-oxford/): enforcing federal border-security policy, upholding Texas abortion laws, protecting oil and gas jobs, blocking "foreign adversaries" from buying Texas property, and prosecuting violations of state law including election crimes. The Tribune notes that Texas courts have said election-crime prosecutions belong to local prosecutors.
 
-## 2026 campaign for Attorney General
+## Campaign finance (reported through June 30, 2026)
 
-Middleton is one of two Republicans in the **May 26, 2026 runoff** for attorney general, alongside **Chip Roy**, after both advanced from the March 3, 2026 primary.[Ballotpedia](https://ballotpedia.org/Texas_Attorney_General_election,_2026) Stated campaign themes and positions are published on his [campaign website](https://www.mayesmiddleton.com/) and in Ballotpedia’s [Candidate Connection](https://ballotpedia.org/Mayes_Middleton#Campaign_themes) survey responses, where available.
+About $911,000 cash on hand; he has put more than $17 million of his own money into the race since 2025. Other large donors include Texans for Lawsuit Reform, Buc-ee's owner Don Wasek and Energy Transfer's Kelcy Warren ([Texas Tribune](https://www.texastribune.org/2026/10/05/texas-attorney-general-election-2026-candidates-mayes-middleton-nathan-johnson-tom-oxford/)).
 
-## Related profiles (2026 Texas AG runoff)
+## Related profiles (2026 Texas AG general election)
 
-- [Chip Roy (R)](/texas-ag-race-26/chip-roy/) — Republican runoff opponent  
-- [Nathan Johnson (D)](/texas-ag-race-26/nathan-johnson/) — Democratic runoff  
-- [Joe Jaworski (D)](/texas-ag-race-26/joe-jaworski/) — Democratic runoff  
+- [Mayes Middleton (R)](/texas-ag-race-26/mayes-middleton/)
+- [Nathan Johnson (D)](/texas-ag-race-26/nathan-johnson/)
+- [Tom Oxford (L)](/texas-ag-race-26/tom-oxford/)
+- Primary-season profiles: [Chip Roy (R)](/texas-ag-race-26/chip-roy/), [Joe Jaworski (D)](/texas-ag-race-26/joe-jaworski/)
 - [Candidates hub (all races)](/candidates/)
 
-## Further reading (external)
+## Why this race matters in Killeen and Bell County
 
-- [Texas Attorney General election, 2026 — Ballotpedia](https://ballotpedia.org/Texas_Attorney_General_election,_2026)  
+The Attorney General represents the State of Texas in civil litigation, enforces consumer-protection law, issues legal opinions, and runs child-support collection. Most criminal prosecution is handled by local district attorneys, and Texas courts have limited the AG's power to prosecute on its own. Killeen has seen the office's reach firsthand: the AG sued Killeen and four other cities over local marijuana-decriminalization ordinances ([Killeen Daily Herald timeline](https://kdhnews.com/news/crime/a-timeline-of-turning-a-blind-eye-to-marijuana-possession-in-killeen/article_04628110-c223-11ee-a5bf-f7354cc25cd6.html)). Fort Cavazos adds a third layer: conduct on the installation can fall under federal or military jurisdiction rather than state law.
+
+## Sources and further reading
+
+- [What to know about the 2026 Texas attorney general race — Texas Tribune, Oct. 5, 2026](https://www.texastribune.org/2026/10/05/texas-attorney-general-election-2026-candidates-mayes-middleton-nathan-johnson-tom-oxford/)
+- [Texas AG primary runoff results — KERA, May 26, 2026](https://www.keranews.org/news/2026-05-26/texas-attorney-general-nomination-democratic-republican-runoff-nathan-johnson-joe-jaworski-mayes-middleton-chip-roy-ken-paxton)
+- [2026 Texas Attorney General election — Wikipedia](https://en.wikipedia.org/wiki/2026_Texas_Attorney_General_election)
 - [Texas Secretary of State — Elections](https://www.sos.texas.gov/elections/index.shtml)
+
+*Candidate-finance figures are as reported through June 30, 2026 and will change with later filings. Check the [Texas Ethics Commission](https://www.ethics.state.tx.us/) for current reports.*

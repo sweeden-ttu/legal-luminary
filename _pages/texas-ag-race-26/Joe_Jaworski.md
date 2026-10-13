@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /texas-ag-race-26/joe-jaworski/
-title: "Joe Jaworski (D) — Texas Attorney General 2026 Primary Runoff | Legal Luminary"
+title: "Joe Jaworski (D) — Texas Attorney General 2026 Primary Runoff (Concluded) | Legal Luminary"
 description: "Joe Jaworski, attorney and former Galveston mayor, is a Democrat in the May 26, 2026 Texas Attorney General runoff vs. Nathan Johnson. November 3, 2026 general. Nonpartisan bio and sources."
 image: https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/100/100/Joe_Jaworski_26.png
 robots: index,follow
@@ -10,9 +10,9 @@ verified_at: 2026-03-28
 sources:
   - url: https://ballotpedia.org/Joe_Jaworski
     label: Ballotpedia — Joe Jaworski
-  - url: https://www.jaworskifortexas.com/
-    label: Campaign website — Jaworski for Texas
 ---
+
+> **Update, Oct. 12, 2026:** Joe Jaworski lost the May 26, 2026 Democratic runoff to Nathan Johnson and is not on the November ballot. This page is kept as primary-season history; see the [general-election candidates](/texas-ag-race-26/mayes-middleton/).
 
 # Joe Jaworski and the 2026 Texas Attorney General race
 
@@ -28,7 +28,7 @@ Ballotpedia describes Jaworski as a **former mayor of Galveston**. His tenure an
 
 ## 2026 campaign for Attorney General
 
-Jaworski is one of two Democrats in the **May 26, 2026 runoff** for attorney general, alongside **Nathan Johnson**, after both advanced from the March 3, 2026 primary (Ballotpedia reports Jaworski received about 26.4% in the first round of a three-way Democratic primary).[Ballotpedia](https://ballotpedia.org/Texas_Attorney_General_election,_2026) Stated campaign themes appear on his [campaign website](https://www.jaworskifortexas.com/) and in Ballotpedia’s survey responses.
+Jaworski is one of two Democrats in the **May 26, 2026 runoff** for attorney general, alongside **Nathan Johnson**, after both advanced from the March 3, 2026 primary (Ballotpedia reports Jaworski received about 26.4% in the first round of a three-way Democratic primary).[Ballotpedia](https://ballotpedia.org/Texas_Attorney_General_election,_2026) His campaign website is no longer online; stated themes were published in Ballotpedia’s survey responses.
 
 ## Related profiles (2026 Texas AG runoff)
 

@@ -1,12 +1,12 @@
 ---
 layout: default
 permalink: /texas-ag-race-26/nathan-johnson/
-title: "Nathan Johnson (D) — Texas Attorney General 2026 Primary Runoff | Legal Luminary"
-description: "Nathan Johnson, Texas State Senator (SD 16), is a Democrat in the May 26, 2026 Texas Attorney General runoff vs. Joe Jaworski. November 3, 2026 general. Nonpartisan bio and sources."
+title: "Nathan Johnson (D) — Texas Attorney General 2026 General Election | Legal Luminary"
+description: "Nathan Johnson, Democratic nominee for Texas Attorney General, November 3, 2026. Record, background and sources. Informational, nonpartisan."
 image: https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/100/100/Nathan_Johnson_20230724_022433.jpg
 robots: index,follow
-date: 2026-03-28
-verified_at: 2026-03-28
+date: 2026-10-12
+verified_at: 2026-10-12
 sources:
   - url: https://ballotpedia.org/Nathan_Johnson_(Texas)
     label: Ballotpedia — Nathan Johnson (Texas)
@@ -14,32 +14,49 @@ sources:
     label: Campaign website — Nathan Johnson for Texas
   - url: https://senate.texas.gov/member.php?d=16
     label: Texas Senate — Senator Nathan Johnson (SD 16)
+  - url: https://www.texastribune.org/2026/10/05/texas-attorney-general-election-2026-candidates-mayes-middleton-nathan-johnson-tom-oxford/
+    label: Texas Tribune — What to know about the 2026 AG race
+  - url: https://www.texastribune.org/2026/10/08/texas-attorney-general-election-nathan-johnson-mayes-middleton/
+    label: Texas Tribune — Johnson's back-to-basics pitch
 ---
 
-# Nathan Johnson and the 2026 Texas Attorney General race
+# Nathan Johnson — Democratic nominee for Texas Attorney General
 
-**Nathan Johnson** (Democrat) is a member of the **Texas State Senate**, representing [District 16](https://ballotpedia.org/Texas_State_Senate_District_16) in the Dallas area. He assumed office on **January 8, 2019**; his current Senate term ends **January 9, 2029**. In 2026 he is a candidate for **Attorney General of Texas**. He advanced from the March 3 Democratic primary and faces **Joe Jaworski** in the **Democratic primary runoff on May 26, 2026**. The **general election** is **November 3, 2026**. This page is informational only and does not endorse any candidate.
+**Nathan Johnson** (Democrat) is a Texas state senator from Dallas (District 16) and the Democratic nominee for Attorney General in the **November 3, 2026** general election. He won the May 26 runoff over former Galveston mayor Joe Jaworski, about 61% to 39% ([KERA](https://www.keranews.org/news/2026-05-26/texas-attorney-general-nomination-democratic-republican-runoff-nathan-johnson-joe-jaworski-mayes-middleton-chip-roy-ken-paxton)). This page is informational only and does not endorse any candidate.
 
-## Background and education
+## Background
 
-According to [Ballotpedia](https://ballotpedia.org/Nathan_Johnson_(Texas)), Johnson earned a bachelor’s degree in **physics** from the **University of Arizona** and a **J.D.** from the **University of Texas School of Law**. His professional experience includes work as a **litigator and mediator** at **Thompson Coburn LLP**. Ballotpedia also notes he composed musical scores for the television program *Dragon Ball Z*.
+Johnson holds a physics degree from the University of Arizona and a J.D. from the University of Texas School of Law, and has worked as a litigator and mediator at Thompson Coburn LLP ([Ballotpedia](https://ballotpedia.org/Nathan_Johnson_(Texas))).
 
-## Texas Senate
+## Legislative record
 
-Johnson’s committee assignments by session—including roles on **Business & Commerce**, **Jurisprudence**, **Water, Agriculture, & Rural Affairs**, and others—are listed on [Ballotpedia](https://ballotpedia.org/Nathan_Johnson_(Texas)). His Capitol biography and contact information appear on the [Texas Senate website](https://senate.texas.gov/member.php?d=16).
+He has served in the Texas Senate since January 2019, after defeating incumbent Republican Don Huffines in 2018. Committee assignments have included Business & Commerce, Jurisprudence, and Water, Agriculture & Rural Affairs ([Ballotpedia](https://ballotpedia.org/Nathan_Johnson_(Texas))). His campaign says he has passed 134 bills since 2019; Legal Luminary has not independently verified that figure. See the [Texas Senate](https://senate.texas.gov/member.php?d=16) and the Legislature's records for bills and votes.
 
-## 2026 campaign for Attorney General
+## Stated priorities
 
-Johnson is one of two Democrats in the **May 26, 2026 runoff** for attorney general, alongside **Joe Jaworski**, after both advanced from the March 3, 2026 primary (Ballotpedia reports Johnson led the first round with about 48.1% of the vote in the three-way Democratic primary).[Ballotpedia](https://ballotpedia.org/Texas_Attorney_General_election,_2026) Stated campaign themes appear in Ballotpedia’s [Candidate Connection](https://ballotpedia.org/Nathan_Johnson_(Texas)#Campaign_themes) survey and on his [campaign website](https://www.nathanfortexas.com/).
+Per the [Texas Tribune](https://www.texastribune.org/2026/10/08/texas-attorney-general-election-nathan-johnson-mayes-middleton/): a "back-to-basics" office centered on child-support collection, consumer protection and legal opinions; working with local district attorneys instead of seeking more criminal-prosecution power; investigating officials regardless of party; and suing the federal government over border policy he considers unconstitutional. Former Republican Texas Supreme Court justices endorsed him on Aug. 31, 2026 ([Texas Tribune](https://www.texastribune.org/2026/10/05/texas-attorney-general-election-2026-candidates-mayes-middleton-nathan-johnson-tom-oxford/)).
 
-## Related profiles (2026 Texas AG runoff)
+## Campaign finance (reported through June 30, 2026)
 
-- [Joe Jaworski (D)](/texas-ag-race-26/joe-jaworski/) — Democratic runoff opponent  
-- [Chip Roy (R)](/texas-ag-race-26/chip-roy/) — Republican runoff  
-- [Mayes Middleton (R)](/texas-ag-race-26/mayes-middleton/) — Republican runoff  
+About $290,000 cash on hand. Large donors include Texas Sands PAC ($120,000) ([Texas Tribune](https://www.texastribune.org/2026/10/05/texas-attorney-general-election-2026-candidates-mayes-middleton-nathan-johnson-tom-oxford/)).
+
+## Related profiles (2026 Texas AG general election)
+
+- [Mayes Middleton (R)](/texas-ag-race-26/mayes-middleton/)
+- [Nathan Johnson (D)](/texas-ag-race-26/nathan-johnson/)
+- [Tom Oxford (L)](/texas-ag-race-26/tom-oxford/)
+- Primary-season profiles: [Chip Roy (R)](/texas-ag-race-26/chip-roy/), [Joe Jaworski (D)](/texas-ag-race-26/joe-jaworski/)
 - [Candidates hub (all races)](/candidates/)
 
-## Further reading (external)
+## Why this race matters in Killeen and Bell County
 
-- [Texas Attorney General election, 2026 — Ballotpedia](https://ballotpedia.org/Texas_Attorney_General_election,_2026)  
+The Attorney General represents the State of Texas in civil litigation, enforces consumer-protection law, issues legal opinions, and runs child-support collection. Most criminal prosecution is handled by local district attorneys, and Texas courts have limited the AG's power to prosecute on its own. Killeen has seen the office's reach firsthand: the AG sued Killeen and four other cities over local marijuana-decriminalization ordinances ([Killeen Daily Herald timeline](https://kdhnews.com/news/crime/a-timeline-of-turning-a-blind-eye-to-marijuana-possession-in-killeen/article_04628110-c223-11ee-a5bf-f7354cc25cd6.html)). Fort Cavazos adds a third layer: conduct on the installation can fall under federal or military jurisdiction rather than state law.
+
+## Sources and further reading
+
+- [What to know about the 2026 Texas attorney general race — Texas Tribune, Oct. 5, 2026](https://www.texastribune.org/2026/10/05/texas-attorney-general-election-2026-candidates-mayes-middleton-nathan-johnson-tom-oxford/)
+- [Texas AG primary runoff results — KERA, May 26, 2026](https://www.keranews.org/news/2026-05-26/texas-attorney-general-nomination-democratic-republican-runoff-nathan-johnson-joe-jaworski-mayes-middleton-chip-roy-ken-paxton)
+- [2026 Texas Attorney General election — Wikipedia](https://en.wikipedia.org/wiki/2026_Texas_Attorney_General_election)
 - [Texas Secretary of State — Elections](https://www.sos.texas.gov/elections/index.shtml)
+
+*Candidate-finance figures are as reported through June 30, 2026 and will change with later filings. Check the [Texas Ethics Commission](https://www.ethics.state.tx.us/) for current reports.*
