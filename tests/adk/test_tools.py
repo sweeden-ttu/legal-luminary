@@ -244,3 +244,12 @@ def test_verify_quote_reads_pdfs(mock_web):
     mock_web[BALLOT] = (200, make_pdf("Proposition A Charter Amendment"), None)
     assert tools.verify_quote(BALLOT, "proposition a")["verified"] is True
     assert tools.verify_quote(BALLOT, "proposition z")["verified"] is False
+
+
+def test_fetch_document_flags_pdfs_without_a_text_layer(mock_web):
+    # Bell County's sample ballots are image-only PDFs.
+    mock_web[BALLOT] = (200, make_pdf(""), None)
+    doc = tools.fetch_document(BALLOT)
+    assert doc["pages"] == 1
+    assert doc["text"] == ""
+    assert "no text layer" in doc["error"]

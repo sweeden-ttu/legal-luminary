@@ -13,7 +13,10 @@ pytestmark = pytest.mark.unit
 REPO = Path(__file__).resolve().parents[2]
 CANDIDATES = sorted((REPO / "collections" / "_candidates").rglob("*.md"))
 AG_PAGES = sorted((REPO / "_pages" / "texas-ag-race-26").glob("*.md"))
-ELECTION_PAGES = AG_PAGES + [REPO / "_pages" / "housing-act-2026.md"]
+ELECTION_PAGES = AG_PAGES + [
+    REPO / "_pages" / "housing-act-2026.md",
+    REPO / "_pages" / "nov-3-2026-ballot-guide.md",
+]
 
 
 def front_matter(path: Path) -> dict:

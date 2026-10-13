@@ -22,6 +22,7 @@ def test_live_site_home_and_key_pages_load():
 def test_election_page_sources_have_no_dead_links():
     urls = workflows.collect_urls(
         "_pages/texas-ag-race-26\n_pages/housing-act-2026.md\n"
+        "_pages/nov-3-2026-ballot-guide.md\n"
         "collections/_candidates/courts/jp/jessica_a_gonzalez.md"
     )
     report = tools.check_links(urls)

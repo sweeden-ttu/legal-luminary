@@ -380,11 +380,15 @@ def fetch_document(url: str) -> dict:
         pages = len(PdfReader(io.BytesIO(bytes(data))).pages)
     except PdfReadError as exc:
         return base | empty | {"error": f"unreadable PDF: {exc}"}
-    return base | {
+    result = base | {
         "pages": pages,
         "text": reader_text[: config.MAX_PAGE_CHARS],
         "truncated": len(reader_text) > config.MAX_PAGE_CHARS,
     }
+    if pages and not reader_text:
+        # County sample ballots are image-only; say so rather than return silence.
+        result["error"] = "no text layer (scanned or outlined PDF); read it visually"
+    return result
 
 
 def _normalize_text(text: str) -> str:
