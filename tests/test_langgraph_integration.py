@@ -49,6 +49,12 @@ class TestDemo1Graph:
 class TestQuiz1Graph:
     """Tests for Quiz 1 - Vague Specification Detection."""
 
+    @pytest.fixture(autouse=True)
+    def _heuristic_mode(self, monkeypatch):
+        # get_llm() calls GPT-4 whenever OPENAI_API_KEY is set (load_dotenv() may
+        # pick one up from a parent .env). Force the deterministic fallback.
+        monkeypatch.delenv("OPENAI_API_KEY", raising=False)
+
     def test_check_vagueness_vague(self):
         from agent.quiz1_graph import check_vagueness, Quiz1State
 
