@@ -178,3 +178,7 @@ python3.11/__pycache__/_weakrefset.cpython-311.pyc
 .conda-lsp/lib/python3.11/json/__pycache__/encoder.cpython-311.pyc
 .conda-lsp/lib/python3.11/json/__pycache__/scanner.cpython-311.pyc
 .conda-lsp/lib/python3.11/re/__pycache__/__init__.cpython-311.pyc
+
+# ADK agents: local venv and per-agent API keys
+.venv-adk/
+agents/legal_luminary_adk/.env

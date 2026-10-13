@@ -1,0 +1,10 @@
+# Legal Luminary ADK agents (agents/legal_luminary_adk) and their tests.
+google-adk>=2.11,<3
+anthropic>=1.13,<2
+httpx>=0.27
+pydantic>=2.7
+pypdf>=5.0
+pyyaml>=6.0
+pytest>=8.3
+pytest-asyncio>=0.24
+ruff>=0.6
