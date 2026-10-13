@@ -40,7 +40,7 @@ def get_langsmith_callbacks():
             "LangSmith API key (and optionally LANGCHAIN_PROJECT). "
         )
 
-    from langchain.callbacks.tracers import LangChainTracer
+    from langchain_core.tracers import LangChainTracer
 
     project = (
         os.getenv("LANGCHAIN_PROJECT", "LangGraph_Demo2").strip() or "LangGraph_Demo2"

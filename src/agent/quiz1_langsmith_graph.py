@@ -17,7 +17,7 @@ load_dotenv()
 
 from langgraph.graph import StateGraph, END
 from langchain_openai import ChatOpenAI
-from langchain.schema import HumanMessage, SystemMessage
+from langchain_core.messages import HumanMessage, SystemMessage
 
 
 def get_langsmith_callbacks():
@@ -39,7 +39,7 @@ def get_langsmith_callbacks():
             "LangSmith API key."
         )
 
-    from langchain.callbacks.tracers import LangChainTracer
+    from langchain_core.tracers import LangChainTracer
 
     project = (
         os.getenv("LANGCHAIN_PROJECT", "Quiz1_VagueSpecDetection").strip()
