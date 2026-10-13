@@ -8,12 +8,14 @@ import os
 
 
 # ============================================================================
-# LangSmith Tracing (enabled project-wide)
+# LangSmith Tracing (enabled project-wide when a LangSmith key is configured;
+# without one every traced run is rejected with 401 Unauthorized)
 # ============================================================================
 
-os.environ.setdefault("LANGCHAIN_TRACING_V2", "true")
+if os.environ.get("LANGSMITH_API_KEY") or os.environ.get("LANGCHAIN_API_KEY"):
+    os.environ.setdefault("LANGCHAIN_TRACING_V2", "true")
+    os.environ.setdefault("LANGSMITH_TRACING", "true")
 os.environ.setdefault("LANGCHAIN_PROJECT", "Software Validation and Verification")
-os.environ.setdefault("LANGSMITH_TRACING", "true")
 os.environ.setdefault("LANGSMITH_ENDPOINT", "https://api.smith.langchain.com")
 
 

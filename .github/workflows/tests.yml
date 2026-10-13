@@ -1,0 +1,114 @@
+name: Tests
+
+on:
+  push:
+    branches: ["master", "github-pages"]
+  pull_request:
+  schedule:
+    # Weekly re-check of cited sources (Mondays 12:00 UTC).
+    - cron: "0 12 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: tests-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  unit:
+    name: ADK agents — lint + unit tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements_adk.txt
+      - run: pip install -r requirements_adk.txt
+      - name: Lint
+        run: |
+          ruff check agents/legal_luminary_adk tests/adk
+          ruff format --check agents/legal_luminary_adk tests/adk
+      - name: Unit tests (no network, no model)
+        run: pytest tests/adk -m "not integration" -q
+
+  jekyll-build:
+    name: Jekyll build (catches front-matter errors)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Ensure Gemfile.lock includes Linux platform
+        run: |
+          if ! grep -q 'x86_64-linux' Gemfile.lock; then
+            sed -i '/^PLATFORMS$/a\  x86_64-linux' Gemfile.lock
+          fi
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
+      - run: bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production
+
+  integration:
+    name: Integration — live sources (no model)
+    needs: unit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements_adk.txt
+      - run: pip install -r requirements_adk.txt
+      - name: Live-site and source-link tests
+        run: pytest tests/adk -m "integration and not llm" -q -rA
+      - name: Source audit report
+        if: always()
+        working-directory: agents
+        run: >
+          python -m legal_luminary_adk.cli audit-sources
+          _pages/texas-ag-race-26 _pages/housing-act-2026.md
+          collections/_candidates/courts
+          --out ../source-audit.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: source-audit
+          path: source-audit.json
+
+  integration-claude:
+    name: Integration — Claude research agent
+    needs: unit
+    # Billed: runs on schedule, manual dispatch, and pushes to master only.
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements_adk.txt
+      - run: pip install -r requirements_adk.txt
+      - name: Claude end-to-end test (skips if ANTHROPIC_API_KEY secret is unset)
+        run: pytest tests/adk -m llm -q -rA
+
+  legacy:
+    name: Legacy test suite (no network, no model)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - run: pip install -r requirements.txt
+      - run: pytest tests -q -m "not integration and not selenium" --ignore=tests/selenium --ignore=tests/adk
