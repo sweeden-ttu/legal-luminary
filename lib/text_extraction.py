@@ -126,8 +126,8 @@ def cleanup_content(content: str, page_number: int) -> str:
     Reduce legal document line clutter.
     Removes floating pipes, right-side artifacts, shifts left.
     """
-    # Remove " | " at end of line (floating pipe)
-    content = re.sub(r" \| *\n", "\n", content, flags=re.MULTILINE)
+    # Remove " | " at end of line (floating pipe), with all the spaces before it
+    content = re.sub(r" +\| *$", "", content, flags=re.MULTILINE)
     # Also match Doctor-style: 4+ spaces + pipe + space at EOL
     content = re.sub(r"\s{4,}\| *$", "", content, flags=re.MULTILINE)
 

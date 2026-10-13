@@ -72,9 +72,12 @@ def get_website_verifier_graph():
     app = graph_builder.compile()
     return app
 
-def verify_website(input: dict) -> dict:
-    """Verifies the content of a website using the LangGraph."""
-    url = input["url"]
+def verify_website(input: dict | str) -> dict:
+    """Verifies the content of a website using the LangGraph.
+
+    Accepts a URL string or a LangSmith-style inputs dict ``{"url": ...}``.
+    """
+    url = input if isinstance(input, str) else input["url"]
     app = get_website_verifier_graph()
     initial_state = {"url": url}
     final_state = app.invoke(initial_state)

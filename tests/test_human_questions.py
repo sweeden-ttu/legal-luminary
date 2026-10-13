@@ -49,6 +49,11 @@ HUMAN_QUESTION_CASES = [
 ]
 
 
+def _cases(content_type: str):
+    """HUMAN_QUESTION_CASES for one content type."""
+    return [case for case in HUMAN_QUESTION_CASES if case[0] == content_type]
+
+
 def _validation_key(content_type: str) -> str:
     """Map content_type to state key for validation result."""
     return {
@@ -63,10 +68,8 @@ def _validation_key(content_type: str) -> str:
     }[content_type]
 
 
-@pytest.mark.parametrize("content_type,query,expect_verified,description", HUMAN_QUESTION_CASES)
+@pytest.mark.parametrize("content_type,query,expect_verified,description", _cases("news_source"))
 def test_human_question_news(content_type, query, expect_verified, description):
-    if content_type != "news_source":
-        pytest.skip("news_source only")
     state = create_initial_state(content_type, query)
     with patch("validators.news_validator._llm_credibility_check", return_value=0.9 if expect_verified else 0.2):
         result = validate_news_source(state)
@@ -74,10 +77,8 @@ def test_human_question_news(content_type, query, expect_verified, description):
     assert result[key]["is_valid"] is expect_verified
 
 
-@pytest.mark.parametrize("content_type,query,expect_verified,description", HUMAN_QUESTION_CASES)
+@pytest.mark.parametrize("content_type,query,expect_verified,description", _cases("judge"))
 def test_human_question_judge(content_type, query, expect_verified, description):
-    if content_type != "judge":
-        pytest.skip("judge only")
     state = create_initial_state(content_type, query)
     with patch("validators.judge_validator._search_courtlistener_judges",
                return_value={"found": expect_verified, "name": "John Roberts" if expect_verified else "", "court": "Supreme Court", "url": ""}):
@@ -87,10 +88,8 @@ def test_human_question_judge(content_type, query, expect_verified, description)
     assert result[key]["is_valid"] is expect_verified
 
 
-@pytest.mark.parametrize("content_type,query,expect_verified,description", HUMAN_QUESTION_CASES)
+@pytest.mark.parametrize("content_type,query,expect_verified,description", _cases("official"))
 def test_human_question_official(content_type, query, expect_verified, description):
-    if content_type != "official":
-        pytest.skip("official only")
     state = create_initial_state(content_type, query)
     with patch("validators.official_validator._search_congress_members",
                return_value={"found": expect_verified, "name": "Ted Cruz", "state": "TX", "party": "R", "url": ""}):
@@ -102,10 +101,8 @@ def test_human_question_official(content_type, query, expect_verified, descripti
     assert result[key]["is_valid"] is expect_verified
 
 
-@pytest.mark.parametrize("content_type,query,expect_verified,description", HUMAN_QUESTION_CASES)
+@pytest.mark.parametrize("content_type,query,expect_verified,description", _cases("election"))
 def test_human_question_election(content_type, query, expect_verified, description):
-    if content_type != "election":
-        pytest.skip("election only")
     state = create_initial_state(content_type, query)
     with patch("validators.election_validator._search_fec_elections",
                return_value={"found": expect_verified, "election": "President", "cycle": "2024", "url": ""}):
@@ -115,10 +112,8 @@ def test_human_question_election(content_type, query, expect_verified, descripti
     assert result[key]["is_valid"] is expect_verified
 
 
-@pytest.mark.parametrize("content_type,query,expect_verified,description", HUMAN_QUESTION_CASES)
+@pytest.mark.parametrize("content_type,query,expect_verified,description", _cases("law"))
 def test_human_question_law(content_type, query, expect_verified, description):
-    if content_type != "law":
-        pytest.skip("law only")
     state = create_initial_state(content_type, query)
     with patch("validators.law_validator._search_congress_bills",
                return_value={"found": expect_verified, "title": "Penal Code", "url": ""}):
@@ -128,10 +123,8 @@ def test_human_question_law(content_type, query, expect_verified, description):
     assert result[key]["is_valid"] is expect_verified
 
 
-@pytest.mark.parametrize("content_type,query,expect_verified,description", HUMAN_QUESTION_CASES)
+@pytest.mark.parametrize("content_type,query,expect_verified,description", _cases("court_document"))
 def test_human_question_court_doc(content_type, query, expect_verified, description):
-    if content_type != "court_document":
-        pytest.skip("court_document only")
     state = create_initial_state(content_type, query)
     with patch("validators.court_doc_validator._search_courtlistener_opinions",
                return_value={"found": expect_verified, "case_name": "Brown v. Board of Education", "url": ""}):
@@ -142,10 +135,8 @@ def test_human_question_court_doc(content_type, query, expect_verified, descript
     assert result[key]["is_valid"] is expect_verified
 
 
-@pytest.mark.parametrize("content_type,query,expect_verified,description", HUMAN_QUESTION_CASES)
+@pytest.mark.parametrize("content_type,query,expect_verified,description", _cases("legal_template"))
 def test_human_question_template(content_type, query, expect_verified, description):
-    if content_type != "legal_template":
-        pytest.skip("legal_template only")
     state = create_initial_state(content_type, query)
     reg = {"found": expect_verified, "registry": "Federal Court Forms", "url": "https://uscourts.gov/forms"}
     with patch("validators.template_validator._check_form_registry", return_value=reg):
@@ -158,10 +149,8 @@ def test_human_question_template(content_type, query, expect_verified, descripti
         assert result[key]["is_valid"] is False
 
 
-@pytest.mark.parametrize("content_type,query,expect_verified,description", HUMAN_QUESTION_CASES)
+@pytest.mark.parametrize("content_type,query,expect_verified,description", _cases("notary_public"))
 def test_human_question_notary(content_type, query, expect_verified, description):
-    if content_type != "notary_public":
-        pytest.skip("notary_public only")
     state = create_initial_state(content_type, query)
     # Mock notary search: validator imports search_notaries from services.notary_finder inside function
     from services.notary_finder import NotaryRecord

@@ -101,11 +101,8 @@ jobs:
         run: pytest tests/adk -m llm -q -rA
 
   legacy:
-    name: Legacy test suite (informational)
+    name: Legacy test suite (no network, no model)
     runs-on: ubuntu-latest
-    # Pre-existing failures: config/ and lib/ were archived in 22427580 and
-    # several tests need live services. Kept visible without blocking merges.
-    continue-on-error: true
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

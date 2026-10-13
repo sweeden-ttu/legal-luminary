@@ -44,9 +44,10 @@ else:
 
 from langchain_core.messages import HumanMessage, SystemMessage
 
-# Ensure tracing
-os.environ.setdefault("LANGCHAIN_TRACING_V2", "true")
-os.environ.setdefault("LANGSMITH_TRACING", "true")
+# Ensure tracing (only with a LangSmith key; otherwise every run is rejected with 401)
+if os.environ.get("LANGSMITH_API_KEY") or os.environ.get("LANGCHAIN_API_KEY"):
+    os.environ.setdefault("LANGCHAIN_TRACING_V2", "true")
+    os.environ.setdefault("LANGSMITH_TRACING", "true")
 
 
 # ===================================================================

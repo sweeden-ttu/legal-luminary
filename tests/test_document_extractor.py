@@ -64,7 +64,8 @@ def test_extract_document_text_uses_doctor_when_available(mock_get):
     """When Doctor available, uses Doctor for extraction."""
     mock_client = MagicMock()
     mock_client.is_available.return_value = True
-    mock_client.extract_doc_text_from_bytes.return_value = {
+    # A file path is sent to Doctor via extract_doc_text (bytes use extract_doc_text_from_bytes).
+    mock_client.extract_doc_text.return_value = {
         "content": "Extracted by Doctor",
         "err": "",
         "extension": "pdf",
@@ -87,6 +88,7 @@ def test_extract_document_text_uses_doctor_when_available(mock_get):
         assert result["content"] == "Extracted by Doctor"
         assert result["source"] == "doctor"
         assert result["page_count"] == 5
+        mock_client.extract_doc_text.assert_called_once_with(path, ocr_available=False)
     finally:
         os.unlink(path)
 

@@ -1,12 +1,23 @@
 
+import os
+
 import pytest
 from verifier.website_checker import verify_website
 import json
+
+# verify_website() fetches the live page and asks an OpenAI model to label it.
+needs_openai_key = pytest.mark.skipif(
+    not os.environ.get("OPENAI_API_KEY"), reason="OPENAI_API_KEY not set"
+)
 
 # =============================================================================
 # Equivalence Partitioning Tests
 # =============================================================================
 
+@pytest.mark.integration
+@pytest.mark.network
+@pytest.mark.llm
+@needs_openai_key
 @pytest.mark.parametrize("url", [
     "https://www.killeentexas.gov/CivicAlerts.aspx?AID=2223",
     "https://kdhnews.com/news/local/crime/harker-heights-man-accused-of-shooting-into-home-with-people-inside/article_1de5f1d6-c9fd-11ee-8f0a-93bdc60b86a3.html",
@@ -23,8 +34,15 @@ def test_valid_urls(url):
 
 @pytest.mark.parametrize("url", [
     "not a url",
-    "http://thisisadomainthatdoesnotexist.com",
-    "https://www.example.com/thispagedoesnotexist",
+    pytest.param(
+        "http://thisisadomainthatdoesnotexist.com",
+        marks=[pytest.mark.integration, pytest.mark.network],
+    ),
+    # A 404 page still has content, so this one reaches the model when a key is set.
+    pytest.param(
+        "https://www.example.com/thispagedoesnotexist",
+        marks=[pytest.mark.integration, pytest.mark.network, pytest.mark.llm],
+    ),
 ])
 def test_invalid_urls(url):
     """
@@ -42,6 +60,10 @@ def test_invalid_urls(url):
 # Syntax Checking Tests
 # =============================================================================
 
+@pytest.mark.integration
+@pytest.mark.network
+@pytest.mark.llm
+@needs_openai_key
 def test_json_output_schema():
     """
     Tests if the output is a valid JSON that conforms to the expected schema.

@@ -49,10 +49,24 @@ class TestInsertWhitespace:
 
     def test_insert_whitespace_horizontal_gap(self):
         content = "foo"
-        word = {"line_num": 1, "par_num": 1, "left": 200, "top": 100, "width": 10, "height": 20}
-        prev = {"line_num": 1, "par_num": 1, "left": 10, "top": 100, "width": 30, "height": 20}
+        word = {
+            "line_num": 1,
+            "par_num": 1,
+            "left": 200,
+            "top": 100,
+            "width": 10,
+            "height": 20,
+        }
+        prev = {
+            "line_num": 1,
+            "par_num": 1,
+            "left": 10,
+            "top": 100,
+            "width": 30,
+            "height": 20,
+        }
         result = insert_whitespace(content, word, prev)
-        assert result == "foo "
+        assert result == "foo      "
 
     def test_insert_whitespace_no_gap(self):
         content = "foo"
@@ -68,12 +82,12 @@ class TestGetWord:
     def test_confidence_zero(self):
         word_dict = {"text": "foo", "conf": 0, "left": 10, "width": 30}
         result = get_word(word_dict, 612, True)
-        assert result == " "
+        assert result == "    "
 
     def test_confidence_low_and_in_margin(self):
         word_dict = {"text": "foo", "conf": 30, "left": 5, "width": 20}
         result = get_word(word_dict, 612, True)
-        assert result == " "
+        assert result == "    "
 
     def test_confidence_below_threshold_short_word(self):
         word_dict = {"text": "foo", "conf": 3, "left": 200, "width": 20}
@@ -81,9 +95,14 @@ class TestGetWord:
         assert result == "□□□ "
 
     def test_confidence_below_threshold_long_word(self):
-        word_dict = {"text": "foobarbazfoobarbazfoobar", "conf": 3, "left": 200, "width": 200}
+        word_dict = {
+            "text": "foobarbazfoobarbazfoobar",
+            "conf": 3,
+            "left": 200,
+            "width": 200,
+        }
         result = get_word(word_dict, 612, True)
-        assert "□" in result
+        assert result == "□□□□□□□□□□□□□□□□□□□□□□□□ "
 
     def test_confidence_below_threshold_in_right_margin(self):
         word_dict = {"text": "foo", "conf": 30, "left": 580, "width": 10}
@@ -98,19 +117,20 @@ class TestGetWord:
     def test_word_on_left_edge(self):
         word_dict = {"text": "foo", "conf": 50, "left": 0, "width": 20}
         result = get_word(word_dict, 612, True)
-        assert result == " "
+        assert result == "    "
 
 
 class TestWhiteSpaceRemoval:
     """Ported from Doctor: TestWhiteSpaceRemoval"""
 
     def test_left_shift(self):
+        """Can we properly shift our text left?"""
         document = """
- foo
- bar
- foo
- bar"""
-        expected_result = """ foo
+        foo
+    bar
+    foo
+    bar"""
+        expected_result = """    foo
 bar
 foo
 bar"""
@@ -118,15 +138,16 @@ bar"""
         assert result == expected_result
 
     def test_left_shift_when_artifact_exists(self):
+        """Shift left once"""
         document = """
- foo
- bar
- | foo
- bar"""
-        expected_result = """ foo
- bar
-| foo
- bar"""
+        foo
+    bar
+ |  foo
+    bar"""
+        expected_result = """       foo
+   bar
+|  foo
+   bar"""
         result = remove_excess_whitespace(document)
         assert result == expected_result
 
@@ -134,41 +155,70 @@ bar"""
 class TestCleanupContent:
     """Ported from Doctor: TestCleanupContent"""
 
+    @pytest.fixture(autouse=True)
+    def _isolate_cleanup_regexes(self):
+        # As in Doctor's setUp: stub the helpers so only cleanup_content's own
+        # regexes are exercised (test_adjust_caption uses the real import above).
+        with patch("lib.text_extraction.adjust_caption_lines", side_effect=lambda x: x), \
+                patch("lib.text_extraction.remove_excess_whitespace", side_effect=lambda x: x):
+            yield
+
     def test_remove_floating_pipes(self):
-        content = "This is a test line | \nAnother line"
+        """Can we remove a pipe"""
+        content = "This is a test line     | \nAnother line"
         expected_result = "This is a test line\nAnother line\n"
         result = cleanup_content(content, 2)
         assert result == expected_result
 
     def test_remove_floating_artifacts_right_side(self):
-        content = "This is a test line e \nAnother line"
+        """Can we remove an artifact on the far right"""
+        content = "This is a test line          e \nAnother line"
         expected_result = "This is a test line\nAnother line\n"
         result = cleanup_content(content, 2)
         assert result == expected_result
 
     def test_remove_floating_pipes_and_artifacts(self):
-        content = "This is a test line | and the content continues\nThis is another test line e \nFinal line"
-        expected_result = "This is a test line | and the content continues\nThis is another test line\nFinal line\n"
+        """Test to remove just the period"""
+        content = "This is a test line     | and the content continues\nThis is another test line              e \nFinal line"
+        expected_result = "This is a test line     | and the content continues\nThis is another test line\nFinal line\n"
         result = cleanup_content(content, 2)
         assert result == expected_result
 
     def test_no_floating_pipes_or_artifacts(self):
-        content = "This is a test line JW-6\nAnother line\n"
-        expected_result = "This is a test line JW-6\nAnother line\n\n"
+        """Test that no floating pipes are an issue"""
+        content = (
+            "This is a test line                     JW-6\nAnother line\n"
+        )
+        expected_result = (
+            "This is a test line                     JW-6\nAnother line\n\n"
+        )
         result = cleanup_content(content, 2)
         assert result == expected_result
 
     def test_adjust_caption(self):
-        content = """ 10
- LESLIE MASSEY, ) Case No.: 2:16-cv-05001 GJS
- )
- oe ) PROPOSED} ORDER AWARDING
- 12 Plaintiff, ) EQUAL ACCESS TO JUSTICE ACT
- ) ATTORNEY FEES AND EXPENSES
- 13 VS. ) PURSUANT TO 28 U.S.C. § 2412(d)
- NANCY A. BERRYHILL, Acting ) AND COSTS PURSUANT TO 28
- 14 || Commissioner of Social Security, ) U.S.C. § 1920
- 15 Defendant )
- 16 ) """
-        result = adjust_caption_lines(content)
-        assert "10" in result and "LESLIE MASSEY" in result
+        """Test if we can align the caption correctly"""
+        content = """             10
+                 LESLIE MASSEY,                    )  Case No.:  2:16-cv-05001 GJS
+                                                       )
+                                 oe                    )  PROPOSED} ORDER AWARDING
+             12               Plaintiff,                    )   EQUAL ACCESS TO JUSTICE ACT
+                                                )    ATTORNEY FEES AND EXPENSES
+             13         VS.                              )  PURSUANT TO 28 U.S.C. § 2412(d)
+                 NANCY A. BERRYHILL, Acting      )  AND COSTS PURSUANT TO 28
+             14 || Commissioner of Social Security,       )  U.S.C. §  1920
+             15               Defendant                 )
+             16                                         ) """
+
+        expected_result = """             10
+                 LESLIE MASSEY,                             )  Case No.:  2:16-cv-05001 GJS
+                                                            )
+                                 oe                         )  PROPOSED} ORDER AWARDING
+             12               Plaintiff,                    )   EQUAL ACCESS TO JUSTICE ACT
+                                                            )    ATTORNEY FEES AND EXPENSES
+             13         VS.                                 )  PURSUANT TO 28 U.S.C. § 2412(d)
+                 NANCY A. BERRYHILL, Acting                 )  AND COSTS PURSUANT TO 28
+             14 || Commissioner of Social Security,         )  U.S.C. §  1920
+             15               Defendant                     )
+             16                                             ) """
+        content = adjust_caption_lines(content)
+        assert content == expected_result
