@@ -1,12 +1,11 @@
 ---
-layout: candidate-profile-endorsed
+layout: candidate-profile
 title: Jessica A. Gonzalez
 office: Justice of the Peace, Precinct 4, Place 2
 incumbent: false
 jurisdiction: Bell County
 party: Democratic
 official_profile: https://www.bellcountytx.com/county_government/justice_of_the_peace/precinct_4_place_2/index.php
-campaign_website: Unknown
 candidate_slug: jessica_a_gonzalez
 headshot: /assets/images/candidates/jessica_a_gonzalez/photo1.jpg
 gallery_photos:
@@ -18,7 +17,7 @@ election_status: general_2026
 office_up_for_election: true
 notes: Democratic nominee for JP P4 Place 2 after winning the May 26, 2026 runoff. Faces Republican Beatrice Cox in November
   general election. Her city counsel term expires 12/31/26 and if elected she will serve a wider Bell County constituancy for a four year term.
-profile_summary: 'Bell County voters found Nicola J James insuitable for reelection.
+profile_summary: 'Gonzalez won the May 26, 2026 Democratic runoff over LaTasha Quarles, 51.3% to 48.7% (1,233 to 1,171 votes, unofficial results per the [Killeen Daily Herald](https://kdhnews.com/centerforpolitics/gonzalez-a-killeen-councilwoman-wins-democratic-jp-primary-runoff/article_86fc56ce-ab7a-4d23-8bdc-d4b7b1a1bf86.html)). The incumbent, Nicola J. James, finished third in the March primary ([KDH](https://kdhnews.com/centerforpolitics/jp-for-killeen-quarles-gonzalez-head-to-runoff-election-as-incumbent-finishes-3rd/article_baed7726-ac7b-42e9-bfc8-1a9515ac424c.html)). Gonzalez is Killeen''s District 1 council member and mayor pro tem; she has said she would immediately resign from council if elected ([KDH](https://kdhnews.com/news/local/gonzalez-says-her-time-and-service-will-get-her-edge-in-november-jp-race/article_ae036acb-2af1-4705-9b2b-bb9462abe22a.html)). She and Republican Beatrice Cox are both listed on the official Bell County sample ballot for the Nov. 3 general election ([sample ballot, Precinct 401](https://www.bellcountytx.com/elections/Sample/SAMPLE_401KIL.pdf)).
 
 
   The Precinct 4 Place 2 JP court serves the Killeen area of Bell County. If elected, Gonzalez will preside over Class C misdemeanor
@@ -33,8 +32,7 @@ profile_summary: 'Bell County voters found Nicola J James insuitable for reelect
   in 2026. All other judicial positions have unopposed Republican nominees.
 
 
-  Gonzalez''s campaign has focused on accessible justice, fair treatment for all citizens, and bringing a fresh perspective
-  to the JP bench.
+  At an Oct. 7, 2026 candidate forum, Gonzalez said her work as a property manager has prepared her for duties including eviction proceedings, and that newly elected JPs complete mandatory state training ([Killeen Daily Herald](https://kdhnews.com/centerforpolitics/cox-and-gonzalez-participate-in-justice-of-the-peace-forum-ahead-of-nov-3-election/article_f3226aea-4314-4639-9f1d-804bfbe9c839.html)). Neither candidate is an attorney.
 
   '
 credentials: '**Office**
@@ -58,14 +56,12 @@ instagram_url: https://www.instagram.com/p/DU6yQ0ckjUF/
 ---
 # Recent controversy
 
-<img src="/assets/images/candidates/jessica_a_gonzalez/photo2.jpg" alt="Jessica Gonzalez" class="flow-img-right" />A recall petition was filed against Gonzalez by resident Janice Taylor, with organizing assistance from Mellisa Brown. The organizers alleged that Gonzalez failed to report being lobbied by developers, supported rezoning projects without ensuring that the city had the necessary infrastructure to support them, and was argumentative during public meetings. Gonzalez vehemently rejected the allegations, stating that she was strictly adhering to long-term economic planning and remained committed to executing the city's vision and comprehensive plan. The recall effort ultimately failed to go to a vote because the organizers could not gather the 246 valid signatures required from her district.
+<img src="/assets/images/candidates/jessica_a_gonzalez/photo2.jpg" alt="Jessica Gonzalez" class="flow-img-right" />In July 2024, a recall petition against Gonzalez was submitted by Killeen residents, as reported by the Killeen Daily Herald ([petition submitted](https://kdhnews.com/news/local/recall-petition-submitted-for-mayor-pro-tem-gonzalez-awaits-verification/article_86e51adc-4aca-11ef-adf1-a73104b940e4.html)). The organizers said, among other things, that Gonzalez failed to report being lobbied by developers, supported rezoning projects without ensuring that the city had the necessary infrastructure to support them, and was argumentative during public meetings. Gonzalez vehemently rejected the allegations, stating that she was strictly adhering to long-term economic planning and remained committed to executing the city's vision and comprehensive plan. The city said the petition fell short because it lacked enough qualified signatures from District 1; 246 were required ([city finding, KDH](https://kdhnews.com/news/local/removal-effort-against-killeen-mayor-pro-tem-falls-short-due-to-lack-of-qualified-signatures/article_bd44f076-4eca-11ef-9a50-1f5d14319fd5.html)). No recall election was held.
 
-<img src="/assets/images/candidates/jessica_a_gonzalez/photo4.jpg" alt="Jessica Gonzalez" class="flow-img-left" />On December 6, 2022, Jessica Gonzalez actively supported the amendment to Killeen's marijuana enforcement ordinance (Proposition A) by personally introducing the motion to amend it. Her motion passed in a 4-3 vote and sought to balance the voters' push for decriminalization with practical law enforcement needs. 
+<img src="/assets/images/candidates/jessica_a_gonzalez/photo4.jpg" alt="Jessica Gonzalez" class="flow-img-left" />On December 6, 2022, Gonzalez introduced the motion that amended Killeen's voter-approved marijuana ordinance (Proposition A, approved by about 69% of voters on Nov. 8, 2022). The motion passed 4–3 ([KDH](https://kdhnews.com/news/local/killeen-city-council-removes-probable-cause-provision-from-proposition-a/article_9779723c-75e0-11ed-ae6c-43101dbd1598.html); [Fox 44](https://www.fox44news.com/news/local-news/bell-county/killeen-city-council-amends-marijuana-proposition/)). 
 
 Gonzalez's amendment structured the ordinance in three key ways:
 
 *   **Removing the "Odor as Probable Cause" Ban:** The amendment removed Section 22-83, a provision that would have stopped police from using the smell of marijuana as probable cause for searches and seizures. Gonzalez argued that eliminating this could compromise officer safety and disrupt broader investigations, pointing out that many multi-offense arrests begin with the detection of marijuana odor. 
 *   **Preserving Core Decriminalization:** She ensured that the core decarceral intent of the original proposition remained intact. The amended ordinance continued to prohibit Killeen police officers from making arrests or issuing citations for Class A or B misdemeanor marijuana possession, as well as Class C citations for drug paraphernalia in lieu of possession charges.
 *   **Mandating a Statistical Review:** Gonzalez's motion required the Killeen Police Department to return to the City Council in three months to present statistical data. This allowed the city to monitor the real-world impact of the ordinance and ensure it was being implemented without compromising community safety.
-
-<img src="/assets/images/candidates/jessica_a_gonzalez/photo5.jpg" alt="Jessica Gonzalez" class="flow-img-right" />The public career of Jessica Gonzalez highlights her role as a pragmatic, resilient leader in Central Texas. From her roots in a decorated military and educational family, she has successfully bridged the gap between private-sector expertise in real estate and public-sector governance. Her legislative record on the Killeen City Council demonstrates a consistent effort to balance progressive voter initiatives with the practical demands of municipal administration and public safety.Despite facing political challenges, including an organized recall campaign and shifting council alignments, she has maintained a resilient political base. Her subsequent bid for Bell County Justice of the Peace represents a logical evolution in her public service, as she seeks to apply her experience in municipal policy to the county's judicial system. Whether navigating city council debates, driving economic development in underserved neighborhoods, or pursuing county-wide judicial office, Gonzalez remains a highly influential figure in the civic and political life of Bell County

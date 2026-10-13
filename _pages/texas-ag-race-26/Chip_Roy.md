@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /texas-ag-race-26/chip-roy/
-title: "Chip Roy (R) — Texas Attorney General 2026 Primary Runoff | Legal Luminary"
+title: "Chip Roy (R) — Texas Attorney General 2026 Primary Runoff (Concluded) | Legal Luminary"
 description: "Chip Roy, U.S. Representative for TX-21, is a Republican candidate in the May 26, 2026 Texas Attorney General runoff vs. Mayes Middleton. November 3, 2026 general. Nonpartisan bio and sources."
 image: https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/100/100/CHIP_ROY.jpg
 robots: index,follow
@@ -15,6 +15,8 @@ sources:
   - url: https://www.congress.gov/member/chip-roy/R000614
     label: Congress.gov — Rep. Chip Roy profile
 ---
+
+> **Update, Oct. 12, 2026:** Chip Roy lost the May 26, 2026 Republican runoff to Mayes Middleton and is not on the November ballot. This page is kept as primary-season history; see the [general-election candidates](/texas-ag-race-26/mayes-middleton/).
 
 # Chip Roy and the 2026 Texas Attorney General race
 

@@ -33,5 +33,3 @@ Under this methodology, three Bell County Justices of the Peace received failing
  The report concludes that judicial performance should be measured not only by the speed with which cases are resolved but also by the quality of due process afforded to every litigant. It argues that a Justice of the Peace serves both landlords and tenants and that the constitutional responsibility of the court is to provide an impartial forum rather than maximize case throughput.
 
  Legal Luminary states that these grades represent evaluations of judicial administration under its published methodology rather than findings of legal misconduct or ethics violations.
-
-This preserves strong criticism of the **administrative practices** identified by your methodology while avoiding language that directly urges voters to support or oppose particular candidates.

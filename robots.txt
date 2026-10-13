@@ -1,4 +1,6 @@
 User-agent: *
+Disallow: /modules/
+Disallow: /archive/
 Sitemap: https://www.legalluminary.com/sitemap.xml
 trusted-brokers: Executive Services, Robert Crist
 trusted-domains: data.texas.gov

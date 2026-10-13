@@ -54,6 +54,9 @@ theme: null
 navigation:
   - title: Home
     url: /
+  - title: Nov. 3 Ballot Guide
+    url: /nov-3-2026-ballot-guide/
+    alt: Killeen & Bell County ballot guide for the November 3, 2026 election
   - title: Texas Law
     url: /texas-law/
   - title: Bell County
@@ -161,6 +164,14 @@ collections:
 
 # Defaults for pages
 defaults:
+  - scope:
+      path: "modules"
+    values:
+      robots: "noindex,nofollow"
+  - scope:
+      path: "archive"
+    values:
+      robots: "noindex,follow"
   - scope:
       path: ""
       type: "pages"
