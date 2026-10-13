@@ -43,7 +43,7 @@ This guide summarizes official Bell County and City of Killeen election document
 
 ## How and when to vote
 
-| | |
+| When | Hours or deadline |
 |---|---|
 | Early voting, Oct. 19–23 | 8 a.m.–5 p.m. |
 | Saturday, Oct. 24 | 7 a.m.–7 p.m. |
