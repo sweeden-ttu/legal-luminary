@@ -2,16 +2,7 @@
 
 [![Deploy Jekyll site to Pages](https://github.com/sweeden-ttu/legal-luminary/actions/workflows/jekyll.yml/badge.svg)](https://github.com/sweeden-ttu/legal-luminary/actions/workflows/jekyll.yml)
 
-A professional [located in the geographical area you serve] legal information website for Bell County and Central Texas, built with Jekyll for GitHub Pages hosting using GitHub Actions.
-
-
-
-todo update contact advertisement : 
-BAD BOY BAIL BONDS - BELL COUNTY
-1350 Jackrabbit Rd
-Belton, TX, USA
-(254) 634-2245
-bellco@badboytexas.com
+A professional legal information website for Bell County and Central Texas, built with Jekyll for GitHub Pages hosting using GitHub Actions.
 
 
 ## 🚀 Quick Start
