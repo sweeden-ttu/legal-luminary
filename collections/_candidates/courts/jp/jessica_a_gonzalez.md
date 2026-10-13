@@ -17,7 +17,7 @@ election_status: general_2026
 office_up_for_election: true
 notes: Democratic nominee for JP P4 Place 2 after winning the May 26, 2026 runoff. Faces Republican Beatrice Cox in November
   general election. Her city counsel term expires 12/31/26 and if elected she will serve a wider Bell County constituancy for a four year term.
-profile_summary: 'Gonzalez won the May 26, 2026 Democratic runoff over LaTasha Quarles, 51.3% to 48.7% (1,233 to 1,171 votes, unofficial results per the [Killeen Daily Herald](https://kdhnews.com/centerforpolitics/gonzalez-a-killeen-councilwoman-wins-democratic-jp-primary-runoff/article_86fc56ce-ab7a-4d23-8bdc-d4b7b1a1bf86.html)). The incumbent, Nicola J. James, finished third in the March primary ([KDH](https://kdhnews.com/centerforpolitics/jp-for-killeen-quarles-gonzalez-head-to-runoff-election-as-incumbent-finishes-3rd/article_baed7726-ac7b-42e9-bfc8-1a9515ac424c.html)). Gonzalez is Killeen''s District 1 council member and mayor pro tem; she has said she would resign from council if elected.
+profile_summary: 'Gonzalez won the May 26, 2026 Democratic runoff over LaTasha Quarles, 51.3% to 48.7% (1,233 to 1,171 votes, unofficial results per the [Killeen Daily Herald](https://kdhnews.com/centerforpolitics/gonzalez-a-killeen-councilwoman-wins-democratic-jp-primary-runoff/article_86fc56ce-ab7a-4d23-8bdc-d4b7b1a1bf86.html)). The incumbent, Nicola J. James, finished third in the March primary ([KDH](https://kdhnews.com/centerforpolitics/jp-for-killeen-quarles-gonzalez-head-to-runoff-election-as-incumbent-finishes-3rd/article_baed7726-ac7b-42e9-bfc8-1a9515ac424c.html)). Gonzalez is Killeen''s District 1 council member and mayor pro tem; she has said she would immediately resign from council if elected ([KDH](https://kdhnews.com/news/local/gonzalez-says-her-time-and-service-will-get-her-edge-in-november-jp-race/article_ae036acb-2af1-4705-9b2b-bb9462abe22a.html)). She and Republican Beatrice Cox are both listed on the official Bell County sample ballot for the Nov. 3 general election ([sample ballot, Precinct 401](https://www.bellcountytx.com/elections/Sample/SAMPLE_401KIL.pdf)).
 
 
   The Precinct 4 Place 2 JP court serves the Killeen area of Bell County. If elected, Gonzalez will preside over Class C misdemeanor
@@ -32,8 +32,7 @@ profile_summary: 'Gonzalez won the May 26, 2026 Democratic runoff over LaTasha Q
   in 2026. All other judicial positions have unopposed Republican nominees.
 
 
-  Gonzalez''s campaign has focused on accessible justice, fair treatment for all citizens, and bringing a fresh perspective
-  to the JP bench.
+  At an Oct. 7, 2026 candidate forum, Gonzalez said her work as a property manager has prepared her for duties including eviction proceedings, and that newly elected JPs complete mandatory state training ([Killeen Daily Herald](https://kdhnews.com/centerforpolitics/cox-and-gonzalez-participate-in-justice-of-the-peace-forum-ahead-of-nov-3-election/article_f3226aea-4314-4639-9f1d-804bfbe9c839.html)). Neither candidate is an attorney.
 
   '
 credentials: '**Office**
