@@ -15,6 +15,18 @@ from pathlib import Path
 from .guardrails import Inbound
 
 _QID_RE = re.compile(r"\[Q-([0-9a-f]{10})\]", re.I)
+_IP_RE = re.compile(r"\[(?:IPv6:)?([0-9a-fA-F.:]+)\]|\((?:[^()]*\s)?(\d{1,3}(?:\.\d{1,3}){3})\)")
+
+
+def _origin_ip(msg: EmailMessage) -> str | None:
+    """Client address of the earliest hop: the last Received header the MTA stack added first."""
+    received = msg.get_all("Received") or []
+    for header in reversed(received):
+        head = str(header).split(" by ", 1)[0]
+        m = _IP_RE.search(head)
+        if m:
+            return m.group(1) or m.group(2)
+    return None
 
 
 def _body_text(msg: EmailMessage) -> str:
@@ -58,6 +70,7 @@ def parse_eml(raw: bytes) -> Inbound:
         received=received,
         attachments=_attachments(msg),
         in_reply_to=_in_reply_to(msg),
+        origin_ip=_origin_ip(msg),
     )
 
 

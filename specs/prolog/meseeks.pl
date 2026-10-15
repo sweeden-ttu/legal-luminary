@@ -64,6 +64,37 @@ law(no_hard_reject).      law(min_confidence).
 law(answers_from_firms).  law(answers_cite_questions).
 law(orders_have_sources). law(questions_stay_anonymous).
 law(thread_in_scope).     % Killeen / Bell County / Texas statutory, political, judicial matters
+law(witnessed_review).    % only a witness may confirm or acknowledge a held message
+
+% Witness agents (_data/meseeks_witnesses.yml): an actor actor(Local, Domain, Net, OS) is a
+% witness when every component passes. The universe of actors below is exhaustive over the
+% small alphabets, so is_witness is checked for every combination in Part 2c.
+witness_person(scott_weeden,   [scotdwg, sweeden, 'scott.weeden', 'weeden.scott', scottweeden]).
+witness_person(johnathan_king, [jcking1278, 'johnathan.king', 'king.johnathan', johnathanking]).
+witness_domain('ttu.edu'). witness_domain('cloudfrontsgroup.org'). witness_domain('cloudfronts.group').
+witness_domain('legalluminary.com'). witness_domain('luminarylegal.com').
+witness_net(lan). witness_net(wan).
+witness_os(macos). witness_os(rocky). witness_os(kodachi).
+
+actor_local(L)  :- witness_person(_, Ls), member(L, Ls).
+actor_local(someone). actor_local(meseeks). actor_local('sweeden.ttu').
+actor_domain(D) :- witness_domain(D).
+actor_domain('gmail.com'). actor_domain('seo-blast.biz').
+actor_net(N)    :- witness_net(N).
+actor_net(internet).
+actor_os(O)     :- witness_os(O).
+actor_os(windows). actor_os(unknown).
+
+is_witness(actor(L, D, N, O), P) :-
+    witness_person(P, Ls), memberchk(L, Ls), witness_domain(D), witness_net(N), witness_os(O).
+
+% A human decision: a witness's confirmation is a proposal at full confidence through the same
+% advisory layer and gate; anyone else is refused and nothing changes.
+human_confirm(Actor, M, Cat, Firms, Qs, published(Cat1)) :-
+    ( in_force(witnessed_review) -> is_witness(Actor, _) ; true ),
+    advisory(M, p(Cat, 10), a(Cat1, Conf)),
+    enforce(M, Cat1, Conf, Firms, Qs), !.
+human_confirm(_, _, _, _, _, refused).
 law_vote(L, A) :- law(L), agent(A, _), A \== opencode.   % opencode abstains on everything
 in_force(L) :-
     law(L), agents(As), length(As, N),
@@ -179,6 +210,22 @@ determined_ok(Msgs, Firms, Qs0, Pub, Held) :-
     pairs_keys(Pub, PubIds), append(PubIds, Held, Decided),
     msort(Decided, DS), msort(Ids, IS), DS == IS,          % every id exactly once
     forall(member(Id, PubIds), \+ memberchk(Id, Held)).
+
+% -- witnesses: every actor in the universe, every held message, every category
+check_witnesses(Checked) :-
+    aggregate_all(count,
+        ( actor_local(L), actor_domain(D), actor_net(N), actor_os(O), Actor = actor(L, D, N, O),
+          test(_, _, Firms, Qs0, Msgs), member(M, Msgs), category(Cat),
+          human_confirm(Actor, M, Cat, Firms, Qs0, Out),
+          ( Out = published(C1)
+          -> is_witness(Actor, _),                           % only witnesses ever publish
+             msg_id(M, Id), admissible(Msgs, Firms, Qs0, Id-C1),
+             ( M = m(_, _, _, _, _, question, _) -> C1 == question ; true )
+          ;  Out == refused ) ),
+        Checked),
+    aggregate_all(count, ( actor_local(_), actor_domain(_), actor_net(_), actor_os(_),
+                           test(_, _, _, _, Msgs), member(_, Msgs), category(_) ), Total),
+    Checked == Total.
 
 check_decisions(TestId, Count) :-
     test(TestId, _, Firms, Qs0, Msgs),
@@ -357,6 +404,9 @@ run_all :-
     forall(member(N, [2, 3]),
            ( check_clock(N, V) -> format("  ~w messages: ~w reachable states, Clock holds, every path terminates~n", [N, V])
            ; format("  ~w messages: FAILED~n", [N]), halt(1) )),
+    format("Part 2c. witnesses: every actor x every message x every category~n"),
+    ( check_witnesses(NW) -> format("  ~w human decisions: only witnesses publish, always within Admissible~n", [NW])
+    ; format("  witnesses: FAILED~n"), halt(1) ),
     format("Part 3. games: ~w strategy profiles over the timeline~n", [78125]),
     honest_profile(H),
     forall(test(T, _, _, _, _),

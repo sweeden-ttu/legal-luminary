@@ -103,6 +103,7 @@ class Inbound:
     received: datetime
     attachments: list[tuple[str, str]] = field(default_factory=list)  # (filename, content_type)
     in_reply_to: str | None = None
+    origin_ip: str | None = None  # first-hop client address from the earliest Received header
 
 
 @dataclass

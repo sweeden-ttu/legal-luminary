@@ -38,6 +38,12 @@
 (* confidence) or acknowledge it as held; the run completes after the last *)
 (* acknowledgement. In a drill (Drill = TRUE) the human is standing by, so  *)
 (* the sub-agents' window shrinks to SlackDrill% (90%) of their budgets.    *)
+(*                                                                          *)
+(* Witnesses. Only a witness may act as the human: an actor is a record of  *)
+(* address, origin network and platform, and it is a witness exactly when  *)
+(* the address is a known person at an allowed domain, the origin is the   *)
+(* local or wide-area network, and the platform is one the witness agents  *)
+(* run on. Any other actor's confirm or ack is refused (no state change).  *)
 (***************************************************************************)
 EXTENDS Naturals, Sequences, FiniteSets
 
@@ -53,7 +59,9 @@ CONSTANTS
   Drill,       \* TRUE when a human is in the loop for this run
   Idle,        \* cycles without a new proposal after which the loop stops (60 s)
   MaxRounds,   \* question + reason + instruction rounds allowed
-  MinConf      \* confidence floor on a 0..10 scale (0.5 in production)
+  MinConf,     \* confidence floor on a 0..10 scale (0.5 in production)
+  Actors,      \* set of [addr, dom, net, os] records that may try to act as the human
+  WitnessAddrs, WitnessDoms, WitnessNets, WitnessOS  \* _data/meseeks_witnesses.yml
 
 Cats     == {"opportunity", "notice", "standing_order", "question", "answer"}
 None     == "none"
@@ -85,6 +93,12 @@ NoOutput   == [id \in Ids |-> Absent]
 
 Min(a, b) == IF a < b THEN a ELSE b
 Max(a, b) == IF a > b THEN a ELSE b
+
+\* witness.is_witness: address, origin network and platform all have to pass.
+IsWitness(a) == a.addr \in WitnessAddrs /\ a.dom \in WitnessDoms
+                /\ a.net \in WitnessNets /\ a.os \in WitnessOS
+Witnesses == {a \in Actors : IsWitness(a)}
+Nobody    == [addr |-> None, dom |-> None, net |-> None, os |-> None]
 
 (***************************************************************************)
 (* Budgets and the derived window (backends.call_budget / Window).          *)
@@ -169,10 +183,11 @@ VARIABLES
   published,    \* set of [id, cat]
   held,         \* set of ids
   review,       \* held ids waiting for the human
-  stop          \* why the loop stopped, or None
+  stop,         \* why the loop stopped, or None
+  decidedBy     \* [Ids -> Actors \cup {Nobody}]: who confirmed or acknowledged each id
 
 vars == <<phase, now, roundStart, lastProgress, round, agentIdx, callStart, deadline,
-          roundOut, roundFailed, answeredBy, merged, published, held, review, stop>>
+          roundOut, roundFailed, answeredBy, merged, published, held, review, stop, decidedBy>>
 
 Horizon == MaxRounds * Window + 1
 
@@ -193,6 +208,7 @@ TypeOK ==
   /\ held \subseteq Ids
   /\ review \subseteq held
   /\ stop \in {None, "complete", "no sub-agent answered", "idle", "max rounds"}
+  /\ decidedBy \in [Ids -> Actors \cup {Nobody}]
 
 Missing == {id \in Ids : IsAbsent(merged[id])}
 
@@ -201,13 +217,14 @@ Init ==
   /\ agentIdx = 1 /\ callStart = 0 /\ deadline = 0
   /\ roundOut = NoOutput /\ roundFailed = FALSE /\ answeredBy = None
   /\ merged = NoOutput /\ published = {} /\ held = {} /\ review = {} /\ stop = None
+  /\ decidedBy = [id \in Ids |-> Nobody]
 
 \* load_inbox: start the loop clock, build the redacted batch.
 Load ==
   /\ phase = "idle"
   /\ phase' = "loaded" /\ lastProgress' = now
   /\ UNCHANGED <<now, roundStart, round, agentIdx, callStart, deadline, roundOut, roundFailed,
-                 answeredBy, merged, published, held, review, stop>>
+                 answeredBy, merged, published, held, review, stop, decidedBy>>
 
 \* Open a round's window and start the first sub-agent on its own deadline.
 StartRound ==
@@ -220,7 +237,7 @@ StartRound ==
        ELSE /\ phase' = "calling" /\ agentIdx' = 1 /\ callStart' = now
             /\ deadline' = now + Min(CallBudget(Agents[1]), Window)
             /\ roundFailed' = FALSE /\ roundOut' = NoOutput
-  /\ UNCHANGED <<now, lastProgress, round, merged, published, held, review, stop>>
+  /\ UNCHANGED <<now, lastProgress, round, merged, published, held, review, stop, decidedBy>>
 
 \* The sub-agent answers, early or at its deadline, with ANY output at all for the
 \* ids the round asked about (a follow-up round asks only for the missing ones;
@@ -234,7 +251,7 @@ Answer ==
        /\ answeredBy' = Agents[agentIdx]
   /\ phase' = "merging"
   /\ UNCHANGED <<roundStart, lastProgress, round, agentIdx, callStart, deadline, roundFailed,
-                 merged, published, held, review, stop>>
+                 merged, published, held, review, stop, decidedBy>>
 
 \* The sub-agent's budget runs out (hang, crash, missing binary, empty reply):
 \* move to the next one with what is left of the window, or give up on this round.
@@ -249,7 +266,7 @@ Timeout ==
                /\ UNCHANGED <<phase, roundOut, roundFailed, answeredBy>>
           ELSE /\ phase' = "merging" /\ roundFailed' = TRUE /\ roundOut' = NoOutput
                /\ UNCHANGED <<agentIdx, callStart, deadline, answeredBy>>
-  /\ UNCHANGED <<roundStart, lastProgress, round, merged, published, held, review, stop>>
+  /\ UNCHANGED <<roundStart, lastProgress, round, merged, published, held, review, stop, decidedBy>>
 
 \* check_round: merge what arrived; stop, or ask again for what is missing.
 Merge ==
@@ -273,39 +290,49 @@ Merge ==
            ELSE LET d == Decide(newMerged)
                 IN /\ published' = d.pub /\ held' = d.held
                    /\ review' = {id \in d.held : ~Msg(id).hard}
-  /\ UNCHANGED <<now, roundStart, agentIdx, callStart, deadline, roundOut, roundFailed, answeredBy>>
+  /\ UNCHANGED <<now, roundStart, agentIdx, callStart, deadline, roundOut, roundFailed, answeredBy, decidedBy>>
 
-\* The human confirms a held message into a category. The confirmation is a
+\* A witness confirms a held message into a category. The confirmation is a
 \* proposal at full confidence: it goes through the same advisory layer (so a
 \* citizen's question cannot be confirmed out of its anonymity) and the same gate,
 \* against the questions posted so far. TLC found the version without Advisory.
 PostedQuestions == Questions0 \cup {p.id : p \in {x \in published : x.cat = "question"}}
 HumanConfirm ==
   /\ phase = "review"
-  /\ \E id \in review, cat \in Cats :
+  /\ \E w \in Witnesses, id \in review, cat \in Cats :
        LET adv == Advisory(Msg(id), [cat |-> cat, conf |-> 10])
        IN /\ Enforce(Msg(id), adv.cat, adv.conf, PostedQuestions)
           /\ published' = published \cup {[id |-> id, cat |-> adv.cat]}
           /\ held' = held \ {id}
           /\ review' = review \ {id}
+          /\ decidedBy' = [decidedBy EXCEPT ![id] = w]
   /\ UNCHANGED <<phase, now, roundStart, lastProgress, round, agentIdx, callStart, deadline,
                  roundOut, roundFailed, answeredBy, merged, stop>>
 
-\* The human acknowledges a held message: it stays held.
+\* A witness acknowledges a held message: it stays held.
 HumanAck ==
   /\ phase = "review"
-  /\ \E id \in review : review' = review \ {id}
+  /\ \E w \in Witnesses, id \in review :
+       /\ review' = review \ {id}
+       /\ decidedBy' = [decidedBy EXCEPT ![id] = w]
   /\ UNCHANGED <<phase, now, roundStart, lastProgress, round, agentIdx, callStart, deadline,
                  roundOut, roundFailed, answeredBy, merged, published, held, stop>>
+
+\* Anyone who is not a witness may try; the inbox refuses and nothing changes.
+StrangerTries ==
+  /\ phase = "review"
+  /\ \E a \in Actors \ Witnesses, id \in review : TRUE
+  /\ UNCHANGED vars
 
 \* Nothing left for the human: the run is complete.
 Finish ==
   /\ phase = "review" /\ review = {}
   /\ phase' = "done"
   /\ UNCHANGED <<now, roundStart, lastProgress, round, agentIdx, callStart, deadline,
-                 roundOut, roundFailed, answeredBy, merged, published, held, review, stop>>
+                 roundOut, roundFailed, answeredBy, merged, published, held, review, stop, decidedBy>>
 
-Next == Load \/ StartRound \/ Answer \/ Timeout \/ Merge \/ HumanConfirm \/ HumanAck \/ Finish
+Next == Load \/ StartRound \/ Answer \/ Timeout \/ Merge \/ HumanConfirm \/ HumanAck
+        \/ StrangerTries \/ Finish
 
 Spec == Init /\ [][Next]_vars /\ WF_vars(Next)
 
@@ -327,13 +354,15 @@ QuestionsStayQuestions ==
   \A p \in published : Msg(p.id).rcat = "question" => p.cat = "question"
 ThreadStaysInScope ==
   \A p \in published : Msg(p.id).scope \/ (p.cat = "answer" /\ Msg(Msg(p.id).reply).scope)
+OnlyWitnessesDecide ==
+  \A id \in Ids : decidedBy[id] /= Nobody => IsWitness(decidedBy[id])
 OnePostPerMessage ==
   \A p, q \in published : p.id = q.id => p = q
 
 Guardrails ==
   /\ AnswersOnlyFromFirms /\ AnswersReplyToPostedQuestions /\ StandingOrdersHaveSources
   /\ NothingHardRejectedIsPublished /\ QuestionsStayQuestions /\ OnePostPerMessage
-  /\ ThreadStaysInScope
+  /\ ThreadStaysInScope /\ OnlyWitnessesDecide
 
 \* --- the clocks ---
 WindowIsSlackOverBudgets == Window = (Slack * SumBudgets + 99) \div 100

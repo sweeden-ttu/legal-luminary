@@ -6,8 +6,12 @@ bypass: it goes through guardrails.enforce at full confidence, against the quest
 so far, exactly like the model's proposals did (HumanConfirm in specs/tla/Meseeks.tla).
 
   python -m meseeks.review list
-  python -m meseeks.review confirm <id> <category>
+  python -m meseeks.review confirm <id> <category>     # as the witness in MESEEKS_WITNESS (an address)
   python -m meseeks.review ack <id> [note]
+
+Only a witness agent may confirm or acknowledge (_data/meseeks_witnesses.yml): a known
+person's address at an allowed domain, acting from the local or wide-area network, on a
+witness platform (macOS, Rocky Linux, Kodachi Linux). Anyone else is refused.
 """
 from __future__ import annotations
 
@@ -17,6 +21,7 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
+from . import witness as witness_mod
 from .adk_agent import _advisory
 from .guardrails import CATEGORIES, Inbound, enforce, to_post
 from .run import DATA, LOG, load_data, load_firm_domains
@@ -45,8 +50,20 @@ def pending(queue: dict) -> list[dict]:
     return [i for i in queue["items"] if i.get("status") == "pending"]
 
 
-def confirm(item_id: str, category: str, who: str = "human") -> dict:
-    """Publish a held message as `category` if, and only if, the guardrails accept it at confidence 1.0."""
+def _witness(who) -> tuple[witness_mod.Identity, str | None]:
+    """Resolve who is acting; a non-witness gets a refusal reason."""
+    ident = who if isinstance(who, witness_mod.Identity) else witness_mod.local_identity(who if isinstance(who, str) else None)
+    ident = witness_mod.Identity(witness_mod.bare_address(ident.address), ident.ip, ident.platform)
+    ok, why = witness_mod.is_witness(ident)
+    return ident, (None if ok else why)
+
+
+def confirm(item_id: str, category: str, who="") -> dict:
+    """Publish a held message as `category` if, and only if, a witness asks and the guardrails accept it at confidence 1.0."""
+    ident, refusal = _witness(who)
+    if refusal:
+        return {"id": item_id, "status": "refused", "reason": f"not a witness: {refusal}", "by": ident.address}
+    who = ident.address
     review_path, data_path = _paths()
     queue, data = _load_queue(review_path), load_data(data_path)
     item = next((i for i in pending(queue) if i["id"] == item_id or i["message_id"] == item_id), None)
@@ -84,8 +101,12 @@ def confirm(item_id: str, category: str, who: str = "human") -> dict:
     return outcome
 
 
-def ack(item_id: str, note: str = "", who: str = "human") -> dict:
-    """Acknowledge a held message: it stays held and leaves the queue."""
+def ack(item_id: str, note: str = "", who="") -> dict:
+    """Acknowledge a held message (witnesses only): it stays held and leaves the queue."""
+    ident, refusal = _witness(who)
+    if refusal:
+        return {"id": item_id, "status": "refused", "reason": f"not a witness: {refusal}", "by": ident.address}
+    who = ident.address
     review_path, _ = _paths()
     queue = _load_queue(review_path)
     item = next((i for i in pending(queue) if i["id"] == item_id or i["message_id"] == item_id), None)

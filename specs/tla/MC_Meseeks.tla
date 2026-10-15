@@ -31,4 +31,18 @@ MC_Drill      == TRUE
 MC_Idle       == 3
 MC_MaxRounds  == 2
 MC_MinConf    == 5
+\* Actors who may try to act as the human: Scott from his Mac on the LAN, Johnathan from
+\* Rocky Linux on the WAN, and three strangers (a gmail address, a witness address used from
+\* outside both networks, and a witness address on an unknown platform).
+MC_WitnessAddrs == {"sweeden", "scotdwg", "jcking1278"}
+MC_WitnessDoms  == {"ttu.edu", "cloudfrontsgroup.org", "cloudfronts.group", "legalluminary.com", "luminarylegal.com"}
+MC_WitnessNets  == {"lan", "wan"}
+MC_WitnessOS    == {"macos", "rocky", "kodachi"}
+MC_Actors == {
+  [addr |-> "sweeden",    dom |-> "legalluminary.com", net |-> "lan",      os |-> "macos"],
+  [addr |-> "jcking1278", dom |-> "cloudfronts.group", net |-> "wan",      os |-> "rocky"],
+  [addr |-> "someone",    dom |-> "gmail.com",         net |-> "lan",      os |-> "macos"],
+  [addr |-> "sweeden",    dom |-> "legalluminary.com", net |-> "internet", os |-> "macos"],
+  [addr |-> "scotdwg",    dom |-> "ttu.edu",           net |-> "lan",      os |-> "windows"]
+}
 =============================================================================

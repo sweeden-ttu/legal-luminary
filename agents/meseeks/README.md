@@ -70,15 +70,24 @@ python -m meseeks.prompts init   # create the project if needed, seed the prompt
 python -m meseeks.prompts pull   # which version each prompt resolves to right now
 ```
 
-### Human in the loop
+### Human in the loop — witness agents
 
-Held messages (other than hard rejects) wait in `_data/meseeks_review.json`:
+Held messages (other than hard rejects) wait in `_data/meseeks_review.json`. Only a **witness**
+may decide them (`_data/meseeks_witnesses.yml`): Scott Weeden (`scotdwg`, `sweeden`) or
+Johnathan King (`jcking1278`), as a username or first/last-name combination at `ttu.edu`,
+`cloudfrontsgroup.org`, `cloudfronts.group`, `legalluminary.com` or `luminarylegal.com`, acting
+from the local or wide-area network, on macOS, Rocky Linux or Kodachi Linux.
 
 ```bash
+export MESEEKS_WITNESS=sweeden@legalluminary.com      # who is acting (origin IP and platform are detected)
 python -m meseeks.review list
 python -m meseeks.review confirm <id> <category>   # goes through the same advisory layer and gate
 python -m meseeks.review ack <id> [note]
 ```
+
+A witness can also mail the inbox `confirm <id> <category>` or `ack <id>`; the directive is
+verified by sender address, the originating IP in the earliest `Received` header, and platform,
+is never shown to a model, and is applied through the same `review` path.
 
 Env for IMAP: `MESEEKS_IMAP_HOST`, `MESEEKS_IMAP_USER`, `MESEEKS_IMAP_PASSWORD`, optional `MESEEKS_IMAP_FOLDER`.
 Optional `ANTHROPIC_API_KEY` enables the Claude classifier (`LL_ADK_MODEL` to pick the model);

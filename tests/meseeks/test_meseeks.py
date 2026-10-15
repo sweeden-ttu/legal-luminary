@@ -35,6 +35,7 @@ def test_fixture_outcomes():
     assert audit["<s1@seo-blast.biz>"]["reason"] == "spam"
     assert audit["<t1@example.org>"]["reason"] == "body too short"
     assert audit["<x1@cityofseattle.example>"]["reason"].startswith("out of scope")
+    assert not audit["<w1@legalluminary.com>"]["publish"] and not audit["<w2@legalluminary.com>"]["publish"]
     assert len(data["posts"]) == 5
 
 

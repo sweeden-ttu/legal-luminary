@@ -29,6 +29,8 @@ YAML = AGENTS / "meseeks" / "agent.yaml"
 Q1, A_FIRM, A_RANDOM = "<q1@gmail.com>", "<a1@examplelaw.com>", "<a2@yahoo.com>"
 NOTICE, ORDER, JOB, SPAM, SHORT = "<n1@killeentexas.gov>", "<so1@bellcounty.texas.gov>", "<o1@centexlegalaid.org>", "<s1@seo-blast.biz>", "<t1@example.org>"
 FOREIGN = "<x1@cityofseattle.example>"
+WITNESS, FORGED = "<w1@legalluminary.com>", "<w2@legalluminary.com>"
+SCOTT = "sweeden@legalluminary.com"
 
 
 SEEN: list = []   # every LlmRequest the stubs received
@@ -76,6 +78,8 @@ def env(tmp_path, monkeypatch):
     monkeypatch.setenv("MESEEKS_EML_DIR", str(FIXTURES))
     monkeypatch.setenv("MESEEKS_DATA", str(data))
     monkeypatch.setenv("MESEEKS_REVIEW", str(tmp_path / "review.json"))
+    monkeypatch.setenv("MESEEKS_WITNESS_IP", "192.168.0.42")
+    monkeypatch.setenv("MESEEKS_WITNESS_PLATFORM", "macos")
     monkeypatch.delenv("MESEEKS_DRY_RUN", raising=False)
     monkeypatch.setattr("meseeks.adk_agent.LOG", tmp_path / "logs")
     monkeypatch.setattr("meseeks.adk_agent.load_firm_domains", lambda: {"examplelaw.com"})
@@ -135,6 +139,7 @@ def test_model_sees_registry_instruction_and_redacted_batch(env):
     assert Q1 in system and "[email redacted]" in system
     assert "@gmail.com" not in system.replace(Q1, "")
     assert FOREIGN not in system and "Seattle" not in system   # out-of-scope mail never reaches a model
+    assert WITNESS not in system and FORGED not in system      # witness directives never reach a model
     assert '"scope": "domain:killeentexas.gov"' in system
 
 
@@ -160,7 +165,7 @@ def test_malicious_model_cannot_widen_publication(env):
     assert audit[NOTICE]["publish"] and audit[NOTICE]["category"] == "notice"  # unknown category -> rules
     assert audit[ORDER]["publish"] and "unusable confidence" in audit[ORDER]["classifier"]
     assert audit[JOB]["publish"] and "no model proposal" in audit[JOB]["classifier"]
-    assert r["published"] == 5 and r["held"] == 4
+    assert r["published"] == 5 and r["held"] == 6
     assert [x["new"] for x in r["rounds"]] == [7, 0, 0] and r["rounds"][-1]["stop"] == "max rounds (3)"  # JOB never answered
     posts = json.loads(Path(env).read_text())["posts"]
     assert {p["category"] for p in posts} == {"question", "answer", "notice", "standing_order", "opportunity"}
@@ -291,7 +296,7 @@ def test_window_caps_every_sub_agent_budget(tmp_path, monkeypatch):
 
 
 def test_human_in_the_loop_confirms_through_the_same_gate(env, tmp_path, monkeypatch):
-    from meseeks import review
+    from meseeks import review, witness
 
     queue = tmp_path / "review.json"
     monkeypatch.setenv("MESEEKS_REVIEW", str(queue))
@@ -306,7 +311,7 @@ def test_human_in_the_loop_confirms_through_the_same_gate(env, tmp_path, monkeyp
     state, _ = _run(_agent(text))
     r = state["meseeks_result"]
     held = {a["message_id"] for a in r["audit"] if not a["publish"]}
-    assert {A_RANDOM, NOTICE, SPAM, SHORT, FOREIGN} == held
+    assert {A_RANDOM, NOTICE, SPAM, SHORT, FOREIGN, WITNESS, FORGED} == held
     foreign = next(a for a in r["audit"] if a["message_id"] == FOREIGN)
     assert foreign["reason"].startswith("out of scope") and "never sent" in foreign["classifier"]
     assert r["thread_in_scope"] and r["out_of_scope"] == 1 and r["pre_held"] == 3
@@ -315,19 +320,23 @@ def test_human_in_the_loop_confirms_through_the_same_gate(env, tmp_path, monkeyp
     assert all("@" not in i["body"] and i["sender_domain"] in ("yahoo.com", "killeentexas.gov") for i in q)
     stranger = next(i for i in q if i["message_id"] == A_RANDOM)
     notice = next(i for i in q if i["message_id"] == NOTICE)
-    # The human cannot confirm what the laws forbid...
-    assert review.confirm(stranger["id"], "answer")["status"] == "refused"
-    assert review.confirm(stranger["id"], "bogus")["status"] == "refused"
+    # Only a witness may act: a stranger, a witness off-network, and a witness on an unknown platform are refused.
+    assert "not a witness" in review.confirm(notice["id"], "notice", who="someone@gmail.com")["reason"]
+    assert "outside" in review.confirm(notice["id"], "notice", who=witness.Identity(SCOTT, "198.51.100.7", "macos"))["reason"]
+    assert "platform" in review.confirm(notice["id"], "notice", who=witness.Identity(SCOTT, "192.168.0.42", "windows"))["reason"]
+    # The witness cannot confirm what the laws forbid...
+    assert review.confirm(stranger["id"], "answer", who=SCOTT)["status"] == "refused"
+    assert review.confirm(stranger["id"], "bogus", who=SCOTT)["status"] == "refused"
     # ...but can confirm within the admissible language, and the run continues.
-    assert review.confirm(notice["id"], "notice")["status"] == "published"
-    assert review.ack(stranger["id"], "not a firm")["status"] == "acknowledged"
+    assert review.confirm(notice["id"], "notice", who="jcking1278@cloudfronts.group")["status"] == "published"
+    assert review.ack(stranger["id"], "not a firm", who="johnathan.king@ttu.edu")["status"] == "acknowledged"
     # A question held for review cannot be confirmed out of its anonymity (TLC finding).
     held_q = {"id": "hq", "message_id": "<hq@x>", "sender_domain": "gmail.com", "subject": "Can I fight an eviction?",
               "body": "My landlord in Killeen says I have three days. Can I fight this? Do I need a lawyer?",
               "received": "2026-10-15T00:00:00Z", "attachments": [], "has_source_link": False, "links": [],
               "in_reply_to": None, "proposed": "question", "reason": "low confidence 0.3", "classifier": "model", "status": "pending"}
     qd = json.loads(queue.read_text()); qd["items"].append(held_q); queue.write_text(json.dumps(qd))
-    out = review.confirm("hq", "opportunity")
+    out = review.confirm("hq", "opportunity", who=SCOTT)
     assert out["status"] == "published" and out["category"] == "question"
     posts = json.loads(Path(env).read_text())["posts"]
     assert next(p for p in posts if p["title"].startswith("Can I fight"))["source_label"] == "Anonymous"
@@ -357,3 +366,37 @@ def test_scope_guardrail_is_deterministic_and_threads_inherit():
 def guardrails_msg(sender, subject, body, received):
     from meseeks.guardrails import Inbound
     return Inbound(message_id=f"<{sender}>", sender=sender, subject=subject, body=body, received=received)
+
+
+def test_witness_identity_rules():
+    from meseeks import witness
+    ok = lambda addr, ip="192.168.0.42", plat="rocky": witness.is_witness(witness.Identity(addr, ip, plat))[0]
+    assert ok("scotdwg@ttu.edu") and ok("sweeden@cloudfrontsgroup.org") and ok("scott.weeden@luminarylegal.com")
+    assert ok("weeden.scott@legalluminary.com") and ok("jcking1278@cloudfronts.group") and ok("Johnathan King <johnathan.king@ttu.edu>")
+    assert ok("sweeden@ttu.edu", plat="kodachi") and ok("sweeden@ttu.edu", plat="macos")
+    assert not ok("scott.weeden@gmail.com")             # domain not in the witness domains
+    assert not ok("sweeden.ttu@legalluminary.com")      # not a listed username or name combination
+    assert not ok("meseeks@legalluminary.com")
+    assert not ok("sweeden@ttu.edu", ip="8.8.8.8")       # outside the local / wide-area network
+    assert not ok("sweeden@ttu.edu", plat="windows")
+    assert witness.directive("confirm hq notice", "") == ("confirm", "hq", "notice")
+    assert witness.directive("Re: something", "ack [hq]\nthanks") == ("ack", "hq", None)
+    assert witness.directive("Public notice: hearing", "the council will confirm the budget") is None
+
+
+def test_witness_directives_by_mail_are_verified_by_origin(env, tmp_path, monkeypatch):
+    from meseeks import mailbox
+    msgs = {m.message_id: m for m in mailbox.from_directory(FIXTURES)}
+    assert msgs[WITNESS].origin_ip == "192.168.0.42" and msgs[FORGED].origin_ip == "198.51.100.7"
+    queue = tmp_path / "review.json"
+    held_q = {"id": "hq", "message_id": "<hq@x>", "sender_domain": "gmail.com", "subject": "Killeen council notice?",
+              "body": "Does the Killeen city council meet this week? Agenda link https://www.killeentexas.gov/agendas/x",
+              "received": "2026-10-15T00:00:00Z", "attachments": [], "has_source_link": True, "links": [{"url": "https://www.killeentexas.gov/agendas/x", "label": "x"}],
+              "in_reply_to": None, "proposed": "notice", "reason": "low confidence 0.3", "classifier": "model", "status": "pending"}
+    queue.write_text(json.dumps({"inbox": "meseeks@legalluminary.com", "items": [held_q]}))
+    state, _ = _run(_agent('{"classifications": []}'))
+    audit = {a["message_id"]: a for a in state["meseeks_result"]["audit"]}
+    assert audit[WITNESS]["publish"] and audit[WITNESS]["category"] == "notice" and "Scott Weeden" in audit[WITNESS]["reason"]
+    assert not audit[FORGED]["publish"] and "outside" in audit[FORGED]["reason"]   # forged From, wrong origin network
+    items = json.loads(queue.read_text())["items"]
+    assert items[0]["status"] == "confirmed" and items[0]["decided_by"] == SCOTT

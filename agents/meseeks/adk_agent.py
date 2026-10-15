@@ -31,6 +31,7 @@ from google.genai import types
 
 from . import backends, mailbox
 from . import prompts as prompt_registry
+from . import witness as witness_mod
 from .guardrails import (
     CATEGORIES,
     Inbound,
@@ -109,8 +110,12 @@ def load_inbox(callback_context) -> types.Content | None:
     # in the Killeen / Bell County / Texas statutory context. Out-of-scope mail is held here
     # and never reaches a model; a reply to a question ([Q-id]) inherits its thread's scope
     # and is judged by the gate against the questions actually posted.
-    in_thread, pre_held = [], []
+    in_thread, pre_held, directives = [], [], []
     for m in messages[:MAX_BATCH]:
+        d = witness_mod.directive(m.subject, m.body)
+        if d and witness_mod.person_for(m.sender):
+            directives.append((m, d))   # a witness speaking to the inbox, not content to post
+            continue
         reason = hard_reject(m)
         if reason:
             pre_held.append((m, reason, "hard-reject guardrail (never sent to a model)"))
@@ -124,6 +129,7 @@ def load_inbox(callback_context) -> types.Content | None:
     _RUNS[callback_context.invocation_id] = {
         "messages": {m.message_id: m for m in in_thread},
         "pre_held": pre_held,
+        "directives": directives,
         "imap": imap,
         "data": data,
         "firm_domains": firm_domains,
@@ -145,8 +151,8 @@ def load_inbox(callback_context) -> types.Content | None:
     st["meseeks_followup"] = ""
 
     if not batch:
-        if pre_held:
-            return None   # nothing for a model, but apply_guardrails still records the holds
+        if pre_held or directives:
+            return None   # nothing for a model, but apply_guardrails still records the holds / directives
         if imap:
             imap.close()
         st["meseeks_result"] = {"messages": 0, "published": 0, "held": 0, "expired": 0, "audit": [], "backend": "skipped"}
@@ -268,6 +274,7 @@ def apply_guardrails(callback_context) -> types.Content | None:
     expired = expire(data, now)
     audit = [{"message_id": m.message_id, "sender_domain": sender_domain(m.sender), "category": None, "publish": False,
               "reason": reason, "confidence": 0.0, "classifier": how} for m, reason, how in run.get("pre_held", [])]
+    audit += [apply_directive(m, d, run) for m, d in run.get("directives", [])]
     thread_ok = all(mid in run["messages"] for mid in proposals)
     for mid, msg in run["messages"].items():
         cat, conf, how = _advisory(msg, proposals.get(mid))
@@ -336,6 +343,30 @@ def _redact_keeping_ids(text: str, ids: list[str]) -> str:
     for token, mid in keep.items():
         text = text.replace(token, mid)
     return text
+
+
+def apply_directive(msg: Inbound, d: tuple[str, str, str | None], run: dict[str, Any]) -> dict[str, Any]:
+    """A `confirm <id> <category>` / `ack <id>` mailed by a witness, verified by address, origin IP
+    (from the Received headers) and platform, then applied through review.confirm/ack — which
+    re-run the same advisory layer and gate as every other publish decision."""
+    from . import review
+
+    verb, item_id, category = d
+    ident = witness_mod.Identity(msg.sender, msg.origin_ip, os.environ.get("MESEEKS_WITNESS_PLATFORM") or witness_mod.this_platform())
+    ok, why = witness_mod.is_witness(ident)
+    entry = {"message_id": msg.message_id, "sender_domain": sender_domain(msg.sender), "category": None, "publish": False,
+             "confidence": 0.0, "classifier": "witness directive (never sent to a model)", "directive": f"{verb} {item_id} {category or ''}".strip()}
+    if not ok:
+        entry["reason"] = f"directive refused: {why}"
+        return entry
+    if _dry_run():
+        entry["reason"] = f"directive from {why} not applied (dry run)"
+        return entry
+    out = review.confirm(item_id, category or "", who=ident) if verb == "confirm" else review.ack(item_id, "by mail", who=ident)
+    entry["reason"] = f"directive by {why}: {out.get('status')}" + (f" ({out['reason']})" if out.get("reason") else "")
+    entry["publish"] = out.get("status") == "published"
+    entry["category"] = out.get("category")
+    return entry
 
 
 def review_item(msg: Inbound, entry: dict[str, Any]) -> dict[str, Any]:
