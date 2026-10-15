@@ -52,3 +52,10 @@ def test_save_is_private(tmp_path):
     assert stat.S_IMODE(os.stat(p).st_mode) == 0o600 and stat.S_IMODE(os.stat(p.parent).st_mode) == 0o700
     assert json.loads(p.read_text())["brief"]["case"] == "26DCV360297"
     assert "legal-luminary" not in str(p.resolve()) or "tmp" in str(p.resolve())
+
+
+def test_road_act_lemma_is_stated_with_its_limits():
+    for case in ("25DCV352411", "LO-54089-TX"):
+        road = next(x for x in intake.brief(case, TODAY).lemmas if x.id == "L-ROAD")
+        assert road.deadline == "2027-01-07" and "three times the purchase price" in road.statement
+        assert "excepts repossession" in road.statement and "not retroactive" in road.statement and "P.L. 119-101" in road.source

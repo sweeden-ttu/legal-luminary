@@ -173,7 +173,28 @@ def brief(case_id: str, today: date | None = None, value: float | None = None, p
                       else "The sale date has passed; there is no right of redemption. Speak to an attorney about any remaining remedies.")
     else:
         raise ValueError(f"unknown case kind {c['kind']!r}")
+    b.lemmas.append(road_act_lemma(today))
     return b
+
+
+ROAD_ACT_SOURCES = (
+    "21st Century ROAD to Housing Act, P.L. 119-101, Title X, sec. 1001 (enacted July 11, 2026); summaries: "
+    "Mayer Brown (July 2026), CRS R49354"
+)
+
+
+def road_act_lemma(today: date) -> Lemma:
+    """The new federal law, stated only as far as the sources go."""
+    effective = date(2027, 1, 7)
+    return Lemma(
+        "L-ROAD",
+        "Sec. 1001 of the 21st Century ROAD to Housing Act ('Homes are for people, not corporations') bars large "
+        "institutional investors (investment control of 350+ single-family homes) from buying single-family homes, "
+        "with a civil penalty of up to $1,000,000 per violation or three times the purchase price, whichever is greater. "
+        "It takes effect about January 7, 2027, is not retroactive, excepts repossession and foreclosure or loss-mitigation "
+        "acquisitions by lenders and servicers, and the summaries describe no private right of action. On these facts it "
+        "does not by itself give a defendant or borrower a claim; an attorney should confirm how it bears on the case.",
+        ROAD_ACT_SOURCES, effective.isoformat(), (effective - today).days)
 
 
 def save(b: Brief, client_answers: dict, base: Path = INTAKE_DIR) -> Path:

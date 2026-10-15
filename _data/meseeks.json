@@ -4,6 +4,26 @@
   "retention_days": 60,
   "posts": [
     {
+      "id": "db23cec7f6",
+      "category": "opportunity",
+      "title": "Seeking counsel on contingency (33%): Weeden v. United States et al., W.D. Tex. (Waco) — quiet title and wrongful foreclosure",
+      "body": "Plaintiff Scott Weeden, individually and as trustee of the Weeden Family Trust, is preparing a federal complaint in the U.S. District Court for the Western District of Texas, Waco Division, and seeks counsel admitted in that district.\nDefendants: the United States (HUD), Onity Mortgage f/k/a PHH Mortgage Corporation, Servis One, Inc. d/b/a BSI Financial Services, and Quality Loan Service Corporation.\nClaims in the draft: quiet title against the United States (28 U.S.C. 2409a) and as to a HUD partial-claim lien the plaintiff says he never signed (28 U.S.C. 2410); wrongful foreclosure under the Oregon Trust Deed Act (no channel to cure, refused pre-sale tender, lis pendens recorded before the 2023 trustee's sale); breach of contract and good faith; RESPA notice-of-error (12 U.S.C. 2605); declaratory and injunctive relief. The property is a home in Portland, Oregon.\nRelief sought: return of title, or just compensation; lost equity of $66,854.73, $25,000 in improvements and $36,500 restitution; in the alternative not less than $250,000.\nStatus: draft complaint for attorney review, motion to proceed in forma pauperis and motion for appointment of counsel prepared; exhibits A-F (servicing records, notice of sale, unsigned partial-claim deed of trust, notice of error, payment history, recorded deed) and a recorded servicer call transcript are available to counsel on request.\nOffer: Plaintiff offers a contingency fee of 33% of any recovery, on a written agreement signed by Plaintiff and counsel. Interested attorneys: email meseeks@legalluminary.com with the subject line of this post.",
+      "received": "2026-10-15T21:40:00Z",
+      "source_label": "Posted by the plaintiff, Scott Weeden",
+      "links": [
+        {
+          "url": "/meseeks/contingency-agreement/",
+          "label": "Contingency fee agreement (template)"
+        },
+        {
+          "url": "https://www.txwd.uscourts.gov/",
+          "label": "U.S. District Court, Western District of Texas"
+        }
+      ],
+      "in_reply_to": null,
+      "hash": "b796ccf2bd817d0d"
+    },
+    {
       "id": "042475922c",
       "category": "notice",
       "title": "Citation by publication, 146th District Court, Bell County: Cause No. 25DCV352411",

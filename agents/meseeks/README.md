@@ -128,3 +128,16 @@ notice (court, cause number, dates, amounts), never party names or property addr
 
 The brief informs the defendant and their attorney; it does not choose for them and is not
 legal advice.
+
+## Where inputs and outputs live
+
+- **Inputs (private):** every message the inbox fetches is kept by `meseeks/store.py` when
+  `MESEEKS_MAIL_STORE` is set, in the layout witnesses already use under `~/ll/mail_attachments`:
+  `thread_id_<N>/attachedtomessage<K>.<ext>`, `thread_id_<N>/link_id_<K>` and a
+  `thread_id_<N>/thread.json` (messages, attachment sha256 / size / original name, links, and
+  the posts or intake briefs made from the thread). Identical attachments are stored once;
+  archives are never opened. Dirs 0700, files 0600, never in the repo.
+- **Outputs (public):** what the guardrails publish goes to `_data/meseeks.json` (notices,
+  opportunities, questions, answers); case facts for intake go to `_data/meseeks_cases.yml`;
+  each is recorded back in its thread's `thread.json` under `outputs`.
+- **Intake answers (private):** `~/.local/share/meseeks/intake`, see above.
