@@ -180,3 +180,7 @@ defaults:
       type: "pages"
     values:
       layout: "default"
+
+# Meseeks: officials and candidates this site closely follows, as named by the Killeen Daily Herald
+# (see _data/meseeks_following.yml for roles as reported, date and source).
+meseeks_following: _data/meseeks_following.yml

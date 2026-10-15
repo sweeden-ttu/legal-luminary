@@ -1,0 +1,31 @@
+---
+layout: default
+---
+{%- comment -%}
+  Printable agreement sheet: US Letter (8.5 x 11 in), 1/2 in padding, strong border, Liberation Sans.
+  Content is plain markdown (no HTML wrapper), so it always renders formatted.
+  Signature blocks come from front matter and NEVER carry a name:
+
+    signatories:
+      - role: "Authorized and acting as elected Mayor of the City of Killeen"
+      - role: "Authorized and acting as Council Member, District / At-Large Place ____"
+        count: 7                    # lines to print
+        required: 4                 # how many must sign (shown as "majority: 4 of 7")
+        note: "A majority of the City Council"
+      - role: "Witness"
+{%- endcomment -%}
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400&display=swap">
+<link rel="stylesheet" href="{{ '/assets/css/agreement.css' | relative_url }}">
+<div class="agreement-toolbar no-print">
+  <button type="button" onclick="window.print()">Print or save as PDF</button>
+  <span>US Letter, 8.5 × 11 in. Fill the blanks by hand or before printing; sign on the lines.</span>
+</div>
+<article class="agreement-sheet">
+  {{ content }}
+  {% if page.signatories %}
+  {% include agreement-signatures.html signatories=page.signatories %}
+  {% endif %}
+  <footer class="agreement-footer">
+    {{ page.title }} · {{ site.url | default: "legalluminary.com" | remove: "https://" }}{{ page.url }} · Template only; no party is bound until it signs.
+  </footer>
+</article>

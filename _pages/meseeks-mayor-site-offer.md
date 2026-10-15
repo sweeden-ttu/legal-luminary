@@ -1,67 +1,80 @@
 ---
-layout: default
-title: "Opportunity: an informational site for the Mayor of Killeen"
+layout: agreement
+title: "Proposal: an informational site for the Mayor of Killeen"
 permalink: /meseeks/opportunities/mayor-site/
-description: "Cloud Fronts Group's offer to the Mayor of Killeen to provide an informational site at mayor[surname].com, and the dilemma of how official notices should be verified and posted."
+description: "Cloud Fronts Group's proposal to the Mayor of Killeen, the City Council, the City Manager and the KISD Board of Trustees for an advertisement-free, verified informational site at mayor[surname].com."
+signatories:
+  - role: "Authorized and acting as elected Mayor of the City of Killeen"
+  - role: "Authorized and acting as Council Member of the City of Killeen, District ____ / At-Large Place ____"
+    count: 7
+    required: 4
+    note: "A majority of the members of the City Council authorizing this proposal"
+  - role: "Authorized and acting as City Manager of the City of Killeen"
+  - role: "Authorized and acting for the Board of Trustees, Killeen Independent School District"
+  - role: "Authorized and acting for the law enforcement agency providing updates"
+  - role: "Authorized and acting for Cloud Fronts Group"
+  - role: "Witness"
 ---
 
-<div class="meseeks-page meseeks-alert">
+# Proposal: An Informational Site for the Office of the Mayor of Killeen
 
-<p class="meseeks-disclaimer"><strong>Disclosure.</strong> This offer is posted by Scott Weeden, who operates Legal Luminary and holds a partnership stake in Cloud Fronts Group, the offeror. It is a proposal, not an agreement; the Mayor and the City of Killeen have not endorsed or accepted it, and no site in the Mayor's name exists or will be registered without the Mayor's written consent. Information only, not legal advice.</p>
+**Opportunity discovered: accurate, authoritative information without the bias of financial or undue political influence.** Cloud Fronts Group proposes to the Mayor of Killeen, Texas, the City Council, the City Manager and the Board of Trustees of the Killeen Independent School District, all residing and doing business with and for the benefit of the residents of the city, an informational site for the Office of the Mayor, paid for as a service and carrying no advertising.
 
-# Opportunity of mutual profit and gain discovered
+*Killeen, Bell County, Texas · Date: ____________________*
 
-**Cloud Fronts Group offer to the Mayor of Killeen, Texas, both residing and doing business with and for the benefit of the residents of the city as well as their clients, in the payment for services of building, hosting and verifying an informational site for the Mayor's office.**
+> **Disclosure.** Posted by the operator of Legal Luminary, who holds a partnership stake in Cloud Fronts Group, the proposing party. This is a proposal, not an agreement: no party is bound until it signs below, and no site in the Mayor's name will be registered without the written consent of the elected Mayor. Information only, not legal advice.
 
-*October 15, 2026 · Killeen, Bell County, Texas*
+## 1. Discovery
 
-## Discovery
+- **The City's own page lags.** As of October 15, 2026, the City of Killeen's City Council web page still lists an outgoing mayor, though a new mayor was elected on May 2, 2026 and sworn in on May 12, 2026, as KWTX and the Killeen Daily Herald reported.
+- **Mayor-named domains exist elsewhere.** Other municipalities' mayors use simple, memorable addresses such as *mayorbrown.com*. Who operates each such site, and whether it is official, campaign or informational, varies; nothing here implies any affiliation.
+- **Notices reach residents unevenly.** Court citations, foreclosure sales and hearing notices often reach residents only as newspaper clippings re-shared on social media.
 
-This offer was prompted by the discovery of mayor-named domains in other municipalities, such as *mayorbrown.com*: a simple address, mayor[surname].com, that residents can remember and that follows the office from one officeholder to the next. Killeen has no such channel today. (Who operates each such site, and whether it is official, campaign or informational, varies and should be checked case by case; nothing here implies any affiliation with those sites.) The write-up's format follows the law-firm client alert, as in Mayer Brown's July 2026 alert on the ROAD to Housing Act.
+Residents need one place where what they read is accurate, current and checked, and where no one has paid to shape it.
 
-## Summary
+## 2. What the site is
 
-Legal notices that affect Killeen residents (citations by publication, foreclosure sales, hearings, ordinances) reach many people only as newspaper clippings re-shared on a council member's social media page. Cloud Fronts Group offers the Mayor of Killeen a plain, informational site at **mayor[surname].com** (today, *mayorsolomon.com*, for Mayor Joseph Solomon, elected May 2, 2026) that would:
+An informational site at **mayor[surname].com**, the surname being that of whoever is the elected Mayor at the time. It will:
 
-- explain, in the style of a law-firm client alert, what each notice or new law means for residents, with deadlines counted down;
-- mirror, never replace, the City's official postings on killeentexas.gov, linking every item to its official source;
-- show who verified each item and when, so residents can trust what they read.
+1. explain, in plain language and in the style of a law-firm client alert, what each notice, ordinance or new law means for residents, with deadlines counted down;
+2. mirror, and never replace, the City's official postings on killeentexas.gov, linking every item to its official source;
+3. automatically include the public announcements of the **Killeen Independent School District Board of Trustees** from that board's own official channels, as an impartial source;
+4. include **every elected official** serving the city, whatever their politics and whichever social media platform they choose, with equal format and placement;
+5. show, for each item, who verified it and when.
 
-## Background: why now
+## 3. No advertising, no promotion
 
-- **New federal housing law.** Section 1001 of the 21st Century ROAD to Housing Act (P.L. 119-101, enacted July 11, 2026), "Homes are for people, not corporations," bars large institutional investors from buying single-family homes, with a civil penalty of up to $1,000,000 per violation or three times the purchase price, whichever is greater. It takes effect about January 7, 2027. It is not retroactive and excepts foreclosure acquisitions by lenders and servicers, so residents need plain explanations of what it does and does not do for them.
-- **Notices reach residents unevenly.** This week alone, the Killeen Daily Herald carried two Bell County citations by publication and a HUD foreclosure sale notice, re-shared by a council member on social media and summarized on [Meseeks](/meseeks/).
+Advertising is **100% restricted**. The site will carry no advertisements, sponsored content, paid placements, endorsements of candidates, or promotional offers of any kind, including for Cloud Fronts Group or Legal Luminary. Nothing on the site may be bought.
 
-## The dilemma
+## 4. How a notice is posted
 
-A *dilemma* is a choice between options that each cost something; a *lemma* is a fact the choice rests on. Here the choice is how a notice becomes an official, trusted posting.
+No notice is posted until it has **all three** sign-offs:
 
-**Lemmas**
+| Sign-off | Who | Purpose |
+|---|---|---|
+| Witness | A person who saw the notice at its official source | It exists and says what it says |
+| Council Member | The Council Member for the district the notice concerns (an At-Large Member for citywide notices) | Advisory input from the district's representative |
+| Mayor | The elected Mayor, or the Mayor's written designee | Final decision on official posting and authenticity |
 
-1. Official meeting notices must be posted where the Texas Open Meetings Act requires, including the City's own website (Tex. Gov't Code ch. 551). A personal or officeholder domain can mirror them but cannot be the official posting.
-2. The Mayor presides over the City Council; the City Manager runs the administration. Each council district has a member who knows its residents and the notices that affect them.
-3. The council member who forwards a notice is a valuable source, and also a single source: the choice of which notices to share, and how to frame them, can carry that member's own priorities.
-4. Paying for services to a public office runs through lawful channels only: City procurement (Tex. Local Gov't Code ch. 252; vendor conflict-of-interest disclosure under ch. 176), or officeholder/campaign funds reported under the Texas Election Code. Texas law restricts benefits to public servants (Tex. Penal Code ch. 36) and corporate political contributions (Tex. Elec. Code § 253.094); counsel should confirm which channel fits before any agreement.
+The Council Member who forwards a notice is a valuable source and also a single one; the Mayor's final decision, informed by the City Manager, keeps any one member's framing from deciding what residents see.
 
-**Options**
+**Law enforcement updates.** Public-safety notices (road closures, emergencies, missing persons, safety advisories) are posted with input and updates from the responsible law enforcement agency, which may update or withdraw them as facts change.
 
-| | Option | What it gains | What it costs |
-|---|---|---|---|
-| A | **Mayor and City Manager decide official posting.** A notice is verified against its official source (court, clerk, killeentexas.gov, the newspaper of record), the council member for the affected district signs off as advisory input, and the Mayor (or the Mayor's designee with the City Manager) makes the final call to publish it on mayor[surname].com with a link to the official posting. | Authenticity and balance: no single council member's framing decides what residents see; the affected district is heard. | A short review step; someone in the Mayor's office must be responsible for it. |
-| B | **The forwarding council member posts directly.** | Speed. | The single-source bias in lemma 3; no independent check of authenticity. |
-| C | **Status quo:** clippings on social media only. | No cost. | Residents miss deadlines; nothing is verified or explained; the city's message is fragmented. |
+## 5. Roles and commitments
 
-**Proposed trade (mutual benefit).** Cloud Fronts Group builds, hosts and maintains the site, and provides the verification workflow behind Option A: the same witness-and-guardrail process that runs Meseeks, with each district's council member as an advisory signer and the Mayor as the final authority. In exchange it is paid for services through whichever lawful channel counsel confirms (City procurement or officeholder funds). Residents receive verified, explained notices. The Mayor's office gains a trusted channel that strengthens, rather than competes with, the City's official site.
+- **The Mayor** is the party of advisory input and final authority on what is posted.
+- **The City Council**, by a majority of its members, authorizes this proposal; each member is the advisory signer for notices concerning their district.
+- **The City Manager** agrees to prioritize decisions and feedback, and to work in close coordination with the Mayor, the Council and Cloud Fronts Group, so the site is a forum for collaborative, authoritative and unified communication in leading the city.
+- **The KISD Board of Trustees** consents to automatic inclusion of its public announcements from its official sources.
+- **The law enforcement agency** provides public-safety updates as described in section 4.
+- **Cloud Fronts Group** builds, hosts, maintains and verifies the site, and is paid for those services only.
 
-## Next steps
+## 6. Payment and compliance
 
-- The Mayor's office indicates interest, and which channel (City or officeholder) it prefers.
-- Counsel for each side confirms the procurement, ethics and disclosure requirements.
-- The domain is registered in the name of the Mayor or the Mayor's officeholder account, never in Cloud Fronts Group's, and transfers with the office's choosing.
-- A written services agreement sets scope, price, verification roles and data ownership.
+Payment for services is made only through a channel that counsel for each party confirms: City procurement (Tex. Local Gov't Code ch. 252; vendor conflict-of-interest disclosure under ch. 176) or officeholder funds reported under the Texas Election Code. Official meeting notices remain posted where the Texas Open Meetings Act requires, including the City's own website (Tex. Gov't Code ch. 551). The domain is registered to the Office of the Mayor, never to Cloud Fronts Group, and passes with the office.
 
-Contact: **meseeks@legalluminary.com**, subject "Mayor site opportunity".
+## 7. Term
 
-<p class="meseeks-disclaimer">Sources: City of Killeen, <a href="https://www.killeentexas.gov/706/2026-General-Election">May 2, 2026 General Election</a>; KWTX, <a href="https://www.kwtx.com/2026/05/04/joseph-solomon-vows-listen-residents-after-winning-killeen-mayoral-race/">Joseph Solomon vows to listen to residents after winning Killeen mayoral race</a>; Mayer Brown, <a href="https://www.mayerbrown.com/en/insights/publications/2026/07/housing-legislation-imposing-limitations-on-large-institutional-investors-from-purchasing-single-family-homes-becomes-law">Housing legislation imposing limitations on large institutional investors becomes law</a>; CRS, <a href="https://www.congress.gov/crs-product/R49354">The 21st Century ROAD to Housing Act (P.L. 119-101)</a>.</p>
+This proposal takes effect when signed by the Mayor and a majority of the City Council, and by each other party as to its own role. Any party may withdraw on 30 days' written notice. Changes must be in writing and signed by the parties they affect.
 
-</div>
+Sources: City of Killeen, City Council page (killeentexas.gov/153) and May 2, 2026 General Election page (killeentexas.gov/706); KWTX, "Joseph Solomon vows to listen to residents after winning Killeen mayoral race" (May 4, 2026); Killeen Daily Herald, "Newly elected Killeen council and mayor to swear in Tuesday" (May 11, 2026).
