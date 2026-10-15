@@ -3,6 +3,7 @@
   python -m meseeks.run --dry-run --eml tests/meseeks/fixtures   # no mail server, no writes
   python -m meseeks.run --eml tests/meseeks/fixtures              # write from fixtures
   python -m meseeks.run                                           # IMAP (env vars in mailbox.py)
+  python -m meseeks.run --adk [--dry-run] [--eml DIR]             # same, through the ADK agent (agent.yaml)
 
 Run from the agents/ directory, or with agents/ on PYTHONPATH."""
 from __future__ import annotations
@@ -78,7 +79,21 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--eml", help="directory of .eml files instead of IMAP")
     ap.add_argument("--dry-run", action="store_true", help="classify and report; write nothing")
     ap.add_argument("--data", default=str(DATA))
+    ap.add_argument("--adk", action="store_true", help="run through agents/meseeks/agent.yaml (local model -> coders -> API -> rules)")
     args = ap.parse_args(argv)
+
+    if args.adk:
+        import os
+
+        from .adk_agent import run_adk
+
+        os.environ["MESEEKS_DATA"] = args.data
+        if args.eml:
+            os.environ["MESEEKS_EML_DIR"] = args.eml
+        if args.dry_run:
+            os.environ["MESEEKS_DRY_RUN"] = "1"
+        print(json.dumps(run_adk(), indent=2))
+        return 0
 
     now = datetime.now(timezone.utc)
     data = load_data(Path(args.data))

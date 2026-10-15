@@ -4,7 +4,6 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
-import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "agents"))
 os.environ["MESEEKS_RULES_ONLY"] = "1"
@@ -35,6 +34,7 @@ def test_fixture_outcomes():
     assert audit["<o1@centexlegalaid.org>"]["category"] == "opportunity" and audit["<o1@centexlegalaid.org>"]["publish"]
     assert audit["<s1@seo-blast.biz>"]["reason"] == "spam"
     assert audit["<t1@example.org>"]["reason"] == "body too short"
+    assert audit["<x1@cityofseattle.example>"]["reason"].startswith("out of scope")
     assert len(data["posts"]) == 5
 
 

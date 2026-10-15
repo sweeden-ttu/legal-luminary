@@ -1,0 +1,7 @@
+# Evidently prompt registry for the Meseeks agents.
+# Every model-facing prompt is pulled from this one project by name (see prompts/ for the
+# committed fallbacks and `python -m meseeks.prompts init` to create/seed it and fill project_id).
+# MESEEKS_EVIDENTLY_URL and MESEEKS_EVIDENTLY_PROJECT_ID override these at runtime.
+url: http://192.168.0.15:8000
+project_name: Meseeks
+project_id: ""

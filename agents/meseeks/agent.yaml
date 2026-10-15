@@ -1,0 +1,47 @@
+# Meseeks inbox orchestrator — Google ADK Agent Config (root).
+#
+#   adk run agents/meseeks                                    # interactive (root_agent.yaml -> this file)
+#   python -m meseeks.run --adk --dry-run --eml ../tests/meseeks/fixtures
+#
+# Shape: one LoopAgent (the orchestrator, with the clock) over one LlmAgent (round.yaml, the
+# sub-autonomous agent). Formal model: specs/tla/Meseeks.tla.
+#
+# Clock. Each round is one headless, unattended call to the first sub-agent that answers — a
+# local Ollama / LM Studio server on MESEEKS_LLM_HOSTS:1234|15443, then the coders claude, codex,
+# agy, agent, opencode (one prompt, one call, own budget each), then the Anthropic API. No single
+# call is waited on longer than MESEEKS_MAX_CALL_SECONDS (60 s); the round's window is 1.3 x the
+# sum of the sub-agent budgets (MESEEKS_WINDOW_SLACK) and every call is capped by what is left of
+# it, so no single failure can hang the batch. check_round then either stops the loop or issues
+# one more question + reason + instruction for the message ids still unanswered; the loop also
+# stops after MESEEKS_IDLE_SECONDS (60 s) without a new proposal, and max_iterations bounds the
+# rounds. When the loop ends, apply_guardrails decides with whatever was proposed (rules for the
+# rest).
+#
+# Prompts: pulled by name from the Evidently project in meseeks/prompts.yml (192.168.0.15:8000),
+# falling back to meseeks/prompts/*.md when the host is unreachable.
+#
+# Guardrails live in Python, not in any prompt. The model only proposes a category per message;
+# meseeks.guardrails.enforce (in apply_guardrails) decides what is published:
+#   answer         only from a domain in _data/meseeks_firm_domains.yml AND replying to a posted [Q-id]
+#   standing_order only with a source link or PDF attachment
+#   question       identifiers redacted, sender never stored, posted as Anonymous
+#   notice / opportunity  published as-is after redaction
+#   everything else held: spam, abuse, non-PDF attachments, short bodies, low confidence, duplicates
+
+agent_class: LoopAgent
+name: meseeks_orchestrator
+description: >-
+  Orchestrates the Meseeks inbox: opens the clock window, runs bounded rounds of the classifying
+  sub-agent, then applies the deterministic guardrails that publish to /meseeks/.
+
+# Upper bound on question + reason + instruction rounds; MESEEKS_MAX_ROUNDS (default 3) may stop
+# the loop earlier, and the window always can.
+max_iterations: 3
+
+before_agent_callbacks:
+  - name: meseeks.adk_agent.load_inbox
+after_agent_callbacks:
+  - name: meseeks.adk_agent.apply_guardrails
+
+sub_agents:
+  - config_path: round.yaml

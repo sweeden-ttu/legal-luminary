@@ -32,6 +32,59 @@ _SPAM_TERMS = (
     "seo services", "guest post", "backlink", "make money", "viagra", "casino",
 )
 
+# Jurisdiction and topic scope. A post must originate in the context of Killeen, Texas or
+# Bell County, or be a statutory / political / judicial matter of Texas, Bell County, or the
+# municipalities around Killeen: city council, the mayor's office, justices of the peace, the
+# Texas Attorney General, and compliance with or decisions by elected judges on the bench.
+# Answers inherit the scope of the posted question they reply to (the thread).
+SCOPE_PLACES = (
+    "killeen", "bell county", "harker heights", "copperas cove", "nolanville", "belton", "temple, tx",
+    "temple texas", "fort cavazos", "fort hood", "salado", "troy, tx", "holland, tx", "rogers, tx", "bartlett",
+    "little river-academy", "morgan's point", "central texas", "centex",
+)
+SCOPE_BODIES = (
+    "city council", "council member", "councilmember", "councilman", "councilwoman", "mayor",
+    "justice of the peace", "justices of the peace", "jp court", "justice court", "county judge",
+    "commissioners court", "district court", "county court at law", "municipal court", "attorney general",
+    "texas supreme court", "court of criminal appeals", "court of appeals", "western district of texas",
+    "district attorney", "county attorney", "city attorney", "county clerk", "district clerk", "judge",
+    "election", "ballot", "precinct", "ordinance", "standing order", "local rule",
+)
+SCOPE_STATUTES = (
+    "texas property code", "texas penal code", "texas government code", "local government code",
+    "texas family code", "texas election code", "code of criminal procedure", "civil practice and remedies",
+    "texas occupations code", "texas transportation code", "health and safety code", "open meetings act",
+    "public information act", "tex. ", "texas law", "state of texas", "texas statute", "texas statutes",
+)
+SCOPE_DOMAINS = (
+    "killeentexas.gov", "bellcountytx.com", "bellcounty.texas.gov", "co.bell.tx.us", "texasattorneygeneral.gov",
+    "txcourts.gov", "harkerheights.gov", "copperascovetx.gov", "templetx.gov", "beltontexas.gov", "nolanvilletx.gov",
+    "capitol.texas.gov", "sos.texas.gov", ".tx.us",
+)
+
+
+def scope_of(msg: Inbound) -> str | None:
+    """Why a message is within the Killeen / Bell County / Texas statutory scope, or None."""
+    text = (msg.subject + "\n" + msg.body).lower()
+    dom = sender_domain(msg.sender)
+    for d in SCOPE_DOMAINS:
+        if dom == d.lstrip(".") or dom.endswith(d if d.startswith(".") else "." + d):
+            return f"domain:{dom}"
+    for t in SCOPE_PLACES:
+        if t in text:
+            return f"place:{t}"
+    texas = "texas" in text or " tx " in text or re.search(r"\btx\b", text) is not None
+    if texas:
+        for t in SCOPE_BODIES + SCOPE_STATUTES:
+            if t in text:
+                return f"texas:{t.strip()}"
+    return None
+
+
+def in_scope(msg: Inbound) -> bool:
+    return scope_of(msg) is not None
+
+
 _KEYWORDS = {
     "standing_order": ("standing order", "general order", "administrative order", "local rule", "amended order", "it is ordered"),
     "notice": ("public notice", "notice of", "hearing", "agenda", "ordinance", "city council", "commissioners court", "legal notice", "town hall", "meeting", "comment period"),
@@ -175,6 +228,8 @@ def enforce(msg: Inbound, category: str | None, confidence: float, firm_domains:
             return Decision(False, "answer", "answer does not reference a posted question")
     if category == "standing_order" and not extract_links(msg.body) and not msg.attachments:
         return Decision(False, "standing_order", "standing order without source link or PDF")
+    if category != "answer" and not in_scope(msg):
+        return Decision(False, category, "out of scope: not a Killeen / Bell County / Texas statutory matter")
     return Decision(True, category, "ok", confidence)
 
 

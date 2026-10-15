@@ -4,10 +4,14 @@ Turns mail sent to `meseeks@legalluminary.com` into posts on [/meseeks/](https:/
 Named, loosely, for the Rick and Morty automatons that exist only to complete a task. Ours have a standing one.
 
 ```
-mail ──▶ mailbox.py ──▶ classifier.py ──▶ guardrails.enforce ──▶ _data/meseeks.json ──▶ _pages/meseeks.md
-          (IMAP/.eml)    (rules, or Claude   (deterministic;        (committed by the     (Jekyll renders)
-                          if key present)     model can't widen)     workflow)
+mail ──▶ mailbox.py ──▶ agent.yaml / round.yaml ──▶ guardrails.enforce ──▶ _data/meseeks.json ──▶ _pages/meseeks.md
+          (IMAP/.eml)    (ADK orchestrator: local     (deterministic;         (committed by the      (Jekyll renders)
+                          model → coders → API)        model can't widen)      workflow)
+                                                            │
+                                                            └─▶ _data/meseeks_review.json ──▶ review.py (human confirm / ack)
 ```
+
+Formal model: `specs/tla/Meseeks.tla` (TLA+, checked with TLC) and `specs/prolog/meseeks.pl`.
 
 ## Categories
 
@@ -26,9 +30,54 @@ classifications, answers from anyone who is not a listed firm. Posts expire afte
 
 ```bash
 cd agents
-python -m meseeks.run --dry-run --eml ../tests/meseeks/fixtures   # no network, no writes
-python -m meseeks.run --eml some/dir                               # write from .eml files
-python -m meseeks.run                                              # IMAP
+python -m meseeks.run --adk --dry-run --eml ../tests/meseeks/fixtures   # ADK agent, no writes
+python -m meseeks.run --adk                                             # ADK agent over IMAP
+python -m meseeks.run --dry-run --eml ../tests/meseeks/fixtures         # legacy single classifier
+adk run meseeks                                                         # interactive (root_agent.yaml)
+```
+
+### The ADK agent (agent.yaml → round.yaml)
+
+`agent.yaml` is a `LoopAgent` orchestrator; `round.yaml` is the sub-autonomous `LlmAgent` it
+loops over. Per round the model is `meseeks.backends.MODEL`, a chain tried in order until one
+answers: a local Ollama / LM Studio / OpenAI-compatible server on `MESEEKS_LLM_HOSTS`
+(`127.0.0.1,192.168.0.15`) at ports `1234,15443`; then the headless coders `claude`, `codex`,
+`agy`, `agent`, `opencode` (one prompt, one unattended call, own budget each; override with
+`MESEEKS_CODERS` JSON); then the Anthropic API if `ANTHROPIC_API_KEY` is set. If all fail the
+keyword rules classify the batch.
+
+Clocks: no single call is waited on longer than `MESEEKS_MAX_CALL_SECONDS` (60); a round's
+window is 1.3 × the sum of the sub-agent budgets (`MESEEKS_WINDOW_SLACK`), 0.9 × during a
+human-in-the-loop drill (`MESEEKS_HITL=1`); the loop stops when every message has a proposal,
+when no sub-agent answered, after `MESEEKS_IDLE_SECONDS` (60) without a new proposal, or after
+`MESEEKS_MAX_ROUNDS` (3) question + reason + instruction rounds.
+
+Guardrails run in Python before and after the model: hard rejects and out-of-scope mail
+(anything not in the Killeen / Bell County / Texas statutory, political or judicial context —
+`guardrails.scope_of`) are held before any model sees them; model output is advisory
+(`adk_agent._advisory`: unknown categories and unusable confidences fall back to the rules, a
+rule-detected question can never be relabeled out of its anonymity) and `guardrails.enforce`
+makes every publish decision.
+
+### Prompts
+
+Every prompt is pulled by name from one Evidently project (`prompts.yml`: host
+`http://192.168.0.15:8000`, prompt names `meseeks.instruction`, `meseeks.coder_wrapper`,
+`meseeks.classifier`), falling back to `prompts/<name>.md` when the host is unreachable.
+
+```bash
+python -m meseeks.prompts init   # create the project if needed, seed the prompts, write project_id
+python -m meseeks.prompts pull   # which version each prompt resolves to right now
+```
+
+### Human in the loop
+
+Held messages (other than hard rejects) wait in `_data/meseeks_review.json`:
+
+```bash
+python -m meseeks.review list
+python -m meseeks.review confirm <id> <category>   # goes through the same advisory layer and gate
+python -m meseeks.review ack <id> [note]
 ```
 
 Env for IMAP: `MESEEKS_IMAP_HOST`, `MESEEKS_IMAP_USER`, `MESEEKS_IMAP_PASSWORD`, optional `MESEEKS_IMAP_FOLDER`.

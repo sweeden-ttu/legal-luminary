@@ -1,0 +1,42 @@
+# One round of the Meseeks orchestrator (agent.yaml): the sub-autonomous classifying agent.
+# A single unattended model call through meseeks.backends.MODEL (local server -> coders -> API),
+# each sub-agent with its own budget and all of them capped by the orchestrator's window.
+
+agent_class: LlmAgent
+name: meseeks_round
+description: >-
+  Proposes a category for each message in the batch; guardrails in the orchestrator decide.
+
+model_code:
+  name: meseeks.backends.MODEL
+
+include_contents: default
+output_key: meseeks_proposals
+disallow_transfer_to_parent: true
+disallow_transfer_to_peers: true
+
+generate_content_config:
+  temperature: 0
+  max_output_tokens: 4000
+
+after_model_callbacks:
+  - name: meseeks.adk_agent.redact_model_text
+after_agent_callbacks:
+  - name: meseeks.adk_agent.check_round
+
+# The instruction text lives in the Evidently prompt registry (meseeks/prompts.yml, prompt
+# "meseeks.instruction"; fallback meseeks/prompts/meseeks.instruction.md). load_inbox resolves it
+# into state before the first round, and check_round fills meseeks_followup for later rounds.
+instruction: |
+  {meseeks_instruction}
+
+  Participating firm domains (the only senders whose "answer" can be published):
+  {meseeks_firm_domains}
+
+  Open questions on the page (an answer must reply to one of these ids):
+  {meseeks_open_questions}
+
+  Batch ({meseeks_batch_size} messages):
+  {meseeks_batch}
+
+  {meseeks_followup?}

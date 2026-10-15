@@ -39,17 +39,17 @@ jobs:
 
       - name: Install
         if: steps.gate.outputs.configured == 'true'
-        run: pip install pyyaml anthropic
+        run: pip install -r requirements_adk.txt
 
       - name: Process inbox
         if: steps.gate.outputs.configured == 'true'
         working-directory: agents
-        run: python -m meseeks.run
+        run: python -m meseeks.run --adk
 
       - name: Commit posts
         if: steps.gate.outputs.configured == 'true'
         run: |
           git config user.name "meseeks[bot]"
           git config user.email "meseeks@legalluminary.com"
-          git add _data/meseeks.json logs/meseeks
+          git add _data/meseeks.json _data/meseeks_review.json logs/meseeks
           git diff --staged --quiet || (git commit -m "meseeks: process inbox" && git push)
