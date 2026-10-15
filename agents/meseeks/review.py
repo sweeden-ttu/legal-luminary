@@ -5,8 +5,9 @@ human confirms one into a category or acknowledges it as held. A confirmation is
 bypass: it goes through guardrails.enforce at full confidence, against the questions posted
 so far, exactly like the model's proposals did (HumanConfirm in specs/tla/Meseeks.tla).
 
+  python -m meseeks.review login                       # OpenID Connect sign-in (device flow or PKCE)
   python -m meseeks.review list
-  python -m meseeks.review confirm <id> <category>     # as the witness in MESEEKS_WITNESS (an address)
+  python -m meseeks.review confirm <id> <category>     # as the signed-in witness (ID token), or MESEEKS_WITNESS
   python -m meseeks.review ack <id> [note]
 
 Only a witness agent may confirm or acknowledge (_data/meseeks_witnesses.yml): a known
@@ -50,17 +51,17 @@ def pending(queue: dict) -> list[dict]:
     return [i for i in queue["items"] if i.get("status") == "pending"]
 
 
-def _witness(who) -> tuple[witness_mod.Identity, str | None]:
+def _witness(who, channel: str = "review") -> tuple[witness_mod.Identity, str | None]:
     """Resolve who is acting; a non-witness gets a refusal reason."""
     ident = who if isinstance(who, witness_mod.Identity) else witness_mod.local_identity(who if isinstance(who, str) else None)
-    ident = witness_mod.Identity(witness_mod.bare_address(ident.address), ident.ip, ident.platform)
-    ok, why = witness_mod.is_witness(ident)
+    ident = witness_mod.Identity(witness_mod.bare_address(ident.address), ident.ip, ident.platform, ident.verified, ident.claims)
+    ok, why = witness_mod.is_witness(ident, channel=channel)
     return ident, (None if ok else why)
 
 
-def confirm(item_id: str, category: str, who="") -> dict:
+def confirm(item_id: str, category: str, who="", channel: str = "review") -> dict:
     """Publish a held message as `category` if, and only if, a witness asks and the guardrails accept it at confidence 1.0."""
-    ident, refusal = _witness(who)
+    ident, refusal = _witness(who, channel)
     if refusal:
         return {"id": item_id, "status": "refused", "reason": f"not a witness: {refusal}", "by": ident.address}
     who = ident.address
@@ -92,8 +93,9 @@ def confirm(item_id: str, category: str, who="") -> dict:
             data["posts"].sort(key=lambda p: p["received"], reverse=True)
             data["generated_utc"] = now
             data_path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n")
-            item.update(status="confirmed", category=category, decided_utc=now, decided_by=who)
-            outcome = {"id": item_id, "status": "published", "category": category, "post_id": post["id"], "advisory": how}
+            item.update(status="confirmed", category=category, decided_utc=now, decided_by=who,
+                        decided_auth={"verified": ident.verified, "sub": ident.claims[0] if ident.claims else None, "iss": ident.claims[1] if ident.claims else None})
+            outcome = {"id": item_id, "status": "published", "category": category, "post_id": post["id"], "advisory": how, "verified": ident.verified}
     review_path.write_text(json.dumps(queue, indent=2, ensure_ascii=False) + "\n")
     LOG.mkdir(parents=True, exist_ok=True)
     with (LOG / f"{now[:10]}.jsonl").open("a") as fh:
@@ -101,9 +103,9 @@ def confirm(item_id: str, category: str, who="") -> dict:
     return outcome
 
 
-def ack(item_id: str, note: str = "", who="") -> dict:
+def ack(item_id: str, note: str = "", who="", channel: str = "review") -> dict:
     """Acknowledge a held message (witnesses only): it stays held and leaves the queue."""
-    ident, refusal = _witness(who)
+    ident, refusal = _witness(who, channel)
     if refusal:
         return {"id": item_id, "status": "refused", "reason": f"not a witness: {refusal}", "by": ident.address}
     who = ident.address
@@ -120,7 +122,13 @@ def ack(item_id: str, note: str = "", who="") -> dict:
 def main(argv: list[str] | None = None) -> int:
     argv = list(sys.argv[1:] if argv is None else argv)
     cmd = argv[0] if argv else "list"
-    if cmd == "confirm" and len(argv) >= 3:
+    if cmd == "login":
+        from . import oidc, witness
+
+        tok = oidc.login(oidc.Provider.from_config(witness.load()))
+        claims = oidc.verify(tok["id_token"], oidc.Provider.from_config(witness.load()))
+        out = {"status": "signed in", "as": oidc.address_of(claims, oidc.Provider.from_config(witness.load())), "token_file": str(oidc.TOKEN_FILE)}
+    elif cmd == "confirm" and len(argv) >= 3:
         out = confirm(argv[1], argv[2])
     elif cmd == "ack" and len(argv) >= 2:
         out = ack(argv[1], " ".join(argv[2:]))

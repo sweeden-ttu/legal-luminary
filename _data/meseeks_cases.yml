@@ -1,0 +1,33 @@
+# Cases opened from public notices for Meseeks client intake. Facts come only from the
+# published notice (source + KDH dates); party names and property addresses are left to the
+# linked clipping. Each lemma is a fact with its source; dilemmas are built from them by
+# agents/meseeks/intake.py. Nothing a client tells intake is stored here.
+cases:
+  - id: 25DCV352411
+    kind: citation_by_publication
+    court: 146th Judicial District Court, Bell County, Texas
+    issued: 2026-09-11
+    answer_due: 2026-10-26T10:00
+    published: [2026-10-01, 2026-10-08, 2026-10-15, 2026-10-22]
+    clipping: /assets/meseeks/kdh-2026-10-15-citation-25DCV352411.jpg
+    relief_sought: rescind the vendor's lien and assert superior title to residential property (Temple)
+  - id: 26DCV360297
+    kind: citation_by_publication
+    court: 169th Judicial District Court, Bell County, Texas
+    issued: 2026-10-02
+    answer_due: 2026-11-16T10:00
+    published: [2026-10-08, 2026-10-15, 2026-10-22, 2026-10-29]
+    clipping: /assets/meseeks/kdh-2026-10-15-citation-26DCV360297.jpg
+    relief_sought: establish the lender-trustee's title and interest in residential property (Killeen), including against unknown heirs of a deceased borrower
+  - id: LO-54089-TX
+    kind: hud_nonjudicial_foreclosure
+    court: none (nonjudicial; HUD foreclosure commissioner under 12 U.S.C. 3751 et seq.)
+    sale: 2026-11-03T10:00
+    sale_window: 10:00 AM - 1:00 PM, Bell County Justice Complex, 1201 Huey Drive, Belton
+    reinstate_by: 2026-11-02
+    reinstatement_amount: 260235.45
+    hud_bid: 260235.45
+    deposit_pct: 10
+    redemption_right: false
+    published: [2026-10-01, 2026-10-08, 2026-10-15]
+    clipping: /assets/meseeks/kdh-2026-10-15-hud-foreclosure-sale-LO-54089-TX.jpg

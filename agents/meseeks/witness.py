@@ -30,6 +30,8 @@ class Identity:
     address: str
     ip: str | None
     platform: str | None
+    verified: bool = False   # address proven by a verified OIDC ID token
+    claims: tuple = ()       # (subject, issuer) from that token, for the audit
 
 
 def load(path: Path | None = None) -> dict:
@@ -88,11 +90,50 @@ def bare_address(address: str) -> str:
     return (addr or address).strip().lower()
 
 
-def is_witness(identity: Identity, cfg: dict | None = None) -> tuple[bool, str]:
+def forwarder_person(address: str, cfg: dict | None = None) -> str | None:
+    """Name of the witness who forwards from this address, or None. Witness addresses count too."""
+    cfg = cfg or load()
+    addr = bare_address(address)
+    for f in cfg.get("forwarders") or []:
+        if str(f.get("address", "")).lower() == addr:
+            return f.get("person") or addr
+    person = person_for(addr, cfg)
+    return person.get("name") if person else None
+
+
+def sender_authenticated(msg) -> bool:
+    """The From domain is proven by our MX: DMARC pass, or a DKIM pass aligned with the From domain."""
+    auth = getattr(msg, "auth", None) or {}
+    domain = bare_address(msg.sender).rsplit("@", 1)[-1]
+    if auth.get("dmarc") == "pass":
+        return True
+    return any(d == domain or domain.endswith("." + d) or d.endswith("." + domain) for d in auth.get("dkim") or [])
+
+
+def witnessed_forward(msg, cfg: dict | None = None) -> str | None:
+    """Witness name for a forwarded notice, only when the forwarding address is listed AND our MX
+    authenticated it. A forged From: sweeden.ttu@gmail.com gets None and is treated like anyone else."""
+    cfg = cfg or load()
+    person = forwarder_person(msg.sender, cfg)
+    if not person:
+        return None
+    if (cfg.get("forwarders_require") or "dmarc") == "none":
+        return person
+    return person if sender_authenticated(msg) else None
+
+
+def oidc_required(cfg: dict | None = None, channel: str = "review") -> bool:
+    o = (cfg or load()).get("oidc") or {}
+    return bool(o.get("require_for_review" if channel == "review" else "require_for_mail", False))
+
+
+def is_witness(identity: Identity, cfg: dict | None = None, channel: str = "review") -> tuple[bool, str]:
     cfg = cfg or load()
     person = person_for(identity.address, cfg)
     if not person:
         return False, "address is not a witness identity"
+    if oidc_required(cfg, channel) and not identity.verified:
+        return False, "identity is not authenticated (no verified OpenID Connect ID token)"
     if not ip_allowed(identity.ip, cfg):
         return False, f"origin {identity.ip or 'unknown'} is outside the local / wide-area network"
     if not platform_allowed(identity.platform, cfg):
@@ -131,8 +172,19 @@ def this_ip() -> str | None:
         return None
 
 
-def local_identity(address: str | None = None) -> Identity:
-    return Identity(address or os.environ.get("MESEEKS_WITNESS", ""), this_ip(), os.environ.get("MESEEKS_WITNESS_PLATFORM") or this_platform())
+def local_identity(address: str | None = None, token: str | None = None) -> Identity:
+    """Who is acting from this machine. With an ID token the address comes from the token."""
+    from . import oidc
+
+    ip, plat = this_ip(), os.environ.get("MESEEKS_WITNESS_PLATFORM") or this_platform()
+    token = token or oidc.load_token()
+    if token:
+        try:
+            ident, claims = oidc.identity_from(token, oidc.Provider.from_config(load()), ip, plat)
+            return Identity(ident.address, ip, plat, True, (str(claims.get("sub")), str(claims.get("iss"))))
+        except oidc.OidcError:
+            pass   # falls through to the unauthenticated identity, which is_witness may refuse
+    return Identity(address or os.environ.get("MESEEKS_WITNESS", ""), ip, plat)
 
 
 # --------------------------------------------------------------------------- directives by mail

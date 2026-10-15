@@ -17,6 +17,22 @@ people:
     first: johnathan
     last: king
     usernames: [jcking1278]
+# Personal addresses a witness forwards notices from (newspaper clippings a council member posts
+# on Facebook, for instance). Mail from these is "witnessed": it may carry image attachments
+# and is published under the witness's name, never the forwarding address. A forwarder cannot
+# confirm or acknowledge; that still takes a witness identity above.
+forwarders:
+  - address: sweeden.ttu@gmail.com
+    person: Scott Weeden
+  - address: scott.weeden@gmail.com
+    person: Scott Weeden
+  - address: sweeden@ttu.edu
+    person: Scott Weeden
+# A forward only counts as witnessed when the mail host (authserv-id mail.legalluminary.com,
+# MESEEKS_AUTHSERV_ID) stamped Authentication-Results with dmarc=pass, or a dkim=pass aligned
+# with the From domain. Gmail and ttu.edu both sign with DKIM, so a genuine forward passes and
+# a forged From: does not. Set to "none" only for testing.
+forwarders_require: dmarc
 domains:
   - ttu.edu
   - cloudfrontsgroup.org
@@ -33,3 +49,19 @@ platforms:
   - macos
   - rocky
   - kodachi
+
+# OpenID Connect: witness identities are verified and validated against the provider's
+# discovery document (<issuer>/.well-known/openid-configuration) and JWKS. With
+# require_for_review the review commands need a signed ID token (python -m meseeks.review
+# login); the token's email claim must still match a witness identity above, and the origin
+# and platform checks still apply. MESEEKS_OIDC_ISSUER overrides the issuer, MESEEKS_OIDC_CA
+# names the CA bundle for the private CA.
+oidc:
+  issuer: https://www.login.cloudfronts.group:3443
+  client_id: meseeks
+  audience: meseeks
+  scopes: openid email profile
+  email_claim: email
+  username_claim: preferred_username
+  require_for_review: true
+  require_for_mail: false

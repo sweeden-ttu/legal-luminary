@@ -12,6 +12,7 @@ CATEGORIES = ("opportunity", "notice", "standing_order", "question", "answer")
 MAX_BODY_CHARS = 4000
 MIN_BODY_CHARS = 40
 ALLOWED_ATTACHMENT_TYPES = {"application/pdf"}
+WITNESSED_ATTACHMENT_TYPES = {"application/pdf", "image/jpeg", "image/png", "image/gif", "image/webp", "image/heic"}
 
 _EMAIL_RE = re.compile(r"[\w.+-]+@[\w-]+(?:\.[\w-]+)+")
 _PHONE_RE = re.compile(r"(?:\+?1[\s.-]?)?\(?\b\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}\b")
@@ -23,6 +24,9 @@ _STREET_RE = re.compile(
 )
 _URL_RE = re.compile(r"https?://[^\s<>\"')\]]+", re.I)
 _SIG_CUT_RE = re.compile(r"^(?:--\s*$|__+$|sent from my|on .+ wrote:$|from: )", re.I | re.M)
+_FWD_MARK_RE = re.compile(r"^\s*-{2,}\s*(?:forwarded message|original message)\s*-{2,}\s*$", re.I | re.M)
+_FWD_HEADER_RE = re.compile(r"^(?:from|to|cc|date|sent|subject):\s.*$", re.I | re.M)
+_FWD_SUBJECT_RE = re.compile(r"^\s*(?:fwd?|fw)\s*:\s*", re.I)
 
 _ABUSE_TERMS = (
     "kill you", "i will hurt", "bomb", "shoot up", "slit", "rape you",
@@ -87,7 +91,8 @@ def in_scope(msg: Inbound) -> bool:
 
 _KEYWORDS = {
     "standing_order": ("standing order", "general order", "administrative order", "local rule", "amended order", "it is ordered"),
-    "notice": ("public notice", "notice of", "hearing", "agenda", "ordinance", "city council", "commissioners court", "legal notice", "town hall", "meeting", "comment period"),
+    "notice": ("public notice", "notice of", "hearing", "agenda", "ordinance", "city council", "commissioners court", "legal notice", "town hall", "meeting", "comment period",
+               "killeen daily herald", "kdh", "council member", "councilmember", "clipping", "posted on facebook"),
     "opportunity": ("hiring", "job", "position", "clerkship", "internship", "pro bono", "volunteer", "rfp", "request for proposal", "paralegal", "associate attorney", "apply", "opening"),
     "question": ("?", "can i", "do i", "what should", "how do", "is it legal", "my landlord", "my employer", "i was arrested", "custody", "divorce", "evict", "ticket", "warrant", "need a lawyer", "need an attorney"),
     "answer": ("re:", "in response", "regarding your question", "generally speaking", "you should consult", "this is not legal advice"),
@@ -104,6 +109,7 @@ class Inbound:
     attachments: list[tuple[str, str]] = field(default_factory=list)  # (filename, content_type)
     in_reply_to: str | None = None
     origin_ip: str | None = None  # first-hop client address from the earliest Received header
+    auth: dict = field(default_factory=dict)  # our MX's Authentication-Results: {"dkim": [domains passed], "spf": .., "dmarc": ..}
 
 
 @dataclass
@@ -126,6 +132,30 @@ def is_firm_domain(sender: str, firm_domains: set[str]) -> bool:
 
 _CLOSING_RE = re.compile(
     r"^(?:thanks|thank you|regards|best|best regards|sincerely|cheers|respectfully|v/r|thx)[,.!]?\s*$", re.I)
+
+
+def unwrap_forward(body: str) -> str:
+    """Drop the 'Forwarded message' banner and its From/Date/Subject/To header block, keep what was forwarded."""
+    m = _FWD_MARK_RE.search(body)
+    if not m:
+        return body
+    intro, rest = body[: m.start()], body[m.end():]
+    lines = rest.lstrip("\n").split("\n")
+    i = 0
+    while i < len(lines) and (_FWD_HEADER_RE.match(lines[i]) or not lines[i].strip()):
+        i += 1
+    forwarded = "\n".join(lines[i:]).strip()
+    intro = intro.strip()
+    return (intro + "\n\n" + forwarded).strip() if intro and len(intro) > 20 else forwarded
+
+
+def forward_subject(subject: str) -> str:
+    out = subject
+    while True:
+        new = _FWD_SUBJECT_RE.sub("", out)
+        if new == out:
+            return out.strip()
+        out = new
 
 
 def strip_signature(body: str) -> str:
@@ -167,6 +197,7 @@ def redact(body: str) -> str:
 
 def normalize_body(body: str) -> str:
     body = body.replace("\r\n", "\n")
+    body = unwrap_forward(body)
     body = strip_signature(body)
     body = re.sub(r"\n{3,}", "\n\n", body).strip()
     return body[:MAX_BODY_CHARS]
@@ -181,14 +212,15 @@ def post_id(msg: Inbound) -> str:
     return hashlib.sha256(msg.message_id.encode()).hexdigest()[:10]
 
 
-def hard_reject(msg: Inbound) -> str | None:
+def hard_reject(msg: Inbound, witnessed: bool = False) -> str | None:
     text = (msg.subject + "\n" + msg.body).lower()
     if any(t in text for t in _ABUSE_TERMS):
         return "abusive content"
     if sum(t in text for t in _SPAM_TERMS) >= 2:
         return "spam"
+    allowed = WITNESSED_ATTACHMENT_TYPES if witnessed else ALLOWED_ATTACHMENT_TYPES
     for _, ctype in msg.attachments:
-        if ctype not in ALLOWED_ATTACHMENT_TYPES:
+        if ctype not in allowed:
             return f"disallowed attachment type {ctype}"
     if len(normalize_body(msg.body)) < MIN_BODY_CHARS:
         return "body too short"
@@ -213,9 +245,9 @@ def rule_classify(msg: Inbound) -> tuple[str | None, float]:
 
 
 def enforce(msg: Inbound, category: str | None, confidence: float, firm_domains: set[str],
-            known_question_ids: set[str], min_confidence: float = 0.5) -> Decision:
+            known_question_ids: set[str], min_confidence: float = 0.5, witnessed: bool = False) -> Decision:
     """Final gate. Model output never bypasses this."""
-    reason = hard_reject(msg)
+    reason = hard_reject(msg, witnessed=witnessed)
     if reason:
         return Decision(False, None, reason)
     if category not in CATEGORIES:
@@ -234,9 +266,9 @@ def enforce(msg: Inbound, category: str | None, confidence: float, firm_domains:
     return Decision(True, category, "ok", confidence)
 
 
-def to_post(msg: Inbound, category: str, firm_domains: set[str]) -> dict:
+def to_post(msg: Inbound, category: str, firm_domains: set[str], witnessed_by: str | None = None) -> dict:
     body = redact(normalize_body(msg.body))
-    subject = redact(msg.subject.strip()) or category.replace("_", " ").title()
+    subject = redact(forward_subject(msg.subject.strip())) or category.replace("_", " ").title()
     if category == "question":
         body = redact_sender_name(body, msg.sender)
         subject = redact_sender_name(subject, msg.sender)
@@ -244,6 +276,8 @@ def to_post(msg: Inbound, category: str, firm_domains: set[str]) -> dict:
         source_label = f"Participating firm ({sender_domain(msg.sender)})"
     elif category == "question":
         source_label = "Anonymous"
+    elif witnessed_by:
+        source_label = f"Witnessed by {witnessed_by}"   # never the forwarding address
     else:
         source_label = sender_domain(msg.sender) or "forwarded"
     return {
@@ -256,4 +290,6 @@ def to_post(msg: Inbound, category: str, firm_domains: set[str]) -> dict:
         "links": extract_links(msg.body),
         "in_reply_to": msg.in_reply_to if category == "answer" else None,
         "hash": content_hash(subject, body),
+        "attachments": [ctype for _, ctype in msg.attachments] if witnessed_by else [],
+        "witnessed_by": witnessed_by,
     }

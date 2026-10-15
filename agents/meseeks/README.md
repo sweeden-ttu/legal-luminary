@@ -78,16 +78,24 @@ Johnathan King (`jcking1278`), as a username or first/last-name combination at `
 `cloudfrontsgroup.org`, `cloudfronts.group`, `legalluminary.com` or `luminarylegal.com`, acting
 from the local or wide-area network, on macOS, Rocky Linux or Kodachi Linux.
 
+Witnesses authenticate with OpenID Connect against `https://www.login.cloudfronts.group:3443`
+(`oidc:` in the witness file): `review login` discovers the provider at
+`/.well-known/openid-configuration` and signs in (device flow if offered, else authorization
+code + PKCE on a loopback port); every review command then verifies the ID token's signature
+against the provider's JWKS and validates `iss`, `aud`, `exp`, `email_verified`, and takes the
+acting address from the token — never from the caller. `MESEEKS_OIDC_CA` names the private CA.
+
 ```bash
-export MESEEKS_WITNESS=sweeden@legalluminary.com      # who is acting (origin IP and platform are detected)
+python -m meseeks.review login                        # ID token -> ~/.config/meseeks/token.json (0600)
 python -m meseeks.review list
 python -m meseeks.review confirm <id> <category>   # goes through the same advisory layer and gate
 python -m meseeks.review ack <id> [note]
 ```
 
 A witness can also mail the inbox `confirm <id> <category>` or `ack <id>`; the directive is
-verified by sender address, the originating IP in the earliest `Received` header, and platform,
-is never shown to a model, and is applied through the same `review` path.
+verified by sender address, the originating IP in the earliest `Received` header, and platform
+(and by a `token: <id token>` line when present or when `require_for_mail` is on), is never
+shown to a model, and is applied through the same `review` path.
 
 Env for IMAP: `MESEEKS_IMAP_HOST`, `MESEEKS_IMAP_USER`, `MESEEKS_IMAP_PASSWORD`, optional `MESEEKS_IMAP_FOLDER`.
 Optional `ANTHROPIC_API_KEY` enables the Claude classifier (`LL_ADK_MODEL` to pick the model);
@@ -110,3 +118,58 @@ general, public, and end with a referral to private counsel. Subdomains of a lis
 ```bash
 pytest tests/meseeks -q
 ```
+
+### Witnessed forwards (newspaper clippings, council members' posts)
+
+A witness can forward a notice they have seen — e.g. a Killeen Daily Herald legal notice a
+council member clipped and posted on Facebook — from a listed forwarding address
+(`forwarders:` in `_data/meseeks_witnesses.yml`: `sweeden.ttu@gmail.com`,
+`scott.weeden@gmail.com`, `sweeden@ttu.edu`). The forward is published as
+"Witnessed by Scott Weeden" (never the forwarding address), the forwarded-message header is
+stripped, image attachments of the clipping are allowed, and the scope and category gates still
+apply. It counts as witnessed only when the mail host stamped `Authentication-Results:
+mail.legalluminary.com; ... dmarc=pass` (or an aligned `dkim=pass`); a forged `From:` is
+treated like any stranger, and Authentication-Results written by the sender are ignored.
+
+### Background monitor
+
+```bash
+cd agents
+python -m meseeks.monitor                 # one cycle: git pull --ff-only, run --adk, test, commit + push
+python -m meseeks.monitor --loop 7200     # every two hours in the foreground
+python -m meseeks.monitor --install       # prints the launchd (macOS) or systemd timer (Rocky/Kodachi) unit
+```
+
+`MESEEKS_IMAP_FOLDERS=INBOX,Sent` watches incoming and outgoing mail. Nothing is pushed unless
+`tests/meseeks` passes on that machine; every cycle is logged to `logs/meseeks/monitor.jsonl`.
+
+## Client intake: lemmas, dilemmas and non-action
+
+`_data/meseeks_cases.yml` holds each case opened from a public notice: only facts from the
+notice (court, cause number, dates, amounts), never party names or property addresses.
+`python -m meseeks.intake brief <case>` builds the intake brief:
+
+- **Lemmas**: each fact the decision rests on, with its source and days left to its deadline.
+- **Dilemma**: the options (answer / retain counsel / do nothing for a citation; reinstate /
+  alternatives with counsel or a HUD counselor / do nothing for a HUD sale) and what follows
+  from each on the notice's own terms.
+- **Non-action**: the countdown and what happens if no one acts.
+- Money is compared only with numbers the client or attorney supplies (`--value`, `--payoff`,
+  `--other-costs`); nothing is estimated. `--save` stores the brief and the client's answers
+  under `MESEEKS_INTAKE_DIR` (default `~/.local/share/meseeks/intake`, 0600), never in the repo.
+
+The brief informs the defendant and their attorney; it does not choose for them and is not
+legal advice.
+
+## Where inputs and outputs live
+
+- **Inputs (private):** every message the inbox fetches is kept by `meseeks/store.py` when
+  `MESEEKS_MAIL_STORE` is set, in the layout witnesses already use under `~/ll/mail_attachments`:
+  `thread_id_<N>/attachedtomessage<K>.<ext>`, `thread_id_<N>/link_id_<K>` and a
+  `thread_id_<N>/thread.json` (messages, attachment sha256 / size / original name, links, and
+  the posts or intake briefs made from the thread). Identical attachments are stored once;
+  archives are never opened. Dirs 0700, files 0600, never in the repo.
+- **Outputs (public):** what the guardrails publish goes to `_data/meseeks.json` (notices,
+  opportunities, questions, answers); case facts for intake go to `_data/meseeks_cases.yml`;
+  each is recorded back in its thread's `thread.json` under `outputs`.
+- **Intake answers (private):** `~/.local/share/meseeks/intake`, see above.
