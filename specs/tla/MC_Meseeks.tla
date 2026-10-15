@@ -14,6 +14,11 @@ MC_Order == <<
   [id |-> "s1", dom |-> "seo-blast.biz",  hard |-> TRUE,  src |-> TRUE,  scope |-> FALSE, reply |-> "q1",   rcat |-> "notice",   rconf |-> 10]
 >>
 MC_OracleConf == {0, 10}
+\* The oracle alphabet is cut to the categories these three messages can be argued
+\* into (plus silence, null and an unknown label); the full alphabet at 3 messages ran
+\* out of memory at 14.7M states with no violation. The full alphabet is covered by the
+\* Prolog universe, where Decide is checked separately from the clock.
+MC_OracleCat  == {"question", "answer", "notice", None, "junk", Silent}
 MC_Firms      == {"examplelaw.com"}
 MC_Questions0 == {}
 MC_Agents     == <<"local", "claude", "codex", "agy", "agent", "opencode", "api">>
