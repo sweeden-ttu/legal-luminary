@@ -1,0 +1,26 @@
+{% assign p = include.post %}
+<article class="meseeks-post meseeks-post--{{ p.category }}" id="post-{{ p.id }}">
+  <header class="meseeks-post-head">
+    <h3>{{ p.title | escape }}</h3>
+    <div class="meseeks-post-meta">
+      <span class="meseeks-badge meseeks-badge--{{ p.category }}">{{ p.category | replace: "_", " " }}</span>
+      {% if p.received %}<time datetime="{{ p.received }}">{{ p.received | date: "%B %-d, %Y" }}</time>{% endif %}
+      {% if p.source_label %}<span class="meseeks-source">{{ p.source_label | escape }}</span>{% endif %}
+      {% if p.in_reply_to %}<a class="meseeks-reply-link" href="#post-{{ p.in_reply_to }}">answers question {{ p.in_reply_to }}</a>{% endif %}
+    </div>
+  </header>
+  <div class="meseeks-post-body">
+    {{ p.body | escape | newline_to_br }}
+  </div>
+  {% if p.links and p.links.size > 0 %}
+    <ul class="meseeks-post-links">
+      {% for l in p.links %}<li><a href="{{ l.url }}" rel="nofollow noopener" target="_blank">{{ l.label | default: l.url | escape }}</a></li>{% endfor %}
+    </ul>
+  {% endif %}
+  {% if p.category == "question" %}
+    <p class="meseeks-disclaimer">Participating firms: reply by email with <code>[Q-{{ p.id }}]</code> in the subject line.</p>
+  {% endif %}
+  {% if p.category == "answer" %}
+    <p class="meseeks-disclaimer">General information from a participating firm, not legal advice. Consult private counsel about your situation.</p>
+  {% endif %}
+</article>

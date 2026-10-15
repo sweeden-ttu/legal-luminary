@@ -1,0 +1,61 @@
+name: Meseeks inbox
+
+on:
+  schedule:
+    - cron: '17 */2 * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: meseeks-inbox
+  cancel-in-progress: false
+
+jobs:
+  process:
+    # The mailbox lives on a LAN host (192.168.0.15), which GitHub-hosted runners cannot
+    # reach: register a self-hosted runner on that network and set the repository
+    # variable MESEEKS_RUNNER to its label (e.g. self-hosted), or point MESEEKS_IMAP_HOST
+    # at the public MX hostname with IMAPS (993) forwarded.
+    runs-on: ${{ vars.MESEEKS_RUNNER || 'ubuntu-latest' }}
+    permissions:
+      contents: write
+    env:
+      MESEEKS_IMAP_HOST: ${{ secrets.MESEEKS_IMAP_HOST }}
+      MESEEKS_IMAP_USER: ${{ secrets.MESEEKS_IMAP_USER }}
+      MESEEKS_IMAP_PASSWORD: ${{ secrets.MESEEKS_IMAP_PASSWORD }}
+      MESEEKS_IMAP_PORT: ${{ vars.MESEEKS_IMAP_PORT }}
+      MESEEKS_IMAP_CA: ${{ vars.MESEEKS_IMAP_CA }}
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Skip until mailbox secrets exist
+        id: gate
+        run: |
+          if [ -z "$MESEEKS_IMAP_HOST" ] || [ -z "$MESEEKS_IMAP_USER" ] || [ -z "$MESEEKS_IMAP_PASSWORD" ]; then
+            echo "configured=false" >> "$GITHUB_OUTPUT"
+            echo "MESEEKS_IMAP_* secrets not set; nothing to do."
+          else
+            echo "configured=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/setup-python@v5
+        if: steps.gate.outputs.configured == 'true'
+        with:
+          python-version: '3.12'
+
+      - name: Install
+        if: steps.gate.outputs.configured == 'true'
+        run: pip install -r requirements_adk.txt
+
+      - name: Process inbox
+        if: steps.gate.outputs.configured == 'true'
+        working-directory: agents
+        run: python -m meseeks.run --adk
+
+      - name: Commit posts
+        if: steps.gate.outputs.configured == 'true'
+        run: |
+          git config user.name "meseeks[bot]"
+          git config user.email "meseeks@legalluminary.com"
+          git add _data/meseeks.json _data/meseeks_review.json logs/meseeks
+          git diff --staged --quiet || (git commit -m "meseeks: process inbox" && git push)

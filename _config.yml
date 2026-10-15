@@ -72,6 +72,9 @@ navigation:
   - title: Resources
     url: /resources/
     children:
+      - title: Meseeks
+        url: /meseeks/
+        alt: Legal opportunities, notices, standing orders and public Q&A
       - title: Links
         url: /links/
       - title: About

@@ -1,0 +1,12 @@
+# Law-firm sender domains permitted to post "answers" on /meseeks/.
+# Answers from any other domain are held and never published.
+# A firm is added only after it agrees that guidance is anonymous, limited,
+# public, and always ends with a referral to private counsel.
+#
+#   - domain: examplelaw.com
+#     firm: Example Law, PLLC
+#     city: Killeen
+#     added: 2026-10-15
+#     bar_verified: true
+#
+firms: []
