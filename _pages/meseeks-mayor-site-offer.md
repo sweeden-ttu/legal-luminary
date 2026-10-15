@@ -15,6 +15,10 @@ description: "Cloud Fronts Group's offer to the Mayor of Killeen to provide an i
 
 *October 15, 2026 · Killeen, Bell County, Texas*
 
+## Discovery
+
+This offer was prompted by the discovery of mayor-named domains in other municipalities, such as *mayorbrown.com*: a simple address, mayor[surname].com, that residents can remember and that follows the office from one officeholder to the next. Killeen has no such channel today. (Who operates each such site, and whether it is official, campaign or informational, varies and should be checked case by case; nothing here implies any affiliation with those sites.) The write-up's format follows the law-firm client alert, as in Mayer Brown's July 2026 alert on the ROAD to Housing Act.
+
 ## Summary
 
 Legal notices that affect Killeen residents (citations by publication, foreclosure sales, hearings, ordinances) reach many people only as newspaper clippings re-shared on a council member's social media page. Cloud Fronts Group offers the Mayor of Killeen a plain, informational site at **mayor[surname].com** (today, *mayorsolomon.com*, for Mayor Joseph Solomon, elected May 2, 2026) that would:
