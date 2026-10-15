@@ -2,10 +2,10 @@
 layout: agreement
 title: "Contingency Fee Agreement (Template)"
 permalink: /meseeks/contingency-agreement/
-description: "A printable Texas contingency fee agreement template a client and an attorney can choose to complete and sign. Not an offer; not legal advice."
+description: "A printable contingency fee agreement template a client and an attorney (licensed in any state, admitted to the court where the matter is pending) can choose to complete and sign. Not an offer; not legal advice."
 signatories:
   - role: "Client"
-  - role: "Authorized and acting as Attorney for the Client (State Bar of Texas No. ____________)"
+  - role: "Authorized and acting as Attorney for the Client (licensed in ____________, Bar No. ____________; admitted to ____________)"
 ---
 
 > **Template only.** Legal Luminary does not represent any party, does not make offers on anyone's behalf, and receives nothing from any agreement made with this form. This agreement has no effect unless the client and the attorney both choose to complete and sign it. It is general information, not legal advice; each party should review it with counsel of their choosing and change it as needed.
@@ -14,9 +14,13 @@ signatories:
 
 **Client:** ______________________________________ ("Client")
 
-**Attorney / Firm:** ______________________________________ ("Attorney"), State Bar of Texas No. ____________
+**Attorney / Firm:** ______________________________________ ("Attorney")
 
-**Matter:** Cause No. ____________________, in the ________ Judicial District Court of Bell County, Texas, and any related claims, counterclaims, appeals or settlement concerning the property and rights at issue in that case (the "Matter").
+**Licensed in (state):** ____________________, Bar No. ____________
+
+**Admitted to practice before:** ______________________________________ (for example, the U.S. District Court for the Western District of Texas, or another federal court). Attorney need not be licensed in Texas if admitted to the court where the Matter is pending.
+
+**Matter:** Case / Cause No. ____________________, in the ______________________________________ (court), and any related claims, counterclaims, appeals or settlement concerning the property and rights at issue in that case (the "Matter").
 
 ## 1. Representation
 
@@ -46,7 +50,7 @@ The percentage fee is calculated:
 - [ ] before expenses are deducted from the Recovery; or
 - [ ] after expenses are deducted from the Recovery.
 
-At the conclusion of the Matter Attorney will give Client a written statement showing the outcome, the fee, the expenses and the remittance to Client, and the method used to determine them (Tex. Disciplinary R. Prof'l Conduct 1.04(d)).
+At the conclusion of the Matter Attorney will give Client a written statement showing the outcome, the fee, the expenses and the remittance to Client, and the method used to determine them, as the rules of professional conduct that bind Attorney require (in Texas, Tex. Disciplinary R. Prof'l Conduct 1.04(d)).
 
 ## 4. Client's decisions
 
@@ -54,7 +58,7 @@ Client decides whether to settle and on what terms. Attorney will not settle wit
 
 ## 5. Ending the representation
 
-Client may end this agreement at any time in writing. Attorney may withdraw as permitted by the Texas Disciplinary Rules of Professional Conduct and the court. If Client ends the agreement before a Recovery, any fee Attorney may claim is limited to the reasonable value of services actually performed, payable only from a later Recovery, as permitted by Texas law.
+Client may end this agreement at any time in writing. Attorney may withdraw as permitted by the court and by the rules of professional conduct that bind Attorney in the court and the jurisdictions where Attorney is licensed. If Client ends the agreement before a Recovery, any fee Attorney may claim is limited to the reasonable value of services actually performed, payable only from a later Recovery, as permitted by the law that applies.
 
 ## 6. No guarantee
 
@@ -62,11 +66,11 @@ Attorney has not promised any particular result.
 
 ## 7. Grievances
 
-The State Bar of Texas investigates and prosecutes professional misconduct committed by Texas attorneys. Although not every complaint against or dispute with a lawyer involves professional misconduct, the State Bar's Office of Chief Disciplinary Counsel will provide you with information about how to file a complaint. Please call 1-800-932-1900 (toll-free) for more information.
+Complaints about an attorney go to the disciplinary authority of each state where the attorney is licensed, and to the court where the attorney is admitted. For an attorney licensed in Texas, this notice applies: The State Bar of Texas investigates and prosecutes professional misconduct committed by Texas attorneys. Although not every complaint against or dispute with a lawyer involves professional misconduct, the State Bar's Office of Chief Disciplinary Counsel will provide you with information about how to file a complaint. Please call 1-800-932-1900 (toll-free) for more information.
 
 ## 8. Entire agreement; signatures
 
-This is the entire agreement between Client and Attorney about the Matter. Changes must be in writing and signed by both. A contingent fee contract for legal services must be in writing and signed by the attorney and the client (Tex. Gov't Code § 82.065(a)). Client has received a signed copy.
+This is the entire agreement between Client and Attorney about the Matter. Changes must be in writing and signed by both. This agreement is in writing and signed by Attorney and Client, as Texas law requires of contingent fee contracts (Tex. Gov't Code § 82.065(a)) and as the law of Attorney's licensing state may also require. Client has received a signed copy.
 
 
-Need help finding a lawyer? [TexasLawHelp.org](https://texaslawhelp.org) · [Lone Star Legal Aid](https://www.lonestarlegal.org) · [State Bar of Texas Lawyer Referral](https://www.texasbar.com/lris)
+Need help finding a lawyer? [TexasLawHelp.org](https://texaslawhelp.org) · [Lone Star Legal Aid](https://www.lonestarlegal.org) · [State Bar of Texas Lawyer Referral](https://www.texasbar.com/lris) · [U.S. District Court, W.D. Tex.: attorney admissions](https://www.txwd.uscourts.gov/)
