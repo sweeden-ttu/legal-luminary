@@ -1,13 +1,14 @@
 ---
-layout: default
+layout: agreement
 title: "Contingency Fee Agreement (Template)"
 permalink: /meseeks/contingency-agreement/
-description: "A printable Texas contingency fee agreement template a defendant and an attorney can choose to complete and sign. Not an offer; not legal advice."
+description: "A printable Texas contingency fee agreement template a client and an attorney can choose to complete and sign. Not an offer; not legal advice."
+signatories:
+  - role: "Client"
+  - role: "Authorized and acting as Attorney for the Client (State Bar of Texas No. ____________)"
 ---
 
-<div class="meseeks-page meseeks-agreement">
-
-<p class="meseeks-disclaimer"><strong>Template only.</strong> Legal Luminary does not represent any party, does not make offers on anyone's behalf, and receives nothing from any agreement made with this form. This agreement has no effect unless the client and the attorney both choose to complete and sign it. It is general information, not legal advice; each party should review it with counsel of their choosing and change it as needed.</p>
+> **Template only.** Legal Luminary does not represent any party, does not make offers on anyone's behalf, and receives nothing from any agreement made with this form. This agreement has no effect unless the client and the attorney both choose to complete and sign it. It is general information, not legal advice; each party should review it with counsel of their choosing and change it as needed.
 
 # Contingency Fee Agreement
 
@@ -67,13 +68,5 @@ The State Bar of Texas investigates and prosecutes professional misconduct commi
 
 This is the entire agreement between Client and Attorney about the Matter. Changes must be in writing and signed by both. A contingent fee contract for legal services must be in writing and signed by the attorney and the client (Tex. Gov't Code § 82.065(a)). Client has received a signed copy.
 
-| | |
-|---|---|
-| **Client signature:** ______________________________ | **Date:** ______________ |
-| **Printed name:** ______________________________ | |
-| **Attorney signature:** ______________________________ | **Date:** ______________ |
-| **Printed name / firm:** ______________________________ | |
 
-<p class="meseeks-disclaimer">Print this page (Ctrl/Cmd&nbsp;+&nbsp;P) to complete it on paper. Need help finding a lawyer? <a href="https://texaslawhelp.org" rel="noopener" target="_blank">TexasLawHelp.org</a> · <a href="https://www.lonestarlegal.org" rel="noopener" target="_blank">Lone Star Legal Aid</a> · <a href="https://www.texasbar.com/lris" rel="noopener" target="_blank">State Bar of Texas Lawyer Referral</a>.</p>
-
-</div>
+Need help finding a lawyer? [TexasLawHelp.org](https://texaslawhelp.org) · [Lone Star Legal Aid](https://www.lonestarlegal.org) · [State Bar of Texas Lawyer Referral](https://www.texasbar.com/lris)

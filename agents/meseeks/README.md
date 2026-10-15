@@ -173,3 +173,13 @@ legal advice.
   opportunities, questions, answers); case facts for intake go to `_data/meseeks_cases.yml`;
   each is recorded back in its thread's `thread.json` under `outputs`.
 - **Intake answers (private):** `~/.local/share/meseeks/intake`, see above.
+
+## Agreements and followed officials
+
+- Any opportunity that needs signatures uses `layout: agreement` (`_layouts/agreement.html`,
+  `assets/css/agreement.css`): plain markdown content on a US Letter sheet (8.5 x 11 in, 1/2 in
+  padding, strong border, Liberation Sans), a Print / Save as PDF button, and signature blocks
+  from `signatories:` front matter. A signatory is a capacity (`role`), never a name, with
+  optional `count`, `required` and `note`, e.g. a majority of seven council seats.
+- `_data/meseeks_following.yml` lists the officials and candidates the site closely follows,
+  with roles exactly as the Killeen Daily Herald reported them, the date and the source.

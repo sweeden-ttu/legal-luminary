@@ -1,0 +1,61 @@
+/* Agreement sheet: US Letter, 1/2 in padding, strong border, Liberation Sans (Arimo is its metric-compatible web twin). */
+.agreement-sheet {
+  box-sizing: border-box;
+  width: 8.5in;
+  max-width: 100%;
+  min-height: 11in;
+  margin: 1.5rem auto;
+  padding: 0.5in;
+  border: 3px solid #111;
+  outline: 1px solid #111;
+  outline-offset: -8px;
+  background: #fff;
+  color: #111;
+  font-family: "Liberation Sans", Arimo, Arial, Helvetica, sans-serif;
+  font-size: 11pt;
+  line-height: 1.45;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.agreement-sheet h1, .agreement-sheet h2, .agreement-sheet h3 { font-family: inherit; color: #111; }
+.agreement-sheet h1 { font-size: 18pt; text-align: center; border-bottom: 2px solid #111; padding-bottom: 6pt; margin: 0 0 10pt; }
+.agreement-sheet h2 { font-size: 12.5pt; border-bottom: 1.5px solid #111; padding-bottom: 2pt; margin: 14pt 0 6pt; break-after: avoid; }
+.agreement-sheet h3 { font-size: 11pt; margin: 10pt 0 4pt; }
+.agreement-sheet p, .agreement-sheet li { orphans: 3; widows: 3; }
+.agreement-sheet table { width: 100%; border-collapse: collapse; margin: 6pt 0; font-size: 10pt; }
+.agreement-sheet th, .agreement-sheet td { border: 1.5px solid #111; padding: 4pt 6pt; vertical-align: top; text-align: left; }
+.agreement-sheet th, .agreement-sheet thead th { background: #e6e6e6 !important; color: #111 !important; font-weight: 700; }
+.agreement-sheet thead { display: table-header-group; }
+.agreement-sheet blockquote, .agreement-sheet .agreement-note { border: 1.5px solid #111; padding: 6pt 8pt; margin: 8pt 0; }
+.agreement-sheet a { color: #111; }
+.agreement-signatures { break-inside: auto; margin-top: 18pt; border-top: 2px solid #111; padding-top: 4pt; }
+.agreement-sig-intro, .agreement-sig-note { font-size: 9.5pt; }
+.agreement-sig-note { font-weight: 700; margin: 10pt 0 2pt; }
+.agreement-sig-group { margin-top: 6pt; }
+.agreement-sig { break-inside: avoid; margin: 22pt 0 4pt; }
+.agreement-sig-line { border-bottom: 1.5px solid #111; height: 22pt; }
+.agreement-sig-role { font-size: 9.5pt; font-weight: 700; margin-top: 2pt; }
+.agreement-sig-fields { display: flex; gap: 18pt; font-size: 9pt; margin-top: 6pt; }
+.agreement-sig-fields .blank { display: inline-block; border-bottom: 1px solid #111; min-width: 2.6in; height: 10pt; vertical-align: bottom; }
+.agreement-sig-fields .blank.short { min-width: 1.2in; }
+.agreement-footer { margin-top: 18pt; border-top: 1px solid #111; padding-top: 4pt; font-size: 8pt; text-align: center; }
+.agreement-toolbar { max-width: 8.5in; margin: 1rem auto 0; display: flex; gap: 1rem; align-items: center; font-size: 0.9rem; flex-wrap: wrap; }
+.agreement-toolbar button { font: inherit; padding: 0.45rem 0.9rem; border: 2px solid #111; background: #fff; cursor: pointer; }
+@page { size: 8.5in 11in; margin: 0.25in; }
+@media print {
+  /* Keep only the sheet and the wrappers that contain it; flatten the wrappers so the sheet spans the page. */
+  body *:not(:has(.agreement-sheet)):not(.agreement-sheet):not(.agreement-sheet *) { display: none !important; }
+  html, body, body *:has(.agreement-sheet) {
+    display: block !important; position: static !important; float: none !important;
+    width: auto !important; min-width: 0 !important; max-width: none !important;
+    margin: 0 !important; padding: 0 !important; border: 0 !important;
+    box-shadow: none !important; background: #fff !important; transform: none !important;
+  }
+  .agreement-sheet { width: 100%; min-height: 0; margin: 0; padding: 0.5in; }
+  .no-print { display: none !important; }
+  .agreement-sheet a { text-decoration: none; }
+}
+@media (max-width: 8.6in) {
+  .agreement-sheet { min-height: 0; padding: 0.35in; border-width: 2px; }
+  .agreement-sig-fields { flex-direction: column; gap: 6pt; }
+}

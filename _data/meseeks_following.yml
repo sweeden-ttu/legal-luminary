@@ -1,0 +1,30 @@
+# People this site closely follows: elected officials, candidates and community leaders named
+# by the Killeen Daily Herald. Roles are recorded exactly as KDH described them on the date
+# below; candidacies and offices change, so check the current role before relying on it.
+# Every official is followed on equal terms, whatever their politics or social media platform.
+source:
+  publication: Killeen Daily Herald
+  title: "Adams sworn in as new Killeen mayor, succeeding Nash-King"
+  author: Erik Walsh
+  date: 2026-02-21
+  url: https://kdhnews.com/news/local/adams-sworn-in-as-new-killeen-mayor-succeeding-nash-king/article_0fa770d8-b6a9-45b9-aa64-ceb7b8124dc8.html
+  context: named among the officials and residents attending the mayoral swearing-in
+following:
+  - name: Jessica Gonzalez
+    role_as_reported: Killeen Councilwoman
+    jurisdiction: City of Killeen
+  - name: Dawn Richardson
+    role_as_reported: state House District 54 Representative candidate
+    jurisdiction: Texas House District 54
+  - name: Terry Mustapher
+    role_as_reported: Bell County Democratic Chair candidate
+    jurisdiction: Bell County
+  - name: Willie Kell Jr.
+    role_as_reported: VFW 12209 commander
+    jurisdiction: VFW Post 12209, Killeen
+  - name: Stacey L. Wilson
+    role_as_reported: Bell County Commissioner Precinct 2 candidate
+    jurisdiction: Bell County Commissioners Court, Precinct 2
+  - name: Lynda Nash
+    role_as_reported: Harker Heights Mayor Pro Tem
+    jurisdiction: City of Harker Heights

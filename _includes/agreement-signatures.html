@@ -1,0 +1,20 @@
+<section class="agreement-signatures">
+  <h2>Signatures</h2>
+  <p class="agreement-sig-intro">Each signatory signs in the capacity stated below the line. Names are printed by the signer at signing; this template never presumes who holds an office.</p>
+  {% for s in include.signatories %}
+    {% assign n = s.count | default: 1 %}
+    <div class="agreement-sig-group">
+      {% if s.note or s.required %}<p class="agreement-sig-note">{{ s.note }}{% if s.required %} (signatures required: {{ s.required }} of {{ n }}){% endif %}</p>{% endif %}
+      {% for i in (1..n) %}
+      <div class="agreement-sig">
+        <div class="agreement-sig-line"></div>
+        <div class="agreement-sig-role">{{ s.role }}</div>
+        <div class="agreement-sig-fields">
+          <span>Printed name: <span class="blank"></span></span>
+          <span>Date: <span class="blank short"></span></span>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  {% endfor %}
+</section>
