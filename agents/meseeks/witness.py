@@ -90,6 +90,38 @@ def bare_address(address: str) -> str:
     return (addr or address).strip().lower()
 
 
+def forwarder_person(address: str, cfg: dict | None = None) -> str | None:
+    """Name of the witness who forwards from this address, or None. Witness addresses count too."""
+    cfg = cfg or load()
+    addr = bare_address(address)
+    for f in cfg.get("forwarders") or []:
+        if str(f.get("address", "")).lower() == addr:
+            return f.get("person") or addr
+    person = person_for(addr, cfg)
+    return person.get("name") if person else None
+
+
+def sender_authenticated(msg) -> bool:
+    """The From domain is proven by our MX: DMARC pass, or a DKIM pass aligned with the From domain."""
+    auth = getattr(msg, "auth", None) or {}
+    domain = bare_address(msg.sender).rsplit("@", 1)[-1]
+    if auth.get("dmarc") == "pass":
+        return True
+    return any(d == domain or domain.endswith("." + d) or d.endswith("." + domain) for d in auth.get("dkim") or [])
+
+
+def witnessed_forward(msg, cfg: dict | None = None) -> str | None:
+    """Witness name for a forwarded notice, only when the forwarding address is listed AND our MX
+    authenticated it. A forged From: sweeden.ttu@gmail.com gets None and is treated like anyone else."""
+    cfg = cfg or load()
+    person = forwarder_person(msg.sender, cfg)
+    if not person:
+        return None
+    if (cfg.get("forwarders_require") or "dmarc") == "none":
+        return person
+    return person if sender_authenticated(msg) else None
+
+
 def oidc_required(cfg: dict | None = None, channel: str = "review") -> bool:
     o = (cfg or load()).get("oidc") or {}
     return bool(o.get("require_for_review" if channel == "review" else "require_for_mail", False))

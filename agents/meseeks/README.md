@@ -118,3 +118,27 @@ general, public, and end with a referral to private counsel. Subdomains of a lis
 ```bash
 pytest tests/meseeks -q
 ```
+
+### Witnessed forwards (newspaper clippings, council members' posts)
+
+A witness can forward a notice they have seen — e.g. a Killeen Daily Herald legal notice a
+council member clipped and posted on Facebook — from a listed forwarding address
+(`forwarders:` in `_data/meseeks_witnesses.yml`: `sweeden.ttu@gmail.com`,
+`scott.weeden@gmail.com`, `sweeden@ttu.edu`). The forward is published as
+"Witnessed by Scott Weeden" (never the forwarding address), the forwarded-message header is
+stripped, image attachments of the clipping are allowed, and the scope and category gates still
+apply. It counts as witnessed only when the mail host stamped `Authentication-Results:
+mail.legalluminary.com; ... dmarc=pass` (or an aligned `dkim=pass`); a forged `From:` is
+treated like any stranger, and Authentication-Results written by the sender are ignored.
+
+### Background monitor
+
+```bash
+cd agents
+python -m meseeks.monitor                 # one cycle: git pull --ff-only, run --adk, test, commit + push
+python -m meseeks.monitor --loop 7200     # every two hours in the foreground
+python -m meseeks.monitor --install       # prints the launchd (macOS) or systemd timer (Rocky/Kodachi) unit
+```
+
+`MESEEKS_IMAP_FOLDERS=INBOX,Sent` watches incoming and outgoing mail. Nothing is pushed unless
+`tests/meseeks` passes on that machine; every cycle is logged to `logs/meseeks/monitor.jsonl`.
