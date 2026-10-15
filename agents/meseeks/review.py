@@ -25,7 +25,7 @@ from pathlib import Path
 from . import witness as witness_mod
 from .adk_agent import _advisory
 from .guardrails import CATEGORIES, Inbound, enforce, to_post
-from .run import DATA, LOG, load_data, load_firm_domains
+from .run import DATA, LOG, load_data, load_firm_domains, order_posts
 
 ROOT = Path(__file__).resolve().parents[2]
 REVIEW = ROOT / "_data" / "meseeks_review.json"
@@ -90,7 +90,7 @@ def confirm(item_id: str, category: str, who="", channel: str = "review") -> dic
             item.update(status="duplicate", decided_utc=now, decided_by=who)
         else:
             data["posts"].append(post)
-            data["posts"].sort(key=lambda p: p["received"], reverse=True)
+            data["posts"] = order_posts(data["posts"])
             data["generated_utc"] = now
             data_path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n")
             item.update(status="confirmed", category=category, decided_utc=now, decided_by=who,

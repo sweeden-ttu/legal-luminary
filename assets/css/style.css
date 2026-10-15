@@ -811,6 +811,9 @@ ul.check-list li::before { content: "✓"; position: absolute; left: 0; color: v
 .meseeks-badge { text-transform: uppercase; letter-spacing: 0.04em; font-size: 0.6875rem; font-weight: 600; padding: 0.125rem 0.5rem; border-radius: 999px; background: var(--gold); color: var(--navy-dark); }
 .meseeks-badge--answer { background: var(--navy-light); color: #fff; }
 .meseeks-badge--standing_order { background: var(--navy-dark); color: #fff; }
+.meseeks-badge--pinned { background: #9b2c2c; color: #fff; }
+.meseeks-post--pinned { border-left-color: #9b2c2c; box-shadow: 0 0 0 1px #9b2c2c22; }
+.meseeks-updated { font-style: italic; }
 .meseeks-post-body { line-height: 1.65; }
 .meseeks-post-links { margin: 0.75rem 0 0 1.25rem; font-size: 0.9rem; }
 .meseeks-disclaimer { margin-top: 0.75rem; font-size: 0.8125rem; color: var(--gray-dark); border-top: 1px dashed #e2e8f0; padding-top: 0.5rem; }

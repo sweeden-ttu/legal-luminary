@@ -103,6 +103,20 @@ Optional `ANTHROPIC_API_KEY` enables the Claude classifier (`LL_ADK_MODEL` to pi
 
 Audit of every decision goes to `logs/meseeks/YYYY-MM-DD.jsonl`.
 
+## Thread order and pinned threads
+
+The page and `_data/meseeks.json` list posts in one order (`run.order_posts`):
+
+1. **Pinned threads**, by thread number. Thread **-1** is the W.D. Tex. Pro Se Staff Attorney
+   (Pro Se Law Clerk) announcement of July 2026. It stays on top, and is exempt from the
+   60-day retention, until it is removed by hand.
+2. **Everything else**, most recently updated first. Each post has `updated` (initially its
+   `received` time); a firm's answer bumps the question it answers.
+
+To unpin thread -1, set `"pinned": false` on post `f337a212cb` in `_data/meseeks.json` (it then
+falls into date order and expires normally), or delete the post. To pin another post, give it
+`"pinned": true` and a `"thread"` number; lower numbers sit higher.
+
 ## Schedule
 
 `.github/workflows/meseeks-inbox.yml` runs every two hours and is a no-op until the three

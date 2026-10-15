@@ -39,11 +39,30 @@ def load_data(path: Path = DATA) -> dict:
     return {"generated_utc": "", "inbox": "meseeks@legalluminary.com", "retention_days": 60, "posts": []}
 
 
+def order_posts(posts: list[dict]) -> list[dict]:
+    """Pinned threads first (by thread number, e.g. -1), then everything else, most recently updated first.
+
+    Every post carries ``updated`` (defaults to ``received``); an answer bumps the question it
+    answers, so a question thread rises when a firm replies to it.
+    """
+    for p in posts:
+        p["updated"] = max(p.get("updated") or p["received"], p["received"])
+    by_id = {p["id"]: p for p in posts}
+    for p in posts:
+        q = by_id.get(p.get("in_reply_to") or "")
+        if q is not None and p["category"] == "answer":
+            q["updated"] = max(q["updated"], p["received"])
+    pinned = sorted((p for p in posts if p.get("pinned")), key=lambda p: (p.get("thread", 0), p["received"]))
+    rest = sorted((p for p in posts if not p.get("pinned")), key=lambda p: (p["updated"], p["received"], p["id"]), reverse=True)
+    return pinned + rest
+
+
 def expire(data: dict, now: datetime) -> int:
+    """Drop posts older than retention_days; a pinned post stays until it is unpinned or removed by hand."""
     keep_after = now - timedelta(days=int(data.get("retention_days", 60)))
     before = len(data["posts"])
     data["posts"] = [p for p in data["posts"]
-                     if datetime.strptime(p["received"], "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc) >= keep_after]
+                     if p.get("pinned") or datetime.strptime(p["received"], "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc) >= keep_after]
     return before - len(data["posts"])
 
 
@@ -69,7 +88,7 @@ def process(messages: list[Inbound], data: dict, firm_domains: set[str], now: da
                     question_ids.add(post["id"])
                 entry["post_id"] = post["id"]
         audit.append(entry)
-    data["posts"].sort(key=lambda p: p["received"], reverse=True)
+    data["posts"] = order_posts(data["posts"])
     data["generated_utc"] = now.strftime("%Y-%m-%dT%H:%M:%SZ")
     return audit
 

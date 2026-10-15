@@ -24,7 +24,10 @@ description: "An automated, guard-railed inbox for Bell County: legal job opport
     <a href="#guardrails">Guardrails</a>
   </nav>
 
-  {% assign posts = site.data.meseeks.posts | sort: "received" | reverse %}
+  {% comment %}Pinned threads (e.g. thread -1) stay on top until removed; the rest are newest-updated first.{% endcomment %}
+  {% assign pinned = site.data.meseeks.posts | where: "pinned", true | sort: "thread" %}
+  {% assign unpinned = site.data.meseeks.posts | where_exp: "p", "p.pinned != true" | sort: "updated" | reverse %}
+  {% assign posts = pinned | concat: unpinned %}
   {% assign opportunities = posts | where: "category", "opportunity" %}
   {% assign notices = posts | where: "category", "notice" %}
   {% assign orders = posts | where: "category", "standing_order" %}
