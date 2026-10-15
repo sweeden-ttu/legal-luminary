@@ -1,0 +1,29 @@
+Authentication-Results: mail.legalluminary.com; dkim=pass header.d=gmail.com header.s=20230601;
+	spf=pass smtp.mailfrom=sweeden.ttu@gmail.com; dmarc=pass header.from=gmail.com
+From: Scott Weeden <sweeden.ttu@gmail.com>
+To: meseeks@legalluminary.com
+Subject: Fwd: KDH 10/15 - City of Killeen notice of public hearing on the FY27 drainage fee
+Date: Thu, 15 Oct 2026 07:40:00 -0500
+Message-ID: <fwd1@gmail.com>
+Content-Type: multipart/mixed; boundary="b1"
+
+--b1
+Content-Type: text/plain; charset=utf-8
+
+Witnessed this morning on Council Member District 3's Facebook page (clipping from the Killeen Daily Herald, page A4).
+
+---------- Forwarded message ---------
+From: District 3 Office <district3@killeentexas.gov>
+Date: Thu, Oct 15, 2026 at 7:05 AM
+Subject: KDH 10/15 - City of Killeen notice of public hearing on the FY27 drainage fee
+To: Scott Weeden <sweeden.ttu@gmail.com>
+
+NOTICE OF PUBLIC HEARING. The City Council of the City of Killeen will hold a public hearing on Tuesday, October 28, 2026 at 5:00 PM in the Council Chambers, 101 N. College Street, regarding the proposed FY2027 drainage utility fee ordinance. Written comments may be submitted to the City Secretary before the hearing. Published in the Killeen Daily Herald, October 15, 2026.
+
+--b1
+Content-Type: image/png; name="kdh-a4.png"
+Content-Disposition: attachment; filename="kdh-a4.png"
+Content-Transfer-Encoding: base64
+
+iVBORw0KGgoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+--b1--

@@ -39,10 +39,11 @@ MC_WitnessDoms  == {"ttu.edu", "cloudfrontsgroup.org", "cloudfronts.group", "leg
 MC_WitnessNets  == {"lan", "wan"}
 MC_WitnessOS    == {"macos", "rocky", "kodachi"}
 MC_Actors == {
-  [addr |-> "sweeden",    dom |-> "legalluminary.com", net |-> "lan",      os |-> "macos"],
-  [addr |-> "jcking1278", dom |-> "cloudfronts.group", net |-> "wan",      os |-> "rocky"],
-  [addr |-> "someone",    dom |-> "gmail.com",         net |-> "lan",      os |-> "macos"],
-  [addr |-> "sweeden",    dom |-> "legalluminary.com", net |-> "internet", os |-> "macos"],
-  [addr |-> "scotdwg",    dom |-> "ttu.edu",           net |-> "lan",      os |-> "windows"]
+  [addr |-> "sweeden",    dom |-> "legalluminary.com", net |-> "lan",      os |-> "macos",   auth |-> TRUE],
+  [addr |-> "jcking1278", dom |-> "cloudfronts.group", net |-> "wan",      os |-> "rocky",   auth |-> TRUE],
+  [addr |-> "someone",    dom |-> "gmail.com",         net |-> "lan",      os |-> "macos",   auth |-> TRUE],
+  [addr |-> "sweeden",    dom |-> "legalluminary.com", net |-> "internet", os |-> "macos",   auth |-> TRUE],
+  [addr |-> "scotdwg",    dom |-> "ttu.edu",           net |-> "lan",      os |-> "windows", auth |-> TRUE],
+  [addr |-> "sweeden",    dom |-> "legalluminary.com", net |-> "lan",      os |-> "macos",   auth |-> FALSE]
 }
 =============================================================================

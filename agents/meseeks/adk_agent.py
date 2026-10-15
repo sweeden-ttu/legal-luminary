@@ -81,16 +81,18 @@ def render_batch(messages: list[Inbound], firm_domains: set[str]) -> list[dict[s
     out = []
     for m in messages[:MAX_BATCH]:
         rule_cat, rule_conf = rule_classify(m)
+        witnessed = witness_mod.witnessed_forward(m)
         out.append({
             "message_id": m.message_id,
-            "sender_domain": sender_domain(m.sender) or "unknown",
+            "sender_domain": "witness" if witnessed else (sender_domain(m.sender) or "unknown"),
+            "witnessed_by": witnessed,
             "from_participating_firm": is_firm_domain(m.sender, firm_domains),
             "replies_to_question": m.in_reply_to,
             "subject": redact(m.subject)[:200],
             "excerpt": redact(normalize_body(m.body))[:EXCERPT_CHARS],
             "has_source_link": bool(extract_links(m.body)),
             "attachments": [ctype for _, ctype in m.attachments],
-            "hard_reject": hard_reject(m),
+            "hard_reject": hard_reject(m, witnessed=bool(witnessed)),
             "scope": scope_of(m),
             "rule_hint": {"category": rule_cat, "confidence": rule_conf},
         })
@@ -116,7 +118,7 @@ def load_inbox(callback_context) -> types.Content | None:
         if d and witness_mod.person_for(m.sender):
             directives.append((m, d))   # a witness speaking to the inbox, not content to post
             continue
-        reason = hard_reject(m)
+        reason = hard_reject(m, witnessed=bool(witness_mod.witnessed_forward(m)))
         if reason:
             pre_held.append((m, reason, "hard-reject guardrail (never sent to a model)"))
         elif in_scope(m) or m.in_reply_to:
@@ -278,11 +280,12 @@ def apply_guardrails(callback_context) -> types.Content | None:
     thread_ok = all(mid in run["messages"] for mid in proposals)
     for mid, msg in run["messages"].items():
         cat, conf, how = _advisory(msg, proposals.get(mid))
-        d = enforce(msg, cat, conf, firm_domains, question_ids)
-        entry = {"message_id": mid, "sender_domain": sender_domain(msg.sender), "category": d.category,
-                 "publish": d.publish, "reason": d.reason, "confidence": d.confidence, "classifier": how}
+        witnessed = witness_mod.witnessed_forward(msg)
+        d = enforce(msg, cat, conf, firm_domains, question_ids, witnessed=bool(witnessed))
+        entry = {"message_id": mid, "sender_domain": "witness" if witnessed else sender_domain(msg.sender), "category": d.category,
+                 "publish": d.publish, "reason": d.reason, "confidence": d.confidence, "classifier": how, "witnessed_by": witnessed}
         if d.publish:
-            post = to_post(msg, d.category, firm_domains)
+            post = to_post(msg, d.category, firm_domains, witnessed_by=witnessed)
             if post["id"] in existing_ids or post["hash"] in existing_hashes:
                 entry.update(publish=False, reason="duplicate")
             else:
@@ -299,7 +302,7 @@ def apply_guardrails(callback_context) -> types.Content | None:
     published = [a for a in audit if a["publish"]]
     review = [review_item(run["messages"][a["message_id"]], a) for a in audit
               if not a["publish"] and a["reason"] != "duplicate" and a["message_id"] in run["messages"]
-              and hard_reject(run["messages"][a["message_id"]]) is None]
+              and hard_reject(run["messages"][a["message_id"]], witnessed=bool(a.get("witnessed_by"))) is None]
     result = {"messages": len(audit), "published": len(published), "held": len(audit) - len(published),
               "for_review": len(review), "hitl_drill": backends.hitl_drill(), "thread_in_scope": thread_ok,
               "out_of_scope": sum(1 for _, reason, _ in run.get("pre_held", []) if reason.startswith("out of scope")),
@@ -352,8 +355,20 @@ def apply_directive(msg: Inbound, d: tuple[str, str, str | None], run: dict[str,
     from . import review
 
     verb, item_id, category = d
-    ident = witness_mod.Identity(msg.sender, msg.origin_ip, os.environ.get("MESEEKS_WITNESS_PLATFORM") or witness_mod.this_platform())
-    ok, why = witness_mod.is_witness(ident)
+    plat = os.environ.get("MESEEKS_WITNESS_PLATFORM") or witness_mod.this_platform()
+    ident = witness_mod.Identity(msg.sender, msg.origin_ip, plat)
+    m = re.search(r"(?:^|\n)\s*(?:token|authorization)\s*:?\s*(?:bearer\s+)?([A-Za-z0-9_-]+\.[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+)", msg.body, re.I)
+    if m:   # a witness may sign the directive with an OIDC ID token; the token's address wins
+        from . import oidc
+
+        try:
+            ident, claims = oidc.identity_from(m.group(1), oidc.Provider.from_config(witness_mod.load()), msg.origin_ip, plat)
+            ident = witness_mod.Identity(ident.address, msg.origin_ip, plat, True, (str(claims.get("sub")), str(claims.get("iss"))))
+        except oidc.OidcError as e:
+            entry = {"message_id": msg.message_id, "sender_domain": sender_domain(msg.sender), "category": None, "publish": False,
+                     "confidence": 0.0, "classifier": "witness directive (never sent to a model)", "reason": f"directive refused: {e}"}
+            return entry
+    ok, why = witness_mod.is_witness(ident, channel="mail")
     entry = {"message_id": msg.message_id, "sender_domain": sender_domain(msg.sender), "category": None, "publish": False,
              "confidence": 0.0, "classifier": "witness directive (never sent to a model)", "directive": f"{verb} {item_id} {category or ''}".strip()}
     if not ok:
@@ -362,7 +377,8 @@ def apply_directive(msg: Inbound, d: tuple[str, str, str | None], run: dict[str,
     if _dry_run():
         entry["reason"] = f"directive from {why} not applied (dry run)"
         return entry
-    out = review.confirm(item_id, category or "", who=ident) if verb == "confirm" else review.ack(item_id, "by mail", who=ident)
+    out = (review.confirm(item_id, category or "", who=ident, channel="mail") if verb == "confirm"
+           else review.ack(item_id, "by mail", who=ident, channel="mail"))
     entry["reason"] = f"directive by {why}: {out.get('status')}" + (f" ({out['reason']})" if out.get("reason") else "")
     entry["publish"] = out.get("status") == "published"
     entry["category"] = out.get("category")

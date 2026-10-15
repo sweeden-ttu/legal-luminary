@@ -66,9 +66,11 @@ law(orders_have_sources). law(questions_stay_anonymous).
 law(thread_in_scope).     % Killeen / Bell County / Texas statutory, political, judicial matters
 law(witnessed_review).    % only a witness may confirm or acknowledge a held message
 
-% Witness agents (_data/meseeks_witnesses.yml): an actor actor(Local, Domain, Net, OS) is a
-% witness when every component passes. The universe of actors below is exhaustive over the
-% small alphabets, so is_witness is checked for every combination in Part 2c.
+% Witness agents (_data/meseeks_witnesses.yml): an actor actor(Local, Domain, Net, OS, Auth) is
+% a witness when every component passes, Auth being whether the identity was proven by a
+% verified OpenID Connect ID token from the issuer (www.login.cloudfronts.group:3443). The
+% universe of actors below is exhaustive over the small alphabets, so is_witness is checked
+% for every combination in Part 2c.
 witness_person(scott_weeden,   [scotdwg, sweeden, 'scott.weeden', 'weeden.scott', scottweeden]).
 witness_person(johnathan_king, [jcking1278, 'johnathan.king', 'king.johnathan', johnathanking]).
 witness_domain('ttu.edu'). witness_domain('cloudfrontsgroup.org'). witness_domain('cloudfronts.group').
@@ -84,9 +86,11 @@ actor_net(N)    :- witness_net(N).
 actor_net(internet).
 actor_os(O)     :- witness_os(O).
 actor_os(windows). actor_os(unknown).
+actor_auth(true). actor_auth(false).
 
-is_witness(actor(L, D, N, O), P) :-
-    witness_person(P, Ls), memberchk(L, Ls), witness_domain(D), witness_net(N), witness_os(O).
+is_witness(actor(L, D, N, O, Auth), P) :-
+    witness_person(P, Ls), memberchk(L, Ls), witness_domain(D), witness_net(N), witness_os(O),
+    Auth == true.
 
 % A human decision: a witness's confirmation is a proposal at full confidence through the same
 % advisory layer and gate; anyone else is refused and nothing changes.
@@ -214,7 +218,7 @@ determined_ok(Msgs, Firms, Qs0, Pub, Held) :-
 % -- witnesses: every actor in the universe, every held message, every category
 check_witnesses(Checked) :-
     aggregate_all(count,
-        ( actor_local(L), actor_domain(D), actor_net(N), actor_os(O), Actor = actor(L, D, N, O),
+        ( actor_local(L), actor_domain(D), actor_net(N), actor_os(O), actor_auth(Au), Actor = actor(L, D, N, O, Au),
           test(_, _, Firms, Qs0, Msgs), member(M, Msgs), category(Cat),
           human_confirm(Actor, M, Cat, Firms, Qs0, Out),
           ( Out = published(C1)
@@ -223,7 +227,7 @@ check_witnesses(Checked) :-
              ( M = m(_, _, _, _, _, question, _) -> C1 == question ; true )
           ;  Out == refused ) ),
         Checked),
-    aggregate_all(count, ( actor_local(_), actor_domain(_), actor_net(_), actor_os(_),
+    aggregate_all(count, ( actor_local(_), actor_domain(_), actor_net(_), actor_os(_), actor_auth(_),
                            test(_, _, _, _, Msgs), member(_, Msgs), category(_) ), Total),
     Checked == Total.
 
