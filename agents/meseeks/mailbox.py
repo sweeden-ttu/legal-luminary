@@ -5,6 +5,7 @@ import email
 import imaplib
 import os
 import re
+import ssl
 from datetime import datetime, timezone
 from email import policy
 from email.message import EmailMessage
@@ -65,16 +66,19 @@ def from_directory(path: str | Path) -> list[Inbound]:
 
 
 class Imap:
-    """Minimal IMAP reader. Env: MESEEKS_IMAP_HOST, MESEEKS_IMAP_USER, MESEEKS_IMAP_PASSWORD,
-    MESEEKS_IMAP_FOLDER (default INBOX). Processed messages get the \\Seen flag and the
-    'Meseeks/Processed' label when the server supports it."""
+    """Minimal IMAP-over-TLS reader. Env: MESEEKS_IMAP_HOST, MESEEKS_IMAP_USER, MESEEKS_IMAP_PASSWORD,
+    MESEEKS_IMAP_FOLDER (default INBOX), MESEEKS_IMAP_PORT (default 993), MESEEKS_IMAP_CA (path to the
+    CA bundle that signed the server certificate, for a private CA). Remote clients must use TLS;
+    certificates are always verified. Processed messages get the \\Seen flag."""
 
     def __init__(self) -> None:
         self.host = os.environ["MESEEKS_IMAP_HOST"]
         self.user = os.environ["MESEEKS_IMAP_USER"]
         self.password = os.environ["MESEEKS_IMAP_PASSWORD"]
         self.folder = os.environ.get("MESEEKS_IMAP_FOLDER", "INBOX")
-        self.conn = imaplib.IMAP4_SSL(self.host)
+        port = int(os.environ.get("MESEEKS_IMAP_PORT", "993"))
+        ctx = ssl.create_default_context(cafile=os.environ.get("MESEEKS_IMAP_CA") or None)
+        self.conn = imaplib.IMAP4_SSL(self.host, port, ssl_context=ctx)
         self.conn.login(self.user, self.password)
         self.conn.select(self.folder)
         self._uids: dict[str, bytes] = {}

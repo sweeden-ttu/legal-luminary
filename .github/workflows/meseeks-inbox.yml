@@ -11,13 +11,19 @@ concurrency:
 
 jobs:
   process:
-    runs-on: ubuntu-latest
+    # The mailbox lives on a LAN host (192.168.0.15), which GitHub-hosted runners cannot
+    # reach: register a self-hosted runner on that network and set the repository
+    # variable MESEEKS_RUNNER to its label (e.g. self-hosted), or point MESEEKS_IMAP_HOST
+    # at the public MX hostname with IMAPS (993) forwarded.
+    runs-on: ${{ vars.MESEEKS_RUNNER || 'ubuntu-latest' }}
     permissions:
       contents: write
     env:
       MESEEKS_IMAP_HOST: ${{ secrets.MESEEKS_IMAP_HOST }}
       MESEEKS_IMAP_USER: ${{ secrets.MESEEKS_IMAP_USER }}
       MESEEKS_IMAP_PASSWORD: ${{ secrets.MESEEKS_IMAP_PASSWORD }}
+      MESEEKS_IMAP_PORT: ${{ vars.MESEEKS_IMAP_PORT }}
+      MESEEKS_IMAP_CA: ${{ vars.MESEEKS_IMAP_CA }}
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
     steps:
       - uses: actions/checkout@v4
