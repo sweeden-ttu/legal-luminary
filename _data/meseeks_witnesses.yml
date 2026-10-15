@@ -33,3 +33,19 @@ platforms:
   - macos
   - rocky
   - kodachi
+
+# OpenID Connect: witness identities are verified and validated against the provider's
+# discovery document (<issuer>/.well-known/openid-configuration) and JWKS. With
+# require_for_review the review commands need a signed ID token (python -m meseeks.review
+# login); the token's email claim must still match a witness identity above, and the origin
+# and platform checks still apply. MESEEKS_OIDC_ISSUER overrides the issuer, MESEEKS_OIDC_CA
+# names the CA bundle for the private CA.
+oidc:
+  issuer: https://www.login.cloudfronts.group:3443
+  client_id: meseeks
+  audience: meseeks
+  scopes: openid email profile
+  email_claim: email
+  username_claim: preferred_username
+  require_for_review: true
+  require_for_mail: false

@@ -352,8 +352,20 @@ def apply_directive(msg: Inbound, d: tuple[str, str, str | None], run: dict[str,
     from . import review
 
     verb, item_id, category = d
-    ident = witness_mod.Identity(msg.sender, msg.origin_ip, os.environ.get("MESEEKS_WITNESS_PLATFORM") or witness_mod.this_platform())
-    ok, why = witness_mod.is_witness(ident)
+    plat = os.environ.get("MESEEKS_WITNESS_PLATFORM") or witness_mod.this_platform()
+    ident = witness_mod.Identity(msg.sender, msg.origin_ip, plat)
+    m = re.search(r"(?:^|\n)\s*(?:token|authorization)\s*:?\s*(?:bearer\s+)?([A-Za-z0-9_-]+\.[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+)", msg.body, re.I)
+    if m:   # a witness may sign the directive with an OIDC ID token; the token's address wins
+        from . import oidc
+
+        try:
+            ident, claims = oidc.identity_from(m.group(1), oidc.Provider.from_config(witness_mod.load()), msg.origin_ip, plat)
+            ident = witness_mod.Identity(ident.address, msg.origin_ip, plat, True, (str(claims.get("sub")), str(claims.get("iss"))))
+        except oidc.OidcError as e:
+            entry = {"message_id": msg.message_id, "sender_domain": sender_domain(msg.sender), "category": None, "publish": False,
+                     "confidence": 0.0, "classifier": "witness directive (never sent to a model)", "reason": f"directive refused: {e}"}
+            return entry
+    ok, why = witness_mod.is_witness(ident, channel="mail")
     entry = {"message_id": msg.message_id, "sender_domain": sender_domain(msg.sender), "category": None, "publish": False,
              "confidence": 0.0, "classifier": "witness directive (never sent to a model)", "directive": f"{verb} {item_id} {category or ''}".strip()}
     if not ok:
@@ -362,7 +374,8 @@ def apply_directive(msg: Inbound, d: tuple[str, str, str | None], run: dict[str,
     if _dry_run():
         entry["reason"] = f"directive from {why} not applied (dry run)"
         return entry
-    out = review.confirm(item_id, category or "", who=ident) if verb == "confirm" else review.ack(item_id, "by mail", who=ident)
+    out = (review.confirm(item_id, category or "", who=ident, channel="mail") if verb == "confirm"
+           else review.ack(item_id, "by mail", who=ident, channel="mail"))
     entry["reason"] = f"directive by {why}: {out.get('status')}" + (f" ({out['reason']})" if out.get("reason") else "")
     entry["publish"] = out.get("status") == "published"
     entry["category"] = out.get("category")

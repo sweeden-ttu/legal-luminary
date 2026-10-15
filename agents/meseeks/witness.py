@@ -30,6 +30,8 @@ class Identity:
     address: str
     ip: str | None
     platform: str | None
+    verified: bool = False   # address proven by a verified OIDC ID token
+    claims: tuple = ()       # (subject, issuer) from that token, for the audit
 
 
 def load(path: Path | None = None) -> dict:
@@ -88,11 +90,18 @@ def bare_address(address: str) -> str:
     return (addr or address).strip().lower()
 
 
-def is_witness(identity: Identity, cfg: dict | None = None) -> tuple[bool, str]:
+def oidc_required(cfg: dict | None = None, channel: str = "review") -> bool:
+    o = (cfg or load()).get("oidc") or {}
+    return bool(o.get("require_for_review" if channel == "review" else "require_for_mail", False))
+
+
+def is_witness(identity: Identity, cfg: dict | None = None, channel: str = "review") -> tuple[bool, str]:
     cfg = cfg or load()
     person = person_for(identity.address, cfg)
     if not person:
         return False, "address is not a witness identity"
+    if oidc_required(cfg, channel) and not identity.verified:
+        return False, "identity is not authenticated (no verified OpenID Connect ID token)"
     if not ip_allowed(identity.ip, cfg):
         return False, f"origin {identity.ip or 'unknown'} is outside the local / wide-area network"
     if not platform_allowed(identity.platform, cfg):
@@ -131,8 +140,19 @@ def this_ip() -> str | None:
         return None
 
 
-def local_identity(address: str | None = None) -> Identity:
-    return Identity(address or os.environ.get("MESEEKS_WITNESS", ""), this_ip(), os.environ.get("MESEEKS_WITNESS_PLATFORM") or this_platform())
+def local_identity(address: str | None = None, token: str | None = None) -> Identity:
+    """Who is acting from this machine. With an ID token the address comes from the token."""
+    from . import oidc
+
+    ip, plat = this_ip(), os.environ.get("MESEEKS_WITNESS_PLATFORM") or this_platform()
+    token = token or oidc.load_token()
+    if token:
+        try:
+            ident, claims = oidc.identity_from(token, oidc.Provider.from_config(load()), ip, plat)
+            return Identity(ident.address, ip, plat, True, (str(claims.get("sub")), str(claims.get("iss"))))
+        except oidc.OidcError:
+            pass   # falls through to the unauthenticated identity, which is_witness may refuse
+    return Identity(address or os.environ.get("MESEEKS_WITNESS", ""), ip, plat)
 
 
 # --------------------------------------------------------------------------- directives by mail

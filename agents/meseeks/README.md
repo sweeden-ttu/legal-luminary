@@ -78,16 +78,24 @@ Johnathan King (`jcking1278`), as a username or first/last-name combination at `
 `cloudfrontsgroup.org`, `cloudfronts.group`, `legalluminary.com` or `luminarylegal.com`, acting
 from the local or wide-area network, on macOS, Rocky Linux or Kodachi Linux.
 
+Witnesses authenticate with OpenID Connect against `https://www.login.cloudfronts.group:3443`
+(`oidc:` in the witness file): `review login` discovers the provider at
+`/.well-known/openid-configuration` and signs in (device flow if offered, else authorization
+code + PKCE on a loopback port); every review command then verifies the ID token's signature
+against the provider's JWKS and validates `iss`, `aud`, `exp`, `email_verified`, and takes the
+acting address from the token — never from the caller. `MESEEKS_OIDC_CA` names the private CA.
+
 ```bash
-export MESEEKS_WITNESS=sweeden@legalluminary.com      # who is acting (origin IP and platform are detected)
+python -m meseeks.review login                        # ID token -> ~/.config/meseeks/token.json (0600)
 python -m meseeks.review list
 python -m meseeks.review confirm <id> <category>   # goes through the same advisory layer and gate
 python -m meseeks.review ack <id> [note]
 ```
 
 A witness can also mail the inbox `confirm <id> <category>` or `ack <id>`; the directive is
-verified by sender address, the originating IP in the earliest `Received` header, and platform,
-is never shown to a model, and is applied through the same `review` path.
+verified by sender address, the originating IP in the earliest `Received` header, and platform
+(and by a `token: <id token>` line when present or when `require_for_mail` is on), is never
+shown to a model, and is applied through the same `review` path.
 
 Env for IMAP: `MESEEKS_IMAP_HOST`, `MESEEKS_IMAP_USER`, `MESEEKS_IMAP_PASSWORD`, optional `MESEEKS_IMAP_FOLDER`.
 Optional `ANTHROPIC_API_KEY` enables the Claude classifier (`LL_ADK_MODEL` to pick the model);

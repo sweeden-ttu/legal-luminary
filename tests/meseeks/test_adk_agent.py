@@ -321,23 +321,28 @@ def test_human_in_the_loop_confirms_through_the_same_gate(env, tmp_path, monkeyp
     assert all("@" not in i["body"] and i["sender_domain"] in ("yahoo.com", "killeentexas.gov") for i in q)
     stranger = next(i for i in q if i["message_id"] == A_RANDOM)
     notice = next(i for i in q if i["message_id"] == NOTICE)
-    # Only a witness may act: a stranger, a witness off-network, and a witness on an unknown platform are refused.
+    scott = witness.Identity(SCOTT, "192.168.0.42", "macos", verified=True)
+    john = witness.Identity("jcking1278@cloudfronts.group", "192.168.0.42", "rocky", verified=True)
+    # Only an authenticated witness may act: a stranger, an unauthenticated witness, a witness
+    # off-network, and a witness on an unknown platform are refused.
     assert "not a witness" in review.confirm(notice["id"], "notice", who="someone@gmail.com")["reason"]
-    assert "outside" in review.confirm(notice["id"], "notice", who=witness.Identity(SCOTT, "198.51.100.7", "macos"))["reason"]
-    assert "platform" in review.confirm(notice["id"], "notice", who=witness.Identity(SCOTT, "192.168.0.42", "windows"))["reason"]
+    assert "not authenticated" in review.confirm(notice["id"], "notice", who=SCOTT)["reason"]
+    assert "outside" in review.confirm(notice["id"], "notice", who=witness.Identity(SCOTT, "198.51.100.7", "macos", True))["reason"]
+    assert "platform" in review.confirm(notice["id"], "notice", who=witness.Identity(SCOTT, "192.168.0.42", "windows", True))["reason"]
     # The witness cannot confirm what the laws forbid...
-    assert review.confirm(stranger["id"], "answer", who=SCOTT)["status"] == "refused"
-    assert review.confirm(stranger["id"], "bogus", who=SCOTT)["status"] == "refused"
+    assert review.confirm(stranger["id"], "answer", who=scott)["status"] == "refused"
+    assert review.confirm(stranger["id"], "bogus", who=scott)["status"] == "refused"
     # ...but can confirm within the admissible language, and the run continues.
-    assert review.confirm(notice["id"], "notice", who="jcking1278@cloudfronts.group")["status"] == "published"
-    assert review.ack(stranger["id"], "not a firm", who="johnathan.king@ttu.edu")["status"] == "acknowledged"
+    out = review.confirm(notice["id"], "notice", who=john)
+    assert out["status"] == "published" and out["verified"]
+    assert review.ack(stranger["id"], "not a firm", who=witness.Identity("johnathan.king@ttu.edu", "192.168.0.42", "kodachi", True))["status"] == "acknowledged"
     # A question held for review cannot be confirmed out of its anonymity (TLC finding).
     held_q = {"id": "hq", "message_id": "<hq@x>", "sender_domain": "gmail.com", "subject": "Can I fight an eviction?",
               "body": "My landlord in Killeen says I have three days. Can I fight this? Do I need a lawyer?",
               "received": "2026-10-15T00:00:00Z", "attachments": [], "has_source_link": False, "links": [],
               "in_reply_to": None, "proposed": "question", "reason": "low confidence 0.3", "classifier": "model", "status": "pending"}
     qd = json.loads(queue.read_text()); qd["items"].append(held_q); queue.write_text(json.dumps(qd))
-    out = review.confirm("hq", "opportunity", who=SCOTT)
+    out = review.confirm("hq", "opportunity", who=scott)
     assert out["status"] == "published" and out["category"] == "question"
     posts = json.loads(Path(env).read_text())["posts"]
     assert next(p for p in posts if p["title"].startswith("Can I fight"))["source_label"] == "Anonymous"
@@ -371,7 +376,7 @@ def guardrails_msg(sender, subject, body, received):
 
 def test_witness_identity_rules():
     from meseeks import witness
-    ok = lambda addr, ip="192.168.0.42", plat="rocky": witness.is_witness(witness.Identity(addr, ip, plat))[0]
+    ok = lambda addr, ip="192.168.0.42", plat="rocky": witness.is_witness(witness.Identity(addr, ip, plat, verified=True))[0]
     assert ok("scotdwg@ttu.edu") and ok("sweeden@cloudfrontsgroup.org") and ok("scott.weeden@luminarylegal.com")
     assert ok("weeden.scott@legalluminary.com") and ok("jcking1278@cloudfronts.group") and ok("Johnathan King <johnathan.king@ttu.edu>")
     assert ok("sweeden@ttu.edu", plat="kodachi") and ok("sweeden@ttu.edu", plat="macos")
