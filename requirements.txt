@@ -12,3 +12,4 @@ beautifulsoup4
 requests
 feedparser
 langchain_ollama
+PyJWT[crypto]>=2.8

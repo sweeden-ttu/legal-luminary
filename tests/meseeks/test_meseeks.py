@@ -36,6 +36,8 @@ def test_fixture_outcomes():
     assert audit["<t1@example.org>"]["reason"] == "body too short"
     assert audit["<x1@cityofseattle.example>"]["reason"].startswith("out of scope")
     assert not audit["<w1@legalluminary.com>"]["publish"] and not audit["<w2@legalluminary.com>"]["publish"]
+    assert audit["<fwd2@gmail.com>"]["reason"].startswith("disallowed attachment")   # an image from a stranger
+    assert audit["<fwd-forged@gmail.com>"]["reason"].startswith("disallowed attachment")   # forged witness From
     assert len(data["posts"]) == 5
 
 

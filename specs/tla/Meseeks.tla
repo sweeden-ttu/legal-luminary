@@ -40,10 +40,12 @@
 (* the sub-agents' window shrinks to SlackDrill% (90%) of their budgets.    *)
 (*                                                                          *)
 (* Witnesses. Only a witness may act as the human: an actor is a record of  *)
-(* address, origin network and platform, and it is a witness exactly when  *)
-(* the address is a known person at an allowed domain, the origin is the   *)
-(* local or wide-area network, and the platform is one the witness agents  *)
-(* run on. Any other actor's confirm or ack is refused (no state change).  *)
+(* address, origin network, platform and authentication, and it is a       *)
+(* witness exactly when the address is a known person at an allowed       *)
+(* domain, the origin is the local or wide-area network, the platform is   *)
+(* one the witness agents run on, and the identity was proven by a         *)
+(* verified OpenID Connect ID token from the configured issuer. Any other  *)
+(* actor's confirm or ack is refused (no state change).                     *)
 (***************************************************************************)
 EXTENDS Naturals, Sequences, FiniteSets
 
@@ -60,7 +62,7 @@ CONSTANTS
   Idle,        \* cycles without a new proposal after which the loop stops (60 s)
   MaxRounds,   \* question + reason + instruction rounds allowed
   MinConf,     \* confidence floor on a 0..10 scale (0.5 in production)
-  Actors,      \* set of [addr, dom, net, os] records that may try to act as the human
+  Actors,      \* set of [addr, dom, net, os, auth] records that may try to act as the human
   WitnessAddrs, WitnessDoms, WitnessNets, WitnessOS  \* _data/meseeks_witnesses.yml
 
 Cats     == {"opportunity", "notice", "standing_order", "question", "answer"}
@@ -94,11 +96,11 @@ NoOutput   == [id \in Ids |-> Absent]
 Min(a, b) == IF a < b THEN a ELSE b
 Max(a, b) == IF a > b THEN a ELSE b
 
-\* witness.is_witness: address, origin network and platform all have to pass.
+\* witness.is_witness: address, origin network, platform and a verified ID token all have to pass.
 IsWitness(a) == a.addr \in WitnessAddrs /\ a.dom \in WitnessDoms
-                /\ a.net \in WitnessNets /\ a.os \in WitnessOS
+                /\ a.net \in WitnessNets /\ a.os \in WitnessOS /\ a.auth
 Witnesses == {a \in Actors : IsWitness(a)}
-Nobody    == [addr |-> None, dom |-> None, net |-> None, os |-> None]
+Nobody    == [addr |-> None, dom |-> None, net |-> None, os |-> None, auth |-> FALSE]
 
 (***************************************************************************)
 (* Budgets and the derived window (backends.call_budget / Window).          *)

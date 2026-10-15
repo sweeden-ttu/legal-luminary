@@ -18,6 +18,37 @@ _QID_RE = re.compile(r"\[Q-([0-9a-f]{10})\]", re.I)
 _IP_RE = re.compile(r"\[(?:IPv6:)?([0-9a-fA-F.:]+)\]|\((?:[^()]*\s)?(\d{1,3}(?:\.\d{1,3}){3})\)")
 
 
+AUTHSERV_IDS = {x.strip().lower() for x in os.environ.get("MESEEKS_AUTHSERV_ID", "mail.legalluminary.com,mx.legalluminary.com").split(",") if x.strip()}
+
+
+def _auth_results(msg: EmailMessage) -> dict:
+    """Parse Authentication-Results stamped by OUR mail host only (RFC 8601 authserv-id); any
+    copy a sender wrote into the message is ignored."""
+    out: dict = {"dkim": [], "spf": None, "dmarc": None, "authserv": None}
+    for header in msg.get_all("Authentication-Results") or []:
+        text = " ".join(str(header).split())
+        authserv = text.split(";", 1)[0].strip().split()[0].lower() if text else ""
+        if authserv not in AUTHSERV_IDS:
+            continue
+        out["authserv"] = authserv
+        for part in text.split(";")[1:]:
+            part = part.strip().lower()
+            m = re.match(r"(dkim|spf|dmarc)=(\w+)(.*)", part)
+            if not m:
+                continue
+            method, result, rest = m.groups()
+            if method == "dkim" and result == "pass":
+                d = re.search(r"header\.(?:d|i)=@?([\w.-]+)", rest)
+                if d:
+                    out["dkim"].append(d.group(1).split("@")[-1])
+            elif method == "spf":
+                out["spf"] = result
+            elif method == "dmarc":
+                out["dmarc"] = result
+        break   # the topmost header from our host is the one it just added
+    return out
+
+
 def _origin_ip(msg: EmailMessage) -> str | None:
     """Client address of the earliest hop: the last Received header the MTA stack added first."""
     received = msg.get_all("Received") or []
@@ -71,6 +102,7 @@ def parse_eml(raw: bytes) -> Inbound:
         attachments=_attachments(msg),
         in_reply_to=_in_reply_to(msg),
         origin_ip=_origin_ip(msg),
+        auth=_auth_results(msg),
     )
 
 

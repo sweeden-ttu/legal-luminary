@@ -30,6 +30,8 @@ Q1, A_FIRM, A_RANDOM = "<q1@gmail.com>", "<a1@examplelaw.com>", "<a2@yahoo.com>"
 NOTICE, ORDER, JOB, SPAM, SHORT = "<n1@killeentexas.gov>", "<so1@bellcounty.texas.gov>", "<o1@centexlegalaid.org>", "<s1@seo-blast.biz>", "<t1@example.org>"
 FOREIGN = "<x1@cityofseattle.example>"
 WITNESS, FORGED = "<w1@legalluminary.com>", "<w2@legalluminary.com>"
+CLIPPING, STRANGER_CLIPPING = "<fwd1@gmail.com>", "<fwd2@gmail.com>"
+FORGED_CLIPPING = "<fwd-forged@gmail.com>"
 SCOTT = "sweeden@legalluminary.com"
 
 
@@ -138,7 +140,7 @@ def test_model_sees_registry_instruction_and_redacted_batch(env):
     assert prompts.fallback("meseeks.instruction").splitlines()[0] in system
     assert "examplelaw.com" in system
     assert Q1 in system and "[email redacted]" in system
-    assert "@gmail.com" not in system.replace(Q1, "")
+    assert "@gmail.com" not in system.replace(Q1, "").replace(CLIPPING, "")   # ids are keys; no addresses otherwise
     assert FOREIGN not in system and "Seattle" not in system   # out-of-scope mail never reaches a model
     assert WITNESS not in system and FORGED not in system      # witness directives never reach a model
     assert '"scope": "domain:killeentexas.gov"' in system
@@ -166,7 +168,7 @@ def test_malicious_model_cannot_widen_publication(env):
     assert audit[NOTICE]["publish"] and audit[NOTICE]["category"] == "notice"  # unknown category -> rules
     assert audit[ORDER]["publish"] and "unusable confidence" in audit[ORDER]["classifier"]
     assert audit[JOB]["publish"] and "no model proposal" in audit[JOB]["classifier"]
-    assert r["published"] == 5 and r["held"] == 6
+    assert r["published"] == 6 and r["held"] == 8
     assert [x["new"] for x in r["rounds"]] == [7, 0, 0] and r["rounds"][-1]["stop"] == "max rounds (3)"  # JOB never answered
     posts = json.loads(Path(env).read_text())["posts"]
     assert {p["category"] for p in posts} == {"question", "answer", "notice", "standing_order", "opportunity"}
@@ -177,7 +179,7 @@ def test_malicious_model_cannot_widen_publication(env):
 def test_garbage_model_output_falls_back_to_rules(env):
     state, _ = _run(_agent("Sure! Here is my analysis:\n```json\n{not json at all"))
     r = state["meseeks_result"]
-    assert r["proposals"] == 0 and r["published"] == 5
+    assert r["proposals"] == 0 and r["published"] == 6
     assert all("rules" in a["classifier"] or "never sent" in a["classifier"] for a in r["audit"])
     assert [x["stop"] for x in r["rounds"]] == [None, None, "max rounds (3)"]
 
@@ -187,10 +189,10 @@ def _cls(*ids, cat="notice"):
 
 
 def test_followup_rounds_ask_only_for_missing_ids(env):
-    stub = RoundStub(answers=[_cls(Q1, NOTICE, SPAM), _cls(ORDER, JOB, A_FIRM, A_RANDOM, SHORT)])
+    stub = RoundStub(answers=[_cls(Q1, NOTICE, SPAM), _cls(ORDER, JOB, A_FIRM, A_RANDOM, SHORT, CLIPPING)])
     state, _ = _run(_agent(stub))
     r = state["meseeks_result"]
-    assert stub.calls == 2 and [x["new"] for x in r["rounds"]] == [2, 4]   # SPAM and SHORT never reach a model
+    assert stub.calls == 2 and [x["new"] for x in r["rounds"]] == [2, 5]   # SPAM and SHORT never reach a model
     assert "FOLLOW-UP, ROUND 2 OF 3" in stub.followups[1] and JOB in stub.followups[1] and Q1 not in stub.followups[1].split("FOLLOW-UP")[1]
     assert "FOLLOW-UP" not in stub.followups[0]
     assert r["rounds"][-1]["stop"] == "complete"
@@ -202,7 +204,7 @@ def test_idle_expiry_ends_the_loop(env, monkeypatch):
     state, _ = _run(_agent(stub))
     r = state["meseeks_result"]
     assert stub.calls == 2 and [x["stop"] for x in r["rounds"]] == [None, "idle: 0s without a new proposal"]
-    assert r["published"] == 5   # rules covered the rest
+    assert r["published"] == 6   # rules covered the rest
 
 
 def test_window_is_130_percent_of_budgets(monkeypatch):
@@ -275,7 +277,7 @@ def test_fallback_chain_never_raises(env):
     chain = FallbackLlm(backends=[Boom(), CoderLlm(specs=[{"name": "none", "argv": ["/nonexistent/x", "{prompt}"], "timeout": 1}])])
     state, _ = _run(_agent(chain))
     r = state["meseeks_result"]
-    assert r["published"] == 5 and [x["stop"] for x in r["rounds"]] == ["no sub-agent answered"]
+    assert r["published"] == 6 and [x["stop"] for x in r["rounds"]] == ["no sub-agent answered"]
     assert [t["backend"] for t in chain.trace] == ["Boom", "CoderLlm"]
 
 
@@ -312,32 +314,37 @@ def test_human_in_the_loop_confirms_through_the_same_gate(env, tmp_path, monkeyp
     state, _ = _run(_agent(text))
     r = state["meseeks_result"]
     held = {a["message_id"] for a in r["audit"] if not a["publish"]}
-    assert {A_RANDOM, NOTICE, SPAM, SHORT, FOREIGN, WITNESS, FORGED} == held
+    assert {A_RANDOM, NOTICE, SPAM, SHORT, FOREIGN, WITNESS, FORGED, STRANGER_CLIPPING, FORGED_CLIPPING} == held
     foreign = next(a for a in r["audit"] if a["message_id"] == FOREIGN)
     assert foreign["reason"].startswith("out of scope") and "never sent" in foreign["classifier"]
-    assert r["thread_in_scope"] and r["out_of_scope"] == 1 and r["pre_held"] == 3
+    assert r["thread_in_scope"] and r["out_of_scope"] == 1 and r["pre_held"] == 5   # + the stranger's image, the forged forward
     q = json.loads(queue.read_text())["items"]
     assert {i["message_id"] for i in q} == {A_RANDOM, NOTICE}        # hard rejects never reach the human
     assert all("@" not in i["body"] and i["sender_domain"] in ("yahoo.com", "killeentexas.gov") for i in q)
     stranger = next(i for i in q if i["message_id"] == A_RANDOM)
     notice = next(i for i in q if i["message_id"] == NOTICE)
-    # Only a witness may act: a stranger, a witness off-network, and a witness on an unknown platform are refused.
+    scott = witness.Identity(SCOTT, "192.168.0.42", "macos", verified=True)
+    john = witness.Identity("jcking1278@cloudfronts.group", "192.168.0.42", "rocky", verified=True)
+    # Only an authenticated witness may act: a stranger, an unauthenticated witness, a witness
+    # off-network, and a witness on an unknown platform are refused.
     assert "not a witness" in review.confirm(notice["id"], "notice", who="someone@gmail.com")["reason"]
-    assert "outside" in review.confirm(notice["id"], "notice", who=witness.Identity(SCOTT, "198.51.100.7", "macos"))["reason"]
-    assert "platform" in review.confirm(notice["id"], "notice", who=witness.Identity(SCOTT, "192.168.0.42", "windows"))["reason"]
+    assert "not authenticated" in review.confirm(notice["id"], "notice", who=SCOTT)["reason"]
+    assert "outside" in review.confirm(notice["id"], "notice", who=witness.Identity(SCOTT, "198.51.100.7", "macos", True))["reason"]
+    assert "platform" in review.confirm(notice["id"], "notice", who=witness.Identity(SCOTT, "192.168.0.42", "windows", True))["reason"]
     # The witness cannot confirm what the laws forbid...
-    assert review.confirm(stranger["id"], "answer", who=SCOTT)["status"] == "refused"
-    assert review.confirm(stranger["id"], "bogus", who=SCOTT)["status"] == "refused"
+    assert review.confirm(stranger["id"], "answer", who=scott)["status"] == "refused"
+    assert review.confirm(stranger["id"], "bogus", who=scott)["status"] == "refused"
     # ...but can confirm within the admissible language, and the run continues.
-    assert review.confirm(notice["id"], "notice", who="jcking1278@cloudfronts.group")["status"] == "published"
-    assert review.ack(stranger["id"], "not a firm", who="johnathan.king@ttu.edu")["status"] == "acknowledged"
+    out = review.confirm(notice["id"], "notice", who=john)
+    assert out["status"] == "published" and out["verified"]
+    assert review.ack(stranger["id"], "not a firm", who=witness.Identity("johnathan.king@ttu.edu", "192.168.0.42", "kodachi", True))["status"] == "acknowledged"
     # A question held for review cannot be confirmed out of its anonymity (TLC finding).
     held_q = {"id": "hq", "message_id": "<hq@x>", "sender_domain": "gmail.com", "subject": "Can I fight an eviction?",
               "body": "My landlord in Killeen says I have three days. Can I fight this? Do I need a lawyer?",
               "received": "2026-10-15T00:00:00Z", "attachments": [], "has_source_link": False, "links": [],
               "in_reply_to": None, "proposed": "question", "reason": "low confidence 0.3", "classifier": "model", "status": "pending"}
     qd = json.loads(queue.read_text()); qd["items"].append(held_q); queue.write_text(json.dumps(qd))
-    out = review.confirm("hq", "opportunity", who=SCOTT)
+    out = review.confirm("hq", "opportunity", who=scott)
     assert out["status"] == "published" and out["category"] == "question"
     posts = json.loads(Path(env).read_text())["posts"]
     assert next(p for p in posts if p["title"].startswith("Can I fight"))["source_label"] == "Anonymous"
@@ -371,7 +378,7 @@ def guardrails_msg(sender, subject, body, received):
 
 def test_witness_identity_rules():
     from meseeks import witness
-    ok = lambda addr, ip="192.168.0.42", plat="rocky": witness.is_witness(witness.Identity(addr, ip, plat))[0]
+    ok = lambda addr, ip="192.168.0.42", plat="rocky": witness.is_witness(witness.Identity(addr, ip, plat, verified=True))[0]
     assert ok("scotdwg@ttu.edu") and ok("sweeden@cloudfrontsgroup.org") and ok("scott.weeden@luminarylegal.com")
     assert ok("weeden.scott@legalluminary.com") and ok("jcking1278@cloudfronts.group") and ok("Johnathan King <johnathan.king@ttu.edu>")
     assert ok("sweeden@ttu.edu", plat="kodachi") and ok("sweeden@ttu.edu", plat="macos")
@@ -401,3 +408,50 @@ def test_witness_directives_by_mail_are_verified_by_origin(env, tmp_path, monkey
     assert not audit[FORGED]["publish"] and "outside" in audit[FORGED]["reason"]   # forged From, wrong origin network
     items = json.loads(queue.read_text())["items"]
     assert items[0]["status"] == "confirmed" and items[0]["decided_by"] == SCOTT
+
+
+def test_witnessed_clipping_is_published_under_the_witness(env):
+    state, _ = _run(_agent('{"classifications": []}'))
+    audit = {a["message_id"]: a for a in state["meseeks_result"]["audit"]}
+    assert audit[CLIPPING]["publish"] and audit[CLIPPING]["category"] == "notice" and audit[CLIPPING]["witnessed_by"] == "Scott Weeden"
+    assert audit[CLIPPING]["sender_domain"] == "witness"
+    assert not audit[STRANGER_CLIPPING]["publish"] and audit[STRANGER_CLIPPING]["reason"].startswith("disallowed attachment")
+    post = next(p for p in json.loads(Path(env).read_text())["posts"] if p["witnessed_by"])
+    assert post["source_label"] == "Witnessed by Scott Weeden" and post["attachments"] == ["image/png"]
+    assert post["title"].startswith("KDH 10/15") and "Fwd" not in post["title"]
+    assert "NOTICE OF PUBLIC HEARING" in post["body"] and "district3@" not in post["body"] and "Forwarded message" not in post["body"]
+    assert "gmail" not in json.dumps(post)
+    # Same mail with a forged From: our MX recorded dmarc=fail; the sender's own "pass" header is ignored.
+    forged = audit[FORGED_CLIPPING]
+    assert not forged["publish"] and forged["reason"].startswith("disallowed attachment") and not forged.get("witnessed_by")
+
+
+def test_mx_authentication_results_are_parsed_from_our_host_only():
+    from meseeks import mailbox, witness
+    good = mailbox.parse_eml((FIXTURES / "12_witnessed_kdh_clipping.eml").read_bytes())
+    bad = mailbox.parse_eml((FIXTURES / "14_forged_witness_forward.eml").read_bytes())
+    assert good.auth["dmarc"] == "pass" and "gmail.com" in good.auth["dkim"] and witness.witnessed_forward(good) == "Scott Weeden"
+    assert bad.auth["dmarc"] == "fail" and bad.auth["dkim"] == [] and witness.witnessed_forward(bad) is None
+
+
+def test_monitor_unit_and_dry_cycle(tmp_path, monkeypatch):
+    from meseeks import monitor
+    text = monitor.unit(7200)
+    assert "meseeks.monitor" in text and "7200" in text
+    monkeypatch.setattr(monitor, "LOG", tmp_path / "monitor.jsonl")
+    calls = []
+
+    class CP:
+        def __init__(self, rc=0, out="", err=""):
+            self.returncode, self.stdout, self.stderr = rc, out, err
+
+    def fake_sh(argv, timeout, cwd=None, env=None):
+        calls.append(argv[:3])
+        if argv[1:3] == ["-m", "meseeks.run"]:
+            return CP(0, json.dumps({"published": 2, "held": 1, "for_review": 1, "backend": "rules"}))
+        return CP(0)
+
+    monkeypatch.setattr(monitor, "_sh", fake_sh)
+    out = monitor.cycle(dry_run=True)
+    assert out["steps"]["pull"] is True and out["steps"]["runs"][0]["published"] == 2 and out["steps"]["push"] == "skipped"
+    assert any(c[:2] == ["git", "pull"] for c in calls) and (tmp_path / "monitor.jsonl").exists()
