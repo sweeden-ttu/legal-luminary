@@ -136,6 +136,13 @@ class Imap:
             if not raw or raw[0] is None:
                 continue
             msg = parse_eml(raw[0][1])
+            if os.environ.get("MESEEKS_MAIL_STORE"):   # keep every input privately, thread by thread
+                from .store import store
+
+                try:
+                    store(raw[0][1])
+                except OSError:
+                    pass
             self._uids[msg.message_id] = uid
             out.append(msg)
         return out
