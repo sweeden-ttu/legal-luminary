@@ -82,6 +82,7 @@ def env(tmp_path, monkeypatch):
     monkeypatch.setenv("MESEEKS_WITNESS_PLATFORM", "macos")
     monkeypatch.delenv("MESEEKS_DRY_RUN", raising=False)
     monkeypatch.setattr("meseeks.adk_agent.LOG", tmp_path / "logs")
+    monkeypatch.setattr("meseeks.review.LOG", tmp_path / "logs")
     monkeypatch.setattr("meseeks.adk_agent.load_firm_domains", lambda: {"examplelaw.com"})
     SEEN.clear()
     return data
