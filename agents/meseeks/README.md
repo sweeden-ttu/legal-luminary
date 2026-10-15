@@ -110,3 +110,21 @@ general, public, and end with a referral to private counsel. Subdomains of a lis
 ```bash
 pytest tests/meseeks -q
 ```
+
+## Client intake: lemmas, dilemmas and non-action
+
+`_data/meseeks_cases.yml` holds each case opened from a public notice: only facts from the
+notice (court, cause number, dates, amounts), never party names or property addresses.
+`python -m meseeks.intake brief <case>` builds the intake brief:
+
+- **Lemmas**: each fact the decision rests on, with its source and days left to its deadline.
+- **Dilemma**: the options (answer / retain counsel / do nothing for a citation; reinstate /
+  alternatives with counsel or a HUD counselor / do nothing for a HUD sale) and what follows
+  from each on the notice's own terms.
+- **Non-action**: the countdown and what happens if no one acts.
+- Money is compared only with numbers the client or attorney supplies (`--value`, `--payoff`,
+  `--other-costs`); nothing is estimated. `--save` stores the brief and the client's answers
+  under `MESEEKS_INTAKE_DIR` (default `~/.local/share/meseeks/intake`, 0600), never in the repo.
+
+The brief informs the defendant and their attorney; it does not choose for them and is not
+legal advice.
