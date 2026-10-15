@@ -100,6 +100,7 @@ def test_review_requires_an_authenticated_witness(provider, monkeypatch):
 
 
 def test_mailed_directive_with_token(provider, tmp_path, monkeypatch):
+    pytest.importorskip("google.adk")   # the legacy suite installs requirements.txt, without ADK
     from meseeks import adk_agent, mailbox
     monkeypatch.setenv("MESEEKS_REVIEW", str(tmp_path / "review.json"))
     monkeypatch.setenv("MESEEKS_DATA", str(tmp_path / "meseeks.json"))
