@@ -1,10 +1,12 @@
 {% assign p = include.post %}
-<article class="meseeks-post meseeks-post--{{ p.category }}" id="post-{{ p.id }}">
+<article class="meseeks-post meseeks-post--{{ p.category }}{% if p.pinned %} meseeks-post--pinned{% endif %}" id="post-{{ p.id }}">
   <header class="meseeks-post-head">
     <h3>{{ p.title | escape }}</h3>
     <div class="meseeks-post-meta">
+      {% if p.pinned %}<span class="meseeks-badge meseeks-badge--pinned">Pinned · thread {{ p.thread }}</span>{% endif %}
       <span class="meseeks-badge meseeks-badge--{{ p.category }}">{{ p.category | replace: "_", " " }}</span>
       {% if p.received %}<time datetime="{{ p.received }}">{{ p.received | date: "%B %-d, %Y" }}</time>{% endif %}
+      {% if p.updated and p.updated != p.received %}<span class="meseeks-updated">updated <time datetime="{{ p.updated }}">{{ p.updated | date: "%B %-d, %Y" }}</time></span>{% endif %}
       {% if p.source_label %}<span class="meseeks-source">{{ p.source_label | escape }}</span>{% endif %}
       {% if p.in_reply_to %}<a class="meseeks-reply-link" href="#post-{{ p.in_reply_to }}">answers question {{ p.in_reply_to }}</a>{% endif %}
     </div>

@@ -1,8 +1,35 @@
 {
-  "generated_utc": "2026-10-15T21:27:02Z",
+  "generated_utc": "2026-10-15T23:45:00Z",
   "inbox": "meseeks@legalluminary.com",
   "retention_days": 60,
   "posts": [
+    {
+      "id": "f337a212cb",
+      "category": "opportunity",
+      "title": "W.D. Tex., Pro Se Staff Attorney announcement (July 2026): Pro Se Law Clerk, multiple locations including Waco and Austin",
+      "body": "The U.S. District Court for the Western District of Texas is hiring Pro Se Law Clerks (the court's pro se staff attorneys), assigned to the district judges' chambers.\nLocations: Austin, Del Rio, El Paso, Midland, San Antonio and Waco; multiple positions.\nSalary: $74,678 to $168,110 (JSP 11 to 14), depending on qualifications.\nOpen until filled; immediate start. Positions are funded through at least December 31, 2028.\nDuties: legal research, bench memoranda and draft orders on pro se matters, docket management, including prisoner petitions and civil rights complaints.\nQualifications: graduation from an accredited law school. Hiring is subject to a fingerprint background check and credit check.\nHow to apply: through OSCAR (oscar.uscourts.gov): Positions > All Positions, search \"Alia Moses\". Read the full announcement (PDF, updated July 20, 2026) before applying; it controls over this summary.\nPinned by Legal Luminary as thread -1 until removed. Legal Luminary is not affiliated with the court and does not accept applications.",
+      "received": "2026-10-15T23:45:00Z",
+      "updated": "2026-10-15T23:45:00Z",
+      "thread": -1,
+      "pinned": true,
+      "source_label": "Posted by Scott Weeden (from the court's announcement)",
+      "links": [
+        {
+          "url": "https://www.txwd.uscourts.gov/wp-content/uploads/2026/07/2026-07-20-Pro-Se-Staff-Attorney-Announcement-Multiple-Locations-6-Update.pdf",
+          "label": "Announcement (PDF, July 20, 2026)"
+        },
+        {
+          "url": "https://oscar.uscourts.gov/",
+          "label": "Apply on OSCAR"
+        },
+        {
+          "url": "https://www.txwd.uscourts.gov/",
+          "label": "U.S. District Court, Western District of Texas"
+        }
+      ],
+      "in_reply_to": null,
+      "hash": "dab01a5258d7e698"
+    },
     {
       "id": "cbeb20a35f",
       "category": "opportunity",
@@ -21,7 +48,9 @@
         }
       ],
       "in_reply_to": null,
-      "hash": "3e213564b151e20f"
+      "hash": "3e213564b151e20f",
+      "thread": 2,
+      "updated": "2026-10-15T21:55:00Z"
     },
     {
       "id": "db23cec7f6",
@@ -41,27 +70,9 @@
         }
       ],
       "in_reply_to": null,
-      "hash": "b796ccf2bd817d0d"
-    },
-    {
-      "id": "042475922c",
-      "category": "notice",
-      "title": "Citation by publication, 146th District Court, Bell County: Cause No. 25DCV352411",
-      "body": "Court: 146th Judicial District Court, Bell County, Texas (Bell County District Courts Building, Belton).\nCause No.: 25DCV352411. Suit by a mortgage lender to rescind a vendor's lien and assert superior title to residential property in Temple, Texas.\nPetition filed: March 14, 2025. Citation issued: September 11, 2026.\nAnswer due: by 10:00 AM on the first Monday after 42 days from issuance, which by our count is Monday, October 26, 2026. Confirm the date with the Bell County District Clerk; a default judgment may be taken against a defendant who does not answer.\nPublished in the Killeen Daily Herald on October 1, 8, 15 and 22, 2026.\nDefendant names and the property address are in the published notice linked below and in the court file; they are not repeated here.",
-      "received": "2026-10-15T12:00:00Z",
-      "source_label": "Witnessed by Scott Weeden (Killeen Daily Herald legal notices)",
-      "links": [
-        {
-          "url": "/assets/meseeks/kdh-2026-10-15-citation-25DCV352411.jpg",
-          "label": "Published notice (KDH clipping)"
-        },
-        {
-          "url": "https://texaslawhelp.org",
-          "label": "TexasLawHelp.org: answering a lawsuit"
-        }
-      ],
-      "in_reply_to": null,
-      "hash": "4e0fe5cebd1e0ab9"
+      "hash": "b796ccf2bd817d0d",
+      "thread": 1,
+      "updated": "2026-10-15T21:40:00Z"
     },
     {
       "id": "fc64fbbb4d",
@@ -81,7 +92,9 @@
         }
       ],
       "in_reply_to": null,
-      "hash": "296b702bb73a2b23"
+      "hash": "296b702bb73a2b23",
+      "thread": 0,
+      "updated": "2026-10-15T12:00:00Z"
     },
     {
       "id": "95b7f69977",
@@ -97,7 +110,9 @@
         }
       ],
       "in_reply_to": null,
-      "hash": "d28f9b23e7754b22"
+      "hash": "d28f9b23e7754b22",
+      "thread": 0,
+      "updated": "2026-10-15T12:00:00Z"
     },
     {
       "id": "8c3984a620",
@@ -121,7 +136,31 @@
         }
       ],
       "in_reply_to": null,
-      "hash": "c7ed9b576ba8dd06"
+      "hash": "c7ed9b576ba8dd06",
+      "thread": 0,
+      "updated": "2026-10-15T12:00:00Z"
+    },
+    {
+      "id": "042475922c",
+      "category": "notice",
+      "title": "Citation by publication, 146th District Court, Bell County: Cause No. 25DCV352411",
+      "body": "Court: 146th Judicial District Court, Bell County, Texas (Bell County District Courts Building, Belton).\nCause No.: 25DCV352411. Suit by a mortgage lender to rescind a vendor's lien and assert superior title to residential property in Temple, Texas.\nPetition filed: March 14, 2025. Citation issued: September 11, 2026.\nAnswer due: by 10:00 AM on the first Monday after 42 days from issuance, which by our count is Monday, October 26, 2026. Confirm the date with the Bell County District Clerk; a default judgment may be taken against a defendant who does not answer.\nPublished in the Killeen Daily Herald on October 1, 8, 15 and 22, 2026.\nDefendant names and the property address are in the published notice linked below and in the court file; they are not repeated here.",
+      "received": "2026-10-15T12:00:00Z",
+      "source_label": "Witnessed by Scott Weeden (Killeen Daily Herald legal notices)",
+      "links": [
+        {
+          "url": "/assets/meseeks/kdh-2026-10-15-citation-25DCV352411.jpg",
+          "label": "Published notice (KDH clipping)"
+        },
+        {
+          "url": "https://texaslawhelp.org",
+          "label": "TexasLawHelp.org: answering a lawsuit"
+        }
+      ],
+      "in_reply_to": null,
+      "hash": "4e0fe5cebd1e0ab9",
+      "thread": 0,
+      "updated": "2026-10-15T12:00:00Z"
     }
   ]
 }

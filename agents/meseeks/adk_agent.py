@@ -47,7 +47,7 @@ from .guardrails import (
     sender_domain,
     to_post,
 )
-from .run import DATA, LOG, expire, load_data, load_firm_domains
+from .run import DATA, LOG, expire, load_data, load_firm_domains, order_posts
 
 ROOT = Path(__file__).resolve().parents[2]
 
@@ -296,7 +296,7 @@ def apply_guardrails(callback_context) -> types.Content | None:
                     question_ids.add(post["id"])
                 entry["post_id"] = post["id"]
         audit.append(entry)
-    data["posts"].sort(key=lambda p: p["received"], reverse=True)
+    data["posts"] = order_posts(data["posts"])
     data["generated_utc"] = now.strftime("%Y-%m-%dT%H:%M:%SZ")
 
     published = [a for a in audit if a["publish"]]

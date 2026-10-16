@@ -286,6 +286,7 @@ def to_post(msg: Inbound, category: str, firm_domains: set[str], witnessed_by: s
         "title": subject[:140],
         "body": body,
         "received": msg.received.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "updated": msg.received.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "source_label": source_label,
         "links": extract_links(msg.body),
         "in_reply_to": msg.in_reply_to if category == "answer" else None,
