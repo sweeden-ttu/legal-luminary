@@ -155,9 +155,11 @@ layout: candidates-root
                         {% endfor %}
                     </ul>
                     {% else %}
+                    {% unless page.path contains "courts/jp/" %}
                     <p class="profile-sidebar__empty">
                         No news articles on record for this judicial officer. Check back as we add coverage from local news sources.
                     </p>
+                    {% endunless %}
                     {% endif %}
                 </div>
 

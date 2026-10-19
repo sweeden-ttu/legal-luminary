@@ -45,7 +45,7 @@ last_updated: 2026-06-09
 
 | Precinct | Judge | Status |
 |----------|-------|--------|
-{% for j in site.candidates %}{% if j.path contains "courts/jp/" %}| {{ j.office }} | **[{{ j.title }}]({{ j.url }})** | {% if j.incumbent %}Incumbent{% else %}Candidate{% endif %} |
+{% for j in site.candidates %}{% if j.path contains "courts/jp/" %}| {{ j.office }} | **[{{ j.title }}]({{ j.url }})** | {% if j.incumbent %}Incumbent{% elsif j.election_status == "general_2026" %}Candidate{% elsif j.election_status == "former" %}Former{% endif %} |
 {% endif %}{% endfor %}
 
 ## Visiting Senior Judges

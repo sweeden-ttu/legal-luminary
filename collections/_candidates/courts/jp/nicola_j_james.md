@@ -51,8 +51,6 @@ professional_history: '**Bell County Precinct 4 Place 2** — Justice of the Pea
 
   '
 odyssey_results_placeholder: Court case records and JP court statistics will be added here.
-facebook_url: https://www.facebook.com/kdhnews/posts/three-candidates-have-filed-for-justice-of-the-peace-precinct-4-place-2-in-bell-/1457676362973180/
-linkedin_url: https://kdhnews.com/harker_heights_herald/community/judge-nicola-james-to-seek-reelection-to-bell-county-precinct-4-place-2-jp-post/article_568ac374-58ea-4a72-b260-65987c3ee881.html
 instagram_url: https://www.instagram.com/james4txjustice/
 ---
 Nicola J. James is the incumbent Justice of the Peace for Bell County Precinct 4, Place 2. She was first elected to the bench but lost the March 2026 Democratic primary for re-election. Her term expires December 31, 2026.

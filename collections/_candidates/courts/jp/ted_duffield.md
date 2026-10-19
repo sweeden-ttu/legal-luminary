@@ -11,7 +11,7 @@ candidate_slug: ted_duffield
 headshot: null
 election_status: seated
 office_up_for_election: false
-notes: Sitting Justice of the Peace for Bell County Precinct 1. Term expires 12/31/28.
+notes: Sitting Justice of the Peace for Bell County Precinct 1.
 profile_summary: 'Ted Duffield is the Justice of the Peace for Bell County Precinct 1. Justice of the Peace courts in Texas
   have jurisdiction over Class C misdemeanor criminal cases, minor civil matters (up to $20,000), eviction cases, and certain
   family law matters such as emergency protective orders.
@@ -25,7 +25,7 @@ profile_summary: 'Ted Duffield is the Justice of the Peace for Bell County Preci
   and surrounding communities. His court is one of the first points of contact many citizens have with the judicial system.
 
 
-  JP Duffield''s term expires December 31, 2028. The position is a partisan elected office, and he serves as a Republican.
+  The position is a partisan elected office, and he serves as a Republican.
 
   '
 credentials: '**Office**
@@ -45,7 +45,7 @@ credentials: '**Office**
   '
 professional_history: '**Bell County Precinct 1** — Justice of the Peace
 
-  Presides over Class C misdemeanors, small claims up to $20,000, evictions, and protective orders. Term expires 2028.
+  Presides over Class C misdemeanors, small claims up to $20,000, evictions, and protective orders.
 
   '
 odyssey_results_placeholder: Court case records and JP court statistics will be added here.

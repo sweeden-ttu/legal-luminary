@@ -1,7 +1,7 @@
 ---
 layout: candidate-profile
 title: Rosanne Fisher
-office: Justice of the Peace, Precinct 3
+office: Justice of the Peace, Precinct 3, Place 1
 incumbent: true
 jurisdiction: Bell County
 party: Republican

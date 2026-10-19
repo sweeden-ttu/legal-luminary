@@ -66,16 +66,3 @@ odyssey_statistics:
 
 ---
 Gregory Johnson is the Justice of the Peace for Bell County Precinct 4, Place 1, serving the Killeen area of Bell County.
-
-
-## Case Load & Decision Summary
-
-Based on an analysis of **6322** recently resolved cases, the following is a summary of the judge's major caseload and how they typically decide them.
-
-The **Success Rate** measures how often the Plaintiff/Filer (e.g., the landlord, debt collector, or state) wins a judgment. Cases that were dismissed or resulted in a judgment for the defendant lower this rate. Active or pending cases are excluded.
-
-| Case Type | Resolved Cases | Plaintiff Success Rate |
-|---|---|---|
-| Contract: Evictions - Residential | 4248 | **83.1%** |
-| Debt/Contract: Debt Collection | 1016 | **77.2%** |
-| Other Civil: Small Claims | 508 | **58.3%** |
