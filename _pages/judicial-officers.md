@@ -45,8 +45,15 @@ last_updated: 2026-06-09
 
 | Precinct | Judge | Status |
 |----------|-------|--------|
-{% for j in site.candidates %}{% if j.path contains "courts/jp/" %}| {{ j.office }} | **[{{ j.title }}]({{ j.url }})** | {% if j.incumbent %}Incumbent{% elsif j.election_status == "general_2026" %}Candidate{% elsif j.election_status == "former" %}Former{% endif %} |
-{% endif %}{% endfor %}
+{% for j in site.candidates %}{% if j.path contains "courts/jp/" %}{% unless j.election_status == "former" or j.election_status == "primary_defeated" %}| {{ j.office }} | **[{{ j.title }}]({{ j.url }})** | {% if j.listing_status %}{{ j.listing_status }}{% elsif j.incumbent %}Incumbent{% elsif j.election_status == "general_2026" %}Candidate{% endif %} |
+{% endunless %}{% endif %}{% endfor %}
+
+### Former Justices of the Peace & Past Candidates
+
+| Judge / Candidate | Office | Status |
+|-------------------|--------|--------|
+{% for j in site.candidates %}{% if j.path contains "courts/jp/" %}{% if j.election_status == "former" or j.election_status == "primary_defeated" %}| **[{{ j.title }}]({{ j.url }})** | {{ j.office }} | {{ j.listing_status }} |
+{% endif %}{% endif %}{% endfor %}
 
 ## Visiting Senior Judges
 

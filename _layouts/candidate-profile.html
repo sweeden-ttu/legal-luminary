@@ -85,6 +85,8 @@ layout: candidates-root
                     <span class="profile-hero__election-tag">Senior / Visiting Judge</span>
                     {% elsif page.election_status == "former" %}
                     <span class="profile-hero__election-tag">Former Judge</span>
+                    {% elsif page.election_status == "primary_defeated" %}
+                    <span class="profile-hero__election-tag">Past Candidate</span>
                     {% endif %}
                 </div>
                 <h1 class="profile-hero__name" id="profile-name">

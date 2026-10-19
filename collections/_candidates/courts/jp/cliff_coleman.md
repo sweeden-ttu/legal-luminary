@@ -11,9 +11,12 @@ candidate_slug: cliff_coleman
 headshot: null
 election_status: former
 office_up_for_election: false
+listing_status: Former (resigned July 20, 2026)
 notes: Former Justice of the Peace for Precinct 2. Did not seek re-election in 2026.
 profile_summary: 'Cliff Coleman served as the Justice of the Peace for Bell County Precinct 2. He did not seek re-election
-  in 2026.
+  in 2026, and he resigned effective July 20, 2026 to take a position with the Bell County Sheriff''s Office ([Killeen Daily Herald](https://kdhnews.com/news/region/judge-cliff-coleman-announces-resignation-move-to-sheriffs-office/article_26c48db0-d050-5eaf-924f-079fb4b118eb.html)).
+  As of August 2026 he was the Sheriff''s Office public information officer ([KDH](https://kdhnews.com/news/region/two-killed-in-apache-helicopter-crash-near-salado-causing-fire-that-forces-evacuations/article_4a10c5ee-9704-547e-992a-21e178dcb999.html)).
+  Michael Tice now serves as Justice of the Peace for Precinct 2.
 
 
   As JP for Precinct 2, Judge Coleman has served the citizens of his precinct, which includes Salado and surrounding areas
