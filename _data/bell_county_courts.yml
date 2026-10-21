@@ -1,0 +1,154 @@
+# Bell County page (/bell-county/) directory data.
+# Only judge names and phone/fax numbers confirmed by an official source or
+# two independent sources are listed. Unconfirmed numbers are left out
+# (phone: null) and the page points readers to the County Clerk instead.
+# Court coordinators and court reporters are intentionally not listed.
+verified_on: "2026-10-20"
+verified_on_text: "October 20, 2026"
+
+courthouse:
+  name: Bell County Justice Center
+  address: "1201 Huey Road, Belton, TX 76513"
+
+county_clerk:
+  name: County Clerk
+  phone: "(254) 933-5160"
+  tel: "+12549335160"
+  note: Records for the County Courts at Law
+  sources: [txdir-county, texasfile-clerk, brb]
+
+courts:
+  - id: d27
+    group: district
+    court: 27th District Court
+    judge: Debbie Garrett
+    phone: "(254) 933-5261"
+    tel: "+12549335261"
+    fax: "(254) 933-5977"
+    next_election: "2028"
+    official_url: https://www.bellcountytx.com/county_government/district_courts/27th_district_court/index.php
+    sources: [oca-district, lampasas-27, kdh-retire, txdir-gauntt]
+  - id: d146
+    group: district
+    court: 146th District Court
+    judge: Mike Russell
+    phone: "(254) 933-6737"
+    tel: "+12549336737"
+    next_election: "2028"
+    official_url: https://www.bellcountytx.com/county_government/district_courts/146th_district_court/index.php
+    sources: [oca-district, kdh-retire, kdh-swearin, solosuit-146]
+  - id: d169
+    group: district
+    court: 169th District Court
+    judge: Cari L. Starritt-Burnett
+    phone: "(254) 933-5265"
+    tel: "+12549335265"
+    ballot_2026: true
+    official_url: https://www.bellcountytx.com/county_government/district_courts/169th_district_court/index.php
+    sources: [oca-district, gov-starritt, bell2026]
+  - id: d264
+    group: district
+    court: 264th District Court
+    judge: Paul L. LePak
+    phone: "(254) 933-5245"
+    tel: "+12549335245"
+    ballot_2026: true
+    official_url: https://www.bellcountytx.com/county_government/district_courts/264th_district_court/index.php
+    sources: [oca-district, gov-lepak, txdir-lepak]
+  - id: d426
+    group: district
+    court: 426th District Court
+    judge: Steve Duskie
+    phone: "(254) 933-5246"
+    tel: "+12549335246"
+    next_election: "2028"
+    official_url: https://www.bellcountytx.com/county_government/district_courts/426th_district_court/index.php
+    sources: [oca-district, ballotready-duskie]
+  - id: d478
+    group: district
+    court: 478th District Court
+    judge: Wade Faulkner
+    phone: "(254) 933-5706"
+    tel: "+12549335706"
+    ballot_2026: true
+    official_url: https://www.bellcountytx.com/county_government/district_courts/478th_judicial_district_court/index.php
+    sources: [oca-district, gov-faulkner, branch-478]
+  - id: ccl1
+    group: county
+    court: County Court at Law No. 1
+    judge: Paul A. Motz
+    phone: null
+    fax: "(254) 933-5705"
+    ballot_2026: true
+    official_url: https://www.bellcountytx.com/county_government/county_courts/court_at_law_1/index.php
+    sources: [oca-ccl, trellis-commercial, goodparty-motz, bell2026]
+  - id: ccl2
+    group: county
+    court: County Court at Law No. 2
+    judge: John Mischtian
+    phone: "(254) 933-5125"
+    tel: "+12549335125"
+    fax: "(254) 933-5256"
+    ballot_2026: true
+    official_url: https://www.bellcountytx.com/county_government/county_courts/court_at_law_2/index.php
+    sources: [oca-ccl, justia-mischtian, bell2026]
+  - id: ccl3
+    group: county
+    court: County Court at Law No. 3
+    judge: Rebecca DePew
+    phone: null
+    fax: "(254) 933-5792"
+    ballot_2026: true
+    note: Judge DePew is retiring; the seat is on the November 3, 2026 ballot.
+    official_url: https://www.bellcountytx.com/county_government/county_courts/court_at_law_3/index.php
+    sources: [oca-ccl, swagit-oath, kdh-ccl3, recordsfinder]
+
+offices:
+  - title: District Attorney
+    name: Stephanie Newell
+    role: Prosecutes felonies in the District Courts.
+    phone: "(254) 933-5215"
+    tel: "+12549335215"
+    sources: [kdh-newell, txdir-county, justia-newell, muckrock-da]
+  - title: County Attorney
+    name: James E. (Jim) Nichols
+    role: "Prosecutes Class A and B misdemeanors in the County Courts at Law. Office: Bell County Courthouse Annex, 550 East 2nd Avenue, Belton, TX 76513."
+    phone: null
+    sources: [kdh-swearin, kdh-nichols, txdir-county]
+
+source_groups:
+  - key: official
+    title: Official sources
+  - key: news
+    title: News
+  - key: directory
+    title: Directories and election guides
+
+sources:
+  - {n: 1, id: oca-district, group: official, publisher: Texas Office of Court Administration, title: "District Judges by Judicial District (May 2, 2023)", url: "https://www.txcourts.gov/media/1456598/district-judges-by-judicial-district.pdf"}
+  - {n: 2, id: oca-ccl, group: official, publisher: Texas Office of Court Administration, title: "County Courts at Law and Statutory Probate Courts directory", url: "https://www.txcourts.gov/media/1460596/county-courts-at-law-statutory-probate-courts.pdf"}
+  - {n: 3, id: lampasas-27, group: official, publisher: Lampasas County, title: "27th District Court", url: "https://newtools.cira.state.tx.us/page/lampasas.District.Court"}
+  - {n: 4, id: gov-starritt, group: official, publisher: Office of the Texas Governor, title: "Governor Abbott Appoints Starritt-Burnett To 169th Judicial District Court", url: "https://gov.texas.gov/news/post/governor-abbott-appoints-starritt-burnett-to-169th-judicial-district-court"}
+  - {n: 5, id: gov-lepak, group: official, publisher: Office of the Texas Governor, title: "Governor Abbott Appoints LePak Judge Of The 264th Judicial District Court", url: "https://gov.texas.gov/news/post/governor-abbott-appoints-lepak-judge-of-the-264th-judicial-district-court"}
+  - {n: 6, id: gov-faulkner, group: official, publisher: Office of the Texas Governor, title: "Governor Abbott Appoints Faulkner To 478th Judicial District Court", url: "https://gov.texas.gov/news/post/governor-abbott-appoints-faulkner-to-478th-judicial-district-court"}
+  - {n: 7, id: swagit-oath, group: official, publisher: Bell County (meeting video archive), title: "Oath of office ceremony: District and County Court at Law judges", url: "https://bellcountytx.new.swagit.com/videos/247562"}
+  - {n: 8, id: kdh-retire, group: news, publisher: Killeen Daily Herald, title: "Retiring Bell County judges Jones, Gauntt recognized", url: "https://kdhnews.com/news/region/retiring-bell-county-judges-jones-gauntt-recognized/article_933979a8-2023-5696-8ade-192f7af585a4.html"}
+  - {n: 9, id: kdh-swearin, group: news, publisher: Killeen Daily Herald, title: "Bell County rings in new year by swearing in elected officials", url: "https://kdhnews.com/news/region/bell-county-rings-in-new-year-by-swearing-in-elected-officials/article_878b3459-1a41-52ae-8110-9a069837be02.html"}
+  - {n: 10, id: kdh-newell, group: news, publisher: Killeen Daily Herald, title: "Stephanie Newell takes office as Bell County's new DA", url: "https://kdhnews.com/news/region/let-the-work-begin-stephanie-newell-takes-office-as-bell-county-s-new-da/article_4a74f521-b261-53f2-b5c8-f5e67d023c59.html"}
+  - {n: 11, id: kdh-nichols, group: news, publisher: Killeen Daily Herald, title: "Nichols on way to another term as Bell County attorney", url: "https://kdhnews.com/news/region/nichols-on-way-to-another-term-as-bell-county-attorney/article_c1e86097-ceff-59fc-8269-d6a45bc97ca1.html"}
+  - {n: 12, id: kdh-ccl3, group: news, publisher: Killeen Daily Herald, title: "Fourth-generation lawyer launches campaign for Bell County Court at Law #3", url: "https://kdhnews.com/news/region/fourth-generation-lawyer-launches-campaign-for-bell-county-court-at-law-3/article_ea7e20e4-27c6-54df-877b-ca20a9b769e2.html"}
+  - {n: 13, id: txdir-county, group: directory, publisher: Texas State Directory, title: "Counties: Bell", url: "https://txdirectory.com/online/county/detail.php?id=14"}
+  - {n: 14, id: txdir-gauntt, group: directory, publisher: Texas State Directory, title: "State District Judge, District 27 (Bell)", url: "https://txdirectory.com/online/person/?id=44632"}
+  - {n: 15, id: txdir-lepak, group: directory, publisher: Texas State Directory, title: "The Honorable Paul LePak", url: "https://www.txdirectory.com/online/person/?id=61706"}
+  - {n: 16, id: justia-newell, group: directory, publisher: Justia, title: "Stephanie Rae Newell", url: "https://lawyers.justia.com/lawyer/stephanie-rae-newell-229329"}
+  - {n: 17, id: justia-mischtian, group: directory, publisher: Justia, title: "John Michael Mischtian", url: "https://lawyers.justia.com/lawyer/john-michael-mischtian-278475"}
+  - {n: 18, id: trellis-commercial, group: directory, publisher: Trellis, title: "Bell County District Courts case search", url: "https://trellis.law/coverage/texas/bell/commercial"}
+  - {n: 19, id: goodparty-motz, group: directory, publisher: GoodParty.org, title: "Paul Motz", url: "https://goodparty.org/people/paul-motz-5340c50e"}
+  - {n: 20, id: ballotready-duskie, group: directory, publisher: BallotReady, title: "Steve Duskie", url: "https://www.ballotready.org/people/steve-duskie"}
+  - {n: 21, id: branch-478, group: directory, publisher: Branch, title: "Texas District Judge, District 478 (2026 general election)", url: "https://branch.vote/races/2026-texas-general-election-tx-state-district-judge-tx-judicial-district-478"}
+  - {n: 22, id: bell2026, group: directory, publisher: Bell County 2026 voter guide, title: "Other countywide races", url: "https://sites.google.com/view/bellcounty2026/other-countywide-races"}
+  - {n: 23, id: texasfile-clerk, group: directory, publisher: TexasFile, title: "Bell County Clerk", url: "https://www.texasfile.com/texas-deed-records-directory/bell-county-clerk/"}
+  - {n: 24, id: brb, group: directory, publisher: BRB Publications, title: "Bell County, TX public records", url: "https://brbpublications.com/free-sites/county/48027"}
+  - {n: 25, id: recordsfinder, group: directory, publisher: RecordsFinder, title: "Bell County courthouses", url: "https://recordsfinder.com/court/courthouses/tx/bell/"}
+  - {n: 26, id: solosuit-146, group: directory, publisher: SoloSuit, title: "146th Judicial District, Bell County", url: "https://www.solosuit.com/court/district-146th-judicial-bell-county-texas"}
+  - {n: 27, id: muckrock-da, group: directory, publisher: MuckRock, title: "Bell County District Attorney's Office", url: "https://www.muckrock.com/agency/bell-county-2553/bell-county-district-attorneys-office-27538/"}

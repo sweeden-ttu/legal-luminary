@@ -254,6 +254,7 @@
           sidebar-feed.html now renders the RSS-based legal news widget site-wide.
           sidebar-news-feed.html is deprecated to avoid duplicate widgets.
           {%- endcomment -%}
+          {% unless page.hide_sidebar_listings %}
           <div class="ad-section" aria-label="Sponsored legal providers">
             <span class="ad-label">ADVERTISEMENT</span>
             {% if page.sidebar_ads_content %}
@@ -268,6 +269,7 @@
             {% include ads-general.html %}
             {% endif %}
           </div>
+          {% endunless %}
           <div class="sidebar-info">
             <h3>Need Legal Help?</h3>
             <p>The attorneys featured on this site are ready to assist individuals with their legal matters in Bell County and throughout Texas.</p>
@@ -305,7 +307,7 @@
       </div>
       <div class="footer-bottom">
         <p>&copy; {{ 'now' | date: "%Y" }} Central Texas Legal Resource. All rights reserved.</p>
-        <p class="attorney-advertising"><strong>ADVERTISEMENT</strong> — This website contains attorney advertising. Prior results do not guarantee a similar outcome. The outcome of any case depends on numerous factors unique to that case.</p>
+        <p class="attorney-advertising">{% unless page.hide_ad_label %}<strong>ADVERTISEMENT</strong> — {% endunless %}This website contains attorney advertising. Prior results do not guarantee a similar outcome. The outcome of any case depends on numerous factors unique to that case.</p>
       </div>
     </div>
   </footer>
