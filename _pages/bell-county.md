@@ -26,7 +26,8 @@ hide_ad_label: true
 .bc-table caption{text-align:left;font-weight:700;font-size:1.15rem;color:var(--navy-dark,#0f233c);padding:0 0 .5rem}
 .bc-table th,.bc-table td{text-align:left;vertical-align:top;padding:.7rem .75rem;border-bottom:1px solid var(--gray-light,#e8e6e1)}
 .bc-table thead th{background:var(--navy-dark,#0f233c);color:#fff;font-size:.8rem;letter-spacing:.04em;text-transform:uppercase}
-.bc-table tbody th{font-weight:700}
+.bc-table tbody th{background:transparent;color:var(--text,#1f2937);font-family:inherit;font-size:inherit;font-weight:700;text-transform:none;letter-spacing:normal}
+.bc-table tbody tr:hover th{background:var(--cream,#f8f6f1)}
 .bc-table tbody th a{color:var(--navy,#1a3a5c)}
 .bc-tel{white-space:nowrap;font-weight:700}
 .bc-fax,.bc-note,.bc-src{display:block;font-size:.8rem;color:var(--gray-dark,#374151);margin-top:.2rem}
