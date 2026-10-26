@@ -3,52 +3,62 @@ permalink: /about/
 layout: default
 title: About
 hero: true
-hero_title: "About Central Texas Legal Resource"
-hero_subtitle: "Connecting Bell County residents with qualified legal representation"
-description: "Learn about Central Texas Legal Resource, our mission, and our commitment to helping Central Texas residents find qualified legal representation."
-verified_at: 2026-02-11
+hero_title: "Expanding the Mission of LegalLuminary.com"
+hero_subtitle: "Creating Choices. Revealing Evidence. Advancing Accountability."
+description: "LegalLuminary.com works to expand electoral participation, illuminate patterns in judicial decision-making, and make the process of obtaining and holding judicial office transparent to the public."
+verified_at: 2026-10-26
 ---
 
-## Our Mission
+LegalLuminary.com seeks to do more than inform the public about judicial elections. Its mission is to help expand meaningful electoral participation, illuminate patterns in judicial decision-making, and make the process of obtaining and holding judicial office more transparent to the citizens those offices serve.
 
-Central Texas Legal Resource was created to serve the residents of Bell County and the surrounding Central Texas area by providing reliable legal information and connecting individuals with qualified attorneys who can help with their specific legal needs.
+**How can voters hold judicial officials accountable if they have little information about who holds these positions, how they obtained them, or what opportunities exist to challenge them?**
 
-<div class="info-box">
-<h4>What We Do</h4>
-<p>We provide educational content about Texas law and legal procedures, while featuring experienced local attorneys who are ready to assist with criminal defense and personal injury matters.</p>
-</div>
+### Bringing Choices to Uncontested Elections
 
-## Why We Exist
+When a judicial office has only one candidate, LegalLuminary.com will investigate the circumstances, identify applicable eligibility requirements, and publish official filing procedures, deadlines, forms, and resources available to qualified individuals who may wish to seek that office. The objective is to make opportunities for participation more visible, reduce information barriers where possible, and encourage a more informed and engaged electorate—not to presume that every uncontested race reflects a failure.
 
-Navigating the legal system can be overwhelming, especially when individuals are facing criminal charges or dealing with injuries from an accident. Many people don't know where to turn or what to expect. Our goal is to:
+**If an election offers voters only one candidate, how many qualified individuals might consider serving if they knew the position was available and understood how to get on the ballot?**
 
-<ul class="check-list">
-<li><strong>Educate</strong> — Provide clear, accessible information about Texas law and Bell County court procedures</li>
-<li><strong>Connect</strong> — Help people find qualified attorneys with relevant experience for their specific legal needs</li>
-<li><strong>Support</strong> — Serve as a trusted resource for Central Texas residents during challenging times</li>
-</ul>
+### Making Judicial Records and Trends Accessible
 
-## Our Service Area
+LegalLuminary.com will collect and analyze available judicial decisions, public records, and relevant case data to examine patterns in judicial outcomes, decision-making, and potential disparities. Where the evidence permits, research will explore differences across case types, jurisdictions, time periods, and legally relevant circumstances. Findings will distinguish observable patterns from possible explanations, acknowledge limitations, and avoid attributing personal bias or intent without adequate supporting evidence.
 
-We focus on Bell County and Central Texas, including the communities of:
+**If judicial decisions can profoundly affect people's lives, shouldn't the public have access to reliable evidence that helps explain how those decisions are made and whether meaningful patterns or disparities exist?**
 
-- Killeen
-- Temple
-- Belton
-- Harker Heights
-- Copperas Cove
-- Nolanville
-- Salado
-- And surrounding areas
+### Making the Status of Every Judicial Office Visible
 
-## For Attorneys
+The project will work toward a comprehensive, regularly updated inventory that distinguishes elected offices from appointed positions, temporary or interim appointments, offices scheduled for election, and actual vacancies. Each listing will identify the relevant jurisdiction, the office's current status, the method of selection, the applicable term or appointment period where verified, and links to authoritative records.
 
-Licensed Texas attorneys interested in being featured on this site should visit the [advertising page](/advertise/) for more information.
+**How can citizens understand their opportunities to influence the judiciary if they cannot readily determine which offices are elected, which are appointed, which are temporarily occupied, and which are vacant?**
 
-<div class="legal-notice">
-<strong>Important Disclaimer:</strong> Central Texas Legal Resource provides general legal information only. This website does not constitute legal advice and does not create an attorney-client relationship. The information provided is for educational purposes and should not be relied upon as a substitute for consultation with a licensed Texas attorney regarding specific legal situations. Each legal matter is unique and requires individual analysis by a qualified professional.
-</div>
+### Turning Vacancies into Transparent Opportunities for Public Service
 
-## Contact
+Whenever a judicial vacancy or upcoming election presents an opportunity for qualified candidates to apply or file, LegalLuminary.com will provide the official application or filing documents, eligibility criteria, relevant deadlines, submission instructions, and links to the responsible election authority or appointing body. Where the process differs between an appointment and an election, that distinction will be clearly explained. If no current filing opportunity exists, the project will identify the next applicable process when it can be verified.
 
-For questions about this website or advertising opportunities, please use the contact information provided on our [advertising page](/advertise/).
+**Shouldn't every qualified person have a fair opportunity to discover an open judicial position, understand the requirements, and determine whether they can serve their community?**
+
+### Following the Evidence from Appointment to Accountability
+
+The project will document how vacancies arise, how appointments are made, whether interim officeholders subsequently face election, and what opportunities the public has to evaluate those who exercise judicial authority. By tracing these events over time, LegalLuminary.com will help citizens understand not only who holds judicial office, but how that authority was obtained and what mechanisms exist for public oversight.
+
+**When an appointment places someone in a position of substantial judicial authority, shouldn't the public be able to trace how that appointment occurred and when, if ever, voters will have a say in who holds the office?**
+
+### Building Trust Through Responsible AI and Verifiable Research
+
+Through responsible AI-assisted research, verifiable data, direct source links, consistent methodology, and transparent disclosure of relevant financial interests and potential conflicts, LegalLuminary.com will strive to create a trusted public resource for understanding the judiciary. AI will help organize information, analyze records, identify gaps, and surface questions for further investigation, while human review and authoritative evidence remain essential to validating findings.
+
+**In an age when information can be generated instantly but accuracy cannot be assumed, shouldn't every important claim about a judicial candidate or decision be traceable to real evidence and open to independent scrutiny?**
+
+### The Goal: A More Informed and Engaged Electorate
+
+The ultimate goal is a judicial electoral landscape in which offices are visible, opportunities to serve are understandable, research is open to scrutiny, and voters are equipped to make informed decisions. Success will be measured not by whether the project advances a particular candidate or political viewpoint, but by the accuracy, transparency, accessibility, and usefulness of its work.
+
+**What would our democracy look like if every voter could understand the judicial choices before them, every qualified prospective candidate could discover an opportunity to serve, and every public claim could be tested against the evidence?**
+
+A judicial office should never be invisible to the public simply because the election receives little attention. A vacancy should not be an unexplained gap in public knowledge. And an uncontested race should not mean that the public is unaware of its options.
+
+**If judicial authority belongs to the public trust, shouldn't public knowledge be the foundation upon which that trust is earned?**
+
+---
+
+*LegalLuminary.com — Every office. Every opportunity. Every claim. A verifiable source.*
