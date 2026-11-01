@@ -5,9 +5,13 @@ title: About
 hero: true
 hero_title: "Expanding the Mission of LegalLuminary.com"
 hero_subtitle: "Creating Choices. Revealing Evidence. Advancing Accountability."
-description: "LegalLuminary.com works to make the judiciary accountable to the people: to expand electoral participation, illuminate patterns in judicial decision-making, and make the process of obtaining and holding judicial office transparent to the public."
-verified_at: 2026-10-26
+description: "LegalLuminary.com provides accurate, transparent, and verifiable information about judicial candidates and elections, so voters can make informed decisions. It works to expand electoral participation, illuminate patterns in judicial decision-making, and make the process of obtaining and holding judicial office transparent to the public."
+verified_at: 2026-11-01
 ---
+
+## Our Mission
+
+> **Our mission is to provide the public with accurate, transparent, and verifiable information about judicial candidates and elections, empowering voters to make fair and informed decisions about the candidates on their ballots.**
 
 LegalLuminary.com seeks to do more than inform the public about judicial elections. Its mission is to help expand meaningful electoral participation, illuminate patterns in judicial decision-making, and make the process of obtaining and holding judicial office more transparent to the citizens those offices serve.
 
@@ -39,7 +43,7 @@ The project will work toward a comprehensive, regularly updated inventory that d
 
 ### Turning Vacancies into Transparent Opportunities for Public Service
 
-Whenever a judicial vacancy or upcoming election presents an opportunity for qualified candidates to apply or file, LegalLuminary.com will provide the official application or filing documents, eligibility criteria, relevant deadlines, submission instructions, and links to the responsible election authority or appointing body. Where the process differs between an appointment and an election, that distinction will be clearly explained. If no current filing opportunity exists, the project will identify the next applicable process when it can be verified.
+Whenever a judicial vacancy or upcoming election presents an opportunity for qualified candidates to apply or file, LegalLuminary.com will provide the official application or filing documents, eligibility criteria, relevant deadlines, submission instructions, and links to the responsible election authority or appointing body. Where the process differs between an appointment and an election, that distinction will be clearly explained. If no current filing opportunity exists, the project will identify the next applicable process when it can be verified. Start with our guide, [How to Run for Judge in Bell County](/run-for-judge/), which sets out the eligibility rules, fees, signature requirements, deadlines and filing offices, with the law behind each one.
 
 **How can we make sure that when a judicial seat opens, qualified people in the community know about it, understand the requirements, and can put their names before the voters?**
 
@@ -54,6 +58,17 @@ The project will document how vacancies arise, how appointments are made, whethe
 Through responsible AI-assisted research, verifiable data, direct source links, consistent methodology, and transparent disclosure of relevant financial interests and potential conflicts, LegalLuminary.com will strive to create a trusted public resource for understanding the judiciary. AI will help organize information, analyze records, identify gaps, and surface questions for further investigation, while human review and authoritative evidence remain essential to validating findings.
 
 **How can we make every claim about a judge or candidate traceable to real evidence, so that voters, not rumor or marketing, decide who sits on the bench?**
+
+### Our Right to Research and Publish
+
+LegalLuminary.com is researched and published by Scott Weeden as an independent public-service project. No license, registration or government permission is required to research and publish information about judges, judicial candidates or elections. That right rests on:
+
+- **The First Amendment** to the U.S. Constitution, and **[Texas Constitution art. I, §8](https://tcss.legis.texas.gov/resources/cn/htm/cn.1.htm#1.8)**: "Every person shall be at liberty to speak, write or publish his opinions on any subject, being responsible for the abuse of that privilege; and no law shall ever be passed curtailing the liberty of speech or of the press."
+- **The constitutional standard for speech about public officials and candidates.** An official or candidate who sues over a published statement must prove it was made with actual malice, meaning the publisher knew it was false or recklessly disregarded whether it was ([*New York Times Co. v. Sullivan*, 376 U.S. 254 (1964)](https://supreme.justia.com/cases/federal/us/376/254/); [*Monitor Patriot Co. v. Roy*, 401 U.S. 265 (1971)](https://law.justia.com/cases/federal/us/401/265/)).
+- **The Texas Citizens Participation Act** ([Civ. Prac. & Rem. Code ch. 27](https://tcss.legis.texas.gov/resources/cp/htm/cp.27.htm)), which protects speech on matters of public concern, including speech about public officials and political matters, by allowing early dismissal of lawsuits brought to silence it.
+- **Open records.** The [Public Information Act](https://tcss.legis.texas.gov/resources/gv/htm/gv.552.htm) gives any person access to the records of county government, including the commissioners court that appoints justices of the peace. Court case records are public through the courts themselves, such as the [Bell County public case portal](https://justice.bellcounty.texas.gov/PublicPortal/).
+
+That right carries responsibilities, and we accept them. Every statement on this site is tied to a public source so it can be checked. The site does not endorse any candidate and carries no paid advertising. Its legal information is general information and is not a substitute for the advice of an attorney ([Gov't Code §81.101(c)](https://tcss.legis.texas.gov/resources/gv/htm/gv.81.htm#81.101)). Corrections are welcome on our [corrections page](/corrections/).
 
 ### The Goal: A More Informed and Engaged Electorate
 

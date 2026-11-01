@@ -840,3 +840,9 @@ ul.check-list li::before { content: "✓"; position: absolute; left: 0; color: v
   margin: 0 0 0.5rem;
 }
 .sidebar-sources .sidebar-feed-title { font-size: 0.9375rem; }
+
+/* Wide tables scroll inside their own box on small screens instead of widening the page */
+.table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; max-width: 100%; }
+.table-scroll table { margin: 0; }
+/* Let the main column shrink to the screen instead of growing to fit its widest content */
+.content-wrapper > .main-content { min-width: 0; }
