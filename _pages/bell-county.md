@@ -171,9 +171,9 @@ When selecting an attorney in Bell County:
 </div>
 
 <div class="card">
-<h3>Personal Injury</h3>
-<p>Connect with injury attorneys who handle Bell County cases.</p>
-<a href="/personal-injury/" class="btn btn-primary">Injury Attorneys</a>
+<h3>Attorney Directory</h3>
+<p>Law firms and attorneys with offices in Bell County, with websites and practice areas.</p>
+<a href="/attorneys/" class="btn btn-primary">Attorney Directory</a>
 </div>
 </div>
 

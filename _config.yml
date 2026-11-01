@@ -65,8 +65,8 @@ navigation:
     url: /candidates/courts/
   - title: Criminal Law
     url: /criminal-law/
-  - title: Personal Injury
-    url: /personal-injury/
+  - title: Attorney Directory
+    url: /attorneys/
   - title: Family Law
     url: /family-law/
   - title: Resources
@@ -116,8 +116,8 @@ navigation:
     url: /candidates/courts/
   - title: Criminal Law
     url: /criminal-law/
-  - title: Personal Injury
-    url: /personal-injury/
+  - title: Attorney Directory
+    url: /attorneys/
   - title: Family Law
     url: /family-law/
   - title: Resources

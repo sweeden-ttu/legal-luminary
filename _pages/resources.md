@@ -98,9 +98,9 @@ Bail bonds are available 24/7 through licensed bondsmen serving Bell County. Fea
 </div>
 
 <div class="card">
-<h3>Personal Injury</h3>
-<p>Connect with attorneys handling injury cases in Central Texas.</p>
-<a href="/personal-injury/" class="btn btn-primary">Injury Attorneys</a>
+<h3>Attorney Directory</h3>
+<p>Law firms and attorneys with offices in Bell County, with websites and practice areas.</p>
+<a href="/attorneys/" class="btn btn-primary">Attorney Directory</a>
 </div>
 </div>
 

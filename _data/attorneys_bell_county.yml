@@ -1,0 +1,911 @@
+compiled: '2026-11-01'
+method: 'Each entry was read from the firm''s own website on the compiled date: firm name, website, office, attorneys, practice
+  areas and the firm''s own statement of when it was founded or how long it has practiced. No paid listings.'
+firms:
+- firm: Seigman, Sinkfield & Libersky, PLLC
+  website: https://www.killeenattorneys.com/
+  city: Harker Heights
+  address: 2025 Memory Lane, Suite 400, Harker Heights, TX 76548
+  phone: (254) 781-8282
+  practice_areas:
+  - Personal Injury
+  - Family Law
+  - Criminal Defense
+  - DWI
+  attorneys:
+  - name: Thomas M. Seigman
+    title: Member
+  - name: Angela N. Sinkfield
+    title: Member
+  - name: Lynn L. Libersky
+    title: Member
+  years_in_practice_claim: in practice together for 17+ years
+  source: https://www.killeenattorneys.com/attorneys/
+  verified: '2026-11-01'
+- firm: The Law Office of Brett H. Pritchard
+  website: https://www.brettpritchardlaw.com/
+  city: Killeen
+  address: 1201 South W.S. Young Dr., Ste A, Killeen, TX 76543
+  phone: (254) 220-4225
+  practice_areas:
+  - Family Law
+  - Criminal Defense
+  - Personal Injury
+  - Estate Planning
+  - Probate
+  - Adoption
+  attorneys:
+  - name: Brett H. Pritchard
+    title: Attorney at Law
+  - name: Brent T. Sykora
+    title: Attorney at Law
+  - name: Darmeisha Slay
+    title: Attorney at Law
+  - name: Jeff Linick
+    title: Attorney at Law
+  - name: Quincy Hall
+    title: Attorney at Law
+  - name: Tal Hammock
+    title: Attorney at Law
+  - name: Brennan Diamond
+    title: Attorney at Law
+  - name: Tony Odiorne
+    title: Attorney at Law
+  - name: Ernesto Cavazos
+    title: Attorney at Law
+  years_in_practice_claim: over 19 years
+  source: https://brettpritchardlaw.com/firm-overview/
+  notes: Also has offices in Temple, Round Rock and Waco.
+  verified: '2026-11-01'
+- firm: The Carlson Law Firm
+  website: https://www.carlsonattorneys.com/
+  city: Killeen
+  address: 100 E. Central Texas Expy, Killeen, TX 76541
+  phone: (254) 526-5688
+  practice_areas:
+  - Personal Injury
+  - Wrongful Death
+  - Family Law
+  - Criminal Defense
+  - Military Law
+  - Veterans Benefits
+  attorneys:
+  - name: Craig Carlson
+    title: Managing Partner
+  - name: Steve Walden
+    title: Partner
+  - name: Timothy Roehrs
+    title: Partner
+  - name: Kyra R. Leal
+    title: Associate
+  - name: Caitlyn R. Tellez
+    title: Associate
+  - name: Blake Matthys
+    title: Associate
+  - name: E. Alejandro Lopez
+    title: Associate
+  - name: Kinsee Larae Wagner
+    title: Associate
+  founded: 1976
+  source: https://www.carlsonattorneys.com/our-team/
+  notes: Statewide firm with Killeen as its principal office; only attorneys the site ties to Killeen are listed.
+  verified: '2026-11-01'
+- firm: Corbin & Clapper, Attorneys
+  website: https://corbinlegalteam.com/
+  city: Killeen
+  address: 603 North 8th Street, Killeen, TX 76541
+  phone: (254) 526-4523
+  practice_areas:
+  - Family Law
+  - Adoption
+  - Estate Planning
+  - Probate
+  - Guardianship
+  - Personal Injury
+  - Civil Litigation
+  attorneys:
+  - name: Daniel Austin "Dan" Corbin
+    title: Attorney and CPA
+  - name: Ashley Clapper
+    title: Attorney; Board Certified, Family Law
+  source: https://corbinlegalteam.com/our-lawyers/
+  verified: '2026-11-01'
+- firm: The Lambert Law Office, PLLC
+  website: https://www.thelambertlawoffice.com/
+  city: Killeen
+  address: 4201 S Fort Hood St, Suite 103, Killeen, TX 76542
+  phone: (254) 432-4004
+  practice_areas:
+  - Family Law
+  - Mediation
+  - Business Law
+  - Trademark
+  - Estate Planning
+  - Probate
+  attorneys:
+  - name: Shinia Lambert
+    title: Attorney; former administrative law judge
+  founded: 2019
+  source: https://www.thelambertlawoffice.com/about-us
+  verified: '2026-11-01'
+- firm: Silverblatt Law Office
+  website: https://silverblattlaw.com/
+  city: Harker Heights
+  address: 120 W Central Texas Expy, Suite 104, Harker Heights, TX 76548
+  phone: (254) 634-1122
+  practice_areas:
+  - Estate Planning
+  - Probate
+  - Guardianship
+  attorneys:
+  - name: Gene Silverblatt
+    title: Attorney
+  years_in_practice_claim: over 40 years
+  source: https://silverblattlaw.com/
+  verified: '2026-11-01'
+- firm: Heritage Law
+  website: https://www.heritagelawtexas.com/
+  city: Harker Heights
+  address: 201 E Central Texas Expwy, Suite 1900, Harker Heights, TX 76548
+  phone: (254) 244-0700
+  practice_areas:
+  - Probate
+  - Estate Planning
+  - Adoption
+  - Real Estate
+  - Personal Injury
+  attorneys:
+  - name: Wendi Lester Efflandt
+    title: Managing Attorney
+  - name: Broc White
+    title: Attorney
+  - name: Keely Espindola Freund
+    title: Attorney
+  founded: 2000
+  source: https://www.heritagelawtexas.com/meet-the-team
+  notes: Also has a Georgetown office.
+  verified: '2026-11-01'
+- firm: The Tanaka Law Firm
+  website: https://www.tanakalawfirm.com/
+  city: Harker Heights
+  address: 202 E Beeline Lane, Suite 403, Harker Heights, TX 76548
+  phone: (254) 318-4126
+  practice_areas:
+  - Family Law
+  - Military Family Law
+  attorneys:
+  - name: Jonathan Tanaka
+    title: Founder
+  founded: 2023
+  source: https://www.tanakalawfirm.com/
+  verified: '2026-11-01'
+- firm: Rousseau Legal Services / Criss & Rousseau Law Firm LLP
+  website: http://militaryveteranlaw.com/
+  city: Harker Heights
+  address: 100 W Central Texas Expy, Suite 302, Harker Heights, TX 76548
+  phone: (254) 699-9999
+  practice_areas:
+  - Veterans Benefits
+  - Military Law
+  - Personal Injury
+  - Wrongful Death
+  attorneys:
+  - name: Richard "Rick" Rousseau
+    title: Attorney; retired Army colonel and former Fort Hood Staff Judge Advocate
+  - name: Susan Criss
+    title: Attorney; former judge
+  years_in_practice_claim: over a decade of VA disability law experience
+  source: http://militaryveteranlaw.com/
+  notes: Also has a Galveston office.
+  verified: '2026-11-01'
+- firm: Roberts & Roberts, LLP
+  website: https://www.robertslegalfirm.com/
+  city: Killeen
+  address: 2501 E. Elms Rd., Ste. A, Killeen, TX 76542
+  phone: (254) 526-7541
+  practice_areas:
+  - Real Estate
+  - Estate Planning
+  - Business Law
+  - Probate
+  - Family Law
+  attorneys:
+  - name: Frank Roberts
+    title: Attorney
+  - name: Burk Roberts
+    title: Attorney
+  founded: 1992
+  source: https://www.robertslegalfirm.com/thefirm.php
+  verified: '2026-11-01'
+- firm: Sims Bankruptcy Law, PLLC
+  website: https://simsbankruptcy.com/
+  city: Killeen
+  address: 810 North W.S. Young Dr, Suite 107, Killeen, TX 76543
+  phone: (254) 304-7161
+  practice_areas:
+  - Bankruptcy
+  attorneys:
+  - name: Tyler Sims
+    title: Founder
+  source: https://simsbankruptcy.com/
+  notes: Killeen office by appointment; main offices in Waco and Frisco.
+  verified: '2026-11-01'
+- firm: Law Office of Nancy Perry Eaton, PLLC
+  website: https://www.perryeatonlaw.com/
+  city: Harker Heights
+  address: 439 E. Central Texas Expressway, Suite B, Harker Heights, TX 76548
+  phone: (254) 221-8588
+  practice_areas:
+  - Family Law
+  - Military Family Law
+  - Adoption
+  - Estate Planning
+  - Probate
+  - Business Law
+  - Real Estate
+  attorneys:
+  - name: Nancy Perry Eaton
+    title: Attorney and owner
+  founded: 1992
+  source: https://www.perryeatonlaw.com/our-team/
+  verified: '2026-11-01'
+- firm: Dunham & Jones, Attorneys at Law, P.C.
+  website: https://www.dunhamjones.com/
+  city: Harker Heights
+  address: 100 W. Central Texas Expy, Suite 309, Harker Heights, TX 76548
+  phone: (254) 777-7777
+  practice_areas:
+  - Criminal Defense
+  - DWI
+  attorneys:
+  - name: Joseph Minton
+    title: Attorney
+  - name: Simon Rawls
+    title: Attorney
+  - name: Scott Sinsabaugh
+    title: Attorney
+  - name: Darren Bertin
+    title: Attorney
+  founded: 1989
+  source: https://www.dunhamjones.com/tx/bell-county-criminal-attorneys/
+  notes: Statewide firm; only attorneys the site ties to the Bell County office are listed.
+  verified: '2026-11-01'
+- firm: The Rios Law Group, PLLC
+  website: https://www.therioslaw.com/
+  city: Killeen
+  address: 310 W Central Texas Expy, Ste 1, Killeen, TX 76541
+  phone: (254) 421-5708
+  practice_areas:
+  - Immigration
+  - Criminal Defense
+  - Mediation
+  - Estate Planning
+  - Real Estate
+  - Personal Injury
+  attorneys:
+  - name: Jasmine Rios
+    title: Managing Attorney
+  - name: Maeve Bennett
+    title: Attorney
+  founded: 2021
+  source: https://www.therioslaw.com/about-us
+  verified: '2026-11-01'
+- firm: Michalk, Beatty & Alcozer, L.P.
+  website: https://mbaattorneys.com/
+  city: Killeen
+  address: 3106 S W S Young Drive, Building D Suite 401, Killeen, TX 76542
+  phone: (254) 526-3024
+  practice_areas:
+  - Civil Litigation
+  - Business Law
+  - Construction Law
+  - Personal Injury
+  - Probate
+  - Social Security Disability
+  - Real Estate
+  - Veterans Benefits
+  attorneys:
+  - name: Glenn W. Michalk
+    title: Attorney
+  - name: Jay R. Beatty
+    title: Attorney
+  - name: Manuel Alcozer
+    title: Attorney; board certified, Social Security Disability Advocacy
+  - name: Alex Bass
+    title: Attorney
+  founded: 2000
+  source: https://mbaattorneys.com/about/
+  verified: '2026-11-01'
+- firm: Bradley K. Williamson Law Office
+  website: https://bkwilliamsonlaw.com/
+  city: Harker Heights
+  address: 100 W. Central Texas Expressway, Suite 212, Harker Heights, TX 76548
+  phone: (254) 634-0604
+  practice_areas:
+  - Family Law
+  - Criminal Defense
+  - Civil Litigation
+  - Appeals
+  - Personal Injury
+  attorneys:
+  - name: Bradley K. Williamson
+    title: Attorney and owner
+  founded: 2014
+  source: https://bkwilliamsonlaw.com/about/
+  verified: '2026-11-01'
+- firm: Ted Smith Law Group, PLLC
+  website: https://www.tedsmithlawgroup.com/
+  city: Killeen
+  address: 3201 E. Stan Schlueter Loop, Suite B, Killeen, TX 76542
+  phone: (254) 690-5688
+  practice_areas:
+  - Social Security Disability
+  - Estate Planning
+  - Probate
+  - Elder Law
+  - Business Law
+  - Real Estate
+  - Personal Injury
+  attorneys:
+  - name: Ted Smith
+    title: Senior Partner
+  years_in_practice_claim: practicing in Killeen since 1976
+  source: https://www.tedsmithlawgroup.com/attorneys/ted-smith/
+  verified: '2026-11-01'
+- firm: O'Connell West, PLLC
+  website: https://www.oconnellwest.com/
+  city: Killeen
+  address: 2210 E. Central Texas Expressway, Suite 1010-B, Killeen, TX 76543
+  phone: (512) 547-7265
+  practice_areas:
+  - Criminal Defense
+  - Military Law
+  - Family Law
+  - Personal Injury
+  attorneys:
+  - name: Doug O'Connell
+    title: Attorney
+  - name: Wesley West
+    title: Attorney
+  - name: Laurie Drymalla
+    title: Attorney
+  - name: Scott Walters
+    title: Attorney
+  - name: Andrew Rountree
+    title: Attorney
+  - name: Trinh Warner
+    title: Attorney
+  - name: Amber Wagner
+    title: Attorney
+  - name: Lindsey Adams
+    title: Attorney
+  - name: Derek Israel
+    title: Attorney
+  - name: Scott Z. Hughes
+    title: Attorney
+  source: https://oconnellwest.com/team/
+  notes: Austin-based firm with a Bell County / Fort Hood office in Killeen; the site does not say which attorneys sit in
+    Killeen.
+  verified: '2026-11-01'
+- firm: Mary Beth Harrell Law Firm
+  website: https://marybethharrell.com/
+  city: Killeen
+  address: 701 W Central Texas Expy, Killeen, TX 76541
+  phone: (254) 680-4655
+  practice_areas:
+  - Criminal Defense
+  - DWI
+  - Federal Criminal Defense
+  attorneys:
+  - name: Mary Elizabeth "Mary Beth" Harrell
+    title: Attorney
+  source: https://marybethharrell.com/
+  notes: Second office at 208 S 2nd St, Copperas Cove.
+  verified: '2026-11-01'
+- firm: Harris Law Office
+  website: https://www.centexlawyers.net/
+  city: Killeen
+  address: 425 N. 8th Street, Killeen, TX 76541
+  phone: (254) 526-0108
+  practice_areas:
+  - Social Security Disability
+  - Family Law
+  - Personal Injury
+  - Estate Planning
+  - Probate
+  - Criminal Defense
+  attorneys:
+  - name: William A. "Bill" Harris
+    title: Senior Attorney
+  - name: Lane A. Heginbotham
+    title: Attorney
+  years_in_practice_claim: Harris admitted to practice in 1974
+  source: https://www.centexlawyers.net/bios.shtml
+  verified: '2026-11-01'
+- firm: Baird, Crews, Schiller & Whitaker, P.C.
+  website: https://www.bcswlaw.com/
+  city: Temple
+  address: 15 N. Main Street, Temple, TX 76501
+  phone: (254) 743-7300
+  practice_areas:
+  - Estate Planning
+  - Probate
+  - Business Law
+  - Real Estate
+  - Civil Litigation
+  attorneys:
+  - name: Tad E. Allen
+    title: Shareholder
+  - name: Thomas C. Baird
+    title: Founding Member and Shareholder
+  - name: Larry Berkman
+    title: Of Counsel
+  - name: Kevin K. Bonner
+    title: Shareholder
+  - name: Steve Brischke
+    title: Shareholder
+  - name: Juli A. Bryan
+    title: Shareholder
+  - name: Benjamin D. Burnett
+    title: Shareholder
+  - name: Charis B. Clawson
+    title: Associate
+  - name: Taylor Fitzner
+    title: Associate
+  - name: Samuel C. Fulcher
+    title: Shareholder
+  - name: Lily Gillam
+    title: Associate
+  - name: Rick Morris
+    title: Of Counsel; former judge
+  - name: Mark S. Whitaker
+    title: Of Counsel
+  source: https://www.bcswlaw.com/attorneys
+  verified: '2026-11-01'
+- firm: The Carlson Law Firm (Temple office)
+  website: https://www.carlsonattorneys.com/temple
+  city: Temple
+  address: 2010 SW H K Dodgen Loop, Suite 201, Temple, TX 76504
+  phone: (254) 771-5688
+  practice_areas:
+  - Personal Injury
+  - Wrongful Death
+  - Family Law
+  - Criminal Defense
+  attorneys:
+  - name: Julie Peschel
+    title: Partner
+  - name: Vicki Carlson
+    title: Partner
+  - name: Roxanne Martin
+    title: Associate
+  - name: Alycia Cole
+    title: Associate
+  - name: Tera D. Johnson
+    title: Associate
+  founded: 1976
+  source: https://www.carlsonattorneys.com/our-team/
+  notes: Firm founded 1976; the Temple office opened in 1998. Only attorneys whose bios reference Temple are listed.
+  verified: '2026-11-01'
+- firm: Harrell, Stoebner & Villanueva, P.C.
+  website: https://www.templelawoffice.com/
+  city: Temple
+  address: 2106 Bird Creek Drive, Temple, TX 76502
+  phone: (254) 935-3036
+  practice_areas:
+  - Real Estate
+  - Business Law
+  - Construction Law
+  - Estate Planning
+  - Probate
+  - Elder Law
+  - Personal Injury
+  - Civil Litigation
+  - Family Law
+  attorneys:
+  - name: W. Randy Harrell
+  - name: J. Eric Stoebner
+  - name: Karen M. Villanueva
+  - name: Jordan N. Hutchins
+  - name: Richard D. Wilson
+  - name: Daniel M. Gerken
+  founded: 1983
+  source: https://www.templelawoffice.com/about/
+  notes: Street address from a directory listing; the site names Temple and Killeen offices without addresses.
+  verified: '2026-11-01'
+- firm: Prater, Ridley & Llamas, Attorneys at Law
+  website: https://www.prater-ridleylaw.com/
+  city: Temple
+  address: 2582 Blue Meadow Drive, Temple, TX 76502
+  phone: (254) 773-9081
+  practice_areas:
+  - Family Law
+  - Criminal Defense
+  - DWI
+  - Probate
+  attorneys:
+  - name: Carol E. Prater
+    title: Partner and co-founder
+  - name: Patrick J. Ridley
+    title: Partner and co-founder
+  - name: Elisabeth Connor Llamas
+    title: Senior Associate Attorney
+  founded: 1993
+  source: https://www.prater-ridleylaw.com/firm-overview/
+  notes: Street address from a directory listing.
+  verified: '2026-11-01'
+- firm: Chad Jones Law
+  website: https://www.chadjoneslaw.com/
+  city: Temple
+  address: '114 E Central Ave #120, Temple, TX 76501'
+  phone: (833) 438-2423
+  practice_areas:
+  - Personal Injury
+  - Wrongful Death
+  attorneys:
+  - name: Chad Jones
+    title: Board Certified, Personal Injury Trial Law
+  source: https://www.chadjoneslaw.com/
+  notes: College Station-based firm with offices in Temple and elsewhere; only the lead attorney is named on the fetched pages.
+  verified: '2026-11-01'
+- firm: Felix Gonzalez Law Firm, P.C.
+  website: https://www.felixgonzalezlaw.com/
+  city: Temple
+  address: 2820 W Ave O, Temple, TX 76504
+  phone: (210) 298-6666
+  practice_areas:
+  - Personal Injury
+  - Wrongful Death
+  - Workplace Injuries
+  attorneys:
+  - name: Felix Gonzalez
+    title: Attorney
+  - name: R. Andrew Rodriguez
+    title: Attorney
+  years_in_practice_claim: over two decades
+  source: https://www.felixgonzalezlaw.com/our-team/
+  notes: San Antonio-based firm with a Temple office.
+  verified: '2026-11-01'
+- firm: The Hull Firm
+  website: https://thehullfirm.com/temple/
+  city: Temple
+  address: 112 SW H K Dodgen Loop, Temple, TX 76504
+  phone: (254) 944-3900
+  practice_areas:
+  - Criminal Defense
+  - DWI
+  - Juvenile Law
+  - Expunction
+  attorneys:
+  - name: Mark Hull
+    title: Attorney
+  - name: Allison Tisdale
+    title: Attorney; former prosecutor
+  years_in_practice_claim: over 20 years (practicing since 2003)
+  source: https://thehullfirm.com/temple/
+  notes: Austin-based firm with a Temple office.
+  verified: '2026-11-01'
+- firm: The Tisdale Law Firm, PLLC
+  website: https://www.tisdale.law/
+  city: Temple
+  address: 1216 S 31st St, Temple, TX 76504
+  phone: (254) 442-8869
+  practice_areas:
+  - Family Law
+  - Bankruptcy
+  - Estate Planning
+  - Probate
+  attorneys:
+  - name: Joshua Tisdale
+    title: Attorney
+  years_in_practice_claim: more than 15 years (practicing since 2010)
+  source: https://www.tisdale.law/
+  verified: '2026-11-01'
+- firm: The Law Office of Katie L. Gomez, PLLC
+  website: https://www.templecriminaldefense.com/
+  city: Temple
+  address: 18 S. Main St, Suite 504, Temple, TX 76501
+  phone: (254) 330-3214
+  practice_areas:
+  - Criminal Defense
+  - DWI
+  attorneys:
+  - name: Katie L. Gomez
+    title: Attorney
+  years_in_practice_claim: over ten years in criminal justice
+  source: https://www.templecriminaldefense.com/
+  notes: Street address from a directory listing.
+  verified: '2026-11-01'
+- firm: William T. Wilson, Attorney & Counselor at Law
+  website: https://www.williamtwilson.com/
+  city: Temple
+  address: 100 W. Adams Ave., Ste. 301, Temple, TX 76501
+  phone: (254) 771-5885
+  practice_areas:
+  - Personal Injury
+  - Wrongful Death
+  - Estate Planning
+  - Probate
+  attorneys:
+  - name: William T. Wilson
+    title: Attorney; Board Certified, Personal Injury Trial Law
+  founded: 1974
+  source: https://www.williamtwilson.com/
+  notes: Street address from a directory listing.
+  verified: '2026-11-01'
+- firm: Cure & Francis, P.A.
+  website: https://www.cureandfrancis.com/
+  city: Temple
+  address: 2584 Blue Meadow Drive, Temple, TX 76502
+  phone: (254) 778-8934
+  practice_areas:
+  - Bankruptcy
+  - Personal Injury
+  - Business Law
+  - Probate
+  attorneys:
+  - name: James O. Cure
+  - name: John R. Francis
+    title: Board Certified, Personal Injury Trial Law and Civil Trial Law
+  years_in_practice_claim: more than 40 years
+  source: https://www.cureandfrancis.com/
+  notes: Street address from a directory listing. John R. Francis also practices under The Law Office of John Francis at the
+    same address.
+  verified: '2026-11-01'
+- firm: Tarver & Blythe
+  website: https://www.tarver-blythelaw.com/
+  city: Temple
+  address: 319 North 3rd St., Temple, TX 76501
+  phone: (254) 773-2161
+  practice_areas:
+  - Personal Injury
+  - Criminal Defense
+  - Family Law
+  - Real Estate
+  - Business Law
+  - Probate
+  - Mediation
+  attorneys:
+  - name: Jack M. Tarver
+  - name: Stephen E. Blythe
+  founded: 1985
+  source: https://www.tarver-blythelaw.com/
+  verified: '2026-11-01'
+- firm: Law Office of Kyle Watkins, PLLC
+  website: http://law-manage.com/
+  city: Temple
+  address: 2102 Birdcreek Dr., Temple, TX 76502
+  phone: (254) 444-9920
+  practice_areas:
+  - Criminal Defense
+  - DWI
+  - Military Law
+  attorneys:
+  - name: Kyle Watkins
+    title: Board Certified, Criminal Law
+  source: http://law-manage.com/
+  notes: Also lists a Salado office at 417 N. Main, Suite 201.
+  verified: '2026-11-01'
+- firm: The Law Office of Eric Harron
+  website: https://harronlaw.com/criminal-defense-dwi-attorney-bell-county/
+  city: Temple
+  address: '319 S. 1st St. #13, Temple, TX 76504'
+  phone: (254) 892-0522
+  practice_areas:
+  - Criminal Defense
+  - DWI
+  - Personal Injury
+  attorneys:
+  - name: Eric Harron
+    title: Attorney
+  source: https://harronlaw.com/criminal-defense-dwi-attorney-bell-county/
+  notes: Austin-based firm with a Bell County office in Temple.
+  verified: '2026-11-01'
+- firm: The Law Office of Brett H. Pritchard (Temple office)
+  website: https://www.brettpritchardlaw.com/
+  city: Temple
+  address: 2015 Birdcreek Terrace, Suites 105 & 107, Temple, TX 76502
+  phone: (254) 323-0004
+  practice_areas:
+  - Family Law
+  - Adoption
+  - Estate Planning
+  - Probate
+  - Personal Injury
+  - Criminal Defense
+  attorneys:
+  - name: Brett H. Pritchard
+    title: Attorney at Law
+  - name: Brent T. Sykora
+    title: Attorney at Law
+  - name: Danah Woods
+    title: Attorney at Law
+  - name: N.J. Gaunt
+    title: Senior Litigator
+  - name: Gregory Wilson
+    title: Attorney at Law
+  - name: Rebecca Griffin
+    title: Attorney at Law
+  years_in_practice_claim: over 20 years
+  source: https://www.brettpritchardlaw.com/
+  notes: Killeen-based firm; see the Killeen entry for the full roster.
+  verified: '2026-11-01'
+- firm: Lighthouse Legal Services, PLLC (Temple office)
+  website: https://llslaw.com/
+  city: Temple
+  address: 3500 SW H K Dodgen Loop, Temple, TX 76504
+  phone: (866) 219-6119
+  practice_areas:
+  - Family Law
+  - Probate
+  - Guardianship
+  - Criminal Defense
+  - DWI
+  - Personal Injury
+  - Business Law
+  attorneys:
+  - name: Barrett Thomas
+    title: Founding Partner
+  - name: Kristin Kaye
+    title: Partner and Managing Attorney
+  - name: Taylor Haeuser
+    title: Senior Attorney
+  - name: Gary Cunha
+    title: Of Counsel
+  source: https://llslaw.com/
+  notes: Waco-based firm with Temple and Abilene offices.
+  verified: '2026-11-01'
+- firm: Secrest Law Firm
+  website: https://www.secrestlawfirm.com/
+  city: Temple
+  address: 3600 Birdcreek Dr, Temple, TX 76502
+  phone: (254) 773-5215
+  practice_areas:
+  - Civil Litigation
+  - Estate Planning
+  - Real Estate
+  attorneys:
+  - name: Jerry Secrest
+  - name: Jamey Secrest
+  founded: 1945
+  source: https://www.secrestlawfirm.com/
+  notes: Site says the firm and its predecessors have served Bell County since 1945.
+  verified: '2026-11-01'
+- firm: Barnhill Law Firm
+  website: https://www.barnhillfirm.com/
+  city: Belton
+  address: 127 Lake Road, Suite 211, Belton, TX 76513
+  phone: (254) 379-9224
+  practice_areas:
+  - Family Law
+  - Military Family Law
+  - Criminal Defense
+  - Business Law
+  - Civil Litigation
+  attorneys:
+  - name: M. Bryon Barnhill
+    title: Founding Attorney; Board Certified, Family Law
+  - name: Kyle James Dennis
+    title: Attorney; Certified Mediator
+  founded: 1999
+  source: https://barnhillfirm.com/about/
+  notes: Address and phone from a directory listing; the firm site does not print them.
+  verified: '2026-11-01'
+- firm: Biebas and Riley Attorneys at Law PLLC
+  website: https://www.biebasandriley.com/
+  city: Belton
+  address: 206 Lake Rd, Belton, TX 76513
+  phone: (254) 781-5914
+  practice_areas:
+  - Criminal Defense
+  - Family Law
+  attorneys:
+  - name: Kacie Biebas
+  - name: Shannon M. Riley
+  source: https://www.biebasandriley.com/about/
+  verified: '2026-11-01'
+- firm: Law Office of Andrew Thompson PLLC
+  website: https://www.andrewthompsonlegal.com/
+  city: Belton
+  address: 206 Lake Road, Belton, TX 76513
+  phone: (254) 423-3899
+  practice_areas:
+  - Estate Planning
+  - Probate
+  - Family Law
+  - Real Estate
+  - Mediation
+  attorneys:
+  - name: Andrew Thompson
+    title: Attorney and owner
+  founded: 2022
+  source: https://www.andrewthompsonlegal.com/about
+  verified: '2026-11-01'
+- firm: Pearson Law Firm, P.C.
+  website: https://bellcountylawyer.com/
+  city: Belton
+  address: 80 Morgan's Point Rd, Belton, TX 76513
+  phone: (254) 939-3995
+  practice_areas:
+  - Business Law
+  - Estate Planning
+  - Probate
+  - Real Estate
+  attorneys:
+  - name: Joshua C. Pearson
+  years_in_practice_claim: 20+ years serving Central Texas
+  source: https://bellcountylawyer.com/attorneys/
+  verified: '2026-11-01'
+- firm: Law Office of Andrew M. Wolfe
+  website: https://www.callthewolfe.com/
+  city: Belton
+  address: 1312 Waco Road, Belton, TX 76513
+  phone: (254) 863-2526
+  practice_areas:
+  - Criminal Defense
+  - DWI
+  attorneys:
+  - name: Andrew M. Wolfe
+    title: Attorney; former assistant district attorney
+  source: https://www.callthewolfe.com/Andrew-Wolfe
+  verified: '2026-11-01'
+- firm: Kuhl Family Law Firm
+  website: https://www.kuhlfamilylawfirm.com/
+  city: Belton
+  address: 204 N. East Street, Ste. E, Belton, TX 76513
+  phone: (254) 613-5845
+  practice_areas:
+  - Family Law
+  attorneys:
+  - name: Renee Michele Kuhl
+    title: Owner
+  years_in_practice_claim: practicing family law since 2009
+  source: https://www.kuhlfamilylawfirm.com/
+  verified: '2026-11-01'
+- firm: F. Edward Brown Law Firm
+  website: https://fedwardbrownattorney.com/
+  city: Belton
+  address: 208 E. Central Avenue, Suite 107, Belton, TX 76513
+  phone: (254) 634-2587
+  practice_areas:
+  - Criminal Defense
+  - DWI
+  - Juvenile Law
+  attorneys:
+  - name: F. Edward Brown
+  source: https://fedwardbrownattorney.com/about-us
+  notes: Address from directory listings; the firm site gives only a phone number.
+  verified: '2026-11-01'
+- firm: Sanderford & Carroll, P.C.
+  website: https://www.txconstructionlaw.com/
+  city: Belton
+  address: 1002 Arbor Park Drive, Ste. 100, Belton, TX 76513
+  phone: (254) 773-8311
+  practice_areas:
+  - Construction Law
+  - Government Contracts
+  - Arbitration
+  attorneys:
+  - name: Brian K. Carroll
+    title: Managing Partner
+  - name: Calvin L. Cowan
+    title: Partner
+  - name: Allen V. Wilson
+    title: Partner
+  - name: Thomas J. Walthall
+    title: Partner
+  - name: Bethany F. Beck
+    title: Partner
+  - name: Shaina M. H. Swanson
+    title: Partner
+  - name: Victoria McDaniel-Sonnier
+    title: Senior Associate
+  - name: Lauren N. Porfirio
+    title: Associate
+  - name: Kayla Landeros
+    title: Of Counsel
+  - name: Michael Ratliff
+    title: Of Counsel
+  source: https://www.txconstructionlaw.com/attorneys/
+  notes: Principal office; second office in San Antonio.
+  verified: '2026-11-01'

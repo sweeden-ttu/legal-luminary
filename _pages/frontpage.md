@@ -103,9 +103,9 @@ Main Phone: <a href="tel:+12549335100">(254) 933-5100</a><br>
 </div>
 
 <div class="card">
-<h3>Personal Injury</h3>
-<p>Injured in a car accident, workplace incident, or due to property negligence? Understand your options for compensation and connect with experienced injury attorneys in Central Texas.</p>
-<a href="/personal-injury/" class="btn btn-primary">Injury Information</a>
+<h3>Attorney Directory</h3>
+<p>Law firms with offices in Killeen, Temple, Belton and Harker Heights — each firm's website, attorneys, practice areas and how long it has been in practice, compiled from the firms' own sites.</p>
+<a href="/attorneys/" class="btn btn-primary">Bell County Attorney Directory</a>
 </div>
 </div>
 
