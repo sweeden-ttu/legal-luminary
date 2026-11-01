@@ -7,7 +7,7 @@
 # Site Settings
 title: "Central Texas Legal Resources"
 logo: /assets/imgs/legal-luminary-research-tool.svg
-description: "Your trusted guide to Texas and Bell County law - Defense & Personal Injury information"
+description: "Your trusted guide to Texas and Bell County law, courts and judicial elections"
 tagline: "Information • Guidance • Justice"
 author: "Central Texas Legal Resource"
 email: "notary@legalluminary.com"
@@ -44,6 +44,54 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
+
+# Sass/SCSS Processing
+# We keep the GitHub Pages default theme, but we do NOT want it to build its SCSS
+# (Ruby sass has encoding issues on some environments). We serve our own CSS.
+theme: null
+
+# Site Navigation
+navigation:
+  - title: Home
+    url: /
+  - title: Nov. 3 Ballot Guide
+    url: /nov-3-2026-ballot-guide/
+    alt: Killeen & Bell County ballot guide for the November 3, 2026 election
+  - title: Texas Law
+    url: /texas-law/
+  - title: Bell County
+    url: /bell-county/
+  - title: Judicial Officers
+    url: /candidates/courts/
+  - title: Criminal Law
+    url: /criminal-law/
+  - title: Personal Injury
+    url: /personal-injury/
+  - title: Family Law
+    url: /family-law/
+  - title: Resources
+    url: /resources/
+    children:
+      - title: Meseeks
+        url: /meseeks/
+        alt: Legal opportunities, notices, standing orders and public Q&A
+      - title: Links
+        url: /links/
+      - title: About
+        url: /about/
+
+# Service Area Information
+service_area:
+  county: "Bell County"
+  state: "Texas"
+  cities:
+    - Killeen
+    - Temple
+    - Belton
+    - Harker Heights
+    - Copperas Cove
+    - Nolanville
+    - Salado
 
 # Sass/SCSS Processing
 # We keep the GitHub Pages default theme, but we do NOT want it to build its SCSS

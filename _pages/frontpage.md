@@ -97,9 +97,9 @@ Main Phone: <a href="tel:+12549335100">(254) 933-5100</a><br>
 
 <div class="cards-grid">
 <div class="card">
-<h3>Criminal Defense</h3>
-<p>Facing assault charges, DWI, domestic violence, or other criminal accusations in Bell County? Learn about your rights under Texas law and find defense attorneys who practice in local courts.</p>
-<a href="/defense/" class="btn btn-primary">Defense Information</a>
+<h3>Criminal Law</h3>
+<p>Facing assault charges, DWI, domestic violence, or other criminal accusations in Bell County? Learn how Texas law defines the charges and how cases move through local courts.</p>
+<a href="/criminal-law/" class="btn btn-primary">Criminal Law Information</a>
 </div>
 
 <div class="card">

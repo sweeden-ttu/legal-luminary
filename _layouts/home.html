@@ -7,7 +7,6 @@ extra_stylesheets:
 ---
 
 {% assign j = site.data.judicial_home %}
-{% assign injury = site.attorneys.injury %}
 
 <div class="home-judicial">
   <section class="elections-hero home-hero" aria-labelledby="home-title">
@@ -144,19 +143,6 @@ extra_stylesheets:
         </p>
         <a href="{{ '/personal-injury/' | relative_url }}" class="btn btn-primary">Personal Injury Guide</a>
       </div>
-      {% if injury %}
-      <aside class="home-injury-panel__featured" aria-label="Featured personal injury attorney">
-        <p class="home-injury-panel__ad-label">Advertisement</p>
-        <h3>{{ injury.name }}</h3>
-        <p class="home-injury-panel__title">{{ injury.title }} · {{ injury.specialty }}</p>
-        <p>{{ injury.location }}</p>
-        <p><a href="tel:{{ injury.phone | replace: '(', '' | replace: ')', '' | replace: ' ', '' | replace: '-', '' | prepend: '+1' }}">{{ injury.phone }}</a></p>
-        {% if injury.email %}
-        <p><a href="mailto:{{ injury.email }}">{{ injury.email }}</a></p>
-        {% endif %}
-        <p class="home-injury-panel__disclaimer">Licensed in Texas. Prior results do not guarantee a similar outcome.</p>
-      </aside>
-      {% endif %}
     </div>
   </section>
 

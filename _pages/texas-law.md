@@ -120,5 +120,5 @@ Individuals have the right to seek compensation from those responsible for their
 
 <div style="margin-top: 2rem;">
 <a href="/bell-county/" class="btn btn-primary">Bell County Specific Information</a>
-<a href="/defense/" class="btn btn-secondary" style="margin-left: 1rem;">Find a Defense Attorney</a>
+<a href="/criminal-law/" class="btn btn-secondary" style="margin-left: 1rem;">Criminal Law</a>
 </div>

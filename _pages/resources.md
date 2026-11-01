@@ -92,9 +92,9 @@ Bail bonds are available 24/7 through licensed bondsmen serving Bell County. Fea
 
 <div class="cards-grid">
 <div class="card">
-<h3>Criminal Defense</h3>
-<p>Find attorneys specializing in criminal defense for Bell County courts.</p>
-<a href="/defense/" class="btn btn-primary">Defense Attorneys</a>
+<h3>Criminal Law</h3>
+<p>Texas criminal charges and how cases proceed in Bell County courts.</p>
+<a href="/criminal-law/" class="btn btn-primary">Criminal Law</a>
 </div>
 
 <div class="card">

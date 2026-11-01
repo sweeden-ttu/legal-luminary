@@ -165,9 +165,9 @@ When selecting an attorney in Bell County:
 
 <div class="cards-grid">
 <div class="card">
-<h3>Criminal Defense</h3>
-<p>Find experienced defense attorneys serving Bell County courts.</p>
-<a href="/defense/" class="btn btn-primary">Defense Attorneys</a>
+<h3>Criminal Law</h3>
+<p>How criminal charges are defined and handled in Bell County courts.</p>
+<a href="/criminal-law/" class="btn btn-primary">Criminal Law</a>
 </div>
 
 <div class="card">
