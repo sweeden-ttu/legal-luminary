@@ -6,34 +6,59 @@
       "section": "main"
     },
     {
-      "title": "Fort Hood",
-      "url": "/fort-cavazos/",
-      "section": "main"
+      "title": "The Bench",
+      "url": "/candidates/courts/",
+      "section": "bench"
     },
     {
-      "title": "Texas Law",
-      "url": "/texas-law/",
-      "section": "resources"
+      "title": "Supreme Court & Court of Criminal Appeals",
+      "url": "/courts/statewide/",
+      "section": "bench"
     },
     {
-      "title": "Bell County",
-      "url": "/bell-county/",
-      "section": "resources"
+      "title": "Courts of Appeals",
+      "url": "/courts/appeals/",
+      "section": "bench"
     },
     {
-      "title": "Attorney Directory",
-      "url": "/attorneys/",
-      "section": "services"
+      "title": "District Courts",
+      "url": "/courts/district/",
+      "section": "bench"
+    },
+    {
+      "title": "County Courts at Law & County Judge",
+      "url": "/courts/county/",
+      "section": "bench"
+    },
+    {
+      "title": "Justices of the Peace",
+      "url": "/courts/jp/",
+      "section": "bench"
     },
     {
       "title": "Court Directory",
       "url": "/court-directory/",
-      "section": "resources"
+      "section": "bench"
     },
     {
-      "title": "Resources",
-      "url": "/resources/",
-      "section": "resources"
+      "title": "Nov. 3, 2026 Ballot Guide",
+      "url": "/nov-3-2026-ballot-guide/",
+      "section": "elections"
+    },
+    {
+      "title": "How to Run for Judge",
+      "url": "/run-for-judge/",
+      "section": "elections"
+    },
+    {
+      "title": "Voting in Bell County",
+      "url": "/elections/",
+      "section": "elections"
+    },
+    {
+      "title": "Attorney Directory",
+      "url": "/attorneys/",
+      "section": "bar"
     },
     {
       "title": "Legal News",
@@ -43,22 +68,22 @@
     {
       "title": "About",
       "url": "/about/",
-      "section": "main"
-    }
-  ],
-  "footer_links": [
-    {
-      "title": "Privacy Policy",
-      "url": "/privacy/"
+      "section": "about"
     },
     {
-      "title": "Terms of Service",
-      "url": "/terms/"
+      "title": "Sources",
+      "url": "/advertise/",
+      "section": "about"
     },
     {
-      "title": "Contact",
-      "url": "/contact/"
+      "title": "Corrections",
+      "url": "/corrections/",
+      "section": "about"
+    },
+    {
+      "title": "Scorecard Methodology",
+      "url": "/methodology/",
+      "section": "about"
     }
-  ],
-  "generated_at": "2026-03-21T00:00:00Z"
+  ]
 }

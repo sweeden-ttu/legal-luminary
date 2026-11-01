@@ -64,5 +64,6 @@ odyssey_statistics:
     - "Traffic: 251 cases"
     - "Criminal Non-Traffic: 74 cases"
 
+listing_status: "Incumbent; term runs through 2028"
 ---
 Gregory Johnson is the Justice of the Peace for Bell County Precinct 4, Place 1, serving the Killeen area of Bell County.

@@ -105,7 +105,7 @@ Most of Killeen lies in Justice of the Peace Precinct 4, where **Precinct 4, Pla
 
 ### Other races on the Killeen ballot
 
-- **U.S. Representative, District 31:** John Carter (R), Justin Early (D), Greg Stoker (Green). See [the 2026 housing law and how Texas members voted](/housing-act-2026/).
+- **U.S. Representative, District 31:** John Carter (R), Justin Early (D), Greg Stoker (Green).
 - **Attorney General:** [Mayes Middleton (R)](/texas-ag-race-26/mayes-middleton/), [Nathan Johnson (D)](/texas-ag-race-26/nathan-johnson/), [Tom Oxford (L)](/texas-ag-race-26/tom-oxford/).
 - **Bell County Commissioner, Precinct 4:** Curtis Emmons (R), Ernest Wilkerson (D). Voting precinct 203 votes instead for **Commissioner, Precinct 2:** Bobby Whitson (R), Stacey L. Wilson (D).
 - **County Treasurer:** Adriane Hodges (R), unopposed. **Bell County Appraisal District board**, Places 1–3.

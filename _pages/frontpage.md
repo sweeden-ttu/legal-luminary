@@ -1,126 +1,53 @@
 ---
 layout: default
 article_feed: top-articles
-title: Legal Luminary of Central Texas - News, Courts, Politics, and more
+title: Legal Luminary — Who's Who on the Central Texas Bench
 permalink: /
 hero: true
-hero_title: "Central Texas Legal Resource"
-hero_subtitle: "Your guide to Bell County courts, elected officials, and legal representation in Central Texas"
-description: "Legal information resource for Bell County and Central Texas. Court directory, elected officials, defense attorneys, and personal injury lawyers serving Belton, Killeen, Temple, Fort Cavazos, and surrounding communities."
-verified_at: 2026-02-19
-sources:
-  - url: "https://www.bellcountytx.com"
-    label: "Bell County Official Website"
-    evidence: "Official Bell County government website providing court contact information and county official details"
-    visited: true
-    confirmed: true
-  - url: "https://justice.bellcounty.texas.gov/PublicPortal/"
-    label: "Bell County Odyssey Portal"
-    evidence: "Official court case search system - verified by direct access and search functionality test"
-    visited: true
-    confirmed: true
-confidence:
-  base: 0.707
-  current: 1.0
-  aho_corasick_boost: 0.542
-  formula: "compound_ema_qfa_aho"
-  qfa_state: VALIDATE
-  milestone: M2
-  milestone_contributions:
-    M1_INIT: 0.03
-    M2_VERIFY: 0.45
-    M3_COVERAGE: 0.03
-    M4_VV: 0.032
-  validation: 0.05
-  aho_corasick: 0.542
-  code_refactor: 0.0
-  vv_integration: 0.004
-  aho_corasick_matches: 42
+hero_title: "Who's Who on the Central Texas Bench"
+hero_subtitle: "Every elected judge in Bell County, and the statewide courts on its ballot — sourced, verified, no advertising"
+description: "A who's who of the elected judiciary of Central Texas: Bell County district courts, county courts at law, county judge and justices of the peace, plus the Texas Supreme Court, Court of Criminal Appeals and courts of appeals seats on the Bell County ballot. Every profile cites public news reporting and official records."
+verified_at: 2026-11-01
 ---
 
 <p class="intro-text">
-Central Texas Legal Resource provides residents, attorneys, and researchers with practical information about the Bell County court system, local government structure, elected and appointed officials, and legal representation options. Whether you need a court phone number, want to understand how cases move through the system, or are looking for qualified counsel, start here.
+Legal Luminary profiles the judges who sit in Bell County, Texas, and the candidates who want to replace them. Every statement on a profile links to the news article or official record that supports it; nothing on the site is paid for or endorsed. Start with a court, or go straight to the <a href="/nov-3-2026-ballot-guide/">November 3, 2026 ballot</a>.
 </p>
 
-## Serving Bell County & Central Texas
+## The courts
+
+<div class="cards-grid tier-grid">
+<div class="card"><h3><a href="/courts/statewide/">Supreme Court &amp; Court of Criminal Appeals</a></h3><p>Texas's two nine-member courts of last resort, elected statewide. Seven seats on the 2026 ballot, every one contested.</p><a href="/courts/statewide/" class="btn btn-primary">Statewide courts</a></div>
+<div class="card"><h3><a href="/courts/appeals/">Courts of Appeals</a></h3><p>The Third Court of Appeals in Austin hears Bell County's appeals; the Fifteenth hears state and business cases. Four seats on the 2026 ballot.</p><a href="/courts/appeals/" class="btn btn-primary">Courts of appeals</a></div>
+<div class="card"><h3><a href="/courts/district/">District Courts</a></h3><p>Six state district courts at the Bell County Justice Center — the 27th, 146th, 169th, 264th, 426th and 478th — with their associate and visiting judges.</p><a href="/courts/district/" class="btn btn-primary">District courts</a></div>
+<div class="card"><h3><a href="/courts/county/">County Courts at Law &amp; County Judge</a></h3><p>Three statutory county courts and the constitutional County Judge who presides over the Commissioners Court.</p><a href="/courts/county/" class="btn btn-primary">County courts</a></div>
+<div class="card"><h3><a href="/courts/jp/">Justices of the Peace</a></h3><p>Six precinct courts for evictions, small claims, Class C misdemeanors and magistration — the courts most residents actually meet.</p><a href="/courts/jp/" class="btn btn-primary">Justices of the peace</a></div>
+<div class="card"><h3><a href="/attorneys/">Attorney Directory</a></h3><p>The bar the bench is drawn from: {{ site.data.attorneys_bell_county.firms | size }} Bell County law firms, their attorneys, practice areas and years in practice.</p><a href="/attorneys/" class="btn btn-secondary">Attorneys</a></div>
+</div>
+
+## The Bell County bench today
+
+{% assign cj = site.candidates | where_exp: "j", "j.path contains 'texas/bell_county/david_blackburn'" | first %}
+| Court | Judge | 2026 election |
+|---|---|---|
+{% if cj %}| {{ cj.office }} | **[{{ cj.title }}]({{ cj.url }})** | Unopposed |
+{% endif %}{% assign dist = site.candidates | where_exp: "j", "j.path contains 'courts/district/'" | where: "incumbent", true | sort: "office" %}{% for j in dist %}{% unless j.election_status == "former" %}| {{ j.office }} | **[{{ j.title }}]({{ j.url }})** | {% if j.listing_status contains "Nominee" %}Unopposed{% else %}Not up until later{% endif %} |
+{% endunless %}{% endfor %}{% assign cty = site.candidates | where_exp: "j", "j.path contains 'courts/county/'" | sort: "office" %}{% for j in cty %}{% unless j.election_status == "former" %}| {{ j.office }} | **[{{ j.title }}]({{ j.url }})** | {% if j.incumbent == false %}Open seat — unopposed nominee{% elsif j.listing_status contains "Nominee" %}Unopposed{% else %}Not up until later{% endif %} |
+{% endunless %}{% endfor %}{% assign jps = site.candidates | where_exp: "j", "j.path contains 'courts/jp/'" | where: "incumbent", true | sort: "office" %}{% for j in jps %}{% unless j.election_status == "former" %}{% assign st = "Not up until 2028" %}{% if j.office contains "Precinct 4, Place 2" %}{% assign st = "Contested: [Cox](/candidates/courts/jp/beatrice_bea_cox/) (R) v. [Gonzalez](/candidates/courts/jp/jessica_a_gonzalez/) (D)" %}{% elsif j.office contains "Precinct 1" %}{% assign st = "Retiring; Patrick Patterson (R) unopposed" %}{% elsif j.office contains "Precinct 3, Place 2" or j.listing_status contains "Nominee" %}{% assign st = "Unopposed" %}{% endif %}| {{ j.office }} | **[{{ j.title }}]({{ j.url }})** | {{ st }} |
+{% endunless %}{% endfor %}
+
+Full tables, former judges and candidates: [The Bell County Bench](/candidates/courts/).
+
+## Elections
 
 <div class="cards-grid">
-<div class="card">
-<h3>Fort Cavazos (Fort Hood)</h3>
-<p>Central Texas is home to one of the largest military installations in the world. Military personnel and families stationed at Fort Cavazos may face civilian legal matters off-post, which are handled by Bell County or municipal courts. This site provides resources for soldiers, veterans, and their families navigating the Central Texas legal system.</p>
-<a href="/resources/" class="btn btn-primary">Military Resources</a>
+<div class="card"><h3>Nov. 3, 2026 ballot guide</h3><p>All 21 judicial-branch races on a Killeen ballot — contested and unopposed — plus the hospital district tax and Killeen charter propositions.</p><a href="/nov-3-2026-ballot-guide/" class="btn btn-primary">Ballot guide</a></div>
+<div class="card"><h3>How to run for judge</h3><p>Who is eligible for each bench, filing windows, fees and petition signatures in Bell County.</p><a href="/run-for-judge/" class="btn btn-secondary">Run for judge</a></div>
+<div class="card"><h3>Voting in Bell County</h3><p>Early voting, polling places, mail ballots and what the county's election office publishes.</p><a href="/elections/" class="btn btn-secondary">Elections</a></div>
 </div>
-
-<div class="card">
-<h3>Belton — County Seat</h3>
-<p>Home to the Bell County Justice Center, all District Courts, County Courts at Law, and county administrative offices. The courthouse is located at 1201 Huey Drive, Belton, TX 76513.</p>
-<a href="/bell-county/" class="btn btn-primary">Bell County Courts</a>
-</div>
-
-<div class="card">
-<h3>Killeen</h3>
-<p>Largest city in Bell County with a population of approximately 160,000. Killeen Municipal Court handles city ordinance violations and Class C misdemeanors at 714 N. 2nd Street.</p>
-<a href="/court-directory/" class="btn btn-primary">Court Directory</a>
-</div>
-
-<div class="card">
-<h3>Temple</h3>
-<p>Second-largest city in Bell County and a major medical and economic hub. Temple Municipal Court is located at 210 N. Main Street, Temple, TX 76501.</p>
-<a href="/court-directory/" class="btn btn-primary">Court Directory</a>
-</div>
-</div>
-
-## Quick Court Contacts
-
-<div class="info-box">
-<h4>Bell County Justice Center</h4>
-<p>1201 Huey Drive, Belton, TX 76513<br>
-Main Phone: <a href="tel:+12549335100">(254) 933-5100</a><br>
-<a href="https://www.bellcountytx.com" target="_blank" rel="noopener">bellcountytx.com</a></p>
-</div>
-
-| Office | Phone |
-|--------|-------|
-| **District Clerk** (felony filings, civil over $200K) | [(254) 933-5197](tel:+12549335197) |
-| **County Clerk** (misdemeanors, probate, records) | [(254) 933-5160](tel:+12549335160) |
-| **District Attorney** — Stephanie Newell | [(254) 933-5215](tel:+12549335215) |
-| **County Attorney** (misdemeanor prosecution) | [(254) 933-5161](tel:+12549335161) |
-| **Sheriff / Jail** (warrants, inmates) | [(254) 933-5400](tel:+12549335400) |
-| **Killeen Municipal Court** | [(254) 501-7850](tel:+12545017850) |
-| **Temple Municipal Court** | [(254) 298-5690](tel:+12542985690) |
-| **Belton Municipal Court** | [(254) 933-5828](tel:+12549335828) |
-
-<a href="/court-directory/" class="btn btn-primary">Full Court Directory with Judges & Addresses</a>
-<a href="/nov-3-2026-ballot-guide/" class="btn btn-secondary">Nov. 3, 2026 Ballot Guide: every judicial race in Killeen</a>
-
-## Legal Representation
-
-<div class="cards-grid">
-<div class="card">
-<h3>Criminal Law</h3>
-<p>Facing assault charges, DWI, domestic violence, or other criminal accusations in Bell County? Learn how Texas law defines the charges and how cases move through local courts.</p>
-<a href="/criminal-law/" class="btn btn-primary">Criminal Law Information</a>
-</div>
-
-<div class="card">
-<h3>Attorney Directory</h3>
-<p>Law firms with offices in Killeen, Temple, Belton and Harker Heights — each firm's website, attorneys, practice areas and how long it has been in practice, compiled from the firms' own sites.</p>
-<a href="/attorneys/" class="btn btn-primary">Bell County Attorney Directory</a>
-</div>
-</div>
-
-## Key Online Resources
-
-<ul class="check-list">
-<li><strong><a href="https://justice.bellcounty.texas.gov/PublicPortal/" target="_blank" rel="noopener noreferrer">Odyssey Portal</a></strong> — Search Bell County court hearings, case records, and dockets online</li>
-<li><strong><a href="https://bell.go2gov.net" target="_blank" rel="noopener noreferrer">Online Payments</a></strong> — Pay citations and court fines online</li>
-<li><strong><a href="/texas-law/">Texas Law Overview</a></strong> — State statutes, penalties, and procedures</li>
-<li><strong><a href="/bell-county/">Bell County Specifics</a></strong> — Local court information and procedures</li>
-<li><strong><a href="/resources/">Legal Resources</a></strong> — Legal aid, victim services, and self-help resources</li>
-</ul>
 
 {% include front-page-featured-articles.html %}
 
-<div class="legal-notice">
-<strong>Important Notice:</strong> The information provided on this website is for general educational purposes only and does not constitute legal advice. No attorney-client relationship is formed by use of this site. Every legal situation is unique. For advice specific to your circumstances, consult with a licensed Texas attorney.
-</div>
+## How this site works
+
+Profiles are built from Killeen Daily Herald, Temple Daily Telegram, KWTX, KCEN, the Texas Tribune, San Antonio Report and official records such as txcourts.gov and the Governor's appointment announcements — the full list is on the [sources page](/advertise/). Claims that cannot be matched to a public source are marked unverified, and every correction is logged on the [corrections page](/corrections/). Read the [about page](/about/) for the mission and the legal basis for publishing.

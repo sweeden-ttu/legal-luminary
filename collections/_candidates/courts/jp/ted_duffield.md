@@ -49,5 +49,6 @@ professional_history: '**Bell County Precinct 1** — Justice of the Peace
 
   '
 odyssey_results_placeholder: Court case records and JP court statistics will be added here.
+listing_status: "Incumbent; not seeking re-election, term ends Dec. 31, 2026"
 ---
 Ted Duffield is the Justice of the Peace for Bell County Precinct 1, serving the citizens of Bell County.

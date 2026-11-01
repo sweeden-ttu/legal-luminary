@@ -50,5 +50,6 @@ professional_history: '**Bell County Precinct 3** — Justice of the Peace
 
   '
 odyssey_results_placeholder: Court case records and JP court statistics will be added here.
+listing_status: "Incumbent; term runs through 2028"
 ---
 Rosanne Fisher is the Justice of the Peace for Bell County Precinct 3, serving the citizens of Bell County.

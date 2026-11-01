@@ -5,10 +5,10 @@
 # See: .github/workflows/jekyll.yml
 
 # Site Settings
-title: "Central Texas Legal Resources"
+title: "Legal Luminary"
 logo: /assets/imgs/legal-luminary-research-tool.svg
-description: "Your trusted guide to Texas and Bell County law, courts and judicial elections"
-tagline: "Information • Guidance • Justice"
+description: "Who's who on the Central Texas bench: every elected judge in Bell County and the statewide courts on its ballot, with sourced profiles"
+tagline: "The Central Texas Bench • Sourced • Verified"
 author: "Central Texas Legal Resource"
 email: "notary@legalluminary.com"
 lang: en-US
@@ -54,34 +54,45 @@ theme: null
 navigation:
   - title: Home
     url: /
-  - title: Nov. 3 Ballot Guide
+  - title: The Bench
+    url: /candidates/courts/
+    alt: Every elected judge in Bell County and the statewide seats on its ballot
+    children:
+      - title: Supreme Court & Court of Criminal Appeals
+        url: /courts/statewide/
+      - title: Courts of Appeals
+        url: /courts/appeals/
+      - title: District Courts
+        url: /courts/district/
+      - title: County Courts at Law & County Judge
+        url: /courts/county/
+      - title: Justices of the Peace
+        url: /courts/jp/
+      - title: Court Directory (addresses & phones)
+        url: /court-directory/
+  - title: Elections
     url: /nov-3-2026-ballot-guide/
     alt: Killeen & Bell County ballot guide for the November 3, 2026 election
-  - title: Texas Law
-    url: /texas-law/
-  - title: Bell County
-    url: /bell-county/
-  - title: Judicial Officers
-    url: /candidates/courts/
-  - title: Criminal Law
-    url: /criminal-law/
-  - title: Attorney Directory
-    url: /attorneys/
-  - title: Family Law
-    url: /family-law/
-  - title: Resources
-    url: /resources/
     children:
-      - title: Meseeks
-        url: /meseeks/
-        alt: Legal opportunities, notices, standing orders and public Q&A
-      - title: Run for Judge
+      - title: Nov. 3, 2026 Ballot Guide
+        url: /nov-3-2026-ballot-guide/
+      - title: How to Run for Judge
         url: /run-for-judge/
-        alt: Eligibility, fees, signatures and deadlines for judicial candidates in Bell County
-      - title: Links
-        url: /links/
-      - title: About
-        url: /about/
+      - title: Voting in Bell County
+        url: /elections/
+  - title: Attorneys
+    url: /attorneys/
+  - title: News
+    url: /legal-news/
+  - title: About
+    url: /about/
+    children:
+      - title: Sources
+        url: /advertise/
+      - title: Corrections
+        url: /corrections/
+      - title: Scorecard Methodology
+        url: /methodology/
 
 # Service Area Information
 service_area:
@@ -96,43 +107,6 @@ service_area:
     - Nolanville
     - Salado
 
-# Sass/SCSS Processing
-# We keep the GitHub Pages default theme, but we do NOT want it to build its SCSS
-# (Ruby sass has encoding issues on some environments). We serve our own CSS.
-theme: null
-
-# Site Navigation
-navigation:
-  - title: Home
-    url: /
-  - title: Nov. 3 Ballot Guide
-    url: /nov-3-2026-ballot-guide/
-    alt: Killeen & Bell County ballot guide for the November 3, 2026 election
-  - title: Texas Law
-    url: /texas-law/
-  - title: Bell County
-    url: /bell-county/
-  - title: Judicial Officers
-    url: /candidates/courts/
-  - title: Criminal Law
-    url: /criminal-law/
-  - title: Attorney Directory
-    url: /attorneys/
-  - title: Family Law
-    url: /family-law/
-  - title: Resources
-    url: /resources/
-    children:
-      - title: Meseeks
-        url: /meseeks/
-        alt: Legal opportunities, notices, standing orders and public Q&A
-      - title: Run for Judge
-        url: /run-for-judge/
-        alt: Eligibility, fees, signatures and deadlines for judicial candidates in Bell County
-      - title: Links
-        url: /links/
-      - title: About
-        url: /about/
 
 # Service Area Information
 service_area:

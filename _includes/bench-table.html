@@ -1,0 +1,25 @@
+{%- comment -%}
+Bench table. Parameters:
+  group    — path fragment under collections/_candidates/courts/ (district, county, jp, associate, senior)
+  former   — "true" to render the former-judges table instead of the current bench
+{%- endcomment -%}
+{%- assign needle = "courts/" | append: include.group | append: "/" -%}
+{%- assign rows = site.candidates | where_exp: "j", "j.path contains needle" | sort: "office" -%}
+<div class="table-responsive">
+<table class="bench-table">
+  <thead><tr><th scope="col">Court</th><th scope="col">Judge</th><th scope="col">Status</th></tr></thead>
+  <tbody>
+  {%- for j in rows -%}
+    {%- assign is_former = false -%}
+    {%- if j.election_status == "former" or j.election_status == "primary_defeated" or j.election_status == "senior" or j.office contains "Former" or j.title contains "Former" -%}{%- assign is_former = true -%}{%- endif -%}
+    {%- if include.former == "true" and is_former == false -%}{%- continue -%}{%- endif -%}
+    {%- if include.former != "true" and is_former -%}{%- continue -%}{%- endif -%}
+    <tr>
+      <td>{{ j.office | replace: " (Former)", "" }}</td>
+      <td><strong><a href="{{ j.url | relative_url }}">{{ j.title }}</a></strong>{% if j.party %} <span class="bench-party">({{ j.party | slice: 0 }})</span>{% endif %}</td>
+      <td>{% if j.listing_status %}{{ j.listing_status }}{% elsif j.election_status == "general_2026" and j.incumbent %}Incumbent, on the Nov. 3, 2026 ballot{% elsif j.election_status == "general_2026" %}Candidate, Nov. 3, 2026{% elsif j.incumbent %}Incumbent{% elsif is_former %}{{ j.election_status | capitalize }}{% else %}{{ j.notes | truncate: 80 }}{% endif %}</td>
+    </tr>
+  {%- endfor -%}
+  </tbody>
+</table>
+</div>

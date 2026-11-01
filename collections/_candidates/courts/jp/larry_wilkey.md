@@ -4,7 +4,7 @@ title: Larry Wilkey
 office: Justice of the Peace, Precinct 3, Place 2
 incumbent: true
 jurisdiction: Bell County
-party: null
+party: Republican
 official_profile: https://www.bellcountytx.com/county_government/justice_of_the_peace/precinct_3_place_2/index.php
 campaign_website: null
 candidate_slug: larry_wilkey
@@ -52,5 +52,6 @@ odyssey_statistics:
     - "Other Civil: Small Claims: 110 cases"
     - "Criminal Non-Traffic: 104 cases"
 
+listing_status: "Incumbent / Unopposed Republican Nominee"
 ---
 Larry Wilkey is the Justice of the Peace for Bell County Precinct 3, Place 2, serving the Temple area.

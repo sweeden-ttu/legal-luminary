@@ -869,3 +869,10 @@ ul.check-list li::before { content: "✓"; position: absolute; left: 0; color: v
 /* Sidebar: Legal News (judge-aware) */
 .sidebar-legal-news__intro { margin: 0 0 0.75rem; font-size: 0.8125rem; color: var(--gray-dark); }
 .sidebar-legal-news__sources { margin-top: 1rem; }
+
+/* Bench tables and tier cards */
+.bench-table { width: 100%; border-collapse: collapse; font-size: 0.9375rem; margin: 0.5rem 0 1.5rem; }
+.bench-table th, .bench-table td { text-align: left; padding: 0.5rem 0.6rem; border-bottom: 1px solid var(--gray-light); vertical-align: top; }
+.bench-table th { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--gray); }
+.bench-party { color: var(--gray); font-size: 0.875rem; }
+.tier-grid .card h3 a { text-decoration: none; }
