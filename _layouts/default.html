@@ -254,25 +254,10 @@
           sidebar-feed.html now renders the RSS-based legal news widget site-wide.
           sidebar-news-feed.html is deprecated to avoid duplicate widgets.
           {%- endcomment -%}
-          {% unless page.hide_sidebar_listings %}
-          <div class="ad-section" aria-label="Sponsored legal providers">
-            <span class="ad-label">ADVERTISEMENT</span>
-            {% if page.sidebar_ads_content %}
-            {{ page.sidebar_ads_content }}
-            {% elsif page.url == '/' or page.url == '/index.html' or page.sidebar_ads == "home" %}
-            {% include ads-home.html %}
-            {% elsif page.url == '/' or page.url == '/index.html' or page.url == '/defense/' or page.url == '/defense/index.html' or page.sidebar_ads == "defense" %}
-            {% include ads-defense.html %}
-            {% elsif page.url == '/personal-injury/' or page.url == '/personal-injury/index.html' or page.sidebar_ads == "injury" %}
-            {% include ads-injury.html %}
-            {% else %}
-            {% include ads-general.html %}
-            {% endif %}
-          </div>
-          {% endunless %}
+          {% include sidebar-sources.html %}
           <div class="sidebar-info">
             <h3>Need Legal Help?</h3>
-            <p>The attorneys featured on this site are ready to assist individuals with their legal matters in Bell County and throughout Texas.</p>
+            <p>This site publishes legal information, not referrals. The resources page lists court contacts, legal aid and self-help links for Bell County and Texas.</p>
             <a href="{{ '/resources/' | relative_url }}" class="btn btn-secondary">View All Resources</a>
           </div>
         </aside>
@@ -307,7 +292,7 @@
       </div>
       <div class="footer-bottom">
         <p>&copy; {{ 'now' | date: "%Y" }} Central Texas Legal Resource. All rights reserved.</p>
-        <p class="attorney-advertising">{% unless page.hide_ad_label %}<strong>ADVERTISEMENT</strong> — {% endunless %}This website contains attorney advertising. Prior results do not guarantee a similar outcome. The outcome of any case depends on numerous factors unique to that case.</p>
+        <p class="attorney-advertising">This website carries no paid advertising. Judicial profiles and election pages cite the <a href="{{ '/advertise/' | relative_url }}">news reporting and official records</a> they are built from.</p>
       </div>
     </div>
   </footer>

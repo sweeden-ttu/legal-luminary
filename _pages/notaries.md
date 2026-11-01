@@ -11,11 +11,6 @@ description: "Directory of notary publics serving Bell County and Central Texas.
   </p>
 
   <div class="notary-layout">
-    <aside class="notary-ads" aria-label="Sponsored notary advertising">
-      <span class="ad-label">ADVERTISEMENT</span>
-      {% include ads-bellcounty.html %}
-    </aside>
-
     <section class="notary-results" aria-label="Notary listings">
       <nav class="notary-city-jumps" aria-label="Jump to city">
         <strong>Jump to:</strong>

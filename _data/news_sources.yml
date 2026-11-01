@@ -1,0 +1,49 @@
+# News outlets and official records cited across Legal Luminary's judicial profiles and election pages.
+# Rendered by _includes/sidebar-sources.html in place of the former sidebar advertisements.
+news:
+  - name: Killeen Daily Herald
+    url: https://kdhnews.com/
+    note: Bell County courts, Justice of the Peace races, primaries and runoffs
+  - name: Temple Daily Telegram
+    url: https://tdtnews.com/
+    note: Temple-area courts and county government
+  - name: KWTX
+    url: https://www.kwtx.com/
+    note: Central Texas election and court coverage
+  - name: KCEN-TV
+    url: https://www.kcentv.com/
+    note: Central Texas election coverage
+  - name: KXXV
+    url: https://www.kxxv.com/
+    note: Killeen city government
+  - name: FOX 44 News
+    url: https://www.fox44news.com/
+    note: Killeen and Bell County news
+  - name: San Antonio Report
+    url: https://sanantonioreport.org/
+    note: Voter guide to the statewide judicial candidates
+  - name: The Texas Tribune
+    url: https://www.texastribune.org/
+    note: Texas Supreme Court and appellate races
+  - name: States Newsroom
+    url: https://www.newsfromthestates.com/
+    note: Texas Supreme Court 2026 election explainer
+  - name: Community Impact
+    url: https://communityimpact.com/
+    note: Statewide judicial candidate backgrounds
+official:
+  - name: Bell County Elections
+    url: https://www.bellcountytx.com/departments/elections/
+    note: Voting schedule, polling places and ballots
+  - name: City of Killeen
+    url: https://www.killeentexas.gov/
+    note: Charter election documents
+  - name: Texas Judicial Branch
+    url: https://www.txcourts.gov/
+    note: Court rosters and official judge biographies
+  - name: Office of the Texas Governor
+    url: https://gov.texas.gov/
+    note: Judicial appointment announcements
+  - name: Ballotpedia
+    url: https://ballotpedia.org/
+    note: Candidate and election reference

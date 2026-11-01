@@ -1,74 +1,33 @@
 ---
 layout: default
-title: Advertise
+title: Sources
 permalink: /advertise/
 hero: true
-hero_title: "Advertising Opportunities"
-hero_subtitle: "Reach clients actively seeking legal services in Central Texas"
-description: "Advertising opportunities for attorneys and legal service providers in Bell County and Central Texas."
-verified_at: 2026-02-11
+hero_title: "Where our information comes from"
+hero_subtitle: "This site carries no paid advertising"
+description: "Legal Luminary carries no paid advertising. Every judicial profile and election page is built from public news reporting and official records, listed here."
+verified_at: 2026-11-01
+robots: index,follow
 ---
 
 <p class="intro-text">
-Connect with clients who are actively seeking legal representation in Central Texas. This site serves as a trusted resource for residents of Bell County and surrounding areas looking for defense attorneys, personal injury lawyers, and other legal services.
+Legal Luminary no longer publishes sponsored listings for attorneys, notaries, process servers or other legal services. The sidebar space those advertisements occupied now lists the sources behind the site's judicial profiles and election coverage, so readers can check the reporting for themselves.
 </p>
 
-## Why Advertise Here?
+## News coverage we rely on
 
-**Targeted Audience** — Reach clients who are actively searching for legal services in Bell County, Killeen, Temple, Belton, and surrounding Central Texas communities.
+{% for s in site.data.news_sources.news %}
+- **[{{ s.name }}]({{ s.url }})** — {{ s.note }}
+{%- endfor %}
 
-**High-Intent Traffic** — Visitors to this site are specifically looking for legal information and attorney referrals, making them highly qualified leads.
+## Official records
 
-**Local Focus** — We specialize in connecting Central Texas residents with local legal professionals who understand the area's courts and legal landscape.
+{% for s in site.data.news_sources.official %}
+- **[{{ s.name }}]({{ s.url }})** — {{ s.note }}
+{%- endfor %}
 
-## Advertising Options
+## How citations work on this site
 
-### Featured Attorney Listings
+Every factual statement on a judge or candidate profile links to the article or record that supports it. Each profile's **In the News** panel repeats those citations as a reading list. Statements that have not yet been matched to a public source are marked as unverified rather than presented as fact. Corrections are logged on the [corrections page](/corrections/).
 
-Prominently display practices in attorney directories:
-
-- **Criminal Defense Attorneys** — Featured placement on our defense attorney page
-- **Personal Injury Attorneys** — Featured placement on our personal injury page
-
-Featured listings include:
-- Prominent placement in ad cards
-- Contact information (phone, email, website)
-- Specialty designation
-- Call-to-action buttons
-
-### Standard Listings
-
-Standard advertising placements are also available for legal service providers, including:
-- Bail bond services
-- Legal support services
-- Related professional services
-
-## Contact Us
-
-To learn more about advertising opportunities and pricing, please contact us:
-
-**Email:** [Contact information to be added]
-
-<div class="info-box">
-<h4>Advertising Guidelines</h4>
-<p>All advertisements must comply with Texas State Bar advertising rules and regulations. We reserve the right to review and approve all advertising content.</p>
-</div>
-
-<div class="cards-grid">
-<div class="card">
-<h3>Criminal Defense</h3>
-<p>Reach clients seeking defense representation in Bell County courts.</p>
-<a href="/defense/" class="btn btn-primary">View Defense Page</a>
-</div>
-
-<div class="card">
-<h3>Personal Injury</h3>
-<p>Connect with clients seeking injury representation in Central Texas.</p>
-<a href="/personal-injury/" class="btn btn-primary">View Injury Page</a>
-</div>
-</div>
-
-<div class="legal-notice">
-<strong>Note:</strong> This site provides advertising opportunities for qualified legal professionals. All advertisers must be licensed to practice law in Texas (where applicable) and must comply with all applicable advertising regulations.
-</div>
-
+See the [Nov. 3, 2026 ballot guide](/nov-3-2026-ballot-guide/) for every judicial race on the Killeen ballot and the [Bell County judicial officers directory](/candidates/courts/) for current judges.

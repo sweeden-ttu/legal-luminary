@@ -820,3 +820,23 @@ ul.check-list li::before { content: "✓"; position: absolute; left: 0; color: v
 .meseeks-guardrails ol { margin-left: 1.25rem; line-height: 1.6; }
 .meseeks-guardrails li { margin-bottom: 0.5rem; }
 .meseeks-small { font-size: 0.8125rem; color: var(--gray-dark); margin-top: 1rem; }
+}
+
+/* Sidebar: Sources (replaces the former sidebar advertisements) */
+.sidebar-sources__intro {
+  margin: 0 0 0.875rem;
+  font-size: 0.8125rem;
+  color: var(--gray-dark);
+  line-height: 1.5;
+}
+.sidebar-sources .sidebar-pros-group + .sidebar-pros-group {
+  margin-top: 1rem;
+}
+.sidebar-sources .sidebar-pros-group h4 {
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--gray);
+  margin: 0 0 0.5rem;
+}
+.sidebar-sources .sidebar-feed-title { font-size: 0.9375rem; }

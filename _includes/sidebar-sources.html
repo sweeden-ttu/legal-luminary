@@ -1,0 +1,52 @@
+{%- comment -%}
+Sidebar: Sources
+Replaces the former sidebar advertisements. If the page declares its own `sources:` list in front matter
+(url + label), those are shown first as "Sources for this page". Site-wide, the news outlets and official
+records in _data/news_sources.yml are listed so readers can see where the site's information comes from.
+{%- endcomment -%}
+{%- assign ns = site.data.news_sources -%}
+<section class="sidebar-feed sidebar-sources" aria-labelledby="sidebar-sources-title">
+  <h3 id="sidebar-sources-title">Sources</h3>
+  <p class="sidebar-sources__intro">Legal Luminary does not accept advertising. Every statement on this site is tied to the public reporting and official records listed here.</p>
+
+  {%- if page.sources and page.sources.size > 0 -%}
+  <div class="sidebar-pros-group">
+    <h4>Sources for this page</h4>
+    <ul class="sidebar-feed-list">
+      {%- for s in page.sources -%}
+      <li class="sidebar-feed-item">
+        <a class="sidebar-feed-title" href="{{ s.url }}" target="_blank" rel="noopener noreferrer">{{ s.label | default: s.url }}</a>
+      </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+  {%- endif -%}
+
+  {%- if ns.news and ns.news.size > 0 -%}
+  <div class="sidebar-pros-group">
+    <h4>News coverage we rely on</h4>
+    <ul class="sidebar-feed-list">
+      {%- for s in ns.news -%}
+      <li class="sidebar-feed-item">
+        <a class="sidebar-feed-title" href="{{ s.url }}" target="_blank" rel="noopener noreferrer">{{ s.name }}</a>
+        {%- if s.note %}<div class="sidebar-feed-meta">{{ s.note }}</div>{% endif %}
+      </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+  {%- endif -%}
+
+  {%- if ns.official and ns.official.size > 0 -%}
+  <div class="sidebar-pros-group">
+    <h4>Official records</h4>
+    <ul class="sidebar-feed-list">
+      {%- for s in ns.official -%}
+      <li class="sidebar-feed-item">
+        <a class="sidebar-feed-title" href="{{ s.url }}" target="_blank" rel="noopener noreferrer">{{ s.name }}</a>
+        {%- if s.note %}<div class="sidebar-feed-meta">{{ s.note }}</div>{% endif %}
+      </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+  {%- endif -%}
+</section>
