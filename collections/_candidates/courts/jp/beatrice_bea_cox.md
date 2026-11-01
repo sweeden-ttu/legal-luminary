@@ -24,7 +24,7 @@ profile_summary: 'Beatrice "Bea" Cox is the Republican nominee for Justice of th
   Cox is the Bell County truancy master, presiding over juvenile truancy cases for all school districts in the county. At an Oct. 7, 2026 candidate forum, she said she worked in the JP office for more than two decades, including many years for longtime Justice of the Peace Bill Cooke, now Bell County sheriff ([Killeen Daily Herald](https://kdhnews.com/centerforpolitics/cox-and-gonzalez-participate-in-justice-of-the-peace-forum-ahead-of-nov-3-election/article_f3226aea-4314-4639-9f1d-804bfbe9c839.html)). Neither candidate is an attorney.
 
 
-  Both candidates are listed on the official Bell County sample ballot ([sample ballot, Precinct 401](https://www.bellcountytx.com/elections/Sample/SAMPLE_401KIL.pdf)).
+  Cox and Gonzalez are the two candidates for Precinct 4, Place 2 on the Nov. 3 ballot ([Killeen Daily Herald](https://kdhnews.com/centerforpolitics/cox-and-gonzalez-participate-in-justice-of-the-peace-forum-ahead-of-nov-3-election/article_f3226aea-4314-4639-9f1d-804bfbe9c839.html); [Nov. 3 ballot guide](/nov-3-2026-ballot-guide/)).
 
 
   If elected, Cox will succeed outgoing incumbent Nicola J. James. Whoever wins will take office in January 2027.

@@ -1,0 +1,33 @@
+{
+  "candidate_slug": "wade_faulkner",
+  "city": "courts",
+  "articles": [
+    {
+      "url": "https://www.kcentv.com/article/news/politics/wade-faulkner-wins-2022-nomination-478th-district-judge/500-f7021997-b9cb-47f6-a987-123f8ea0aade",
+      "title": "Wade Faulkner Wins 2022 Nomination 478th District Judge",
+      "domain": "kcentv.com",
+      "outlet": "KCEN-TV",
+      "excerpt": "On Aug. 9, 2022, the Bell County Republican Party's district executive committee chose him from three candidates as its nominee for the 478th District Judge seat on the November 2022 ballot (KCEN).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://kdhnews.com/centerforpolitics/three-republicans-vying-for-426th-district-court-judgeship/article_d9f35960-4f74-11ea-9617-2790fe7a8695.html",
+      "title": "Three Republicans Vying for 426th District Court Judgeship",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "In 2020 he ran in the Republican primary for the 426th District Court (KDH).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://kdhnews.com/news/region/locals-vying-for-county-seats-in-primary-elections/article_6337d52a-83e9-5b75-8efe-8f6d35b2a54b.html",
+      "title": "Locals Vying for County Seats in Primary Elections",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "He was unopposed in the March 3, 2026 Republican primary, and no Democrat filed (KDH; [Bell County 2026 voter guide](https://sites.",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    }
+  ]
+}

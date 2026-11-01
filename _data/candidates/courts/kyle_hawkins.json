@@ -1,0 +1,24 @@
+{
+  "candidate_slug": "kyle_hawkins",
+  "city": "courts",
+  "articles": [
+    {
+      "url": "https://communityimpact.com/south-central-austin/election/here-are-the-92-candidates-running-for-statewide-offices-in-2026/",
+      "title": "Here Are the 92 Candidates Running for Statewide Offices in 2026",
+      "domain": "communityimpact.com",
+      "outlet": "Community Impact",
+      "excerpt": "profilesummary: 'Kyle Hawkins was appointed to the Texas Supreme Court in October 2025 and is running for a full six-year term (Community Impact).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://sanantonioreport.org/voter-guide-meet-the-judicial-candidates-on-the-nov-3-ballot/",
+      "title": "Voter Guide Meet the Judicial Candidates on the Nov 3 Ballot",
+      "domain": "sanantonioreport.org",
+      "outlet": "San Antonio Report",
+      "excerpt": "He previously worked at the U.S. Department of Justice, served as Texas Solicitor General and taught at the University of Texas School of Law (San Antonio Report).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    }
+  ]
+}

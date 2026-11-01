@@ -1,0 +1,15 @@
+{
+  "candidate_slug": "tom_baker",
+  "city": "courts",
+  "articles": [
+    {
+      "url": "https://sanantonioreport.org/voter-guide-meet-the-judicial-candidates-on-the-nov-3-ballot/",
+      "title": "Voter Guide Meet the Judicial Candidates on the Nov 3 Ballot",
+      "domain": "sanantonioreport.org",
+      "outlet": "San Antonio Report",
+      "excerpt": "profilesummary: 'Tom Baker is a U.S. Navy veteran and a former Texas appellate justice (San Antonio Report).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    }
+  ]
+}

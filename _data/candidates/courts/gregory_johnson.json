@@ -1,0 +1,33 @@
+{
+  "candidate_slug": "gregory_johnson",
+  "city": "courts",
+  "articles": [
+    {
+      "url": "https://kdhnews.com/centerforpolitics/justice-of-the-peace-gregory-johnson-to-kickoff-re-election-campaign-in-downtown-killeen/article_201c4216-4ac6-11ef-af71-cbe35f27b174.html",
+      "title": "Justice of the Peace Gregory Johnson to kick off re-election campaign in downtown Killeen",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "Johnson, a Democrat first elected in 2020 and a former two-term Killeen City Council member, launched his 2024 re-election campaign (July 25, 2024).",
+      "confidence": "high",
+      "field": "news_coverage"
+    },
+    {
+      "url": "https://kdhnews.com/centerforpolitics/judge-johnson-wins-reelection-in-jp-race/article_d79de508-9bf6-11ef-a584-8f4137e0702c.html",
+      "title": "Judge Johnson wins re-election in JP race",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "Johnson won re-election to Precinct 4, Place 1 on Nov. 5, 2024 with about 57.5 percent of the vote.",
+      "confidence": "high",
+      "field": "news_coverage"
+    },
+    {
+      "url": "https://kdhnews.com/news/region/bell-county-rings-in-new-year-by-swearing-in-elected-officials/article_878b3459-1a41-52ae-8110-9a069837be02.html",
+      "title": "Bell County rings in new year by swearing in elected officials",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "Johnson was sworn in for a new four-year term on Jan. 1, 2025.",
+      "confidence": "high",
+      "field": "news_coverage"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "candidate_slug": "paul_l_lepak",
+  "city": "courts",
+  "articles": [
+    {
+      "url": "https://www.kwtx.com/content/news/Governor-appoints-runoff-winner-to-fill-vacant-local-court-seat-486472521.html",
+      "title": "Governor Appoints Runoff Winner to Fill Vacant Local Court Seat 486472521",
+      "domain": "kwtx.com",
+      "outlet": "KWTX",
+      "excerpt": "On June 25, 2018, Gov. Greg Abbott appointed him to serve the rest of retiring Judge Martha Trudo's term, which ended Dec. 31, 2018 (KWTX; [Office of the Governor](https://gov.texas.",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://kdhnews.com/centerforpolitics/duskie-parker-to-vie-for-426th-judge-runoff/article_89f90810-3e0d-5b25-bd1a-5210e68d751d.html",
+      "title": "Duskie Parker to Vie for 426th Judge Runoff",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "He then won the 2018 election for the seat (Killeen Daily Herald).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://kdhnews.com/news/region/locals-vying-for-county-seats-in-primary-elections/article_6337d52a-83e9-5b75-8efe-8f6d35b2a54b.html",
+      "title": "Locals Vying for County Seats in Primary Elections",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "He was unopposed in the March 3, 2026 Republican primary, and no Democrat filed (KDH; [Bell County 2026 voter guide](https://sites.",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    }
+  ]
+}

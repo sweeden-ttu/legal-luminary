@@ -1,0 +1,24 @@
+{
+  "candidate_slug": "john_mischtian",
+  "city": "courts",
+  "articles": [
+    {
+      "url": "https://kdhnews.com/news/region/mischtian-leads-race-for-county-court-at-law-no-2/article_a6e45ce9-1069-53be-9d55-d05de47104c2.html",
+      "title": "Mischtian Leads Race for County Court at Law No 2",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "In the Nov. 8, 2022 general election he faced Democrat Kurt Glass and led the early-voting returns with about 59% of the vote to Glass's 41% (Killeen Daily Herald).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://kdhnews.com/news/region/locals-vying-for-county-seats-in-primary-elections/article_6337d52a-83e9-5b75-8efe-8f6d35b2a54b.html",
+      "title": "Locals Vying for County Seats in Primary Elections",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "He was unopposed in the March 3, 2026 Republican primary, and no Democrat filed (KDH; [Bell County 2026 voter guide](https://sites.",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    }
+  ]
+}

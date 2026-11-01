@@ -9,6 +9,10 @@ layout: candidates-root
 
 {% assign city = page.city %}
 {% assign cslug = page.candidate_slug %}
+{% if page.path contains "courts/" and city == nil %}
+    {% comment %} Judicial profiles keep their news sources in _data/candidates/courts/<slug>.json {% endcomment %}
+    {% assign city = "courts" %}
+{% endif %}
 {% assign city_data = site.data.candidates[city] %}
 {% assign art_data = nil %}
 {% if city_data %}

@@ -1,0 +1,33 @@
+{
+  "candidate_slug": "cari_l_starritt_burnett",
+  "city": "courts",
+  "articles": [
+    {
+      "url": "https://www.kwtx.com/2021/08/06/governor-appoints-2-judges-fill-vacancies-central-texas-courts",
+      "title": "Governor Appoints 2 Judges Fill Vacancies Central Texas Courts",
+      "domain": "kwtx.com",
+      "outlet": "KWTX",
+      "excerpt": "Adams, who retired in July 2021 (KWTX).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://kdhnews.com/news/region/new-judge-sworn-in-starritt-burnett-replaces-adams-on-169th-court-bench/article_6053b78f-e867-542a-8433-e56b08c843f6.html",
+      "title": "New Judge Sworn in Starritt Burnett Replaces Adams on 169th Court Bench",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "Adams swore her in as the 169th District Court's first woman judge (Killeen Daily Herald).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://kdhnews.com/news/region/locals-vying-for-county-seats-in-primary-elections/article_6337d52a-83e9-5b75-8efe-8f6d35b2a54b.html",
+      "title": "Locals Vying for County Seats in Primary Elections",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "She was unopposed in the March 3, 2026 Republican primary, and no Democrat filed (KDH; [Bell County 2026 voter guide](https://sites.",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    }
+  ]
+}

@@ -1,96 +1,136 @@
 election_day: November 3, 2026
 runoff_completed: May 26, 2026
+# Bell County judicial-branch races on the Nov. 3, 2026 ballot. Keys match _layouts/home.html (democrat / republican).
 matchups:
-- office: Justice of the Peace, Precinct 4, Place 2
+- office: Justice of the Peace, Precinct 4, Place 2 (Killeen)
   contested: true
-  candidate_1:
+  democrat:
     name: Jessica A. Gonzalez
-    url: /candidates/texas/jessica_gonzalez/
-  candidate_2:
+    url: /candidates/courts/jp/jessica_a_gonzalez/
+  republican:
     name: Beatrice "Bea" Cox
-    url: /candidates/texas/beatrice_cox/
+    url: /candidates/courts/jp/beatrice_bea_cox/
+- office: Justice of the Peace, Precinct 1
+  contested: false
+  democrat:
+    name: ''
+  republican:
+    name: Patrick "Pat" Patterson
 - office: Justice of the Peace, Precinct 2
   contested: false
-  candidate_1:
+  democrat:
     name: ''
-  candidate_2:
+  republican:
     name: Michael Tice
-    url: /candidates/texas/michael_tice/
+    url: /candidates/courts/jp/michael_tice/
+    note: Serving since July 2026
+- office: Justice of the Peace, Precinct 3, Place 2
+  contested: false
+  democrat:
+    name: ''
+  republican:
+    name: Larry Wilkey
+    url: /candidates/courts/jp/larry_wilkey/
+    note: Incumbent
 - office: Bell County Judge
   contested: false
-  candidate_1:
+  democrat:
     name: ''
-  candidate_2:
+  republican:
     name: David Blackburn
-    url: /candidates/texas/david_blackburn/
+    url: /candidates/texas/bell_county/david_blackburn/
     note: Incumbent
 - office: 169th District Court
   contested: false
-  candidate_1:
+  democrat:
     name: ''
-  candidate_2:
-    name: Paul LePak
-    url: /candidates/texas/paul_lepak/
+  republican:
+    name: Cari Starritt-Burnett
+    url: /candidates/courts/district/cari_l_starritt_burnett/
+    note: Incumbent
+- office: 264th District Court
+  contested: false
+  democrat:
+    name: ''
+  republican:
+    name: Paul L. LePak
+    url: /candidates/courts/district/paul_l_lepak/
+    note: Incumbent
 - office: 478th District Court
   contested: false
-  candidate_1:
+  democrat:
     name: ''
-  candidate_2:
+  republican:
     name: Wade Faulkner
-    url: /candidates/texas/wade_faulkner/
+    url: /candidates/courts/district/wade_faulkner/
     note: Incumbent
-- office: Bell County Court at Law No. 1
+- office: County Court at Law No. 1
   contested: false
-  candidate_1:
+  democrat:
     name: ''
-  candidate_2:
+  republican:
     name: Paul Motz
-    url: /candidates/texas/paul_motz/
+    url: /candidates/courts/county/paul_a_motz/
     note: Incumbent
-- office: Bell County Court at Law No. 2
+- office: County Court at Law No. 2
   contested: false
-  candidate_1:
+  democrat:
     name: ''
-  candidate_2:
+  republican:
     name: John Mischtian
-    url: /candidates/texas/john_mischtian/
+    url: /candidates/courts/county/john_mischtian/
     note: Incumbent
-- office: Bell County Court at Law No. 3
+- office: County Court at Law No. 3
   contested: false
-  candidate_1:
+  democrat:
     name: ''
-  candidate_2:
-    name: John Gauntt Jr.
-    url: /candidates/texas/john_gauntt_jr/
+  republican:
+    name: John Gauntt, Jr.
+    url: /candidates/courts/county/john_gauntt_jr/
+    note: Open seat
+- office: District Clerk
+  contested: false
+  democrat:
+    name: ''
+  republican:
+    name: Lacey Martindale
+    note: Incumbent
+- office: County Clerk
+  contested: false
+  democrat:
+    name: ''
+  republican:
+    name: Shelley Coston
+    note: Incumbent
+# profile_slug must match the last path segment of the candidate's URL.
 profiles:
-- profile_slug: jessica_gonzalez
+- profile_slug: jessica_a_gonzalez
   tier: featured
-  teaser: Killeen City Council veteran and Democratic nominee for Justice of the Peace,
-    Precinct 4 Place 2.
-- profile_slug: beatrice_cox
+  teaser: Killeen City Council member and Democratic nominee for Justice of the Peace, Precinct 4, Place 2.
+- profile_slug: beatrice_bea_cox
   tier: featured
-  teaser: 35 years in Bell County courts and law enforcement; Republican nominee for
-    the Killeen JP seat.
+  teaser: Bell County truancy master with 20-plus years in the JP office; Republican nominee for the Killeen JP seat.
 - profile_slug: michael_tice
   tier: jp
-  teaser: State Trooper and Army veteran seeking Justice of the Peace, Precinct 2.
+  teaser: Justice of the Peace, Precinct 2 since July 2026 and unopposed Republican nominee.
 - profile_slug: david_blackburn
   tier: judiciary
-  teaser: County Judge since 2019; JD from St. Mary's, former city manager for Temple
-    and Killeen.
-- profile_slug: paul_lepak
+  teaser: County Judge since 2019; unopposed for re-election.
+- profile_slug: cari_l_starritt_burnett
   tier: judiciary
-  teaser: 30 years of litigation experience; Fellow of the Texas Bar Foundation.
+  teaser: Judge of the 169th District Court; unopposed for re-election.
+- profile_slug: paul_l_lepak
+  tier: judiciary
+  teaser: Judge of the 264th District Court; unopposed for re-election.
 - profile_slug: wade_faulkner
   tier: judiciary
-  teaser: 23-year Army JAG career; incumbent judge of the 478th District Court.
-- profile_slug: paul_motz
+  teaser: Judge of the 478th District Court; unopposed for re-election.
+- profile_slug: paul_a_motz
   tier: judiciary
-  teaser: Nearly two decades in appellate, probate, family, and criminal practice
-    before the bench.
+  teaser: Judge of County Court at Law No. 1; unopposed for re-election.
 - profile_slug: john_mischtian
   tier: judiciary
-  teaser: Incumbent County Court at Law No. 2 judge serving Bell County.
+  teaser: Judge of County Court at Law No. 2; unopposed for re-election.
 - profile_slug: john_gauntt_jr
   tier: judiciary
-  teaser: Candidate for County Court at Law No. 3 on the 2026 general election ballot.
+  teaser: Bell County prosecutor; unopposed nominee to succeed retiring Judge Rebecca DePew in County Court at Law No. 3.

@@ -1,0 +1,24 @@
+{
+  "candidate_slug": "nicola_j_james",
+  "city": "courts",
+  "articles": [
+    {
+      "url": "https://kdhnews.com/harker_heights_herald/community/judge-nicola-james-to-seek-reelection-to-bell-county-precinct-4-place-2-jp-post/article_568ac374-58ea-4a72-b260-65987c3ee881.html",
+      "title": "Judge Nicola James to seek re-election to Bell County Precinct 4, Place 2 JP post",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "James, elected in 2022 to replace Bill Cooke and a former court administrator in Copperas Cove, announced her re-election bid (Nov. 1, 2025).",
+      "confidence": "high",
+      "field": "news_coverage"
+    },
+    {
+      "url": "https://kdhnews.com/centerforpolitics/jp-for-killeen-quarles-gonzalez-head-to-runoff-election-as-incumbent-finishes-3rd/article_baed7726-ac7b-42e9-bfc8-1a9515ac424c.html",
+      "title": "JP for Killeen: Quarles, Gonzalez head to runoff election as incumbent finishes 3rd",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "James finished third of three in the March 3, 2026 Democratic primary with 27.86 percent.",
+      "confidence": "high",
+      "field": "news_coverage"
+    }
+  ]
+}

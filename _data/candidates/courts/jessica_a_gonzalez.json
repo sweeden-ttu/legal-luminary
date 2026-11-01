@@ -1,0 +1,78 @@
+{
+  "candidate_slug": "jessica_a_gonzalez",
+  "city": "courts",
+  "articles": [
+    {
+      "url": "https://kdhnews.com/centerforpolitics/gonzalez-a-killeen-councilwoman-wins-democratic-jp-primary-runoff/article_86fc56ce-ab7a-4d23-8bdc-d4b7b1a1bf86.html",
+      "title": "Gonzalez a Killeen Councilwoman Wins Democratic JP Primary Runoff",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "profilesummary: 'Gonzalez won the May 26, 2026 Democratic runoff over LaTasha Quarles, 51.3% to 48.7% (1,233 to 1,171 votes, unofficial results per the Killeen Daily Herald).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://kdhnews.com/centerforpolitics/jp-for-killeen-quarles-gonzalez-head-to-runoff-election-as-incumbent-finishes-3rd/article_baed7726-ac7b-42e9-bfc8-1a9515ac424c.html",
+      "title": "JP for Killeen Quarles Gonzalez Head to Runoff Election as Incumbent Finishes 3rd",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "James, finished third in the March primary (KDH).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://kdhnews.com/news/local/gonzalez-says-her-time-and-service-will-get-her-edge-in-november-jp-race/article_ae036acb-2af1-4705-9b2b-bb9462abe22a.html",
+      "title": "Gonzalez Says Her Time and Service Will Get Her Edge in November JP Race",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "Gonzalez is Killeen's District 1 council member and mayor pro tem; she has said she would immediately resign from council if elected (KDH).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://kdhnews.com/centerforpolitics/cox-and-gonzalez-participate-in-justice-of-the-peace-forum-ahead-of-nov-3-election/article_f3226aea-4314-4639-9f1d-804bfbe9c839.html",
+      "title": "Cox and Gonzalez Participate in Justice of the Peace Forum ahead of Nov 3 Election",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "At an Oct. 7, 2026 candidate forum, Gonzalez said her work as a property manager has prepared her for duties including eviction proceedings, and that newly elected JPs complete mandatory state training (Killeen Daily Herald).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://kdhnews.com/news/local/recall-petition-submitted-for-mayor-pro-tem-gonzalez-awaits-verification/article_86e51adc-4aca-11ef-adf1-a73104b940e4.html",
+      "title": "Recall Petition Submitted for Mayor Pro Tem Gonzalez Awaits Verification",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "<img src=\"/assets/images/candidates/jessicaagonzalez/photo2.jpg\" alt=\"Jessica Gonzalez\" class=\"flow-img-right\" />In July 2024, a recall petition against Gonzalez was submitted by Killeen residents, as reported by the Killeen Daily Herald (petition submitted).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://kdhnews.com/news/local/removal-effort-against-killeen-mayor-pro-tem-falls-short-due-to-lack-of-qualified-signatures/article_bd44f076-4eca-11ef-9a50-1f5d14319fd5.html",
+      "title": "Removal Effort Against Killeen Mayor Pro Tem Falls Short Due to Lack of Qualified Signatures",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "The city said the petition fell short because it lacked enough qualified signatures from District 1; 246 were required (city finding, KDH).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://kdhnews.com/news/local/killeen-city-council-removes-probable-cause-provision-from-proposition-a/article_9779723c-75e0-11ed-ae6c-43101dbd1598.html",
+      "title": "Killeen City Council Removes Probable Cause Provision from Proposition a",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "The motion passed 4–3 (KDH; [Fox 44](https://www.",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://www.fox44news.com/news/local-news/bell-county/killeen-city-council-amends-marijuana-proposition/",
+      "title": "Killeen City Council Amends Marijuana Proposition",
+      "domain": "fox44news.com",
+      "outlet": "FOX 44",
+      "excerpt": "The motion passed 4–3 (KDH; Fox 44).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    }
+  ]
+}

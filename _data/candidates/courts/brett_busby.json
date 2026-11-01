@@ -1,0 +1,24 @@
+{
+  "candidate_slug": "brett_busby",
+  "city": "courts",
+  "articles": [
+    {
+      "url": "https://communityimpact.com/south-central-austin/election/here-are-the-92-candidates-running-for-statewide-offices-in-2026/",
+      "title": "Here Are the 92 Candidates Running for Statewide Offices in 2026",
+      "domain": "communityimpact.com",
+      "outlet": "Community Impact",
+      "excerpt": "profilesummary: 'Brett Busby is running for re-election to the Texas Supreme Court (Community Impact).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://sanantonioreport.org/voter-guide-meet-the-judicial-candidates-on-the-nov-3-ballot/",
+      "title": "Voter Guide Meet the Judicial Candidates on the Nov 3 Ballot",
+      "domain": "sanantonioreport.org",
+      "outlet": "San Antonio Report",
+      "excerpt": "He previously served on the Fourteenth Court of Appeals in Houston and was a partner at Bracewell LLP (San Antonio Report).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    }
+  ]
+}

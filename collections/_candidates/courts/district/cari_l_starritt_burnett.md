@@ -10,84 +10,47 @@ campaign_website: null
 candidate_slug: cari_l_starritt_burnett
 headshot: null
 election_status: seated
-office_up_for_election: false
-notes: Elected November 2024; term expires December 31, 2028. Previously served as Associate Judge for the 169th District
-  Court. Elected 01/02/25. Term expires 12/31/28.
-profile_summary: 'Cari L. Starritt-Burnett is the presiding judge of the 169th Judicial District Court in Bell County, Texas.
-  She was elected in November 2024 and assumed the bench on January 2, 2025, succeeding Judge Fancy H. Jezek.
+office_up_for_election: true
+listing_status: Incumbent / Unopposed Republican Nominee
+notes: Appointed by Gov. Greg Abbott on Aug. 6, 2021 to succeed retiring Judge Gordon G. Adams. Unopposed Republican nominee on the
+  Nov. 3, 2026 ballot; no Democrat filed.
+profile_summary: |
+  Cari L. Starritt-Burnett is the judge of the 169th Judicial District Court in Bell County. Gov. Greg Abbott appointed her on Aug. 6, 2021, for a term ending Dec. 31, 2022, "or until her successor shall be duly elected and qualified" ([Office of the Governor](https://gov.texas.gov/news/post/governor-abbott-appoints-starritt-burnett-to-169th-judicial-district-court)). She succeeded Judge Gordon G. Adams, who retired in July 2021 ([KWTX](https://www.kwtx.com/2021/08/06/governor-appoints-2-judges-fill-vacancies-central-texas-courts)). Adams swore her in as the 169th District Court's first woman judge ([Killeen Daily Herald](https://kdhnews.com/news/region/new-judge-sworn-in-starritt-burnett-replaces-adams-on-169th-court-bench/article_6053b78f-e867-542a-8433-e56b08c843f6.html)).
 
 
-  The 169th Judicial District Court has general jurisdiction over felony criminal cases and civil matters. Prior to her elevation
-  to the bench, Judge Starritt-Burnett served as the Associate Judge for the 169th District Court, giving her unique familiarity
-  with the court''s docket and operations.
+  Before her appointment she was a partner and co-owner of Seigman, Starritt-Burnett & Sinkfield, PLLC, where she headed the Family Law Department ([TCJL](https://tcjl.com/governor-abbott-appoints-starritt-burnett-to-169th-judicial-district-court/); [KDH](https://kdhnews.com/news/region/new-judge-sworn-in-starritt-burnett-replaces-adams-on-169th-court-bench/article_6053b78f-e867-542a-8433-e56b08c843f6.html)). She holds a B.A. in Government/Political Science from Angelo State University and a J.D. from Texas Tech University School of Law ([Office of the Governor](https://gov.texas.gov/news/post/governor-abbott-appoints-starritt-burnett-to-169th-judicial-district-court)).
 
 
-  Her prior service as an associate judge distinguished her from other candidates, as she had already been making judicial
-  decisions on family law, child protection, and related matters within the same court. This experience provided a seamless
-  transition when she became the presiding judge.
+  **2026 election:** She is the only candidate for the 169th District Court. She was unopposed in the March 3, 2026 Republican primary, and no Democrat filed ([KDH](https://kdhnews.com/news/region/locals-vying-for-county-seats-in-primary-elections/article_6337d52a-83e9-5b75-8efe-8f6d35b2a54b.html); [Bell County 2026 voter guide](https://sites.google.com/view/bellcounty2026/other-countywide-races)).
+credentials: |
+  **Education**
+
+  - B.A., Government/Political Science, Angelo State University
+  - J.D., Texas Tech University School of Law
 
 
-  As a district judge, Starritt-Burnett presides over felony criminal cases, high-value civil disputes, and other legal matters.
-  She manages a high-volume docket and ensures that cases move efficiently through the court system while protecting the rights
-  of all parties.
-
-
-  Judge Starritt-Burnett''s term expires December 31, 2028. She is a Republican and her position will be up for election in
-  2028.
-
-  '
-credentials: '**Education**
-
-  - J.D., accredited law school
-
-
-  **Bar Admissions**
+  **Professional memberships** (as of 2021, per [KDH](https://kdhnews.com/news/region/new-judge-sworn-in-starritt-burnett-replaces-adams-on-169th-court-bench/article_6053b78f-e867-542a-8433-e56b08c843f6.html))
 
   - State Bar of Texas
+  - Bell County Bar Association (member and past president)
+  - Bell County Women's Bar Association
+  - College of the State Bar of Texas
+professional_history: |
+  **169th Judicial District Court**: District Judge (Aug. 2021 to present)
+
+  Appointed by Gov. Abbott to succeed Judge Gordon G. Adams.
 
 
-  **Judicial Experience**
-
-  - Previously served as Associate Judge, 169th Judicial District Court
-
-
-  **Professional Memberships**
-
-  - Bell County Bar Association
-
-  - State Bar of Texas
-
-  '
-professional_history: '**169th Judicial District Court** — Associate Judge (prior to 2025)
-
-  Served as an associate judge handling family law, child protection, and other matters assigned by the district court.
-
-
-  **169th Judicial District Court** — District Judge (January 2025 – Present)
-
-  Elected November 2024, succeeded Judge Fancy H. Jezek.
-
-  '
-odyssey_results_placeholder: Court case records and judicial statistics from the Odyssey case management system will be added
-  here. This section will include docket analysis, case disposition trends, and other data-driven insights into Judge Starritt-Burnett's
-  judicial record.
+  **Seigman, Starritt-Burnett & Sinkfield, PLLC**: Partner and co-owner; head of the Family Law Department (before 2021)
 court_contact:
   court_name: 169th Judicial District Court
   court_type: District Court
-  court_coordinator: Candy Manibusan
-  coordinator_email: Candy.Manibusan@bellcounty.texas.gov
-  court_reporter: Angela Ralston
   phone: (254) 933-5265
-  fax: (254) 933-5933
-  address: 1201 Huey RoadBelton, Texas  76513
-  mailing_address: P.O. Box 324Belton, Texas  76513
+  address: 1201 Huey Road, Belton, Texas 76513
 election_info:
-  election_year: null
-  appointment_year: 2021
-  appointment_date: August 2021
+  appointment_date: August 6, 2021
   next_election: 2026
   term_length_years: 4
-  election_notes: Appointed by Governor Greg Abbott in August 2021. First election in 2026
-  days_until_election: 286
+  election_notes: Appointed Aug. 2021; unopposed Republican nominee on the Nov. 3, 2026 ballot.
 ---
-Cari L. Starritt-Burnett is the presiding judge of the 169th Judicial District Court in Bell County, Texas. She was elected in November 2024 and took office on January 2, 2025. Prior to her election, Judge Starritt-Burnett served as the Associate Judge for the 169th District Court.
+Cari L. Starritt-Burnett is the judge of the 169th Judicial District Court in Bell County. Gov. Greg Abbott appointed her in August 2021. She is the unopposed Republican nominee on the November 3, 2026 ballot.

@@ -9,120 +9,49 @@ official_profile: https://www.bellcountytx.com/county_government/district_courts
 campaign_website: null
 candidate_slug: paul_l_lepak
 headshot: null
-election_status: general_2026
+election_status: seated
 office_up_for_election: true
-notes: Appointed by Gov. Greg Abbott on June 25, 2018. Republican nominee for 264th Judicial District Court, unopposed in
-  November general election. Elected 06/25/18. Term expires 12/31/28.
-profile_summary: 'Paul L. LePak is the presiding judge of the 264th Judicial District Court ("D Court") in Bell County, Texas.
-  He was appointed to the bench by Governor Greg Abbott on June 25, 2018, and is currently running for re-election as the
-  Republican nominee, unopposed in the November 2026 general election.
+listing_status: Incumbent / Unopposed Republican Nominee
+notes: Won the May 2018 Republican runoff and was appointed June 25, 2018 to fill the rest of Judge Martha Trudo's term. Current term
+  ends Dec. 31, 2026. Unopposed Republican nominee on the Nov. 3, 2026 ballot.
+profile_summary: |
+  Paul L. LePak is the judge of the 264th Judicial District Court in Bell County. In May 2018 he defeated Jeff Parker in the Republican primary runoff for the seat. On June 25, 2018, Gov. Greg Abbott appointed him to serve the rest of retiring Judge Martha Trudo's term, which ended Dec. 31, 2018 ([KWTX](https://www.kwtx.com/content/news/Governor-appoints-runoff-winner-to-fill-vacant-local-court-seat-486472521.html); [Office of the Governor](https://gov.texas.gov/news/post/governor-abbott-appoints-lepak-judge-of-the-264th-judicial-district-court)). He then won the 2018 election for the seat ([Killeen Daily Herald](https://kdhnews.com/centerforpolitics/duskie-parker-to-vie-for-426th-judge-runoff/article_89f90810-3e0d-5b25-bd1a-5210e68d751d.html)). The Texas State Directory lists his current term as ending Dec. 31, 2026 ([TX Directory](https://www.txdirectory.com/online/person/?id=61706)).
 
 
-  The 264th Judicial District Court has general jurisdiction over felony criminal cases and civil matters. Judge LePak has
-  presided over a wide range of cases, including serious felony offenses — murder, aggravated assault, drug trafficking —
-  as well as civil litigation involving substantial financial claims.
+  At the time of his appointment, LePak was a Temple attorney in private practice. He holds a B.A. in political science from Marquette University and a J.D. from Villanova University School of Law. He was a member of the State Bar of Texas, the Bell County Bar Association and the Texas Criminal Defense Lawyers Association, a fellow of the Texas Bar Foundation, and a former president and treasurer of the Bell County Criminal Defense Lawyers Association ([Office of the Governor](https://gov.texas.gov/news/post/governor-abbott-appoints-lepak-judge-of-the-264th-judicial-district-court)).
 
 
-  Prior to his appointment, Judge LePak worked as an attorney in private practice in Central Texas, where he handled criminal
-  defense and civil litigation matters. His experience in both criminal and civil law provides him with a balanced perspective
-  on the cases that come before his court.
+  **2026 election:** He is the only candidate for the 264th District Court. He was unopposed in the March 3, 2026 Republican primary, and no Democrat filed ([KDH](https://kdhnews.com/news/region/locals-vying-for-county-seats-in-primary-elections/article_6337d52a-83e9-5b75-8efe-8f6d35b2a54b.html); [Bell County 2026 voter guide](https://sites.google.com/view/bellcounty2026/other-countywide-races)).
+credentials: |
+  **Education**
+
+  - B.A., Political Science, Marquette University
+  - J.D., Villanova University School of Law
 
 
-  Judge LePak earned a Bachelor of Arts in political science from Marquette University in Milwaukee, Wisconsin. He went on
-  to earn his Juris Doctor from Villanova University School of Law in Villanova, Pennsylvania.
-
-
-  He is a member of the State Bar of Texas, the Bell County Bar Association, the Texas Criminal Defense Lawyers Association,
-  and a fellow of the Texas Bar Foundation, an honor limited to 2.5% of Texas attorneys.
-
-
-  Judge LePak''s current term expires December 31, 2028. He is running for re-election in 2026 as the Republican nominee and
-  faces no opposition in the November general election.
-
-  '
-credentials: '**Education**
-
-  - Marquette University — B.A. in Political Science
-
-  - Villanova University School of Law — J.D.
-
-
-  **Bar Admissions**
+  **Professional memberships** (as of 2018, per the [Office of the Governor](https://gov.texas.gov/news/post/governor-abbott-appoints-lepak-judge-of-the-264th-judicial-district-court))
 
   - State Bar of Texas
-
-
-  **Professional Memberships**
-
   - Bell County Bar Association
-
-  - State Bar of Texas
-
   - Texas Criminal Defense Lawyers Association
-
   - Texas Bar Foundation (Fellow)
+  - Bell County Criminal Defense Lawyers Association (former president and treasurer)
+professional_history: |
+  **264th Judicial District Court**: District Judge (June 2018 to present)
+
+  Appointed June 25, 2018 after winning the Republican runoff; won the 2018 election.
 
 
-  **Appointment**
-
-  - Appointed by Governor Greg Abbott, June 25, 2018
-
-  '
-professional_history: '**Private Legal Practice** — Attorney
-
-  Practiced criminal defense and civil litigation in Central Texas prior to judicial appointment.
-
-
-  **264th Judicial District Court** — District Judge (June 2018 – Present)
-
-  Appointed by Governor Abbott. Presides over felony criminal cases and civil litigation. Currently running unopposed for
-  re-election in 2026.
-
-  '
-odyssey_statistics:
-  total_cases_scraped: 610
-  total_judgments_awarded: 0
-  total_judgment_amount_awarded: $0.00
-  average_judgment_amount: $0.00
-  distinct_attorneys_appeared: 113
-  top_case_types:
-    - "Divorce: Children: 160 cases"
-    - "Divorce:  No Children: 152 cases"
-    - "Other Parent-Child - No Divorce: 68 cases"
-    - "Modification Other: 52 cases"
-    - "Protective Orders - No Divorce: 48 cases"
-
+  **Private practice, Temple**: Attorney (before 2018)
 court_contact:
   court_name: 264th Judicial District Court
   court_type: District Court
-  court_coordinator: Jennifer Hoelscher
-  coordinator_email: jennifer.hoelscher@bellcounty.texas.gov
-  court_reporter: Betty Young
   phone: (254) 933-5245
-  fax: (254) 933-5909
-  address: 1201 Huey RoadBelton, Texas  76513
-  mailing_address: P.O. Box 324Belton, Texas  76513
+  address: 1201 Huey Road, Belton, Texas 76513
 election_info:
-  election_year: 2022
-  appointment_year: 2018
-  appointment_date: June 2018
+  appointment_date: June 25, 2018
   next_election: 2026
   term_length_years: 4
-  election_notes: Appointed by Governor Greg Abbott in June 2018. Re-elected in 2022, next election 2026
-  days_until_election: 286
+  election_notes: Appointed June 2018 after winning the GOP runoff; won the 2018 election; term ends Dec. 31, 2026; unopposed in 2026.
 ---
-Paul L. LePak is the presiding judge of the 264th Judicial District Court ("D Court") in Bell County, Texas. He was appointed to the bench by Governor Greg Abbott in 2018. Prior to his appointment, Judge LePak worked as an attorney in private practice. He earned a B.A. in political science from Marquette University and a J.D. from Villanova University School of Law. He is a member of the State Bar of Texas, the Bell County Bar Association, the Texas Criminal Defense Lawyers Association, and a fellow of the Texas Bar Foundation.
-
-
-## Case Load & Decision Summary
-
-Based on an analysis of **1172** recently resolved cases, the following is a summary of the judge's major caseload and how they typically decide them.
-
-The **Success Rate** measures how often the Plaintiff/Filer (e.g., the landlord, debt collector, or state) wins a judgment. Cases that were dismissed or resulted in a judgment for the defendant lower this rate. Active or pending cases are excluded.
-
-| Case Type | Resolved Cases | Plaintiff Success Rate |
-|---|---|---|
-| Divorce: Children | 318 | **3.8%** |
-| Divorce: No Children | 304 | **0.7%** |
-| Other Parent-Child - No Divorce | 136 | **2.9%** |
-
+Paul L. LePak is the judge of the 264th Judicial District Court in Bell County. He has held the seat since June 2018. He is the unopposed Republican nominee on the November 3, 2026 ballot.

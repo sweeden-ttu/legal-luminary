@@ -1,0 +1,24 @@
+{
+  "candidate_slug": "john_gauntt_jr",
+  "city": "courts",
+  "articles": [
+    {
+      "url": "https://kdhnews.com/news/region/fourth-generation-lawyer-launches-campaign-for-bell-county-court-at-law-3/article_ea7e20e4-27c6-54df-877b-ca20a9b769e2.html",
+      "title": "Fourth Generation Lawyer Launches Campaign for Bell County Court at Law 3",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "He is a Bell County prosecutor and a fourth-generation Bell County lawyer, and he says he has spent nearly 24 years prosecuting cases, including juvenile cases (Killeen Daily Herald).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://kdhnews.com/news/region/locals-vying-for-county-seats-in-primary-elections/article_6337d52a-83e9-5b75-8efe-8f6d35b2a54b.html",
+      "title": "Locals Vying for County Seats in Primary Elections",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "He was unopposed in the March 3, 2026 Republican primary, and no Democrat filed (KDH; [Bell County 2026 voter guide](https://sites.",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    }
+  ]
+}

@@ -91,6 +91,7 @@ Main Phone: <a href="tel:+12549335100">(254) 933-5100</a><br>
 | **Belton Municipal Court** | [(254) 933-5828](tel:+12549335828) |
 
 <a href="/court-directory/" class="btn btn-primary">Full Court Directory with Judges & Addresses</a>
+<a href="/nov-3-2026-ballot-guide/" class="btn btn-secondary">Nov. 3, 2026 Ballot Guide: every judicial race in Killeen</a>
 
 ## Legal Representation
 

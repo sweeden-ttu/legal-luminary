@@ -9,68 +9,34 @@ official_profile: https://www.bellcountytx.com/county_government/county_courts/c
 campaign_website: null
 candidate_slug: john_mischtian
 headshot: null
-election_status: general_2026
+election_status: seated
 office_up_for_election: true
-notes: Incumbent judge of County Court at Law No. 2. Republican nominee, unopposed in November general election. Term expires
-  12/31/26.
-profile_summary: 'John Mischtian is the presiding judge of Bell County Court at Law No. 2 in Belton, Texas. He is the Republican
-  nominee for re-election in 2026, facing no opposition in the November general election.
+listing_status: Incumbent / Unopposed Republican Nominee
+notes: Judge of Bell County Court at Law No. 2. Led Democrat Kurt Glass in early returns on Nov. 8, 2022. Unopposed Republican nominee on
+  the Nov. 3, 2026 ballot.
+profile_summary: |
+  John Mischtian is the judge of Bell County Court at Law No. 2 in Belton. In the Nov. 8, 2022 general election he faced Democrat Kurt Glass and led the early-voting returns with about 59% of the vote to Glass's 41% ([Killeen Daily Herald](https://kdhnews.com/news/region/mischtian-leads-race-for-county-court-at-law-no-2/article_a6e45ce9-1069-53be-9d55-d05de47104c2.html)). BallotReady lists his current term as ending Dec. 31, 2026 ([BallotReady](https://www.ballotready.org/people/john-mischtian)).
 
 
-  County Court at Law No. 2 has jurisdiction over misdemeanor criminal cases, civil matters up to $250,000, and related proceedings.
-  Judge Mischtian presides over a wide range of cases, from Class A and B misdemeanor criminal offenses to civil disputes
-  involving contracts, personal injury, and property damage.
+  **2026 election:** He is the only candidate for County Court at Law No. 2. He was unopposed in the March 3, 2026 Republican primary, and no Democrat filed ([KDH](https://kdhnews.com/news/region/locals-vying-for-county-seats-in-primary-elections/article_6337d52a-83e9-5b75-8efe-8f6d35b2a54b.html); [Bell County 2026 voter guide](https://sites.google.com/view/bellcounty2026/other-countywide-races)).
 
 
-  Judge Mischtian has developed a reputation for careful legal analysis and efficient case management. His court handles a
-  significant volume of cases each year, and he has maintained a steady pace of dispositions to keep the docket current.
+  _Legal Luminary has not yet found a published source for Judge Mischtian's education, prior practice, or whether he was the incumbent in 2022. This profile will be updated when they are confirmed._
+credentials: |
+  **Office**
 
-
-  As a county court at law judge, Mischtian also has limited jurisdiction over juvenile matters, mental health commitments,
-  and appeals from justice of the peace and municipal courts. These appeals are heard de novo (as new trials), giving the
-  county courts an important role in the local judicial system.
-
-
-  Judge Mischtian is a Republican and his position is up for election in 2026, for which he is unopposed.
-
-  '
-credentials: '**Education**
-
-  - J.D., accredited law school
-
-
-  **Bar Admissions**
-
-  - State Bar of Texas
-
-
-  **Professional Memberships**
-
-  - Bell County Bar Association
-
-  - State Bar of Texas
-
-  '
-professional_history: '**Bell County Court at Law No. 2** — Judge
-
-  Presides over misdemeanor criminal cases, civil matters up to $250,000, and appeals from JP and municipal courts. Running
-  unopposed for re-election in 2026.
-
-  '
-odyssey_results_placeholder: Court case records and judicial statistics from the Odyssey case management system will be added
-  here.
+  - Judge, Bell County Court at Law No. 2
+professional_history: |
+  **Bell County Court at Law No. 2**: Judge (current term ends Dec. 31, 2026)
 court_contact:
-  court_name: Court at Law 2
+  court_name: Bell County Court at Law No. 2
   court_type: County Court at Law
   phone: (254) 933-5125
   fax: (254) 933-5256
-  address: 1201 Huey RoadBelton, Texas  76513
-  mailing_address: P.O. Box 485Belton, Texas  76513Office Hours:  8:00 a
+  address: 1201 Huey Road, Belton, Texas 76513
 election_info:
-  election_year: 2022
   next_election: 2026
   term_length_years: 4
-  election_notes: Re-elected November 8, 2022
-  days_until_election: 286
+  election_notes: Ran against Democrat Kurt Glass in Nov. 2022; unopposed Republican nominee on the Nov. 3, 2026 ballot.
 ---
-John Mischtian is the presiding judge of Bell County Court at Law No. 2 in Belton, Texas. He is the Republican nominee for re-election, unopposed in the November 2026 general election.
+John Mischtian is the judge of Bell County Court at Law No. 2. He is the unopposed Republican nominee on the November 3, 2026 ballot.

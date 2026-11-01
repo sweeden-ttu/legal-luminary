@@ -11,70 +11,38 @@ candidate_slug: john_gauntt_jr
 headshot: /assets/images/headshots/john_gauntt_jr.png
 election_status: general_2026
 office_up_for_election: true
-notes: Fourth-generation Bell County attorney. Prosecutor for 24 years. Republican nominee, unopposed in November general
-  election. Incumbent Rebecca DePew not seeking re-election. Term expires 12/31/26.
-profile_summary: 'John Gauntt Jr. is the Republican nominee for Bell County Court at Law No. 3. A fourth-generation Bell County
-  attorney with 24 years of experience as a prosecutor, he is running unopposed in the November 2026 general election to succeed
-  retiring incumbent Judge Rebecca DePew.
+listing_status: Unopposed Republican Nominee
+notes: Bell County prosecutor and fourth-generation Bell County lawyer. Unopposed Republican nominee to succeed retiring Judge Rebecca DePew on
+  the juvenile court bench.
+profile_summary: |
+  John Gauntt Jr. is the Republican nominee for Bell County Court at Law No. 3, which serves as the county's juvenile court. He is a Bell County prosecutor and a fourth-generation Bell County lawyer, and he says he has spent nearly 24 years prosecuting cases, including juvenile cases ([Killeen Daily Herald](https://kdhnews.com/news/region/fourth-generation-lawyer-launches-campaign-for-bell-county-court-at-law-3/article_ea7e20e4-27c6-54df-877b-ca20a9b769e2.html)).
 
 
-  Gauntt comes from a family with deep roots in Bell County law. His father, John T. Gauntt Sr., served as judge of the 27th
-  Judicial District Court until his retirement in December 2024. His family''s multigenerational presence in the Bell County
-  legal community gives him unparalleled insight into the local courts and legal traditions.
+  According to the same KDH report, Gauntt has trained police officers, probation officers and attorneys across Texas in juvenile law, and he served six years on the State Bar's Juvenile Law Section board, the last two as an officer. Bell County Attorney Jim Nichols endorsed him. Gauntt said the incumbent, Judge Rebecca DePew, is retiring. The court has had only two presiding judges, Gerald Brown and DePew ([KDH](https://kdhnews.com/news/region/fourth-generation-lawyer-launches-campaign-for-bell-county-court-at-law-3/article_ea7e20e4-27c6-54df-877b-ca20a9b769e2.html)).
 
 
-  For 24 years, Gauntt served as a prosecutor, handling thousands of cases in Bell County courts. His extensive trial experience
-  covers the full spectrum of criminal cases that come through county court, including DWIs, assaults, thefts, drug offenses,
-  and family violence cases. This experience provides him with an intimate understanding of the court''s docket and the procedural
-  requirements of criminal justice.
+  **2026 election:** He is the only candidate for County Court at Law No. 3. He was unopposed in the March 3, 2026 Republican primary, and no Democrat filed ([KDH](https://kdhnews.com/news/region/locals-vying-for-county-seats-in-primary-elections/article_6337d52a-83e9-5b75-8efe-8f6d35b2a54b.html); [Bell County 2026 voter guide](https://sites.google.com/view/bellcounty2026/other-countywide-races)). If elected, he would take office in January 2027.
+credentials: |
+  **Experience** (per [KDH](https://kdhnews.com/news/region/fourth-generation-lawyer-launches-campaign-for-bell-county-court-at-law-3/article_ea7e20e4-27c6-54df-877b-ca20a9b769e2.html))
+
+  - Nearly 24 years as a prosecutor, including juvenile cases
+  - Six years on the State Bar of Texas Juvenile Law Section board (two as an officer)
+  - Juvenile-law trainer for police officers, probation officers and attorneys
+  - Fourth-generation Bell County lawyer
 
 
-  As County Court at Law No. 3 judge, Gauntt will preside over misdemeanor criminal cases, civil matters up to $250,000, probate
-  matters, and appeals from justice courts. His prosecutorial background has given him a reputation for firm but fair handling
-  of cases.
+  **Endorsement**
+
+  - Bell County Attorney Jim Nichols
+professional_history: |
+  **Bell County**: Prosecutor (nearly 24 years)
+
+  Prosecuted cases including juvenile cases.
 
 
-  Gauntt''s campaign emphasizes his courtroom experience, local roots, and commitment to timely justice. He has been endorsed
-  by local law enforcement and members of the Bell County legal community.
+  **Candidate, Bell County Court at Law No. 3** (2026)
 
-  '
-credentials: '**Education**
-
-  - J.D., accredited law school
-
-
-  **Bar Admissions**
-
-  - State Bar of Texas (24+ years)
-
-
-  **Experience**
-
-  - 24 years as a prosecutor
-
-  - Fourth-generation Bell County attorney
-
-
-  **Professional Memberships**
-
-  - Bell County Bar Association
-
-  - State Bar of Texas
-
-  '
-professional_history: '**Bell County District Attorney''s Office** — Prosecutor (24 years)
-
-  Served as a prosecutor handling thousands of criminal cases in Bell County courts. Gained extensive trial experience covering
-  DWI, assault, theft, drug offenses, and family violence cases.
-
-
-  **Bell County Court at Law No. 3** — Judge-Elect (January 2027 – Present)
-
-  Republican nominee, unopposed in November 2026 general election. Will succeed retiring Judge Rebecca DePew.
-
-  '
-odyssey_results_placeholder: Court case records and judicial statistics will be added here upon Judge-Elect Gauntt's assumption
-  of the bench.
+  Unopposed Republican nominee to succeed retiring Judge Rebecca DePew.
 facebook_url: https://www.facebook.com/JohnGaunttJr
 ---
-John Gauntt Jr. is a fourth-generation Bell County attorney and the Republican nominee for Bell County Court at Law No. 3. He has served as a prosecutor for 24 years. He is the son of former 27th District Court Judge John T. Gauntt Sr. He is unopposed in the November 2026 general election.
+John Gauntt Jr. is a Bell County prosecutor and a fourth-generation Bell County lawyer. He is the unopposed Republican nominee for Bell County Court at Law No. 3, the county's juvenile court.

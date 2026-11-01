@@ -1,0 +1,42 @@
+{
+  "candidate_slug": "richard_sapp",
+  "city": "courts",
+  "articles": [
+    {
+      "url": "https://kdhnews.com/news/region/low-turnout-high-stakes-bell-county-republicans-lean-conservative-in-runoff-election/article_99d45d87-32ee-5d96-84d9-4a50afee7f74.html",
+      "title": "Low Turnout High Stakes Bell County Republicans Lean Conservative in Runoff Election",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "He lost the May 26, 2026 Republican primary runoff to Michael Tice, 1,111 votes to 1,286 (Killeen Daily Herald).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://kdhnews.com/news/region/sapp-tice-to-battle-in-precinct-2-justice-of-the-peace-runoff/article_2d0c225d-407a-53ed-a85b-57304ed2098b.html",
+      "title": "Sapp Tice to Battle in Precinct 2 Justice of the Peace Runoff",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "No candidate won a majority, so the two went to a runoff (KDH).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://kdhnews.com/news/region/sapp-announces-run-for-justice-of-the-peace-after-coleman-announces-retirement/article_74677e2f-6347-5043-a76a-96e6d1d42959.html",
+      "title": "Sapp Announces Run for Justice of the Peace after Coleman Announces Retirement",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "Sapp had also run for the seat in 2022, losing the Republican primary to Cliff Coleman by 385 votes (KDH).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://kdhnews.com/news/region/four-republicans-vying-for-bell-county-justice-of-the-peace-precinct-no-2-primary-election/article_c32ac422-0725-5baa-9be7-78fa9240d061.html",
+      "title": "Four Republicans Vying for Bell County Justice of the Peace Precinct No 2 Primary Election",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "His professional affiliations include the Justice of the Peace and Constables Association of Texas, the Texas Municipal Police Association and the American Bar Association (KDH).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    }
+  ]
+}

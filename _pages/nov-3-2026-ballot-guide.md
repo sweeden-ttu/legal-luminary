@@ -2,17 +2,15 @@
 layout: default
 permalink: /nov-3-2026-ballot-guide/
 title: "Killeen & Bell County Ballot Guide — November 3, 2026 General Election | Legal Luminary"
-description: "When and where to vote in Bell County, what is on the Killeen ballot, the Bell County hospital district tax proposition, and Killeen's eight charter amendments. Sourced from official county and city documents."
+description: "When and where to vote in Bell County, every judicial race on the Killeen ballot (contested and unopposed), the Bell County hospital district tax proposition, and Killeen's eight charter amendments."
 robots: index,follow
 date: 2026-10-12
-verified_at: 2026-10-12
+verified_at: 2026-11-01
 sources:
   - url: https://www.bellcountytx.com/departments/elections/early_voting_information.php
     label: Bell County Elections — Early Voting Information
   - url: https://www.bellcountytx.com/departments/elections/ballot_samples.php
     label: Bell County Elections — Ballot Samples by voting precinct
-  - url: https://www.bellcountytx.com/elections/Sample/SAMPLE_401KIL.pdf
-    label: Bell County Elections — Official sample ballot, Precinct 401 (Killeen)
   - url: https://www.killeentexas.gov/732/November-3-2026-Special-Called-Charter-A
     label: City of Killeen — November 3, 2026 Special Called Charter Amendment Election
   - url: https://www.killeentexas.gov/DocumentCenter/View/14470/2026-Charter-Election-Voter-Guide-PDF
@@ -27,6 +25,12 @@ sources:
     label: KWTX — Bell County residents to vote on creating hospital district
   - url: https://kdhnews.com/news/local/gonzalez-says-her-time-and-service-will-get-her-edge-in-november-jp-race/article_ae036acb-2af1-4705-9b2b-bb9462abe22a.html
     label: Killeen Daily Herald — Gonzalez on the JP race and her council seat
+  - url: https://kdhnews.com/centerforpolitics/cox-and-gonzalez-participate-in-justice-of-the-peace-forum-ahead-of-nov-3-election/article_f3226aea-4314-4639-9f1d-804bfbe9c839.html
+    label: Killeen Daily Herald — Cox and Gonzalez at the JP candidate forum
+  - url: https://kdhnews.com/news/region/low-turnout-high-stakes-bell-county-republicans-lean-conservative-in-runoff-election/article_99d45d87-32ee-5d96-84d9-4a50afee7f74.html
+    label: Killeen Daily Herald — Tice wins the JP Precinct 2 Republican runoff
+  - url: https://sanantonioreport.org/voter-guide-meet-the-judicial-candidates-on-the-nov-3-ballot/
+    label: San Antonio Report — voter guide to the statewide judicial candidates
   - url: https://www.killeentexas.gov/m/newsflash/home/detail/2771
     label: City of Killeen — Council votes to move general elections to November (Dec. 19, 2025)
   - url: https://www.kxxv.com/news/local-news/in-your-neighborhood/bell-county/killeen/three-killeen-city-council-seats-sit-empty-ahead-of-may-special-election
@@ -56,18 +60,60 @@ Killeen early-voting sites: Jackson Professional Learning Center (902 Rev. R.A. 
 
 ## What is on a Killeen ballot
 
-The official sample ballot for [Precinct 401 (Killeen)](https://www.bellcountytx.com/elections/Sample/SAMPLE_401KIL.pdf) includes, among other races:
+Every Killeen voter decides eleven contested statewide and appellate judicial races, plus one local judicial contest. Ten more judicial-branch offices list a single candidate; under Texas law unopposed candidates still appear on the general-election ballot. Candidate names link to Legal Luminary profiles, each of which cites the news coverage behind it.
+
+### Texas Supreme Court and Court of Criminal Appeals (statewide)
+
+| Office | Candidates |
+|---|---|
+| Chief Justice, Supreme Court | [Jimmy Blacklock (R)](/candidates/courts/appellate/jimmy_blacklock/), [Maggie Ellis (D)](/candidates/courts/appellate/maggie_ellis/) |
+| Justice, Supreme Court, Place 2 (unexpired term) | [James P. Sullivan (R)](/candidates/courts/appellate/james_p_sullivan/), [Chari Kelly (D)](/candidates/courts/appellate/chari_kelly/) |
+| Justice, Supreme Court, Place 7 | [Kyle Hawkins (R)](/candidates/courts/appellate/kyle_hawkins/), [Kristen Hawkins (D)](/candidates/courts/appellate/kristen_hawkins/) |
+| Justice, Supreme Court, Place 8 | [Brett Busby (R)](/candidates/courts/appellate/brett_busby/), [Gisela D. Triana (D)](/candidates/courts/appellate/gisela_d_triana/) |
+| Judge, Court of Criminal Appeals, Place 3 | [Thomas Smith (R)](/candidates/courts/appellate/thomas_smith/), [Okey Anyiam (D)](/candidates/courts/appellate/okey_anyiam/), [Mark Ash (L)](/candidates/courts/appellate/mark_ash/) |
+| Judge, Court of Criminal Appeals, Place 4 | [Kevin Patrick Yeary (R)](/candidates/courts/appellate/kevin_patrick_yeary/), [Audra Riley (D)](/candidates/courts/appellate/audra_riley/) |
+| Judge, Court of Criminal Appeals, Place 9 | [John Messinger (R)](/candidates/courts/appellate/john_messinger/), [Holly Taylor (D)](/candidates/courts/appellate/holly_taylor/) |
+
+### Courts of appeals
+
+| Office | Candidates |
+|---|---|
+| Chief Justice, Fifteenth Court of Appeals | [Scott Brister (R)](/candidates/courts/appellate/scott_brister/), [Jerry Zimmerer (D)](/candidates/courts/appellate/jerry_zimmerer/) |
+| Justice, Fifteenth Court of Appeals, Place 2 | [Scott K. Field (R)](/candidates/courts/appellate/scott_k_field/), [Tom Baker (D)](/candidates/courts/appellate/tom_baker/) |
+| Justice, Fifteenth Court of Appeals, Place 3 | [April Farris (R)](/candidates/courts/appellate/april_farris/), [Marc M. Meyer (D)](/candidates/courts/appellate/marc_m_meyer/) |
+| Chief Justice, Third Court of Appeals | [Cory Liu (R)](/candidates/courts/appellate/cory_liu/), [Darlene Byrne (D)](/candidates/courts/appellate/darlene_byrne/) |
+
+### Bell County courts — all unopposed
+
+| Office | Candidate |
+|---|---|
+| District Judge, 169th Judicial District | [Cari Starritt-Burnett (R)](/candidates/courts/district/cari_l_starritt_burnett/) |
+| District Judge, 264th Judicial District | [Paul L. LePak (R)](/candidates/courts/district/paul_l_lepak/) |
+| District Judge, 478th Judicial District | [Wade Faulkner (R)](/candidates/courts/district/wade_faulkner/) |
+| County Judge | [David Blackburn (R)](/candidates/texas/bell_county/david_blackburn/) |
+| Judge, County Court at Law No. 1 | [Paul Motz (R)](/candidates/courts/county/paul_a_motz/) |
+| Judge, County Court at Law No. 2 | [John Mischtian (R)](/candidates/courts/county/john_mischtian/) |
+| Judge, County Court at Law No. 3 | [John Gauntt, Jr. (R)](/candidates/courts/county/john_gauntt_jr/) |
+| District Clerk | Lacey Martindale (R) |
+| County Clerk | Shelley Coston (R) |
+
+No county attorney, district attorney or constable race is on this ballot; those four-year offices were last elected in 2024 and return in 2028.
+
+### Justice of the Peace — the only contested local judicial race
+
+Most of Killeen lies in Justice of the Peace Precinct 4, where **Precinct 4, Place 2** is contested between [Beatrice "Bea" Cox (R)](/candidates/courts/jp/beatrice_bea_cox/) and [Jessica A. Gonzalez (D)](/candidates/courts/jp/jessica_a_gonzalez/) ([Killeen Daily Herald](https://kdhnews.com/centerforpolitics/cox-and-gonzalez-participate-in-justice-of-the-peace-forum-ahead-of-nov-3-election/article_f3226aea-4314-4639-9f1d-804bfbe9c839.html)). Killeen voters in voting precinct 203 are in JP Precinct 2 instead and see [Michael Tice (R)](/candidates/courts/jp/michael_tice/), unopposed, in place of that contest. The Precinct 1 (Patterson) and Precinct 3, Place 2 (Wilkey) JP seats are also unopposed but do not appear on Killeen ballots.
+
+### Other races on the Killeen ballot
 
 - **U.S. Representative, District 31:** John Carter (R), Justin Early (D), Greg Stoker (Green). See [the 2026 housing law and how Texas members voted](/housing-act-2026/).
 - **Attorney General:** [Mayes Middleton (R)](/texas-ag-race-26/mayes-middleton/), [Nathan Johnson (D)](/texas-ag-race-26/nathan-johnson/), [Tom Oxford (L)](/texas-ag-race-26/tom-oxford/).
-- **Texas Supreme Court** (four seats), **Court of Criminal Appeals** (three seats), **Third Court of Appeals** chief justice, and **Fifteenth Court of Appeals** (three seats).
-- **Justice of the Peace, Precinct 4, Place 2:** [Beatrice "Bea" Cox (R)](/candidates/courts/jp/beatrice_bea_cox/) and [Jessica A. Gonzalez (D)](/candidates/courts/jp/jessica_a_gonzalez/). This is the only contested judicial race on the Bell County portion of the ballot; the 169th, 264th and 478th district courts, the three county courts at law, and county judge each list one candidate.
-- **Bell County Commissioner, Precinct 4:** Curtis Emmons (R), Ernest Wilkerson (D).
+- **Bell County Commissioner, Precinct 4:** Curtis Emmons (R), Ernest Wilkerson (D). Voting precinct 203 votes instead for **Commissioner, Precinct 2:** Bobby Whitson (R), Stacey L. Wilson (D).
+- **County Treasurer:** Adriane Hodges (R), unopposed. **Bell County Appraisal District board**, Places 1–3.
 - **Bell County Hospital Services District, Proposition A** and **City of Killeen Propositions A–H** (below).
 
 ## Bell County Hospital Services District, Proposition A
 
-Ballot text: *"THIS IS A TAX INCREASE: The creation of a Hospital district and the levy of a tax not to exceed 75 cents on each $100 of the taxable value of Property taxable by the district."* ([sample ballot](https://www.bellcountytx.com/elections/Sample/SAMPLE_401KIL.pdf))
+Ballot text: *"THIS IS A TAX INCREASE: The creation of a Hospital district and the levy of a tax not to exceed 75 cents on each $100 of the taxable value of Property taxable by the district."*
 
 - **How it reached the ballot:** Commissioner Louie Minor (D-Killeen) submitted a creation petition under Texas Health and Safety Code § 281.003, which requires the Commissioners Court to order an election when at least 100 qualified, property-taxpaying voters sign and the petition is certified ([Killeen Daily Herald](https://kdhnews.com/news/region/just-100-signatures-force-bell-county-hospital-district-tax-issue-on-november-ballot/article_01afaee1-fb2f-5444-a2c2-c28a9b04cc80.html)).
 - **What it would do:** create a countywide hospital district and a health care system for indigent residents. If it passes, a board appointed by the commissioners would set the actual rate ([KDH](https://kdhnews.com/news/region/just-100-signatures-force-bell-county-hospital-district-tax-issue-on-november-ballot/article_01afaee1-fb2f-5444-a2c2-c28a9b04cc80.html)).

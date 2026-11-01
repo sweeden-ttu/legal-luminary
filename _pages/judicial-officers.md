@@ -4,7 +4,7 @@ article_feed: judicial-officers-articles
 title: "Bell County Judicial Officers"
 permalink: /candidates/courts/
 description: "Complete directory of all current, former, and visiting judicial officers in Bell County, Texas"
-last_updated: 2026-06-09
+last_updated: 2026-11-01
 ---
 
 <h1>Bell County Judicial Officers</h1>
@@ -24,15 +24,25 @@ last_updated: 2026-06-09
 
 | Court | Judge | Status |
 |-------|-------|--------|
-{% for j in site.candidates %}{% if j.path contains "courts/district/" and j.incumbent == true and j.election_status != "former" %}| {{ j.office }} | **[{{ j.title }}]({{ j.url }})** | {% if j.election_status == "general_2026" %}Up for election **2026**{% else %}Incumbent{% endif %} |
+{% for j in site.candidates %}{% if j.path contains "courts/district/" and j.incumbent == true and j.election_status != "former" %}| {{ j.office }} | **[{{ j.title }}]({{ j.url }})** | {% if j.listing_status %}{{ j.listing_status }}{% elsif j.election_status == "general_2026" %}Up for election **2026**{% else %}Incumbent{% endif %} |
 {% endif %}{% endfor %}
 
 ## County Courts at Law
 
 | Court | Judge | Status |
 |-------|-------|--------|
-{% for j in site.candidates %}{% if j.path contains "courts/county/" and j.election_status != "former" %}| {{ j.office }} | **[{{ j.title }}]({{ j.url }})** | {% if j.incumbent == false %}Candidate{% elsif j.election_status == "general_2026" %}Up for election **2026**{% else %}Incumbent{% endif %} |
+{% for j in site.candidates %}{% if j.path contains "courts/county/" and j.election_status != "former" %}| {{ j.office }} | **[{{ j.title }}]({{ j.url }})** | {% if j.listing_status %}{{ j.listing_status }}{% elsif j.incumbent == false %}Candidate{% elsif j.election_status == "general_2026" %}Up for election **2026**{% else %}Incumbent{% endif %} |
 {% endif %}{% endfor %}
+
+## State Appellate Courts on the Bell County Ballot
+
+Every Bell County voter sees these races on the November 3, 2026 ballot. The Texas Supreme Court, the Court of Criminal Appeals and the Fifteenth Court of Appeals are elected statewide. The Third Court of Appeals in Austin hears appeals from Bell County. Candidates are listed in ballot order; the [Nov. 3 ballot guide](/nov-3-2026-ballot-guide/) lists every judicial race on a Killeen ballot. Unlike the district and county court seats below, every appellate race on this ballot is contested.
+
+{% assign appellate = site.candidates | where_exp: "j", "j.path contains 'courts/appellate/'" | sort: "ballot_order" %}
+| Court | Seat | Candidate | Party | Status |
+|-------|------|-----------|-------|--------|
+{% for j in appellate %}| {{ j.office | split: ", " | first }} | {{ j.seat }} | **[{{ j.title }}]({{ j.url }})** | {{ j.party }} | {% if j.incumbent %}Incumbent{% else %}Candidate{% endif %} |
+{% endfor %}
 
 ## Associate Judges
 

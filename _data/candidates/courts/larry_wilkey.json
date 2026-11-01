@@ -1,0 +1,24 @@
+{
+  "candidate_slug": "larry_wilkey",
+  "city": "courts",
+  "articles": [
+    {
+      "url": "https://kdhnews.com/news/region/wilkey-announces-2026-campaign-for-precinct-3-place-2-justice-of-the-peace/article_82996a98-dd06-5c4c-bc27-612093ee9a5c.html",
+      "title": "Wilkey announces 2026 campaign for Precinct 3, Place 2 Justice of the Peace",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "Wilkey retired from the Temple Police Department on June 22, 2022 and was sworn into office on June 23, 2022; his precinct covers Little River-Academy, Rogers, Temple and Troy (Nov. 26, 2025).",
+      "confidence": "high",
+      "field": "news_coverage"
+    },
+    {
+      "url": "https://kdhnews.com/news/region/bell-county-primary-ballot-features-several-uncontested-races/article_1b8bb49b-8336-5cfd-a1ce-d5c0566bea2b.html",
+      "title": "Bell County primary ballot features several uncontested races",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "Wilkey is the only candidate for Precinct 3, Place 2 in 2026, unopposed in the Republican primary and the general election (Feb. 14, 2026).",
+      "confidence": "high",
+      "field": "news_coverage"
+    }
+  ]
+}

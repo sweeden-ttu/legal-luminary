@@ -9,96 +9,43 @@ official_profile: https://www.bellcountytx.com/county_government/district_courts
 campaign_website: https://wadefaulkner.com
 candidate_slug: wade_faulkner
 headshot: /assets/images/headshots/wade_faulkner.jpg
-election_status: general_2026
+election_status: seated
 office_up_for_election: true
-notes: Incumbent judge of the 478th Judicial District Court. Republican nominee, unopposed in November general election. Term
-  expires 12/31/26.
-profile_summary: 'Wade Faulkner is the presiding judge of the 478th Judicial District Court in Bell County, Texas. He is the
-  Republican nominee for re-election in 2026, facing no opposition in the November general election.
+listing_status: Incumbent / Unopposed Republican Nominee
+notes: First judge of the 478th District Court. Chosen as the Republican nominee by the party's district executive committee on Aug. 9, 2022,
+  and appointed by Gov. Greg Abbott on Aug. 18, 2022. Unopposed Republican nominee on the Nov. 3, 2026 ballot.
+profile_summary: |
+  Wade Faulkner is the judge of the 478th Judicial District Court in Bell County. On Aug. 9, 2022, the Bell County Republican Party's district executive committee chose him from three candidates as its nominee for the 478th District Judge seat on the November 2022 ballot ([KCEN](https://www.kcentv.com/article/news/politics/wade-faulkner-wins-2022-nomination-478th-district-judge/500-f7021997-b9cb-47f6-a987-123f8ea0aade)). On Aug. 18, 2022, Gov. Greg Abbott appointed him to the court for a term ending Dec. 31, 2022, "or until his successor is duly elected and qualified" ([Office of the Governor](https://gov.texas.gov/news/post/governor-abbott-appoints-faulkner-to-478th-judicial-district-court)).
 
 
-  The 478th Judicial District Court has general jurisdiction over felony criminal cases and civil matters. Judge Faulkner
-  presides over a diverse caseload that includes serious criminal offenses, civil disputes, and family law matters.
+  At the time of his appointment, Faulkner, of Salado, was a partner at the Law Office of Wade Faulkner, PLLC. He is a former U.S. Army Judge Advocate with more than 20 years of experience in criminal law ([Office of the Governor](https://gov.texas.gov/news/post/governor-abbott-appoints-faulkner-to-478th-judicial-district-court)). In 2020 he ran in the Republican primary for the 426th District Court ([KDH](https://kdhnews.com/centerforpolitics/three-republicans-vying-for-426th-district-court-judgeship/article_d9f35960-4f74-11ea-9617-2790fe7a8695.html)).
 
 
-  Judge Faulkner''s campaign emphasized his experience on the bench and his commitment to conservative judicial principles,
-  including strict adherence to the rule of law and protection of constitutional rights.
+  **2026 election:** He is the only candidate for the 478th District Court. He was unopposed in the March 3, 2026 Republican primary, and no Democrat filed ([KDH](https://kdhnews.com/news/region/locals-vying-for-county-seats-in-primary-elections/article_6337d52a-83e9-5b75-8efe-8f6d35b2a54b.html); [Bell County 2026 voter guide](https://sites.google.com/view/bellcounty2026/other-countywide-races)).
+credentials: |
+  **Experience** (per the [Office of the Governor](https://gov.texas.gov/news/post/governor-abbott-appoints-faulkner-to-478th-judicial-district-court))
+
+  - Former U.S. Army Judge Advocate
+  - More than 20 years of experience in criminal law
+professional_history: |
+  **478th Judicial District Court**: District Judge (Aug. 2022 to present)
+
+  Appointed by Gov. Abbott on Aug. 18, 2022; Republican nominee chosen by the district executive committee on Aug. 9, 2022.
 
 
-  As a district judge, Faulkner manages a high-volume felony docket, presides over jury and bench trials, rules on evidentiary
-  issues, and imposes sentences in accordance with the Texas Penal Code. He also handles civil matters, including personal
-  injury, contract disputes, and property issues.
+  **Law Office of Wade Faulkner, PLLC**: Partner (before 2022)
 
 
-  Judge Faulkner''s current term expires December 31, 2026. He is running for re-election as the Republican nominee and faces
-  no Democratic challenger in the November general election.
-
-  '
-credentials: '**Education**
-
-  - J.D., accredited law school
-
-
-  **Bar Admissions**
-
-  - State Bar of Texas
-
-
-  **Professional Memberships**
-
-  - Bell County Bar Association
-
-  - State Bar of Texas
-
-  '
-professional_history: '**478th Judicial District Court** — District Judge
-
-  Presides over felony criminal cases and civil litigation. Running for re-election in 2026.
-
-  '
-odyssey_statistics:
-  total_cases_scraped: 24
-  total_judgments_awarded: 0
-  total_judgment_amount_awarded: $0.00
-  average_judgment_amount: $0.00
-  distinct_attorneys_appeared: 24
-  top_case_types:
-    - "Felony: 15 cases"
-    - "Protective Orders - No Divorce: 3 cases"
-    - "Divorce: Children: 2 cases"
-    - "Divorce:  No Children: 1 cases"
-    - "Register of Foreign Judgment: 1 cases"
-
+  **U.S. Army**: Judge Advocate (former)
 court_contact:
   court_name: 478th Judicial District Court
   court_type: District Court
-  court_coordinator: Marina Trevino
-  coordinator_email: marina.trevino@bellcounty.texas.gov
-  court_reporter: Betsy Clifton
   phone: (254) 933-5706
-  fax: (254) 933-5990
-  address: 1201 Huey RoadBelton, Texas  76513
-  mailing_address: P.O. Box 324Belton, Texas  76513
+  address: 1201 Huey Road, Belton, Texas 76513
 election_info:
-  election_year: null
-  appointment_year: 2022
   appointment_date: August 18, 2022
   next_election: 2026
   term_length_years: 4
-  election_notes: Appointed by Governor Greg Abbott on August 18, 2022. First election in 2026
-  days_until_election: 286
+  election_notes: Appointed Aug. 2022 and Republican nominee for Nov. 2022; unopposed Republican nominee on the Nov. 3, 2026 ballot.
 ---
-Wade Faulkner is the presiding judge of the 478th Judicial District Court in Bell County, Texas. He was elected to the bench and is seeking re-election in 2026 as the Republican nominee, unopposed in the November general election.
-
-
-## Case Load & Decision Summary
-
-Based on an analysis of **4** recently resolved cases, the following is a summary of the judge's major caseload and how they typically decide them.
-
-The **Success Rate** measures how often the Plaintiff/Filer (e.g., the landlord, debt collector, or state) wins a judgment. Cases that were dismissed or resulted in a judgment for the defendant lower this rate. Active or pending cases are excluded.
-
-| Case Type | Resolved Cases | Plaintiff Success Rate |
-|---|---|---|
-| Register of Foreign Judgment | 2 | **100.0%** |
-| Other Civil: Bill of Review | 2 | **100.0%** |
-
+Wade Faulkner is the first judge of Bell County's 478th Judicial District Court. Gov. Greg Abbott appointed him in August 2022. He is the unopposed Republican nominee on the November 3, 2026 ballot.
