@@ -250,11 +250,7 @@
           {% endif %}
         </article>
         <aside class="sidebar" aria-label="Helpful resources">
-          {% include sidebar-important-articles.html %}{%- comment -%}
-          sidebar-feed.html now renders the RSS-based legal news widget site-wide.
-          sidebar-news-feed.html is deprecated to avoid duplicate widgets.
-          {%- endcomment -%}
-          {% include sidebar-sources.html %}
+          {% include sidebar-legal-news.html %}
           <div class="sidebar-info">
             <h3>Need Legal Help?</h3>
             <p>This site publishes legal information, not referrals. The resources page lists court contacts, legal aid and self-help links for Bell County and Texas.</p>

@@ -1,10 +1,11 @@
 {
   "candidate_slug": "jimmy_blacklock",
+  "name": "Jimmy Blacklock",
   "city": "courts",
   "articles": [
     {
       "url": "https://sanantonioreport.org/voter-guide-meet-the-judicial-candidates-on-the-nov-3-ballot/",
-      "title": "Voter Guide Meet the Judicial Candidates on the Nov 3 Ballot",
+      "title": "Voter Guide Meet the Judicial Candidates on the Nov Ballot",
       "domain": "sanantonioreport.org",
       "outlet": "San Antonio Report",
       "excerpt": "profilesummary: 'Jimmy Blacklock has served on the Texas Supreme Court since 2018 and was previously general counsel to Gov. Greg Abbott (San Antonio Report).",
@@ -13,7 +14,7 @@
     },
     {
       "url": "https://www.newsfromthestates.com/article/texas-supreme-court-2026-election-who-running-and-what-know",
-      "title": "Texas Supreme Court 2026 Election Who Running and What Know",
+      "title": "Texas Supreme Court Election Who Running and What Know",
       "domain": "newsfromthestates.com",
       "outlet": "States Newsroom",
       "excerpt": "He was named chief justice in 2025 (Texas Tribune via States Newsroom).",

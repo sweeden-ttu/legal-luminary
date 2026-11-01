@@ -28,6 +28,7 @@ def title_from_url(url, host):
         if s.startswith('article_') or re.fullmatch(r'[0-9a-f-]{20,}', s): continue
         if re.search(r'[a-z]+-[a-z]+', s): slug = s
     slug = re.sub(r'\.html?$', '', slug)
+    slug = '-'.join(w for w in slug.split('-') if not w.isdigit())
     if not slug: return NEWS.get(host, host)
     small = {'a','an','the','and','or','of','to','in','on','for','at','by','as','vs','with','from','after','ahead','is','its','be'}
     words = slug.split('-')
@@ -66,6 +67,8 @@ for md in sorted(glob.glob(os.path.join(ROOT, 'collections/_candidates/courts/*/
     m = re.search(r'^candidate_slug:\s*(\S+)', text, re.M)
     if not m: continue
     slug = m.group(1)
+    t = re.search(r'^title:\s*(.+)$', text, re.M)
+    name = t.group(1).strip().strip('"\'') if t else slug
     seen, arts = set(), []
     for label, url in LINK.findall(text):
         host = urlparse(url).netloc.lower().removeprefix('www.')
@@ -74,12 +77,15 @@ for md in sorted(glob.glob(os.path.join(ROOT, 'collections/_candidates/courts/*/
         arts.append({'url': url, 'title': title_from_url(url, host), 'domain': host, 'outlet': NEWS[host],
                      'excerpt': sentence_around(text, url), 'confidence': 'high', 'field': 'cited_in_profile'})
     for a in extra.get(slug, []):
-        if a['url'] in seen: continue
+        if a['url'] in seen:
+            for x in arts:
+                if x['url'] == a['url'] and a.get('title'): x['title'] = a['title']
+            continue
         seen.add(a['url']); host = urlparse(a['url']).netloc.lower().removeprefix('www.')
         arts.append({'url': a['url'], 'title': a.get('title') or title_from_url(a['url'], host), 'domain': host,
                      'outlet': NEWS.get(host, host), 'excerpt': a.get('excerpt', ''), 'confidence': 'high', 'field': 'news_coverage'})
     if not arts: continue
-    out = {'candidate_slug': slug, 'city': 'courts', 'articles': arts}
+    out = {'candidate_slug': slug, 'name': name, 'city': 'courts', 'articles': arts}
     with open(os.path.join(ROOT, '_data/candidates/courts', slug + '.json'), 'w', encoding='utf-8') as f:
         json.dump(out, f, indent=2, ensure_ascii=False); f.write('\n')
     count += 1

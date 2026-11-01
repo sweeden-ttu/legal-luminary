@@ -865,3 +865,7 @@ ul.check-list li::before { content: "✓"; position: absolute; left: 0; color: v
 .attorney-card__contact { margin: 0.5rem 0 0.25rem; font-size: 0.875rem; color: var(--gray-dark); }
 .attorney-card__source { margin: 0; font-size: 0.75rem; color: var(--gray); }
 .attorney-dir__note { margin-top: 2rem; font-size: 0.875rem; color: var(--gray-dark); }
+
+/* Sidebar: Legal News (judge-aware) */
+.sidebar-legal-news__intro { margin: 0 0 0.75rem; font-size: 0.8125rem; color: var(--gray-dark); }
+.sidebar-legal-news__sources { margin-top: 1rem; }

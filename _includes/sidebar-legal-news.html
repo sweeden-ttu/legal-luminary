@@ -1,0 +1,81 @@
+{%- comment -%}
+Sidebar: Legal News
+Lists news articles that mention the judges and candidates discussed on the current page.
+Judges are detected from links to /candidates/courts/<group>/<slug>/ in the rendered page content
+(or from page.candidate_slug on a profile). Articles come from _data/candidates/courts/<slug>.json,
+the same per-judge citations shown on each profile. Pages that mention no judges fall back to the
+site-wide ranked legal news feed.
+{%- endcomment -%}
+{%- assign courts = site.data.candidates.courts -%}
+{%- assign slugs = "" | split: "" -%}
+{%- if page.candidate_slug and page.path contains "courts/" -%}
+  {%- assign slugs = slugs | push: page.candidate_slug -%}
+{%- endif -%}
+{%- assign chunks = content | split: "/candidates/courts/" -%}
+{%- for chunk in chunks offset: 1 -%}
+  {%- assign seg = chunk | split: "/" -%}
+  {%- assign grp = seg[0] -%}
+  {%- if grp == "appellate" or grp == "county" or grp == "district" or grp == "jp" -%}
+    {%- assign slug = seg[1] | split: '"' | first | split: "'" | first | split: ")" | first | split: "#" | first | strip -%}
+    {%- if slug != "" and slugs contains slug -%}{%- else -%}{%- assign slugs = slugs | push: slug -%}{%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- assign seen = "" -%}
+{%- assign items = "" | split: "" -%}
+{%- for slug in slugs -%}
+  {%- assign rec = courts[slug] -%}
+  {%- if rec and rec.articles -%}
+    {%- for a in rec.articles -%}
+      {%- assign key = "|" | append: a.url | append: "|" -%}
+      {%- unless seen contains key -%}
+        {%- assign seen = seen | append: key -%}
+        {%- assign who = rec.name | default: slug -%}
+        {%- assign outlet = a.outlet | default: a.domain -%}
+        {%- assign row = a.url | append: "||" | append: a.title | append: "||" | append: outlet | append: "||" | append: who -%}
+        {%- assign items = items | push: row -%}
+      {%- endunless -%}
+    {%- endfor -%}
+  {%- endif -%}
+{%- endfor -%}
+
+<section class="sidebar-feed sidebar-legal-news" aria-labelledby="sidebar-feed-title">
+  <h3 id="sidebar-feed-title">Legal News</h3>
+  {%- if items.size > 0 -%}
+  <p class="sidebar-legal-news__intro">Coverage of the judges and candidates discussed on this page.</p>
+  <ul class="sidebar-feed-list">
+    {%- for row in items limit: 12 -%}
+    {%- assign f = row | split: "||" -%}
+    <li class="sidebar-feed-item">
+      <a class="sidebar-feed-title" href="{{ f[0] }}" target="_blank" rel="noopener noreferrer">{{ f[1] }}</a>
+      <div class="sidebar-feed-meta">{{ f[2] }} · mentions {{ f[3] }}</div>
+    </li>
+    {%- endfor -%}
+  </ul>
+  {%- if items.size > 12 -%}<p class="sidebar-feed-meta">{{ items.size | minus: 12 }} more on the individual judge profiles.</p>{%- endif -%}
+  {%- else -%}
+  {%- assign feed_name = page.article_feed | default: 'top-articles' -%}
+  {%- assign data = site.data.articles[feed_name] -%}
+  {%- if data and data.by_relevance -%}
+  {%- assign pool = data.by_relevance.critical | concat: data.by_relevance.high | concat: data.by_relevance.medium -%}
+  {%- if pool.size > 0 -%}
+  <ul class="sidebar-feed-list">
+    {%- for article in pool limit: 5 -%}
+    {%- assign link = article.path -%}
+    {%- if link == nil or link == '' -%}{%- assign link = article.url -%}{%- else -%}{%- assign link = link | relative_url -%}{%- endif -%}
+    <li class="sidebar-feed-item">
+      <a class="sidebar-feed-title" href="{{ link }}" target="_blank" rel="noopener noreferrer">{{ article.title }}</a>
+      <div class="sidebar-feed-meta">{{ article.date | date: "%b %-d, %Y" }} — {{ article.source }}</div>
+    </li>
+    {%- endfor -%}
+  </ul>
+  <a class="sidebar-feed-more" href="{{ '/archive' | relative_url }}">View all articles</a>
+  {%- else -%}
+  <p class="sidebar-feed-empty">No articles available.</p>
+  {%- endif -%}
+  {%- else -%}
+  <p class="sidebar-feed-empty">No articles available.</p>
+  {%- endif -%}
+  {%- endif -%}
+  <p class="sidebar-feed-meta sidebar-legal-news__sources">Where the site's information comes from: <a href="{{ '/advertise/' | relative_url }}">sources</a>.</p>
+</section>
