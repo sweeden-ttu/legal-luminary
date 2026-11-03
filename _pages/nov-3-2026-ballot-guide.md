@@ -85,6 +85,8 @@ Every Killeen voter decides eleven contested statewide and appellate judicial ra
 
 ### Bell County courts — all unopposed
 
+<p style="color:#c00000; font-weight:bold;">In political philosophy, consent of the governed is the idea that a government's legitimacy and moral right to use state power is justified and lawful only when consented to by the people or society over which that political power is exercised.</p>
+
 | Office | Candidate |
 |---|---|
 | District Judge, 169th Judicial District | [Cari Starritt-Burnett (R)](/candidates/courts/district/cari_l_starritt_burnett/) |
