@@ -32,7 +32,7 @@ Main Phone: <a href="tel:+12549335100">{{ dir.courthouse.phone }}</a><br>
 
 ## District Courts
 
-District Courts handle felony criminal cases, civil cases over $200,000, family law, and juvenile matters. All are located at the Bell County Justice Center, 1201 Huey Drive, Belton, TX 76513.
+District courts have original jurisdiction in felony criminal cases ([Code Crim. Proc. art. 4.05](https://tcss.legis.texas.gov/resources/cr/htm/cr.4.htm#4.05)) and in civil matters where the amount in controversy exceeds $500 ([Gov't Code §24.007](https://tcss.legis.texas.gov/resources/gv/htm/gv.24.htm#24.007)). The six district courts with jurisdiction in Bell County ([Gov't Code §24.129](https://tcss.legis.texas.gov/resources/gv/htm/gv.24.htm#24.129)) sit at the Bell County Justice Center, 1201 Huey Road, Belton, TX 76513 ([Bell County](https://www.bellcountytx.com/county_government/district_courts/426th_district_court/index.php)).
 
 <div class="cards-grid two-columns">
 {% for court in dir.district_courts %}
@@ -47,7 +47,7 @@ District Courts handle felony criminal cases, civil cases over $200,000, family 
 
 ## County Courts at Law
 
-County Courts at Law handle Class A and B misdemeanors, civil cases between $500 and $200,000, probate matters, and appeals from Justice of the Peace courts. All are located at the Bell County Justice Center.
+County courts have original jurisdiction of misdemeanors not within the exclusive jurisdiction of justice courts ([Code Crim. Proc. art. 4.07](https://tcss.legis.texas.gov/resources/cr/htm/cr.4.htm#4.07)); statutory county courts hear civil cases where the amount in controversy exceeds $500 but not $325,000 ([Gov't Code §25.0003(c)](https://tcss.legis.texas.gov/resources/gv/htm/gv.25.htm#25.0003)) and appeals from justice courts ([Civ. Prac. & Rem. Code §51.001](https://tcss.legis.texas.gov/resources/cp/htm/cp.51.htm#51.001)). Bell County's three courts at law ([Gov't Code §25.0161](https://tcss.legis.texas.gov/resources/gv/htm/gv.25.htm#25.0161)) sit at the Bell County Justice Center; County Court at Law No. 1 also serves as the probate and mental health court ([Bell County](https://www.bellcountytx.com/county_government/county_courts/court_at_law_1/index.php)).
 
 <div class="cards-grid">
 {% for court in dir.county_courts_at_law %}
@@ -61,7 +61,7 @@ County Courts at Law handle Class A and B misdemeanors, civil cases between $500
 
 ## Justice of the Peace Courts
 
-Justice of the Peace courts handle Class C misdemeanors (fine-only offenses), small claims civil cases up to $20,000, evictions, and truancy cases.
+Justice courts handle criminal cases punishable by fine only ([Code Crim. Proc. art. 4.11](https://tcss.legis.texas.gov/resources/cr/htm/cr.4.htm#4.11)), civil cases in which the amount in controversy is not more than $20,000 ([Gov't Code §27.031](https://tcss.legis.texas.gov/resources/gv/htm/gv.27.htm#27.031)), evictions ([Prop. Code §24.004](https://tcss.legis.texas.gov/resources/pr/htm/pr.24.htm#24.004)) and truancy cases ([Family Code §65.004](https://tcss.legis.texas.gov/resources/fa/htm/fa.65.htm#65.004)).
 
 <div class="cards-grid two-columns">
 {% for jp in dir.justice_of_the_peace %}
@@ -77,7 +77,7 @@ Justice of the Peace courts handle Class C misdemeanors (fine-only offenses), sm
 
 ## Municipal Courts
 
-Municipal courts handle city ordinance violations and Class C misdemeanors that occur within city limits.
+Municipal courts have exclusive original jurisdiction within city limits over cases arising under city ordinances ([Code Crim. Proc. art. 4.14](https://tcss.legis.texas.gov/resources/cr/htm/cr.4.htm#4.14)); the Killeen Municipal Court also hears Class C misdemeanors ([City of Killeen](https://killeentexas.gov/172/Municipal-Court)).
 
 <div class="cards-grid two-columns">
 {% for court in dir.municipal_courts %}

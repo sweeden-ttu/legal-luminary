@@ -1,60 +1,50 @@
 ---
 layout: candidate-profile
-title: Van Orden
-office: Associate Judge
-incumbent: true
+title: Charles Van Orden
+office: Associate Judge, Centex Child Protection Court (retired)
+incumbent: false
 jurisdiction: Bell County
-party: Republican
+party: null
 official_profile: null
 campaign_website: null
 candidate_slug: van_orden
 headshot: null
-election_status: seated
+election_status: former
 office_up_for_election: false
-notes: Associate Judge or former Associate Judge appearing in Bell County Odyssey case records. Specific court assignment
-  could not be confirmed from the Bell County website
-profile_summary: 'Van Orden serves as an Associate Judge in Bell County, Texas. Associate judges in Bell County are appointed
-  to assist the district courts and county courts at law by presiding over specific categories of cases, including family
-  law matters, child protection cases, mental health proceedings, and other matters as assigned by the referring court.
+notes: See the profile; every statement there is cited.
+profile_summary: |
+  Judge Charles Van Orden served 18 years on the Centex Child Protection Court in Belton before retiring; the Killeen Daily Herald reported his retirement in its coverage of the swearing-in of Judge Chris Cornish, who took over Van Orden's specialty court, one of the Texas courts that handle Texas Department of Family and Protective Services cases ([Killeen Daily Herald](https://kdhnews.com/news/region/cornish-sworn-in-as-child-protection-court-judge/article_02a9470e-6e57-5cbb-ad87-753b2a34c72d.html)). Van Orden's two replacements were Judge Dallas Sims, sworn in the previous month, and Cornish; 146th District Judge Jack Jones estimated that Van Orden affected 10,000 to 15,000 children during his time on the bench ([Killeen Daily Herald](https://kdhnews.com/news/region/cornish-sworn-in-as-child-protection-court-judge/article_02a9470e-6e57-5cbb-ad87-753b2a34c72d.html)). Bell County's website today lists Christopher Cornish and Dallas Sims as the presiding associate judges of Centex Child Protection Courts 1 and 2 ([Bell County](https://www.bellcountytx.com/county_government/district_courts/centex_child_protection_court/index.php)).
 
+  The trellis.law directory of Bell County judges lists Charles H. Van Orden, Centex Child Protection Court No. 10, as retired ([trellis.law](https://trellis.law/judges/tx/bell)). According to his Justia lawyer-directory listing, Judge Charles H. Van Orden holds a J.D. from South Texas College of Law, lists a Family Law certification (Texas State Bar), and is now associated with Thornton Esquire Law Group in Houston ([Justia](https://lawyers.justia.com/lawyer/judge-charles-h-van-orden-247150)).
+credentials: |
+  **Judicial service**
 
-  Associate judges play a critical role in the Bell County judicial system by handling specialized dockets that would otherwise
-  overwhelm the district courts. Their recommendations and rulings are subject to review by the referring district or county
-  court judge.
+  - Judge, Centex Child Protection Court, Belton, 18 years, retired ([Killeen Daily Herald](https://kdhnews.com/news/region/cornish-sworn-in-as-child-protection-court-judge/article_02a9470e-6e57-5cbb-ad87-753b2a34c72d.html))
 
+  **Education and certification (per Justia directory listing)**
 
-  The associate judge positions in Bell County serve the 27th, 146th, 169th, 264th, 426th, and 478th Judicial District Courts,
-  as well as the County Courts at Law. Each associate judge is appointed by the presiding judge of the court they serve and
-  handles cases as delegated by that court.
+  - J.D., South Texas College of Law ([Justia](https://lawyers.justia.com/lawyer/judge-charles-h-van-orden-247150))
+  - Certification: Family Law, Texas State Bar ([Justia](https://lawyers.justia.com/lawyer/judge-charles-h-van-orden-247150))
+professional_history: |
+  **Centex Child Protection Court, Belton** — Judge, 18 years, retired; succeeded by Dallas Sims and Chris Cornish ([Killeen Daily Herald](https://kdhnews.com/news/region/cornish-sworn-in-as-child-protection-court-judge/article_02a9470e-6e57-5cbb-ad87-753b2a34c72d.html))
 
-
-  Judge Orden''s specific court assignment and caseload are reflected in Odyssey case management system records.
-
-  '
-credentials: '**Status**
-
-  - Associate Judge, Bell County District Courts
-
-
-  **Appointment**
-
-  - Appointed by the presiding judge of the referring court
-
-
-  **Qualifications**
-
-  - Licensed Texas attorney in good standing
-
-  - Appointed based on legal experience and expertise
-
-  '
-professional_history: '**Bell County District Courts** — Associate Judge
-
-  Presides over cases as assigned by district and county court judges, including family law, child protection, and mental
-  health matters.
-
-  '
-odyssey_results_placeholder: Associate Judge Orden's case records are available through the Odyssey case management system.
-  Specific docket statistics and case dispositions will be added here as data is compiled.
+  **Thornton Esquire Law Group, Houston** — per Justia directory listing ([Justia](https://lawyers.justia.com/lawyer/judge-charles-h-van-orden-247150))
+sources:
+- title: Cornish sworn in as child protection court judge
+  publisher: Killeen Daily Herald
+  url: https://kdhnews.com/news/region/cornish-sworn-in-as-child-protection-court-judge/article_02a9470e-6e57-5cbb-ad87-753b2a34c72d.html
+  accessed: 2026-11-03
+- title: Centex Child Protection Courts 1 and 2
+  publisher: Bell County
+  url: https://www.bellcountytx.com/county_government/district_courts/centex_child_protection_court/index.php
+  accessed: 2026-11-03
+- title: Bell County judges (directory)
+  publisher: trellis.law
+  url: https://trellis.law/judges/tx/bell
+  accessed: 2026-11-03
+- title: Judge Charles H. Van Orden
+  publisher: Justia Lawyer Directory
+  url: https://lawyers.justia.com/lawyer/judge-charles-h-van-orden-247150
+  accessed: 2026-11-03
 ---
-Van Orden serves or served as an Associate Judge in Bell County, Texas, appearing in Odyssey electronic case records.
+Charles Van Orden is the retired judge of the Centex Child Protection Court in Belton, where he served 18 years before being succeeded by Dallas Sims and Chris Cornish ([Killeen Daily Herald](https://kdhnews.com/news/region/cornish-sworn-in-as-child-protection-court-judge/article_02a9470e-6e57-5cbb-ad87-753b2a34c72d.html)).

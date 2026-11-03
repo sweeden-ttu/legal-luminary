@@ -1,12 +1,10 @@
 ---
-layout: candidate-profile
-title: "Jessica A. Gonzalez"
-office: "Justice of the Peace, Precinct 4, Place 2"
-incumbent: false
-jurisdiction: "Bell County"
-campaign_website: "https://www.facebook.com/repjessicagonzalez/"
-candidate_slug: "jessica_gonzalez"
-headshot: "/assets/imgs/candidates/texas/bell_county/jessica_gonzalez.png"
+layout: null
+permalink: /candidates/texas/bell_county/jessica_gonzalez/
+sitemap: false
 ---
-
-Jessica A. Gonzalez is a candidate for Justice of the Peace, Precinct 4, Place 2 in Bell County.
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>Redirecting…</title>
+<link rel="canonical" href="/candidates/courts/jp/jessica_a_gonzalez/">
+<meta http-equiv="refresh" content="0; url=/candidates/courts/jp/jessica_a_gonzalez/">
+</head><body><p>This page moved to the <a href="/candidates/courts/jp/jessica_a_gonzalez/">verified profile</a>.</p></body></html>

@@ -14,8 +14,6 @@ verified_at: 2026-06-23
 
 The National Hockey League is reportedly exploring potential expansion into the state of Texas. Information obtained by the Associated Press indicated that Houston and Austin are among the cities being considered for a possible franchise addition. This discussion occurred during the NHL's annual Board of Governors meeting held in New York.
 
-During this gathering, league officials addressed future growth strategies for the organization. The focus of the discussions involved evaluating major markets across Texas for potential new teams. These types of decisions typically involve significant financial and logistical planning by the governing body.
-
 ## Source Information
 
 - **Source**: KXAN Austin (NBC)

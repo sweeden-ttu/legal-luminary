@@ -4,7 +4,7 @@ date: 2026-04-15
 excerpt: "04/10/26 City of Temple to host Bulky Item Disposal Event Event to be held April 18 TEMPLE, TX (April 10, 2026) – The City of Temple will be hosting a Bulky Item Disposal Event at the Solid Waste Complex, giving residents an additional opportunity to..."
 layout: default
 news_excerpt: true
-source_name: Temple Police Department
+source_name: City of Temple
 source_url: https://city-of-temple.prowly.com/451804-city-of-temple-to-host-bulky-item-disposal-event
 title: City of Temple to host Bulky Item Disposal Event
 verified_at: 2026-04-15
@@ -14,7 +14,7 @@ verified_at: 2026-04-15
 
 ## Source Information
 
-- **Source**: Temple Police Department
+- **Source**: City of Temple
 - **Original URL**: https://city-of-temple.prowly.com/451804-city-of-temple-to-host-bulky-item-disposal-event
 - **Published**: 2026-04-15
 - **Verified**: 2026-04-15

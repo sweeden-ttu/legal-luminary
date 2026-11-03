@@ -3,7 +3,7 @@ title: "Utility Tech Camera Ground Operator"
 date: 2026-03-23
 layout: default
 source_url: "https://city-of-temple.prowly.com/450929-utility-tech-camera-ground-operator"
-source_name: "Temple Police Department"
+source_name: City of Temple
 verified_at: 2026-05-31
 category: news
 news_excerpt: true
@@ -16,7 +16,7 @@ news_excerpt: true
 
 This article was aggregated from an officially verified news source:
 
-- **Source**: Temple Police Department
+- **Source**: City of Temple
 - **Original URL**: [https://city-of-temple.prowly.com/450929-utility-tech-camera-ground-operator](https://city-of-temple.prowly.com/450929-utility-tech-camera-ground-operator)
 - **Verified**: 2026-05-31
 - **Verification Method**: FCC-Licensed Broadcast Station or Approved Local News Source

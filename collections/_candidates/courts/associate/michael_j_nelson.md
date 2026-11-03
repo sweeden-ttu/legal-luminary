@@ -4,56 +4,42 @@ title: Michael J. Nelson
 office: IV-D Associate Judge
 incumbent: true
 jurisdiction: Bell County
-party: Republican
+party: null
 official_profile: https://www.bellcountytx.com/county_government/district_courts/iv-d_associate_judge/index.php
 campaign_website: null
 candidate_slug: michael_j_nelson
 headshot: null
 election_status: seated
 office_up_for_election: false
-notes: IV-D Associate Judge handling Title IV-D child support cases in Bell County
-profile_summary: 'Michael J. Nelson serves as an Associate Judge in Bell County, Texas. Associate judges in Bell County are
-  appointed to assist the district courts and county courts at law by presiding over specific categories of cases, including
-  family law matters, child protection cases, mental health proceedings, and other matters as assigned by the referring court.
+notes: See the profile; every statement there is cited.
+profile_summary: |
+  The Honorable Michael J. Nelson is listed by Bell County as the IV-D Associate Judge, Court #15, 3rd Administrative Judicial Region, at the Belton Courthouse Annex, 550 East 2nd Avenue, Belton ([Bell County](https://www.bellcountytx.com/county_government/district_courts/iv-d_associate_judge/index.php)). The IV-D Associate Judge hears the petitions and motions brought by the Office of the Attorney General concerning paternity and child support establishment, child support enforcement, and other cases brought under the Uniform Interstate Family Support Act; regularly scheduled docket call is at 9:00 a.m. ([Bell County](https://www.bellcountytx.com/county_government/district_courts/iv-d_associate_judge/index.php)).
 
+  According to his Justia lawyer-directory listing, Michael James Nelson is an Associate Judge for the State of Texas with a Belton mailing address, lists a Family Law certification (Texas State Bar), and holds a J.D. from Texas Southern University Thurgood Marshall School of Law ([Justia](https://lawyers.justia.com/lawyer/michael-james-nelson-227854)).
+credentials: |
+  **Judicial service**
 
-  Associate judges play a critical role in the Bell County judicial system by handling specialized dockets that would otherwise
-  overwhelm the district courts. Their recommendations and rulings are subject to review by the referring district or county
-  court judge.
+  - IV-D Associate Judge, Court #15, 3rd Administrative Judicial Region, Bell County ([Bell County](https://www.bellcountytx.com/county_government/district_courts/iv-d_associate_judge/index.php))
 
+  **Education and certification (per Justia directory listing)**
 
-  The associate judge positions in Bell County serve the 27th, 146th, 169th, 264th, 426th, and 478th Judicial District Courts,
-  as well as the County Courts at Law. Each associate judge is appointed by the presiding judge of the court they serve and
-  handles cases as delegated by that court.
-
-
-  Judge Nelson''s specific court assignment and caseload are reflected in Odyssey case management system records.
-
-  '
-credentials: '**Status**
-
-  - Associate Judge, Bell County District Courts
-
-
-  **Appointment**
-
-  - Appointed by the presiding judge of the referring court
-
-
-  **Qualifications**
-
-  - Licensed Texas attorney in good standing
-
-  - Appointed based on legal experience and expertise
-
-  '
-professional_history: '**Bell County District Courts** — Associate Judge
-
-  Presides over cases as assigned by district and county court judges, including family law, child protection, and mental
-  health matters.
-
-  '
-odyssey_results_placeholder: Associate Judge Nelson's case records are available through the Odyssey case management system.
-  Specific docket statistics and case dispositions will be added here as data is compiled.
+  - J.D., Texas Southern University Thurgood Marshall School of Law ([Justia](https://lawyers.justia.com/lawyer/michael-james-nelson-227854))
+  - Certification: Family Law, Texas State Bar ([Justia](https://lawyers.justia.com/lawyer/michael-james-nelson-227854))
+professional_history: |
+  **IV-D Associate Judge, Court #15, 3rd Administrative Judicial Region** — Bell County, Belton ([Bell County](https://www.bellcountytx.com/county_government/district_courts/iv-d_associate_judge/index.php))
+court_contact:
+  court_name: 'IV-D Associate Judge, Court #15, 3rd Administrative Judicial Region'
+  court_type: IV-D Associate Judge
+  address: Belton Courthouse Annex, 550 East 2nd Avenue, Belton, Texas 76513
+  mailing_address: P.O. Box 1145, Belton, Texas 76513
+sources:
+- title: IV-D Associate Judge
+  publisher: Bell County
+  url: https://www.bellcountytx.com/county_government/district_courts/iv-d_associate_judge/index.php
+  accessed: 2026-11-03
+- title: Michael James Nelson
+  publisher: Justia Lawyer Directory
+  url: https://lawyers.justia.com/lawyer/michael-james-nelson-227854
+  accessed: 2026-11-03
 ---
-Michael J. Nelson serves as the IV-D Associate Judge in Bell County, Texas, presiding over Title IV-D child support cases.
+Michael J. Nelson is the IV-D Associate Judge for Bell County, Court #15 of the 3rd Administrative Judicial Region, hearing child support and paternity matters brought by the Office of the Attorney General ([Bell County](https://www.bellcountytx.com/county_government/district_courts/iv-d_associate_judge/index.php)).

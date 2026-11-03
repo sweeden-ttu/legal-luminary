@@ -14,10 +14,6 @@ verified_at: 2026-06-23
 
 Eight individuals were sentenced to decades in prison following a shooting incident that occurred at a Texas immigration detention center last year. The defendants included a former U.S. Marine reservist and seven other people involved in the event.
 
-Prosecutors charged the crime as an act of terrorism during the demonstration, noting that the shooting wounded a police officer. Officials stated that all eight individuals were linked to the incident.
-
-The sentencing took place on Tuesday, resulting in substantial prison terms for those convicted. The legal proceedings addressed actions taken during the protest at the facility.
-
 ## Source Information
 
 - **Source**: KXAN Austin (NBC)

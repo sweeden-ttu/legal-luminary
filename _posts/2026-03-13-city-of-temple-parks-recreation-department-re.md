@@ -4,7 +4,7 @@ date: 2026-03-13
 excerpt: "03/13/26 City of Temple Parks & Recreation Department Receives Multiple Statewide Honors from Texas Recreation and Park Society Awarded by the Texas Recreation and Park Society TEMPLE, TX (March 13, 2026) – The City of Temple is proud to announce tha..."
 layout: default
 news_excerpt: true
-source_name: Temple Police Department
+source_name: City of Temple
 source_url: https://city-of-temple.prowly.com/447551-city-of-temple-parks-recreation-department-receives-multiple-statewide-honors-from-texas-recreation-and-park-society
 title: City of Temple Parks & Recreation Department Receives Multiple Statewide Honors from Texas Recreation and Park Society
 verified_at: 2026-03-13
@@ -14,7 +14,7 @@ verified_at: 2026-03-13
 
 ## Source Information
 
-- **Source**: Temple Police Department
+- **Source**: City of Temple
 - **Original URL**: https://city-of-temple.prowly.com/447551-city-of-temple-parks-recreation-department-receives-multiple-statewide-honors-from-texas-recreation-and-park-society
 - **Published**: 2026-03-13
 - **Verified**: 2026-03-13

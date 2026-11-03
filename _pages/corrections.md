@@ -14,22 +14,7 @@ sources:
     evidence: "Current published candidate and incumbent labels on this site after correction."
     visited: true
     confirmed: true
-  - url: "https://www.killeendailyherald.com/"
-    label: "Killeen Daily Herald (source for related news)"
-    evidence: "Original outlet cited on site coverage of the Bell County Legal Resource Center proposal."
-    visited: false
-    confirmed: false
 verified_at: 2026-03-25
-confidence:
-  base: 0.707
-  current: 0.78
-  formula: "compound_ema_qfa"
-  qfa_state: VALIDATE
-  milestone: M2
-  validation: 0.05
-  aho_corasick: 0.05
-  code_refactor: 0.0
-  vv_integration: 0.004
 ---
 
 <p class="intro-text">
@@ -62,9 +47,9 @@ Every registry entry uses the same structure so readers and auditors can scan co
   <dt>Surface</dt>
   <dd>Candidates / election coverage for <strong>Justice of the Peace, Bell County Precinct 4</strong> (incumbent labeling on candidate cards or related copy).</dd>
   <dt>Error</dt>
-  <dd>Published material incorrectly identified <strong>Beatrice Cox</strong> as the <strong>incumbent</strong>. Ms. Cox is a <strong>candidate</strong> for the office, not the officeholder.</dd>
+  <dd>Published material incorrectly identified <strong>Beatrice Cox</strong> as the <strong>incumbent</strong>. Ms. Cox is the Republican <strong>candidate</strong> for the office, not the officeholder (<a href="https://kdhnews.com/centerforpolitics/cox-and-gonzalez-participate-in-justice-of-the-peace-forum-ahead-of-nov-3-election/article_f3226aea-4314-4639-9f1d-804bfbe9c839.html">Killeen Daily Herald</a>).</dd>
   <dt>Correction</dt>
-  <dd>Site data and display now show the <strong>true incumbent</strong> for JP Precinct 4, Place 2: <strong>Nicola J. James</strong>, consistent with Bell County’s justice-of-the-peace roster and our internal candidate dataset. Ms. Cox appears only in a candidate role where applicable. Updated labels are <strong>listed and published</strong> on the <a href="{{ '/candidates/' | relative_url }}">Candidates</a> section.</dd>
+  <dd>Site data and display now show the <strong>true incumbent</strong> for JP Precinct 4, Place 2: <strong>Nicola J. James</strong>, consistent with Bell County’s justice-of-the-peace page for that court (<a href="https://www.bellcountytx.com/county_government/justice_of_the_peace/precinct_4_place_2/index.php">Bell County</a>) and our internal candidate dataset. Ms. Cox appears only in a candidate role where applicable. Updated labels are <strong>listed and published</strong> on the <a href="{{ '/candidates/' | relative_url }}">Candidates</a> section.</dd>
   <dt>Root cause (V&amp;V)</dt>
   <dd>Incumbent and challenger roles were conflated during content or data assembly—an error that human review did not catch before publication.</dd>
   <dt>Remediation</dt>
@@ -76,8 +61,6 @@ Every registry entry uses the same structure so readers and auditors can scan co
 ## Why this matters (context)
 
 Accurate <strong>incumbent versus candidate</strong> labeling helps voters and researchers. Mistakes in that distinction undermine trust in civic information—especially where residents rely on clear, verified officeholder data.
-
-Broader <strong>legal information infrastructure</strong> in the region remains important. According to <a href="{{ '/news/2026/02/11/bell-county-legal-resource-center/' | relative_url }}">site coverage</a> of commissioners’ action in February 2026, Bell County moved to establish a <strong>Legal Resource Center</strong> intended to improve access to legal services, with benefits expected for communities including <strong>Killeen</strong>. Public reporting at the time described budget-related steps; <strong>full funding and operational rollout had not yet been realized</strong> as of that coverage. This correction registry does not adjudicate county funding decisions—it underscores why reliable, well-funded public legal resources and careful V&amp;V on election data belong in the same conversation.
 
 ---
 

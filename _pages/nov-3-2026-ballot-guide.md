@@ -5,10 +5,8 @@ title: "Killeen & Bell County Ballot Guide — November 3, 2026 General Election
 description: "When and where to vote in Bell County, every judicial race on the Killeen ballot (contested and unopposed), the Bell County hospital district tax proposition, and Killeen's eight charter amendments."
 robots: index,follow
 date: 2026-10-12
-verified_at: 2026-11-01
+verified_at: 2026-11-03
 sources:
-  - url: https://www.bellcountytx.com/departments/elections/early_voting_information.php
-    label: Bell County Elections — Early Voting Information
   - url: https://www.bellcountytx.com/departments/elections/ballot_samples.php
     label: Bell County Elections — Ballot Samples by voting precinct
   - url: https://www.killeentexas.gov/732/November-3-2026-Special-Called-Charter-A
@@ -31,10 +29,18 @@ sources:
     label: Killeen Daily Herald — Tice wins the JP Precinct 2 Republican runoff
   - url: https://sanantonioreport.org/voter-guide-meet-the-judicial-candidates-on-the-nov-3-ballot/
     label: San Antonio Report — voter guide to the statewide judicial candidates
-  - url: https://www.killeentexas.gov/m/newsflash/home/detail/2771
-    label: City of Killeen — Council votes to move general elections to November (Dec. 19, 2025)
-  - url: https://www.kxxv.com/news/local-news/in-your-neighborhood/bell-county/killeen/three-killeen-city-council-seats-sit-empty-ahead-of-may-special-election
-    label: KXXV — Three Killeen council seats empty ahead of May special election
+  - url: https://kdhnews.com/news/local/killeen-council-approves-moving-elections-to-november-this-may-s-election-will-be-the-last/article_aaebab47-31c4-4dc0-a14d-87160d108a8d.html
+    label: Killeen Daily Herald — Council approves moving elections to November (Dec. 19, 2025)
+  - url: https://kdhnews.com/news/local/new-mayor-pro-tem-councilman-alvarez-becomes-backup-mayor-council-calls-election-to-fill-cobb/article_500994e2-a56d-4408-a922-22638ad12979.html
+    label: Killeen Daily Herald — Council calls May 2 special elections after resignations
+  - url: https://kdhnews.com/news/local/killeen-charter-review-committee-makes-recommendations-that-would-significantly-alter-future-elections-if-approved/article_c905f253-9dd7-40d9-90d9-a9e0bc53fa49.html
+    label: Killeen Daily Herald — Charter Review Committee recommendations (Feb. 22, 2026)
+  - url: https://tcss.legis.texas.gov/resources/el/htm/el.41.htm#41.031
+    label: Texas Election Code §41.031 (voting hours)
+  - url: https://tcss.legis.texas.gov/resources/el/htm/el.2.htm#2.051
+    label: Texas Election Code §2.051 (unopposed-candidate procedure limited to non-county subdivisions)
+  - url: https://www.archives.gov/founding-docs/declaration-transcript
+    label: National Archives — Declaration of Independence transcript
   - url: https://kdhnews.com/news/local/killeen-council-agrees-with-amendment-to-appoint-representatives-as-soon-as-vacancy-happens/article_8b203039-6a4f-4f53-8ab0-5040eeaba679.html
     label: Killeen Daily Herald — Council votes 6-1 on filling vacancies by appointment
   - url: https://kdhnews.com/news/local/killeen-council-moves-to-remove-resign-to-run-provision-from-charter/article_36c49d1d-3a02-4a76-a89e-db87ac7c1aa1.html
@@ -47,22 +53,24 @@ This guide summarizes official Bell County and City of Killeen election document
 
 ## How and when to vote
 
-| When | Hours or deadline |
-|---|---|
-| Early voting, Oct. 19–23 | 8 a.m.–5 p.m. |
-| Saturday, Oct. 24 | 7 a.m.–7 p.m. |
-| Sunday, Oct. 25 | noon–6 p.m. |
-| Early voting, Oct. 26–30 | 7 a.m.–7 p.m. |
-| Last day to **apply** for a mail ballot | Friday, Oct. 23 (received, not postmarked) |
-| Election Day, Tuesday, Nov. 3 | 7 a.m.–7 p.m. at Election Day polling locations |
+| When | Hours or deadline | Source |
+|---|---|---|
+| Early voting, Oct. 19–23 | 8 a.m.–5 p.m. | [Election order](https://www.killeentexas.gov/DocumentCenter/View/14296/Order-of-Special-Election-1132026-PDF) |
+| Saturday, Oct. 24 | 7 a.m.–7 p.m. | [Election order](https://www.killeentexas.gov/DocumentCenter/View/14296/Order-of-Special-Election-1132026-PDF) |
+| Sunday, Oct. 25 | noon–6 p.m. | [Election order](https://www.killeentexas.gov/DocumentCenter/View/14296/Order-of-Special-Election-1132026-PDF) |
+| Early voting, Oct. 26–30 | 7 a.m.–7 p.m. | [Election order](https://www.killeentexas.gov/DocumentCenter/View/14296/Order-of-Special-Election-1132026-PDF) |
+| Last day to **apply** for a mail ballot | Friday, Oct. 23 (must be received by close of business) | [Election order](https://www.killeentexas.gov/DocumentCenter/View/14296/Order-of-Special-Election-1132026-PDF) |
+| Election Day, Tuesday, Nov. 3 | 7 a.m.–7 p.m. | [Election Code §41.031](https://tcss.legis.texas.gov/resources/el/htm/el.41.htm#41.031) |
 
-Killeen early-voting sites: Jackson Professional Learning Center (902 Rev. R.A. Abercrombie Dr.), Killeen Senior Center at Lions Club Park (1700 E. Stan Schlueter Loop), and True Deliverance Ministries (709 W. Dean Ave.). Countywide sites also include the Belton Annex (550 E. 2nd Ave.) and the Harker Heights Parks & Recreation Center (307 Millers Crossing). Source: [Bell County Elections](https://www.bellcountytx.com/departments/elections/early_voting_information.php); the City of Killeen's [election order](https://www.killeentexas.gov/DocumentCenter/View/14296/Order-of-Special-Election-1132026-PDF) lists the same schedule. City Hall is no longer a polling place ([City of Killeen](https://www.killeentexas.gov/732/November-3-2026-Special-Called-Charter-A)).
+Killeen early-voting sites: Jackson Professional Learning Center (902 Rev. R.A. Abercrombie Dr.), Killeen Senior Center at Lions Club Park (1700 E. Stan Schlueter Loop), and True Deliverance Ministries (709 W. Dean Ave.); the main early-voting site is the Bell County Courthouse Annex (550 E. 2nd Ave., Belton), and other branch sites include the Harker Heights Parks & Recreation Center (307 Miller Crossing) ([City of Killeen election order, Aug. 4, 2026](https://www.killeentexas.gov/DocumentCenter/View/14296/Order-of-Special-Election-1132026-PDF)). City Hall is no longer a polling place ([City of Killeen](https://www.killeentexas.gov/732/November-3-2026-Special-Called-Charter-A)). For Election Day locations see [Bell County Elections](https://www.bellcountytx.com/departments/elections/election_day_locations.php).
 
 ## What is on a Killeen ballot
 
-Every Killeen voter decides eleven contested statewide and appellate judicial races, plus one local judicial contest. Ten more judicial-branch offices list a single candidate; under Texas law unopposed candidates still appear on the general-election ballot. Candidate names link to Legal Luminary profiles, each of which cites the news coverage behind it.
+Every Killeen voter decides eleven contested statewide and appellate judicial races, plus one local judicial contest; the remaining Bell County court and clerk offices below list a single candidate ([Bell County sample ballots](https://www.bellcountytx.com/departments/elections/ballot_samples.php)). Those names stay on the ballot because the Election Code's procedure for declaring unopposed candidates elected and cancelling the election applies only to political subdivisions other than a county ([Election Code §2.051](https://tcss.legis.texas.gov/resources/el/htm/el.2.htm#2.051)). Candidate names link to Legal Luminary profiles.
 
 ### Texas Supreme Court and Court of Criminal Appeals (statewide)
+
+Race and candidate lists in the tables below are taken from the official [Bell County sample ballots](https://www.bellcountytx.com/departments/elections/ballot_samples.php); the statewide and Fifteenth Court of Appeals line-ups are also listed by the [San Antonio Report](https://sanantonioreport.org/voter-guide-meet-the-judicial-candidates-on-the-nov-3-ballot/), which notes that Place 2 is an unexpired term.
 
 | Office | Candidates |
 |---|---|
@@ -85,9 +93,9 @@ Every Killeen voter decides eleven contested statewide and appellate judicial ra
 
 ### Bell County courts **UNOPPOSED**
 
-<p style="color:#c00000; font-weight:bold; font-decoration🔥">Governments ... deriv(e) their just powers from the consent of the governed. If a government destroys these fundamental ends, the people have the right to change or overthrow it.</p> -- Thomas Jefferson, The Declaration of Independence. 
+<p style="color:#c00000; font-weight:bold;">Governments "deriv[e] their just powers from the consent of the governed, --That whenever any Form of Government becomes destructive of these ends, it is the Right of the People to alter or to abolish it."</p> -- The Declaration of Independence ([National Archives transcript](https://www.archives.gov/founding-docs/declaration-transcript)).
 
-Consent of the governed will be polled and may choose otherwise for the candidates below.
+Consent of the governed will be polled on the candidates below ([Bell County sample ballots](https://www.bellcountytx.com/departments/elections/ballot_samples.php)).
 
 | Office | Candidate |
 |---|---|
@@ -104,9 +112,11 @@ Consent of the governed will be polled and may choose otherwise for the candidat
 
 ### Justice of the Peace — the only contested local judicial race
 
-Most of Killeen lies in Justice of the Peace Precinct 4, where **Precinct 4, Place 2** is contested between [Beatrice "Bea" Cox (R)](/candidates/courts/jp/beatrice_bea_cox/) and [Jessica A. Gonzalez (D)](/candidates/courts/jp/jessica_a_gonzalez/) ([Killeen Daily Herald](https://kdhnews.com/centerforpolitics/cox-and-gonzalez-participate-in-justice-of-the-peace-forum-ahead-of-nov-3-election/article_f3226aea-4314-4639-9f1d-804bfbe9c839.html)). Killeen voters in voting precinct 203 are in JP Precinct 2 instead and see [Michael Tice (R)](/candidates/courts/jp/michael_tice/), unopposed, in place of that contest. The Precinct 1 (Patterson) and Precinct 3, Place 2 (Wilkey) JP seats are also unopposed but do not appear on Killeen ballots.
+Justice of the Peace **Precinct 4, Place 2**, which covers the Killeen area, is contested between [Beatrice "Bea" Cox (R)](/candidates/courts/jp/beatrice_bea_cox/) and [Jessica A. Gonzalez (D)](/candidates/courts/jp/jessica_a_gonzalez/) ([Killeen Daily Herald](https://kdhnews.com/centerforpolitics/cox-and-gonzalez-participate-in-justice-of-the-peace-forum-ahead-of-nov-3-election/article_f3226aea-4314-4639-9f1d-804bfbe9c839.html)). Killeen voters in voting precinct 203 are in JP Precinct 2 instead and see [Michael Tice (R)](/candidates/courts/jp/michael_tice/), unopposed, in place of that contest; the Precinct 1 (Patterson) and Precinct 3, Place 2 (Wilkey) JP seats are also unopposed but do not appear on Killeen ballots ([Bell County sample ballots](https://www.bellcountytx.com/departments/elections/ballot_samples.php)).
 
 ### Other races on the Killeen ballot
+
+Source for this list: [Bell County sample ballots](https://www.bellcountytx.com/departments/elections/ballot_samples.php).
 
 - **U.S. Representative, District 31:** John Carter (R), Justin Early (D), Greg Stoker (Green).
 - **Attorney General:** [Mayes Middleton (R)](/texas-ag-race-26/mayes-middleton/), [Nathan Johnson (D)](/texas-ag-race-26/nathan-johnson/), [Tom Oxford (L)](/texas-ag-race-26/tom-oxford/).
@@ -116,7 +126,7 @@ Most of Killeen lies in Justice of the Peace Precinct 4, where **Precinct 4, Pla
 
 ## Bell County Hospital Services District, Proposition A
 
-Ballot text: *"THIS IS A TAX INCREASE: The creation of a Hospital district and the levy of a tax not to exceed 75 cents on each $100 of the taxable value of Property taxable by the district."*
+Ballot text: *"THIS IS A TAX INCREASE: The creation of a Hospital district and the levy of a tax not to exceed 75 cents on each $100 of the taxable value of Property taxable by the district."* ([Bell County sample ballots](https://www.bellcountytx.com/departments/elections/ballot_samples.php))
 
 - **How it reached the ballot:** Commissioner Louie Minor (D-Killeen) submitted a creation petition under Texas Health and Safety Code § 281.003, which requires the Commissioners Court to order an election when at least 100 qualified, property-taxpaying voters sign and the petition is certified ([Killeen Daily Herald](https://kdhnews.com/news/region/just-100-signatures-force-bell-county-hospital-district-tax-issue-on-november-ballot/article_01afaee1-fb2f-5444-a2c2-c28a9b04cc80.html)).
 - **What it would do:** create a countywide hospital district and a health care system for indigent residents. If it passes, a board appointed by the commissioners would set the actual rate ([KDH](https://kdhnews.com/news/region/just-100-signatures-force-bell-county-hospital-district-tax-issue-on-november-ballot/article_01afaee1-fb2f-5444-a2c2-c28a9b04cc80.html)).
@@ -140,9 +150,9 @@ Killeen's special charter election is held alongside the general election and ad
 
 The exact charter changes are in Exhibit A of [Ordinance 26-030](https://www.killeentexas.gov/DocumentCenter/View/14295/Ord-26-030-Calling-the-Special-Charter-Amendments-Election-11326-PDF), adopted Aug. 4, 2026, which shows deleted text struck through and new text underlined. Two details there are not in the ballot language or the voter guide: Proposition A's text adds that "the mayor or any councilmember elected prior to the adoption of this amendment shall serve until November 2027," and the three-term limit in Section 22 gains the words "in any one office." The ordinance's staff memo estimates the city's share of the election cost at $21,000.
 
-**Why Propositions B and C matter this year:** District 1 Council Member Jessica Gonzalez is the Democratic nominee for Justice of the Peace, Precinct 4, Place 2, and has said she would immediately resign from the council if elected ([Killeen Daily Herald](https://kdhnews.com/news/local/gonzalez-says-her-time-and-service-will-get-her-edge-in-november-jp-race/article_ae036acb-2af1-4705-9b2b-bb9462abe22a.html)). Under the current charter her JP candidacy did not require resignation, because it is not a city office.
+**Why Propositions B and C matter this year:** Mayor Pro Tem Jessica Gonzalez is the Democratic nominee for Justice of the Peace, Precinct 4, Place 2, and has said she would immediately resign from the council if elected ([Killeen Daily Herald](https://kdhnews.com/news/local/gonzalez-says-her-time-and-service-will-get-her-edge-in-november-jp-race/article_ae036acb-2af1-4705-9b2b-bb9462abe22a.html)). Under the current charter her JP candidacy did not require resignation: the charter requires resignation only on filing for a different city office, not for re-election or a non-city office ([city voter guide](https://www.killeentexas.gov/DocumentCenter/View/14470/2026-Charter-Election-Voter-Guide-PDF)).
 
-**What would happen to the District 1 seat.** There is no District 1 race on this ballot: district seats are elected in odd-numbered years, and in December 2025 the council voted 7–0 to move regular city elections to November of odd-numbered years starting in 2027, with the mayor and all council members elected together ([City of Killeen](https://www.killeentexas.gov/m/newsflash/home/detail/2771)). A vacancy arising after a JP takes office in January 2027 would come more than 90 days before that election. For a single vacancy in that window, the current charter already requires the council to fill it by appointment ([city voter guide](https://www.killeentexas.gov/DocumentCenter/View/14470/2026-Charter-Election-Voter-Guide-PDF)), so Proposition C would not change that outcome. Under both the current and proposed text, the appointee must be "a bona fide resident of the district in which the vacancy occurs" ([Ordinance 26-030, Exhibit A](https://www.killeentexas.gov/DocumentCenter/View/14295/Ord-26-030-Calling-the-Special-Charter-Amendments-Election-11326-PDF)). The city's own presentation summarizes Prop C as "Fill all vacancies on council by appointment" ([ordinance packet](https://www.killeentexas.gov/DocumentCenter/View/14295/Ord-26-030-Calling-the-Special-Charter-Amendments-Election-11326-PDF)); its main practical change is to two or more simultaneous vacancies, which today require a special election — the situation behind Killeen's May 2, 2026 special election, which followed a series of resignations ([KXXV](https://www.kxxv.com/news/local-news/in-your-neighborhood/bell-county/killeen/three-killeen-city-council-seats-sit-empty-ahead-of-may-special-election)).
+**What would happen to her council seat.** There is no Killeen council race on this ballot: on Dec. 19, 2025 the council voted unanimously to move city elections to November of odd-numbered years, making May 2026 the last May election, with the mayor's, at-large and district seats all next due in November 2027 ([Killeen Daily Herald](https://kdhnews.com/news/local/killeen-council-approves-moving-elections-to-november-this-may-s-election-will-be-the-last/article_aaebab47-31c4-4dc0-a14d-87160d108a8d.html)). Under the current charter a single vacancy more than 90 days before a regular election must be filled by appointment, while two or more simultaneous vacancies require a special election ([city voter guide](https://www.killeentexas.gov/DocumentCenter/View/14470/2026-Charter-Election-Voter-Guide-PDF)). Under both the current and proposed text, the appointee must be "a bona fide resident of the district in which the vacancy occurs" ([Ordinance 26-030, Exhibit A](https://www.killeentexas.gov/DocumentCenter/View/14295/Ord-26-030-Calling-the-Special-Charter-Amendments-Election-11326-PDF)). The city's own presentation summarizes Prop C as "Fill all vacancies on council by appointment" ([ordinance packet](https://www.killeentexas.gov/DocumentCenter/View/14295/Ord-26-030-Calling-the-Special-Charter-Amendments-Election-11326-PDF)). Multiple simultaneous vacancies are what produced Killeen's May 2, 2026 special elections, called after council members Nina Cobb and Joseph Solomon and Mayor Debbie Nash-King resigned ([Killeen Daily Herald](https://kdhnews.com/news/local/new-mayor-pro-tem-councilman-alvarez-becomes-backup-mayor-council-calls-election-to-fill-cobb/article_500994e2-a56d-4408-a922-22638ad12979.html)).
 
 **How Propositions B and C reached the ballot.** A citizen Charter Review Committee recommended changes in 2026. On resign-to-run, the committee voted 6–0 to recommend that a council member's candidacy for any non-city office count as a resignation; the council instead voted 7–0 to repeal the provision entirely ([Killeen Daily Herald](https://kdhnews.com/news/local/killeen-council-moves-to-remove-resign-to-run-provision-from-charter/article_36c49d1d-3a02-4a76-a89e-db87ac7c1aa1.html); [KDH](https://kdhnews.com/news/local/killeen-charter-review-committee-makes-recommendations-that-would-significantly-alter-future-elections-if-approved/article_c905f253-9dd7-40d9-90d9-a9e0bc53fa49.html)). On vacancies, the council voted 6–1 to fill all vacancies by appointment; Councilwoman Mellisa Brown dissented, and her amendment to cap appointments at two per two-year term failed 3–4. The deputy city attorney told the council that 10 of 26 comparably sized Texas cities require vacancies to be filled by election ([KDH](https://kdhnews.com/news/local/killeen-council-agrees-with-amendment-to-appoint-representatives-as-soon-as-vacancy-happens/article_8b203039-6a4f-4f53-8ab0-5040eeaba679.html)).
 

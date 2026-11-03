@@ -14,10 +14,6 @@ verified_at: 2026-06-24
 
 Texas water officials are currently urging lawmakers to allocate increased funding for necessary water supply projects. These efforts come as the costs associated with securing adequate water resources continue to rise significantly across the state.
 
-The State Water Plan estimates that the total cost required to address current needs could reach $174 billion. Officials noted that increasing demands, particularly from data centers, are exacerbating existing usage patterns.
-
-These escalating water requirements have raised concerns regarding regional and national security. The need for substantial infrastructure investment is highlighted as critical for maintaining stable water supplies for residents and businesses alike.
-
 ## Source Information
 
 - **Source**: KXAN Austin (NBC)

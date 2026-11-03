@@ -1,26 +1,16 @@
 ---
 category: news
 date: 2026-06-23
-excerpt: "A professional athlete, Thomas Partey of Ghana, recently returned to competition despite facing serious legal allegations in another country...."
+excerpt: "Thomas Partey returned to Ghana's lineup for a 0-0 World Cup draw with England."
 layout: default
 news_excerpt: true
-source_name: Killeen Daily Herald (RSS)
-source_url: https://kdhnews.com/sports/soccer/ghanaian-player-accused-of-rape-gets-back-onto-the-field-for-world-cup-draw-against/article_c401e236-4810-5755-8484-e3d62f82558b.html
-original_source_url: https://kdhnews.com/sports/soccer/ghanaian-player-accused-of-rape-gets-back-onto-the-field-for-world-cup-draw-against/article_c401e236-4810-5755-8484-e3d62f82558b.html
+source_name: "Associated Press (via WTOP)"
+source_url: "https://wtop.com/sports/2026/06/ghanaian-player-accused-of-rape-gets-back-onto-the-field-for-world-cup-draw-against-england/"
 permalink: /2026/06/23/ghanaian-player-accused-of-rape-gets-back-ont.html
 title: "Ghanaian player accused of rape gets back onto the field for World Cup draw against England"
 verified_at: 2026-06-23
 ---
 
-A professional athlete, Thomas Partey of Ghana, recently returned to competition despite facing serious legal allegations in another country. Reports indicate that the individual missed his team's initial World Cup match due to issues related to a Canadian visa while awaiting trial on rape charges in Britain. This situation highlights the complex intersection between international travel restrictions and pending criminal proceedings.
+The Associated Press reports that Ghana's Thomas Partey returned to the lineup for a 0-0 World Cup draw with England at Gillette Stadium after missing the team's opener because Canada denied him a visa while he awaits trial on rape charges in Britain. He was booed by the pro-England crowd, and video appeared to show England's Djed Spence skipping a handshake with him, which Ghana's coach denied.
 
-The news coverage noted Partey’s return to the lineup, although he reportedly received an apparent snub during the pregame handshake line. The legal context surrounding his participation remains tied directly to the ongoing investigation into the alleged assault. Officials involved in the case are managing the professional's status while charges remain active abroad.
-
-## Source Information
-
-- **Source**: Killeen Daily Herald (RSS)
-- **Original URL**: https://kdhnews.com/sports/soccer/ghanaian-player-accused-of-rape-gets-back-onto-the-field-for-world-cup-draw-against/article_c401e236-4810-5755-8484-e3d62f82558b.html
-- **Published**: 2026-06-23
-- **Verified**: 2026-06-23
-
----
+*Source: [Associated Press via WTOP](https://wtop.com/sports/2026/06/ghanaian-player-accused-of-rape-gets-back-onto-the-field-for-world-cup-draw-against-england/)*

@@ -14,10 +14,6 @@ verified_at: 2026-06-24
 
 A vehicular accident occurred in Manor on Sunday morning, resulting in significant injuries and one fatality. Officials reported that multiple individuals were involved in the crash near FM 973. The incident required a substantial response from local emergency services.
 
-According to reports from the Manor Police Department, the collision left several people hospitalized in critical condition. Authorities confirmed that one person died as a result of the Sunday morning wreck.
-
-The police department is managing the scene and investigating the circumstances surrounding the crash. Those involved are being treated by medical professionals following the incident.
-
 ## Source Information
 
 - **Source**: KXAN Austin (NBC)

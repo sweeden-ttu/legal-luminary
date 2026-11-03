@@ -1,47 +1,15 @@
 ---
 layout: post
-title: "Killeen Municipal Election Results: Mayoral Runoff Set, New Council Members Elected"
+title: "Killeen election results: Solomon elected mayor; Nash-King, Brown, Williams win at-large seats"
 date: 2026-05-02T22:00:00-05:00
 category: news
 news_excerpt: true
-source_name: "City of Killeen Elections"
-source_url: "https://www.killeentexas.gov/election"
+source_name: Killeen Daily Herald
+source_url: "https://kdhnews.com/centerforpolitics/nash-king-brown-williams-win-the-three-killeen-at-large-council-seats/article_3f89ee26-6d08-4de6-8458-b6daf1017e73.html"
 verified_at: "2026-05-03T09:00:00Z"
-excerpt: "Unofficial results from the Killeen May 2nd election show a runoff for Mayor between Joseph Solomon and Jose Segarra, while new At-Large and District 3 council members have been decided. This data now supersedes previous city council records."
+excerpt: "KDH: Joseph Solomon elected Killeen mayor by 118 votes over Jose Segarra; Nash-King, Brown and Williams win at-large seats; David Bass wins District 3."
 ---
 
-## Unofficial Election Results (May 2, 2026)
+The Killeen Daily Herald reports that in the May 2, 2026 municipal election Joseph Solomon was elected mayor, finishing 118 votes ahead of former mayor Jose Segarra, with incumbent Mayor Riakos Adams a distant third ([KDH, May 7, 2026](https://kdhnews.com/news/local/five-new-killeen-council-members-and-a-new-mayor-to-be-sworn-in-tuesday/article_89123e47-be25-426f-8144-2b4425bbf581.html)). Unofficial results gave the three at-large council seats to Debbie Nash-King (2,478 votes), Mellisa Brown (1,122) and Beverly Ann Williams (1,018), and David Bass won the District 3 seat with 572 votes over Camron Cochran (311) and Terry Mustapher (222).
 
-**Note: These results now supersede all prior City Council listings for Killeen.**
-
-The City of Killeen has released unofficial results for the municipal elections held on Saturday, May 2, 2026. While some races have been decided outright, the city's top office remains in contention.
-
-### Mayor: Runoff Expected
-With no candidate securing more than 50% of the vote, the race for Killeen Mayor is headed for a runoff election between the top two finishers:
-
-*   **Joseph Solomon:** 1,857 votes (40.99%)
-*   **Jose Segarra:** 1,739 votes (38.39%)
-*   Riakos "Rock" Adams: 934 votes (20.62%)
-
-The runoff election date will be announced following the official canvassing of votes.
-
-### City Council At-Large (3 Seats Decided)
-Killeen voters have selected three representatives for the at-large council seats. The top three vote-getters are:
-
-1.  **Debbie Nash-King:** 2,478 votes (22.80%)
-2.  **Mellisa Brown:** 1,122 votes (10.32%)
-3.  **Beverly Ann Williams:** 1,018 votes (9.37%)
-
-These three candidates will join the Killeen City Council to represent the entire city.
-
-### City Council District 3
-In the District 3 special election, a clear winner emerged:
-
-*   **David Bass:** 572 votes (51.76%) — **ELECTED**
-*   C. Cochran: 311 votes (28.14%)
-*   Terry Mustapher: 222 votes (20.09%)
-
-## Next Steps
-The results remain unofficial until canvassed by the City Council, which is typically scheduled within 10 days of the election. Following certification, the city will begin preparations for the Mayoral runoff.
-
-For more information and official certification updates, visit the [City of Killeen's Election Page](https://www.killeentexas.gov/election).
+Source: [Killeen Daily Herald](https://kdhnews.com/centerforpolitics/nash-king-brown-williams-win-the-three-killeen-at-large-council-seats/article_3f89ee26-6d08-4de6-8458-b6daf1017e73.html)

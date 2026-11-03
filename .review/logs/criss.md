@@ -1,0 +1,33 @@
+# Verification log: Criss (now Susan Criss) (`criss`)
+
+Reviewed 2026-11-03. Outcome: **KEPT, rewritten (3 sources)**
+
+| Claim (as it was) | Verdict (KEPT / REMOVED / CORRECTED) | Source URL | Note |
+|---|---|---|---|
+| front matter: office: Associate Judge | CORRECTED | https://www.bellcountytx.com/county_government/district_courts/district_court_associate_judge/index.php | County page lists 'Associate District Judge - Susan Criss'; office set to Associate District Judge. |
+| front matter: party: Republican | REMOVED |  | Ballotpedia lists her as a Democrat for her former elected 212th District Court seat; the Bell County post is appointed. party set to null, Ballotpedia fact noted in notes/profile. |
+| front matter: notes: Associate Judge or former Associate Judge appearing in Bell County Odyssey case records. Specific court assignment could not be confirmed from the Bell County website | CORRECTED | https://www.bellcountytx.com/county_government/district_courts/district_court_associate_judge/index.php | Court assignment is now confirmed by the county page; Odyssey reference removed. |
+| front matter: title: Criss | CORRECTED | https://www.bellcountytx.com/county_government/district_courts/district_court_associate_judge/index.php | Full name Susan Criss per county page and NAWJ bio. |
+| front matter: official_profile: null | CORRECTED | https://www.bellcountytx.com/county_government/district_courts/district_court_associate_judge/index.php | Set to the county's District Court Associate Judge page, which lists her. |
+| profile_summary: "Criss serves as an Associate Judge in Bell County, Texas." | CORRECTED | https://www.bellcountytx.com/county_government/district_courts/district_court_associate_judge/index.php | Reworded to the county listing. |
+| profile_summary: "Associate judges in Bell County are appointed to assist the district courts and county courts at law by presiding over specific categories of cases, including family law matters, child protection cases, mental health proceedings, and other matters as assigned by the referring court." | REMOVED |  | Boilerplate about associate judges in general, not about this person; no source. Deleted per rule 3 (generic docket/jurisdiction descriptions). |
+| profile_summary: "Associate judges play a critical role in the Bell County judicial system by handling specialized dockets that would otherwise overwhelm the district courts." | REMOVED |  | Boilerplate about associate judges in general, not about this person; no source. Deleted per rule 3 (generic docket/jurisdiction descriptions). |
+| profile_summary: "Their recommendations and rulings are subject to review by the referring district or county court judge." | REMOVED |  | Boilerplate about associate judges in general, not about this person; no source. Deleted per rule 3 (generic docket/jurisdiction descriptions). |
+| profile_summary: "The associate judge positions in Bell County serve the 27th, 146th, 169th, 264th, 426th, and 478th Judicial District Courts, as well as the County Courts at Law." | REMOVED |  | Boilerplate about associate judges in general, not about this person; no source. Deleted per rule 3 (generic docket/jurisdiction descriptions). |
+| profile_summary: "Each associate judge is appointed by the presiding judge of the court they serve and handles cases as delegated by that court." | REMOVED |  | Boilerplate about associate judges in general, not about this person; no source. Deleted per rule 3 (generic docket/jurisdiction descriptions). |
+| profile_summary: "Judge Criss''s specific court assignment and caseload are reflected in Odyssey case management system records." | REMOVED |  | Odyssey case records are not a linkable public source (task rule); removed. |
+| credentials: "Status — Associate Judge, Bell County District Courts" | CORRECTED | https://www.bellcountytx.com/county_government/district_courts/district_court_associate_judge/index.php | Replaced with sourced status lines (county listing; NAWJ oath date). |
+| credentials: "Appointment — Appointed by the presiding judge of the referring court" | REMOVED |  | Boilerplate about associate judges in general, not about this person; no source. Deleted per rule 3 (generic docket/jurisdiction descriptions). |
+| credentials: "Qualifications — Licensed Texas attorney in good standing" | REMOVED |  | Boilerplate about associate judges in general, not about this person; no source. Deleted per rule 3 (generic docket/jurisdiction descriptions). |
+| credentials: "Qualifications — Appointed based on legal experience and expertise" | REMOVED |  | Boilerplate about associate judges in general, not about this person; no source. Deleted per rule 3 (generic docket/jurisdiction descriptions). |
+| professional_history: "Bell County District Courts — Associate Judge. Presides over cases as assigned by district and county court judges, including family law, child protection, and mental health matters." | CORRECTED | https://www.bellcountytx.com/county_government/district_courts/district_court_associate_judge/index.php | Rebuilt: Bell County Associate District Judge (2025–present, NAWJ) and 212th District Court 1999–2013 (Ballotpedia). |
+| odyssey_results_placeholder: "Associate Judge Criss''s case records are available through the Odyssey case management system. Specific docket statistics and case dispositions will be added here as data is compiled." | REMOVED |  | Key removed entirely per rule 3 (odyssey_results_placeholder). |
+| body: "Criss serves or served as an Associate Judge in Bell County, Texas, appearing in Odyssey electronic case records." | CORRECTED | https://www.bellcountytx.com/county_government/district_courts/district_court_associate_judge/index.php | Replaced with sourced statement; Odyssey reference removed. |
+
+New facts added:
+- Listed as Associate District Judge alongside Brittany Darby — https://www.bellcountytx.com/county_government/district_courts/district_court_associate_judge/index.php (evidence file _district_court_associate_judge.txt)
+- NAWJ 2025 bio: Associate Criminal District Judge, Bell County; oath of office July 7, 2025; ~15 years as a district judge in Galveston — https://www.nawj.org/uploads/files/bios/crisssusanbio2025.pdf
+- Ballotpedia: judge of the 212th District Court 1999–Dec. 6, 2013, re-elected 2010, Democratic Party — https://ballotpedia.org/Susan_Criss
+- court_contact from evidence file: coordinator Mandy Mueller, (254) 933-5247 — https://www.bellcountytx.com/county_government/district_courts/district_court_associate_judge/index.php
+
+Searched: WebSearch "Susan Criss" associate judge Bell County; kdhnews/tdtnews/kwtx 2025 (no local news article found); Trellis lists her only under Galveston 212th (retired).

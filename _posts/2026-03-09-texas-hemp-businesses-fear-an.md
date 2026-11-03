@@ -1,24 +1,15 @@
 ---
 category: news
 date: 2026-03-09
-excerpt: Texas hemp businesses fear an uptick in police raids Menu Topic Menu Donate
-  Primary Election Results Crockett&#8217;s Loss Crenshaw Ousted Hemp Industry ICE
-  Shooting reputation, while police said they’re
 layout: default
 news_excerpt: true
 source_name: Texas Tribune
 source_url: https://www.texastribune.org/2026/03/09/texas-cannabis-hemp-thc-police-raids/
 title: Texas hemp businesses fear an uptick in police raids
 verified_at: 2026-03-09
+excerpt: "Texas Tribune: hemp businesses say police raids hurt revenue; police say raids root out illegal THC products."
 ---
 
-Texas hemp businesses fear an uptick in police raids Menu Topic Menu Donate Primary Election Results Crockett&#8217;s Loss Crenshaw Ousted Hemp Industry ICE Shooting reputation, while police said they’re
+The Texas Tribune (Stephen Simpson) reports that Texas hemp businesses fear more police raids. Attorneys for the businesses say raids have hurt revenue and reputations, while police say they are needed to find products with illegal THC levels.
 
-## Source Information
-
-- **Source**: Texas Tribune
-- **Original URL**: https://www.texastribune.org/2026/03/09/texas-cannabis-hemp-thc-police-raids/
-- **Published**: 2026-03-09
-- **Verified**: 2026-03-09
-
----
+Source: [Texas Tribune](https://www.texastribune.org/2026/03/09/texas-cannabis-hemp-thc-police-raids/)

@@ -12,8 +12,6 @@ verified_at: 2026-04-15
 
 Upcoming Texas Legislature committee meetings (from official RSS feeds):
 
-- **2026-04-15** – [Energy Resources - 4/21/2026](https://capitol.texas.gov/tlodocs/89R/schedules/html/C2502026042109301.htm) (Texas Legislature - Upcoming House Committee Meetings)
-- **2026-04-15** – [Water, Agriculture and Rural Affairs - 5/11/2026](https://capitol.texas.gov/tlodocs/89R/schedules/html/C7002026051109001.htm) (Texas Legislature - Upcoming Senate Committee Meetings)
 - **2026-04-15** – [Business & Commerce - 6/24/2026](https://capitol.texas.gov/tlodocs/89R/schedules/html/C5102026062409001.htm) (Texas Legislature - Upcoming Senate Committee Meetings)
 - **2026-04-15** – [Finance - 7/27/2026](https://capitol.texas.gov/tlodocs/89R/schedules/html/C5402026072710301.htm) (Texas Legislature - Upcoming Senate Committee Meetings)
 - **2026-04-15** – [Finance - 7/28/2026](https://capitol.texas.gov/tlodocs/89R/schedules/html/C5402026072809001.htm) (Texas Legislature - Upcoming Senate Committee Meetings)

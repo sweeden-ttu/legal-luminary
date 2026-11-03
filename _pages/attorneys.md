@@ -4,7 +4,7 @@ title: Bell County Attorney Directory
 permalink: /attorneys/
 hero: true
 hero_title: "Bell County Attorney Directory"
-hero_subtitle: "Law firms and attorneys with offices in Killeen, Temple, Belton, Harker Heights, Copperas Cove and Salado"
+hero_subtitle: "Law firms and attorneys with offices in Killeen, Temple, Belton and Harker Heights"
 description: "Directory of law firms and attorneys practicing in Bell County, Texas, with each firm's website, attorneys, practice areas and how long the firm has been in practice. Compiled from the firms' own websites; no paid listings."
 verified_at: 2026-11-01
 robots: index,follow
@@ -19,7 +19,7 @@ This directory lists {{ firms | size }} law firms with offices in Bell County. E
 
 <div class="info-box">
 <h4>Checking a lawyer's license</h4>
-<p>Any attorney's license status, disciplinary history and date of admission can be confirmed free of charge in the <a href="https://www.texasbar.com/AM/Template.cfm?Section=Find_A_Lawyer" target="_blank" rel="noopener noreferrer">State Bar of Texas "Find a Lawyer" directory</a>. Years listed below are the firm's own statements about when it was founded, not a measure of any individual attorney's experience.</p>
+<p>Look up any attorney in the <a href="https://www.texasbar.com/AM/Template.cfm?Section=Find_A_Lawyer" target="_blank" rel="noopener noreferrer">State Bar of Texas "Find a Lawyer" directory</a> before relying on a listing here. Years listed below are the firm's own statements about when it was founded, not a measure of any individual attorney's experience.</p>
 </div>
 
 <nav class="attorney-dir__jumps" aria-label="Jump to city">

@@ -5,21 +5,19 @@ excerpt: "The State Board of Education is scheduled to vote on significant chang
 layout: default
 news_excerpt: true
 source_name: Texas Tribune (Statewide)
-source_url: https://feeds.texastribune.org/link/16799/17365179/texas-votes-bible-history-lessons-public-schools
-original_source_url: https://feeds.texastribune.org/link/16799/17365179/texas-votes-bible-history-lessons-public-schools
+source_url: https://www.texastribune.org/2026/06/22/texas-votes-bible-history-lessons-public-schools/
+original_source_url: https://www.texastribune.org/2026/06/22/texas-votes-bible-history-lessons-public-schools/
 permalink: /2026/06/22/more-bible-stories-for-public-schools-given-i.html
 title: "More Bible stories for public schools given initial approval by Texas education board"
 verified_at: 2026-06-22
 ---
 
-The State Board of Education is scheduled to vote on significant changes regarding public school curriculum standards. Discussions include incorporating additional Christian narratives into classroom instruction across Texas schools. Furthermore, the board will consider proposals aimed at de-emphasizing topics related to racial and cultural diversity within history lessons.
-
-These proposed policy shifts concern how educational materials are presented in state public institutions. The potential vote represents a notable development regarding academic freedom and curriculum oversight at the state level. Officials involved with education law are monitoring these proceedings closely for implications on local school districts.
+According to The Texas Tribune, the State Board of Education gave initial approval to curriculum changes that would add more Bible stories to Texas public school lessons.
 
 ## Source Information
 
 - **Source**: Texas Tribune (Statewide)
-- **Original URL**: https://feeds.texastribune.org/link/16799/17365179/texas-votes-bible-history-lessons-public-schools
+- **Original URL**: https://www.texastribune.org/2026/06/22/texas-votes-bible-history-lessons-public-schools/
 - **Published**: 2026-06-22
 - **Verified**: 2026-06-22
 

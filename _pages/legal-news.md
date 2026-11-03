@@ -12,7 +12,7 @@ sources:
     label: "Texas Legislature Online"
   - url: "https://www.texasattorneygeneral.gov/"
     label: "Texas Attorney General (press releases)"
-verified_at: 2026-02-11
+verified_at: 2026-11-03
 ---
 
 # Legal News

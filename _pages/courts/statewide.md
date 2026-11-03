@@ -8,7 +8,7 @@ verified_at: 2026-11-01
 
 # Texas Supreme Court and Court of Criminal Appeals
 
-<p class="intro-text">Texas has two courts of last resort, each with nine members elected statewide to six-year terms: the <strong>Supreme Court</strong> for civil and juvenile cases and the <strong>Court of Criminal Appeals</strong> for criminal cases. Four Supreme Court seats (one an unexpired term) and three Court of Criminal Appeals seats are on the November 3, 2026 ballot, and every one is contested.</p>
+<p class="intro-text">Texas has two courts of last resort, each with nine members elected statewide to six-year terms (<a href="https://tcss.legis.texas.gov/resources/cn/htm/cn.5.htm#5.2">Tex. Const. art. V §§2, 4</a>): the <strong>Supreme Court</strong>, whose appellate jurisdiction covers all cases except criminal matters, and the <strong>Court of Criminal Appeals</strong> for criminal cases (<a href="https://tcss.legis.texas.gov/resources/cn/htm/cn.5.htm#5.3">art. V §§3, 5</a>). Four Supreme Court seats (one an unexpired term) and three Court of Criminal Appeals seats are on the November 3, 2026 ballot, and every one is contested (<a href="https://www.bellcountytx.com/departments/elections/ballot_samples.php">Bell County ballot samples</a>).</p>
 
 {% assign appellate = site.candidates | where_exp: "j", "j.path contains 'courts/appellate/'" | sort: "ballot_order" %}
 

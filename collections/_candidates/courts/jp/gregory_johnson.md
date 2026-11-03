@@ -11,59 +11,52 @@ candidate_slug: gregory_johnson
 headshot: null
 election_status: seated
 office_up_for_election: false
-notes: Sitting Justice of the Peace for Bell County Precinct 4, Place 1. Term expires December 31, 2028. Term expires 12/31/28.
-rubber_stamp: false
-profile_summary: 'Gregory Johnson is the Justice of the Peace for Bell County Precinct 4, Place 1. The Precinct 4 JP courts
-  serve the Killeen area of Bell County, which is the largest city in the county and home to a significant population connected
-  with Fort Cavazos.
+notes: See the profile; every statement there is cited.
+profile_summary: |
+  Gregory Johnson is the Justice of the Peace for Bell County Precinct 4, Place 1; Bell County lists his court at the Bell County Killeen Annex, 301 Priest Drive, Killeen ([Bell County](https://www.bellcountytx.com/county_government/justice_of_the_peace/precinct_4_place_1/index.php)). A Democrat, he was first elected to the bench in 2020 after serving two terms on the Killeen City Council ([Killeen Daily Herald](https://kdhnews.com/centerforpolitics/justice-of-the-peace-gregory-johnson-to-kickoff-re-election-campaign-in-downtown-killeen/article_201c4216-4ac6-11ef-af71-cbe35f27b174.html)).
 
+  **2024 election:** Johnson won re-election on Nov. 5, 2024 over Republican Jonathan Okray, a former Killeen councilman; with about 91% of votes reported, Johnson had 28,884 votes (57.5%) to Okray's 21,311 (42.5%) ([KDH](https://kdhnews.com/centerforpolitics/judge-johnson-wins-reelection-in-jp-race/article_d79de508-9bf6-11ef-a584-8f4137e0702c.html)). Neither candidate faced primary opposition in March 2024 ([KDH](https://kdhnews.com/news/local/bell-county-voters-to-decide-on-new-sheriff-judge-and-da/article_2e1122b0-cdc6-11ee-a292-4f44a95d2ade.html)). He was sworn in with other county officials in January 2025 ([KDH](https://kdhnews.com/news/region/bell-county-rings-in-new-year-by-swearing-in-elected-officials/article_878b3459-1a41-52ae-8110-9a069837be02.html)).
+credentials: |
+  **Office**
+  - Justice of the Peace, Bell County Precinct 4, Place 1 (elected 2020; re-elected 2024) ([Bell County](https://www.bellcountytx.com/county_government/justice_of_the_peace/precinct_4_place_1/index.php); [KDH](https://kdhnews.com/centerforpolitics/judge-johnson-wins-reelection-in-jp-race/article_d79de508-9bf6-11ef-a584-8f4137e0702c.html))
 
-  As JP for Precinct 4 Place 1, Judge Johnson presides over Class C misdemeanor criminal cases, small claims civil matters
-  up to $20,000, eviction proceedings, and emergency protective orders. The Killeen JP courts handle a high volume of cases
-  due to the city''s population.
+  **Party**
+  - Democrat ([KDH](https://kdhnews.com/centerforpolitics/judge-johnson-wins-reelection-in-jp-race/article_d79de508-9bf6-11ef-a584-8f4137e0702c.html))
+professional_history: |
+  **Bell County Precinct 4, Place 1** — Justice of the Peace (first elected 2020; re-elected Nov. 5, 2024) ([KDH](https://kdhnews.com/centerforpolitics/judge-johnson-wins-reelection-in-jp-race/article_d79de508-9bf6-11ef-a584-8f4137e0702c.html))
 
-
-  Judge Johnson''s court handles thousands of cases annually, ranging from traffic offenses to civil disputes between landlords
-  and tenants. The eviction docket is particularly busy in Killeen due to the large rental market serving the military community.
-
-
-  Judge Johnson''s term expires December 31, 2028. He is a Democrat.
-
-  '
-credentials: '**Office**
-
-  - Justice of the Peace, Bell County Precinct 4, Place 1
-
-
-  **Qualifications**
-
-  - Texas JP certification
-
-
-  **Professional Memberships**
-
-  - Justice of the Peace and Constables Association of Texas
-
-  '
-professional_history: '**Bell County Precinct 4 Place 1** — Justice of the Peace
-
-  Presides over Class C misdemeanors, small claims, evictions, and protective orders serving the Killeen area. Term expires
-  2028.
-
-  '
-odyssey_statistics:
-  total_cases_scraped: 3403
-  total_judgments_awarded: 2407
-  total_judgment_amount_awarded: $6448398.70
-  average_judgment_amount: $2679.02
-  distinct_attorneys_appeared: 179
-  top_case_types:
-    - "Contract: Evictions - Residential: 2132 cases"
-    - "Debt/Contract: Debt Collection: 513 cases"
-    - "Other Civil: Small Claims: 262 cases"
-    - "Traffic: 251 cases"
-    - "Criminal Non-Traffic: 74 cases"
-
-listing_status: "Incumbent; term runs through 2028"
+  **Killeen City Council** — Council member, two terms ([KDH](https://kdhnews.com/centerforpolitics/justice-of-the-peace-gregory-johnson-to-kickoff-re-election-campaign-in-downtown-killeen/article_201c4216-4ac6-11ef-af71-cbe35f27b174.html))
+court_contact:
+  court_name: Justice of the Peace, Precinct 4, Place 1
+  court_type: Justice Court
+  phone: (254) 634-5882
+  fax: (254) 634-3326
+  address: Bell County Killeen Annex, 301 Priest Drive, Killeen, Texas 76541
+  coordinator_email: JP4PL1@bellcounty.texas.gov
+sources:
+- title: Justice of the Peace Precinct 4, Place 1
+  publisher: Bell County
+  url: https://www.bellcountytx.com/county_government/justice_of_the_peace/precinct_4_place_1/index.php
+  accessed: 2026-11-03
+- title: Justice of the Peace Gregory Johnson to kickoff re-election campaign in downtown Killeen
+  publisher: Killeen Daily Herald
+  url: https://kdhnews.com/centerforpolitics/justice-of-the-peace-gregory-johnson-to-kickoff-re-election-campaign-in-downtown-killeen/article_201c4216-4ac6-11ef-af71-cbe35f27b174.html
+  date: 2024-07-25
+  accessed: 2026-11-03
+- title: Judge Johnson wins reelection in JP race
+  publisher: Killeen Daily Herald
+  url: https://kdhnews.com/centerforpolitics/judge-johnson-wins-reelection-in-jp-race/article_d79de508-9bf6-11ef-a584-8f4137e0702c.html
+  date: 2024-11-05
+  accessed: 2026-11-03
+- title: Bell County voters to decide on new sheriff, judge and DA
+  publisher: Killeen Daily Herald
+  url: https://kdhnews.com/news/local/bell-county-voters-to-decide-on-new-sheriff-judge-and-da/article_2e1122b0-cdc6-11ee-a292-4f44a95d2ade.html
+  date: 2024-02-18
+  accessed: 2026-11-03
+- title: Bell County rings in new year by swearing in elected officials
+  publisher: Killeen Daily Herald
+  url: https://kdhnews.com/news/region/bell-county-rings-in-new-year-by-swearing-in-elected-officials/article_878b3459-1a41-52ae-8110-9a069837be02.html
+  date: 2025-01-02
+  accessed: 2026-11-03
 ---
-Gregory Johnson is the Justice of the Peace for Bell County Precinct 4, Place 1, serving the Killeen area of Bell County.
+Gregory Johnson is the Justice of the Peace for Bell County Precinct 4, Place 1. ([Bell County](https://www.bellcountytx.com/county_government/justice_of_the_peace/precinct_4_place_1/index.php))

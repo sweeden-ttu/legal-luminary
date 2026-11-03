@@ -50,7 +50,7 @@ hide_ad_label: true
 </style>
 
 <p class="intro-text">
-Bell County, located in Central Texas, has its own court system and procedures within the framework of Texas state law. Understanding local practices is essential whether individuals are facing charges or pursuing a civil claim.
+This page lists the state and county courts that sit in Bell County, Texas, which kinds of cases each hears, and how to reach them.
 </p>
 
 <div class="bc-quick" aria-label="Quick contacts">
@@ -71,21 +71,21 @@ Bell County, located in Central Texas, has its own court system and procedures w
 
 <h2 id="which-court">Which Court Handles My Case?</h2>
 
-<p>Bell County operates multiple courts handling different types of cases. Knowing which court handles a matter helps individuals understand the process ahead.</p>
+<p>Each row links to the statute that sets the court's jurisdiction.</p>
 
 <table class="bc-table">
 <thead><tr><th scope="col">Court</th><th scope="col">Handles</th></tr></thead>
 <tbody>
-<tr><th scope="row">District Courts (6)</th><td data-label="Handles">Felony criminal cases; civil cases over $200,000; family law matters including divorce; juvenile cases</td></tr>
-<tr><th scope="row">County Courts at Law (3)</th><td data-label="Handles">Class A and B misdemeanors; civil cases between $500 and $200,000; appeals from Justice of the Peace courts; probate matters</td></tr>
-<tr><th scope="row">Justice of the Peace Courts (5 precincts)</th><td data-label="Handles">Class C misdemeanors (fine-only offenses); small claims civil cases up to $20,000; evictions; truancy cases</td></tr>
-<tr><th scope="row">Municipal Courts</th><td data-label="Handles">City ordinance violations and certain Class C misdemeanors</td></tr>
+<tr><th scope="row">District Courts (6) (<a href="https://tcss.legis.texas.gov/resources/gv/htm/gv.24.htm#24.129">Gov't Code §24.129</a>)</th><td data-label="Handles">Felony criminal cases (<a href="https://tcss.legis.texas.gov/resources/cr/htm/cr.4.htm#4.05">Code Crim. Proc. art. 4.05</a>); civil matters where the amount in controversy exceeds $500 (<a href="https://tcss.legis.texas.gov/resources/gv/htm/gv.24.htm#24.007">Gov't Code §24.007</a>)</td></tr>
+<tr><th scope="row">County Courts at Law (3) (<a href="https://tcss.legis.texas.gov/resources/gv/htm/gv.25.htm#25.0161">Gov't Code §25.0161</a>)</th><td data-label="Handles">Misdemeanors not within the exclusive jurisdiction of justice courts (<a href="https://tcss.legis.texas.gov/resources/cr/htm/cr.4.htm#4.07">Code Crim. Proc. art. 4.07</a>); civil cases over $500 and up to $325,000 (<a href="https://tcss.legis.texas.gov/resources/gv/htm/gv.25.htm#25.0003">Gov't Code §25.0003(c)</a>); appeals from justice courts (<a href="https://tcss.legis.texas.gov/resources/cp/htm/cp.51.htm#51.001">Civ. Prac. &amp; Rem. Code §51.001</a>); probate and mental health in Court at Law No. 1 (<a href="https://www.bellcountytx.com/county_government/county_courts/court_at_law_1/index.php">Bell County</a>)</td></tr>
+<tr><th scope="row">Justice of the Peace Courts (6 seats in 4 precincts: <a href="https://www.bellcountytx.com/county_government/justice_of_the_peace/precinct_1/index.php">Bell County JP Pct 1</a>, <a href="https://www.bellcountytx.com/county_government/justice_of_the_peace/precinct_2/index.php">Pct 2</a>, <a href="https://www.bellcountytx.com/county_government/justice_of_the_peace/precinct_3_place_1/index.php">Pct 3 Pl 1</a>, <a href="https://www.bellcountytx.com/county_government/justice_of_the_peace/precinct_3_place_2/index.php">Pct 3 Pl 2</a>, <a href="https://www.bellcountytx.com/county_government/justice_of_the_peace/precinct_4_place_1/index.php">Pct 4 Pl 1</a>, <a href="https://www.bellcountytx.com/county_government/justice_of_the_peace/precinct_4_place_2/index.php">Pct 4 Pl 2</a>)</th><td data-label="Handles">Criminal cases punishable by fine only (<a href="https://tcss.legis.texas.gov/resources/cr/htm/cr.4.htm#4.11">Code Crim. Proc. art. 4.11</a>); civil cases up to $20,000 (<a href="https://tcss.legis.texas.gov/resources/gv/htm/gv.27.htm#27.031">Gov't Code §27.031</a>); evictions (<a href="https://tcss.legis.texas.gov/resources/pr/htm/pr.24.htm#24.004">Prop. Code §24.004</a>); truancy (<a href="https://tcss.legis.texas.gov/resources/fa/htm/fa.65.htm#65.004">Family Code §65.004</a>)</td></tr>
+<tr><th scope="row">Municipal Courts</th><td data-label="Handles">Cases arising under city ordinances (<a href="https://tcss.legis.texas.gov/resources/cr/htm/cr.4.htm#4.14">Code Crim. Proc. art. 4.14</a>); Killeen's court also hears Class C misdemeanors (<a href="https://killeentexas.gov/172/Municipal-Court">City of Killeen</a>)</td></tr>
 </tbody>
 </table>
 
 <h2 id="judges">Bell County Judges Directory</h2>
 
-<p>All District Courts and County Courts at Law sit at the {{ bc.courthouse.name }}, {{ bc.courthouse.address }}. Judges serve 4-year terms. Each court name links to its official county page; the small numbers link to the sources for that row.</p>
+<p>All District Courts and County Courts at Law sit at the {{ bc.courthouse.name }}, {{ bc.courthouse.address }} (<a href="https://www.bellcountytx.com/county_government/district_courts/426th_district_court/index.php">Bell County</a>). District judges serve four-year terms (<a href="https://tcss.legis.texas.gov/resources/cn/htm/cn.5.htm#5.7">Tex. Const. art. V §7</a>). Each court name links to its official county page; the small numbers link to the sources for that row.</p>
 
 {% assign groups = "district|District Court Judges,county|County Court at Law Judges" | split: "," %}
 {% for g in groups %}{% assign gp = g | split: "|" %}{% assign gcourts = bc.courts | where: "group", gp[0] %}
@@ -112,56 +112,13 @@ Bell County, located in Central Texas, has its own court system and procedures w
 
 <h2 id="municipal">Municipal Courts</h2>
 
-Local cities maintain their own municipal courts for city ordinance violations and certain Class C misdemeanors:
+Cities in Bell County maintain their own municipal courts for cases arising under city ordinances (<a href="https://tcss.legis.texas.gov/resources/cr/htm/cr.4.htm#4.14">Code Crim. Proc. art. 4.14</a>).
 
-**Killeen Municipal Court** — 714 N. 2nd Street, Killeen, TX 76541
+**Killeen Municipal Court** — 200 E. Avenue D, Suite 1, Killeen, TX 76541; 254-501-7850; hears Class C misdemeanors and city ordinance cases ([City of Killeen](https://killeentexas.gov/172/Municipal-Court)).
 
-**Temple Municipal Court** — 210 N. Main Street, Temple, TX 76501
+## Fort Hood
 
-**Belton Municipal Court** — 520 E. Central Avenue, Belton, TX 76513
-
-## Local Legal Considerations
-
-### Military Community
-
-Bell County is home to Fort Cavazos (formerly Fort Hood), one of the largest military installations in the world. This creates unique legal considerations:
-
-Service members facing charges have additional rights and considerations. Military personnel may face both civilian and military legal proceedings. Attorneys familiar with military-civilian interactions provide valuable guidance for service members and their families.
-
-### Population Centers
-
-Bell County's major cities each have their own character and legal landscape:
-
-**Killeen** — The largest city in Bell County, closely connected to Fort Cavazos. High volume of cases in local courts.
-
-**Temple** — Major medical and commercial center. Significant personal injury caseload due to traffic volume and medical facilities.
-
-**Belton** — County seat where most District Court proceedings occur.
-
-**Harker Heights, Copperas Cove** — Growing communities with increasing court activity.
-
-## Finding Legal Representation in Bell County
-
-<div class="info-box">
-<h4>Why Local Experience Matters</h4>
-<p>Attorneys who regularly practice in Bell County courts understand local procedures, know the prosecutors and judges, and can navigate the system efficiently on behalf of their clients. The attorneys featured on this site have experience in Bell County courts.</p>
-</div>
-
-### What to Look For
-
-When selecting an attorney in Bell County:
-
-**Experience in Local Courts** — Knowledge of local procedures and personnel
-
-**Specific Practice Area Expertise** — Defense or personal injury focus
-
-**Communication** — Responsive and clear about cases
-
-**Track Record** — History of results in similar cases
-
-<div class="legal-notice">
-<strong>Take Action:</strong> If individuals are facing legal issues in Bell County, time is often critical. Criminal cases have court dates that approach quickly. Personal injury claims have statutes of limitations. Contacting an attorney promptly protects rights and options.
-</div>
+The main business area of Fort Hood, the Army post near Killeen, is in Bell County; the post was named Fort Cavazos from May 9, 2023 until the name reverted to Fort Hood effective June 11, 2025 ([Wikipedia](https://en.wikipedia.org/wiki/Fort_Hood)).
 
 <div class="cards-grid">
 <div class="card">

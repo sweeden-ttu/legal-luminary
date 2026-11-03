@@ -163,10 +163,63 @@ exclude:
   - archive
   - modules
   - specs
-  - generate_dossiers.py
-  - generate_dossiers_remaining.py
+  - scripts/legacy
   - .review
   - ll
+  # Source code, data dumps, scripts and tooling: never site content (excluded 2026-11-03)
+  - Johnson.side
+  - agent_claude.sh
+  - config
+  - demos
+  - discovery_agent.py
+  - downloaded-js
+  - fix_frontmatter.rb
+  - fix_yaml.rb
+  - judge_scorecards.rb
+  - lib
+  - package.json
+  - package-lock.json
+  - phase2_details.rb
+  - phase2_retry.rb
+  - playwright.config.ts
+  - progress.json
+  - pyproject.toml
+  - pytest.ini
+  - requirements.txt
+  - requirements_adk.txt
+  - requirements_brokenlinks.txt
+  - requirements_notaries.txt
+  - research_fcc_call_letters.py
+  - run_doctor_tests.py
+  - run_judge.rb
+  - run_notary_finder.py
+  - scrape_judges.rb
+  - scrape_other_judges.rb
+  - scraped_data
+  - scripts
+  - search-legal-terms.sh
+  - services
+  - spawn_discovery_agent.sh
+  - src
+  - state.py
+  - tasks.json
+  - tasks_from_test_cases.json
+  - test_detail.rb
+  - test_extract.rb
+  - test_judgment.rb
+  - test_pdf_extraction.py
+  - test_scrape.rb
+  - tests
+  - texas_data_crawler.py
+  - tsconfig.json
+  - update_articles.py
+  - update_news.js
+  - update_profiles.rb
+  - uv.lock
+  - validators
+  - verification
+  - verifier
+  - verify_selenium.py
   - .git
   - .github
   - .gitignore
@@ -193,11 +246,7 @@ exclude:
 # Include files that should be processed
 include:
   - _pages
-  - _includes
-  - _layouts
   - _posts
-  - _data
-  - _sass
   - .nojekyll
 # Collections
 collections:

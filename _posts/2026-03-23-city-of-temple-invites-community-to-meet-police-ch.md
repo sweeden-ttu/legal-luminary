@@ -3,7 +3,7 @@ title: "City of Temple Invites Community to Meet Police Chief Finalists"
 date: 2026-03-23
 layout: default
 source_url: "https://city-of-temple.prowly.com/450919-city-of-temple-invites-community-to-meet-police-chief-finalists"
-source_name: "Temple Police Department"
+source_name: City of Temple
 verified_at: 2026-05-31
 category: news
 news_excerpt: true
@@ -16,7 +16,7 @@ news_excerpt: true
 
 This article was aggregated from an officially verified news source:
 
-- **Source**: Temple Police Department
+- **Source**: City of Temple
 - **Original URL**: [https://city-of-temple.prowly.com/450919-city-of-temple-invites-community-to-meet-police-chief-finalists](https://city-of-temple.prowly.com/450919-city-of-temple-invites-community-to-meet-police-chief-finalists)
 - **Verified**: 2026-05-31
 - **Verification Method**: FCC-Licensed Broadcast Station or Approved Local News Source
