@@ -6,6 +6,12 @@ layout: candidates-root
     rel="stylesheet"
     href="{{ '/assets/css/candidates-elections.css' | relative_url }}"
 />
+<style>
+  /* Sources section on judge profiles */
+  .profile-sources__note { font-size: 0.9rem; color: #555; margin: 0 0 0.75rem; }
+  .profile-sources { padding-left: 1.25rem; font-size: 0.92rem; line-height: 1.5; }
+  .profile-sources li { margin-bottom: 0.4rem; overflow-wrap: anywhere; }
+</style>
 
 {% assign city = page.city %}
 {% assign cslug = page.candidate_slug %}
@@ -105,6 +111,9 @@ layout: candidates-root
             <!-- Main Content -->
             <article class="profile-content">
 
+                {% comment %} Narrative sections render only on profiles that carry a sources list; an unsourced profile shows name and office only. {% endcomment %}
+                {% if page.sources and page.sources.size > 0 %}
+
                 {% if page.profile_summary and page.profile_summary != "" %}
                 <h2 class="profile-content__section-title">Biography</h2>
                 {{ page.profile_summary | markdownify }}
@@ -120,14 +129,24 @@ layout: candidates-root
                 {{ page.professional_history | markdownify }}
                 {% endif %}
 
-                {% if page.odyssey_results_placeholder and page.odyssey_results_placeholder != "" %}
-                <h2 class="profile-content__section-title">Record</h2>
-                <div class="legal-notice">
-                    {{ page.odyssey_results_placeholder | markdownify }}
-                </div>
-                {% endif %}
-                
                 {{ content }}
+
+                {% endif %}
+
+                {% if page.sources and page.sources.size > 0 %}
+                <h2 class="profile-content__section-title" id="sources">Sources</h2>
+                <p class="profile-sources__note">Every statement on this page is cited inline to one of the sources below. Statements we could not verify against a public source have been removed.</p>
+                <ol class="profile-sources">
+                    {% for s in page.sources %}
+                    <li>
+                        <a href="{{ s.url }}" rel="nofollow noopener" target="_blank">{{ s.title | default: s.url }}</a>{% if s.publisher %}, {{ s.publisher }}{% endif %}{% if s.date %}, {{ s.date }}{% endif %}{% if s.accessed %} (accessed {{ s.accessed }}){% endif %}
+                    </li>
+                    {% endfor %}
+                </ol>
+                {% else %}
+                <h2 class="profile-content__section-title" id="sources">Sources</h2>
+                <p class="profile-sources__note">This profile has not yet been through source verification. Only the name and office listing are shown until each statement can be cited.</p>
+                {% endif %}
             </article>
 
             <!-- Sidebar: Syndicate Column -->
@@ -161,11 +180,9 @@ layout: candidates-root
                         {% endfor %}
                     </ul>
                     {% else %}
-                    {% unless page.path contains "courts/jp/" %}
                     <p class="profile-sidebar__empty">
-                        No news articles on record for this judicial officer. Check back as we add coverage from local news sources.
+                        See the Sources section for the public records and news coverage this profile is based on.
                     </p>
-                    {% endunless %}
                     {% endif %}
                 </div>
 

@@ -155,6 +155,18 @@ keep_files:
 
 # Exclude from processing
 exclude:
+  # Repository documents that are not site content (removed from the build 2026-11-03)
+  - Design.md
+  - README_NOTARIES.md
+  - research-results.md
+  - Project_Rubric_and_Report.html
+  - archive
+  - modules
+  - specs
+  - generate_dossiers.py
+  - generate_dossiers_remaining.py
+  - .review
+  - ll
   - .git
   - .github
   - .gitignore

@@ -7,7 +7,7 @@ Bench table. Parameters:
 {%- assign rows = site.candidates | where_exp: "j", "j.path contains needle" | sort: "office" -%}
 <div class="table-responsive">
 <table class="bench-table">
-  <thead><tr><th scope="col">Court</th><th scope="col">Judge</th><th scope="col">Status</th></tr></thead>
+  <thead><tr><th scope="col">Court</th><th scope="col">Judge</th><th scope="col">Status</th><th scope="col">Sources</th></tr></thead>
   <tbody>
   {%- for j in rows -%}
     {%- assign is_former = false -%}
@@ -17,7 +17,8 @@ Bench table. Parameters:
     <tr>
       <td>{{ j.office | replace: " (Former)", "" }}</td>
       <td><strong><a href="{{ j.url | relative_url }}">{{ j.title }}</a></strong>{% if j.party %} <span class="bench-party">({{ j.party | slice: 0 }})</span>{% endif %}</td>
-      <td>{% if j.listing_status %}{{ j.listing_status }}{% elsif j.election_status == "general_2026" and j.incumbent %}Incumbent, on the Nov. 3, 2026 ballot{% elsif j.election_status == "general_2026" %}Candidate, Nov. 3, 2026{% elsif j.incumbent %}Incumbent{% elsif is_former %}{{ j.election_status | capitalize }}{% else %}{{ j.notes | truncate: 80 }}{% endif %}</td>
+      <td>{% if j.listing_status %}{{ j.listing_status }}{% elsif j.election_status == "general_2026" and j.incumbent %}Incumbent, on the Nov. 3, 2026 ballot{% elsif j.election_status == "general_2026" %}Candidate, Nov. 3, 2026{% elsif j.incumbent %}Incumbent{% elsif is_former %}{{ j.election_status | capitalize }}{% else %}&mdash;{% endif %}</td>
+      <td>{% if j.sources and j.sources.size > 0 %}<a href="{{ j.url | relative_url }}#sources">{{ j.sources.size }} cited</a>{% else %}<span class="bench-unverified">not yet verified</span>{% endif %}</td>
     </tr>
   {%- endfor -%}
   </tbody>
