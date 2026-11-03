@@ -83,9 +83,11 @@ Every Killeen voter decides eleven contested statewide and appellate judicial ra
 | Justice, Fifteenth Court of Appeals, Place 3 | [April Farris (R)](/candidates/courts/appellate/april_farris/), [Marc M. Meyer (D)](/candidates/courts/appellate/marc_m_meyer/) |
 | Chief Justice, Third Court of Appeals | [Cory Liu (R)](/candidates/courts/appellate/cory_liu/), [Darlene Byrne (D)](/candidates/courts/appellate/darlene_byrne/) |
 
-### Bell County courts — all unopposed
+### Bell County courts **UNOPPOSED**
 
-<p style="color:#c00000; font-weight:bold;">In political philosophy, consent of the governed is the idea that a government's legitimacy and moral right to use state power is justified and lawful only when consented to by the people or society over which that political power is exercised.</p>
+<p style="color:#c00000; font-weight:bold; font-decoration🔥">Governments ... deriv(e) their just powers from the consent of the governed. If a government destroys these fundamental ends, the people have the right to change or overthrow it.</p> -- Thomas Jefferson, The Declaration of Independence. 
+
+Consent of the governed will be polled and may choose otherwise for the candidates below.
 
 | Office | Candidate |
 |---|---|
