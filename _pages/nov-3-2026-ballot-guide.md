@@ -101,7 +101,6 @@ Consent of the governed will be polled and may choose otherwise for the candidat
 | District Clerk | Lacey Martindale (R) |
 | County Clerk | Shelley Coston (R) |
 
-No county attorney, district attorney or constable race is on this ballot; those four-year offices were last elected in 2024 and return in 2028.
 
 ### Justice of the Peace — the only contested local judicial race
 
@@ -112,7 +111,7 @@ Most of Killeen lies in Justice of the Peace Precinct 4, where **Precinct 4, Pla
 - **U.S. Representative, District 31:** John Carter (R), Justin Early (D), Greg Stoker (Green).
 - **Attorney General:** [Mayes Middleton (R)](/texas-ag-race-26/mayes-middleton/), [Nathan Johnson (D)](/texas-ag-race-26/nathan-johnson/), [Tom Oxford (L)](/texas-ag-race-26/tom-oxford/).
 - **Bell County Commissioner, Precinct 4:** Curtis Emmons (R), Ernest Wilkerson (D). Voting precinct 203 votes instead for **Commissioner, Precinct 2:** Bobby Whitson (R), Stacey L. Wilson (D).
-- **County Treasurer:** Adriane Hodges (R), unopposed. **Bell County Appraisal District board**, Places 1–3.
+- **Bell County Appraisal District board**, Places 1–3 (no candidates)
 - **Bell County Hospital Services District, Proposition A** and **City of Killeen Propositions A–H** (below).
 
 ## Bell County Hospital Services District, Proposition A
