@@ -1,0 +1,34 @@
+{
+  "candidate_slug": "reed",
+  "name": "Keith Reed",
+  "city": "courts",
+  "articles": [
+    {
+      "url": "https://kdhnews.com/news/region/bell-commissioners-to-name-temporary-replacement-for-jp-barfield/article_66e91d22-7bea-5415-a46d-0930b72f54bc.html",
+      "title": "Bell Commissioners to Name Temporary Replacement for JP Barfield",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "Keith Reed, a former police chief in Troy and Lorena, was appointed by Bell County Judge David Blackburn as a temporary Justice of the Peace for Precinct 3, Place 1 after Judge David Barfield informed county officials that he could not serve because of a medical condition; county spokesman James Sta",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://kdhnews.com/news/local/social-distanced-swearing-in-bell-county-officials-take-office-differently-due-to-covid-19/article_16a59644-4ee2-11eb-b86f-db46af296d42.html",
+      "title": "Social Distanced Swearing in Bell County Officials Take Office Differently Due to Covid",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "Reed, then 68, was sworn in by Blackburn at a special Commissioners Court meeting held under COVID-19 precautions; it was his first time serving as a justice of the peace, and he said he would take the required classes before starting and that he had worked as an adjunct professor with a focus on co",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://kdhnews.com/news/region/bell-county-elected-officials-to-be-sworn-in-today/article_fb289b72-ffcf-56b6-a4cf-80b865153142.html",
+      "title": "Bell County Elected Officials to be Sworn in Today",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "He was listed as Justice of the Peace, Precinct 3, Place 1, among the Bell County officials to be sworn in at the first Commissioners Court meeting of 2023 (Killeen Daily Herald).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    }
+  ]
+}

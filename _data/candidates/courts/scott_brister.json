@@ -8,7 +8,16 @@
       "title": "Voter Guide Meet the Judicial Candidates on the Nov Ballot",
       "domain": "sanantonioreport.org",
       "outlet": "San Antonio Report",
-      "excerpt": "He holds a law degree from Harvard Law School and previously served on the Texas Supreme Court (San Antonio Report).",
+      "excerpt": "The court was created in the 2023 legislative session, and its three inaugural justices are on the ballot for the first time in 2026 (San Antonio Report).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://www.texastribune.org/2026/11/04/texas-supreme-court-criminal-appeals-results-elections-2026/",
+      "title": "Texas Supreme Court Criminal Appeals Results Elections",
+      "domain": "texastribune.org",
+      "outlet": "The Texas Tribune",
+      "excerpt": "Nov. 3, 2026 result: Scott Brister lost the race for Fifteenth Court of Appeals, Chief Justice with 4,636,992 votes (48.2%); opponent: Jerry Zimmerer (D) 4,985,001 (51.8%), in unofficial returns (Texas Secretary of State; The Texas Tribune).",
       "confidence": "high",
       "field": "cited_in_profile"
     }

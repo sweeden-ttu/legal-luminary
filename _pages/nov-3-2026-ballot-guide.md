@@ -1,12 +1,24 @@
 ---
 layout: default
 permalink: /nov-3-2026-ballot-guide/
-title: "Killeen & Bell County Ballot Guide — November 3, 2026 General Election | Legal Luminary"
-description: "When and where to vote in Bell County, every judicial race on the Killeen ballot (contested and unopposed), the Bell County hospital district tax proposition, and Killeen's eight charter amendments."
+title: "Killeen & Bell County Ballot Guide and Results — November 3, 2026 General Election | Legal Luminary"
+description: "Unofficial results and the full ballot: every judicial race on the Killeen ballot (contested and unopposed), the Bell County hospital district tax proposition, and Killeen's eight charter amendments."
 robots: index,follow
 date: 2026-10-12
-verified_at: 2026-11-03
+verified_at: 2026-11-06
 sources:
+  - url: https://electionresults.sos.state.tx.us/results.html
+    label: Texas Secretary of State — Election Results, Nov. 3, 2026 (100% of polling locations reporting; updated Nov. 4, 2026)
+  - url: https://results.enr.clarityelections.com/TX/Bell/127475/
+    label: Bell County Elections — Nov. 3, 2026 Unofficial Results (updated Nov. 4, 2026, 1:48 a.m.)
+  - url: https://www.texastribune.org/2026/11/04/texas-supreme-court-criminal-appeals-results-elections-2026/
+    label: Texas Tribune — Texas Democrats break Republican hold on statewide courts (Nov. 4, 2026)
+  - url: https://kdhnews.com/news/local/killeen-mayor-pro-tem-jessica-gonzalez-steamrolls-to-victory-in-bell-county-jp-race/article_a4e03829-e513-4185-a9c0-547fe8c4823e.html
+    label: Killeen Daily Herald — Gonzalez wins the JP Precinct 4, Place 2 race
+  - url: https://kdhnews.com/centerforpolitics/here-s-a-rundown-of-area-election-results-from-tuesday-night/article_61b4fae6-2d44-4b71-a8c9-cca408c33344.html
+    label: Killeen Daily Herald — Rundown of area election results (Nov. 4, 2026)
+  - url: https://kdhnews.com/news/region/bell-county-voters-deny-three-property-tax-measures-two-gop-seats-flip-one-race-headed/article_92fa86ea-909f-53ca-acc9-17a2a7bb64ee.html
+    label: Killeen Daily Herald — Bell County voters deny three property tax measures (Nov. 5, 2026)
   - url: https://www.bellcountytx.com/departments/elections/ballot_samples.php
     label: Bell County Elections — Ballot Samples by voting precinct
   - url: https://www.killeentexas.gov/732/November-3-2026-Special-Called-Charter-A
@@ -47,11 +59,53 @@ sources:
     label: Killeen Daily Herald — Council votes 7-0 to remove resign-to-run
 ---
 
-# Killeen & Bell County ballot guide — November 3, 2026
+# Killeen & Bell County ballot guide and results — November 3, 2026
 
 This guide summarizes official Bell County and City of Killeen election documents. It is informational and does not endorse any candidate or proposition. Ballots differ by voting precinct; find yours on the county's [ballot samples page](https://www.bellcountytx.com/departments/elections/ballot_samples.php).
 
-## How and when to vote
+## Results (unofficial)
+
+All figures below are unofficial election-night returns: statewide and district races from the [Texas Secretary of State](https://electionresults.sos.state.tx.us/results.html) (100% of polling locations reporting, page updated Nov. 4, 2026, 4:59 p.m.) and Bell County races from [Bell County Elections](https://results.enr.clarityelections.com/TX/Bell/127475/) (updated Nov. 4, 2026, 1:48 a.m.).
+
+- **Statewide courts:** Democrats won all four Texas Supreme Court seats, all three Court of Criminal Appeals seats and all three Fifteenth Court of Appeals seats on the ballot, unseating every Republican incumbent among them ([Texas Secretary of State](https://electionresults.sos.state.tx.us/results.html); [Texas Tribune](https://www.texastribune.org/2026/11/04/texas-supreme-court-criminal-appeals-results-elections-2026/)).
+- **Third Court of Appeals:** Chief Justice Darlene Byrne (D) was re-elected over Cory Liu (R) across the district, though Liu carried Bell County ([Texas Secretary of State](https://electionresults.sos.state.tx.us/results.html); [Bell County Elections](https://results.enr.clarityelections.com/TX/Bell/127475/)).
+- **Bell County courts:** every unopposed judicial candidate was elected; in the one contested local judicial race, Democrat Jessica A. Gonzalez defeated Republican Beatrice "Bea" Cox for Justice of the Peace, Precinct 4, Place 2 ([Bell County Elections](https://results.enr.clarityelections.com/TX/Bell/127475/); [Killeen Daily Herald](https://kdhnews.com/news/local/killeen-mayor-pro-tem-jessica-gonzalez-steamrolls-to-victory-in-bell-county-jp-race/article_a4e03829-e513-4185-a9c0-547fe8c4823e.html)).
+- **Hospital district:** Proposition A failed ([Bell County Elections](https://results.enr.clarityelections.com/TX/Bell/127475/); [Killeen Daily Herald](https://kdhnews.com/news/region/bell-county-voters-deny-three-property-tax-measures-two-gop-seats-flip-one-race-headed/article_92fa86ea-909f-53ca-acc9-17a2a7bb64ee.html)). **Killeen charter amendments:** all eight propositions passed ([Bell County Elections](https://results.enr.clarityelections.com/TX/Bell/127475/)).
+
+### Texas Supreme Court
+{% include results-group.html group="sc" %}
+
+### Court of Criminal Appeals
+{% include results-group.html group="cca" %}
+
+### Courts of appeals
+{% include results-group.html group="coa15" %}
+{% include results-group.html group="coa3" %}
+
+### Bell County district courts, county courts and county judge
+{% include results-group.html group="district" %}
+{% include results-group.html group="county_judge" %}
+{% include results-group.html group="county" %}
+
+### Justices of the peace
+{% include results-group.html group="jp" %}
+
+### Clerks
+{% include results-group.html group="clerk" %}
+
+### Bell County Hospital Services District and Killeen charter amendments
+{% include results-group.html group="measure" %}
+{% include results-group.html group="killeen" %}
+
+### Bell County Appraisal District board
+{% include results-group.html group="cad" %}
+
+### Other races on Bell County ballots
+{% include results-group.html group="nonjudicial" %}
+
+## The ballot as it was printed
+
+### How and when voting took place
 
 | When | Hours or deadline | Source |
 |---|---|---|
@@ -66,7 +120,7 @@ Killeen early-voting sites: Jackson Professional Learning Center (902 Rev. R.A. 
 
 ## What is on a Killeen ballot
 
-Every Killeen voter decides eleven contested statewide and appellate judicial races, plus one local judicial contest; the remaining Bell County court and clerk offices below list a single candidate ([Bell County sample ballots](https://www.bellcountytx.com/departments/elections/ballot_samples.php)). Those names stay on the ballot because the Election Code's procedure for declaring unopposed candidates elected and cancelling the election applies only to political subdivisions other than a county ([Election Code §2.051](https://tcss.legis.texas.gov/resources/el/htm/el.2.htm#2.051)). Candidate names link to Legal Luminary profiles.
+Every Killeen voter decided eleven contested statewide and appellate judicial races, plus one local judicial contest; the remaining Bell County court and clerk offices below listed a single candidate ([Bell County sample ballots](https://www.bellcountytx.com/departments/elections/ballot_samples.php)). Those names stay on the ballot because the Election Code's procedure for declaring unopposed candidates elected and cancelling the election applies only to political subdivisions other than a county ([Election Code §2.051](https://tcss.legis.texas.gov/resources/el/htm/el.2.htm#2.051)). Candidate names link to Legal Luminary profiles.
 
 ### Texas Supreme Court and Court of Criminal Appeals (statewide)
 
@@ -95,7 +149,7 @@ Race and candidate lists in the tables below are taken from the official [Bell C
 
 <p style="color:#c00000; font-weight:bold;">Governments "deriv[e] their just powers from the consent of the governed, --That whenever any Form of Government becomes destructive of these ends, it is the Right of the People to alter or to abolish it."</p> -- The Declaration of Independence ([National Archives transcript](https://www.archives.gov/founding-docs/declaration-transcript)).
 
-Consent of the governed will be polled on the candidates below ([Bell County sample ballots](https://www.bellcountytx.com/departments/elections/ballot_samples.php)).
+Consent of the governed was polled on the candidates below ([Bell County sample ballots](https://www.bellcountytx.com/departments/elections/ballot_samples.php)).
 
 | Office | Candidate |
 |---|---|
@@ -112,7 +166,7 @@ Consent of the governed will be polled on the candidates below ([Bell County sam
 
 ### Justice of the Peace — the only contested local judicial race
 
-Justice of the Peace **Precinct 4, Place 2**, which covers the Killeen area, is contested between [Beatrice "Bea" Cox (R)](/candidates/courts/jp/beatrice_bea_cox/) and [Jessica A. Gonzalez (D)](/candidates/courts/jp/jessica_a_gonzalez/) ([Killeen Daily Herald](https://kdhnews.com/centerforpolitics/cox-and-gonzalez-participate-in-justice-of-the-peace-forum-ahead-of-nov-3-election/article_f3226aea-4314-4639-9f1d-804bfbe9c839.html)). Killeen voters in voting precinct 203 are in JP Precinct 2 instead and see [Michael Tice (R)](/candidates/courts/jp/michael_tice/), unopposed, in place of that contest; the Precinct 1 (Patterson) and Precinct 3, Place 2 (Wilkey) JP seats are also unopposed but do not appear on Killeen ballots ([Bell County sample ballots](https://www.bellcountytx.com/departments/elections/ballot_samples.php)).
+Justice of the Peace **Precinct 4, Place 2**, which covers the Killeen area, was contested between [Beatrice "Bea" Cox (R)](/candidates/courts/jp/beatrice_bea_cox/) and [Jessica A. Gonzalez (D)](/candidates/courts/jp/jessica_a_gonzalez/) ([Killeen Daily Herald](https://kdhnews.com/centerforpolitics/cox-and-gonzalez-participate-in-justice-of-the-peace-forum-ahead-of-nov-3-election/article_f3226aea-4314-4639-9f1d-804bfbe9c839.html)). Killeen voters in voting precinct 203 are in JP Precinct 2 instead and see [Michael Tice (R)](/candidates/courts/jp/michael_tice/), unopposed, in place of that contest; the Precinct 1 (Patterson) and Precinct 3, Place 2 (Wilkey) JP seats are also unopposed but do not appear on Killeen ballots ([Bell County sample ballots](https://www.bellcountytx.com/departments/elections/ballot_samples.php)).
 
 ### Other races on the Killeen ballot
 
@@ -121,7 +175,7 @@ Source for this list: [Bell County sample ballots](https://www.bellcountytx.com/
 - **U.S. Representative, District 31:** John Carter (R), Justin Early (D), Greg Stoker (Green).
 - **Attorney General:** [Mayes Middleton (R)](/texas-ag-race-26/mayes-middleton/), [Nathan Johnson (D)](/texas-ag-race-26/nathan-johnson/), [Tom Oxford (L)](/texas-ag-race-26/tom-oxford/).
 - **Bell County Commissioner, Precinct 4:** Curtis Emmons (R), Ernest Wilkerson (D). Voting precinct 203 votes instead for **Commissioner, Precinct 2:** Bobby Whitson (R), Stacey L. Wilson (D).
-- **Bell County Appraisal District board**, Places 1–3 (no candidates)
+- **Bell County Appraisal District board**, Places 1–3 (nonpartisan; results above) ([Bell County Elections](https://results.enr.clarityelections.com/TX/Bell/127475/))
 - **Bell County Hospital Services District, Proposition A** and **City of Killeen Propositions A–H** (below).
 
 ## Bell County Hospital Services District, Proposition A
@@ -150,7 +204,7 @@ Killeen's special charter election is held alongside the general election and ad
 
 The exact charter changes are in Exhibit A of [Ordinance 26-030](https://www.killeentexas.gov/DocumentCenter/View/14295/Ord-26-030-Calling-the-Special-Charter-Amendments-Election-11326-PDF), adopted Aug. 4, 2026, which shows deleted text struck through and new text underlined. Two details there are not in the ballot language or the voter guide: Proposition A's text adds that "the mayor or any councilmember elected prior to the adoption of this amendment shall serve until November 2027," and the three-term limit in Section 22 gains the words "in any one office." The ordinance's staff memo estimates the city's share of the election cost at $21,000.
 
-**Why Propositions B and C matter this year:** Mayor Pro Tem Jessica Gonzalez is the Democratic nominee for Justice of the Peace, Precinct 4, Place 2, and has said she would immediately resign from the council if elected ([Killeen Daily Herald](https://kdhnews.com/news/local/gonzalez-says-her-time-and-service-will-get-her-edge-in-november-jp-race/article_ae036acb-2af1-4705-9b2b-bb9462abe22a.html)). Under the current charter her JP candidacy did not require resignation: the charter requires resignation only on filing for a different city office, not for re-election or a non-city office ([city voter guide](https://www.killeentexas.gov/DocumentCenter/View/14470/2026-Charter-Election-Voter-Guide-PDF)).
+**Why Propositions B and C matter this year:** Mayor Pro Tem Jessica Gonzalez won the race for Justice of the Peace, Precinct 4, Place 2 in unofficial returns ([Bell County Elections](https://results.enr.clarityelections.com/TX/Bell/127475/); [Killeen Daily Herald](https://kdhnews.com/news/local/killeen-mayor-pro-tem-jessica-gonzalez-steamrolls-to-victory-in-bell-county-jp-race/article_a4e03829-e513-4185-a9c0-547fe8c4823e.html)), and had said she would immediately resign from the council if elected ([Killeen Daily Herald](https://kdhnews.com/news/local/gonzalez-says-her-time-and-service-will-get-her-edge-in-november-jp-race/article_ae036acb-2af1-4705-9b2b-bb9462abe22a.html)). Under the current charter her JP candidacy did not require resignation: the charter requires resignation only on filing for a different city office, not for re-election or a non-city office ([city voter guide](https://www.killeentexas.gov/DocumentCenter/View/14470/2026-Charter-Election-Voter-Guide-PDF)).
 
 **What would happen to her council seat.** There is no Killeen council race on this ballot: on Dec. 19, 2025 the council voted unanimously to move city elections to November of odd-numbered years, making May 2026 the last May election, with the mayor's, at-large and district seats all next due in November 2027 ([Killeen Daily Herald](https://kdhnews.com/news/local/killeen-council-approves-moving-elections-to-november-this-may-s-election-will-be-the-last/article_aaebab47-31c4-4dc0-a14d-87160d108a8d.html)). Under the current charter a single vacancy more than 90 days before a regular election must be filled by appointment, while two or more simultaneous vacancies require a special election ([city voter guide](https://www.killeentexas.gov/DocumentCenter/View/14470/2026-Charter-Election-Voter-Guide-PDF)). Under both the current and proposed text, the appointee must be "a bona fide resident of the district in which the vacancy occurs" ([Ordinance 26-030, Exhibit A](https://www.killeentexas.gov/DocumentCenter/View/14295/Ord-26-030-Calling-the-Special-Charter-Amendments-Election-11326-PDF)). The city's own presentation summarizes Prop C as "Fill all vacancies on council by appointment" ([ordinance packet](https://www.killeentexas.gov/DocumentCenter/View/14295/Ord-26-030-Calling-the-Special-Charter-Amendments-Election-11326-PDF)). Multiple simultaneous vacancies are what produced Killeen's May 2, 2026 special elections, called after council members Nina Cobb and Joseph Solomon and Mayor Debbie Nash-King resigned ([Killeen Daily Herald](https://kdhnews.com/news/local/new-mayor-pro-tem-councilman-alvarez-becomes-backup-mayor-council-calls-election-to-fill-cobb/article_500994e2-a56d-4408-a922-22638ad12979.html)).
 

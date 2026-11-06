@@ -8,7 +8,16 @@
       "title": "Voter Guide Meet the Judicial Candidates on the Nov Ballot",
       "domain": "sanantonioreport.org",
       "outlet": "San Antonio Report",
-      "excerpt": "Circuit, served in the Texas Office of the Solicitor General and practiced as a litigator (San Antonio Report).",
+      "excerpt": "Circuit, served as an assistant solicitor general of Texas and practiced as an appellate litigator (Office of the Governor; San Antonio Report).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://www.texastribune.org/2026/11/04/texas-supreme-court-criminal-appeals-results-elections-2026/",
+      "title": "Texas Supreme Court Criminal Appeals Results Elections",
+      "domain": "texastribune.org",
+      "outlet": "The Texas Tribune",
+      "excerpt": "Sullivan lost the race for Texas Supreme Court, Place 2 (unexpired term) with 4,631,182 votes (47.7%); opponent: Chari Kelly (D) 5,068,047 (52.3%), in unofficial returns (Texas Secretary of State; The Texas Tribune).",
       "confidence": "high",
       "field": "cited_in_profile"
     }

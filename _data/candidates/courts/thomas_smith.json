@@ -8,7 +8,25 @@
       "title": "Voter Guide Meet the Judicial Candidates on the Nov Ballot",
       "domain": "sanantonioreport.org",
       "outlet": "San Antonio Report",
-      "excerpt": "profilesummary: 'Thomas Smith worked for Attorney General Ken Paxton in the Attorney General's office and in Paxton's Texas Senate office (San Antonio Report).",
+      "excerpt": "Thomas Smith worked for Attorney General Ken Paxton in the Attorney General's office and in Paxton's Texas Senate office (San Antonio Report; [Texas Tribune](https://www.",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://www.texastribune.org/2026/09/29/texas-court-of-criminal-appeals-2026-election/",
+      "title": "Texas Court of Criminal Appeals Election",
+      "domain": "texastribune.org",
+      "outlet": "The Texas Tribune",
+      "excerpt": "Thomas Smith worked for Attorney General Ken Paxton in the Attorney General's office and in Paxton's Texas Senate office (San Antonio Report; Texas Tribune).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://www.texastribune.org/2026/11/04/texas-supreme-court-criminal-appeals-results-elections-2026/",
+      "title": "Texas Supreme Court Criminal Appeals Results Elections",
+      "domain": "texastribune.org",
+      "outlet": "The Texas Tribune",
+      "excerpt": "Nov. 3, 2026 result: Thomas Smith lost the race for Court of Criminal Appeals, Place 3 with 4,601,878 votes (47.6%); opponents: Okey Anyiam (D) 4,839,230 (50.0%), Mark Ash (LIB) 231,048 (2.4%), in unofficial returns (Texas Secretary of State; The Texas Tribune).",
       "confidence": "high",
       "field": "cited_in_profile"
     },
@@ -17,9 +35,9 @@
       "title": "Texas Court of Criminal Appeals 2026 election: who is running",
       "domain": "newsfromthestates.com",
       "outlet": "States Newsroom",
-      "excerpt": "He previously ran unsuccessfully for the Court of Criminal Appeals (Place 2 in 2016 and Place 8 in 2018), for Texas Supreme Court Chief Justice in 2020 and for Attorney General in 2022 (Texas Tribune via States Newsroom).",
+      "excerpt": "States Newsroom explainer on the Court of Criminal Appeals races, cited in the profile.",
       "confidence": "high",
-      "field": "cited_in_profile"
+      "field": "news_coverage"
     }
   ]
 }

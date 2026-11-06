@@ -1,0 +1,16 @@
+{
+  "candidate_slug": "ivey",
+  "name": "G.W. Ivey",
+  "city": "courts",
+  "articles": [
+    {
+      "url": "https://kdhnews.com/news/region/wilkey-announces-2026-campaign-for-precinct-3-place-2-justice-of-the-peace/article_82996a98-dd06-5c4c-bc27-612093ee9a5c.html",
+      "title": "Wilkey Announces Campaign for Precinct Place Justice of the Peace",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "Wilkey retired from the Temple Police Department in June 2022 and took office as justice of the peace the next day (Killeen Daily Herald).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    }
+  ]
+}

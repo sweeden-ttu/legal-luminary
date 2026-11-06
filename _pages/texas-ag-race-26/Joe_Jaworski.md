@@ -38,11 +38,10 @@ In the March 3, 2026 Democratic primary, Nathan Johnson led with 48.1%, Jaworski
 
 ## Related profiles (2026 Texas AG race)
 
-- [Nathan Johnson (D)](/texas-ag-race-26/nathan-johnson/) — Democratic nominee  
+- [Nathan Johnson (D)](/texas-ag-race-26/nathan-johnson/) — Democratic nominee; won Nov. 3, 2026 (unofficial; [Texas SOS](https://electionresults.sos.state.tx.us/results.html))  
 - [Mayes Middleton (R)](/texas-ag-race-26/mayes-middleton/) — Republican nominee  
 - [Tom Oxford (L)](/texas-ag-race-26/tom-oxford/) — Libertarian nominee  
 - [Chip Roy (R)](/texas-ag-race-26/chip-roy/) — Republican runoff (lost)  
-- [Candidates hub (all races)](/candidates/)
 
 ## Further reading (external)
 

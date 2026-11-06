@@ -1,0 +1,25 @@
+{
+  "candidate_slug": "gordon_adams",
+  "name": "Gordon Adams",
+  "city": "courts",
+  "articles": [
+    {
+      "url": "https://www.kwtx.com/2021/08/06/governor-appoints-2-judges-fill-vacancies-central-texas-courts",
+      "title": "Governor Appoints Judges Fill Vacancies Central Texas Courts",
+      "domain": "kwtx.com",
+      "outlet": "KWTX",
+      "excerpt": "Gov. Greg Abbott appointed Cari Starritt-Burnett to succeed him (KWTX); Adams administered her ceremonial oath and noted she is the court's first woman judge ([Killeen Daily Herald](https://kdhnews.",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://kdhnews.com/news/region/new-judge-sworn-in-starritt-burnett-replaces-adams-on-169th-court-bench/article_6053b78f-e867-542a-8433-e56b08c843f6.html",
+      "title": "New Judge Sworn in Starritt Burnett Replaces Adams on 169th Court Bench",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "Gov. Greg Abbott appointed Cari Starritt-Burnett to succeed him (KWTX); Adams administered her ceremonial oath and noted she is the court's first woman judge (Killeen Daily Herald).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    }
+  ]
+}

@@ -11,14 +11,16 @@ candidate_slug: paul_a_motz
 headshot: null
 election_status: seated
 office_up_for_election: true
-listing_status: Incumbent / Unopposed Republican Nominee
+listing_status: "Incumbent (R); elected without opposition, Nov. 3, 2026 (unofficial)"
 notes: See the profile; every statement there is cited.
 profile_summary: |
   Paul A. Motz is the judge of Bell County Court at Law No. 1 at the Bell County Justice Center in Belton, where the county lists him as presiding judge for the civil court, probate court and mental health court ([Bell County](https://www.bellcountytx.com/county_government/county_courts/court_at_law_1/index.php)). The agenda for the Bell County Commissioners Court's Jan. 3, 2023 meeting listed County Judge David Blackburn administering the oath of office to County Court at Law No. 1 Judge Paul A. Motz ([Bell County Commissioners Court via Swagit](https://bellcountytx.new.swagit.com/videos/247771)). GoodParty.org lists him as the Republican incumbent with a 2023–2026 term ([GoodParty.org](https://goodparty.org/people/paul-motz-5340c50e)).
 
   The seat's previous judge, Jeanne Parker, assumed office Jan. 1, 2015, according to the Texas Office of Court Administration's listing ([Texas Courts](https://www.txcourts.gov/media/1460596/county-courts-at-law-statutory-probate-courts.pdf)).
 
-  **2026 election:** The Killeen Daily Herald listed Motz as the uncontested Republican candidate for County Court at Law seat No. 1 in the March 3, 2026 primary ([Killeen Daily Herald](https://kdhnews.com/news/region/locals-vying-for-county-seats-in-primary-elections/article_6337d52a-83e9-5b75-8efe-8f6d35b2a54b.html)). He is the only candidate for the seat on the Nov. 3, 2026 general election ballot ([Nov. 3 ballot guide](/nov-3-2026-ballot-guide/)); the Indivisible CenTex voter guide likewise lists no Democratic candidate ([2026 Bell County Voter Guide](https://sites.google.com/view/bellcounty2026/other-countywide-races)).
+  **2026 election:** The Killeen Daily Herald listed Motz as the uncontested Republican candidate for County Court at Law seat No. 1 in the March 3, 2026 primary ([Killeen Daily Herald](https://kdhnews.com/news/region/locals-vying-for-county-seats-in-primary-elections/article_6337d52a-83e9-5b75-8efe-8f6d35b2a54b.html)). He was the only candidate for the seat on the Nov. 3, 2026 general election ballot ([Nov. 3 ballot guide](/nov-3-2026-ballot-guide/)); the Indivisible CenTex voter guide likewise lists no Democratic candidate ([2026 Bell County Voter Guide](https://sites.google.com/view/bellcounty2026/other-countywide-races)).
+
+  **Nov. 3, 2026 result:** Paul Motz was the only candidate for Judge, County Court at Law No. 1 on the Nov. 3, 2026 ballot and received 69,570 votes in unofficial returns ([Bell County Elections](https://results.enr.clarityelections.com/TX/Bell/127475/)).
 credentials: |
   **Office**
   - Judge, Bell County Court at Law No. 1; presiding judge for civil, probate and mental health court ([Bell County](https://www.bellcountytx.com/county_government/county_courts/court_at_law_1/index.php))
@@ -36,7 +38,7 @@ court_contact:
 election_info:
   next_election: 2026
   term_length_years: 4
-  election_notes: Unopposed Republican candidate in the March 3, 2026 primary and the only candidate on the Nov. 3, 2026 ballot.
+  election_notes: Unopposed Republican candidate in the March 3, 2026 primary and the only candidate on the Nov. 3, 2026 ballot; elected without opposition (Bell County unofficial returns).
 sources:
 - title: Court at Law 1
   publisher: Bell County

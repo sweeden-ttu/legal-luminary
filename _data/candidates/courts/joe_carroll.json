@@ -1,0 +1,16 @@
+{
+  "candidate_slug": "joe_carroll",
+  "name": "Joe Carroll Jr.",
+  "city": "courts",
+  "articles": [
+    {
+      "url": "https://kdhnews.com/news/new-judges-spend-first-day-in-bell-county-courtrooms/article_07d7fc34-5629-11e2-bdd4-001a4bcf6878.html",
+      "title": "New Judges Spend First Day in Bell County Courtrooms",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "When John Gauntt was sworn in as judge of the 27th District Court, the Killeen Daily Herald reported that Gauntt succeeded Carroll, who \"sat behind the bench for 24 years\" (KDH).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    }
+  ]
+}

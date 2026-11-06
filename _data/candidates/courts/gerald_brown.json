@@ -1,0 +1,16 @@
+{
+  "candidate_slug": "gerald_brown",
+  "name": "Gerald Brown",
+  "city": "courts",
+  "articles": [
+    {
+      "url": "https://kdhnews.com/news/region/fourth-generation-lawyer-launches-campaign-for-bell-county-court-at-law-3/article_ea7e20e4-27c6-54df-877b-ca20a9b769e2.html",
+      "title": "Fourth Generation Lawyer Launches Campaign for Bell County Court at Law",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "In 2025, County Court at Law No. 3 candidate John Gauntt Jr. told the Killeen Daily Herald that the court has had only two presiding judges, Brown and DePew (Killeen Daily Herald).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    }
+  ]
+}

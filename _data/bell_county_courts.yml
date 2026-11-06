@@ -45,7 +45,7 @@ courts:
     tel: "+12549335265"
     ballot_2026: true
     official_url: https://www.bellcountytx.com/county_government/district_courts/169th_district_court/index.php
-    sources: [oca-district, gov-starritt, bell2026]
+    sources: [oca-district, gov-starritt, bell2026, bellresults2026]
   - id: d264
     group: district
     court: 264th District Court
@@ -54,7 +54,7 @@ courts:
     tel: "+12549335245"
     ballot_2026: true
     official_url: https://www.bellcountytx.com/county_government/district_courts/264th_district_court/index.php
-    sources: [oca-district, gov-lepak, txdir-lepak]
+    sources: [oca-district, gov-lepak, txdir-lepak, bellresults2026]
   - id: d426
     group: district
     court: 426th District Court
@@ -72,7 +72,7 @@ courts:
     tel: "+12549335706"
     ballot_2026: true
     official_url: https://www.bellcountytx.com/county_government/district_courts/478th_judicial_district_court/index.php
-    sources: [oca-district, gov-faulkner, branch-478]
+    sources: [oca-district, gov-faulkner, branch-478, bellresults2026]
   - id: ccl1
     group: county
     court: County Court at Law No. 1
@@ -81,7 +81,7 @@ courts:
     fax: "(254) 933-5705"
     ballot_2026: true
     official_url: https://www.bellcountytx.com/county_government/county_courts/court_at_law_1/index.php
-    sources: [oca-ccl, trellis-commercial, goodparty-motz, bell2026]
+    sources: [oca-ccl, trellis-commercial, goodparty-motz, bell2026, bellresults2026]
   - id: ccl2
     group: county
     court: County Court at Law No. 2
@@ -91,7 +91,7 @@ courts:
     fax: "(254) 933-5256"
     ballot_2026: true
     official_url: https://www.bellcountytx.com/county_government/county_courts/court_at_law_2/index.php
-    sources: [oca-ccl, justia-mischtian, bell2026]
+    sources: [oca-ccl, justia-mischtian, bell2026, bellresults2026]
   - id: ccl3
     group: county
     court: County Court at Law No. 3
@@ -99,9 +99,9 @@ courts:
     phone: null
     fax: "(254) 933-5792"
     ballot_2026: true
-    note: Judge DePew is retiring; the seat is on the November 3, 2026 ballot.
+    note: Judge DePew is retiring; John Gauntt Jr. was elected to the seat without opposition on Nov. 3, 2026 (unofficial returns).
     official_url: https://www.bellcountytx.com/county_government/county_courts/court_at_law_3/index.php
-    sources: [oca-ccl, swagit-oath, kdh-ccl3, recordsfinder]
+    sources: [oca-ccl, swagit-oath, kdh-ccl3, recordsfinder, bellresults2026]
 
 offices:
   - title: District Attorney
@@ -152,3 +152,4 @@ sources:
   - {n: 25, id: recordsfinder, group: directory, publisher: RecordsFinder, title: "Bell County courthouses", url: "https://recordsfinder.com/court/courthouses/tx/bell/"}
   - {n: 26, id: solosuit-146, group: directory, publisher: SoloSuit, title: "146th Judicial District, Bell County", url: "https://www.solosuit.com/court/district-146th-judicial-bell-county-texas"}
   - {n: 27, id: muckrock-da, group: directory, publisher: MuckRock, title: "Bell County District Attorney's Office", url: "https://www.muckrock.com/agency/bell-county-2553/bell-county-district-attorneys-office-27538/"}
+  - {n: 28, id: bellresults2026, group: directory, publisher: Bell County Elections Department, title: "November 3, 2026 Unofficial Results", url: "https://results.enr.clarityelections.com/TX/Bell/127475/"}

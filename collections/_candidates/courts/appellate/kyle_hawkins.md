@@ -11,7 +11,7 @@ candidate_slug: kyle_hawkins
 headshot: null
 election_status: general_2026
 office_up_for_election: true
-listing_status: Incumbent (R)
+listing_status: "Incumbent (R); lost Nov. 3, 2026 (unofficial)"
 court_group: sc
 seat: Place 7
 ballot_order: 5
@@ -20,7 +20,9 @@ profile_summary: |
   Kyle Hawkins was appointed to the Texas Supreme Court in October 2025 and is running for a full six-year term ([Community Impact](https://communityimpact.com/south-central-austin/election/here-are-the-92-candidates-running-for-statewide-offices-in-2026/); [Texas Courts](https://www.txcourts.gov/supreme/about-the-court/justices.aspx)). He previously worked at the U.S. Department of Justice, served as Texas Solicitor General and taught at the University of Texas School of Law ([San Antonio Report](https://sanantonioreport.org/voter-guide-meet-the-judicial-candidates-on-the-nov-3-ballot/)).
 
 
-  **On the Nov. 3, 2026 ballot:** Texas Supreme Court, Place 7. Incumbent; appointed in October 2025. Also running: Kristen Hawkins (D) ([Nov. 3 ballot guide](/nov-3-2026-ballot-guide/)).
+  **On the Nov. 3, 2026 ballot:** Texas Supreme Court, Place 7. Incumbent; appointed in October 2025. Opponent on the ballot: Kristen Hawkins (D) ([Nov. 3 ballot guide](/nov-3-2026-ballot-guide/)).
+
+  **Nov. 3, 2026 result:** Kyle Hawkins lost the race for Texas Supreme Court, Place 7 with 4,572,758 votes (47.2%); opponent: Kristen Hawkins (D) 5,112,073 (52.8%), in unofficial returns ([Texas Secretary of State](https://electionresults.sos.state.tx.us/results.html); [The Texas Tribune](https://www.texastribune.org/2026/11/04/texas-supreme-court-criminal-appeals-results-elections-2026/)).
 sources:
 - title: Here are the 92 candidates running for statewide offices in 2026
   publisher: Community Impact
@@ -41,8 +43,8 @@ sources:
   url: /nov-3-2026-ballot-guide/
   accessed: 2026-11-03
 credentials: |
-  **Candidate**
+  **2026 general election**
 
-  - Texas Supreme Court, Place 7 (Republican), 2026 general election ([Nov. 3 ballot guide](/nov-3-2026-ballot-guide/))
+  - Texas Supreme Court, Place 7 (Republican), 2026 general election ([Nov. 3 ballot guide](/nov-3-2026-ballot-guide/)) — lost (unofficial returns; [Texas Secretary of State](https://electionresults.sos.state.tx.us/results.html))
 ---
-Kyle Hawkins is the Republican incumbent for Texas Supreme Court, Place 7 on the November 3, 2026 ballot. ([Nov. 3 ballot guide](/nov-3-2026-ballot-guide/))
+Kyle Hawkins was the Republican incumbent for Texas Supreme Court, Place 7 on the November 3, 2026 ballot ([Nov. 3 ballot guide](/nov-3-2026-ballot-guide/)) and lost, according to unofficial returns ([Texas Secretary of State](https://electionresults.sos.state.tx.us/results.html)).

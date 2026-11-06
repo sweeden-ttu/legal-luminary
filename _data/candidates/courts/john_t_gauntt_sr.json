@@ -1,0 +1,43 @@
+{
+  "candidate_slug": "john_t_gauntt_sr",
+  "name": "John T. Gauntt Sr.",
+  "city": "courts",
+  "articles": [
+    {
+      "url": "https://kdhnews.com/news/region/retiring-bell-county-judges-jones-gauntt-recognized/article_933979a8-2023-5696-8ade-192f7af585a4.html",
+      "title": "Retiring Bell County Judges Jones Gauntt Recognized",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "Gauntt was judge of the 27th District Court in Bell County from 2013 until his retirement on Dec. 31, 2024 (Killeen Daily Herald).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://kdhnews.com/news/new-judges-spend-first-day-in-bell-county-courtrooms/article_07d7fc34-5629-11e2-bdd4-001a4bcf6878.html",
+      "title": "New Judges Spend First Day in Bell County Courtrooms",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "He was the 13th judge of the court, which was created in 1885 and hears criminal cases, and he succeeded Judge Joe Carroll, who had served 24 years; at his swearing-in he said he had spent some 40 years on the defense side of the courtroom (KDH).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://kdhnews.com/news/local/local-district-court-judge-will-continue-to-hear-marvin-guy-case-new-trial-date-to/article_3bb00bba-eaf6-11ed-90d2-7f16f171cf5e.html",
+      "title": "Local District Court Judge Will Continue to Hear Marvin Guy Case New Trial Date to",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "As the 27th District Court's judge he presided over the Marvin Guy capital murder case, the county's oldest unresolved capital case at the time, and denied the state's request for a visiting judge (KDH).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://kdhnews.com/news/region/races-for-2-district-judges-jp-contested/article_fcc92fbd-549f-5159-907b-a94803067722.html",
+      "title": "Races for District Judges JP Contested",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "He did not seek re-election in 2024 (KDH).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    }
+  ]
+}

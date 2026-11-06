@@ -8,7 +8,16 @@
       "title": "Voter Guide Meet the Judicial Candidates on the Nov Ballot",
       "domain": "sanantonioreport.org",
       "outlet": "San Antonio Report",
-      "excerpt": "profilesummary: 'Jerry Zimmerer previously served on the Fourteenth Court of Appeals and spent 12 years working for AT&T Mobility (San Antonio Report).",
+      "excerpt": "He previously spent 12 years working for AT&T Mobility (San Antonio Report).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://www.texastribune.org/2026/11/04/texas-supreme-court-criminal-appeals-results-elections-2026/",
+      "title": "Texas Supreme Court Criminal Appeals Results Elections",
+      "domain": "texastribune.org",
+      "outlet": "The Texas Tribune",
+      "excerpt": "Nov. 3, 2026 result: Jerry Zimmerer won the race for Fifteenth Court of Appeals, Chief Justice with 4,985,001 votes (51.8%); opponent: Scott Brister (R) 4,636,992 (48.2%), in unofficial returns (Texas Secretary of State; The Texas Tribune).",
       "confidence": "high",
       "field": "cited_in_profile"
     }

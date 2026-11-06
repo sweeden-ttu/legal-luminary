@@ -11,7 +11,7 @@ candidate_slug: maggie_ellis
 headshot: null
 election_status: general_2026
 office_up_for_election: true
-listing_status: Candidate (D)
+listing_status: "Elected, Nov. 3, 2026 (D; unofficial)"
 court_group: sc
 seat: Chief Justice
 ballot_order: 2
@@ -20,7 +20,9 @@ profile_summary: |
   Maggie Ellis is a justice on the Third Court of Appeals in Austin, elected in 2024 ([Third Court of Appeals](https://txcourts.gov/3rdcoa/about-the-court/justices)). The San Antonio Report describes her as a former school teacher and foster parent with a background in juvenile law ([San Antonio Report](https://sanantonioreport.org/voter-guide-meet-the-judicial-candidates-on-the-nov-3-ballot/)).
 
 
-  **On the Nov. 3, 2026 ballot:** Texas Supreme Court, Chief Justice. Challenger. Also running: Jimmy Blacklock (R) ([Nov. 3 ballot guide](/nov-3-2026-ballot-guide/)).
+  **On the Nov. 3, 2026 ballot:** Texas Supreme Court, Chief Justice. Challenger. Opponent on the ballot: Jimmy Blacklock (R) ([Nov. 3 ballot guide](/nov-3-2026-ballot-guide/)).
+
+  **Nov. 3, 2026 result:** Maggie Ellis won the race for Texas Supreme Court, Chief Justice with 5,102,288 votes (52.4%); opponent: Jimmy Blacklock (R) 4,625,886 (47.6%), in unofficial returns ([Texas Secretary of State](https://electionresults.sos.state.tx.us/results.html); [The Texas Tribune](https://www.texastribune.org/2026/11/04/texas-supreme-court-criminal-appeals-results-elections-2026/)).
 sources:
 - title: Third Court of Appeals - Justices
   publisher: Texas Judicial Branch
@@ -36,8 +38,8 @@ sources:
   url: /nov-3-2026-ballot-guide/
   accessed: 2026-11-03
 credentials: |
-  **Candidate**
+  **2026 general election**
 
-  - Texas Supreme Court, Chief Justice (Democratic), 2026 general election ([Nov. 3 ballot guide](/nov-3-2026-ballot-guide/))
+  - Texas Supreme Court, Chief Justice (Democratic), 2026 general election ([Nov. 3 ballot guide](/nov-3-2026-ballot-guide/)) — won (unofficial returns; [Texas Secretary of State](https://electionresults.sos.state.tx.us/results.html))
 ---
-Maggie Ellis is the Democratic candidate for Texas Supreme Court, Chief Justice on the November 3, 2026 ballot. ([Nov. 3 ballot guide](/nov-3-2026-ballot-guide/))
+Maggie Ellis was the Democratic candidate for Texas Supreme Court, Chief Justice on the November 3, 2026 ballot ([Nov. 3 ballot guide](/nov-3-2026-ballot-guide/)) and won, according to unofficial returns ([Texas Secretary of State](https://electionresults.sos.state.tx.us/results.html)).

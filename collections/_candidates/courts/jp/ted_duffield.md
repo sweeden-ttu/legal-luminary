@@ -10,12 +10,13 @@ campaign_website: null
 candidate_slug: ted_duffield
 headshot: null
 election_status: seated
+listing_status: "Incumbent (R); did not seek re-election; Patrick Patterson elected to the seat Nov. 3, 2026 (unofficial)"
 office_up_for_election: false
 notes: See the profile; every statement there is cited.
 profile_summary: |
   Theodore R. "Ted" Duffield is listed by Bell County as the Justice of the Peace for Precinct 1, with the court at the Bell County Justice Center in Belton ([Bell County](https://www.bellcountytx.com/county_government/justice_of_the_peace/precinct_1/index.php)). He has held the office since 1995 and is finishing his eighth term ([KDH](https://kdhnews.com/news/region/patterson-to-follow-in-stepfathers-justice-of-the-peace-footsteps-blackburn-keeps-county-judge-seat/article_95f7afcb-3ab6-5651-9b0b-d42467c264f5.html)). The Precinct 1 bench serves areas in and around Belton ([Killeen Daily Herald](https://kdhnews.com/news/region/republican-primary-candidates-battle-for-bell-county-tx-justice-of-the-peace-precinct-1/article_cc04db82-7e73-5c9d-9988-7ca375e81338.html)); the Herald has also described the precinct as covering Belton, Morgan's Point Resort, western Temple and northern Bell County ([KDH](https://kdhnews.com/news/region/blackburn-leads-duffield-in-primary-race-for-bell-county-judge/article_f1df02f8-2530-56fe-a268-69cb0e969967.html)).
 
-  **2026 election:** Duffield did not seek re-election as justice of the peace, leaving the Precinct 1 seat open ([KDH](https://kdhnews.com/news/region/republican-primary-candidates-battle-for-bell-county-tx-justice-of-the-peace-precinct-1/article_cc04db82-7e73-5c9d-9988-7ca375e81338.html)). He instead ran in the March 3, 2026 Republican primary for Bell County Judge against incumbent David Blackburn and lost, 8,210 votes to 15,701 ([KDH](https://kdhnews.com/news/region/patterson-to-follow-in-stepfathers-justice-of-the-peace-footsteps-blackburn-keeps-county-judge-seat/article_95f7afcb-3ab6-5651-9b0b-d42467c264f5.html); [Ballotpedia](https://ballotpedia.org/Theodore_Duffield_(Bell_County_Judge,_Texas,_candidate_2026))). He serves the remainder of his JP term through Dec. 31, 2026 ([KDH](https://kdhnews.com/news/region/patterson-leads-justice-of-the-peace-precinct-1-race-sapp-tice-lead-four-way-jp/article_d48a29aa-236d-5573-b918-1c016d6d81d1.html)). His stepson, Patrick "Pat" Patterson, won the Republican primary for the Precinct 1 seat; no Democrat filed ([KDH](https://kdhnews.com/news/region/patterson-to-follow-in-stepfathers-justice-of-the-peace-footsteps-blackburn-keeps-county-judge-seat/article_95f7afcb-3ab6-5651-9b0b-d42467c264f5.html)).
+  **2026 election:** Duffield did not seek re-election as justice of the peace, leaving the Precinct 1 seat open ([KDH](https://kdhnews.com/news/region/republican-primary-candidates-battle-for-bell-county-tx-justice-of-the-peace-precinct-1/article_cc04db82-7e73-5c9d-9988-7ca375e81338.html)). He instead ran in the March 3, 2026 Republican primary for Bell County Judge against incumbent David Blackburn and lost, 8,210 votes to 15,701 ([KDH](https://kdhnews.com/news/region/patterson-to-follow-in-stepfathers-justice-of-the-peace-footsteps-blackburn-keeps-county-judge-seat/article_95f7afcb-3ab6-5651-9b0b-d42467c264f5.html); [Ballotpedia](https://ballotpedia.org/Theodore_Duffield_(Bell_County_Judge,_Texas,_candidate_2026))). He serves the remainder of his JP term through Dec. 31, 2026 ([KDH](https://kdhnews.com/news/region/patterson-leads-justice-of-the-peace-precinct-1-race-sapp-tice-lead-four-way-jp/article_d48a29aa-236d-5573-b918-1c016d6d81d1.html)). His stepson, Patrick "Pat" Patterson, won the Republican primary for the Precinct 1 seat; no Democrat filed ([KDH](https://kdhnews.com/news/region/patterson-to-follow-in-stepfathers-justice-of-the-peace-footsteps-blackburn-keeps-county-judge-seat/article_95f7afcb-3ab6-5651-9b0b-d42467c264f5.html)). Republican Patrick "Pat" Patterson was elected to the Precinct 1 seat without opposition on Nov. 3, 2026, according to unofficial returns ([Bell County Elections](https://results.enr.clarityelections.com/TX/Bell/127475/)).
 
   **Background:** The Herald reported that Duffield holds a bachelor's degree in criminal justice, has prior military service, and worked with the Harker Heights Police Department and the Bell County Sheriff's Office before taking the bench ([KDH](https://kdhnews.com/news/region/blackburn-leads-duffield-in-primary-race-for-bell-county-judge/article_f1df02f8-2530-56fe-a268-69cb0e969967.html)).
 credentials: |
@@ -39,6 +40,10 @@ court_contact:
   mailing_address: P.O. Box 88, Belton, Texas 76513
   coordinator_email: JP1@bellcounty.texas.gov
 sources:
+- title: "Bell County, Texas — November 3, 2026 Unofficial Results (last updated 11/4/2026 1:48:46 AM)"
+  publisher: Bell County Elections Department
+  url: https://results.enr.clarityelections.com/TX/Bell/127475/
+  accessed: 2026-11-06
 - title: Justice of the Peace, Precinct 1
   publisher: Bell County
   url: https://www.bellcountytx.com/county_government/justice_of_the_peace/precinct_1/index.php

@@ -1,0 +1,25 @@
+{
+  "candidate_slug": "patrick_pat_patterson",
+  "name": "Patrick \"Pat\" Patterson",
+  "city": "courts",
+  "articles": [
+    {
+      "url": "https://kdhnews.com/news/region/patterson-to-follow-in-stepfathers-justice-of-the-peace-footsteps-blackburn-keeps-county-judge-seat/article_95f7afcb-3ab6-5651-9b0b-d42467c264f5.html",
+      "title": "Patterson to Follow in Stepfathers Justice of the Peace Footsteps Blackburn Keeps County Judge Seat",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "The precinct serves the Belton area, Morgan's Point Resort, western Temple and northern Bell County (Killeen Daily Herald).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://kdhnews.com/news/region/republican-primary-candidates-battle-for-bell-county-tx-justice-of-the-peace-precinct-1/article_cc04db82-7e73-5c9d-9988-7ca375e81338.html",
+      "title": "Republican Primary Candidates Battle for Bell County TX Justice of the Peace Precinct",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "Ahead of the primary, the Herald reported that Patterson campaigned on three priorities: consistent application of the law, accessibility and transparency, and community trust and engagement (KDH).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    }
+  ]
+}

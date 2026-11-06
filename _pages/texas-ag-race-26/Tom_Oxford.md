@@ -2,7 +2,7 @@
 layout: default
 permalink: /texas-ag-race-26/tom-oxford/
 title: "Tom Oxford (L) — Texas Attorney General 2026 General Election | Legal Luminary"
-description: "Tom Oxford, Libertarian nominee for Texas Attorney General, November 3, 2026. Background and sources. Informational, nonpartisan."
+description: "Tom Oxford, Libertarian nominee for Texas Attorney General, November 3, 2026; Nathan Johnson won (unofficial returns). Background and sources. Informational, nonpartisan."
 robots: index,follow
 date: 2026-10-12
 verified_at: 2026-11-03
@@ -32,7 +32,12 @@ sources:
 
 # Tom Oxford — Libertarian nominee for Texas Attorney General
 
-**Tom Oxford** is the Libertarian nominee for Attorney General in the **November 3, 2026** general election, facing Democrat Nathan Johnson and Republican Mayes Middleton; he was nominated at the Libertarian Party convention on April 11, 2026 ([Ballotpedia](https://ballotpedia.org/Tom_Oxford)). This page is informational only and does not endorse any candidate.
+**Tom Oxford** was the Libertarian nominee for Attorney General in the **November 3, 2026** general election, against Democrat Nathan Johnson and Republican Mayes Middleton, and received 165,550 votes; Johnson won ([Texas Secretary of State](https://electionresults.sos.state.tx.us/results.html)). Oxford was nominated at the Libertarian Party convention on April 11, 2026 ([Ballotpedia](https://ballotpedia.org/Tom_Oxford)). This page is informational only and does not endorse any candidate.
+
+## November 3, 2026 result
+
+{% assign ag = site.data.results_2026_general.races | where: "office", "Attorney General" | first %}
+{% include race-result.html race=ag %}
 
 ## Background
 
@@ -48,7 +53,6 @@ Ballotpedia lists seven prior Libertarian runs for the Texas Supreme Court betwe
 - [Nathan Johnson (D)](/texas-ag-race-26/nathan-johnson/)
 - [Tom Oxford (L)](/texas-ag-race-26/tom-oxford/)
 - Primary-season profiles: [Chip Roy (R)](/texas-ag-race-26/chip-roy/), [Joe Jaworski (D)](/texas-ag-race-26/joe-jaworski/)
-- [Candidates hub (all races)](/candidates/)
 
 ## Why this race matters in Killeen and Bell County
 
@@ -56,6 +60,7 @@ The Attorney General's office defends state agencies and statutes in court, enfo
 
 ## Sources and further reading
 
+- [Election Results, Nov. 3, 2026 — Texas Secretary of State](https://electionresults.sos.state.tx.us/results.html)
 - [2026 Texas attorney general race: Who is running and what to know — Texas Tribune, Oct. 5, 2026](https://www.texastribune.org/2026/10/05/texas-attorney-general-election-2026-candidates-mayes-middleton-nathan-johnson-tom-oxford/)
 - [Texas Attorney General election, 2026 — Ballotpedia](https://ballotpedia.org/Texas_Attorney_General_election,_2026)
 - [Texas Secretary of State — Elections](https://www.sos.texas.gov/elections/index.shtml)

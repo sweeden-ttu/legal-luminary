@@ -11,7 +11,7 @@ candidate_slug: john_mischtian
 headshot: null
 election_status: seated
 office_up_for_election: true
-listing_status: Incumbent / Unopposed Republican Nominee
+listing_status: "Incumbent (R); elected without opposition, Nov. 3, 2026 (unofficial)"
 notes: See the profile; every statement there is cited.
 profile_summary: |
   John Mischtian is the judge of Bell County Court at Law No. 2 at the Bell County Justice Center in Belton ([Bell County](https://www.bellcountytx.com/county_government/county_courts/court_at_law_2/index.php)). The Texas Office of Court Administration lists John Michael Mischtian as the court's judge with an assumed-office date of Jan. 1, 2007 ([Texas Courts](https://www.txcourts.gov/media/1460596/county-courts-at-law-statutory-probate-courts.pdf)). He was re-elected without opposition in 2010 and again in 2014, when he was unopposed in both the March 4 Republican primary and the Nov. 4 general election ([Ballotpedia](https://ballotpedia.org/John_Mischtian)). He was sworn in again at the Bell County Commissioners Court's first meeting of 2019 ([101.7 Jack FM](https://1017jackfm.com/new-leadership-makes-history-as-bell-county-officials-are-sworn-in/)).
@@ -19,6 +19,8 @@ profile_summary: |
   In the Nov. 8, 2022 general election, Mischtian, a Republican, led Democrat Kurt Glass in early-voting returns with about 59% of the vote to Glass's 41%, per unofficial results ([Killeen Daily Herald](https://kdhnews.com/news/region/mischtian-leads-race-for-county-court-at-law-no-2/article_a6e45ce9-1069-53be-9d55-d05de47104c2.html)). BallotReady lists his current term as ending Dec. 31, 2026 ([BallotReady](https://www.ballotready.org/people/john-mischtian)). An unclaimed Justia lawyer directory listing for John Michael Mischtian of Belton gives a J.D. from Baylor Law School and Texas bar admission in 1993 ([Justia](https://lawyers.justia.com/lawyer/john-michael-mischtian-278475)).
 
   **2026 election:** The Killeen Daily Herald listed Mischtian as the uncontested Republican candidate for County Court at Law seat No. 2 in the March 3, 2026 primary ([Killeen Daily Herald](https://kdhnews.com/news/region/locals-vying-for-county-seats-in-primary-elections/article_6337d52a-83e9-5b75-8efe-8f6d35b2a54b.html)). He is the only candidate for the seat on the Nov. 3, 2026 general election ballot ([Nov. 3 ballot guide](/nov-3-2026-ballot-guide/)); the Indivisible CenTex voter guide likewise lists no Democratic candidate ([2026 Bell County Voter Guide](https://sites.google.com/view/bellcounty2026/other-countywide-races)).
+
+  **Nov. 3, 2026 result:** John Mischtian was the only candidate for Judge, County Court at Law No. 2 on the Nov. 3, 2026 ballot and received 69,779 votes in unofficial returns ([Bell County Elections](https://results.enr.clarityelections.com/TX/Bell/127475/)).
 credentials: |
   **Office**
   - Judge, Bell County Court at Law No. 2 ([Bell County](https://www.bellcountytx.com/county_government/county_courts/court_at_law_2/index.php)); assumed office Jan. 1, 2007 ([Texas Courts](https://www.txcourts.gov/media/1460596/county-courts-at-law-statutory-probate-courts.pdf))
@@ -38,7 +40,7 @@ court_contact:
 election_info:
   next_election: 2026
   term_length_years: 4
-  election_notes: Faced Democrat Kurt Glass in Nov. 2022 (Killeen Daily Herald); unopposed Republican candidate in the March 3, 2026 primary and the only candidate on the Nov. 3, 2026 ballot.
+  election_notes: Faced Democrat Kurt Glass in Nov. 2022 (Killeen Daily Herald); unopposed Republican candidate in the March 3, 2026 primary and the only candidate on the Nov. 3, 2026 ballot; elected without opposition (Bell County unofficial returns).
 sources:
 - title: Court at Law 2
   publisher: Bell County
@@ -85,4 +87,4 @@ sources:
   url: https://sites.google.com/view/bellcounty2026/other-countywide-races
   accessed: 2026-11-03
 ---
-John Mischtian is the judge of Bell County Court at Law No. 2 ([Bell County](https://www.bellcountytx.com/county_government/county_courts/court_at_law_2/index.php)). He is the only candidate for the seat on the Nov. 3, 2026 ballot ([Nov. 3 ballot guide](/nov-3-2026-ballot-guide/)).
+John Mischtian is the judge of Bell County Court at Law No. 2 ([Bell County](https://www.bellcountytx.com/county_government/county_courts/court_at_law_2/index.php)). He was the only candidate for the seat on the Nov. 3, 2026 ballot ([Nov. 3 ballot guide](/nov-3-2026-ballot-guide/)).

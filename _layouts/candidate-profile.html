@@ -87,7 +87,13 @@ layout: candidates-root
             <div class="profile-hero__info">
                 <div class="profile-hero__eyebrow">
                     <span class="profile-hero__city-tag">Bell County, TX</span>
-                    {% if page.election_status == "general_2026" %}
+                    {%- assign hero_result = nil -%}
+                    {%- for r in site.data.results_2026_general.races -%}{%- for c in r.candidates -%}{%- if c.slug and c.slug == page.candidate_slug -%}{%- assign hero_result = c -%}{%- endif -%}{%- endfor -%}{%- endfor -%}
+                    {% if hero_result and hero_result.winner %}
+                    <span class="profile-hero__election-tag">Won Nov. 3, 2026 (unofficial)</span>
+                    {% elsif hero_result %}
+                    <span class="profile-hero__election-tag">Lost Nov. 3, 2026 (unofficial)</span>
+                    {% elsif page.election_status == "general_2026" %}
                     <span class="profile-hero__election-tag">2026 General Election</span>
                     {% elsif page.election_status == "seated" or page.election_status == "appointed" %}
                     <span class="profile-hero__election-tag">Currently Serving</span>
@@ -110,6 +116,8 @@ layout: candidates-root
         <div class="profile-body">
             <!-- Main Content -->
             <article class="profile-content">
+
+                {% include profile-election-result.html %}
 
                 {% comment %} Narrative sections render only on profiles that carry a sources list; an unsourced profile shows name and office only. {% endcomment %}
                 {% if page.sources and page.sources.size > 0 %}

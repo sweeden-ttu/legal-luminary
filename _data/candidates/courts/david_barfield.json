@@ -1,0 +1,43 @@
+{
+  "candidate_slug": "david_barfield",
+  "name": "David Barfield",
+  "city": "courts",
+  "articles": [
+    {
+      "url": "https://kdhnews.com/news/region/bell-commissioners-to-name-temporary-replacement-for-jp-barfield/article_66e91d22-7bea-5415-a46d-0930b72f54bc.html",
+      "title": "Bell Commissioners to Name Temporary Replacement for JP Barfield",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "David Barfield served as Bell County Justice of the Peace for Precinct 3, Place 1, based in Temple (Killeen Daily Herald).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://kdhnews.com/news/two-bell-county-jps-not-performing-marriages/article_76fc0f4a-1f96-11e5-9802-8b35d0b816b8.html",
+      "title": "Two Bell County Jps Not Performing Marriages",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "Ivey among those who had not yet said whether they would (Killeen Daily Herald).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://kdhnews.com/news/local/bell-county-jp-sheriff-constable-seats-up-in-may-election/article_0f9ab026-2e8d-11ea-83f4-f3277cb4b5a3.html",
+      "title": "Bell County JP Sheriff Constable Seats Up in May Election",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "Ahead of the 2020 elections the Herald listed \"Precinct 3, Place 1, Justice of the Peace David Barfield\" among the unopposed Bell County incumbents (Killeen Daily Herald).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://kdhnews.com/news/local/social-distanced-swearing-in-bell-county-officials-take-office-differently-due-to-covid-19/article_16a59644-4ee2-11eb-b86f-db46af296d42.html",
+      "title": "Social Distanced Swearing in Bell County Officials Take Office Differently Due to Covid",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "At the swearing-in of officials elected in November 2020, the Herald reported that Barfield had told county officials he could not serve because of a medical condition and was sworn in over the phone (Killeen Daily Herald).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    }
+  ]
+}

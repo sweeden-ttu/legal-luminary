@@ -1,0 +1,25 @@
+{
+  "candidate_slug": "fancy_h_jezek",
+  "name": "Fancy H. Jezek",
+  "city": "courts",
+  "articles": [
+    {
+      "url": "https://kdhnews.com/news/region/jezek-to-retire-from-426th-district-court-thursday/article_3a381f7e-3029-58c2-aa2d-94d3b2a32415.html",
+      "title": "Jezek to Retire from 426th District Court Thursday",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "Gov. Rick Perry appointed her in 2007, the year the court was created, and she took her oath in February 2007 (Killeen Daily Herald).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://kdhnews.com/centerforpolitics/three-republicans-vying-for-426th-district-court-judgeship/article_d9f35960-4f74-11ea-9617-2790fe7a8695.html",
+      "title": "Three Republicans Vying for 426th District Court Judgeship",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "Three Republicans ran in 2020 to replace her (KDH); Gov. Greg Abbott appointed the nominee, Steve Duskie, to the court on July 23, 2020 ([Office of the Governor](https://gov.texas.",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    }
+  ]
+}

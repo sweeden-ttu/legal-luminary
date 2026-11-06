@@ -8,7 +8,7 @@
       "title": "Here Are the Candidates Running for Statewide Offices in",
       "domain": "communityimpact.com",
       "outlet": "Community Impact",
-      "excerpt": "profilesummary: 'Brett Busby is running for re-election to the Texas Supreme Court (Community Impact).",
+      "excerpt": "Brett Busby is running for re-election to the Texas Supreme Court (Community Impact).",
       "confidence": "high",
       "field": "cited_in_profile"
     },
@@ -18,6 +18,15 @@
       "domain": "sanantonioreport.org",
       "outlet": "San Antonio Report",
       "excerpt": "He previously served on the Fourteenth Court of Appeals in Houston and was a partner at Bracewell LLP (San Antonio Report).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://www.texastribune.org/2026/11/04/texas-supreme-court-criminal-appeals-results-elections-2026/",
+      "title": "Texas Supreme Court Criminal Appeals Results Elections",
+      "domain": "texastribune.org",
+      "outlet": "The Texas Tribune",
+      "excerpt": "Triana (D) 5,033,586 (52.0%), in unofficial returns (Texas Secretary of State; The Texas Tribune).",
       "confidence": "high",
       "field": "cited_in_profile"
     }

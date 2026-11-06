@@ -43,10 +43,9 @@ In the March 3, 2026 Republican primary, Middleton led with 39.1%, Roy had 31.6%
 ## Related profiles (2026 Texas AG race)
 
 - [Mayes Middleton (R)](/texas-ag-race-26/mayes-middleton/) — Republican nominee  
-- [Nathan Johnson (D)](/texas-ag-race-26/nathan-johnson/) — Democratic nominee  
+- [Nathan Johnson (D)](/texas-ag-race-26/nathan-johnson/) — Democratic nominee; won Nov. 3, 2026 (unofficial; [Texas SOS](https://electionresults.sos.state.tx.us/results.html))  
 - [Tom Oxford (L)](/texas-ag-race-26/tom-oxford/) — Libertarian nominee  
 - [Joe Jaworski (D)](/texas-ag-race-26/joe-jaworski/) — Democratic runoff (lost)  
-- [Candidates hub (all races)](/candidates/)
 
 ## Further reading (external)
 

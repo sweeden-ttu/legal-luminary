@@ -4,11 +4,11 @@
   "city": "courts",
   "articles": [
     {
-      "url": "https://sanantonioreport.org/voter-guide-meet-the-judicial-candidates-on-the-nov-3-ballot/",
-      "title": "Voter Guide Meet the Judicial Candidates on the Nov Ballot",
-      "domain": "sanantonioreport.org",
-      "outlet": "San Antonio Report",
-      "excerpt": "profilesummary: 'Tom Baker is a U.S. Navy veteran and a former Texas appellate justice (San Antonio Report).",
+      "url": "https://www.texastribune.org/2026/11/04/texas-supreme-court-criminal-appeals-results-elections-2026/",
+      "title": "Texas Supreme Court Criminal Appeals Results Elections",
+      "domain": "texastribune.org",
+      "outlet": "The Texas Tribune",
+      "excerpt": "Field (R) 4,618,116 (48.0%), in unofficial returns (Texas Secretary of State; The Texas Tribune).",
       "confidence": "high",
       "field": "cited_in_profile"
     }

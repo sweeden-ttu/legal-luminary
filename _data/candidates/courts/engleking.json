@@ -1,0 +1,16 @@
+{
+  "candidate_slug": "engleking",
+  "name": "Don Engleking",
+  "city": "courts",
+  "articles": [
+    {
+      "url": "https://kdhnews.com/news/two-bell-county-jps-not-performing-marriages/article_76fc0f4a-1f96-11e5-9802-8b35d0b816b8.html",
+      "title": "Two Bell County Jps Not Performing Marriages",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "In 2015 the Killeen Daily Herald reported that Bell County Justices of the Peace Don Engleking and Ted Duffield had ceased performing marriage ceremonies, identifying Engleking as overseeing the Precinct 2 Justice Court (Killeen Daily Herald).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    }
+  ]
+}

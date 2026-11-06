@@ -1,0 +1,4 @@
+{%- comment -%}All Nov. 3, 2026 races in a group from _data/results_2026_general.yml. Parameter: group{%- endcomment -%}
+{%- for r in site.data.results_2026_general.races -%}{%- if r.group == include.group -%}
+{% include race-result.html race=r %}
+{%- endif -%}{%- endfor -%}

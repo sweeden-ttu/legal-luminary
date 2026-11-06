@@ -1,0 +1,25 @@
+{
+  "candidate_slug": "jeanne_parker",
+  "name": "Jeanne Parker",
+  "city": "courts",
+  "articles": [
+    {
+      "url": "https://kdhnews.com/news/politics/trudo-defeats-parker-in-judge-s-race/article_63f1238a-a423-11e3-8e23-001a4bcf6878.html",
+      "title": "Trudo Defeats Parker in Judge S Race",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "In the March 4, 2014 Republican primary, Parker, then an assistant county attorney who prosecuted Child Protective Services cases, unofficially defeated Ken Valka 6,042 to 5,905 (50.57%) for the open County Court at Law No. 1 seat; no Democrat filed for the seat, which opened when Judge Edward Johns",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://kdhnews.com/news/politics/two-vie-for-bell-county-court-at-law-no-1-position/article_8e6cd602-96c9-11e3-8aa1-001a4bcf6878.html",
+      "title": "Two Vie for Bell County Court at Law No Position",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "Before the primary, the Herald reported that Parker, 65, of Belton, had lived in Bell County for 20 years and had been an assistant county attorney since 2009; her earlier work included heading the family, law and criminal divisions at Dan Corbin & Associates (2005–2006) and 18 months advising the A",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    }
+  ]
+}

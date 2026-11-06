@@ -11,7 +11,7 @@ candidate_slug: larry_wilkey
 headshot: null
 election_status: seated
 office_up_for_election: true
-listing_status: Incumbent / Unopposed Republican Nominee
+listing_status: "Incumbent (R); elected without opposition, Nov. 3, 2026 (unofficial)"
 notes: See the profile; every statement there is cited.
 profile_summary: |
   Larry Wilkey is the Justice of the Peace for Bell County Precinct 3, Place 2; Bell County lists his court at the Bell County Temple Annex, 205 E. Central Avenue, Temple ([Bell County](https://www.bellcountytx.com/county_government/justice_of_the_peace/precinct_3_place_2/index.php)). He was sworn in on June 23, 2022, the day after retiring from the Temple Police Department, and the court serves Little River Academy, Rogers, Temple and Troy in east Bell County ([Killeen Daily Herald](https://kdhnews.com/news/region/wilkey-announces-2026-campaign-for-precinct-3-place-2-justice-of-the-peace/article_82996a98-dd06-5c4c-bc27-612093ee9a5c.html)).
@@ -19,6 +19,8 @@ profile_summary: |
   **2026 election:** Wilkey, a Republican, announced a 2026 re-election campaign ([KDH](https://kdhnews.com/news/region/wilkey-announces-2026-campaign-for-precinct-3-place-2-justice-of-the-peace/article_82996a98-dd06-5c4c-bc27-612093ee9a5c.html)). He was the only candidate to file for the seat, and no Democrat entered the race ([KDH](https://kdhnews.com/news/region/bell-county-primary-ballot-features-several-uncontested-races/article_1b8bb49b-8336-5cfd-a1ce-d5c0566bea2b.html)). He is unopposed on the Nov. 3, 2026 general-election ballot ([Nov. 3 ballot guide](/nov-3-2026-ballot-guide/)).
 
   **Background:** Wilkey retired from the Temple Police Department on June 22, 2022 as a detective sergeant; he had overseen the Violent Crimes Unit, led the SWAT Crisis Negotiation Team and specialized in crimes against children and internal affairs. He represents Bell County's justices of the peace on the Central Texas Child Fatality Review Team and is president of the Temple Breakfast Lions Club ([KDH](https://kdhnews.com/news/region/wilkey-announces-2026-campaign-for-precinct-3-place-2-justice-of-the-peace/article_82996a98-dd06-5c4c-bc27-612093ee9a5c.html)).
+
+  **Nov. 3, 2026 result:** Larry Wilkey was the only candidate for Justice of the Peace, Precinct 3, Place 2 on the Nov. 3, 2026 ballot and received 17,081 votes in unofficial returns ([Bell County Elections](https://results.enr.clarityelections.com/TX/Bell/127475/)).
 credentials: |
   **Office**
   - Justice of the Peace, Bell County Precinct 3, Place 2 (sworn in June 23, 2022) ([Bell County](https://www.bellcountytx.com/county_government/justice_of_the_peace/precinct_3_place_2/index.php); [KDH](https://kdhnews.com/news/region/wilkey-announces-2026-campaign-for-precinct-3-place-2-justice-of-the-peace/article_82996a98-dd06-5c4c-bc27-612093ee9a5c.html))
@@ -59,4 +61,4 @@ sources:
   url: /nov-3-2026-ballot-guide/
   accessed: 2026-11-03
 ---
-Larry Wilkey is the Justice of the Peace for Bell County Precinct 3, Place 2, and the unopposed Republican nominee for the seat on the November 3, 2026 ballot. ([Nov. 3 ballot guide](/nov-3-2026-ballot-guide/))
+Larry Wilkey is the Justice of the Peace for Bell County Precinct 3, Place 2, and was the unopposed Republican nominee for the seat on the November 3, 2026 ballot ([Nov. 3 ballot guide](/nov-3-2026-ballot-guide/)), elected without opposition according to unofficial returns ([Bell County Elections](https://results.enr.clarityelections.com/TX/Bell/127475/)).

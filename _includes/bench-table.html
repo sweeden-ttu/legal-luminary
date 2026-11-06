@@ -11,7 +11,7 @@ Bench table. Parameters:
   <tbody>
   {%- for j in rows -%}
     {%- assign is_former = false -%}
-    {%- if j.election_status == "former" or j.election_status == "primary_defeated" or j.election_status == "senior" or j.office contains "Former" or j.title contains "Former" -%}{%- assign is_former = true -%}{%- endif -%}
+    {%- if j.election_status == "former" or j.election_status == "primary_defeated" or j.election_status == "general_defeated" or j.election_status == "senior" or j.office contains "Former" or j.title contains "Former" -%}{%- assign is_former = true -%}{%- endif -%}
     {%- if include.former == "true" and is_former == false -%}{%- continue -%}{%- endif -%}
     {%- if include.former != "true" and is_former -%}{%- continue -%}{%- endif -%}
     <tr>

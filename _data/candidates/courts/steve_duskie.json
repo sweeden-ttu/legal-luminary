@@ -1,0 +1,25 @@
+{
+  "candidate_slug": "steve_duskie",
+  "name": "Steve Duskie",
+  "city": "courts",
+  "articles": [
+    {
+      "url": "https://kdhnews.com/centerforpolitics/three-republicans-vying-for-426th-district-court-judgeship/article_d9f35960-4f74-11ea-9617-2790fe7a8695.html",
+      "title": "Three Republicans Vying for 426th District Court Judgeship",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "In 2020 he was one of three Republicans who ran to replace retiring Judge Fancy Jezek; no Democrat ran for the seat (Killeen Daily Herald).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://kdhnews.com/centerforpolitics/duskie-parker-to-vie-for-426th-judge-runoff/article_89f90810-3e0d-5b25-bd1a-5210e68d751d.html",
+      "title": "Duskie Parker to Vie for 426th Judge Runoff",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "He led the March 3, 2020 primary with 41% of the vote over Jeff Parker (36%) and Wade Faulkner (23%) (KDH), won the July runoff with 60% of the vote, and faced no Democratic opponent in November 2020 ([Texas Lawyer](https://law.",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    }
+  ]
+}

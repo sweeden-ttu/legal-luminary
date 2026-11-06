@@ -8,7 +8,16 @@
       "title": "Voter Guide Meet the Judicial Candidates on the Nov Ballot",
       "domain": "sanantonioreport.org",
       "outlet": "San Antonio Report",
-      "excerpt": "profilesummary: 'Audra Riley is a criminal district court judge in Dallas and a graduate of Thurgood Marshall School of Law (San Antonio Report).",
+      "excerpt": "Audra Riley is a criminal district court judge in Dallas and a graduate of Thurgood Marshall School of Law (San Antonio Report).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://www.texastribune.org/2026/11/04/texas-supreme-court-criminal-appeals-results-elections-2026/",
+      "title": "Texas Supreme Court Criminal Appeals Results Elections",
+      "domain": "texastribune.org",
+      "outlet": "The Texas Tribune",
+      "excerpt": "Nov. 3, 2026 result: Audra Riley won the race for Court of Criminal Appeals, Place 4 with 4,996,898 votes (51.7%); opponent: Kevin Patrick Yeary (R) 4,659,299 (48.3%), in unofficial returns (Texas Secretary of State; The Texas Tribune).",
       "confidence": "high",
       "field": "cited_in_profile"
     }

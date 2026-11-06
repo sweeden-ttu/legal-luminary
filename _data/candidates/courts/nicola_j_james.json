@@ -4,20 +4,47 @@
   "city": "courts",
   "articles": [
     {
-      "url": "https://kdhnews.com/harker_heights_herald/community/judge-nicola-james-to-seek-reelection-to-bell-county-precinct-4-place-2-jp-post/article_568ac374-58ea-4a72-b260-65987c3ee881.html",
-      "title": "Judge Nicola James to seek re-election to Bell County Precinct 4, Place 2 JP post",
+      "url": "https://kdhnews.com/centerforpolitics/judge-nicola-james-to-run-for-reelection/article_ee7582ef-f935-42c4-ac49-f35fc7ab5748.html",
+      "title": "Judge Nicola James to Run for Reelection",
       "domain": "kdhnews.com",
       "outlet": "Killeen Daily Herald",
-      "excerpt": "James, elected in 2022 to replace Bill Cooke and a former court administrator in Copperas Cove, announced her re-election bid (Nov. 1, 2025).",
+      "excerpt": "Before taking the bench she was a court administrator in Copperas Cove (Killeen Daily Herald).",
       "confidence": "high",
-      "field": "news_coverage"
+      "field": "cited_in_profile"
     },
     {
       "url": "https://kdhnews.com/centerforpolitics/jp-for-killeen-quarles-gonzalez-head-to-runoff-election-as-incumbent-finishes-3rd/article_baed7726-ac7b-42e9-bfc8-1a9515ac424c.html",
       "title": "JP for Killeen: Quarles, Gonzalez head to runoff election as incumbent finishes 3rd",
       "domain": "kdhnews.com",
       "outlet": "Killeen Daily Herald",
-      "excerpt": "James finished third of three in the March 3, 2026 Democratic primary with 27.86 percent.",
+      "excerpt": "In the March 3, 2026 Democratic primary she finished third with 3,679 votes (27.86%), behind LaTasha Quarles (5,110; 38.70%) and Jessica Gonzalez (4,415; 33.44%), who advanced to the May 26 runoff (KDH).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://kdhnews.com/centerforpolitics/gonzalez-a-killeen-councilwoman-wins-democratic-jp-primary-runoff/article_86fc56ce-ab7a-4d23-8bdc-d4b7b1a1bf86.html",
+      "title": "Gonzalez a Killeen Councilwoman Wins Democratic JP Primary Runoff",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "Gonzalez won the runoff and faced Republican Beatrice Cox on the Nov. 3, 2026 ballot (KDH; [Nov. 3 ballot guide](/nov-3-2026-ballot-guide/)).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://kdhnews.com/news/local/killeen-mayor-pro-tem-jessica-gonzalez-steamrolls-to-victory-in-bell-county-jp-race/article_a4e03829-e513-4185-a9c0-547fe8c4823e.html",
+      "title": "Killeen Mayor Pro Tem Jessica Gonzalez Steamrolls to Victory in Bell County JP Race",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "Gonzalez won the seat in the Nov. 3, 2026 general election over Republican Beatrice \"Bea\" Cox, according to unofficial returns (Bell County Elections; Killeen Daily Herald).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://kdhnews.com/harker_heights_herald/community/judge-nicola-james-to-seek-reelection-to-bell-county-precinct-4-place-2-jp-post/article_568ac374-58ea-4a72-b260-65987c3ee881.html",
+      "title": "Judge Nicola James to seek re-election to Bell County Precinct 4, Place 2 JP post",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "James, elected in 2022 to replace Bill Cooke and a former court administrator in Copperas Cove, announced her re-election bid (Nov. 1, 2025).",
       "confidence": "high",
       "field": "news_coverage"
     }

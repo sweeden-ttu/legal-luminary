@@ -1,0 +1,16 @@
+{
+  "candidate_slug": "dallas_sims",
+  "name": "Dallas Sims",
+  "city": "courts",
+  "articles": [
+    {
+      "url": "https://kdhnews.com/news/region/cornish-sworn-in-as-child-protection-court-judge/article_02a9470e-6e57-5cbb-ad87-753b2a34c72d.html",
+      "title": "Cornish Sworn in as Child Protection Court Judge",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "In its report on Chris Cornish's swearing-in to Centex Child Protection Court 1, the Killeen Daily Herald said Sims had been sworn in the previous month as the other new judge on the Centex Child Protection Court, and that both were appointed by Billy Ray Stubblefield, presiding judge of the Third A",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    }
+  ]
+}

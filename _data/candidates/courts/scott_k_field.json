@@ -8,7 +8,16 @@
       "title": "Voter Guide Meet the Judicial Candidates on the Nov Ballot",
       "domain": "sanantonioreport.org",
       "outlet": "San Antonio Report",
-      "excerpt": "He was previously a Williamson County district judge and served on the Third Court of Appeals (San Antonio Report).",
+      "excerpt": "He was the first judge of the 480th District Court in Williamson County and earlier served a six-year term on the Third Court of Appeals (Texas Courts; San Antonio Report).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://www.texastribune.org/2026/11/04/texas-supreme-court-criminal-appeals-results-elections-2026/",
+      "title": "Texas Supreme Court Criminal Appeals Results Elections",
+      "domain": "texastribune.org",
+      "outlet": "The Texas Tribune",
+      "excerpt": "Field lost the race for Fifteenth Court of Appeals, Place 2 with 4,618,116 votes (48.0%); opponent: Tom Baker (D) 4,998,619 (52.0%), in unofficial returns (Texas Secretary of State; The Texas Tribune).",
       "confidence": "high",
       "field": "cited_in_profile"
     }

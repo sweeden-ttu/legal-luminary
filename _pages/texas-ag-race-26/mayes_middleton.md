@@ -2,7 +2,7 @@
 layout: default
 permalink: /texas-ag-race-26/mayes-middleton/
 title: "Mayes Middleton (R) — Texas Attorney General 2026 General Election | Legal Luminary"
-description: "Mayes Middleton, Republican nominee for Texas Attorney General, November 3, 2026. Record, background and sources. Informational, nonpartisan."
+description: "Mayes Middleton, Republican nominee for Texas Attorney General, November 3, 2026; lost to Nathan Johnson (unofficial returns). Record, background and sources. Informational, nonpartisan."
 image: https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/100/100/Mayes_Middleton.jpg
 robots: index,follow
 date: 2026-10-12
@@ -43,7 +43,12 @@ sources:
 
 # Mayes Middleton — Republican nominee for Texas Attorney General
 
-**Mayes Middleton** (Republican) is a Texas state senator from Galveston (District 11) ([Texas Senate](https://senate.texas.gov/member.php?d=11)) and the Republican nominee for Attorney General in the **November 3, 2026** general election, where he faces Democrat Nathan Johnson and Libertarian Tom Oxford ([Ballotpedia](https://ballotpedia.org/Texas_Attorney_General_election,_2026)). He won the May 26 runoff over U.S. Rep. Chip Roy, 55.2% to 44.8% ([Ballotpedia](https://ballotpedia.org/Texas_Attorney_General_election,_2026); [KUT](https://www.kut.org/politics/2026-05-26/democrat-nathan-johnson-to-run-against-republican-mayes-middleton-for-texas-ag-in-november-election)). This page is informational only and does not endorse any candidate.
+**Mayes Middleton** (Republican) is a Texas state senator from Galveston (District 11) ([Texas Senate](https://senate.texas.gov/member.php?d=11)) and was the Republican nominee for Attorney General in the **November 3, 2026** general election against Democrat Nathan Johnson and Libertarian Tom Oxford ([Ballotpedia](https://ballotpedia.org/Texas_Attorney_General_election,_2026)). Johnson won, 5,133,629 votes to Middleton's 4,502,442, according to unofficial statewide returns ([Texas Secretary of State](https://electionresults.sos.state.tx.us/results.html)). Middleton won the May 26 runoff over U.S. Rep. Chip Roy, 55.2% to 44.8% ([Ballotpedia](https://ballotpedia.org/Texas_Attorney_General_election,_2026); [KUT](https://www.kut.org/politics/2026-05-26/democrat-nathan-johnson-to-run-against-republican-mayes-middleton-for-texas-ag-in-november-election)). This page is informational only and does not endorse any candidate.
+
+## November 3, 2026 result
+
+{% assign ag = site.data.results_2026_general.races | where: "office", "Attorney General" | first %}
+{% include race-result.html race=ag %}
 
 ## Background
 
@@ -67,7 +72,6 @@ $911,117 cash on hand; he has put more than $17 million of his own money into th
 - [Nathan Johnson (D)](/texas-ag-race-26/nathan-johnson/)
 - [Tom Oxford (L)](/texas-ag-race-26/tom-oxford/)
 - Primary-season profiles: [Chip Roy (R)](/texas-ag-race-26/chip-roy/), [Joe Jaworski (D)](/texas-ag-race-26/joe-jaworski/)
-- [Candidates hub (all races)](/candidates/)
 
 ## Why this race matters in Killeen and Bell County
 
@@ -75,6 +79,7 @@ The Attorney General's office defends state agencies and statutes in court, enfo
 
 ## Sources and further reading
 
+- [Election Results, Nov. 3, 2026 — Texas Secretary of State](https://electionresults.sos.state.tx.us/results.html)
 - [2026 Texas attorney general race: Who is running and what to know — Texas Tribune, Oct. 5, 2026](https://www.texastribune.org/2026/10/05/texas-attorney-general-election-2026-candidates-mayes-middleton-nathan-johnson-tom-oxford/)
 - [Texas AG runoff results — KUT, May 26, 2026](https://www.kut.org/politics/2026-05-26/democrat-nathan-johnson-to-run-against-republican-mayes-middleton-for-texas-ag-in-november-election)
 - [Texas Attorney General election, 2026 — Ballotpedia](https://ballotpedia.org/Texas_Attorney_General_election,_2026)

@@ -8,7 +8,16 @@
       "title": "Voter Guide Meet the Judicial Candidates on the Nov Ballot",
       "domain": "sanantonioreport.org",
       "outlet": "San Antonio Report",
-      "excerpt": "profilesummary: 'Mark Ash is a criminal defense attorney with a law degree from South Texas College of Law (San Antonio Report).",
+      "excerpt": "Mark Ash is a criminal defense attorney with a law degree from South Texas College of Law (San Antonio Report).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://www.texastribune.org/2026/11/04/texas-supreme-court-criminal-appeals-results-elections-2026/",
+      "title": "Texas Supreme Court Criminal Appeals Results Elections",
+      "domain": "texastribune.org",
+      "outlet": "The Texas Tribune",
+      "excerpt": "Nov. 3, 2026 result: Mark Ash lost the race for Court of Criminal Appeals, Place 3 with 231,048 votes (2.4%); opponents: Thomas Smith (R) 4,601,878 (47.6%), Okey Anyiam (D) 4,839,230 (50.0%), in unofficial returns (Texas Secretary of State; The Texas Tribune).",
       "confidence": "high",
       "field": "cited_in_profile"
     }

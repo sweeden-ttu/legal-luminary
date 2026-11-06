@@ -1,0 +1,16 @@
+{%- comment -%}
+Nov. 3, 2026 result box for a profile: finds the race in _data/results_2026_general.yml whose candidate slug matches page.candidate_slug.
+{%- endcomment -%}
+{%- assign found = nil -%}
+{%- for r in site.data.results_2026_general.races -%}
+  {%- for c in r.candidates -%}
+    {%- if c.slug and c.slug == page.candidate_slug -%}{%- assign found = r -%}{%- assign me = c -%}{%- endif -%}
+  {%- endfor -%}
+{%- endfor -%}
+{%- if found -%}
+<section class="profile-election-result" aria-labelledby="election-result-title">
+<h2 class="profile-content__section-title" id="election-result-title">November 3, 2026 general election result</h2>
+<p><strong>{{ page.title }} {% if me.winner %}{% if found.unopposed %}was elected without opposition{% else %}won{% endif %}{% else %}lost{% endif %}</strong> the race for {{ found.office }}, according to unofficial returns{% if found.unopposed == false %} ({{ me.votes }} votes, {{ me.pct }}% of votes cast){% endif %}.</p>
+{% include race-result.html race=found %}
+</section>
+{%- endif -%}

@@ -1,0 +1,993 @@
+election: Texas general election, November 3, 2026
+status: Unofficial returns as published by the sources below.
+sources:
+  sos:
+    title: Election Results — Tuesday, November 3, 2026 (100% of polling locations reporting; page updated 11/04/2026 4:59 PM)
+    publisher: Texas Secretary of State
+    url: https://electionresults.sos.state.tx.us/results.html
+  bell:
+    title: Bell County, Texas — November 3, 2026 Unofficial Results (last updated 11/4/2026 1:48:46 AM)
+    publisher: Bell County Elections Department
+    url: https://results.enr.clarityelections.com/TX/Bell/127475/
+races:
+- office: Texas Supreme Court, Chief Justice
+  group: sc
+  scope: Statewide
+  source: sos
+  unopposed: false
+  candidates:
+  - name: Jimmy Blacklock
+    party: R
+    votes: "4,625,886"
+    pct: 47.6
+    incumbent: true
+    winner: false
+    slug: jimmy_blacklock
+  - name: Maggie Ellis
+    party: D
+    votes: "5,102,288"
+    pct: 52.4
+    incumbent: false
+    winner: true
+    slug: maggie_ellis
+- office: Texas Supreme Court, Place 2 (unexpired term)
+  group: sc
+  scope: Statewide
+  source: sos
+  unopposed: false
+  candidates:
+  - name: James P. Sullivan
+    party: R
+    votes: "4,631,182"
+    pct: 47.7
+    incumbent: true
+    winner: false
+    slug: james_p_sullivan
+  - name: Chari Kelly
+    party: D
+    votes: "5,068,047"
+    pct: 52.3
+    incumbent: false
+    winner: true
+    slug: chari_kelly
+- office: Texas Supreme Court, Place 7
+  group: sc
+  scope: Statewide
+  source: sos
+  unopposed: false
+  candidates:
+  - name: Kyle Hawkins
+    party: R
+    votes: "4,572,758"
+    pct: 47.2
+    incumbent: true
+    winner: false
+    slug: kyle_hawkins
+  - name: Kristen Hawkins
+    party: D
+    votes: "5,112,073"
+    pct: 52.8
+    incumbent: false
+    winner: true
+    slug: kristen_hawkins
+- office: Texas Supreme Court, Place 8
+  group: sc
+  scope: Statewide
+  source: sos
+  unopposed: false
+  candidates:
+  - name: Brett Busby
+    party: R
+    votes: "4,643,375"
+    pct: 48.0
+    incumbent: true
+    winner: false
+    slug: brett_busby
+  - name: Gisela D. Triana
+    party: D
+    votes: "5,033,586"
+    pct: 52.0
+    incumbent: false
+    winner: true
+    slug: gisela_d_triana
+- office: Court of Criminal Appeals, Place 3
+  group: cca
+  scope: Statewide
+  source: sos
+  unopposed: false
+  candidates:
+  - name: Thomas Smith
+    party: R
+    votes: "4,601,878"
+    pct: 47.6
+    incumbent: false
+    winner: false
+    slug: thomas_smith
+  - name: Okey Anyiam
+    party: D
+    votes: "4,839,230"
+    pct: 50.0
+    incumbent: false
+    winner: true
+    slug: okey_anyiam
+  - name: Mark Ash
+    party: LIB
+    votes: "231,048"
+    pct: 2.4
+    incumbent: false
+    winner: false
+    slug: mark_ash
+- office: Court of Criminal Appeals, Place 4
+  group: cca
+  scope: Statewide
+  source: sos
+  unopposed: false
+  candidates:
+  - name: Kevin Patrick Yeary
+    party: R
+    votes: "4,659,299"
+    pct: 48.3
+    incumbent: true
+    winner: false
+    slug: kevin_patrick_yeary
+  - name: Audra Riley
+    party: D
+    votes: "4,996,898"
+    pct: 51.7
+    incumbent: false
+    winner: true
+    slug: audra_riley
+- office: Court of Criminal Appeals, Place 9
+  group: cca
+  scope: Statewide
+  source: sos
+  unopposed: false
+  candidates:
+  - name: John Messinger
+    party: R
+    votes: "4,602,681"
+    pct: 47.7
+    incumbent: false
+    winner: false
+    slug: john_messinger
+  - name: Holly Taylor
+    party: D
+    votes: "5,043,094"
+    pct: 52.3
+    incumbent: false
+    winner: true
+    slug: holly_taylor
+- office: Fifteenth Court of Appeals, Chief Justice
+  group: coa15
+  scope: Statewide
+  source: sos
+  unopposed: false
+  candidates:
+  - name: Scott Brister
+    party: R
+    votes: "4,636,992"
+    pct: 48.2
+    incumbent: true
+    winner: false
+    slug: scott_brister
+  - name: Jerry Zimmerer
+    party: D
+    votes: "4,985,001"
+    pct: 51.8
+    incumbent: false
+    winner: true
+    slug: jerry_zimmerer
+- office: Fifteenth Court of Appeals, Place 2
+  group: coa15
+  scope: Statewide
+  source: sos
+  unopposed: false
+  candidates:
+  - name: Scott K. Field
+    party: R
+    votes: "4,618,116"
+    pct: 48.0
+    incumbent: true
+    winner: false
+    slug: scott_k_field
+  - name: Tom Baker
+    party: D
+    votes: "4,998,619"
+    pct: 52.0
+    incumbent: false
+    winner: true
+    slug: tom_baker
+- office: Fifteenth Court of Appeals, Place 3
+  group: coa15
+  scope: Statewide
+  source: sos
+  unopposed: false
+  candidates:
+  - name: April Farris
+    party: R
+    votes: "4,654,820"
+    pct: 48.5
+    incumbent: true
+    winner: false
+    slug: april_farris
+  - name: Marc M. Meyer
+    party: D
+    votes: "4,950,446"
+    pct: 51.5
+    incumbent: false
+    winner: true
+    slug: marc_m_meyer
+- office: Third Court of Appeals, Chief Justice
+  group: coa3
+  scope: Third Court of Appeals District (24 counties)
+  source: sos
+  unopposed: false
+  candidates:
+  - name: Cory Liu
+    party: R
+    votes: "518,024"
+    pct: 40.6
+    incumbent: false
+    winner: false
+    slug: cory_liu
+  - name: Darlene Byrne
+    party: D
+    votes: "758,920"
+    pct: 59.4
+    incumbent: true
+    winner: true
+    slug: darlene_byrne
+- office: District Judge, 169th Judicial District
+  group: district
+  scope: Bell County
+  source: sos
+  unopposed: true
+  candidates:
+  - name: Cari Starritt-Burnett
+    party: R
+    votes: "70,347"
+    pct: 100.0
+    incumbent: true
+    winner: true
+    slug: cari_l_starritt_burnett
+- office: District Judge, 264th Judicial District
+  group: district
+  scope: Bell County
+  source: sos
+  unopposed: true
+  candidates:
+  - name: Paul L. LePak
+    party: R
+    votes: "70,102"
+    pct: 100.0
+    incumbent: true
+    winner: true
+    slug: paul_l_lepak
+- office: District Judge, 478th Judicial District
+  group: district
+  scope: Bell County
+  source: sos
+  unopposed: true
+  candidates:
+  - name: Wade Faulkner
+    party: R
+    votes: "69,125"
+    pct: 100.0
+    incumbent: true
+    winner: true
+    slug: wade_faulkner
+- office: U.S. Senator
+  group: nonjudicial
+  scope: Statewide
+  source: sos
+  unopposed: false
+  candidates:
+  - name: Ken Paxton
+    party: R
+    votes: "4,249,373"
+    pct: 43.0
+    incumbent: false
+    winner: false
+  - name: James Talarico
+    party: D
+    votes: "5,444,982"
+    pct: 55.1
+    incumbent: false
+    winner: true
+  - name: Ted Brown
+    party: LIB
+    votes: "190,237"
+    pct: 1.9
+    incumbent: false
+    winner: false
+- office: Governor
+  group: nonjudicial
+  scope: Statewide
+  source: sos
+  unopposed: false
+  candidates:
+  - name: Greg Abbott
+    party: R
+    votes: "4,524,527"
+    pct: 45.7
+    incumbent: true
+    winner: false
+    slug: greg_abbott
+  - name: Gina Hinojosa
+    party: D
+    votes: "5,230,789"
+    pct: 52.8
+    incumbent: false
+    winner: true
+    slug: gina_hinojosa
+  - name: Pat Dixon
+    party: LIB
+    votes: "148,078"
+    pct: 1.5
+    incumbent: false
+    winner: false
+- office: Lieutenant Governor
+  group: nonjudicial
+  scope: Statewide
+  source: sos
+  unopposed: false
+  candidates:
+  - name: Dan Patrick
+    party: R
+    votes: "4,484,652"
+    pct: 45.6
+    incumbent: true
+    winner: false
+  - name: Vikki Goodwin
+    party: D
+    votes: "5,083,581"
+    pct: 51.7
+    incumbent: false
+    winner: true
+  - name: Anthony Cristo
+    party: LIB
+    votes: "170,444"
+    pct: 1.7
+    incumbent: false
+    winner: false
+  - name: Kevin McCormick
+    party: G
+    votes: "88,033"
+    pct: 0.9
+    incumbent: false
+    winner: false
+- office: Attorney General
+  group: nonjudicial
+  scope: Statewide
+  source: sos
+  unopposed: false
+  candidates:
+  - name: Mayes Middleton
+    party: R
+    votes: "4,502,442"
+    pct: 45.9
+    incumbent: false
+    winner: false
+    slug: mayes_middleton
+  - name: Nathan Johnson
+    party: D
+    votes: "5,133,629"
+    pct: 52.4
+    incumbent: false
+    winner: true
+    slug: nathan_johnson
+  - name: Tom Oxford
+    party: LIB
+    votes: "165,550"
+    pct: 1.7
+    incumbent: false
+    winner: false
+    slug: tom_oxford
+- office: Comptroller of Public Accounts
+  group: nonjudicial
+  scope: Statewide
+  source: sos
+  unopposed: false
+  candidates:
+  - name: Don Huffines
+    party: R
+    votes: "4,511,185"
+    pct: 46.2
+    incumbent: false
+    winner: false
+  - name: Sarah Eckhardt
+    party: D
+    votes: "5,014,496"
+    pct: 51.3
+    incumbent: false
+    winner: true
+    slug: sarah_eckhardt
+  - name: V. Alonzo Echavarria-Garza
+    party: LIB
+    votes: "185,187"
+    pct: 1.9
+    incumbent: false
+    winner: false
+  - name: Shehla Faizi
+    party: G
+    votes: "63,817"
+    pct: 0.7
+    incumbent: false
+    winner: false
+- office: Commissioner of the General Land Office
+  group: nonjudicial
+  scope: Statewide
+  source: sos
+  unopposed: false
+  candidates:
+  - name: Dawn Buckingham
+    party: R
+    votes: "4,576,883"
+    pct: 47.0
+    incumbent: true
+    winner: false
+  - name: Benjamin Flores
+    party: D
+    votes: "5,014,714"
+    pct: 51.4
+    incumbent: false
+    winner: true
+  - name: Neill Snider
+    party: LIB
+    votes: "155,408"
+    pct: 1.6
+    incumbent: false
+    winner: false
+- office: Commissioner of Agriculture
+  group: nonjudicial
+  scope: Statewide
+  source: sos
+  unopposed: false
+  candidates:
+  - name: Nate Sheets
+    party: R
+    votes: "4,538,736"
+    pct: 46.6
+    incumbent: false
+    winner: false
+  - name: Clayton Tucker
+    party: D
+    votes: "4,991,896"
+    pct: 51.3
+    incumbent: false
+    winner: true
+  - name: Austin R. Kelly
+    party: LIB
+    votes: "199,024"
+    pct: 2.0
+    incumbent: false
+    winner: false
+- office: Railroad Commissioner
+  group: nonjudicial
+  scope: Statewide
+  source: sos
+  unopposed: false
+  candidates:
+  - name: Bo French
+    party: R
+    votes: "4,426,141"
+    pct: 45.5
+    incumbent: false
+    winner: false
+  - name: Jon Rosenthal
+    party: D
+    votes: "5,103,177"
+    pct: 52.5
+    incumbent: false
+    winner: true
+  - name: Arthur DiBianca
+    party: LIB
+    votes: "187,984"
+    pct: 1.9
+    incumbent: false
+    winner: false
+- office: U.S. Representative, District 31
+  group: nonjudicial
+  scope: District
+  source: sos
+  unopposed: false
+  candidates:
+  - name: John Carter
+    party: R
+    votes: "164,012"
+    pct: 53.8
+    incumbent: true
+    winner: true
+    slug: john_carter
+  - name: Justin Early
+    party: D
+    votes: "136,734"
+    pct: 44.8
+    incumbent: false
+    winner: false
+  - name: Greg Stoker
+    party: G
+    votes: "4,227"
+    pct: 1.4
+    incumbent: false
+    winner: false
+- office: U.S. Representative, District 17
+  group: nonjudicial
+  scope: District
+  source: sos
+  unopposed: false
+  candidates:
+  - name: Pete Sessions
+    party: R
+    votes: "143,524"
+    pct: 53.6
+    incumbent: true
+    winner: true
+  - name: Casey Shepard
+    party: D
+    votes: "124,433"
+    pct: 46.4
+    incumbent: false
+    winner: false
+- office: State Senator, District 24
+  group: nonjudicial
+  scope: District
+  source: sos
+  unopposed: false
+  candidates:
+  - name: Pete Flores
+    party: R
+    votes: "192,054"
+    pct: 56.6
+    incumbent: true
+    winner: true
+    slug: pete_flores
+  - name: Joe Paz Herrera
+    party: D
+    votes: "147,026"
+    pct: 43.4
+    incumbent: false
+    winner: false
+- office: State Representative, District 54
+  group: nonjudicial
+  scope: District
+  source: sos
+  unopposed: false
+  candidates:
+  - name: Brad Buckley
+    party: R
+    votes: "26,146"
+    pct: 53.9
+    incumbent: true
+    winner: true
+    slug: brad_buckley
+  - name: Dawn Richardson
+    party: D
+    votes: "22,372"
+    pct: 46.1
+    incumbent: false
+    winner: false
+- office: State Representative, District 55
+  group: nonjudicial
+  scope: District
+  source: sos
+  unopposed: false
+  candidates:
+  - name: Hillary Hickland
+    party: R
+    votes: "29,959"
+    pct: 49.7
+    incumbent: true
+    winner: false
+  - name: Amelia Rabroker
+    party: D
+    votes: "30,378"
+    pct: 50.3
+    incumbent: false
+    winner: true
+- office: County Judge
+  group: county_judge
+  scope: Bell County
+  source: bell
+  reporting: 71/72
+  unopposed: true
+  candidates:
+  - name: David Blackburn
+    party: R
+    votes: "71,105"
+    pct: 100.0
+    winner: true
+    incumbent: true
+    slug: david_blackburn
+- office: Judge, County Court at Law No. 1
+  group: county
+  scope: Bell County
+  source: bell
+  reporting: 71/72
+  unopposed: true
+  candidates:
+  - name: Paul Motz
+    party: R
+    votes: "69,570"
+    pct: 100.0
+    winner: true
+    incumbent: true
+    slug: paul_a_motz
+- office: Judge, County Court at Law No. 2
+  group: county
+  scope: Bell County
+  source: bell
+  reporting: 71/72
+  unopposed: true
+  candidates:
+  - name: John Mischtian
+    party: R
+    votes: "69,779"
+    pct: 100.0
+    winner: true
+    incumbent: true
+    slug: john_mischtian
+- office: Judge, County Court at Law No. 3
+  group: county
+  scope: Bell County
+  source: bell
+  reporting: 71/72
+  unopposed: true
+  candidates:
+  - name: John Gauntt, Jr.
+    party: R
+    votes: "69,939"
+    pct: 100.0
+    winner: true
+    slug: john_gauntt_jr
+- office: Justice of the Peace, Precinct 1
+  group: jp
+  scope: Bell County
+  source: bell
+  reporting: 14/14
+  unopposed: true
+  candidates:
+  - name: Patrick "Pat" Patterson
+    party: R
+    votes: "18,652"
+    pct: 100.0
+    winner: true
+    slug: patrick_pat_patterson
+- office: Justice of the Peace, Precinct 2
+  group: jp
+  scope: Bell County
+  source: bell
+  reporting: 5/5
+  unopposed: true
+  candidates:
+  - name: Michael Tice
+    party: R
+    votes: "6,778"
+    pct: 100.0
+    winner: true
+    incumbent: true
+    slug: michael_tice
+- office: Justice of the Peace, Precinct 3, Place 2
+  group: jp
+  scope: Bell County
+  source: bell
+  reporting: 17/17
+  unopposed: true
+  candidates:
+  - name: Larry Wilkey
+    party: R
+    votes: "17,081"
+    pct: 100.0
+    winner: true
+    incumbent: true
+    slug: larry_wilkey
+- office: Justice of the Peace, Precinct 4, Place 2
+  group: jp
+  scope: Bell County
+  source: bell
+  reporting: 35/36
+  unopposed: false
+  candidates:
+  - name: Jessica A. Gonzalez
+    party: D
+    votes: "31,485"
+    pct: 62.9
+    winner: true
+    slug: jessica_a_gonzalez
+  - name: Beatrice "Bea" Cox
+    party: R
+    votes: "18,588"
+    pct: 37.1
+    winner: false
+    slug: beatrice_bea_cox
+- office: District Clerk
+  group: clerk
+  scope: Bell County
+  source: bell
+  reporting: 71/72
+  unopposed: true
+  candidates:
+  - name: Lacey Martindale
+    party: R
+    votes: "70,003"
+    pct: 100.0
+    winner: true
+- office: County Clerk
+  group: clerk
+  scope: Bell County
+  source: bell
+  reporting: 71/72
+  unopposed: true
+  candidates:
+  - name: Shelley Coston
+    party: R
+    votes: "70,579"
+    pct: 100.0
+    winner: true
+- office: County Treasurer
+  group: nonjudicial
+  scope: Bell County
+  source: bell
+  reporting: 71/72
+  unopposed: true
+  candidates:
+  - name: Adriane Hodges
+    party: R
+    votes: "70,456"
+    pct: 100.0
+    winner: true
+- office: County Commissioner, Precinct 2
+  group: nonjudicial
+  scope: Bell County
+  source: bell
+  reporting: 18/18
+  unopposed: false
+  candidates:
+  - name: Stacey L. Wilson
+    party: D
+    votes: "15,958"
+    pct: 53.8
+    winner: true
+  - name: Bobby Whitson
+    party: R
+    votes: "13,724"
+    pct: 46.2
+    winner: false
+    incumbent: true
+    slug: bobby_whitson
+- office: County Commissioner, Precinct 4
+  group: nonjudicial
+  scope: Bell County
+  source: bell
+  reporting: 14/14
+  unopposed: false
+  candidates:
+  - name: Ernest Wilkerson
+    party: D
+    votes: "12,909"
+    pct: 66.5
+    winner: true
+  - name: Curtis Emmons
+    party: R
+    votes: "6,511"
+    pct: 33.5
+    winner: false
+- office: Bell County Hospital Services District, Proposition A
+  group: measure
+  scope: Bell County
+  source: bell
+  reporting: 71/72
+  unopposed: false
+  measure: true
+  candidates:
+  - name: For
+    party: —
+    votes: "20,476"
+    pct: 19.4
+    winner: false
+  - name: Against
+    party: —
+    votes: "85,232"
+    pct: 80.6
+    winner: true
+- office: City of Killeen, Proposition A
+  group: killeen
+  scope: Bell County
+  source: bell
+  reporting: 30/31
+  unopposed: false
+  measure: true
+  candidates:
+  - name: For
+    party: —
+    votes: "22,802"
+    pct: 71.9
+    winner: true
+  - name: Against
+    party: —
+    votes: "8,898"
+    pct: 28.1
+    winner: false
+- office: City of Killeen, Proposition B
+  group: killeen
+  scope: Bell County
+  source: bell
+  reporting: 30/31
+  unopposed: false
+  measure: true
+  candidates:
+  - name: For
+    party: —
+    votes: "19,319"
+    pct: 62.4
+    winner: true
+  - name: Against
+    party: —
+    votes: "11,631"
+    pct: 37.6
+    winner: false
+- office: City of Killeen, Proposition C
+  group: killeen
+  scope: Bell County
+  source: bell
+  reporting: 30/31
+  unopposed: false
+  measure: true
+  candidates:
+  - name: For
+    party: —
+    votes: "21,129"
+    pct: 68.5
+    winner: true
+  - name: Against
+    party: —
+    votes: "9,713"
+    pct: 31.5
+    winner: false
+- office: City of Killeen, Proposition D
+  group: killeen
+  scope: Bell County
+  source: bell
+  reporting: 30/31
+  unopposed: false
+  measure: true
+  candidates:
+  - name: For
+    party: —
+    votes: "21,278"
+    pct: 69.7
+    winner: true
+  - name: Against
+    party: —
+    votes: "9,247"
+    pct: 30.3
+    winner: false
+- office: City of Killeen, Proposition E
+  group: killeen
+  scope: Bell County
+  source: bell
+  reporting: 30/31
+  unopposed: false
+  measure: true
+  candidates:
+  - name: For
+    party: —
+    votes: "22,826"
+    pct: 74.5
+    winner: true
+  - name: Against
+    party: —
+    votes: "7,813"
+    pct: 25.5
+    winner: false
+- office: City of Killeen, Proposition F
+  group: killeen
+  scope: Bell County
+  source: bell
+  reporting: 30/31
+  unopposed: false
+  measure: true
+  candidates:
+  - name: For
+    party: —
+    votes: "24,355"
+    pct: 79.6
+    winner: true
+  - name: Against
+    party: —
+    votes: "6,256"
+    pct: 20.4
+    winner: false
+- office: City of Killeen, Proposition G
+  group: killeen
+  scope: Bell County
+  source: bell
+  reporting: 30/31
+  unopposed: false
+  measure: true
+  candidates:
+  - name: For
+    party: —
+    votes: "23,695"
+    pct: 77.6
+    winner: true
+  - name: Against
+    party: —
+    votes: "6,829"
+    pct: 22.4
+    winner: false
+- office: City of Killeen, Proposition H
+  group: killeen
+  scope: Bell County
+  source: bell
+  reporting: 30/31
+  unopposed: false
+  measure: true
+  candidates:
+  - name: For
+    party: —
+    votes: "24,907"
+    pct: 80.9
+    winner: true
+  - name: Against
+    party: —
+    votes: "5,881"
+    pct: 19.1
+    winner: false
+- office: Bell County Appraisal District Board, Place 1
+  group: cad
+  scope: Bell County
+  source: bell
+  reporting: 71/72
+  unopposed: true
+  candidates:
+  - name: Kevin Koch
+    party: Nonpartisan
+    votes: "66,689"
+    pct: 100.0
+    winner: true
+- office: Bell County Appraisal District Board, Place 2
+  group: cad
+  scope: Bell County
+  source: bell
+  reporting: 71/72
+  unopposed: false
+  candidates:
+  - name: James Butts
+    party: Nonpartisan
+    votes: "30,788"
+    pct: 41.8
+    winner: false
+    runoff: true
+  - name: Gwendolyn Everett
+    party: Nonpartisan
+    votes: "26,839"
+    pct: 36.4
+    winner: false
+    runoff: true
+  - name: Paul Strang
+    party: Nonpartisan
+    votes: "16,020"
+    pct: 21.8
+    winner: false
+    runoff: false
+  runoff: true
+  note: No candidate won a majority; James Butts and Gwendolyn Everett advance to a runoff (Killeen Daily Herald, Nov. 5, 2026).
+  note_url: https://kdhnews.com/news/region/bell-county-voters-deny-three-property-tax-measures-two-gop-seats-flip-one-race-headed/article_92fa86ea-909f-53ca-acc9-17a2a7bb64ee.html
+- office: Bell County Appraisal District Board, Place 3
+  group: cad
+  scope: Bell County
+  source: bell
+  reporting: 71/72
+  unopposed: false
+  candidates:
+  - name: Charles Wilson
+    party: Nonpartisan
+    votes: "41,852"
+    pct: 56.8
+    winner: true
+  - name: Cheyenne Minick
+    party: Nonpartisan
+    votes: "31,810"
+    pct: 43.2
+    winner: false

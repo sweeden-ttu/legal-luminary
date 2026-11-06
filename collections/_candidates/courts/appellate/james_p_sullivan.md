@@ -11,7 +11,7 @@ candidate_slug: james_p_sullivan
 headshot: null
 election_status: general_2026
 office_up_for_election: true
-listing_status: Incumbent (R)
+listing_status: "Incumbent (R); lost Nov. 3, 2026 (unofficial)"
 court_group: sc
 seat: Place 2 (unexpired term)
 ballot_order: 3
@@ -20,7 +20,9 @@ profile_summary: |
   James P. Sullivan was appointed to the Texas Supreme Court by Gov. Greg Abbott in 2025 ([Ballotpedia](https://ballotpedia.org/Texas_Supreme_Court_elections,_2026)). He grew up in Austin, clerked on the U.S. Court of Appeals for the D.C. Circuit, served as an assistant solicitor general of Texas and practiced as an appellate litigator ([Office of the Governor](https://gov.texas.gov/news/post/governor-abbott-appoints-blacklock-as-chief-justice-sullivan-as-justice-of-the-supreme-court-of-texas); [San Antonio Report](https://sanantonioreport.org/voter-guide-meet-the-judicial-candidates-on-the-nov-3-ballot/)).
 
 
-  **On the Nov. 3, 2026 ballot:** Texas Supreme Court, Place 2 (unexpired term). Incumbent; appointed by Gov. Greg Abbott in 2025. The seat is on the ballot for the remainder of an unexpired term. Also running: Chari Kelly (D) ([Nov. 3 ballot guide](/nov-3-2026-ballot-guide/)).
+  **On the Nov. 3, 2026 ballot:** Texas Supreme Court, Place 2 (unexpired term). Incumbent; appointed by Gov. Greg Abbott in 2025. The seat is on the ballot for the remainder of an unexpired term. Opponent on the ballot: Chari Kelly (D) ([Nov. 3 ballot guide](/nov-3-2026-ballot-guide/)).
+
+  **Nov. 3, 2026 result:** James P. Sullivan lost the race for Texas Supreme Court, Place 2 (unexpired term) with 4,631,182 votes (47.7%); opponent: Chari Kelly (D) 5,068,047 (52.3%), in unofficial returns ([Texas Secretary of State](https://electionresults.sos.state.tx.us/results.html); [The Texas Tribune](https://www.texastribune.org/2026/11/04/texas-supreme-court-criminal-appeals-results-elections-2026/)).
 sources:
 - title: Texas Supreme Court elections, 2026
   publisher: Ballotpedia
@@ -41,8 +43,8 @@ sources:
   url: /nov-3-2026-ballot-guide/
   accessed: 2026-11-03
 credentials: |
-  **Candidate**
+  **2026 general election**
 
-  - Texas Supreme Court, Place 2 (unexpired term) (Republican), 2026 general election ([Nov. 3 ballot guide](/nov-3-2026-ballot-guide/))
+  - Texas Supreme Court, Place 2 (unexpired term) (Republican), 2026 general election ([Nov. 3 ballot guide](/nov-3-2026-ballot-guide/)) — lost (unofficial returns; [Texas Secretary of State](https://electionresults.sos.state.tx.us/results.html))
 ---
-James P. Sullivan is the Republican incumbent for Texas Supreme Court, Place 2 (unexpired term) on the November 3, 2026 ballot. ([Nov. 3 ballot guide](/nov-3-2026-ballot-guide/))
+James P. Sullivan was the Republican incumbent for Texas Supreme Court, Place 2 (unexpired term) on the November 3, 2026 ballot ([Nov. 3 ballot guide](/nov-3-2026-ballot-guide/)) and lost, according to unofficial returns ([Texas Secretary of State](https://electionresults.sos.state.tx.us/results.html)).

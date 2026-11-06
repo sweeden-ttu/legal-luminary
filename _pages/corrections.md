@@ -58,6 +58,27 @@ Every registry entry uses the same structure so readers and auditors can scan co
 
 ---
 
+## VV-2026-002 — Ballot guide: Bell County Appraisal District board listed as having no candidates
+
+<dl>
+  <dt>ID</dt>
+  <dd><code>VV-2026-002</code></dd>
+  <dt>Dates</dt>
+  <dd><strong>Discovered and corrected:</strong> November 6, 2026.</dd>
+  <dt>Surface</dt>
+  <dd>The <a href="/nov-3-2026-ballot-guide/">Nov. 3, 2026 ballot guide</a>, "Other races on the Killeen ballot."</dd>
+  <dt>Error</dt>
+  <dd>The guide said the Bell County Appraisal District board races, Places 1–3, had no candidates. The county's results list Kevin Koch for Place 1, three candidates for Place 2 and two for Place 3 (<a href="https://results.enr.clarityelections.com/TX/Bell/127475/">Bell County Elections, unofficial results</a>).</dd>
+  <dt>Correction</dt>
+  <dd>The guide now shows the candidates and unofficial results for all three places, including the Place 2 runoff between James Butts and Gwendolyn Everett (<a href="https://kdhnews.com/news/region/bell-county-voters-deny-three-property-tax-measures-two-gop-seats-flip-one-race-headed/article_92fa86ea-909f-53ca-acc9-17a2a7bb64ee.html">Killeen Daily Herald</a>).</dd>
+  <dt>Root cause (V&amp;V)</dt>
+  <dd>The line was published without being checked against a source that lists the board candidates.</dd>
+  <dt>Remediation</dt>
+  <dd>Race lists are now driven from one results data file (<code>_data/results_2026_general.yml</code>) built from the county's and the Secretary of State's published returns.</dd>
+</dl>
+
+---
+
 ## Why this matters (context)
 
 Accurate <strong>incumbent versus candidate</strong> labeling helps voters and researchers. Mistakes in that distinction undermine trust in civic information—especially where residents rely on clear, verified officeholder data.

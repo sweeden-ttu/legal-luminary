@@ -8,27 +8,36 @@
       "title": "Justice of the Peace Gregory Johnson to kick off re-election campaign in downtown Killeen",
       "domain": "kdhnews.com",
       "outlet": "Killeen Daily Herald",
-      "excerpt": "Johnson, a Democrat first elected in 2020 and a former two-term Killeen City Council member, launched his 2024 re-election campaign (July 25, 2024).",
+      "excerpt": "A Democrat, he was first elected to the bench in 2020 after serving two terms on the Killeen City Council (Killeen Daily Herald).",
       "confidence": "high",
-      "field": "news_coverage"
+      "field": "cited_in_profile"
     },
     {
       "url": "https://kdhnews.com/centerforpolitics/judge-johnson-wins-reelection-in-jp-race/article_d79de508-9bf6-11ef-a584-8f4137e0702c.html",
       "title": "Judge Johnson wins re-election in JP race",
       "domain": "kdhnews.com",
       "outlet": "Killeen Daily Herald",
-      "excerpt": "Johnson won re-election to Precinct 4, Place 1 on Nov. 5, 2024 with about 57.5 percent of the vote.",
+      "excerpt": "2024 election: Johnson won re-election on Nov. 5, 2024 over Republican Jonathan Okray, a former Killeen councilman; with about 91% of votes reported, Johnson had 28,884 votes (57.5%) to Okray's 21,311 (42.5%) (KDH).",
       "confidence": "high",
-      "field": "news_coverage"
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://kdhnews.com/news/local/bell-county-voters-to-decide-on-new-sheriff-judge-and-da/article_2e1122b0-cdc6-11ee-a292-4f44a95d2ade.html",
+      "title": "Bell County Voters to Decide on New Sheriff Judge and Da",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "Neither candidate faced primary opposition in March 2024 (KDH).",
+      "confidence": "high",
+      "field": "cited_in_profile"
     },
     {
       "url": "https://kdhnews.com/news/region/bell-county-rings-in-new-year-by-swearing-in-elected-officials/article_878b3459-1a41-52ae-8110-9a069837be02.html",
       "title": "Bell County rings in new year by swearing in elected officials",
       "domain": "kdhnews.com",
       "outlet": "Killeen Daily Herald",
-      "excerpt": "Johnson was sworn in for a new four-year term on Jan. 1, 2025.",
+      "excerpt": "He was sworn in with other county officials in January 2025 (KDH).",
       "confidence": "high",
-      "field": "news_coverage"
+      "field": "cited_in_profile"
     }
   ]
 }

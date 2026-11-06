@@ -1,8 +1,8 @@
 ---
 layout: default
 permalink: /texas-ag-race-26/nathan-johnson/
-title: "Nathan Johnson (D) — Texas Attorney General 2026 General Election | Legal Luminary"
-description: "Nathan Johnson, Democratic nominee for Texas Attorney General, November 3, 2026. Record, background and sources. Informational, nonpartisan."
+title: "Nathan Johnson (D) — Elected Texas Attorney General, Nov. 3, 2026 | Legal Luminary"
+description: "Nathan Johnson, Democratic nominee who won the November 3, 2026 election for Texas Attorney General (unofficial returns). Record, background and sources. Informational, nonpartisan."
 image: https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/100/100/Nathan_Johnson_20230724_022433.jpg
 robots: index,follow
 date: 2026-10-12
@@ -50,9 +50,14 @@ sources:
   accessed: 2026-11-03
 ---
 
-# Nathan Johnson — Democratic nominee for Texas Attorney General
+# Nathan Johnson — Democratic nominee, elected Texas Attorney General
 
-**Nathan Johnson** (Democrat) is a Texas state senator from Dallas (District 16) ([Texas Senate](https://senate.texas.gov/member.php?d=16)) and the Democratic nominee for Attorney General in the **November 3, 2026** general election, where he faces Republican Mayes Middleton and Libertarian Tom Oxford ([Ballotpedia](https://ballotpedia.org/Texas_Attorney_General_election,_2026)). He won the May 26 runoff over former Galveston mayor Joe Jaworski, 60.5% to 39.5% ([Ballotpedia](https://ballotpedia.org/Texas_Attorney_General_election,_2026); [KUT](https://www.kut.org/politics/2026-05-26/democrat-nathan-johnson-to-run-against-republican-mayes-middleton-for-texas-ag-in-november-election)). This page is informational only and does not endorse any candidate.
+**Nathan Johnson** (Democrat) is a Texas state senator from Dallas (District 16) ([Texas Senate](https://senate.texas.gov/member.php?d=16)) and was the Democratic nominee for Attorney General in the **November 3, 2026** general election against Republican Mayes Middleton and Libertarian Tom Oxford ([Ballotpedia](https://ballotpedia.org/Texas_Attorney_General_election,_2026)). He won the general election with 5,133,629 votes to Middleton's 4,502,442, according to unofficial statewide returns ([Texas Secretary of State](https://electionresults.sos.state.tx.us/results.html)). He won the May 26 runoff over former Galveston mayor Joe Jaworski, 60.5% to 39.5% ([Ballotpedia](https://ballotpedia.org/Texas_Attorney_General_election,_2026); [KUT](https://www.kut.org/politics/2026-05-26/democrat-nathan-johnson-to-run-against-republican-mayes-middleton-for-texas-ag-in-november-election)). This page is informational only and does not endorse any candidate.
+
+## November 3, 2026 result
+
+{% assign ag = site.data.results_2026_general.races | where: "office", "Attorney General" | first %}
+{% include race-result.html race=ag %}
 
 ## Background
 
@@ -76,7 +81,6 @@ $290,566 cash on hand and $978,427 raised from January 1 to June 30, 2026; his l
 - [Nathan Johnson (D)](/texas-ag-race-26/nathan-johnson/)
 - [Tom Oxford (L)](/texas-ag-race-26/tom-oxford/)
 - Primary-season profiles: [Chip Roy (R)](/texas-ag-race-26/chip-roy/), [Joe Jaworski (D)](/texas-ag-race-26/joe-jaworski/)
-- [Candidates hub (all races)](/candidates/)
 
 ## Why this race matters in Killeen and Bell County
 
@@ -84,6 +88,7 @@ The Attorney General's office defends state agencies and statutes in court, enfo
 
 ## Sources and further reading
 
+- [Election Results, Nov. 3, 2026 — Texas Secretary of State](https://electionresults.sos.state.tx.us/results.html)
 - [2026 Texas attorney general race: Who is running and what to know — Texas Tribune, Oct. 5, 2026](https://www.texastribune.org/2026/10/05/texas-attorney-general-election-2026-candidates-mayes-middleton-nathan-johnson-tom-oxford/)
 - [Texas AG runoff results — KUT, May 26, 2026](https://www.kut.org/politics/2026-05-26/democrat-nathan-johnson-to-run-against-republican-mayes-middleton-for-texas-ag-in-november-election)
 - [Texas Attorney General election, 2026 — Ballotpedia](https://ballotpedia.org/Texas_Attorney_General_election,_2026)

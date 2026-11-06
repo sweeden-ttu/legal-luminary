@@ -1,0 +1,16 @@
+{%- comment -%}
+One race from _data/results_2026_general.yml as a table.
+Parameters: race — a race object from site.data.results_2026_general.races
+{%- endcomment -%}
+{%- assign r = include.race -%}
+{%- assign src = site.data.results_2026_general.sources[r.source] -%}
+<div class="table-responsive"><table class="bench-table race-result">
+<caption>{{ r.office }}{% if r.reporting %} — {{ r.reporting | split: "/" | first }} of {{ r.reporting | split: "/" | last }} precincts reporting{% endif %}</caption>
+<thead><tr><th scope="col">{% if r.measure %}Choice{% else %}Candidate{% endif %}</th><th scope="col">{% if r.measure %}&nbsp;{% else %}Party{% endif %}</th><th scope="col">Votes</th><th scope="col">Share</th><th scope="col">Result</th></tr></thead><tbody>
+{%- for c in r.candidates -%}
+<tr><td>{% if c.slug %}{% assign p = site.candidates | where: "candidate_slug", c.slug | first %}{% endif %}{% if p %}<strong><a href="{{ p.url | relative_url }}">{{ c.name }}</a></strong>{% else %}<strong>{{ c.name }}</strong>{% endif %}{% if c.incumbent %} (incumbent){% endif %}</td><td>{{ c.party }}</td><td>{{ c.votes }}</td><td>{% if r.unopposed %}Unopposed{% else %}{{ c.pct }}%{% endif %}</td><td>{% if r.measure %}{% if c.winner %}<strong>Prevailed</strong>{% endif %}{% elsif c.runoff %}<strong>Runoff</strong>{% elsif r.runoff %}Eliminated{% elsif c.winner %}<strong>Won</strong>{% else %}Lost{% endif %}</td></tr>
+{%- assign p = nil -%}
+{%- endfor -%}
+</tbody></table></div>
+{% if r.note %}<p><small>{{ r.note }}{% if r.note_url %} (<a href="{{ r.note_url }}" target="_blank" rel="noopener noreferrer">source</a>){% endif %}</small></p>{% endif %}
+<p class="race-result__source"><small>Unofficial returns: <a href="{{ src.url }}" target="_blank" rel="noopener noreferrer">{{ src.publisher }} — {{ src.title }}</a>. Shares are each candidate's votes divided by all votes cast in the race.</small></p>

@@ -8,7 +8,16 @@
       "title": "Voter Guide Meet the Judicial Candidates on the Nov Ballot",
       "domain": "sanantonioreport.org",
       "outlet": "San Antonio Report",
-      "excerpt": "profilesummary: 'Holly Taylor is a criminal defense attorney who spent more than 17 years as a prosecutor (San Antonio Report).",
+      "excerpt": "Holly Taylor is a criminal defense attorney who spent more than 17 years as a prosecutor (San Antonio Report).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://www.texastribune.org/2026/11/04/texas-supreme-court-criminal-appeals-results-elections-2026/",
+      "title": "Texas Supreme Court Criminal Appeals Results Elections",
+      "domain": "texastribune.org",
+      "outlet": "The Texas Tribune",
+      "excerpt": "Nov. 3, 2026 result: Holly Taylor won the race for Court of Criminal Appeals, Place 9 with 5,043,094 votes (52.3%); opponent: John Messinger (R) 4,602,681 (47.7%), in unofficial returns (Texas Secretary of State; The Texas Tribune).",
       "confidence": "high",
       "field": "cited_in_profile"
     }

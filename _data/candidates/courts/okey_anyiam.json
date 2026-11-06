@@ -8,7 +8,16 @@
       "title": "Voter Guide Meet the Judicial Candidates on the Nov Ballot",
       "domain": "sanantonioreport.org",
       "outlet": "San Antonio Report",
-      "excerpt": "profilesummary: 'Okey Anyiam is a Dallas criminal defense lawyer licensed to practice law since 1997 (San Antonio Report).",
+      "excerpt": "Okey Anyiam is a Dallas criminal defense lawyer licensed to practice law since 1997 (San Antonio Report).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://www.texastribune.org/2026/11/04/texas-supreme-court-criminal-appeals-results-elections-2026/",
+      "title": "Texas Supreme Court Criminal Appeals Results Elections",
+      "domain": "texastribune.org",
+      "outlet": "The Texas Tribune",
+      "excerpt": "Nov. 3, 2026 result: Okey Anyiam won the race for Court of Criminal Appeals, Place 3 with 4,839,230 votes (50.0%); opponents: Thomas Smith (R) 4,601,878 (47.6%), Mark Ash (LIB) 231,048 (2.4%), in unofficial returns (Texas Secretary of State; The Texas Tribune).",
       "confidence": "high",
       "field": "cited_in_profile"
     }

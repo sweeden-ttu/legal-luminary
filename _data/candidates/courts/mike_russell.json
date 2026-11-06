@@ -1,0 +1,43 @@
+{
+  "candidate_slug": "mike_russell",
+  "name": "Mike Russell",
+  "city": "courts",
+  "articles": [
+    {
+      "url": "https://kdhnews.com/news/region/races-for-2-district-judges-jp-contested/article_fcc92fbd-549f-5159-907b-a94803067722.html",
+      "title": "Races for District Judges JP Contested",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "A Temple lawyer, he announced his candidacy for the open seat at an August 2023 campaign kickoff, describing a practice that covered civil matters including contracts, personal injury, trusts and estates, torts, real estate, employment and family law (Killeen Daily Herald).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://kdhnews.com/news/region/voters-decide-on-2-bell-county-judges-while-jp-race-heads-to-runoff/article_bf4a1afd-18f2-5739-8519-fae866590517.html",
+      "title": "Voters Decide on Bell County Judges While JP Race Heads to Runoff",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "In the March 5, 2024 Republican primary he led Ashley Clapper Bennett with about 63% of the vote in election-night returns, and he said his Child Protective Services experience would apply to the CPS cases heard by the 146th (KDH).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://kdhnews.com/news/region/retiring-bell-county-judges-jones-gauntt-recognized/article_933979a8-2023-5696-8ade-192f7af585a4.html",
+      "title": "Retiring Bell County Judges Jones Gauntt Recognized",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "He took office Jan. 2, 2025, succeeding Judge Jack Jones, who retired Dec. 31, 2024 (KDH).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://kdhnews.com/news/region/bell-county-rings-in-new-year-by-swearing-in-elected-officials/article_878b3459-1a41-52ae-8110-9a069837be02.html",
+      "title": "Bell County Rings in New Year by Swearing in Elected Officials",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "He was among the county officials sworn in at the Bell County Justice Center at the start of 2025, with a Bell County Bar Association investiture set for Jan. 10 (KDH).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    }
+  ]
+}

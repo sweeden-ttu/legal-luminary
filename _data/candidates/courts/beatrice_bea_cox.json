@@ -4,11 +4,47 @@
   "city": "courts",
   "articles": [
     {
+      "url": "https://kdhnews.com/centerforpolitics/jp-for-killeen-quarles-gonzalez-head-to-runoff-election-as-incumbent-finishes-3rd/article_baed7726-ac7b-42e9-bfc8-1a9515ac424c.html",
+      "title": "JP for Killeen Quarles Gonzalez Head to Runoff Election as Incumbent Finishes 3rd",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "She was unopposed in the March 3, 2026 Republican primary (Killeen Daily Herald) and faced Democrat Jessica A.",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://kdhnews.com/centerforpolitics/gonzalez-a-killeen-councilwoman-wins-democratic-jp-primary-runoff/article_86fc56ce-ab7a-4d23-8bdc-d4b7b1a1bf86.html",
+      "title": "Gonzalez a Killeen Councilwoman Wins Democratic JP Primary Runoff",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "Gonzalez, who won the May 26 Democratic runoff (KDH).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
       "url": "https://kdhnews.com/centerforpolitics/cox-and-gonzalez-participate-in-justice-of-the-peace-forum-ahead-of-nov-3-election/article_f3226aea-4314-4639-9f1d-804bfbe9c839.html",
       "title": "Cox and Gonzalez participate in Justice of the Peace forum ahead of Nov. 3 election",
       "domain": "kdhnews.com",
       "outlet": "Killeen Daily Herald",
-      "excerpt": "At an Oct. 7, 2026 candidate forum, she said she worked in the JP office for more than two decades, including many years for longtime Justice of the Peace Bill Cooke, now Bell County sheriff (Killeen Daily Herald).",
+      "excerpt": "At an Oct. 7, 2026 candidate forum hosted by the Herald, she said she worked in the justice of the peace office for more than two decades, including many years under longtime JP Bill Cooke, now Bell County sheriff, and that she grew up in the Killeen area after her father served in the military (KDH",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://kdhnews.com/news/local/killeen-mayor-pro-tem-jessica-gonzalez-steamrolls-to-victory-in-bell-county-jp-race/article_a4e03829-e513-4185-a9c0-547fe8c4823e.html",
+      "title": "Killeen Mayor Pro Tem Jessica Gonzalez Steamrolls to Victory in Bell County JP Race",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "Gonzalez (D) 31,485 (62.9%), in unofficial returns (Bell County Elections; Killeen Daily Herald; [Killeen Daily Herald](https://kdhnews.",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://kdhnews.com/centerforpolitics/here-s-a-rundown-of-area-election-results-from-tuesday-night/article_61b4fae6-2d44-4b71-a8c9-cca408c33344.html",
+      "title": "Here S a Rundown of Area Election Results from Tuesday Night",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "Gonzalez (D) 31,485 (62.9%), in unofficial returns (Bell County Elections; Killeen Daily Herald; Killeen Daily Herald).",
       "confidence": "high",
       "field": "cited_in_profile"
     }

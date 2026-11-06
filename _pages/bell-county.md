@@ -97,7 +97,7 @@ This page lists the state and county courts that sit in Bell County, Texas, whic
 <th scope="row"><a href="{{ c.official_url }}" target="_blank" rel="noopener noreferrer">{{ c.court }}</a><span class="bc-src">Sources: {% for sid in c.sources %}{% assign s = bc.sources | where: "id", sid | first %}<a href="#src-{{ s.n }}" aria-label="Source {{ s.n }}">{{ s.n }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</span></th>
 <td data-label="Judge">{{ c.judge }}{% if c.note %}<span class="bc-note">{{ c.note }}</span>{% endif %}</td>
 <td data-label="Phone">{% if c.phone %}<a class="bc-tel" href="tel:{{ c.tel }}">{{ c.phone }}</a>{% else %}<span class="bc-muted">Call the {{ bc.county_clerk.name }}, <a href="tel:{{ bc.county_clerk.tel }}">{{ bc.county_clerk.phone }}</a></span>{% endif %}{% if c.fax %}<span class="bc-fax">Fax {{ c.fax }}</span>{% endif %}</td>
-<td data-label="Next election">{% if c.ballot_2026 %}<a class="bc-badge" href="/nov-3-2026-ballot-guide/">On Nov 3, 2026 ballot</a>{% else %}{{ c.next_election }}{% endif %}</td>
+<td data-label="Next election">{% if c.ballot_2026 %}<a class="bc-badge" href="/nov-3-2026-ballot-guide/">Elected without opposition Nov. 3, 2026 (unofficial)</a> <a href="https://results.enr.clarityelections.com/TX/Bell/127475/" target="_blank" rel="noopener noreferrer">Bell County results</a>{% else %}{{ c.next_election }}{% endif %}</td>
 </tr>
 {% endfor %}</tbody>
 </table>

@@ -4,22 +4,40 @@
   "city": "courts",
   "articles": [
     {
+      "url": "https://kdhnews.com/news/region/patterson-to-follow-in-stepfathers-justice-of-the-peace-footsteps-blackburn-keeps-county-judge-seat/article_95f7afcb-3ab6-5651-9b0b-d42467c264f5.html",
+      "title": "Patterson to Follow in Stepfathers Justice of the Peace Footsteps Blackburn Keeps County Judge Seat",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "He has held the office since 1995 and is finishing his eighth term (KDH).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
       "url": "https://kdhnews.com/news/region/republican-primary-candidates-battle-for-bell-county-tx-justice-of-the-peace-precinct-1/article_cc04db82-7e73-5c9d-9988-7ca375e81338.html",
       "title": "Republican primary candidates battle for Bell County Justice of the Peace, Precinct 1",
       "domain": "kdhnews.com",
       "outlet": "Killeen Daily Herald",
-      "excerpt": "Duffield is not seeking re-election; Patrick Patterson and Joseph Agee ran in the March 3, 2026 Republican primary to succeed him (Feb. 14, 2026).",
+      "excerpt": "The Precinct 1 bench serves areas in and around Belton (Killeen Daily Herald); the Herald has also described the precinct as covering Belton, Morgan's Point Resort, western Temple and northern Bell County ([KDH](https://kdhnews.",
       "confidence": "high",
-      "field": "news_coverage"
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://kdhnews.com/news/region/blackburn-leads-duffield-in-primary-race-for-bell-county-judge/article_f1df02f8-2530-56fe-a268-69cb0e969967.html",
+      "title": "Blackburn Leads Duffield in Primary Race for Bell County Judge",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "The Precinct 1 bench serves areas in and around Belton (Killeen Daily Herald); the Herald has also described the precinct as covering Belton, Morgan's Point Resort, western Temple and northern Bell County (KDH).",
+      "confidence": "high",
+      "field": "cited_in_profile"
     },
     {
       "url": "https://kdhnews.com/news/region/patterson-leads-justice-of-the-peace-precinct-1-race-sapp-tice-lead-four-way-jp/article_d48a29aa-236d-5573-b918-1c016d6d81d1.html",
       "title": "Patterson leads Justice of the Peace Precinct 1 race; Sapp, Tice lead four-way JP race",
       "domain": "kdhnews.com",
       "outlet": "Killeen Daily Herald",
-      "excerpt": "Duffield will finish his eighth term and serve through Dec. 31, 2026 (Mar. 3, 2026).",
+      "excerpt": "He serves the remainder of his JP term through Dec. 31, 2026 (KDH).",
       "confidence": "high",
-      "field": "news_coverage"
+      "field": "cited_in_profile"
     },
     {
       "url": "https://kdhnews.com/news/region/bell-county-rings-in-new-year-by-swearing-in-elected-officials/article_878b3459-1a41-52ae-8110-9a069837be02.html",

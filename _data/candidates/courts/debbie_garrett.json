@@ -1,0 +1,34 @@
+{
+  "candidate_slug": "debbie_garrett",
+  "name": "Debbie Garrett",
+  "city": "courts",
+  "articles": [
+    {
+      "url": "https://kdhnews.com/news/region/voters-decide-on-2-bell-county-judges-while-jp-race-heads-to-runoff/article_bf4a1afd-18f2-5739-8519-fae866590517.html",
+      "title": "Voters Decide on Bell County Judges While JP Race Heads to Runoff",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "In the March 5, 2024 Republican primary for the open seat she led Cheyenne Minick with about 56% of the vote in election-night returns (Killeen Daily Herald), and she was the only candidate for the seat in the Nov. 5, 2024 general election, receiving 89,008 votes ([Bell County official results](http",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://kdhnews.com/news/region/retiring-bell-county-judges-jones-gauntt-recognized/article_933979a8-2023-5696-8ade-192f7af585a4.html",
+      "title": "Retiring Bell County Judges Jones Gauntt Recognized",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "She took office Jan. 2, 2025, succeeding Judge John Gauntt, who retired Dec. 31, 2024 (KDH).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://kdhnews.com/news/region/races-for-2-district-judges-jp-contested/article_fcc92fbd-549f-5159-907b-a94803067722.html",
+      "title": "Races for District Judges JP Contested",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "She had worked as a prosecutor for 16 years handling misdemeanor and felony cases, including 11 years at the Gregg County Criminal District Attorney's Office before coming to Bell County (KDH).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    }
+  ]
+}

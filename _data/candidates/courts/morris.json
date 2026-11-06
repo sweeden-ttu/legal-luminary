@@ -1,0 +1,25 @@
+{
+  "candidate_slug": "morris",
+  "name": "Rick Morris",
+  "city": "courts",
+  "articles": [
+    {
+      "url": "https://kdhnews.com/news/region/jones-seeks-third-term-as-146th-district-court-judge/article_b565c5cc-51f5-5489-8ae9-7d6d5436115e.html",
+      "title": "Jones Seeks Third Term as 146th District Court Judge",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "Jack Jones was first elected to the 146th District Court seat in 2012, succeeding Morris (Killeen Daily Herald).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://kdhnews.com/news/region/bell-county-elected-officials-to-be-sworn-in-today/article_fb289b72-ffcf-56b6-a4cf-80b865153142.html",
+      "title": "Bell County Elected Officials to be Sworn in Today",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "He was among those scheduled to administer oaths, as \"Retired Judge Rick Morris,\" at the swearing-in of Bell County officials at the first Commissioners Court meeting of 2023 (Killeen Daily Herald).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    }
+  ]
+}

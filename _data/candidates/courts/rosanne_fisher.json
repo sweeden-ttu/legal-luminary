@@ -8,9 +8,18 @@
       "title": "Bell County rings in new year by swearing in elected officials",
       "domain": "kdhnews.com",
       "outlet": "Killeen Daily Herald",
-      "excerpt": "Justice of the Peace Precinct 3, Place 1 Rosanne Fisher was sworn in on Jan. 1, 2025 for a four-year term.",
+      "excerpt": "She was sworn in with other newly elected county officials in January 2025 (Killeen Daily Herald).",
       "confidence": "high",
-      "field": "news_coverage"
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://kdhnews.com/news/local/bell-county-voters-to-decide-on-new-sheriff-judge-and-da/article_2e1122b0-cdc6-11ee-a292-4f44a95d2ade.html",
+      "title": "Bell County Voters to Decide on New Sheriff Judge and Da",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "Before her candidacy she worked for two years as a veteran outreach employment transition coordinator for the Texas Military Department and My Career Path Staffing, and before that for more than six years as a freelance private investigator (KDH).",
+      "confidence": "high",
+      "field": "cited_in_profile"
     }
   ]
 }

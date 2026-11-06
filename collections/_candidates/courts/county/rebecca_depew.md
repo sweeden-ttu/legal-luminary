@@ -10,6 +10,7 @@ campaign_website: null
 candidate_slug: rebecca_depew
 headshot: null
 election_status: seated
+listing_status: "Incumbent; not on the 2026 ballot; John Gauntt Jr. elected to the seat Nov. 3, 2026 (unofficial)"
 office_up_for_election: false
 notes: See the profile; every statement there is cited.
 profile_summary: |
@@ -17,7 +18,7 @@ profile_summary: |
 
   DePew, a Republican, won the seat in the November 2010 general election, defeating Democrat Tyffany Howard with 67.41% of the vote ([Ballotpedia](https://ballotpedia.org/Texas_county_court_judicial_elections,_2010_(A-B))). She was unopposed in the March 4, 2014 Republican primary and the Nov. 4, 2014 general election ([Ballotpedia](https://ballotpedia.org/Rebecca_DePew)), was sworn in again at the Bell County Commissioners Court's first meeting of 2019 ([101.7 Jack FM](https://1017jackfm.com/new-leadership-makes-history-as-bell-county-officials-are-sworn-in/)), and ran as the Republican incumbent in the March 1, 2022 primary and Nov. 8, 2022 general election ([Ballotpedia](https://ballotpedia.org/Rebecca_Depew_(Bell_County_Court_at_Law_No._3,_Texas,_candidate_2022))).
 
-  **2026:** DePew is not on the Nov. 3, 2026 ballot; the only candidate for County Court at Law No. 3 is John Gauntt Jr. ([Nov. 3 ballot guide](/nov-3-2026-ballot-guide/)). Gauntt, a Bell County prosecutor, told the Killeen Daily Herald that DePew is retiring and that she and former Judge Gerald Brown are the only two presiding judges the court has had ([Killeen Daily Herald](https://kdhnews.com/news/region/fourth-generation-lawyer-launches-campaign-for-bell-county-court-at-law-3/article_ea7e20e4-27c6-54df-877b-ca20a9b769e2.html)).
+  **2026:** DePew was not on the Nov. 3, 2026 ballot; the only candidate for County Court at Law No. 3 was John Gauntt Jr. ([Nov. 3 ballot guide](/nov-3-2026-ballot-guide/)). Gauntt was elected without opposition, according to unofficial returns ([Bell County Elections](https://results.enr.clarityelections.com/TX/Bell/127475/)). Gauntt, a Bell County prosecutor, told the Killeen Daily Herald that DePew is retiring and that she and former Judge Gerald Brown are the only two presiding judges the court has had ([Killeen Daily Herald](https://kdhnews.com/news/region/fourth-generation-lawyer-launches-campaign-for-bell-county-court-at-law-3/article_ea7e20e4-27c6-54df-877b-ca20a9b769e2.html)).
 credentials: |
   **Office**
   - Judge, Bell County Court at Law No. 3 — juvenile court, adult misdemeanor and specialty court judge ([Bell County](https://www.bellcountytx.com/county_government/county_courts/court_at_law_3/index.php))
@@ -34,6 +35,10 @@ court_contact:
   address: Bell County Justice Center, 1201 Huey Road, Belton, Texas 76513
   mailing_address: P.O. Box 365, Belton, Texas 76513
 sources:
+- title: "Bell County, Texas — November 3, 2026 Unofficial Results (last updated 11/4/2026 1:48:46 AM)"
+  publisher: Bell County Elections Department
+  url: https://results.enr.clarityelections.com/TX/Bell/127475/
+  accessed: 2026-11-06
 - title: Court at Law 3
   publisher: Bell County
   url: https://www.bellcountytx.com/county_government/county_courts/court_at_law_3/index.php
@@ -78,4 +83,4 @@ sources:
   url: https://ballotpedia.org/Rebecca_Depew_(Bell_County_Court_at_Law_No._3,_Texas,_candidate_2022
   accessed: '2026-11-03'
 ---
-Rebecca DePew is the judge of Bell County Court at Law No. 3, the county's juvenile court ([Bell County](https://www.bellcountytx.com/county_government/county_courts/court_at_law_3/index.php)). She is not on the Nov. 3, 2026 ballot ([Nov. 3 ballot guide](/nov-3-2026-ballot-guide/)).
+Rebecca DePew is the judge of Bell County Court at Law No. 3, the county's juvenile court ([Bell County](https://www.bellcountytx.com/county_government/county_courts/court_at_law_3/index.php)). She was not on the Nov. 3, 2026 ballot ([Nov. 3 ballot guide](/nov-3-2026-ballot-guide/)).

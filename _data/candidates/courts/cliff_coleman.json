@@ -4,11 +4,29 @@
   "city": "courts",
   "articles": [
     {
+      "url": "https://kdhnews.com/news/region/justice-of-the-peace-coleman-won-t-seek-re-election-in-2026/article_21f1fef2-5caa-54d8-8812-d897731347d3.html",
+      "title": "Justice of the Peace Coleman Won T Seek Re Election in",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "He took the oath of office on Jan. 1, 2019, following a temporary appointment, succeeding Don Engleking, who had held the post for 48 years; he won a Republican primary and had no general-election challenger (Killeen Daily Herald).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://kdhnews.com/news/region/patterson-leads-justice-of-the-peace-precinct-1-race-sapp-tice-lead-four-way-jp/article_d48a29aa-236d-5573-b918-1c016d6d81d1.html",
+      "title": "Patterson Leads Justice of the Peace Precinct Race Sapp Tice Lead Four Way JP",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "The Herald has described the precinct as covering areas in and around Salado, Holland, Bartlett, the bottom portion of Belton and the south part of Bell County (KDH).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
       "url": "https://kdhnews.com/news/region/judge-cliff-coleman-announces-resignation-move-to-sheriffs-office/article_26c48db0-d050-5eaf-924f-079fb4b118eb.html",
       "title": "Judge Cliff Coleman Announces Resignation Move to Sheriffs Office",
       "domain": "kdhnews.com",
       "outlet": "Killeen Daily Herald",
-      "excerpt": "in 2026, and he resigned effective July 20, 2026 to take a position with the Bell County Sheriff's Office (Killeen Daily Herald).",
+      "excerpt": "On June 23, 2026, he announced he would resign effective July 20, 2026 to take a position with the Bell County Sheriff's Office at the request of Sheriff Bill Cooke; he said he expected county officials to appoint Republican runoff winner Michael Tice to the seat (KDH).",
       "confidence": "high",
       "field": "cited_in_profile"
     },
@@ -17,7 +35,7 @@
       "title": "Two Killed in Apache Helicopter Crash Near Salado Causing Fire That Forces Evacuations",
       "domain": "kdhnews.com",
       "outlet": "Killeen Daily Herald",
-      "excerpt": "As of August 2026 he was the Sheriff's Office public information officer (KDH).",
+      "excerpt": "By August 2026 he was the Sheriff's Office public information officer (KDH).",
       "confidence": "high",
       "field": "cited_in_profile"
     }

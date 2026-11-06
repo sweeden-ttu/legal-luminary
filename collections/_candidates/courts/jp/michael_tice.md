@@ -11,7 +11,7 @@ candidate_slug: michael_tice
 headshot: null
 election_status: seated
 office_up_for_election: true
-listing_status: Incumbent / Unopposed Republican Nominee
+listing_status: "Incumbent (R); elected without opposition, Nov. 3, 2026 (unofficial)"
 notes: See the profile; every statement there is cited.
 profile_summary: |
   Michael Tice is the Justice of the Peace for Bell County Precinct 2; Bell County lists him as the Precinct 2 judge, with the court at 11057 Event Drive in Salado ([Bell County](https://www.bellcountytx.com/county_government/justice_of_the_peace/precinct_2/index.php)). On Aug. 12, 2026, the Bell County Sheriff's Office reported that the two soldiers killed in an Apache helicopter crash near Salado were declared deceased by "Bell County Justice of the Peace Precinct 2 Michael Tice" ([Killeen Daily Herald](https://kdhnews.com/news/region/two-killed-in-apache-helicopter-crash-near-salado-causing-fire-that-forces-evacuations/article_4a10c5ee-9704-547e-992a-21e178dcb999.html)). He succeeded Judge Cliff Coleman, who resigned effective July 20, 2026 to take a position with the Bell County Sheriff's Office and said he expected county officials to appoint Tice; Tice had shadowed Coleman since the runoff ([KDH](https://kdhnews.com/news/region/judge-cliff-coleman-announces-resignation-move-to-sheriffs-office/article_26c48db0-d050-5eaf-924f-079fb4b118eb.html)).
@@ -21,11 +21,14 @@ profile_summary: |
   The Herald has described the precinct as covering areas in and around Salado, Holland, Bartlett, the bottom portion of Belton and the south part of Bell County ([KDH](https://kdhnews.com/news/region/patterson-leads-justice-of-the-peace-precinct-1-race-sapp-tice-lead-four-way-jp/article_d48a29aa-236d-5573-b918-1c016d6d81d1.html)).
 
   **Background:** Tice is a Salado resident, a U.S. Army veteran and a former Texas State Trooper who owns two businesses, Tice Up Your Life Vacations and the GP10 Foundation ([KDH](https://kdhnews.com/news/region/four-republicans-vying-for-bell-county-justice-of-the-peace-precinct-no-2-primary-election/article_c32ac422-0725-5baa-9be7-78fa9240d061.html)).
+
+  **Nov. 3, 2026 result:** Michael Tice was the only candidate for Justice of the Peace, Precinct 2 on the Nov. 3, 2026 ballot and received 6,778 votes in unofficial returns ([Bell County Elections](https://results.enr.clarityelections.com/TX/Bell/127475/)).
 credentials: |
   **Office**
   - Justice of the Peace, Bell County Precinct 2 ([Bell County](https://www.bellcountytx.com/county_government/justice_of_the_peace/precinct_2/index.php))
 
   **Party**
+  - Elected without opposition, Nov. 3, 2026 (unofficial returns) ([Bell County Elections](https://results.enr.clarityelections.com/TX/Bell/127475/))
   - Republican nominee, 2026; unopposed on the Nov. 3 ballot ([KDH](https://kdhnews.com/news/region/low-turnout-high-stakes-bell-county-republicans-lean-conservative-in-runoff-election/article_99d45d87-32ee-5d96-84d9-4a50afee7f74.html); [Nov. 3 ballot guide](/nov-3-2026-ballot-guide/))
 
   **Background**
@@ -84,4 +87,4 @@ sources:
   url: /nov-3-2026-ballot-guide/
   accessed: 2026-11-03
 ---
-Michael Tice is the Justice of the Peace for Bell County Precinct 2 and the unopposed Republican nominee for the seat on the November 3, 2026 ballot. ([Nov. 3 ballot guide](/nov-3-2026-ballot-guide/))
+Michael Tice is the Justice of the Peace for Bell County Precinct 2 and was the unopposed Republican nominee for the seat on the November 3, 2026 ballot ([Nov. 3 ballot guide](/nov-3-2026-ballot-guide/)), elected without opposition according to unofficial returns ([Bell County Elections](https://results.enr.clarityelections.com/TX/Bell/127475/)).

@@ -1,0 +1,43 @@
+{
+  "candidate_slug": "jack_w_jones",
+  "name": "Jack W. Jones",
+  "city": "courts",
+  "articles": [
+    {
+      "url": "https://kdhnews.com/news/region/jones-seeks-third-term-as-146th-district-court-judge/article_b565c5cc-51f5-5489-8ae9-7d6d5436115e.html",
+      "title": "Jones Seeks Third Term as 146th District Court Judge",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "Jones was judge of the 146th District Court in Bell County from January 2013 until his retirement on Dec. 31, 2024 (Killeen Daily Herald; [KDH](https://kdhnews.",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://kdhnews.com/news/region/retiring-bell-county-judges-jones-gauntt-recognized/article_933979a8-2023-5696-8ade-192f7af585a4.html",
+      "title": "Retiring Bell County Judges Jones Gauntt Recognized",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "Jones was judge of the 146th District Court in Bell County from January 2013 until his retirement on Dec. 31, 2024 (Killeen Daily Herald; KDH).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://kdhnews.com/news/new-judges-spend-first-day-in-bell-county-courtrooms/article_07d7fc34-5629-11e2-bdd4-001a4bcf6878.html",
+      "title": "New Judges Spend First Day in Bell County Courtrooms",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "He succeeded Judge Rick Morris and was the sixth judge of the court, which was created in 1960 and handles mainly civil and family law cases (KDH).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://kdhnews.com/news/region/races-for-2-district-judges-jp-contested/article_fcc92fbd-549f-5159-907b-a94803067722.html",
+      "title": "Races for District Judges JP Contested",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "He did not seek re-election in 2024 (KDH).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    }
+  ]
+}

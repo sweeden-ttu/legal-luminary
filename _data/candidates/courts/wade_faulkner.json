@@ -8,7 +8,7 @@
       "title": "Wade Faulkner Wins Nomination 478th District Judge",
       "domain": "kcentv.com",
       "outlet": "KCEN-TV",
-      "excerpt": "On Aug. 9, 2022, the Bell County Republican Party's district executive committee chose him from three candidates as its nominee for the 478th District Judge seat on the November 2022 ballot (KCEN).",
+      "excerpt": "On Aug. 9, 2022, the Bell County Republican Party's district executive committee chose Faulkner from three candidates as its nominee for the 478th District Judge seat on the November 2022 ballot (KCEN).",
       "confidence": "high",
       "field": "cited_in_profile"
     },
@@ -17,7 +17,16 @@
       "title": "Three Republicans Vying for 426th District Court Judgeship",
       "domain": "kdhnews.com",
       "outlet": "Killeen Daily Herald",
-      "excerpt": "In 2020 he ran in the Republican primary for the 426th District Court (KDH).",
+      "excerpt": "As a military judge he presided over the death penalty trial of Fort Hood shooter Nidal Hasan (KDH).",
+      "confidence": "high",
+      "field": "cited_in_profile"
+    },
+    {
+      "url": "https://kdhnews.com/centerforpolitics/duskie-parker-to-vie-for-426th-judge-runoff/article_89f90810-3e0d-5b25-bd1a-5210e68d751d.html",
+      "title": "Duskie Parker to Vie for 426th Judge Runoff",
+      "domain": "kdhnews.com",
+      "outlet": "Killeen Daily Herald",
+      "excerpt": "In 2020 he ran in the Republican primary for the 426th District Court, finishing third with 23% of the vote (KDH).",
       "confidence": "high",
       "field": "cited_in_profile"
     },
@@ -26,7 +35,7 @@
       "title": "Locals Vying for County Seats in Primary Elections",
       "domain": "kdhnews.com",
       "outlet": "Killeen Daily Herald",
-      "excerpt": "He was unopposed in the March 3, 2026 Republican primary, and no Democrat filed (KDH; [Bell County 2026 voter guide](https://sites.",
+      "excerpt": "2026 election: He was unopposed in the March 2026 Republican primary, and no Democrat filed (KDH).",
       "confidence": "high",
       "field": "cited_in_profile"
     }
